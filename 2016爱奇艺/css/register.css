@@ -1,0 +1,348 @@
+@charset "utf-8";
+img{
+    border: none;
+}
+.z-index_105{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    display: none;
+}
+.register_page{
+    clear: both;
+    width: 512px;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: 430px;
+    z-index: 106;
+    display: none;
+}
+.login_popImg{
+    width: 462px;
+    height: 170px;
+    margin-left: 25px;
+    position: relative;
+    background: url("../imags/login-pop-star.png");
+}
+.removeImag_ofRegister{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 70px;
+    left: 435px;
+    background: url("../imags/pop-star-close.png")0 0 no-repeat;
+}
+.removeImag_ofRegister:hover{
+    background: url("../imags/pop-star-close.png")0 -13px no-repeat;
+}
+.register_ImassageBox{
+    width: 462px;
+    height: 313px;
+    position: relative;
+    margin-left: 25px;
+    background: #ffffff;
+}
+.register_input{
+    width: 320px;
+    height: 76px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.register_input_name{
+    width: 320px;
+    height: 38px;
+    position: relative;
+}
+.register_input_psw{
+    width: 320px;
+    height: 38px;
+}
+.register_input_username{
+    width: 50px;
+    height: 32px;
+    float: left;
+    text-align: center;
+    line-height: 32px;
+    font-size: 9px;
+}
+.register_input_userIput{
+    width: 250px;
+    float: left;
+    cursor: pointer;
+}
+
+.register_input_userIput:hover{
+    border: 1px solid #5aa700;
+}
+
+.register_input_userpassworld{
+    width: 250px;
+    float: left;
+    cursor: pointer;
+}
+.register_input_userpassworld:hover{
+    border: 1px solid #5aa700;
+}
+
+.register_input_userPsw{
+    width: 50px;
+    height: 32px;
+    float: left;
+    text-align: center;
+    line-height: 32px;
+    font-size: 9px;
+}
+/*-----------验证码区---------------*/
+.identifyingcode_input{
+    width: 320px;
+    height: 76px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.identifyingcode_input_Imessage{
+    width: 320px;
+    height: 38px;
+    position: relative;
+}
+.identifyingcode_input_realImessage{
+    width: 50px;
+    height: 32px;
+    float: left;
+    text-align: center;
+    line-height: 32px;
+    font-size: 9px;
+}
+.identifyingcode_input_userIput{
+    width: 95px;
+    float: left;
+    cursor: pointer;
+}
+
+.identifyingcode_input_userIput:hover{
+    border: 1px solid #5aa700;
+}
+/*---------动态验证码------*/
+.VerifyCode{
+    width: 105px;
+    height: 32px;
+    background: #C0C0C0;
+    position: relative;
+    left: 170px;
+}
+.VerifyCode_F5_outer{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #C0C0C0;
+    position: relative;
+    top: -32px;
+    left: 284px;
+}
+.VerifyCode_F5_outer:hover{
+    background: #5aa700;
+}
+.VerifyCode_F5_inner{
+    width: 26px;
+    height: 30px;
+    position: relative;
+    background: url("../imags/thirdLoginIcon.png")-72px -31px no-repeat;
+}
+.VerifyCode_F5_inner:hover{
+    background: url("../imags/thirdLoginIcon.png")-193px -31px no-repeat;
+}
+/*-----------*/
+.identifyingcode_phoneCode{
+    width: 320px;
+    height: 38px;
+    position: relative;
+}
+.identifyingcode_phoneInput{
+    margin-left: 50px;
+    width: 250px;
+    float: left;
+    cursor: pointer;
+}
+.identifyingcode_phoneInput:hover{
+    border: 1px solid #5aa700;
+}
+
+/*----------------------------*/
+.iAgreeAll{
+    width: 266px;
+    height: 32px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+.iAgreeAll_checkBox{
+    width: 215px;
+    height: 32px;
+    float: left;
+}
+.iAgreeAll_checkBox p{
+    width: 40px;
+    height: 32px;
+    margin-top: -24px;
+    float: left;
+}
+.user_service_agreement{
+    width: 175px;
+    height: 32px;
+    color: #5aa700;
+    border: solid 1px red;
+}
+.iAgreeAll_icon1{
+    width: 25px;
+    height: 20px;
+    margin-top: -5px;
+    float: left;
+    display:block;
+    /*border: solid 1px green;*/
+    background: url("../imags/navLoginV3.png") 0 -126px no-repeat;
+}
+.iAgreeAll_icon2{
+    width: 25px;
+    height: 20px;
+    margin-top: -5px;
+    display:none;
+    float: left;
+    background: url("../imags/navLoginV3.png") -116px -104px no-repeat;
+}
+
+.loginRightnow_message{
+    width: 48px;
+    height: 32px;
+    float: left;
+    position: relative;
+}
+
+.register_button{
+    width: 266px;
+    height: 32px;
+    position: relative;
+    left: -15px;
+    top: 50px;
+    text-align: center;
+    background: #5aa700;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.register_button_out{
+    position: relative;
+}
+.register_button_out>a{
+    position: relative;
+    left: 115px;
+    top: -14px;
+    text-align: center;
+
+}
+.otherwise_login_two{
+    width: 266px;
+    height: 55px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+/*-------文字部分-------*/
+.otherwise_login_text_two{
+    width: 266px;
+    height: 30px;
+    display: block;
+    position: relative;
+}
+.otherwise_login_text_two a{
+    position: relative;
+    top: -15px;
+    left: 85px;
+    color: #101010;
+}
+/*-----------------*/
+.otherwise_login_icon_two{
+    width: 266px;
+    height: 30px;
+    display: none;
+    position: relative;
+}
+.otherwise_login_index_two{
+    width: 266px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+/*-----------图标部分(1)----------*/
+.otherwise_login_indexIcon1{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    background: #ffffff;
+    background: url("../imags/thirdLoginIcon.png") -40px -40px no-repeat;
+}
+.otherwise_login_indexIcon1:hover{
+    background: url("../imags/thirdLoginIcon.png") -60px -40px no-repeat;
+}
+/*-----------图标部分(2)----------*/
+.otherwise_login_indexIcon2{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    background: #ffffff;
+    background: url("../imags/thirdLoginIcon.png") 0 -40px no-repeat;
+}
+.otherwise_login_indexIcon2:hover{
+    background: url("../imags/thirdLoginIcon.png") -20px -40px no-repeat;
+}
+/*-----------------------------*/
+.otherwise_login_icon_weibo,.otherwise_login_icon_QQ,.otherwise_login_icon_weixin,
+.otherwise_login_icon_baidu,.otherwise_login_icon_zhifu,
+.otherwise_login_icon_renren,.otherwise_login_icon_xiaomi,.otherwise_login_icon_jidong{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    float: left;
+}
+.otherwise_login_icon_weibo{
+    margin-left: 3px;
+    background: url("../imags/thirdLoginIcon.png") 0 0 no-repeat;
+}
+.otherwise_login_icon_QQ{
+    margin-left: 8px;
+    background: url("../imags/thirdLoginIcon.png") -40px 0 no-repeat;
+}
+.otherwise_login_icon_weixin{
+    margin-left: 7px;
+    background: url("../imags/thirdLoginIcon.png") -80px 0 no-repeat;
+}
+.otherwise_login_icon_baidu{
+    margin-left: 8px;
+    background: url("../imags/thirdLoginIcon.png") -120px 0 no-repeat;
+}
+.otherwise_login_icon_zhifu{
+    margin-left: 7px;
+    background: url("../imags/thirdLoginIcon.png") -160px 0 no-repeat;
+}
+.otherwise_login_icon_renren{
+    margin-left: 8px;
+    background: url("../imags/thirdLoginIcon.png") -200px 0 no-repeat;
+}
+.otherwise_login_icon_xiaomi{
+    margin-left: 7px;
+    background: url("../imags/thirdLoginIcon.png") -240px 0 no-repeat;
+}
+.otherwise_login_icon_jidong{
+    margin-left: 8px;
+    background: url("../imags/thirdLoginIcon.png") -280px 0 no-repeat;
+}

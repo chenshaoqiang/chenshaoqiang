@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    list-style: none;
+}
+img{
+    border: none;
+}
+a:hover{
+    color: #5aa700;
+}
+/*-------顶外框，包含logo，选项卡，导航列表----------*/
+.top_outer{
+    width: 1350px;
+    height: 580px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.top_wrap,.top_wrap_logo,.top_wrap_pic,.top_wrap_bottomList{
+    width: 1350px;
+    float: left;
+    left: 0;
+    background: #101010;
+}
+.top_wrap_bottomList{
+    background: #000000;
+}
+.top_wrap{
+    height: 580px;
+}
+.top_wrap_logo{
+    height: 60px;
+    position: relative;
+}
+.top_wrap_logo.log{
+    position: relative;
+    width: 350px;
+    height: 50px;
+    float: left;
+}
+.top_wrap_logo_imag{
+    position: relative;
+    margin-top: 5px;
+    left: 85px;
+    width: 105px;
+    height: 50px;
+    cursor: pointer;
+    background: url("../imags/iqiyi-logo105x50.png");
+}
+/*------搜索框----------*/
+.search_box{
+    width: 470px;
+    height: 60px;
+    float: left;
+}
+.search_box_input{
+    width: 360px;
+    height: 38px;
+    float: left;
+    border: 0;
+    padding: 5px;
+    margin-top: 10px;
+    background:#FAF7F7;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.search_box_input:hover{
+    border: 1px solid #5aa700;
+    background: #ffffff;
+}
+.search_box_more{
+    width:360px;
+    height: 300px;
+    background:#FAF7F7;
+    box-sizing: border-box;
+    border: 1px solid #5aa700;
+    position: absolute;
+    top: 47px;
+    left: 350px;
+    z-index: 1;
+    display: none;
+}
+.search_box_more_ul li{
+    width: 358px;
+    height: 30px;
+    float: left;
+    border: 0;
+}
+.search_box_more_ul li a{
+    font-size: 12px;
+    color: #101010;
+    padding: 10px;
+    line-height: 30px;
+}
+.search_box_more_ul li:hover{
+    background: #ffffff;
+}
+.search_box_btn{
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    border: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background:url("../imags/topNav-v2.png")0 0 no-repeat;
+    float: left;
+    cursor: pointer;
+}
+.btn_forIE{
+    display: none;
+    width: 110px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+    border: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+/*--------搜索按钮后的短导航-----------*/
+.top_index{
+    cursor: pointer;
+    float: left;
+    width: 445px;
+    height: 60px;
+
+}
+.top_index_ul_li{
+    float: left;
+    margin-left: 10px;
+    line-height: 60px;
+}
+.top_index_ul_li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #C0C0C0;
+}
+/*-------上传图标--------*/
+.top_index_upload{
+    width: 60px;
+    position: relative;
+}
+.top_index_upload_a:before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 12px;
+    float: left;
+    margin-top: 24px;
+    background: url("../imags/nav-upload.png");
+}
+.top_index_upload_a:hover::before{
+    background: url("../imags/nav-upload-green.png");
+}
+.top_index_upload_a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 30px;
+    border: 5px solid ;
+    border-color: #fff transparent transparent transparent;
+}
+.top_index_upload_a:hover::after{
+    border-color: #5aa700 transparent transparent transparent;
+
+}
+/*----------上传下拉框----------*/
+.upload_ul{
+    width: 100px;
+    height: 215px;
+    position: relative;
+    top: -15px;
+    left: -20px;
+    z-index: 110;
+    display: none;
+}
+.upload_ul_sanjiao{
+    width: 100px;
+    height: 15px;
+    float: left;
+}
+.upload_ul_sanjiaoImag{
+    position: relative;
+    top: -6px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color:transparent transparent #ffffff transparent;
+}
+.upload_ul_real{
+    width: 100px;
+    height: 200px;
+    background: #ffffff;
+    position: relative;
+    top: 14px;
+}
+.upload_ul_real_ul{
+    position: relative;
+}
+.upload_ul_real_ul li{
+    list-style: none;
+    position: relative;
+    top: -14px;
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+.upload_ul_real_ul a{
+    position: relative;
+    font-size: 9px;
+    top: -14px;
+    color: #101010;
+}
+
+/*-------------消息下拉框---------*/
+.message_tab{
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    top: 45px;
+    left: 963px;
+    z-index:115;
+    display: none;
+}
+.message_tab_sanjiao{
+    width: 300px;
+    height: 15px;
+    float: left;
+    background: #101010;
+}
+.message_tab_sanjiaoImag{
+    position: relative;
+    top: -6px;
+    left: 190px;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color:transparent transparent #ffffff transparent;
+}
+.message_tab_real{
+    width: 300px;
+    height: 375px;
+    background: #ffffff;
+    position: relative;
+    top: 14px;
+}
+/*---------消息下拉框内容----------*/
+.message_tab_real_top{
+    width: 300px;
+    height: 40px;
+}
+
+.message_tab_real_top div{
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 14px;
+}
+.message_tab_real_top div:hover{
+    border-bottom: 2px solid #5aa700;
+    box-sizing: border-box;
+    color: #5aa700;
+}
+.message_tab_real_top div:nth-child(2),.message_tab_real_top div:nth-child(3){
+    margin-left: 12px;
+}
+.message_tab_real_li{
+    border-bottom: 2px solid #5aa700;
+    color: #5aa700;
+}
+
+.message_tab_real_mid{
+    width: 295px;
+    height: 300px;
+    margin: 0 auto;
+    border-top: 1px solid #C0C0C0;
+}
+.message_tab_real_mid div{
+    line-height: 32px;
+    text-align: center;
+    display: none;
+    margin:0;
+}
+.message_tab_real_mid div.message_tab_real_mid_tab{
+    width: 295px;
+    height: 300px;
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    display: block;
+    background:#ffffff;
+}
+.message_tab_real_bot{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #C0C0C0;
+    background: #F0F8FF;
+    box-sizing: border-box;
+    position: relative;
+}
+.message_tab_real_bot_a{
+    margin-top: -30px;
+    position: relative;
+    top: -13px;
+    left: 125px;
+}
+
+.message_tab_real_bot:hover{
+    background: #ffffff;
+    border: solid 1px #008000;
+}
+/*-------消息下三角标---------*/
+.top_index_message_a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 30px;
+    border: 5px solid ;
+    border-color: #fff transparent transparent transparent;
+}
+.top_index_message_a:hover::after{
+    border-color: #5aa700 transparent transparent transparent;
+
+}
+/*---------播放记录下三角标--------*/
+.top_index_recoder a:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 30px;
+    border: 5px solid ;
+    border-color: #fff transparent transparent transparent;
+}
+.top_index_recoder a:hover::after{
+    border-color: #5aa700 transparent transparent transparent;
+
+}
+/*--------下载客户端的小图标------------*/
+.top_index_load a:after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    float: right;
+    margin-top: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background:#ff4500;
+}
+.top_index ul li a:hover{
+    color:#5aa700;
+}
+/*-------选项卡部分--------------*/
+.top_wrap_pic{
+    position: relative;
+    height: 410px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.top_wrap_pic_tab div{
+    width: auto;
+    height: 410px;
+    display: none;
+}
+.top_wrap_pic_tab div.top_wrap_pic_select{
+    display: block;
+
+}
+.top_wrap_pic_list{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    top: 30px;
+    left: 1045px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #101010;
+}
+.top_wrap_pic_list ul li a{
+    float: left;
+    width: 220px;
+    height: 35px;
+    padding-left: 10px;
+    line-height: 35px;
+    color: #C0C0C0;
+    overflow: hidden;
+    font-size: 14px;
+    border-bottom: 1px solid #2E2A2A;
+    box-sizing: border-box;
+}
+.top_wrap_pic_list ul li a.top_wrap_pic_select{
+    background:#5aa700;
+    color: #ffffff;
+}
+
+/*-------导航列表部分---------*/
+.top_wrap_bottomList{
+    position: relative;
+    height: 110px;
+}
+.top_wrap_bottomList_outer{
+    position: relative;
+    top: 10px;
+    left: 85px;
+    height: 90px;
+    width: 1180px;
+    overflow: hidden;
+    box-sizing:border-box;
+    border: 1px solid #5aa700;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    list-style: none;
+}
+.top_wrap_bottomList_outer ul{
+    float: left;
+    height: 75px;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+.top_wrap_bottomList_outer ul a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #C0C0C0;
+}
+.top_wrap_bottomList_outer ul a:hover{
+   color: #5aa700;
+}
+.bottomList_ul1 li{
+    margin-left: 24px;
+    width: 54px;
+    height: 25px;
+}
+.bottomList_ul2 li{
+    margin-left: 24px;
+    width: 66px;
+    height: 25px;
+}
+.bottomList_ul3 li{
+    width: 66px;
+    height: 25px;
+}
+.bottomList_ul4 li{
+    margin-left: 24px;
+    width: 54px;
+    height: 25px;
+}
+.bottomList_ul5 li{
+    width: 54px;
+    height: 25px;
+}
+.bottomList_ul6 li{
+    margin-left: 24px;
+    width: 54px;
+    height: 25px;
+}
+.bottomList_ul7 li{
+    width: 54px;
+    height: 25px;
+}
+.bottomList_ul8 li{
+    margin-left: 24px;
+    width: 66px;
+    height: 25px;
+}
+.bottomList_ul9 li{
+    width: 66px;
+    height: 25px;
+}
+.bottomList_ul10 li{
+    margin-left: 24px;
+    width: 96px;
+    height: 25px;
+}
+.bottomList_ul11 li{
+    width: 96px;
+    height: 25px;
+}
+.bottomList_ul12 li{
+    margin-left: 30px;
+    width: 90px;
+    height: 25px;
+}
+.bottomList_ul13 li{
+    width: 90px;
+    height: 25px;
+}
+
+
+
+
+
+
