@@ -12,7 +12,6 @@ function animate() {
             aaa = this.index;
         };
         oAs[i].onmouseout = function () {
-            alert(this.index);
             list.timer = window.setInterval(function () {
                     nextAnimate(curIndex);
                 }, 2000);
