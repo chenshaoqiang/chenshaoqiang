@@ -19,6 +19,7 @@ a:hover{
     height: 580px;
     margin: 0 auto;
     box-sizing: border-box;
+
 }
 
 .top_wrap,.top_wrap_logo,.top_wrap_pic,.top_wrap_bottomList{
@@ -34,14 +35,17 @@ a:hover{
     height: 580px;
 }
 .top_wrap_logo{
+    display: block;
     height: 60px;
     position: relative;
 }
+
 .top_wrap_logo.log{
     position: relative;
     width: 350px;
-    height: 50px;
+    height: 60px;
     float: left;
+
 }
 .top_wrap_logo_imag{
     position: relative;
@@ -52,6 +56,24 @@ a:hover{
     cursor: pointer;
     background: url("../imags/iqiyi-logo105x50.png");
 }
+#top_wrap_logo_LOG{
+    width: 95px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1051;
+    display: none;
+}
+.top_wrap_logo_LOG{
+    border-radius: 3px;
+    border-top: 1px solid #5aa700;
+    border-left: 1px solid #5aa700;
+    border-right: 1px solid #5aa700;
+}
+
 /*------搜索框----------*/
 .search_box{
     width: 470px;
@@ -65,12 +87,12 @@ a:hover{
     border: 0;
     padding: 5px;
     margin-top: 10px;
-    background:#FAF7F7;
+    background:#e3e3e3;
     box-sizing: border-box;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-.search_box_input:hover{
+.search_box_input1:hover{
     border: 1px solid #5aa700;
     background: #ffffff;
 }
@@ -83,7 +105,7 @@ a:hover{
     position: absolute;
     top: 47px;
     left: 350px;
-    z-index: 1;
+    z-index: 5;
     display: none;
 }
 .search_box_more_ul li{
@@ -416,6 +438,15 @@ a:hover{
     position: relative;
     height: 110px;
 }
+.top_wrap_bottomList_copy{
+    position: fixed;
+    width: 1180px;
+    height: 110px;
+    top: 60px;
+    left: 85px;
+    z-index: 1050;
+    display: none;
+}
 .top_wrap_bottomList_outer{
     position: relative;
     top: 10px;
@@ -429,6 +460,12 @@ a:hover{
     -moz-border-radius: 5px;
     border-radius: 5px;
     list-style: none;
+}
+#top_wrap_bottomList_outer{
+    left: 0;
+    top: 0;
+    background: #171717;
+
 }
 .top_wrap_bottomList_outer ul{
     float: left;

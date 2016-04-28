@@ -1,13 +1,19 @@
-var topIndexMessage_a=document.getElementById("top_index_message_a");
 var messageTab=document.getElementById("message_tab");
 
-topIndexMessage_a.onclick=function(){
-    if(messageTab.style.display=="block"){
-        messageTab.style.display="none"
-    }else{
-        messageTab.style.display="block";
+var docEle = document.getElementsByTagName("body")[0];
+EventUtil.addHandler(docEle, "click", function (e) {
+    var event = EventUtil.getEvent(e);
+    var target = EventUtil.getTarget(event);
+    if (target.id == "top_index_message_a"){
+        if(messageTab.style.display=="block"){
+            messageTab.style.display="none";
+        }else{
+            messageTab.style.display="block";
+        }
+    }else if(target.id != "top_index_message_a"){
+        messageTab.style.display="none";
     }
-};
+});
 
 var oUl = document.getElementById("message_tab_real_top");
 var oLis = oUl.getElementsByTagName("div");
