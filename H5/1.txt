@@ -1,0 +1,26 @@
+<a href="tel:130xxxxx">立即联系我</a>
+<a href="sms:130xxxxx">发短信给我</a>
+
+<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<!--将苹果手机的浏览器中自带的导航栏取消-->
+<meta name="apple-moblie-web-app-capable" content="yes"/>
+<!--设置苹果手机到头后在下拉出现的那个黑色背景框中标题的-->
+<meta name="apple-moblie-web-app-title" content="标题"/>
+<!--设置屏幕方向是横屏还是竖屏-->
+<meta name="screen-orientation" content="portrait|landscape"/>
+
+*{
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-touch-callout: none;
+-webkit-overflow-scrolling: touch;
+-webkit-text-size-adjust: 100%;
+-webkit-user-select: none;
+}
+header, footer, nav, section, figure, figcaption, aside, article {
+    display: block;
+}
+

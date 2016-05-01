@@ -1,0 +1,423 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    color: #424242;
+
+    /*移动端常用的CSS公共样式*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+}
+
+header, footer, nav, section, figure, figcaption, aside, article {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    border-style: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 3.2rem;
+    height: 5.68rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.6rem;
+    margin-top: -2.84rem;
+    background: #3d9ac3;
+}
+.font_beforeAll{
+    width: 2rem;
+    height: .3rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 49%;
+    margin-left: -.9rem;
+    z-index: 5;
+}
+.font_beforeAll_img1{
+    width: 2rem;
+    height: .3rem;
+    position: absolute;
+    top: 0;
+}
+.font_beforeAll_img1.beforeAll_img2{
+    -webkit-animation: 2s 0s infinite title;
+    animation: 2s 0s infinite title;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes title {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+.hammerIcon{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 49%;
+    margin-left: -.9rem;
+    z-index: 5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform:rotate(-90deg) ;
+    transform:rotate(-90deg) ;
+    display: block;
+}
+.hammerIcon_img{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    opacity: .9;
+}
+.hammerIcon.hammer{
+    -webkit-animation: .5s 0s 2 hammer;
+    animation: .5s 0s 2 hammer;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes hammer {
+    0% {
+        -webkit-transform:rotate(-90deg) ;
+        transform:rotate(-90deg) ;
+
+    }
+    50% {
+        -webkit-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+
+    }
+    100% {
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+
+    }
+}
+
+/*---------开始页面------------*/
+.outerHouse {
+    width: 6.2rem;
+    height: 11.36rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5.68rem;
+    margin-left: -3.2rem;
+    -webkit-perspective: 5rem;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    overflow: hidden;
+
+    /*transform-origin: left;*/
+}
+
+.outerHouseBg1 {
+    width: 6.2rem;
+    height: 11.36rem;
+    position: absolute;
+    top: 0;
+    opacity: .4;
+}
+
+.houseccloudyBg {
+    width: 6.2rem;
+    height: 11.36rem;
+    position: absolute;
+    top: 0;
+}
+
+.outerHouseBg2 {
+    /*这个图沿着Z走了3.2rem,里面的图都设置为2倍的原大小以适应沿Z走了以后出现的空白*/
+    width: 3.2rem;
+    height: 5.68rem;
+    position: absolute;
+    top: 0;
+    transform: translateZ(-3.2rem);
+    -webkit-transform: translateZ(-3.2rem);
+}
+
+.outerHouseBg_house {
+    width: 2.1rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 3rem;
+    opacity: 0.5;
+
+}
+
+.littleMan1,.littleMan2{
+    width: 1.5rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 6rem;
+    left: 2.8rem;
+    background: url("../imags/littleBoy.PNG") no-repeat center;
+    background-size: 100% 100%;
+    opacity: .5;
+
+}
+.littleMan2{
+    display: none;
+    width: 1.34rem;
+    height: 1.58rem;
+    top: 5.5rem;
+    opacity: 1;
+    background: url("../imags/littleBoyStand.png") no-repeat center;
+}
+
+.littleMan1.trans1 {
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: box;
+    /*用于测试的选择器*/
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes box {
+    0% {
+        -webkit-transform: translateZ(0);
+    }
+    50%{
+        -webkit-transform: translateZ(-.1rem);
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+    }
+}
+.speakBox{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 1.6rem;
+    /*border: 1px solid red;*/
+    display: none;
+}
+.speakBox_say3{
+    width: 1.4rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 0;
+    display: none;
+    background: url("../imags/say3.png")no-repeat center;
+    background-size: 100% 100%;
+    /*border: 1px solid yellow;*/
+}
+.speakBox_say3_p{
+    width: 1rem;
+    height: .5rem;
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+    font-size: .12rem;
+    color: #000000;
+    text-align: center;
+}
+.speakBox_say2{
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    top: .8rem;
+    left: 1.2rem;
+    display: none;
+}
+.speakBox_say1{
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.4rem;
+    display: none;
+}
+
+/*---------------------------------*/
+.wrapBox {
+    display: none;
+    /*-----里面的3D从这里开始------*/
+    -webkit-perspective: 5rem;
+    width: 3.2rem;
+    height: 5.68rem;
+    transform-origin: left;
+    position: absolute;
+    top: 0;
+    /*包裹3D模型的这层可以设置视距*/
+}
+
+.box {
+    width: 3.2rem;
+    height: 5.68rem;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: left;
+    /*
+    包裹几个盒子的这层，设置3D空间效果，以及旋转中心
+    */
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 3.2rem;
+    height: 5.68rem;
+    position: absolute;
+    top: 0;
+    /*opacity: 0.5;*/
+    /*这些盒子一开始是堆叠在一起的*/
+}
+
+.box1 {
+    background: #ffffff;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.box2 {
+    background: #e7e7e7;
+    opacity: 0.5;
+    transform: translateZ(-3.2rem);
+    -webkit-transform: translateZ(-3.2rem);
+}
+
+.box3 {
+    /*background: #ff5845;*/
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+}
+
+.box4 {
+    /*background: #378fff;*/
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+}
+
+.box5 {
+    /*background: #f716ff;*/
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+}
+
+.box6 {
+    /*这个盒子以底边为基准，顺X轴旋转90度*/
+    /*background: #54ff2a;*/
+    transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+
+}
+
+/*-------------*/
+.cloudyBg {
+    opacity: .7;
+    width: 3.2rem;
+    height: 5.68rem;
+    overflow: hidden;
+}
+
+.partsOfdoor {
+    opacity: .5;
+    width: 3.2rem;
+    height: 5.68rem;
+    position: fixed;
+    transform: translateZ(-3.2rem);
+    -webkit-transform: translateZ(-3.2rem);
+}
+
+.partsOfdoor_noTrans {
+    width: 3.2rem;
+    height: 5.68rem;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.doorOfTop {
+    width: 3.2rem;
+    height: 1.7rem;
+    background-size: 100% 100%;
+    /*position: absolute;*/
+    /*top: .01rem;*/
+}
+
+.doorOfTop_box {
+    width: 3.2rem;
+    height: 1.7rem;
+    background: url("../imags/doorTop.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.doorOfBody_flag, .doorOfBody_flag1 {
+    width: 3.2rem;
+    height: 3.98rem;
+    position: absolute;
+}
+
+.doorOfBody_flag_left, .doorOfBody_flag_right {
+    width: 1.6rem;
+    height: 3.98rem;
+    position: absolute;
+    top: 0;
+}
+
+.doorOfBody_flag_left {
+    /*background: url("../imags/door-left.png") center;*/
+}
+
+.doorOfBody_flag_right {
+    left: 1.6rem;
+    /*background: url("../imags/door-right.png") center;*/
+}
+
+/*---------3D盒子结束----------*/
