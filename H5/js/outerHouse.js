@@ -24,6 +24,7 @@ hammerIcon.addEventListener("touchend", hammerEnd, false);
 /*-----------------*/
 function HouseStart(ev) {
     console.log("点击了房子");
+    ev.preventDefault();
     clearInterval(outerHouseBg2.timer);
     if(hammerIcon.style.display=="none"){
         outerHouseBgHouse.style.opacity=1;
