@@ -30,15 +30,12 @@ box2.addEventListener("touchend", end4, false);
 function start1(ev) {
     console.log("点到外门了");
     window.clearInterval(doorBg1.timer);
-    var cloudyBg1 = document.getElementById("cloudyBg1");//外面门的背景
-    cloudyBg1.style.opacity = 0;
+    ev.preventDefault();
 }
 function end1(ev) {
     console.log("没点外门了");
     doorBg1.timer = window.setTimeout(function () {
         box1.style.display = "none";
-        var cloudyBg1 = document.getElementById("cloudyBg1");//外面门的背景
-        cloudyBg1.style.opacity = 0.7;
     }, 3000);
     doorBgLeft1.style.webkitTransformOrigin = "left";
     doorBgLeft1.style.webkitTransform = "rotateY(90deg)";
@@ -51,19 +48,18 @@ function end1(ev) {
 function start5(ev) {
     console.log("点到里门了");
     clearInterval(doorBg2.timer);
+    ev.preventDefault();
 }
 function end5(ev) {
     console.log("没点里门了");
     //里面开门之后的墙面
 
     var doorOfTop_box = document.getElementById("doorOfTop_box");
-    var outerHouseBg2 = document.getElementById("outerHouseBg2");//房子里蒙板图标
     var faceToFaceDoor = document.getElementById("faceToFaceDoor");
     doorBg2.timer = window.setTimeout(function () {
         doorOfTop_box.style.display = "none";
         faceToFaceDoor.style.display = "block";
     }, 2000);
-    outerHouseBg2.style.opacity=0;
     doorBgLeft2.style.webkitTransformOrigin = "left";
     doorBgLeft2.style.webkitTransform = "rotateY(90deg)";
     doorBgLeft2.style.webkitTransition = "2s";
@@ -76,26 +72,31 @@ function end5(ev) {
 function start2(ev) {
     console.log("点到左边的墙了");
     box.style.webkitTransformOrigin = "left";
-    var cloudyBg2 = document.getElementById("cloudyBg2");//左侧门的背景
-    cloudyBg2.style.opacity = 0.7;
     clearInterval(box4.timer);
+    ev.preventDefault();
 }
+var outerHouseBg2 = document.getElementById("outerHouse");//房子里蒙板图标
+//outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem)";
+
 function end2(ev) {
     console.log("离开左边的墙了");
-    var cloudyBg2 = document.getElementById("cloudyBg2");//左侧门的背景
     if (box3.style.display == "none") {
         box.style.webkitTransform = "rotateY(0deg)";
-        cloudyBg2.style.opacity = 0.7;
-        box.style.webkitTransition = "5s";
+        box.style.webkitTransition = "4s";
+        outerHouseBg2.style.webkitTransformOrigin = "6.3rem 0 0";
+        outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem) rotateY(0deg)";
+        outerHouseBg2.webkitTransition = "20s";
         box4.timer = window.setTimeout(function () {
             box3.style.display = "block";
         }, 100);
     } else {
         box.style.webkitTransform = "rotateY(-90deg)";
-        box.style.webkitTransition = "5s";
+        box.style.webkitTransition = "4s";
+        outerHouseBg2.style.webkitTransformOrigin = "6.3rem 0 0";
+        outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem) rotateY(-90deg)";
+        outerHouseBg2.webkitTransition = "20s";
         box4.timer = window.setTimeout(function () {
             box3.style.display = "none";
-            cloudyBg2.style.opacity = 0;
         }, 1000);
     }
 }
@@ -104,25 +105,29 @@ function start3(ev) {
     console.log("点到右边的墙了");
     box.style.webkitTransformOrigin = "right";
     clearInterval(box3.timer);
-    var cloudyBg3 = document.getElementById("cloudyBg3");//右侧门的背景
-    cloudyBg3.style.opacity = 0.7;
+    ev.preventDefault();
 }
 function end3(ev) {
     console.log("离开右边的墙了");
-    var cloudyBg3 = document.getElementById("cloudyBg3");//右侧门的背景
     if (box4.style.display == "none") {
         box.style.webkitTransform = "rotateY(0deg)";
-        box.style.webkitTransition = "5s";
-        cloudyBg3.style.opacity = 0.7;
+        box.style.webkitTransition = "3s";
+
+        outerHouseBg2.style.webkitTransformOrigin = "-6.3rem 0 0";
+        outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem) rotateY(0deg)";
+        outerHouseBg2.webkitTransition = "4s";
         box3.timer = window.setTimeout(function () {
             box4.style.display = "block";
         }, 100);
     } else {
         box.style.webkitTransform = "rotateY(90deg)";
-        box.style.webkitTransition = "5s";
+        box.style.webkitTransition = "3s";
+
+        outerHouseBg2.style.webkitTransformOrigin = "-6.3rem 0 0";
+        outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem) rotateY(90deg)";
+        outerHouseBg2.webkitTransition = "4s";
         box3.timer = window.setTimeout(function () {
             box4.style.display = "none";
-            cloudyBg3.style.opacity =0;
         }, 1000);
     }
 }
@@ -130,6 +135,7 @@ function end3(ev) {
 function start4(ev) {
     console.log("点到里面正面的墙了");
     clearInterval(box2.timer);
+    ev.preventDefault();
 }
 function end4(ev) {
     console.log("离开里面正面的墙了");

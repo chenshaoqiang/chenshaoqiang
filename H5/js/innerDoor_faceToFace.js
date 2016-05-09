@@ -1,3 +1,5 @@
+/*--------上下滑动模块---------*/
+
 var main = document.getElementById("faceToFaceDoor");
 var sourceW = 320;
 var sourceH = 568;

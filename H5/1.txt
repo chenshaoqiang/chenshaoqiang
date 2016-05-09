@@ -1,3 +1,4 @@
+/*---一些有用的东西----*/
 <a href="tel:130xxxxx">立即联系我</a>
 <a href="sms:130xxxxx">发短信给我</a>
 
@@ -24,3 +25,5 @@ header, footer, nav, section, figure, figcaption, aside, article {
     display: block;
 }
 
+//外层3D背景的初始状态记录
+outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem)";

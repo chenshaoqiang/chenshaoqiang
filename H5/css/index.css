@@ -47,6 +47,7 @@ body {
     margin-top: -2.84rem;
     background: #3d9ac3;
 }
+/*--------简历几个字---------*/
 .font_beforeAll{
     width: 2rem;
     height: .3rem;
@@ -86,6 +87,66 @@ body {
         opacity: 0;
     }
 }
+/*------------------*/
+.arrow{
+    width: 1rem;
+    height: .3rem;
+    position: absolute;
+    top: 3.8rem;
+    left: 15%;
+    margin-left: -.5rem;
+    z-index: 5;
+}
+/*.arrow_p{*/
+    /*position: absolute;*/
+    /*top: -.5rem;*/
+    /*left: .1rem;*/
+    /*width: 2.5rem;*/
+    /*height: .3rem;*/
+    /*color: #FFFFFF;*/
+    /*font-size: .16rem;*/
+/*}*/
+.talk{
+    position: absolute;
+    top: -1.6rem;
+    width: 1.6rem;
+    left: 1.5rem;
+    height: 1.6rem;
+    color: #FFFFFF;
+    font-size: .16rem;
+}
+
+.arrow_img1{
+    width: 1rem;
+    height: .3rem;
+    position: absolute;
+    top: 0;
+}
+.arrow_img1.arrow_img2{
+    -webkit-animation: .5s 0s infinite arrow;
+    animation: .5s 0s infinite arrow;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1) translateX(.2rem);
+        transform: scale(1) translateX(.2rem);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(1.1) translateX(.2rem);
+        transform: scale(1.4) translateX(.2rem);
+        opacity: 0;
+    }
+}
+/*--------锤子----------*/
 .hammerIcon{
     width: 1.5rem;
     height: 1rem;
@@ -105,7 +166,7 @@ body {
     height: 1rem;
     position: absolute;
     top: 0;
-    opacity: .9;
+    opacity: .5;
 }
 .hammerIcon.hammer{
     -webkit-animation: .5s 0s 2 hammer;
@@ -154,10 +215,10 @@ body {
     height: 11.36rem;
     position: absolute;
     top: 0;
-    opacity: .4;
+    opacity: .5;
 }
 
-.houseccloudyBg {
+.houseCloudyBg {
     width: 6.2rem;
     height: 11.36rem;
     position: absolute;
@@ -203,7 +264,6 @@ body {
     opacity: 1;
     background: url("../imags/littleBoyStand.png") no-repeat center;
     background-size: 100% 100%;
-
 }
 
 .littleMan1.trans1 {
@@ -248,7 +308,7 @@ body {
     background-size: 100% 100%;
     /*border: 1px solid yellow;*/
 }
-.speakBox_say3_p{
+.speakBox_say3_p,.speakBox_say3_p1,.speakBox_say3_p2{
     width: 1rem;
     height: .5rem;
     position: absolute;
@@ -261,6 +321,9 @@ body {
     font-size: .12rem;
     color: #000000;
     text-align: center;
+}
+.speakBox_say3_p1,.speakBox_say3_p2{
+    display: none;
 }
 .speakBox_say2{
     width: .4rem;
@@ -314,20 +377,20 @@ body {
 }
 
 .box1 {
-    background: #ffffff;
+    background: #dfffbc;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
 
 .box2 {
-    background: #e7e7e7;
+    background: #dfffbc;
     opacity: 0.5;
     transform: translateZ(-3.2rem);
     -webkit-transform: translateZ(-3.2rem);
 }
 
 .box3 {
-    /*background: #ff5845;*/
+    background: #dfffbc;
     transform-origin: right;
     -webkit-transform-origin: right;
     transform: rotateY(-90deg);
@@ -335,7 +398,7 @@ body {
 }
 
 .box4 {
-    /*background: #378fff;*/
+    background: #dfffbc;
     transform-origin: left;
     -webkit-transform-origin: left;
     transform: rotateY(90deg);
@@ -387,7 +450,7 @@ body {
 
 .doorOfTop {
     width: 3.2rem;
-    height: 1.7rem;
+    height: 1.2rem;
     background-size: 100% 100%;
     /*position: absolute;*/
     /*top: .01rem;*/
@@ -395,31 +458,33 @@ body {
 
 .doorOfTop_box {
     width: 3.2rem;
-    height: 1.7rem;
+    height: 1.2rem;
     background: url("../imags/doorTop.png") no-repeat center;
     background-size: 100% 100%;
 }
 
 .doorOfBody_flag, .doorOfBody_flag1 {
     width: 3.2rem;
-    height: 3.98rem;
+    height: 4.48rem;
     position: absolute;
 }
 
 .doorOfBody_flag_left, .doorOfBody_flag_right {
     width: 1.6rem;
-    height: 3.98rem;
+    height: 4.48rem;
     position: absolute;
     top: 0;
 }
 
 .doorOfBody_flag_left {
-    /*background: url("../imags/door-left.png") center;*/
+    background: url("../imags/door-left.png") center;
+    background-size: 100% 100%;
 }
 
 .doorOfBody_flag_right {
     left: 1.6rem;
-    /*background: url("../imags/door-right.png") center;*/
+    background: url("../imags/door-right.png") center;
+    background-size: 100% 100%;
 }
 
 /*---------3D盒子结束----------*/
