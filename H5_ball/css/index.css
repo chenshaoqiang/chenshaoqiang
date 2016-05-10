@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: .16rem;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img {
+    border-style: none;
+}
+html{
+    font-size: 100px;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    width: 6.4rem;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+#topIndex{
+    width: 6.4rem;
+    height: .9rem;
+    background: #2a282c;
+}
+#topIndex_ul{
+    width: 100%;
+    height: .9rem;
+}
+#topIndex_ul li{
+    height: 100%;
+    width: 33%;
+    float: left;
+    position: relative;
+}
+.topIndex_ul_icon1{
+    width: .22rem;
+    height: .38rem;
+    position: absolute;
+    top: 50%;
+    margin-left: .2rem;
+    margin-top: -0.19rem;
+}
+.topIndex_ul_icon2{
+    width: .57rem;
+    height: .28rem;
+    position: absolute;
+    top: 50%;
+    margin-left: .52rem;
+    margin-top: -0.14rem;
+}
+.topIndex_ul_icon3{
+    width: 2.5rem;
+    height: .34rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.25rem;
+    margin-top: -0.17rem;
+}
+.topIndex_ul_icon4{
+    width: .42rem;
+    height: .1rem;
+    position: absolute;
+    top: 50%;
+    margin-left: 1.35rem;
+    margin-top: -0.05rem;
+}
+#midImg{
+    width: 6.4rem;
+    height: 4.5rem;
+    background: url("../imags/bgImag.png") no-repeat ;
+    background-size: 6.4rem 4.5rem;
+    position: relative;
+}
+#midImg_messageBox{
+    width: 5.2rem;
+    height: 2.64rem;
+    position: relative;
+    left: 50%;
+    margin-left: -2.6rem;
+}
+.midImg_messageBox_ul{
+    width: 100%;
+    height: 100%;
+}
+.midImg_messageBox_ul li{
+    width: 100%;
+    height: .88rem;
+}
+.midImg_messageBox_USicon,.midImg_messageBox_JPicon{
+    width: .86rem;
+    height: .86rem;
+}
+.midImg_messageBox_JPicon{
+    float: right;
+}
+.midImg_messageBox_p1{
+    width: 2.6rem;
+    height: .88rem;
+    line-height: 0.88rem;
+    font-size: .7rem;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.3rem;
+    margin-top: -.44rem;
+}
+.midImg_messageBox_p2{
+    width: 5.2rem;
+    height: .88rem;
+    line-height: .88rem;
+    color: #ffffff;
+    font-size: .20rem;
+    text-align: center;
+}
+.midImg_messageBox_ul li:nth-child(2){
+    position: relative;
+}
+.midImg_messageBox_ul li:nth-child(3){
+    position: relative;
+}
+#showBack{
+    width: 1.6rem;
+    height: .4rem;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -.8rem;
+    border-radius: .05rem;
+}
+.showBack_font{
+    height: .23rem;
+    width: .96rem;
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    margin-top: -0.115rem;
+}
+.showBack_icon{
+    height: .17rem;
+    width: .15rem;
+    position: absolute;
+    top: 50%;
+    margin-left: 80%;
+    margin-top: -0.085rem;
+}
+#imgBotMessage{
+    width: 6.4rem;
+    height: .75rem;
+    position: absolute;
+    top: 83.3%;
+    border-top: 0.01rem solid #ffffff;
+}
+.imgBotMessage_left,.imgBotMessage_right{
+    width: 3.19rem;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.imgBotMessage_icon1{
+    width: .3rem;
+    height: .4rem;
+    position: absolute;
+    top: 40%;
+    margin-left: .35rem;
+    margin-top: -.15rem;
+}
+.imgBotMessage_icon2{
+    height: .3rem;
+    position: absolute;
+    top: 50%;
+    margin-left: 1.04rem;
+    margin-top: -.15rem;
+    color: #ffffff;
+    font-size: .4rem;
+    font-weight: bold;
+}
+.imgBotMessage_icon3{
+    height: .3rem;
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    margin-top: -.15rem;
+}
+.imgBotMessage_icon4{
+    width: .3rem;
+    height: .4rem;
+    position: absolute;
+    top: 40%;
+    margin-left: 2.5rem;
+    margin-top: -.15rem;
+}
+.imgBotMessage_mid{
+    float: left;
+    line-height: .8rem;
+    color: #ffffff;
+    height: 100%;
+    width: .01rem;
+    font-size: .3rem;
+}
+#gameDate{
+    width: 6.4rem;
+    height: 3.5rem;
+    background: #f0f0f0;
+}
+.gameDate_list{
+    width: 93.75%;
+    height: 100%;
+    margin: 0 auto;
+}
+.gameDate_list li{
+    width: 100%;
+    height: .7rem;
+    border-bottom: .01rem solid #d7d7d7;
+    box-sizing: border-box;
+}
+.gameDate_list_p1{
+    color: #818283;
+    font-size: .28rem;
+    line-height: 0.9rem;
+    font-weight: bold;
+}
+.gameDate_list_p2,.gameDate_list_p3{
+    text-align: center;
+    width: 1.3rem;
+    height: 100%;
+    float: left;
+    color: #313131;
+    font-size: .38rem;
+    line-height: 0.7rem;
+    font-weight: bold;
+}
+.gameDate_list_p3{
+    width: 3.4rem;
+    font-size: .28rem;
+    color: #797979;
+}
+.gameDate_list li:nth-child(1){
+    border: 0;
+}
+.anotherWrap{
+    width: 100%;
+    height: 7.95rem;
+    background: #f0f0f0;
+    float: left;
+}
+.anotherWrap_box{
+    width: 93.75%;
+    height: 7.95rem;
+    margin: 0 auto;
+}
+.anotherWrap_logMessage{
+    width: 100%;
+    height: 3.77rem;
+    float: left;
+}
+.anotherWrap_logMessage_p{
+    width: 100%;
+    height: .9rem;
+    float: left;
+    color: #818283;
+    font-size: .26rem;
+    line-height: .9rem;
+}
+.anotherWrap_logMessage_div{
+    width: 100%;
+    height: 2.87rem;
+    float: left;
+    position: relative;
+}
+.anotherWrap_logMessage_div_border{
+    width: 100%;
+    height: 1.434rem;
+    float: left;
+    border-bottom: .01rem solid #d7d7d7;
+    box-sizing: border-box;
+}
+.anotherWrap_logMessage_img,.anotherWrap_logMessage_img1{
+    width: 100%;
+    height: 1.2rem;
+    float: left;
+}
+.anotherWrap_logMessage_img1{
+    position: absolute;
+    top: 58.1%;
+}
+.anotherGameImages1{
+    width: 1.51rem;
+    height: 1.2rem;
+    float: left;
+}
+.anotherGameNews{
+    width: 4.33rem;
+    height: 1.2rem;
+    float: left;
+    position: relative;
+    margin-left: .15rem;
+}
+.anotherGameNews_title{
+    width: 100%;
+    height: .52rem;
+    color: #696969;
+    font-size: .3rem;
+}
+.anotherGameNews_p{
+    width: 100%;
+    height: .68rem;
+    line-height: .34rem;
+    font-size: .24rem;
+    color: #bdbfc0;
+}
+.anotherGameNews_ion{
+    width: 1.2rem;
+    height: .34rem;
+    font-size: .24rem;
+    color: #bdbfc0;
+    line-height: .5rem;
+    text-align: right;
+    position: absolute;
+    margin-top: -0.4rem;
+    margin-left: 3.13rem;
+    z-index: 5;
+}
+.bottom_wrap{
+    float: left;
+    width: 100%;
+    height: 1.35rem;
+    position: relative;
+    background: #ffffff;
+}
+.siliangImg{
+    width: .9rem;
+    height: 0.9rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.45rem;
+    margin-left: .2rem;
+}
+.more_choose{
+    float: left;
+    width: 3.7rem;
+    height: .9rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.45rem;
+    margin-left: 1.2rem;
+}
+.more_choose_p1,.more_choose_p2{
+    width: 100%;
+    height: .45rem;
+    float: left;
+    color: #696969;
+    font-size: .35rem;
+}
+.more_choose_p2{
+    font-size: .3rem;
+    color: #bdbfc0;
+}
+.downLoadBtn{
+    width: 1.2rem;
+    height: .6rem;
+    border-radius: .05rem;
+    background: #289ce9;
+    position: absolute;
+    top: 50%;
+    margin-top: -.3rem;
+    margin-left: 5rem;
+}
+.downLoadBtn_font{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: .34rem;
+    line-height: .6rem;
+    text-align: center;
+}
