@@ -38,7 +38,7 @@ body {
 
 .main {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background: #3d9ac3;
 }
 /*--------简历几个字---------*/
@@ -341,8 +341,8 @@ body {
     display: none;
     /*-----里面的3D从这里开始------*/
     -webkit-perspective: 5rem;
-    width: 3.2rem;
-    height: 5.68rem;
+    width: 100%;
+    height: 100%;
     transform-origin: left;
     position: absolute;
     top: 0;
