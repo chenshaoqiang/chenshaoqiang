@@ -21,6 +21,8 @@
     var talk_say3_p1 = document.getElementById("talk_say3_p1");//自言自语
     var talk_say3_p2 = document.getElementById("talk_say3_p2");//自言自语
     var arrow=document.getElementById("arrow");
+    var speakBox_say3_p1=document.getElementById("speakBox_say3_p1");
+    var speakBox_say3_p2=document.getElementById("speakBox_say3_p2");
     /*----------房子图标触发事件列表-----------*/
     outerHouseBgHouse.addEventListener("touchstart", HouseStart, false);
     outerHouseBgHouse.addEventListener("touchend", HouseEnd, false);
@@ -34,10 +36,11 @@
         if(hammerIcon.style.display=="none"){
             outerHouseBgHouse.style.opacity=1;//小房子变清晰
             contrlDiplay.style.display="none";//人和对话框消失
+            arrow.style.display="none";
             clearInterval(speakBox_say2.timer);//清除一个个定时器
             clearInterval(speakBox_say1.timer);
             clearInterval(speakBox.timer);
-
+            clearInterval(speakBox_say3.timer);
         }else{
             console.log("点击了房子,但锤子还在哦");
         }
@@ -84,6 +87,13 @@
                         speakBox_say2.style.display="block";
                         speakBox_say2.timer=window.setTimeout(function(){
                             speakBox_say3.style.display="block";
+                            speakBox_say3_p1.style.display="block";
+                            speakBox_say3.timer=window.setTimeout(function(){
+                                speakBox_say3_p1.style.display="none";
+                                speakBox_say3_p2.style.display="block";
+                                utils.addClass(arrow,"autoArrow");
+                                arrow.style.display="block";
+                            },4000);
                         },300);
                     },600);
                 },600);
