@@ -63,6 +63,7 @@
     function hammerStart(ev) {
         console.log("点击了锤子");
         clearInterval(hammerIcon.timer);
+        arrow.style.display="none";
         ev.preventDefault();
     }
     function hammerEnd(ev) {

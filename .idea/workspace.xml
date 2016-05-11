@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/css/index.css" afterPath="$PROJECT_DIR$/H51/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/index.html" afterPath="$PROJECT_DIR$/H51/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/js/outerHouse.js" afterPath="$PROJECT_DIR$/H51/js/outerHouse.js" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -58,8 +56,8 @@
       <file leaf-file-name="outerHouse.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/H51/js/outerHouse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71746576">
-              <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.33904108">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -603,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/H51/js/outerHouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71746576">
-          <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.33904108">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
           <folding />
         </state>
       </provider>
