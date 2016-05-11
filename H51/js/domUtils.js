@@ -188,13 +188,11 @@ utils.setCss = function setCss(curEle, attr, value) {
     }
     curEle["style"][attr] = value;
 };
-
 utils.setGroupCss = function setGroupCss(curEle, options) {
     //->首先检测传递进来的options是否是一个纯粹的对象,不是的话,就没有必要在往下执行对应的操作了
     if (Object.prototype.toString.call(options) !== "[object Object]") {
         return;
     }
-
     //->如果是的话,我们遍历每一项,在分别的调用setCss设置即可
     for (var key in options) {
         if (options.hasOwnProperty(key)) {
