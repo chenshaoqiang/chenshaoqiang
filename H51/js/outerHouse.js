@@ -14,7 +14,12 @@
     var speakBox_say1 = document.getElementById("speakBox_say1");//对话框3
     var contrlDiplay = document.getElementById("contrlDiplay");//控制人和对话框的显示的盒子
     //var wrapBox = document.getElementById("wrapBox");//整体3D
-
+    /*------------------*/
+    var talk = document.getElementById("talk");//自言自语
+    var talk_say3 = document.getElementById("talk_say3");//自言自语
+    var talk_say2 = document.getElementById("talk_say2");//自言自语
+    var talk_say3_p1 = document.getElementById("talk_say3_p1");//自言自语
+    var talk_say3_p2 = document.getElementById("talk_say3_p2");//自言自语
     /*----------房子图标触发事件列表-----------*/
     outerHouseBgHouse.addEventListener("touchstart", HouseStart, false);
     outerHouseBgHouse.addEventListener("touchend", HouseEnd, false);
@@ -86,11 +91,7 @@
         }
     }
     /*-------------------------*/
-    var talk = document.getElementById("talk");//自言自语
-    var talk_say3 = document.getElementById("talk_say3");//自言自语
-    var talk_say2 = document.getElementById("talk_say2");//自言自语
-    var talk_say3_p1 = document.getElementById("talk_say3_p1");//自言自语
-    var talk_say3_p2 = document.getElementById("talk_say3_p2");//自言自语
+
     talk_say2.timer= window.setTimeout(function(){
         talk_say2.style.display="block";
         talk_say3.timer= window.setTimeout(function(){
@@ -102,5 +103,4 @@
             },3000);
         },500);
     },1000);
-
 })();
