@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/css/index.css" afterPath="$PROJECT_DIR$/H51/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/js/index.js" afterPath="$PROJECT_DIR$/H51/js/index.js" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,14 +46,9 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/H51/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43493152">
-              <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-              <folding>
-                <element signature="e#789#925#0" expanded="false" />
-                <element signature="e#946#1021#0" expanded="false" />
-                <element signature="e#1057#1212#0" expanded="false" />
-                <element signature="e#1213#1553#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.05650685">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -387,12 +381,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <element signature="e#789#925#0" expanded="false" />
-            <element signature="e#946#1021#0" expanded="false" />
-            <element signature="e#1057#1212#0" expanded="false" />
-            <element signature="e#1213#1553#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -562,14 +551,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/H51/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43493152">
-          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-          <folding>
-            <element signature="e#789#925#0" expanded="false" />
-            <element signature="e#946#1021#0" expanded="false" />
-            <element signature="e#1057#1212#0" expanded="false" />
-            <element signature="e#1213#1553#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.05650685">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
