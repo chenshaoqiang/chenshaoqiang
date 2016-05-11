@@ -107,6 +107,8 @@ body {
     position: absolute;
     top: -50%;
     left: -50%;
+    background: url("../imags/cloudyBg.jpg")no-repeat center center;
+    background-size: 100% 100%;
 }
 .outerHouseBg1 {
     width: 6.2rem;
