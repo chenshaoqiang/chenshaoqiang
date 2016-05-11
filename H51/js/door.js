@@ -1,4 +1,3 @@
-/*
 var doorBg1 = document.getElementById("doorOfBody_flag1");//外面的门
 var doorBgLeft1 = document.getElementById("doorOfBody_flag_left1");//外面的左门
 var doorBgRight1 = document.getElementById("doorOfBody_flag_right1");//外面的右门
@@ -11,7 +10,7 @@ var box1 = document.getElementById("box1");//正面的墙
 var box2 = document.getElementById("box2");//里、正面的墙
 var box3 = document.getElementById("box3");//里、右侧的墙
 var box4 = document.getElementById("box4");//里、左侧的墙
-/!*----------事件列表-----------*!/
+/*----------事件列表-----------*/
 doorBg1.addEventListener("touchstart", start1, false);
 doorBg1.addEventListener("touchend", end1, false);
 
@@ -27,7 +26,7 @@ box3.addEventListener("touchend", end3, false);
 box2.addEventListener("touchstart", start4, false);
 box2.addEventListener("touchend", end4, false);
 
-/!*-------两扇门的事件---------*!/
+/*-------两扇门的事件---------*/
 function start1(ev) {
     console.log("点到外门了");
     window.clearInterval(doorBg1.timer);
@@ -45,7 +44,7 @@ function end1(ev) {
     doorBgRight1.style.webkitTransform = "rotateY(-90deg)";
     doorBgRight1.style.webkitTransition = "4s";
 }
-/!*---------里面正面的门-----------*!/
+/*---------里面正面的门-----------*/
 function start5(ev) {
     console.log("点到里门了");
     clearInterval(doorBg2.timer);
@@ -69,7 +68,7 @@ function end5(ev) {
     doorBgRight2.style.webkitTransition = "2s";
 
 }
-/!*---------左侧墙的事件---------*!/
+/*---------左侧墙的事件---------*/
 function start2(ev) {
     console.log("点到左边的墙了");
     box.style.webkitTransformOrigin = "left";
@@ -101,7 +100,7 @@ function end2(ev) {
         }, 1000);
     }
 }
-/!*----------右侧墙的事件----------*!/
+/*----------右侧墙的事件----------*/
 function start3(ev) {
     console.log("点到右边的墙了");
     box.style.webkitTransformOrigin = "right";
@@ -132,7 +131,7 @@ function end3(ev) {
         }, 1000);
     }
 }
-/!*-----------里，正面墙壁的事件-----------*!/
+/*-----------里，正面墙壁的事件-----------*/
 function start4(ev) {
     console.log("点到里面正面的墙了");
     clearInterval(box2.timer);
@@ -156,4 +155,3 @@ function end4(ev) {
 
 
 
-*/

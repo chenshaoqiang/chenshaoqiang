@@ -13,7 +13,8 @@
     var speakBox_say2 = document.getElementById("speakBox_say2");//对话框3
     var speakBox_say1 = document.getElementById("speakBox_say1");//对话框3
     var contrlDiplay = document.getElementById("contrlDiplay");//控制人和对话框的显示的盒子
-    //var wrapBox = document.getElementById("wrapBox");//整体3D
+    var wrapBox = document.getElementById("wrapBox");//整体3D
+    var wrap_outer = document.getElementById("wrap_outer");
     /*------------------*/
     var talk = document.getElementById("talk");//自言自语
     var talk_say3 = document.getElementById("talk_say3");//自言自语
@@ -55,9 +56,9 @@
             outerHouseBg2.timer = window.setTimeout(function () {
                 outerHouseBgHouse.style.display="none";
                 wrapBox.style.display="block";
-                outerHouseBg2.style.webkitTransform = "translateZ(-3.2rem) translateY(3rem)";
+                outerHouseBg2.style.display="none";
+                outerHouse.style.display="none";
             }, 3000);
-
         }else{
             console.log("点击了房子,但锤子还在哦");
         }
