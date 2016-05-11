@@ -246,10 +246,10 @@ body {
     display: none;
 }
 .arrow.autoArrow{
-    top: 1.5rem;
-    left: 2.3rem;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    top: 2.5rem;
+    left: 1.5rem;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
     -webkit-animation: 2s 0s infinite autoArrow;
     animation: 2s 0s infinite autoArrow;
     -webkit-animation-fill-mode: both;
@@ -257,18 +257,18 @@ body {
 }
 @-webkit-keyframes autoArrow {
     0% {
-        -webkit-transform:rotate(180deg) scale(1);
-        transform:rotate(180deg) scale(1);
+        -webkit-transform:rotate(-60deg) scale(1);
+        transform:rotate(-60deg) scale(1);
         opacity: 0;
     }
     50% {
-        -webkit-transform:rotate(180deg) scale(1) translateX(.2rem);
-        transform:rotate(180deg) scale(1) translateX(.2rem);
+        -webkit-transform:rotate(-60deg) scale(1) translateX(.2rem);
+        transform:rotate(-60deg) scale(1) translateX(.2rem);
         opacity: 0.8;
     }
     100% {
-        -webkit-transform:rotate(180deg) scale(1.1) translateX(.2rem);
-        transform:rotate(180deg) scale(1.4) translateX(.2rem);
+        -webkit-transform:rotate(-60deg) scale(1.1) translateX(.2rem);
+        transform:rotate(-60deg) scale(1.4) translateX(.2rem);
         opacity: 0;
     }
 }
