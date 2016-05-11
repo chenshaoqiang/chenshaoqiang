@@ -32,6 +32,7 @@ body {
 }
 .main {
     width: 100%;
+    height: 100%;
     background: #3d9ac3;
 }
 .wrap_outer{
@@ -79,16 +80,16 @@ body {
     }
 }
 /*---------------------------*/
-/*.outerHouse {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*/!*-webkit-perspective: 5rem;*!/*/
-    /*transform-style: preserve-3d;*/
-    /*-webkit-transform-style: preserve-3d;*/
-    /*overflow: hidden;*/
-    /*background: yellow;*/
-/*}*/
+.outerHouse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-perspective: 5rem;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    overflow: hidden;
+    background: yellow;
+}
 
