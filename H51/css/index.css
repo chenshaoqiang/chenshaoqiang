@@ -130,7 +130,7 @@ body {
     height: 1.2rem;
     position: absolute;
     top: 2.8rem;
-    left: 1.5rem;
+    left: 45%;
     background: url("../imags/littleBoy.PNG") no-repeat;
     background-size: 100% 100%;
     opacity: .5;
