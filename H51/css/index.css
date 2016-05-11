@@ -131,8 +131,8 @@ body {
     width: 1.5rem;
     height: 1.2rem;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 2.8rem;
+    left: 1.5rem;
     background: url("../imags/littleBoy.PNG") no-repeat;
     background-size: 100% 100%;
     opacity: .5;
@@ -141,7 +141,7 @@ body {
     display: block;
     width: 1.34rem;
     height: 1.58rem;
-    top: 40%;
+    top: 2.3rem;
     opacity: 1;
     background: url("../imags/littleBoyStand.png") no-repeat;
     background-size: 100% 100%;
@@ -167,11 +167,12 @@ body {
     }
 }
 .speakBox{
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 1.2rem;
+    left: .2rem;
+    border: 1px solid red;
     display: block;
 }
 .speakBox_say3{
