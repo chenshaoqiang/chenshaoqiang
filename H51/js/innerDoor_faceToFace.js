@@ -7,7 +7,6 @@ var winW = document.documentElement.clientWidth;
 var winH = document.documentElement.clientHeight;
 
 var oLis = document.querySelectorAll("#list>li");
-//console.log(oLis);
 [].forEach.call(oLis, function () {
     var oLi = arguments[0];
     oLi.index = arguments[1];

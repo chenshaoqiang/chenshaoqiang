@@ -397,8 +397,8 @@ body {
 .box2 {
     background: #dfffbc;
     opacity: 0.5;
-    transform: translateZ(-3.2rem);
-    -webkit-transform: translateZ(-3.2rem);
+    transform: translateZ(-3.1rem);
+    -webkit-transform: translateZ(-3.1rem);
 }
 
 .box3 {
@@ -448,8 +448,8 @@ body {
     width: 100%;
     height: 5.68rem;
     position: fixed;
-    transform: translateZ(-3.2rem);
-    -webkit-transform: translateZ(-3.2rem);
+    transform: translateZ(-3.1rem);
+    -webkit-transform: translateZ(-3.1rem);
 }
 
 .partsOfdoor_noTrans {
