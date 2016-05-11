@@ -170,7 +170,6 @@ body {
     position: absolute;
     top: 1.2rem;
     left: .2rem;
-    border: 1px solid red;
     display: none;
 }
 .speakBox_say3{
@@ -181,7 +180,6 @@ body {
     display: none;
     background: url("../imags/say3.png")no-repeat center;
     background-size: 100% 100%;
-    /*border: 1px solid yellow;*/
 }
 .speakBox_say3_p,.speakBox_say3_p1,.speakBox_say3_p2{
     width: 1rem;
@@ -233,7 +231,6 @@ body {
     color: #FFFFFF;
     font-size: .16rem;
     z-index: 5;
-    border: 1px solid red;
 }
 .arrow_img1{
     width: 1rem;
@@ -263,6 +260,51 @@ body {
         -webkit-transform: scale(1.1) translateX(.2rem);
         transform: scale(1.4) translateX(.2rem);
         opacity: 0;
+    }
+}
+/*------------------*/
+.hammerIcon{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 49%;
+    margin-left: -.9rem;
+    z-index: 5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform:rotate(-90deg) ;
+    transform:rotate(-90deg) ;
+    display: block;
+}
+.hammerIcon_img{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    opacity: .5;
+}
+.hammerIcon.hammer{
+    -webkit-animation: .5s 0s 2 hammer;
+    animation: .5s 0s 2 hammer;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes hammer {
+    0% {
+        -webkit-transform:rotate(-90deg) ;
+        transform:rotate(-90deg) ;
+
+    }
+    50% {
+        -webkit-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+
+    }
+    100% {
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+
     }
 }
 
