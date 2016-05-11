@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/js/outerHouse.js" afterPath="$PROJECT_DIR$/H51/js/outerHouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/css/index.css" afterPath="$PROJECT_DIR$/H51/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H51/index.html" afterPath="$PROJECT_DIR$/H51/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,18 +28,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/H51/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6904762">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state vertical-scroll-proportion="-4.2619047">
+              <caret line="57" column="59" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/H51/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="235" column="1" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.49143836">
+              <caret line="229" column="23" selection-start-line="229" selection-start-column="23" selection-end-line="229" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -53,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outerHouse.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="outerHouse.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/H51/js/outerHouse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33904108">
-              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -124,9 +126,9 @@
         <option value="$PROJECT_DIR$/H51/js/index.js" />
         <option value="$PROJECT_DIR$/H5/index.html" />
         <option value="$PROJECT_DIR$/H5/css/index.css" />
+        <option value="$PROJECT_DIR$/H51/js/outerHouse.js" />
         <option value="$PROJECT_DIR$/H51/index.html" />
         <option value="$PROJECT_DIR$/H51/css/index.css" />
-        <option value="$PROJECT_DIR$/H51/js/outerHouse.js" />
       </list>
     </option>
   </component>
@@ -273,7 +275,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/H5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -583,26 +585,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H51/css/index.css">
+    <entry file="file://$PROJECT_DIR$/H51/js/outerHouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="1" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
+          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/H51/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6904762">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state vertical-scroll-proportion="-4.2619047">
+          <caret line="57" column="59" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H51/js/outerHouse.js">
+    <entry file="file://$PROJECT_DIR$/H51/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33904108">
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.49143836">
+          <caret line="229" column="23" selection-start-line="229" selection-start-column="23" selection-end-line="229" selection-end-column="23" />
           <folding />
         </state>
       </provider>

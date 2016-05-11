@@ -213,6 +213,28 @@ body {
     left: 1.1rem;
     display: none;
 }
+.speakBox_say3_p.autoAnima{
+    -webkit-animation: 2s 0s infinite autoAnima;
+    animation: 2s 0s infinite autoAnima;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes autoAnima {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #699f00;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 /*------------*/
 .arrow{
     width: .5rem;
