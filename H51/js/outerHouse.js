@@ -20,6 +20,7 @@
     var talk_say2 = document.getElementById("talk_say2");//自言自语
     var talk_say3_p1 = document.getElementById("talk_say3_p1");//自言自语
     var talk_say3_p2 = document.getElementById("talk_say3_p2");//自言自语
+    var arrow=document.getElementById("arrow");
     /*----------房子图标触发事件列表-----------*/
     outerHouseBgHouse.addEventListener("touchstart", HouseStart, false);
     outerHouseBgHouse.addEventListener("touchend", HouseEnd, false);
@@ -91,7 +92,6 @@
         }
     }
     /*-------------------------*/
-
     talk_say2.timer= window.setTimeout(function(){
         talk_say2.style.display="block";
         talk_say3.timer= window.setTimeout(function(){
@@ -100,6 +100,7 @@
             talk_say3_p1.timer= window.setTimeout(function(){
                 talk_say3_p1.style.display="none";
                 talk_say3_p2.style.display="block";
+                arrow.style.display="block";
             },3000);
         },500);
     },1000);
