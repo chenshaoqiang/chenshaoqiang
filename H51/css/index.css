@@ -247,7 +247,7 @@ body {
 }
 .arrow.autoArrow{
     top: 1.5rem;
-    left: 2.8rem;
+    left: 2.3rem;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     -webkit-animation: 2s 0s infinite autoArrow;
