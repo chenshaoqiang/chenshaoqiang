@@ -126,6 +126,96 @@ body {
     left: 40%;
     opacity: 0.5;
 }
+/*-------------------*/
+.littleMan1,.littleMan2{
+    width: 1.5rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background: url("../imags/littleBoy.PNG") no-repeat;
+    background-size: 100% 100%;
+    opacity: .5;
+}
+.littleMan2{
+    display: block;
+    width: 1.34rem;
+    height: 1.58rem;
+    top: 40%;
+    opacity: 1;
+    background: url("../imags/littleBoyStand.png") no-repeat;
+    background-size: 100% 100%;
+}
+.littleMan1.trans1 {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: box;
+    /*用于测试的选择器*/
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes box {
+    0% {
+        -webkit-transform: translateZ(0);
+    }
+    50%{
+        -webkit-transform: translateZ(-.1rem);
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+    }
+}
+.speakBox{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: block;
+}
+.speakBox_say3{
+    width: 1.4rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: url("../imags/say3.png")no-repeat center;
+    background-size: 100% 100%;
+    /*border: 1px solid yellow;*/
+}
+.speakBox_say3_p,.speakBox_say3_p1,.speakBox_say3_p2{
+    width: 1rem;
+    height: .5rem;
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: .12rem;
+    color: #000000;
+    text-align: center;
+}
+.speakBox_say3_p1,.speakBox_say3_p2{
+    display: none;
+}
+.speakBox_say2{
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    top: 1rem;
+    left: .8rem;
+    display: block;
+}
+.speakBox_say1{
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.1rem;
+    display: block;
+}
 
 
 

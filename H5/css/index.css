@@ -259,7 +259,6 @@ body {
     background: url("../imags/littleBoyStand.png") no-repeat center;
     background-size: 100% 100%;
 }
-
 .littleMan1.trans1 {
 
     -webkit-animation-duration: 2s;
@@ -271,7 +270,6 @@ body {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-
 @-webkit-keyframes box {
     0% {
         -webkit-transform: translateZ(0);
