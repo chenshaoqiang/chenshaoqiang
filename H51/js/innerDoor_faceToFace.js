@@ -1,4 +1,5 @@
-/*--------上下滑动模块---------*/
+/*
+/!*--------上下滑动模块---------*!/
 
 var main = document.getElementById("faceToFaceDoor");
 var sourceW = 320;
@@ -69,4 +70,4 @@ function end(ev) {
         }, false);
         this.flag = false;
     }
-}
+}*/
