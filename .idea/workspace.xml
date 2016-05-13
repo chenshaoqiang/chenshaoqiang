@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="" />
+    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5_forMyGirl/css/index.css" afterPath="$PROJECT_DIR$/H5_forMyGirl/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5_forMyGirl/js/index.js" afterPath="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
+    </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/H5_forMyGirl/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8173432">
-              <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+            <state vertical-scroll-proportion="-1.9047619">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -35,17 +38,17 @@
         <entry file="file://$PROJECT_DIR$/H5_forMyGirl/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="208" column="12" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="12" />
+              <caret line="166" column="19" selection-start-line="166" selection-start-column="19" selection-end-line="166" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="innerDoor_faceToFace.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/innerDoor_faceToFace.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8869863">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -83,10 +86,10 @@
         <option value="$PROJECT_DIR$/H5_ball/js/index.js" />
         <option value="$PROJECT_DIR$/H5_ball/index.html" />
         <option value="$PROJECT_DIR$/H5_ball/css/index.css" />
-        <option value="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
         <option value="$PROJECT_DIR$/H5_forMyGirl/index.html" />
-        <option value="$PROJECT_DIR$/H5_forMyGirl/css/index.css" />
         <option value="$PROJECT_DIR$/H5_forMyGirl/js/innerDoor_faceToFace.js" />
+        <option value="$PROJECT_DIR$/H5_forMyGirl/css/index.css" />
+        <option value="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
       </list>
     </option>
   </component>
@@ -514,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H5/js/outerHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H5/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -671,22 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2260274">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="208" column="12" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/innerDoor_faceToFace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -695,10 +675,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/H5/js/outerHouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8869863">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="19" selection-start-line="166" selection-start-column="19" selection-end-line="166" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/H5_forMyGirl/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8173432">
-          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+        <state vertical-scroll-proportion="-1.9047619">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8869863">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding />
         </state>
       </provider>

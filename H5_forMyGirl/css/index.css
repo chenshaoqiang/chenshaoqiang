@@ -164,7 +164,7 @@ body{
     left: 50%;
     margin-left: -.9rem;
     margin-top: -1.05rem;
-    display: none;
+    display: block;
     border-radius: .1rem;
 }
 .background_img1.select{
