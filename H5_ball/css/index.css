@@ -29,7 +29,7 @@ body{
 }
 .wrap{
     width: 100%;
-    height: 5.7rem;
+    height: 5.8rem;
     position: absolute;
 }
 .wrap.auto1{
@@ -124,7 +124,7 @@ body{
 }
 .firstpage_green{
     width: 100%;
-    height: 5.6rem;
+    height: 5.8rem;
     opacity: .1;
 }
 .firstpage_green.auto2{
