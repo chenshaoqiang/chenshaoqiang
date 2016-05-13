@@ -29,7 +29,7 @@ function end1(ev){
         utils.addClass(background_img1,"select");
         background_p1.timer=window.setTimeout(function(){
             background_p1.style.display="block";
-        },1000);
+        },300);
         console.log(imgWidth,bgWidth);
     }else if(imgWidth==bgWidth){
         list.style.display="block";
