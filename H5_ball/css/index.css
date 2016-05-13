@@ -28,3 +28,71 @@ body{
     background: url("../imags/lov.png")no-repeat center center;
     background-size: 100% 100%;
 }
+.firstpage{
+    width: 100%;
+}
+.firstpage_img1{
+    width: 1.5rem;
+    height: .4rem;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -.75rem;
+    background: url("../imags/name.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.firstpage_img1.autoAni1{
+    -webkit-animation: 1s 0s infinite title;
+    animation: 1s 0s infinite title;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.firstpage_img2.autoAni2{
+    -webkit-animation: 5s 0s infinite title1;
+    animation: 5s 0s infinite title1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes title1 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes title {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.firstpage_img2{
+    width: 1.3rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -.6rem;
+}
