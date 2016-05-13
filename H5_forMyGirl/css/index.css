@@ -33,8 +33,8 @@ body{
     position: absolute;
 }
 .wrap.auto1{
-    -webkit-animation: 10s 4s infinite auto1;
-    animation: 10s 4s infinite auto1;
+    -webkit-animation: 10s 4s 1 auto1;
+    animation: 10s 4s 1 auto1;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -49,8 +49,7 @@ body{
         opacity: 0.6;
     }
     100% {
-        opacity: 0.1;
-        display: none;
+        opacity: 0;
     }
 }
 .firstpage{
@@ -159,7 +158,6 @@ body{
 .background_img1{
     width:1.75rem;
     height: 2.1rem;
-    opacity: .5;
     position: absolute;
     top: 50%;
     left: 50%;

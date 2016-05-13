@@ -14,16 +14,10 @@ var wrap=document.getElementById("wrap");
 var list=document.getElementById("list");
 var opa=getComputedStyle(firstpage_green,null);
 firstpage_green.timer=window.setInterval(function(){
-    if(opa.opacity>=1){
         console.log("11111");
         background_img1.style.display="block";
-        background_img1.style.opacity=1;
         clearInterval(firstpage_green.timer);
-        console.log("1");
-    }else{
-        console.log(opa.opacity);
-    }
-},2000);
+},10000);
 background_img1.addEventListener("touchstart", start1, false);
 background_img1.addEventListener("touchend", end1, false);
 function start1(ev){}
