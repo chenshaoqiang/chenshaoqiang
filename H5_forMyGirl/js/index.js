@@ -12,9 +12,10 @@ var firstpage_green=document.getElementById("firstpage_green");
 var background=document.getElementById("background");
 var wrap=document.getElementById("wrap");
 var list=document.getElementById("list");
+var background_p1=document.getElementById("background_p1");
 var opa=getComputedStyle(firstpage_green,null);
 firstpage_green.timer=window.setInterval(function(){
-        console.log("11111");
+        //console.log("11111");
         background_img1.style.display="block";
         clearInterval(firstpage_green.timer);
 },10000);
@@ -26,6 +27,9 @@ function end1(ev){
     var imgWidth=getComputedStyle(background_img1,null).width;
     if(imgWidth<bgWidth){
         utils.addClass(background_img1,"select");
+        background_p1.timer=window.setTimeout(function(){
+            background_p1.style.display="block";
+        },1000);
         console.log(imgWidth,bgWidth);
     }else if(imgWidth==bgWidth){
         list.style.display="block";
