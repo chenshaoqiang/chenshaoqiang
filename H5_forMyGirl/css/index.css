@@ -50,6 +50,7 @@ body{
     }
     100% {
         opacity: 0.1;
+        display: none;
     }
 }
 .firstpage{
@@ -164,7 +165,7 @@ body{
     left: 50%;
     margin-left: -.9rem;
     margin-top: -1.05rem;
-    display: block;
+    display: none;
     border-radius: .1rem;
 }
 .background_img1.select{

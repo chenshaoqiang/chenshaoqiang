@@ -10,17 +10,13 @@ console.log(main.style.height,fontsize);
 var background_img1=document.getElementById("background_img1");
 var firstpage_green=document.getElementById("firstpage_green");
 var background=document.getElementById("background");
+var wrap=document.getElementById("wrap");
 var list=document.getElementById("list");
 var opa=getComputedStyle(firstpage_green,null);
-console.log(opa.opacity);
 firstpage_green.timer=window.setInterval(function(){
-    /*if(opa.opacity==1){
-        alert("1");
+    if(opa.opacity>=1){
+        console.log("11111");
         background_img1.style.display="block";
-        background_img1.style.opacity=1;
-        clearInterval(firstpage_green.timer);
-        console.log("1");
-    }*/if(background_img1.style.display=="block"){
         background_img1.style.opacity=1;
         clearInterval(firstpage_green.timer);
         console.log("1");
