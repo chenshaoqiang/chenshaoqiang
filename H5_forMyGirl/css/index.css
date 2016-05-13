@@ -168,11 +168,12 @@ body{
 }
 .background_p1{
     width: 50%;
-    height: 50%;
+    height: 25%;
     display: none;
     position: absolute;
     left: 50%;
     top: 50%;
+    border: 1px solid #FFFFFF;
     margin-left: -25%;
     margin-top: -25%;
     color: gold;
