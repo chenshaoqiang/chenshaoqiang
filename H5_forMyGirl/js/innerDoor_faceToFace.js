@@ -49,12 +49,12 @@ function move(ev) {
     if (changeY < 0) {//向上
         this.nextIndex = nowIndex == oLis.length - 1 ? 0 : nowIndex + 1;
         oLis[this.nextIndex].style.webkitTransform =
-            "translate(0," + ((winH + changeY)/fontSize) + "rem)";
+            "translate(0," + ((winH + changeY)/fontSize)*.6 + "rem)";
         console.log("在向上移动", "Y改变：" + changeY, "下一张：" + this.nextIndex);
     } else if ((changeY > 0)) {//向下
         this.nextIndex = nowIndex == 0 ? oLis.length - 1 : nowIndex - 1;
         oLis[this.nextIndex].style.webkitTransform =
-            "translate(0," + ((-winH + changeY)/fontSize) + "rem)";
+            "translate(0," + ((-winH + changeY)/fontSize)*.6 + "rem)";
         console.log("在向下移动", "Y改变：" + changeY, "下一张：" + this.nextIndex);
     }
     oLis[this.nextIndex].className = "zIndex";

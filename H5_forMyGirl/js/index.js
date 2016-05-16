@@ -15,9 +15,7 @@ var list = document.getElementById("list");
 var background_p1 = document.getElementById("background_p1");
 var opa = getComputedStyle(firstpage_green, null);
 firstpage_green.timer = window.setInterval(function () {
-    //console.log("11111");
     background_img1.style.display = "block";
-    background_p1.style.display = "block";
     clearInterval(firstpage_green.timer);
 }, 10000);
 background_img1.addEventListener("touchstart", start1, false);
@@ -27,10 +25,12 @@ function start1(ev) {
 function end1(ev) {
     var bgWidth = getComputedStyle(background, null).width;
     var imgWidth = getComputedStyle(background_img1, null).width;
-    if (imgWidth < bgWidth) {
+    if (getComputedStyle(background_p1, null).display == "none") {
         utils.addClass(background_img1, "select");
+        background_p1.style.display = "block";
         console.log(imgWidth, bgWidth);
-    } else if (imgWidth == bgWidth) {
+    }else if(getComputedStyle(background_p1, null).display == "block"){
+        console.log("111");
         list.style.display = "block";
     }
 }
