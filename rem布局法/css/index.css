@@ -19,15 +19,14 @@ html{
 ul,li{
     list-style: none;
 }
-body{
-    width: 6.4rem;
+html,body{
+    width: 100%;
 }
 #main{
     width: 100%;
-    height: 100%;
 }
 #topIndex{
-    width: 6.4rem;
+    width: 100%;
     height: .9rem;
     background: #2a282c;
 }
@@ -75,10 +74,10 @@ body{
     margin-top: -0.05rem;
 }
 #midImg{
-    width: 6.4rem;
+    width: 100%;
     height: 4.5rem;
     background: url("../imags/bgImag.png") no-repeat ;
-    background-size: 6.4rem 4.5rem;
+    background-size: 100% 100%;
     position: relative;
 }
 #midImg_messageBox{
@@ -155,7 +154,7 @@ body{
     margin-top: -0.085rem;
 }
 #imgBotMessage{
-    width: 6.4rem;
+    width: 100%;
     height: .75rem;
     position: absolute;
     top: 83.3%;
@@ -209,7 +208,7 @@ body{
     font-size: .3rem;
 }
 #gameDate{
-    width: 6.4rem;
+    width: 100%;
     height: 3.5rem;
     background: #f0f0f0;
 }
