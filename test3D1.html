@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapBox {
+            width: 600px;
+            height: 600px;
+            margin: 10px auto;
+            -webkit-perspective: 1500px;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -200px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform-origin: 200px 200px -200px;
+            transform-origin: 200px 200px -200px;
+            -webkit-animation: box 20s infinite 0s;
+        }
+        .box div {
+            width: 100%;
+            height: 100%;
+            font-size: 150px;
+            text-align: center;
+            line-height: 400px;
+            position: absolute;
+            opacity: 0.5;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+        }
+
+        .box div:nth-child(1) {
+            /*第一张让它作为正面的，不旋转也不移动*/
+            background: #27e8e8;
+            transform: translateZ(0);
+            -webkit-animation: box1 20s infinite 0s;
+        }
+
+        .box div:nth-child(2) {
+            /*第二张让它作为左侧的,绕Y正转90度*/
+            background: #e2e82f;
+            transform-origin: left;
+            -webkit-animation: box2 20s infinite 0s;
+        }
+
+        .box div:nth-child(3) {
+            /*第三张让它作为下面的，绕X正转90度*/
+            background: #e83532;
+            transform-origin: bottom;
+            -webkit-animation: box3 20s infinite 0s;
+            /*transform: rotateX(90deg);*/
+        }
+
+        .box div:nth-child(4) {
+            /*第四张让它作为顶部的，绕X逆向转90度*/
+            background: #9a20e8;
+            transform-origin: top;
+            -webkit-animation: box4 20s infinite 0s;
+            /*transform: rotateX(-90deg);*/
+        }
+
+        .box div:nth-child(5) {
+            /*第五张让它作为右边的，绕Y逆向转90度*/
+            background: #e80ce2;
+            transform-origin: right;
+            -webkit-animation: box5 20s infinite 0s;
+            /*transform: rotateY(-90deg);*/
+        }
+
+        .box div:nth-child(6) {
+            /*第六张让它作为对面的，不旋转但沿着河Z移动400px*/
+            background: #2b23e8;
+            /*transform: translateZ(-400px);*/
+            -webkit-animation: box6 30s infinite 0s;
+        }
+
+        @-webkit-keyframes box {
+            0% {
+                -webkit-transform: rotateY(0deg);
+            }
+            50%{
+                -webkit-transform: rotateY(360deg);
+            }
+            75%{
+                -webkit-transform: rotateX(0deg);
+            }
+            100% {
+                -webkit-transform: rotateX(360deg);
+            }
+        }
+
+        @-webkit-keyframes box1 {
+            0% {
+                -webkit-transform: translateZ(0px);
+            }
+            100% {
+                -webkit-transform: translateZ(-400px);
+            }
+        }
+
+        @-webkit-keyframes box2 {
+            0% {
+
+                -webkit-transform: rotateY(90deg);
+            }
+            100% {
+                -webkit-transform: rotateY(90deg) translateZ(400px);
+            }
+        }
+
+        @-webkit-keyframes box3 {
+            0% {
+                -webkit-transform: rotateX(90deg) rotateY(0deg);
+            }
+            100% {
+                -webkit-transform: rotateX(90deg) rotateY(360deg) translateZ(400px);
+            }
+        }
+
+        @-webkit-keyframes box4 {
+            0% {
+                -webkit-transform: rotateX(-90deg) rotateY(0deg);
+            }
+            100% {
+                -webkit-transform: rotateX(-90deg) rotateY(360deg) translateZ(400px);
+            }
+        }
+
+        @-webkit-keyframes box5 {
+            0% {
+                -webkit-transform: rotateY(-90deg);
+            }
+            100% {
+                -webkit-transform: rotateY(-90deg) translateZ(400px);
+            }
+        }
+        @-webkit-keyframes box6 {
+            0% {
+                -webkit-transform: translateZ(-400px);
+            }
+            100% {
+                -webkit-transform: translateZ(-400px) translateZ(400px)
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapBox">
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+</div>
+</body>
+</html>

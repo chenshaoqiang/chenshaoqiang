@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 80px;
+            color: #000000;
+            text-align: center;
+        }
+        .wrapBox{
+            -webkit-perspective: 1000px;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            margin-left: -300px;
+            /*包裹3D模型的这层可以设置视距*/
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin-left:-200px;
+            margin-top:-200px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            transform-origin: 200px 200px -200px;
+            -webkit-animation:box 5s infinite 0s;
+            /*
+            包裹几个盒子的这层，设置3D空间效果，以及旋转中心
+            */
+        }
+        .box div{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            line-height: 400px;
+            opacity: 0.4;
+            /*这些盒子一开始是堆叠在一起的*/
+        }
+        .box div:nth-child(1){
+            /*这个盒子以底边为基准，顺X轴旋转90度*/
+            background: #36ff48;
+            transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+            transform: rotateX(90deg);
+            -webkit-transform: rotateX(90deg);
+        }
+        .box div:nth-child(2){
+            /*这个盒子以顶边为基准，逆着X轴旋转90度*/
+            background:#f8ff30 ;
+            transform-origin: top;
+            -webkit-transform-origin: top;
+            transform: rotateX(-90deg);
+            -webkit-transform: rotateX(-90deg);
+        }
+        .box div:nth-child(3){
+            background:#ff5845 ;
+            transform-origin: right;
+            -webkit-transform-origin: right;
+            transform: rotateY(-90deg);
+            -webkit-transform: rotateY(-90deg);
+        }
+        .box div:nth-child(4){
+            background:#378fff ;
+            transform-origin: left;
+            -webkit-transform-origin: left;
+            transform: rotateY(90deg);
+            -webkit-transform: rotateY(90deg);
+        }
+        .box div:nth-child(5){
+            background:#f716ff ;
+            transform: translateZ(-400px);
+            -webkit-transform: translateZ(-400px);
+        }
+        .box div:nth-child(6){
+            background:#ff5a14 ;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
+
+        @-webkit-keyframes box {
+            0%{
+                -webkit-transform:rotateY(0deg) rotateX(0deg);
+            }
+            100%{
+                -webkit-transform:rotateY(720deg) rotateX(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapBox">
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+</div>
+</body>
+</html>
