@@ -181,9 +181,9 @@ html {
 .li1Child > img:nth-of-type(1), .li1Child > img:nth-of-type(2) {
     width: 16rem;
     position: absolute;
-    left: 50%;
+    left: 115%;
     margin-left: -8rem;
-    top: 2rem;
+    top: 14rem;
 }
 
 #li1_ballImg > img {
@@ -241,8 +241,8 @@ html {
 }
 
 .li1Child img.active {
-    -webkit-animation: 2s -1s infinite title;
-    animation: 2s -1s infinite title;
+    -webkit-animation: 1s -1s infinite title;
+    animation: 1s -1s infinite title;
 }
 
 @-webkit-keyframes title {
@@ -255,7 +255,7 @@ html {
         opacity: 0.8;
     }
     100% {
-        -webkit-transform: scale(1.2);
+        -webkit-transform: scale(1.8);
         opacity: 0;
     }
 }
@@ -270,7 +270,7 @@ html {
         opacity: 0.5;
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1.8);
         opacity: 0;
     }
 }
