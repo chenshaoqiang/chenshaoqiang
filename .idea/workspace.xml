@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happy/img/HappyBirthday.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happy/img/Birthday.mp3" />
+      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\HappyBirthday.mp3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/index.html" afterPath="$PROJECT_DIR$/happy/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/happy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46153846">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.34615386">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -396,7 +397,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472632944819</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="happy6t">
+      <created>1472633953620</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1472633953620</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -772,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/happy/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46153846">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.34615386">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
