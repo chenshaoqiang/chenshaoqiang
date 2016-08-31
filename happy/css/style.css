@@ -181,9 +181,9 @@ html {
 .li1Child > img:nth-of-type(1), .li1Child > img:nth-of-type(2) {
     width: 16rem;
     position: absolute;
-    left: 115%;
+    left: 120%;
     margin-left: -8rem;
-    top: 46%;
+    top: 45%;
 }
 
 #li1_ballImg > img {
