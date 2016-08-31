@@ -144,8 +144,8 @@ html {
 }
 
 #list > li:nth-of-type(1) {
-    background:url("../img/1.jpg") no-repeat;
-    background-size: 115% 90%;
+    background:url("../img/1.jpg") no-repeat center;
+    background-size: 133% 100%;
     opacity: .8;
     display: block;
 }

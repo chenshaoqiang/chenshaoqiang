@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/index.html" afterPath="$PROJECT_DIR$/happy/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/css/style.css" afterPath="$PROJECT_DIR$/happy/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -24,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/happy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34615386">
+            <state vertical-scroll-proportion="-4.9411764">
               <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/happy/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.26957637">
               <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
               <folding />
             </state>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
         <option value="$PROJECT_DIR$/rem布局法/css/index.css" />
         <option value="$PROJECT_DIR$/H5_forMyGirl/index.html" />
-        <option value="$PROJECT_DIR$/happy/css/style.css" />
         <option value="$PROJECT_DIR$/happy/index.html" />
+        <option value="$PROJECT_DIR$/happy/css/style.css" />
       </list>
     </option>
   </component>
@@ -335,7 +335,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472628951252</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="happy4">
+      <created>1472629038202</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1472629038202</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -379,7 +385,8 @@
     <MESSAGE value="happy" />
     <MESSAGE value="happy2" />
     <MESSAGE value="happy3" />
-    <option name="LAST_COMMIT_MESSAGE" value="happy3" />
+    <MESSAGE value="happy4" />
+    <option name="LAST_COMMIT_MESSAGE" value="happy4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -685,18 +692,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+    <entry file="file://$PROJECT_DIR$/happy/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
+        <state vertical-scroll-proportion="-4.9411764">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happy/index.html">
+    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34615386">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.26957637">
+          <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
           <folding />
         </state>
       </provider>
