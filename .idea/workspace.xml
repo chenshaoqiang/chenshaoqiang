@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5_forMyGirl/index.html" afterPath="$PROJECT_DIR$/H5_forMyGirl/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\H5_forMyGirl.iml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\css\index.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\backg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\bg.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\eight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\five.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\four.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\green.PNG" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\lov.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\name.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\one.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\say1.PNG" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\seven.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\six.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\three.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\imags\two.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\js\domUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\js\index.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\mygithub\sthOfShaoQiang\H5_forMyGirl\js\innerDoor_faceToFace.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -26,49 +49,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.057692308">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="innerDoor_faceToFace.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/innerDoor_faceToFace.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rem布局法/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2941177">
+            <state vertical-scroll-proportion="0.23076923">
               <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding />
             </state>
@@ -193,20 +176,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="H5_forMyGirl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -280,14 +249,22 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1472622493632</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1472622493632</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="-140" width="1456" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2048611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -315,6 +292,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -512,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/domUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63468635">
@@ -533,89 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/backg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/eight.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/five.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/four.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/green.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/one.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/say1.PNG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/seven.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/six.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/three.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/imags/two.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H5/js/innerDoor_faceToFace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3538462">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/innerDoor_faceToFace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,16 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rem布局法/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2941177">
+        <state vertical-scroll-proportion="0.23076923">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/H5_forMyGirl/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057692308">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding />
         </state>
       </provider>
