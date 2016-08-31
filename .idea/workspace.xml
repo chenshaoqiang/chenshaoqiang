@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happy/img/Birthday.mp3" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\HappyBirthday.mp3" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/index.html" afterPath="$PROJECT_DIR$/happy/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/css/style.css" afterPath="$PROJECT_DIR$/happy/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -26,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/happy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34615386">
+            <state vertical-scroll-proportion="-4.9411764">
               <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/happy/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="181" column="16" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.48523748">
+              <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,8 +97,8 @@
         <option value="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
         <option value="$PROJECT_DIR$/rem布局法/css/index.css" />
         <option value="$PROJECT_DIR$/H5_forMyGirl/index.html" />
-        <option value="$PROJECT_DIR$/happy/css/style.css" />
         <option value="$PROJECT_DIR$/happy/index.html" />
+        <option value="$PROJECT_DIR$/happy/css/style.css" />
       </list>
     </option>
   </component>
@@ -403,7 +401,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472633953620</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="happy6t">
+      <created>1472637525560</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1472637525560</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -754,14 +758,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="16" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/happy/img/r.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -779,7 +775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/happy/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34615386">
+        <state vertical-scroll-proportion="-4.9411764">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -788,6 +784,14 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48523748">
+          <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
