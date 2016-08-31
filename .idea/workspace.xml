@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happy/img/yanhua.gif" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_ball1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_ball2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_ball3.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_ball4.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_ball5.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_botBg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p1_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p2_botBg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p2_grilshadow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_area1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_area2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_area3.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_area4.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_ball1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p3_tow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p4_man.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p4_txt1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p4_txt2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p5_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p5_man.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p5_txt1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p6_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p6_gril.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p7_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p7_man.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p7_txt1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p8_car.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p8_img2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p8_tree.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\demo\sthOfShaoQiang\happy\img\p8_txt1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/index.html" afterPath="$PROJECT_DIR$/happy/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/happy/img/1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy/css/style.css" afterPath="$PROJECT_DIR$/happy/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -57,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/happy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.115384616">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state vertical-scroll-proportion="-6.5882354">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/happy/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.26957637">
+              <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -124,8 +92,8 @@
         <option value="$PROJECT_DIR$/H5_forMyGirl/js/index.js" />
         <option value="$PROJECT_DIR$/rem布局法/css/index.css" />
         <option value="$PROJECT_DIR$/H5_forMyGirl/index.html" />
-        <option value="$PROJECT_DIR$/happy/css/style.css" />
         <option value="$PROJECT_DIR$/happy/index.html" />
+        <option value="$PROJECT_DIR$/happy/css/style.css" />
       </list>
     </option>
   </component>
@@ -356,7 +324,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472625670049</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="happy2">
+      <created>1472628168401</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1472628168401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,7 +372,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="happy" />
-    <option name="LAST_COMMIT_MESSAGE" value="happy" />
+    <MESSAGE value="happy2" />
+    <option name="LAST_COMMIT_MESSAGE" value="happy2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -684,14 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/happy/img/p2_head.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -709,8 +676,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/happy/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115384616">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state vertical-scroll-proportion="-6.5882354">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happy/img/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26957637">
+          <caret line="148" column="16" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
           <folding />
         </state>
       </provider>
