@@ -73,10 +73,10 @@
             };
                 $<span>scope</span>.getMessage();
             });</code></pre>
-            <p class="no-margin">你会看到过了3秒钟之后，alert确实会提示出已经更新的model，然而，view并没有更新。原因也许你已经知道了，就是我们忘了调用 $apply()方法。<a style="outline: dashed" href="/slide-chen/no_apply_test.html" target="_blank">点这里看例子!</a></p>
+            <p class="no-margin">你会看到过了3秒钟之后，alert确实会提示出已经更新的model，然而，view并没有更新。原因也许你已经知道了，就是我们忘了调用 $apply()方法。<a style="outline: dashed" href="no_apply_test.html" target="_blank">点这里看例子!</a></p>
             <p class="no-margin">那怎么才能达到效果呢？解决办法1：</p>
             <p class="no-margin">你可以使用$timeout来代替setTimeout()因为前者会帮你调用$apply()</p>
-            <p class="no-margin">解决办法2 就像下面这样：<a style="outline: dashed" href="/slide-chen/apply_test.html" target="_blank">点这里看例子!</a></p>
+            <p class="no-margin">解决办法2 就像下面这样：<a style="outline: dashed" href="apply_test.html" target="_blank">点这里看例子!</a></p>
             <pre style="max-width:100%;overflow-x:auto;"><code><span>angular</span>.module('myApp',[]).
             <span>controller</span>('MessageController', function($scope) {
                 $<span>scope</span>.getMessage = function() {

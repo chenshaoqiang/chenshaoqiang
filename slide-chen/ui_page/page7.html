@@ -27,7 +27,7 @@
         <p class="no-margin">指令遵循驼峰式命名，如ngBind。</p>
         <p class="no-margin">指令可以通过使用指定符号转化成链式风格的的名称来调用，特定符号包括“:”，“-”，“_”。</p>
         <p class="no-margin">2.字符串替换式</p>
-        <p class="no-margin">在编译期间，编译器会用$interpolate服务去检查文本中是否嵌入了表达式。这个表达式会被当成一个监视器一样注册，并且作为$digest循环中的一部分，它会自动更新。比如这个例子:<a style="outline: dashed" href="/slide-chen/imgurl_test.html" target="_blank">点击查看</a></p>
+        <p class="no-margin">在编译期间，编译器会用$interpolate服务去检查文本中是否嵌入了表达式。这个表达式会被当成一个监视器一样注册，并且作为$digest循环中的一部分，它会自动更新。比如这个例子:<a style="outline: dashed" href="imgurl_test.html" target="_blank">点击查看</a></p>
         <p class="no-margin">3.编译过程和指令匹配：</p>
         <p class="no-margin">HTML的编译分为三个阶段：</p>
         <p class="no-margin">（1）首先浏览器会用它的标准API将HTML解析成DOM。你需要认清这一点，因为<code ng-click="goDomState()">我们的模板必须是可被解析的HTML</code>。这是AngularJS和那些“以字符串为基础而非以DOM元素为基础的”模板系统的区别之处。</p>
@@ -117,7 +117,7 @@
         <span>&lt;/div&gt;</span>
    <span>&lt;/hello&gt;</span></code></pre>
         <p class="no-margin">很显然，由于我们没有加replace:true选项，所以<span><</span>hello>标签还在，没有被替换掉。你会发现浏览器实际上非常智能，虽然它并不认识<span><</span>hello>这个标签，但是页面没有出错，它只是默默地把这个标签忽略掉了！</p>
-        <p class="no-margin">还有两个例子详见<a style="outline: dashed" href="/slide-chen/test3.html" target="_blank">test3</a>和<a style="outline: dashed" href="/slide-chen/test4.html" target="_blank">test4</a>进一步了解。只可意会不可言传。</p>
+        <p class="no-margin">还有两个例子详见<a style="outline: dashed" href="test3.html" target="_blank">test3</a>和<a style="outline: dashed" href="test4.html" target="_blank">test4</a>进一步了解。只可意会不可言传。</p>
     </div>
 </div>
 
