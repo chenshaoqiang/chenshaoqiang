@@ -3,16 +3,66 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        html,body{margin: 0;padding: 0;width: 100%;height: 100%}
+        .left{
+            width: 50%;
+            height: auto;
+            background: #d9dfe4;
+        }
+        .right{
+            width: 50%;
+            height: auto;
+            position:absolute ;
+            cursor: pointer;
+            top: 0;
+            left: 50%;
+        }
+    </style>
 </head>
 <body>
-    <div ng-controller="a1Controller">
-        <p>a1==>message的信息: {{message}}</p>
-        <p>age的信息: {{age}}</p>
-        <div ng-controller="a2Controller">
-            <p>a2==>message的信息: {{message}}</p>
-            <p>name的信息: {{name}}</p>
-        </div>
+<div class="left">
+    <h3 style="margin: 0!important;">源码如下:</h3>
+    <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1">
+    <span class="hljs-section">&lt;!DOCTYPE html&gt;</span>
+    <span class="hljs-section">&lt;html ng-app="myApp"&gt;</span>
+    <span class="hljs-section">&lt;head lang="en"&gt;</span>
+        <span class="hljs-section">&lt;meta charset="UTF-8"&gt;</span>
+        <span class="hljs-section">&lt;title&gt;</span><span class="hljs-section">&lt;/title&gt;</span><span></span>
+    <span class="hljs-section">&lt;/head&gt;</span>
+    <span class="hljs-section">&lt;body&gt;</span>
+        <span class="hljs-section">&lt;div ng-controller="a1Controller"&gt;</span>
+            <span class="hljs-section">&lt;p&gt;</span><span class="hljs-attribute">a1</span>==&gt;message的信息: <span style="color: red">{{</span><span style="color: red">message}}</span>&lt;/p&gt;
+            <span class="hljs-section">&lt;p&gt;</span><span class="hljs-attribute">age</span>的信息: <span style="color: red">{{</span><span style="color: red">age}}</span>&lt;/p&gt;
+            <span class="hljs-section">&lt;div ng-controller="a2Controller"&gt;</span>
+                <span class="hljs-section">&lt;p&gt;</span><span class="hljs-attribute">a2</span>==&gt;message的信息: <span style="color: red">{{</span><span style="color: red">message}}</span>&lt;/p&gt;
+                <span class="hljs-section">&lt;p&gt;</span><span class="hljs-attribute">name</span>的信息: <span style="color: red">{{</span><span style="color: red">name}}</span>&lt;/p&gt;
+            <span class="hljs-section">&lt;/div&gt;</span>
+        <span class="hljs-section">&lt;/div&gt;</span>
+    <span class="hljs-section">&lt;/body&gt;</span>
+    <span class="hljs-section">&lt;script type="text/javascript" src="bower_components/angular/angular.min.js"&gt;</span><span class="hljs-section">&lt;/script&gt;</span>
+    <span class="hljs-section">&lt;script&gt;</span>
+        <span class="hljs-attribute">var</span> myApp=angular.module('myApp',[]);
+        <span class="hljs-attribute">myApp</span>.controller('a1Controller', function($scope) {
+            $<span class="hljs-attribute">scope</span>.name = 'a1里的name';
+            $<span class="hljs-attribute">scope</span>.message = 'a1里的message';
+        });
+        <span class="hljs-attribute">myApp</span>.controller('a2Controller', function($scope) {
+            $<span class="hljs-attribute">scope</span>.message = 'a2里的message';
+            $<span class="hljs-attribute">scope</span>.age = 'a2里的age';
+        });
+    <span class="hljs-section">&lt;/script&gt;</span>
+    <span class="hljs-section">&lt;/html&gt;</span></code></pre>
+</div>
+<div class="right" ng-controller="a1Controller">
+    <p>a1==>message的信息: {{message}}</p>
+    <p>age的信息: {{age}}</p>
+    <div ng-controller="a2Controller">
+        <p>a2==>message的信息: {{message}}</p>
+        <p>name的信息: {{name}}</p>
     </div>
+</div>
 </body>
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script>
