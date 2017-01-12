@@ -56,7 +56,7 @@ app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$d
         //获取文件内容
         $http({
             method: 'GET',
-            url:"chenshaoqiang/slide-chen/datas.json"+"?DT="+new Date().getTime()
+            url:"datas.json"+"?DT="+new Date().getTime()
         }).success(function(response) {
             if (response.flag==="000000") {
                 var pointVal =parseInt(point.replace(/[^0-9]/ig,""));
