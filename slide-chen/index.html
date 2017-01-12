@@ -31,8 +31,8 @@
                 <h4 class="modal-title" ng-bind="modalData.title"></h4>
             </div>
             <div class="modal-body" style="text-indent: 25px;">
-                <div ng-if="readyLoad">
-                    <img src="images/ajax-loader.gif" alt=""/>
+                <div style="width: 100%;height: 100px;text-align: center" ng-if="readyLoad">
+                    <img style="text-align: center" src="images/ajax-loader.gif" alt=""/>
                 </div>
                 <div ng-if="!readyLoad">
                     <p  ng-repeat="md in modalData.content" ng-bind="md.data"></p>
