@@ -2,83 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.eot_" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/bg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/end.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/part_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/part_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/qa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/test1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular-ui-router.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/apply_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/datas.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/directive_scope_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/imgurl_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/no_apply_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page9.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/scope_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/simple-line-icons.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/slide-chen.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -116,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22240527">
-              <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.962963">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28883183">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -175,6 +111,7 @@
         <option value="$PROJECT_DIR$/H5_forMyGirl/index.html" />
         <option value="$PROJECT_DIR$/happy/index.html" />
         <option value="$PROJECT_DIR$/happy/css/style.css" />
+        <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
       </list>
     </option>
   </component>
@@ -186,10 +123,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -244,6 +181,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="slide-chen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slide-chen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slide-chen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,17 +400,23 @@
       <option name="project" value="LOCAL" />
       <updated>1484200844018</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="上传一个angularjs分享">
+      <created>1484201050970</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1484201050970</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16805555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -475,21 +454,14 @@
     <MESSAGE value="happy5" />
     <MESSAGE value="happy6" />
     <MESSAGE value="happy6t" />
-    <option name="LAST_COMMIT_MESSAGE" value="happy6t" />
+    <MESSAGE value="上传一个angularjs分享" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传一个angularjs分享" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rem布局法/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H51/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -788,6 +760,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8583198">
+          <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/happy/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -802,18 +782,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+    <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-4.962963">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
+    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22240527">
-          <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.28883183">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding />
         </state>
       </provider>
