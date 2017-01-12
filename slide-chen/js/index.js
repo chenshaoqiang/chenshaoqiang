@@ -15,7 +15,7 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             .state('page11', {url:'/page11', templateUrl: 'ui_page/page11.html'})
     }]
 );
-app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$document','$anchorScroll',function($scope,$rootScope,$location,$state,$http,$document,$anchorScroll){
+app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$document',function($scope,$rootScope,$location,$state,$http,$document){
     $scope.isClick=$location.path();
     //绑定全局键盘事件（左右键）
     $document.bind("keydown keypress", function(event) {
