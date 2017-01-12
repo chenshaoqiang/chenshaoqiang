@@ -173,19 +173,19 @@ p{
 	height: 100%;
 }
 .page_wrap{
-	background: url("../images/bg2.png") no-repeat;
+	background: url("../images/bg2.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .page1_wrap{
-	background: url("../images/bg1.png") no-repeat;
+	background: url("../images/bg1.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .page2_wrap{
-	background: url("../images/qa.png") no-repeat;
+	background: url("../images/qa.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .page3_wrap{
-	background: url("../images/end.png") no-repeat;
+	background: url("../images/end.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 /*------------------------*/
@@ -279,15 +279,15 @@ p{
 	margin-left: 45px;
 }
 .img-get1{
-	background: url("../images/pre1.png") no-repeat;
+	background: url("../images/pre1.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .img-get2{
-	background: url("../images/pre2.png") no-repeat;
+	background: url("../images/pre2.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .img-get3{
-	background: url("../images/pre3.png") no-repeat;
+	background: url("../images/pre3.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .img-content1{
