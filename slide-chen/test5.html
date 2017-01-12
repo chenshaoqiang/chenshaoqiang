@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+<table ng-controller="myCtrl" border="1">
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>Country</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in records">
+            <td>{{x.Name}}</td>
+            <td>{{x.Country}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.controller("myCtrl", function($scope) {
+        $scope.records = [
+            {"Name" : "Aimy", "Country" : "Germany"},
+            {"Name" : "John", "Country" : "Sweden"},
+            {"Name" : "Moctezuma", "Country" : "Mexico"},
+            {"Name" : "Handel", "Country" : "Austria"}
+        ]
+    });
+</script>
+</html>

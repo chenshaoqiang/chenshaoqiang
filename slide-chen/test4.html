@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        html,body{margin: 0;padding: 0;width: 100%;height: 100%}
+        .left{
+            width: 50%;
+            height: auto;
+            background: #d9dfe4;
+        }
+        .right{
+            width: 50%;
+            height: auto;
+            position:absolute ;
+            cursor: pointer;
+            top: 0;
+            left: 50%;
+        }
+        .title{
+            width: 100%;
+            height: 30px;
+            background: #6fffc6;
+            vertical-align: middle;
+        }
+        .body{
+            width: 100%;
+            height: 100px;
+            background: #fcff34;
+        }
+    </style>
+</head>
+<body ng-app="app">
+<div class="left">
+    <h3 style="margin: 0!important;">源码如下:</h3>
+    <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span class="hljs-section">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-section">&lt;html&gt;</span>
+<span class="hljs-section">&lt;head lang="en"&gt;</span>
+    <span class="hljs-section">&lt;meta charset="UTF-8"&gt;</span>
+    <span class="hljs-section">&lt;title&gt;</span><span class="hljs-section">&lt;/title&gt;</span>
+<span class="hljs-section">&lt;/head&gt;</span>
+<span class="hljs-section">&lt;body ng-app="app"&gt;</span>
+    <span class="hljs-section">&lt;div ng-controller='SomeController'&gt;</span>
+        <span class="hljs-section">&lt;expander class='expander' title='title'&gt;</span>
+            {{<span class="hljs-attribute">text</span>}}
+        <span class="hljs-section">&lt;/expander&gt;</span>
+    <span class="hljs-section">&lt;/div&gt;</span>
+<span class="hljs-section">&lt;/body&gt;</span>
+<span class="hljs-section">&lt;script type="text/javascript" src="bower_components/angular/angular.min.js"&gt;</span><span class="hljs-section">&lt;/script&gt;</span>
+<span class="hljs-section">&lt;script&gt;</span>
+    <span class="hljs-attribute">var</span> app=angular.module('app',[]);
+    <span class="hljs-attribute">app</span>.controller('SomeController',function($scope) {
+        $<span class="hljs-attribute">scope</span>.title = '点击展开';
+        $<span class="hljs-attribute">scope</span>.text = '这里是内部的内容。';
+    });
+    <span class="hljs-attribute">app</span>.directive('expander', function factory() {
+        <span class="hljs-attribute">return</span> {
+            <span class="hljs-attribute">restrict</span>: 'AE',
+            <span class="hljs-attribute">replace</span> : true,
+            <span class="hljs-attribute">transclude</span> : true,
+            <span class="hljs-attribute">scope</span> : {
+                <span class="hljs-attribute">title</span> : '='
+            },
+            <span class="hljs-attribute">template</span> : '&lt;div&gt;'
+                    + '<span class="hljs-section">&lt;div class="title" ng-click="toggle()"&gt;</span>{{<span class="hljs-attribute">title</span>}}&lt;/div&gt;'
+                    + '<span class="hljs-section">&lt;div class="body" ng-show="showMe" ng-transclude&gt;</span><span class="hljs-section">&lt;/div&gt;</span>'
+                    + '<span class="hljs-section">&lt;/div&gt;</span>',
+            /*<span class="hljs-attribute">compile</span>: function (element,attrs) {
+            //返回一个链接函数
+            <span class="hljs-attribute">return</span> function(scope, element, attrs) {
+                <span class="hljs-attribute">scope</span>.showMe = false;
+                <span class="hljs-attribute">scope</span>.toggle = function toggle() {
+                <span class="hljs-attribute">scope</span>.showMe = !scope.showMe;
+                }
+            }
+            },*/
+        <span class="hljs-attribute">link</span> : function(scope, element, attrs) {
+            <span class="hljs-attribute">scope</span>.showMe = false;
+            <span class="hljs-attribute">scope</span>.toggle = function toggle() {
+                <span class="hljs-attribute">scope</span>.showMe = !scope.showMe;
+            };
+        //链接函数内的事件处理函数
+            <span class="hljs-attribute">element</span>.<span class="hljs-literal">on</span>(<span class="hljs-string">"mouseover"</span>,function(){
+                <span class="hljs-attribute">scope</span>.$apply();
+                <span class="hljs-attribute">scope</span>.showMe = !scope.showMe;
+                });
+            }
+        };
+    });
+    <span class="hljs-attribute">app</span>.directive('wrap', function factory() {
+    <span class="hljs-attribute">return</span> {
+        <span class="hljs-attribute">restrict</span>: 'AE',
+        <span class="hljs-attribute">scope</span>:{},
+        <span class="hljs-attribute">controller</span>: function ($scope) {
+            <span class="hljs-attribute">this</span>.fn= function () {
+            <span class="hljs-attribute">alert</span>('这是共享的！');
+        };
+    }
+    };
+});
+<span class="hljs-section">&lt;/script&gt;</span>
+<span class="hljs-section">&lt;/html&gt;</span></code></pre>
+</div>
+<div class="right" ng-controller='SomeController'>
+    <expander class='expander' title='title'>
+        {{text}}
+    </expander>
+</div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.controller('SomeController',function($scope) {
+        $scope.title = '点击展开';
+        $scope.text = '这里是内部的内容。';
+    });
+    app.directive('expander', function factory() {
+        return {
+            restrict: 'AE',
+            replace : true,
+            transclude : true,
+            scope : {
+                title : '='
+            },
+            template : '<div>'
+            + '<div class="title" ng-click="toggle()">{{title}}</div>'
+            + '<div class="body" ng-show="showMe" ng-transclude></div>'
+            + '</div>',
+            /*compile: function (element,attrs) {
+                //返回一个链接函数
+                return function(scope, element, attrs) {
+                    scope.showMe = false;
+                    scope.toggle = function toggle() {
+                        scope.showMe = !scope.showMe;
+                    }
+                }
+            },*/
+            link : function(scope, element, attrs) {
+                scope.showMe = false;
+                scope.toggle = function toggle() {
+                    scope.showMe = !scope.showMe;
+                };
+                //链接函数内的事件处理函数
+                element.on("mouseover",function(){
+                    scope.$apply();
+                    scope.showMe = !scope.showMe;
+                });
+            }
+        };
+    });
+    app.directive('wrap', function factory() {
+        return {
+            restrict: 'AE',
+            scope:{},
+            controller: function ($scope) {
+                this.fn= function () {
+                    alert('这是共享的！');
+                };
+            }
+        };
+    });
+</script>
+</html>

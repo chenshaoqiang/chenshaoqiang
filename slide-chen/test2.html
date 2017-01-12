@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+<hello>
+    <span>这个！</span>
+    <span>这个也是！</span>
+</hello>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.directive('hello', function factory() {
+        return {
+            restrict: 'E',
+            replace:false,
+            template: '<div>内嵌的的元素是：<p ng-transclude></p></div>',
+            transclude: true
+        };
+    });
+</script>
+</html>

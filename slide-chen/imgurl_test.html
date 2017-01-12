@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body{margin: 0;padding: 0;width: 100%;height: 100%}
+        .left{width: 50%;height: 100%;background: #dbe3ff;padding: 30px;}
+        .right{position: absolute;width: 50%;height: 100%;top: 0;left: 50%;}
+        .box{margin: 50px auto;width: 500px;height: 50px;}
+        .img-box{margin: 50px auto;width: 500px;height: auto;}
+        .img-box img{display: block;width: 400px;height: auto;}
+        .box label{display: inline-block;vertical-align: middle;}
+        .box input{display: inline-block;height: 30px;}
+        .img-get{width: 600px;height: 160px;background: url("images/test1.png") no-repeat;background-size: 100% 100%;}
+    </style>
+</head>
+<body>
+    <div class="left">
+        <p>右侧的图片资源引用的是一个嵌入了表达式的地址：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span class="hljs-section">&lt;img ng-src="images/{{</span><span>imgName}}.jpg"&gt;</span>
+            <span class="hljs-attribute">Hello{{</span>imgName}}!
+ <span class="hljs-section">&lt;/img&gt;</span></code></pre>
+        <p>将imgName的值通过ngModel绑定到输入框中，我们可以发现：</p>
+        <p>文本中嵌入了表达式同样可以作为$digest循环中的一部分，被当成一个监视器一样注册并自动更新。</p>
+    </div>
+    <div class="right" ng-controller="myController">
+        <div class="box">
+            <p>images目录中已有：img1-img3可测试!</p>
+            <label for="myInput">输入图片名称：</label>
+            <input id="myInput" type="text" ng-model="imgName"/>
+        </div>
+        <div class="img-box">
+            <img ng-src="images/{{imgName}}.jpg">
+            Hello {{imgName}}!
+            </img>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var myApp=angular.module('myApp',[]);
+    myApp.controller('myController', function($scope) {
+        $scope.imgName="img1";//默认显示
+    });
+</script>
+</html>

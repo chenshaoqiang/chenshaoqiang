@@ -2,9 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aiqiyi/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/aiqiyi/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.eot_" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/bg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/end.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/part_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/part_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/pre3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/qa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/test1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/fonts/Simple-Line-Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/apply_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/datas.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/directive_scope_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/imgurl_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/no_apply_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/scope_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/simple-line-icons/simple-line-icons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/slide-chen.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/test5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aiqiyi/.idea/workspace.xml" afterPath="$PROJECT_DIR$/aiqiyi/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +103,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/happy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,8 +119,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/happy/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29654035">
-              <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.22240527">
+              <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -158,6 +233,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slide-chen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -172,9 +261,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\demo\sthOfShaoQiang" />
       <recent name="E:\demo\sthOfShaoQiang\happy\img" />
       <recent name="E:\demo\sthOfShaoQiang\happy\js" />
-      <recent name="E:\demo\sthOfShaoQiang" />
       <recent name="D:\我的GitHub项目发布\sthOfShaoQiang\H5_forMyGirl\imags" />
       <recent name="D:\我的GitHub项目发布\sthOfShaoQiang\H5_forMyGirl\js" />
     </key>
@@ -332,7 +421,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472637618574</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="happy6t">
+      <created>1484200844018</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1484200844018</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -341,6 +436,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -348,7 +444,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -387,14 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rem布局法/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="16" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rem布局法/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -715,10 +802,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/happy/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29654035">
-          <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.22240527">
+          <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+    <hello></hello>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.directive('hello', function factory() {
+        return {
+            restrict: 'E',
+            replace:true,
+            template:'<div>It is a tag!</div>'
+        };
+    });
+</script>
+</html>

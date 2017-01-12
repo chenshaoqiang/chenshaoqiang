@@ -1,0 +1,102 @@
+<div class="page_wrap">
+    <h1 class="no-margin color_white font_25 text-center">
+        AngularJS运用之——路由机制
+    </h1>
+    <div class="info_content2">
+        <p class="no-margin">Angular.js 是一个用来构建“富客户端”的神奇JavaScript框架。但是事实却是许多开发者却不使用其内置的路由模块。反而使用AngularUI项目的 UI-Router模块来代替之。</p>
+        <p class="no-margin">这是因为UI-Router有两个重要的特性：多样化视图、嵌入式视图</p>
+        <p class="no-margin">1.UI-Router的多样化视图</p>
+        <p class="no-margin">大多数的应用程序都可以分解为一个一个区块。最简单的情况，一个应用程序有头部（header）,主体内容（main content area），以及一个尾部（footer）。通常一个还会有一个额外的侧边栏（sidebar ）在页面的左边或者右边。</p>
+        <p class="no-margin">整体结构如下图所示：</p>
+        <div class="img-get3" change-w-h></div>
+        <div class="img-content1">
+            <p class="no-margin">多数用例中，这些区块将同时显示在页面上。</p>
+            <p class="no-margin">Angular.js 的内置路由ngRoute只允许一个视图（ng-view）出现在页面上。</p>
+            <p class="no-margin">这样限制的情况下，人们可以使用包含页面（ng-include）或者 其他的变通方法为应用创建一个布局（layout）或主页（master page）。</p>
+            <p class="no-margin">UI-Router支持多样化视图，并且每一个视图都有自己相应的控制，所以每个区块都是封装好，可以复用到整个应用程序需要的地方。</p>
+        </div>
+        <div style="clear: both"></div>
+        <p class="no-margin">2.UI-Router的嵌入式视图</p>
+        <p class="no-margin">一个应用的嵌入式页面一般是主页的详情页面，更具体的说，就是列表的详情页面。许多应用程序，都有列表页面，点击其中一个列表元素，可以进入到列表的详情页面。就比如我们的左侧菜单和右侧内容的布局。</p>
+        <p class="no-margin">如果列表页面和详情页面是单独分开的，使用Angular.js的内置路由ngRoute 是非常容易完成的。(直接配置路由各自跳转)。</p>
+        <p class="no-margin">然而，如果你想要保持列表不变，而详情页面出现在列表的右边或者下面，这样就变得非常具有挑战性了。这样的要求可以使用ngRoute来完成。但是你需要让两个控制器（一个用于列表，一个用于显示和隐藏详情）共享一个视图。这样的结果不是理想的，因为我们想要列表和详情页面有各自的控制器和视图，并且职责单一。</p>
+        <p class="no-margin">嵌入式视图，不仅能够让这些视图同时出现，还能让一个视图嵌入到另一个视图中。</p>
+        <p class="no-margin">3.事实上：AngularJS官方回应称，从1.1.6版本将ngRoute从angular.js核心中删除（更多的说法是1.2）。ngRoute依然可以从AngularJS的官网上获得，但是它早已不在核心之中。AngularJS的社区认为，更受欢迎的路由库是AngularUI 项目的UI-Router。</p>
+        <p class="no-margin">4.使用使用UI-Router。</p>
+        <p class="no-margin">（1）引入angular-ui-router.js或angular-ui-router.min.js到你的index.html，必须Angualr.js核心文件之后。</p>
+        <p class="no-margin">（2）引入依赖：将“ui.router”依赖添加到你的主module中。如下：</p>
+        <pre>var app = angular.module('app', ['ui.router']);</pre>
+        <p class="no-margin">注意：是ui.router不是ui-router，后者是许多人经常犯的错误。</p>
+        <p class="no-margin">5.UI-Router内部机制：</p>
+        <p class="no-margin">UI-Router 引进了状态机设计模式，抽象高于传统的路由。路由成了状态，URL就成了状态的一个简单属性。当你想通过ui-sref创建一个链接时，使用的是状态而不是URL。</p>
+        <p class="no-margin">6.下面是本文的配置例子：</p>
+        <pre><code>
+        <span>var</span> app = angular.module('app',<span class="color_red"> ['ui.router']</span><span>);
+        app.config([<span class="color_red">'$stateProvider'</span>,<span class="color_red">'$urlRouterProvider'</span>,function($stateProvider, $urlRouterProvider) {
+            $urlRouterProvider.otherwise('page1');
+            $stateProvider
+            .state('page1', {url:'/page1', templateUrl: 'ui_page/page1.html'})
+            .state('page2', {url:'/page2', templateUrl: 'ui_page/page2.html'})
+            .state('page3', {url:'/page3', templateUrl: 'ui_page/page3.html'})
+            .state('page4', {url:'/page4', templateUrl: 'ui_page/page4.html'})
+            .state('page5', {url:'/page5', templateUrl: 'ui_page/page5.html'})
+            .state('page6', {url:'/page6', templateUrl: 'ui_page/page6.html'})
+            .state('page7', {url:'/page7', templateUrl: 'ui_page/page7.html'})
+            .state('page8', {url:'/page8', templateUrl: 'ui_page/page8.html'})
+            .state('page9', {url:'/page9', templateUrl: 'ui_page/page9.html'})
+            .state('page10', {url:'/page10', templateUrl: 'ui_page/page10.html'})
+            .state('page11', {url:'/page11', templateUrl: 'ui_page/page11.html'})
+        }]);</span>
+        </code></pre>
+        <p class="no-margin">其中：$stateProvider为Angular.js服务注入路由支持。$urlRouterProvider 在这里有两个主要目的。一是建立一个默认路由，用于管理未知的URL（统一跳转到某处）。二是监听浏览器地址栏URL的变化，重定向到路由定义的状态中。总之，$urlRouterProvider让我们处理状态机抽象的$stateProvider没有检测到的情况。</p>
+        <p class="no-margin">当我们的视图需要配置控制器时，我们需要这样设置就可以：</p>
+        <pre>.state('page1',{url:'/page1',templateUrl: 'ui_page/page1.html',controller: 'pageCtrl as app'})</pre>
+        <p class="no-margin">（1）在html页面中，使用：<span><</span>a ui-sref="home">Home<span><</span>/a>放弃：<span><</span>a href="#/">Home<span><</span>/a></p>
+        <p class="no-margin">ui-sref可以这样理解：ui是AngularUI项目所有指令的前缀，sref是包装了传统HTML锚点标签的href属性和状态判断。</p>
+        <p class="no-margin">（2）控制器中使用：(不要忘了注入$state服务)</p>
+        <pre>$state.go('page1');</pre>
+        <p class="no-margin">7.嵌入式例子：(本文结构举例)</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span class="hljs-section">&lt;div id="img_container" class="img_container"&gt;</span>
+        <span class="hljs-section">&lt;div class="img_wrap" ui-view&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+        <span class="hljs-section">&lt;ul class="thumbnails"&gt;</span><span class="hljs-section">&lt;/ul&gt;</span>
+    <span class="hljs-section">&lt;/div&gt;</span></code></pre>
+        <p class="no-margin">其中：<span class="hljs-section">&lt;div class="img_wrap" ui-view&gt;</span><span class="hljs-section">&lt;/div&gt;</span>为路由页面嵌入的部分。<span class="hljs-section">&lt;ul class="thumbnails"&gt;</span><span class="hljs-section">&lt;/ul&gt;</span>为底部小图标部分。</p>
+        <p class="no-margin">html中有一个ui-view属性指令，当相应的路由被请求时，视图（shows.html）则会渲染在这个div中。</p>
+        <p class="no-margin">当有另一个子视图嵌套在当前跳转的路由页中，你可以这样做：如下</p>
+        <p class="no-margin">我们按照<code>父状态名.子状态名</code>的方式定义一个状态，UI-Router便知道子状态是内嵌在父状态中的。如下：</p>
+        <pre>.state(<span class="color_red">'shows'</span>,{url:'/shows',templateUrl: 'shows.html',controller: 'ShowsController'})
+   .state(<span class="color_red">'shows.detail'</span>, {url: '/detail',templateUrl: 'shows-detail.html'controller: 'ShowsDetailController'});</pre>
+        <p class="no-margin">上面的配置中，shows-detail.html为嵌套在shows.html里面的子页面。</p>
+        <p class="no-margin">8.多样化视图例子：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span class="hljs-section">&lt;div ui-view="header"&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+    <span class="hljs-section">&lt;div ui-view="content"&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+    <span class="hljs-section">&lt;div ui-view="footer"&gt;</span><span class="hljs-section">&lt;/div&gt;</span></code></pre>
+        <p class="no-margin">请注意，这里的ui-view属性指令都被赋予了一个名字：header，content，footer。这些名字是当我们在配置路由，要指定view/template和控制器需要作用于页面上的那个区块时引用。</p>
+        <p class="no-margin">下面的关键是注意，一个url不是一个只有一个templateUrl和controller属性了，而是使用views属性，赋予它一个各自的templateUrl和controller的集合。</p>
+        <p class="no-margin">所以原来这样：</p>
+        <pre>.state('home',{
+        url: '/',
+        templateUrl: '/templates/partials/header.html',
+        controller: 'HomeController'
+    })</pre>
+        <p class="no-margin">就变成了这样：</p>
+        <pre>.state('home',{
+        url: '/',
+        views: {
+            'header': {
+                templateUrl: '/templates/partials/header.html',
+                controller: 'HeaderController'
+            },
+            'content': {
+                templateUrl: '/templates/partials/content.html',
+                controller: 'ContentController'
+            },
+            'footer': {
+                templateUrl: '/templates/partials/footer.html',
+                controller: 'FooterController'
+            }
+        }
+    })</pre>
+        <p class="no-margin"></p>
+    </div>
+</div>

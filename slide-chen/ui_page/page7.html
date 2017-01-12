@@ -1,0 +1,123 @@
+<div class="page_wrap">
+    <h1 class="no-margin color_white font_25 text-center">
+        AngularJS运用之——指令解析
+    </h1>
+    <div class="info_content2">
+        <p class="no-margin">通过使用模板，我们可以把model和controller中的数据组装起来呈现给浏览器，还可以通过数据绑定，实时更新视图，让我们的页面变成动态的。学习ng，从模板开始入手是个不错方式，因为这部分内容相对简单好理解，而且是视图层的东西。</p>
+        <p class="no-margin">模板中可以使用的东西包括以下四种：</p>
+        <p class="no-margin">（1）指令(directive)。ng提供的或者自定义的标签和属性，用来增强HTML表现力。</p>
+        <p class="no-margin">（2）标记(markup)。即双大括号{{}}，可将数据单向绑定到HTML中。</p>
+        <p class="no-margin">（3）过滤器(filter)。用来格式化输出数据。</p>
+        <p class="no-margin">（4）表单控制。用来增强表单的验证功能。</p>
+        <p class="no-margin">其中，指令无疑是使用量最大的，ng内置了很多指令用来控制模板，如ng-repeat，ng-class，也有很多指令来帮你完成业务逻辑，如ng-controller,ng-model。过滤器通常是伴随标记来使用的，将你model中的数据格式化为需要的格式。表单的控制功能主要涉及到数据验证以及表单控件的增强。</p>
+        <p class="no-margin">模板中可以使用的表达式：</p>
+        <p class="no-margin">ng中的表达式与javascript表达式类似但是不可以划等号，它是ng自己定义的一套模式。表达式可以作为指令的值，如ng-modle=”people.name”、ng-click=”showMe()”，看起来是如此像字符串，故而也叫<span class="color_red">字符串表达式</span>。也可以在标记中使用表达式，或者与过滤器一起使用。在框架内部，字符串不会简单的使用<span class="color_red">eval()</span>来执行，而是有一个专门的<span class="color_red">$parse</span>服务来处理。在ng表达式中<span class="color_red">不可以使用</span>不可以使用循环语句、判断语句，事实上在模板中使用复杂的表达式也是一个不推荐的做法，这样视图与逻辑就混杂在一起了。</p>
+        <p class="no-margin">1. 什么是指令</p>
+        <p class="no-margin">指令是我们用来扩展浏览器能力的技术之一。在DOM编译期间，和HTML关联着的指令会被检测到，并且被执行。这使得指令可以为DOM指定行为，或者改变它。指令的作用是把我们自定义的语义化标签替换成浏览器能够认识的HTML标签。指令的本质其实是一个替换过程。</p>
+        <p class="no-margin">一个AngularJS指令在HTML代码中可以有四种表现形式：</p>
+        <p class="no-margin">（1）作为一个新的HTML元素来使用(E)。</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;hello&gt;</span><span>&lt;/hello&gt;</span>或者<span>&lt;hello/&gt;</span></code></pre>
+        <p class="no-margin">（2）作为一个元素的属性来使用(A)。</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;div hello&gt;</span><span>&lt;/div&gt;</span></code></pre>
+        <p class="no-margin">（3）作为一个元素的类来使用(C)。</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;div class="hello"&gt;</span><span>&lt;/div&gt;</span></code></pre>
+        <p class="no-margin">（4）作为注释来使用(M)。</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;!--directive:hello --&gt;</span></code></pre>
+        <p class="no-margin">作为注释来使用的时候，注意这里有一个陷阱，就是在“directive: hello”这个的后面要有一个空格，不然的话是没有效果的，同时推荐注释的方法的还是少用，如果非要追求高大上，那就随性吧。</p>
+        <p class="no-margin">指令遵循驼峰式命名，如ngBind。</p>
+        <p class="no-margin">指令可以通过使用指定符号转化成链式风格的的名称来调用，特定符号包括“:”，“-”，“_”。</p>
+        <p class="no-margin">2.字符串替换式</p>
+        <p class="no-margin">在编译期间，编译器会用$interpolate服务去检查文本中是否嵌入了表达式。这个表达式会被当成一个监视器一样注册，并且作为$digest循环中的一部分，它会自动更新。比如这个例子:<a style="outline: dashed" href="/slide-chen/imgurl_test.html" target="_blank">点击查看</a></p>
+        <p class="no-margin">3.编译过程和指令匹配：</p>
+        <p class="no-margin">HTML的编译分为三个阶段：</p>
+        <p class="no-margin">（1）首先浏览器会用它的标准API将HTML解析成DOM。你需要认清这一点，因为<code ng-click="goDomState()">我们的模板必须是可被解析的HTML</code>。这是AngularJS和那些“以字符串为基础而非以DOM元素为基础的”模板系统的区别之处。</p>
+        <p class="no-margin">（2）DOM的编译是有$compile方法来执行的。 这个方法会遍历DOM并找到匹配的指令。一旦找到一个，它就会被加入一个指令列表中，这个列表是用来记录所有和当前DOM相关的指令的。 一旦所有的指令都被确定了，会按照优先级被排序，并且他们的compile方法会被调用。指令的$compile()函数能修改DOM结构，并且要负责生成一个link函数（后面会提到）。$compile方法最后返回一个合并起来的链接函数，这个链接函数是每一个指令的compile函数返回的链接函数的<span class="color_red">集合</span>。</p>
+        <p class="no-margin">（3）通过调用链接函数来将模板与作用域链接起来。这会轮流调用每一个指令的链接函数，让每一个指令都能对DOM注册监听事件，和建立对作用域的的监听。这样最后就形成了作用域的DOM的动态绑定。任何一个作用域的改变都会在DOM上体现出来。</p>
+        <p class="no-margin">4.编译和链接分离的合理性</p>
+        <p class="no-margin">编译和链接的分离是模型和DOM结构能够动态关联的一种需要。</p>
+        <p class="no-margin">要明白其中的原因，可以先看下面这个带有“重复指令”的例子：</p>
+        <pre style="max-width: 100%;"><code><span>&lt;ul&gt;</span>
+        <span>&lt;li ng-repeat="action in user.actions"&gt;</span>
+        {{<span>action</span>.description}}
+        <span>&lt;/li&gt;</span>
+    <span>&lt;/ul&gt;</span></code></pre>
+        <p class="no-margin">当上面的例子被编译后，编译器会遍历所有节点来寻找指令。例如{{<span>action.description</span>}}是一个替换式指令，ngRepeat是另一个指令。但是ngRepeat有一个难题。他需要为user.actions中的每一个action 构造一个li。</p>
+        <p class="no-margin">这意味着它先要保存一个“干净”的li元素来用作克隆，然后等新的action插入进来时，克隆一个li并插入到ul中。但是仅仅克隆li的话工作还没完。他还需要编译这个li才能把其中的像是{{<span>action.description</span>}}的替换式替换成相应作用域下的值。</p>
+        <p class="no-margin">我们可以用一个简单地方法来克隆和插入li元素然后编译它。</p>
+        <p class="no-margin">但是要编译每一个li的话，使用克隆会速度很慢， 因为编译的工程需要我们<span class="color_red">遍历DOM树</span> ，并找到对应的指令并执行它们。如果我们在一个需要循环100次循环体内执行编译的话，性能问题就会马上凸现出来。</p>
+        <p class="no-margin">解决方案就是将编译工程分为两个阶段。编译阶段将指令识别出来并按优先级排序，链接阶段将作用域中的实例和li进行链接。</p>
+        <p class="no-margin">ngRepeat 会阻止li子元素的编译。取而代之的是 ngRepeat指令会单独对li进行编译。这个编译结束后会生成一个链接函数，这个函数包含了准备li元素上的所有指令，并等待被绑定到相应克隆出来的li元素上。在执行期，ngRepeat之指令会监视表达式，当有新的元素增加到对应的数组之后，它就会新克隆一个li元素，为它创建一个新作用域，并使用链接函数把它和对应作用域链接上。</p>
+        <p class="no-margin">5.下面通过几个例子简单了解一下指令的创建：</p>
+        <p class="no-margin">先摆个相对完整的模版镇场子:</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span>var</span> app = angular.module('app',[]);
+    <span>app</span>.directive('directiveName', function factory() {
+        <span>return</span> {
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod8')">priority</span>: 0,
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod9')">template</span>: '&lt;div&gt;&lt;/div&gt;',
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod10')">templateUrl</span>: 'directive.html',
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod11')">replace</span>: false,
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod12')">transclude</span>: false,
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod13')">restrict</span>: 'A',
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod14')">terminal</span>: true,
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod15')">scope</span>: false,
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod16')">require</span>: '^otherDirective',
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod17')">controller</span>: function($scope, $element, $attrs, $transclude) {},
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod18')">compile</span>: function compile(tElement, tAttrs, transclude) {
+                <span>return</span> {
+                    <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod20')">pre</span>: function preLink(scope, iElement, iAttrs, controller) {},
+                    <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod21')">post</span>: function postLink(scope, iElement, iAttrs, controller) {}
+                }
+            },
+            <span class="color_pre" data-toggle="modal" data-target="#myModal" ng-click="openModal('mod19')">link</span>: function postLink(scope, iElement, iAttrs) {}
+        };
+    });</code></pre>
+        <p class="no-margin">指令定义对象给编译器提供了生成指令需要的细节。这个对象的属性可以通过上例查看。</p>
+        <p class="no-margin">以下是几个简单的举例：</p>
+        <p class="no-margin">（1）一个简单的指令：(源码见test1)</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;body ng-app="app"&gt;</span>
+        <span>&lt;hello&gt;</span><span>&lt;/hello&gt;</span>
+    <span>&lt;/body&gt;</span></code></pre>
+        <p class="no-margin">对于以上代码里面的<hello>标签，浏览器显然是不认识的，它唯一能做的事情就是无视这个标签。那么，为了让浏览器能够认识这个标签，我们需要使用Angular来定义一个hello指令（本质上说就是自己来把<hello>这种玩意儿替换成浏览器能识别的那些标准HTML标签）。</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>var</span> app=angular.module('app',[]);
+        <span>app</span>.directive('hello', function factory() {
+            <span>return</span> {
+                <span>restrict</span>: 'E',
+                <span>replace</span>:true,
+                <span>template</span>:'&lt;div&gt;It is a tag!&lt;/div&gt;'
+            };
+        });</code></pre>
+        <p class="no-margin">当浏览器编译结束后，我们的页面是这样的：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;div&gt;</span><span>It</span> is a tag!&lt;/div&gt;</code></pre>
+        <p class="no-margin"><span><</span>hello>这个东西已经被<span><</span>div>It is a tag!<span><</span>/div>这个标签替换掉了，这也是以上JS代码里面replace:true这行配置的作用。</p>
+        <p class="no-margin">如果我们需要替换的HTML标签很长，显然不能用拼接字符串的方式来写，这时候我们可以用templateUrl来替代template，从而可以把模板写到一个独立的HTML文件中。</p>
+        <p class="no-margin">（2）transclude：(源码见test2)</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span class="hljs-section">&lt;body ng-app="app"&gt;</span>
+        <span>&lt;hello&gt;</span>
+            <span>&lt;span&gt;</span>这个！<span>&lt;/span&gt;</span>
+            <span>&lt;span&gt;</span>这个也是！<span>&lt;/span&gt;</span>
+        <span>&lt;/hello&gt;</span>
+   <span>&lt;/body&gt;</span></code></pre>
+        <p class="no-margin">如果我们自定义的标签内部出现了子标签，应该如何去处理呢？很显然，transclude就是用来处理这种情况的。看下面：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>var</span> app=angular.module('app',[]);
+        <span>app</span>.directive('hello', function factory() {
+            <span class="hljs-attribute">return</span> {
+                <span>restrict</span>: 'E',
+                <span>replace</span>:false,
+                <span>template</span>: '&lt;div&gt;内嵌的的元素是：&lt;p ng-transclude&gt;&lt;/p&gt;&lt;/div&gt;',
+                <span>transclude</span>: true
+            };
+        });</code></pre>
+        <p class="no-margin">当浏览器编译结束后，我们的页面是这样的：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code ><span>&lt;hello&gt;</span>
+        <span>&lt;div&gt;</span>内嵌的的元素是：
+            <span>&lt;p ng-transclude=""&gt;</span>
+            <span>&lt;span class="ng-scope"&gt;</span>这个！<span>&lt;/span&gt;</span>
+            <span>&lt;span class="ng-scope"&gt;</span>这个也是！<span>&lt;/span&gt;</span>
+            <span>&lt;/p&gt;</span>
+        <span>&lt;/div&gt;</span>
+   <span>&lt;/hello&gt;</span></code></pre>
+        <p class="no-margin">很显然，由于我们没有加replace:true选项，所以<span><</span>hello>标签还在，没有被替换掉。你会发现浏览器实际上非常智能，虽然它并不认识<span><</span>hello>这个标签，但是页面没有出错，它只是默默地把这个标签忽略掉了！</p>
+        <p class="no-margin">还有两个例子详见<a style="outline: dashed" href="/slide-chen/test3.html" target="_blank">test3</a>和<a style="outline: dashed" href="/slide-chen/test4.html" target="_blank">test4</a>进一步了解。只可意会不可言传。</p>
+    </div>
+</div>
+

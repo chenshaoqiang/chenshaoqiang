@@ -1,0 +1,98 @@
+<div class="page_wrap">
+    <h1 class="no-margin color_white font_25 text-center">
+        AngularJS运用之——常用指令
+    </h1>
+    <div class="info_content2">
+        <p class="no-margin">1.样式控制指令:<span class="color_red">ng-class</span>用来给元素绑定类名，其表达式的返回值可以是以下三种：</p>
+        <p class="no-margin">（1）类名字符串:可以用空格分割多个类名，如"class1 class2"；</p>
+        <p class="no-margin">（2）类名数组:数组中的每一项都会层叠起来生效；</p>
+        <p class="no-margin">（3）一个名值对应的map。其键值为类名，值为boolean类型，当值为true时，该类会被加在元素上。如下：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;li ng-click="isClick='/page1'"</span>
+       <span>ng-class="{selected:'/page1'==isClick}"&gt;</span>
+            <span>&lt;a ui-sref="page1"&gt;</span>
+            <span>&lt;img src="images/thumbs/main.png" alt="1"/&gt;</span>
+            <span>&lt;/a&gt;</span>
+    <span>&lt;/li&gt;</span></code></pre>
+        <p class="no-margin">如果你想拼接一个类名出来，可以使用插值表达式，如：<span><</span>div class="<span>{{</span>style}}text">字体样式测试<span><</span>/div></p>
+        <p class="no-margin">与ng-class相近的，ng还提供了ng-class-odd、ng-class-even两个指令，用来配合ng-repeat分别在奇数列和偶数列使用对应的类。这个用来在表格中实现隔行换色再方便不过了。</p>
+        <p class="no-margin">2.<span class="color_red">ng-show，ng-hide</span></p>
+        <p class="no-margin">ng-show和ng-hide的值为boolean类型的表达式，当值为true时，对应的show或hide生效。框架会用display:block和display:none来控制元素的显隐。</p>
+        <p class="no-margin">3.表单控件功能相关的:取值均为boolean类型，当值为true时相关状态生效。</p>
+        <p class="no-margin">（1）<span class="color_red">ng-checked</span>控制radio和checkbox的选中状态</p>
+        <p class="no-margin">（2）<span class="color_red">ng-selected</span>控制下拉框的选中状态</p>
+        <p class="no-margin">（3）<span class="color_red">ng-disabled</span>控制失效状态</p>
+        <p class="no-margin">（4）<span class="color_red">ng-readonly</span>控制只读状态</p>
+        <p class="no-margin">4.事件绑定相关:在模板中可以用变量$event将事件对象传递到controller中。</p>
+        <p class="no-margin">（1）<span class="color_red">ng-change</span>="change($event)"</p>
+        <p class="no-margin">用于告诉 AngularJS 在 HTML 元素值改变时需要执行的操作。</p>
+        <p class="no-margin">（2）<span class="color_red">ng-click</span>="handleClick($event)"</p>
+        <p class="no-margin">在 HTML 元素被点击时需要执行的操作。</p>
+        <p class="no-margin">5.<span class="color_red">ng-src</span>和<span class="color_red">ng-href</span></p>
+        <p class="no-margin">由ng的启动及执行过程可知，ng框架是在DOMcontent加载完毕后才开始发挥作用。假如我们模板中有一张图片如下：</p>
+        <p class="no-margin"><span><</span>img src="<span>{{</span>imgUrl}}"/></p>
+        <p class="no-margin">那么在页面开始加载到ng编译完成之前，页面上会一直显示一张错误的图片，因为路径{{imgUrl}}还未被替换。</p>
+        <p class="no-margin">为了避免这种情况，我们使用ng-src指令，这样在路径被正确得到之前就不会显示找不到图片。同理，<span><</span>a>标签的href属性也需要换成ng-href，这样页面上就不会先出现一个地址错误的链接。</p>
+        <p class="no-margin">6.<span class="color_red">ng-if</span></p>
+        <p class="no-margin">ng-if指令可以根据表达式的值在DOM中生成或移除一个元素。如果赋值给ng-if的表达式的值是false，那对应的元素将会从DOM中移除，否则生成一个新的元素插入DOM中。ng-if同no-show和ng-hide指令最本质的区别是，它不是通过CSS显示或隐藏DOM节点，而是删除或者新增结点。</p>
+        <p class="no-margin">ng-if重新创建元素时用的是它们编译后的状态。此时这些元素的状态会是它们的原始状态。而ng-show和ng-hide则可以保留dom元素上次修改后的状态。</p>
+        <p class="no-margin">7.<span class="color_red">ng-model</span>:</p>
+        <p class="no-margin">绑定了HTML表单元素到scope变量中。如果 scope 中不存在变量, 将会创建它。</p>
+        <p class="no-margin">ng-modle是$scope <-> view的双向绑定。举个例子：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;div class="box"&gt;</span>
+        <span>&lt;p&gt;</span><span>images</span>目录中已有：img1-img3可测试!&lt;/p&gt;
+        <span>&lt;label for="myInput"&gt;</span>输入图片名称：<span>&lt;/label&gt;</span>
+        <span>&lt;input id="myInput" type="text" ng-model="imgName"/&gt;</span>
+    <span>&lt;/div&gt;</span>
+    <span>&lt;div class="img-box"&gt;</span>
+        <span>&lt;img ng-src="images/<span>{{</span>imgName}}.jpg"&gt;</span>
+            <span>Hello  {{</span>imgName}}!
+        <span>&lt;/img&gt;</span>
+    <span>&lt;/div&gt;</span></code></pre>
+        <p class="no-margin">我们通过ng-model将图片的地址和输入框的值绑定，这样，当我们输入框的值变化的时候，通过打印输出imgName的值和图片地址的变化，我们可以知道，ng-model实现了view和scope之间的双向绑定。<a style="outline: dashed" href="/slide-chen/imgurl_test.html" target="_blank">例子请点这里</a> </p>
+        <p class="no-margin">8.<span class="color_red">ng-bind</span>:</p>
+        <p class="no-margin">ng-bind指令告诉AngularJS使用给定的变量或表达式的值来替换HTML元素的内容。</p>
+        <p class="no-margin">ng-bind是从$scope -> view的单向绑定。</p>
+        <p class="no-margin">9.<span class="color_red">ng-repeat</span>:</p>
+        <p class="no-margin">ng-repeat指令用于循环输出指定次数的 HTML 元素。特别适用于列表和表格等可循环生成元素。举个例子：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;table ng-controller="myCtrl" border="1"&gt;</span>
+        <span>&lt;thead&gt;</span>
+            <span>&lt;tr&gt;</span>
+                <span>&lt;th&gt;</span><span>name</span>&lt;/th&gt;
+                <span>&lt;th&gt;</span><span>Country</span>&lt;/th&gt;
+            <span>&lt;/tr&gt;</span>
+        <span>&lt;/thead&gt;</span>
+        <span>&lt;tbody&gt;</span>
+            <span>&lt;tr ng-repeat="x in records"&gt;</span>
+                <span>&lt;td&gt;</span>{{<span>x</span>.Name}}&lt;/td&gt;
+                <span>&lt;td&gt;</span>{{<span>x</span>.Country}}&lt;/td&gt;
+            <span>&lt;/tr&gt;</span>
+        <span>&lt;/tbody&gt;</span>
+    <span>&lt;/table&gt;</span></code></pre>
+        <p class="no-margin">ng-repeat会将模版按照模型数据量循环生成到页面上。比如例子中records模型为：</p>
+        <pre style="max-width:100%;overflow-x:auto;"><code><span>app</span>.controller(<span>"myCtrl"</span>, function($scope) {
+        $<span>scope</span>.records =<span> [
+            {"Name" : "Aimy", "Country" : "Germany"},
+            {"Name" : "John", "Country" : "Sweden"},
+            {"Name" : "Moctezuma", "Country" : "Mexico"},
+            {"Name" : "Handel", "Country" : "Austria"}
+        ]</span>
+        });</code></pre>
+        <p class="no-margin">生成结果如下：</p>
+        <table style="border: 2px solid gold!important;">
+            <thead>
+            <tr>
+                <th>name</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="x in records">
+                <td style="border: 1px solid gold!important;">{{x.Name}}</td>
+                <td style="border: 1px solid gold!important;">{{x.Country}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="no-margin"></p>
+    </div>
+</div>
+

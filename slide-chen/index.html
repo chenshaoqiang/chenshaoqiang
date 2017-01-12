@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>AngularJS知识分享</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="AngularJS知识分享"/>
+    <meta name="keywords" content="angular, AngularJS, AngularJS知识分享"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link href="bower_components/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="appCtrl">
+<!-- Modal -->
+<div class="modal fade"
+     id="myModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background: #f1eeee;font-size: 20px">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">{{modalData.title}}</h4>
+            </div>
+            <div class="modal-body" style="text-indent: 25px;">
+                <p ng-repeat="md in modalData.content" ng-bind="md.data"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="img_container" class="img_container">
+    <div class="img_wrap" ui-view></div>
+    <div class="pxs_navigation">
+        <span class="pxs_next" ng-click="changePage('next')"></span>
+        <span class="pxs_prev" ng-click="changePage('prev')"></span>
+    </div>
+    <div class="pxs_loading">Loading images...</div>
+    <ul class="thumbnails">
+        <li ng-click="isClick='/page1'"
+            ng-class="{selected:'/page1'==isClick}">
+            <a ui-sref="page1">
+                <img src="images/thumbs/main.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page2'"
+            ng-class="{selected:'/page2'==isClick}">
+            <a ui-sref="page2">
+                <img src="images/thumbs/page2.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page3'"
+            ng-class="{selected:'/page3'==isClick}">
+            <a ui-sref="page3">
+                <img src="images/thumbs/page3.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page4'"
+            ng-class="{selected:'/page4'==isClick}">
+            <a ui-sref="page4">
+                <img src="images/thumbs/page4.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page5'"
+            ng-class="{selected:'/page5'==isClick}">
+            <a ui-sref="page5">
+                <img src="images/thumbs/page5.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page6'"
+            ng-class="{selected:'/page6'==isClick}">
+            <a ui-sref="page6">
+                <img src="images/thumbs/page6.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page7'"
+            ng-class="{selected:'/page7'==isClick}">
+            <a ui-sref="page7">
+                <img src="images/thumbs/page7.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page8'"
+            ng-class="{selected:'/page8'==isClick}">
+            <a ui-sref="page8">
+                <img src="images/thumbs/page8.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page9'"
+            ng-class="{selected:'/page9'==isClick}">
+            <a ui-sref="page9">
+                <img src="images/thumbs/page9.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page10'"
+            ng-class="{selected:'/page10'==isClick}">
+            <a ui-sref="page10">
+                <img src="images/thumbs/page10.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page11'"
+            ng-class="{selected:'/page11'==isClick}">
+            <a ui-sref="page11">
+                <img src="images/thumbs/page11.png" alt="1"/>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        $.fn.parallaxSlider = function (options) {
+            var opts = $.extend({}, $.fn.parallaxSlider.defaults, options);
+            return this.each(function () {
+                var $img_container = $(this),
+                        o = $.meta ? $.extend({}, opts, $img_container.data()) : opts;
+                var $thumbnails = $('.thumbnails', $img_container),
+                    $thumbs = $thumbnails.children(),
+                    $pxs_loading = $('.pxs_loading', $img_container),
+                    total_elems = 11;
+
+                var loaded = 0,
+                    $images = $('.img_container').find('img');
+                $images.each(function () {
+                    var $img = $(this);
+                    $("<img/>").load(function () {
+                        ++loaded;
+                        if (loaded == total_elems) {
+                            $pxs_loading.hide();
+                           // $pxs_slider_wrapper.show();
+
+                            var one_image_w = document.body.clientWidth;
+
+                            $thumbnails.css({
+                                'width': one_image_w + 'px'
+                            });
+                            var spaces = one_image_w;
+                            $thumbs.each(function (i) {
+                                var $this = $(this);
+                                var left =$this.width()* (i + 1);
+                                $this.css('marginLeft', left + 'px');
+
+                                if (o.thumbRotation) {
+                                    var angle = Math.floor(Math.random() * 41) - 20;
+                                    $this.css({
+                                        '-moz-transform': 'rotate(' + angle + 'deg)',
+                                        '-webkit-transform': 'rotate(' + angle + 'deg)',
+                                        'transform': 'rotate(' + angle + 'deg)'
+                                    });
+                                }
+                                //hovering the thumbs animates them up and down
+                                $this.bind('mouseenter', function () {
+                                    $(this).stop().animate({top: '-10px'}, 100);
+                                }).bind('mouseleave', function () {
+                                    $(this).stop().animate({top: '0px'}, 100);
+                                });
+                            });
+                            //make the first thumb be selected
+                            //highlight($thumbs.eq(0));
+                            $(window).resize(function () {
+                                w_w = $(window).width();
+                            });
+
+                        }
+                    }).error(function () {
+                        alert('here')
+                    }).attr('src', $img.attr('src'));
+                });
+
+
+            });
+        };
+
+        var w_w = $(window).width();
+
+        var highlight = function ($elem) {
+            $elem.siblings().removeClass('selected');
+            $elem.addClass('selected');
+        };
+
+        $.fn.parallaxSlider.defaults = {
+            auto: 0,	//how many seconds to periodically slide the content.
+                        //If set to 0 then autoplay is turned off.
+            speed: 1000,//speed of each slide animation
+            easing: 'jswing',//easing effect for the slide animation
+            easingBg: 'jswing',//easing effect for the background animation
+            circular: true,//circular slider
+            thumbRotation: true//the thumbs will be randomly rotated
+        };
+    })(jQuery);
+</script>
+<script type="text/javascript">
+    $(function () {
+        var $img_container = $('#img_container');
+        $img_container.parallaxSlider();
+    });
+</script>
+</body>
+</html>

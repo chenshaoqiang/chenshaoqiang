@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div ng-controller="a1Controller">
+        <p>a1==>message的信息: {{message}}</p>
+        <p>age的信息: {{age}}</p>
+        <div ng-controller="a2Controller">
+            <p>a2==>message的信息: {{message}}</p>
+            <p>name的信息: {{name}}</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var myApp=angular.module('myApp',[]);
+    myApp.controller('a1Controller', function($scope) {
+        $scope.name = 'a1里的name';
+        $scope.message = 'a1里的message';
+    });
+    myApp.controller('a2Controller', function($scope) {
+        $scope.message = 'a2里的message';
+        $scope.age = 'a2里的age';
+    });
+</script>
+</html>

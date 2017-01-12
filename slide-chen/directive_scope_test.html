@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+    <div ng-controller="MessageController">
+        <hello say-sth="saySth(sth)"></hello>
+    </div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.controller('MessageController',function($scope) {
+        $scope.color='red';
+        $scope.saySth=function(sth){
+            alert("say:"+sth);
+        };
+    });
+    app.directive('hello', function factory() {
+        return {
+            restrict: 'AE',
+            replace:true,
+            template:'<button>click me</button>',
+            scope: {
+                saySth:'&'
+            },
+            link: function postLink(scope, ele, attr) {
+                ele.bind('click', function () {
+                    scope.$apply(function () {
+                        scope.saySth({sth:'hello!'});
+                    })
+                })
+            }
+        };
+    });
+</script>
+</html>

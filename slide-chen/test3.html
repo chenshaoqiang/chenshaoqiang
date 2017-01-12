@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+<h3>源码如下：</h3>
+<pre style="max-width:100%;overflow-x:auto;"><code class="apache hljs" codemark="1"><span class="hljs-section">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-section">&lt;html&gt;</span>
+<span class="hljs-section">&lt;head lang="en"&gt;</span>
+    <span class="hljs-section">&lt;meta charset="UTF-8"&gt;</span>
+    <span class="hljs-section">&lt;title&gt;</span><span class="hljs-section">&lt;/title&gt;</span>
+<span class="hljs-section">&lt;/head&gt;</span>
+<span class="hljs-section">&lt;body ng-app="app"&gt;</span>
+    <span class="hljs-section">&lt;wrap&gt;</span>
+        <span class="hljs-section">&lt;hello&gt;</span><span class="hljs-section">&lt;/hello&gt;</span>
+    <span class="hljs-section">&lt;/wrap&gt;</span>
+<span class="hljs-section">&lt;/body&gt;</span>
+<span class="hljs-section">&lt;script type="text/javascript" src="bower_components/angular/angular.min.js"&gt;</span><span class="hljs-section">&lt;/script&gt;</span>
+<span class="hljs-section">&lt;script&gt;</span>
+    <span class="hljs-attribute">var</span> app=angular.module('app',[]);
+    <span class="hljs-attribute">app</span>.directive('hello', function factory() {
+        <span class="hljs-attribute">return</span> {
+            <span class="hljs-attribute">restrict</span>: 'AE',
+            <span class="hljs-attribute">scope</span>:{},
+            <span class="hljs-attribute">require</span>:'^wrap',
+            <span class="hljs-attribute">compile</span>: function (element,attrs) {
+                    //返回一个链接函数
+                    <span class="hljs-attribute">return</span> function (scope,elements,attrs,cntIns) {
+                    <span class="hljs-attribute">cntIns</span>.fn()
+            };
+        }
+    };
+    });
+    <span class="hljs-attribute">app</span>.directive('wrap', function factory() {
+        <span class="hljs-attribute">return</span> {
+            <span class="hljs-attribute">restrict</span>: 'AE',
+            <span class="hljs-attribute">scope</span>:{},
+            <span class="hljs-attribute">controller</span>: function ($scope) {
+                <span class="hljs-attribute">this</span>.fn= function () {
+                <span class="hljs-attribute">alert</span>('这是共享的！');
+            };
+        }
+    };
+    });
+    <span class="hljs-section">&lt;/script&gt;</span>
+    <span class="hljs-section">&lt;/html&gt;</span></code></pre>
+    <wrap>
+        <hello></hello>
+    </wrap>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script>
+    var app=angular.module('app',[]);
+    app.directive('hello', function factory() {
+        return {
+            restrict: 'AE',
+            scope:{},
+            require:'^wrap',
+            compile: function (element,attrs) {
+                //返回一个链接函数
+                return function (scope,elements,attrs,cntIns) {
+                    cntIns.fn()
+                };
+            }
+        };
+    });
+    app.directive('wrap', function factory() {
+        return {
+            restrict: 'AE',
+            scope:{},
+            controller: function ($scope) {
+                this.fn= function () {
+                    alert('这是共享的！');
+                };
+            }
+        };
+    });
+</script>
+</html>

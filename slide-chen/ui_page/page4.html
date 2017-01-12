@@ -1,0 +1,52 @@
+<div class="page_wrap">
+    <h1 class="no-margin color_white font_25 text-center">
+        运用，从这里开始...
+    </h1>
+    <div class="info_content2">
+        <p class="no-margin">1.首先，把<span data-toggle="modal" data-target="#myModal" ng-click="openModal('mod3')"><code>angular.js</code></span>引入你的HTML页面中。将script标签放在页面的<span data-toggle="modal" data-target="#myModal" ng-click="openModal('mod2')"><code>底部</code></span>。</p>
+        <p class="no-margin">2.一切从模块开始 。引入angular.js文件之后会在window下挂一个全局变量叫angular。module表示定义一个模块，指定模块的名称和此模块依赖的其它模块。该函数既可以创建新的模块，也可以获取已有模块，是创建还是获取，通过参数的个数来区分。只有一个参数(模块名),代表获取模块。传递参数不止一个,代表新建模块。空数组代表该模块不依赖其他模块。</p>
+        <p class="no-margin">像这样：定义了一个模块叫app，有一个依赖模块ui.router。</p>
+        <pre>var app = angular.module('app', ['ui.router']);</pre>
+        <p class="no-margin">像这样：表示获取模块</p>
+        <pre>var getModule = angular.module("app");//app == getModule为true,因为都是同一个模块</pre>
+        <p class="no-margin">注意：一个HTML文档只能注入一个主模块，其他模块通过依赖引用。</p>
+        <p class="no-margin">3.为模块定义控制器。一个模块可以对应多个控制器。</p>
+        <p class="no-margin">controller定义一个控制器，第一个参数表示控制器的名称，第二个参数表示控制器的定义。</p>
+        <pre>app.controller('appCtrl',function($scope){//逻辑代码});</pre>
+        <p class="no-margin">你需要为你的控制器指定它的作用范围。就像这样：</p>
+        <pre style="max-width: 100%;"><code><span>&lt;body ng-controller="appCtrl"&gt;</span></code></pre>
+        <p class="no-margin">控制器的作用范围和设置在的HTML标签范围一致，比如图中范围为整个body。</p>
+        <p class="no-margin">当实例化一个控制器的时候，会赠送一个$scope对象。$scope默认是个空对象，没有属性，等待你的填充。</p>
+        <p class="no-margin">这个$scope(也可称为作用域)非常重要，现在就讲讲它的作用。</p>
+        <p class="no-margin">作用域是用来检测模型的改变和为表达式提供执行上下文的。它是分层组织起来的，并且层级关系是紧跟着DOM的结构的。(这个层级根据的是各个控制器之间的相互嵌套)</p>
+        <p class="no-margin">我们在$scope上创建我们的逻辑方法和属性。</p>
+        <pre style="max-width: 100%;"><code> $<span>scope</span>.name=<span>"myName"</span>;
+    $<span>scope</span>.handleClick=function(){
+         //逻辑代码
+    }</code></pre>
+        <p class="no-margin">注意：外层控制器获取不到内层控制器里设置的属性和方法，内层可以直接获取外层的。如下：</p>
+        <pre style="max-width: 100%;"><code><span >&lt;div ng-controller="a1Controller"&gt;</span>
+        <span>&lt;p&gt;</span><span>a1</span>==&gt;message的信息: {{<span>message</span>}}&lt;/p&gt;
+        <span>&lt;p&gt;</span><span>age</span>的信息:{{<span>age</span>}}&lt;/p&gt;
+        <span>&lt;div ng-controller="a2Controller"&gt;</span>
+            <span>&lt;p&gt;</span><span>a2</span>==&gt;message的信息:{{<span>message</span>}}&lt;/p&gt;
+            <span>&lt;p&gt;</span><span>name</span>的信息: {{<span>name</span>}}&lt;/p&gt;
+        <span>&lt;/div&gt;</span>
+    <span>&lt;/div&gt;</span></code></pre>
+        <pre style="max-width: 100%;"><code><span>&lt;script&gt;</span>
+            <span>var</span> myApp=angular.module('myApp',[]);
+            <span>myApp</span>.controller('a1Controller', function($scope) {
+                $<span>scope</span>.name = 'a1里的name';
+                $<span>scope</span>.message = 'a1里的message';
+            });
+            <span>myApp</span>.controller('a2Controller', function($scope) {
+                $<span>scope</span>.message = 'a2里的message';
+                $<span>scope</span>.age = 'a2里的age';
+            });
+   <span>&lt;/script&gt;</span></code></pre>
+        <p class="no-margin">可以看到：我们在两个控制器里都有一个message属性，控制器打印出了各自的message(就近原则)。在a1控制器里还有个name属性，可以在a2控制器中获取到。在a2控制器里的age属性a1却获取不到。<a style="outline: dashed" href="/slide-chen/scope_test.html" target="_blank">不信点这里自己看！</a> </p>
+        <p class="no-margin">所有的应用都有一个 $rootScope，它可以作用在 ng-app 指令包含的所有HTML元素中。</p>
+        <p class="no-margin">$rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个controller中使用。你可以在它身上设置公用的属性和方法。</p>
+        <p class="no-margin"></p>
+    </div>
+</div>
