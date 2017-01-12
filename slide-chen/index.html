@@ -28,10 +28,15 @@
                     <span aria-hidden="true">&times;</span>
                     <span class="sr-only">Close</span>
                 </button>
-                <h4 class="modal-title">{{modalData.title}}</h4>
+                <h4 class="modal-title" ng-bind="modalData.title"></h4>
             </div>
             <div class="modal-body" style="text-indent: 25px;">
-                <p ng-repeat="md in modalData.content" ng-bind="md.data"></p>
+                <div ng-if="readyLoad">
+                    <img src="images/ajax-loader.gif" alt=""/>
+                </div>
+                <div ng-if="!readyLoad">
+                    <p  ng-repeat="md in modalData.content" ng-bind="md.data"></p>
+                </div>
             </div>
         </div>
     </div>
@@ -125,7 +130,7 @@
                 var $thumbnails = $('.thumbnails', $img_container),
                     $thumbs = $thumbnails.children(),
                     $pxs_loading = $('.pxs_loading', $img_container),
-                    total_elems = 11;
+                    total_elems = 12;
 
                 var loaded = 0,
                     $images = $('.img_container').find('img');

@@ -17,6 +17,7 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
 );
 app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$document',function($scope,$rootScope,$location,$state,$http,$document){
     $scope.isClick=$location.path();
+    $scope.readyLoad=true;
     //绑定全局键盘事件（左右键）
     $document.bind("keydown keypress", function(event) {
         if(event.keyCode == 37){
@@ -53,6 +54,7 @@ app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$d
     }
     //控制模态框内容
     $scope.openModal=function(point){
+        $scope.readyLoad=true;
         //获取文件内容
         $http({
             method: 'GET',
@@ -61,6 +63,7 @@ app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$d
             if (response.flag==="000000") {
                 var pointVal =parseInt(point.replace(/[^0-9]/ig,""));
                 $scope.modalData=response.data.list[pointVal];
+                $scope.readyLoad=false;
             }
         }).error(function(response, status) {
             $scope.status = status;
