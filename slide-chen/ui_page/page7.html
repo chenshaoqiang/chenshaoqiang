@@ -73,7 +73,7 @@
     });</code></pre>
         <p class="no-margin">指令定义对象给编译器提供了生成指令需要的细节。这个对象的属性可以通过上例查看。</p>
         <p class="no-margin">以下是几个简单的举例：</p>
-        <p class="no-margin">（1）一个简单的指令：(源码见test1)</p>
+        <p class="no-margin">（1）一个简单的指令：</p>
         <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;body ng-app="app"&gt;</span>
         <span>&lt;hello&gt;</span><span>&lt;/hello&gt;</span>
     <span>&lt;/body&gt;</span></code></pre>
@@ -90,7 +90,7 @@
         <pre style="max-width:100%;overflow-x:auto;"><code><span>&lt;div&gt;</span><span>It</span> is a tag!&lt;/div&gt;</code></pre>
         <p class="no-margin"><span><</span>hello>这个东西已经被<span><</span>div>It is a tag!<span><</span>/div>这个标签替换掉了，这也是以上JS代码里面replace:true这行配置的作用。</p>
         <p class="no-margin">如果我们需要替换的HTML标签很长，显然不能用拼接字符串的方式来写，这时候我们可以用templateUrl来替代template，从而可以把模板写到一个独立的HTML文件中。</p>
-        <p class="no-margin">（2）transclude：(源码见test2)</p>
+        <p class="no-margin">（2）transclude：</p>
         <pre style="max-width:100%;overflow-x:auto;"><code><span class="hljs-section">&lt;body ng-app="app"&gt;</span>
         <span>&lt;hello&gt;</span>
             <span>&lt;span&gt;</span>这个！<span>&lt;/span&gt;</span>

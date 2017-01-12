@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -51,21 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page7.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5238094">
-              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.37931034">
+              <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page8.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
+      <file leaf-file-name="test1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/test1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48413792">
-              <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+            <state vertical-scroll-proportion="-9.166667">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -169,8 +170,8 @@
         <option value="$PROJECT_DIR$/slide-chen/scope_test.html" />
         <option value="$PROJECT_DIR$/slide-chen/css/style.css" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page6.html" />
-        <option value="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
       </list>
     </option>
   </component>
@@ -525,7 +526,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484204567979</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fix4">
+      <created>1484204625049</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1484204625049</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,13 +594,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/H5/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -932,18 +932,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page7.html">
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5238094">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5462069">
+          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
+    <entry file="file://$PROJECT_DIR$/slide-chen/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48413792">
-          <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+        <state vertical-scroll-proportion="-9.166667">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37931034">
+          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
           <folding />
         </state>
       </provider>
