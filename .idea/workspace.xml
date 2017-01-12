@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page4.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+      <file leaf-file-name="page4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28883183">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.3323741">
+              <caret line="46" column="165" selection-start-line="46" selection-start-column="165" selection-end-line="46" selection-end-column="165" />
               <folding />
             </state>
           </provider>
@@ -112,6 +112,7 @@
         <option value="$PROJECT_DIR$/happy/index.html" />
         <option value="$PROJECT_DIR$/happy/css/style.css" />
         <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page4.html" />
       </list>
     </option>
   </component>
@@ -412,7 +413,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484202279013</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="上传一个angularjs分享3">
+      <created>1484202535264</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1484202535264</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -462,20 +469,14 @@
     <MESSAGE value="happy6t" />
     <MESSAGE value="上传一个angularjs分享" />
     <MESSAGE value="上传一个angularjs分享2" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传一个angularjs分享2" />
+    <MESSAGE value="上传一个angularjs分享3" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传一个angularjs分享3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/H51/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/H51/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -789,6 +790,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23106547">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.962963">
@@ -799,10 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28883183">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.3323741">
+          <caret line="46" column="165" selection-start-line="46" selection-start-column="165" selection-end-line="46" selection-end-column="165" />
           <folding />
         </state>
       </provider>
