@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page6.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page8.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -522,7 +519,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484203953588</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix4">
+      <created>1484204567979</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1484204567979</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -576,7 +579,8 @@
     <MESSAGE value="fix1" />
     <MESSAGE value="fix2" />
     <MESSAGE value="fix3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix3" />
+    <MESSAGE value="fix4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
