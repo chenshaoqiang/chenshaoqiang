@@ -91,8 +91,8 @@
         </div>
         <div style="clear: both"></div>
         <p class="no-margin">直白一点的总结就是：</p>
-        <p class="no-margin">Angular在管理的地盘上（指的是UI）派出了侦查员$watch()监视着整个地盘上的一举一动，地盘上的所有东西它都登记在册（怎么说呢?比如你又绑定了一些东西到UI上了，$watch()就会把你新绑定的东西加进它的小本子里）。地盘上出现风吹草动了（比如某个ng-click触发了），而且是Angular统治下的臣民(ng-click就是)做的（非外来人口：比如jquery等派来的就是外来人口）。$watch()就会把事情报告给$apply，所有Angular统治下的臣民的事情$watch()都会主动报告给$apply。不是Angular统治下的臣民，$watch()都是冷眼旁观，有点什么事情，看是看到了，但不会告诉$apply。(所以，我们可以越俎代庖，自己告诉$apply，就像上面的解决方法2一样。)</p>
+        <p class="no-margin">假设Angular管理了一段城墙（指的是UI），它派出了侦查员$watch()监视着整个城墙的风吹草动，城墙有关的所有东西它都登记在册（怎么说呢?比如你又绑定了一些东西到UI上了，$watch()就会把你新绑定的东西加进它的小本子里）。城墙上出现动静了（比如某个ng-click触发了，可以认为是一块城砖掉了），而且是Angular统治下的城墙内的臣民(ng-click就是)引起的（非外来人口：比如jquery等派来的就是外来人口）。$watch()就会把事情报告给$apply（可以认为是个官，随你理解），所有Angular统治下的臣民干的事情$watch()都会主动报告给$apply。不是Angular统治下的臣民，$watch()都是冷眼旁观，有点什么事情，看是看到了，但不会告诉$apply。(所以，我们可以越俎代庖，自己告诉$apply，就像上面的解决方法2一样。)</p>
         <p class="no-margin">$apply收到报告了，开始按流程办事了（进入Angular上下文）。这个流程按老规矩，派出一个询问官叫$digest循环，$digest需要干两件事，处理$evalAsync队列以及找$watch问话。$digest就一边把$watch本子上记着的所有臣民的情况都问了个遍,这就是dirty-checking(我猜想你的第一印象是dirty-checking很慢，好吧，其实是不对的。它像闪电般快。但是，是的，如果你在一个模版里有2000-3000个watch，它会开始变慢。但是我觉得如果你达到这个数量级，就可以找个用户体验专家咨询一下了。)，一边把$evalAsync需要做的事情做好了。</p>
-        <p class="no-margin">$digest活干完了，交了差，Angular就把地盘(UI)重新按照改变粉刷了一遍。</p>
+        <p class="no-margin">$digest活干完了，交了差，Angular就根据报告结果把城墙(UI)重新修缮了一遍。</p>
     </div>
 </div>

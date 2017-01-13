@@ -25,6 +25,8 @@
         <div style="clear: both"></div>
         <p class="no-margin" id="angulardom">（2）AngularJS-- AngularJS和其它模板系统不同。它使用的是DOM而不是字符串。模板仍然是用HTML字符串写的，并且它仍然是HTML。浏览器将它解析成DOM， 然后这个DOM会作为输入传递给模板引擎，也就是我们的编译器。<span class="color_red">编译器查看其中的指令</span>，找到的指令后，会开始监视指令内容中相应的模型。 这样做，就使得视图能“连续地”更新，不需要模板和数据的重新合并。你的模型也就成了你视图变化的唯一动因。 </p>
         <p class="no-margin">在AngularJS中，一个视图是模型通过HTML模板渲染之后的映射。这意味着，不论模型什么时候发生变化，AngularJS会实时更新结合点，随之更新视图。</p>
+        <div class="img-get5" change-w-h></div>
+        <div style="clear: both"></div>
         <p class="no-margin color_red">控制器</p>
         <p class="no-margin">视图背后的控制代码就是控制器。它的主要工作内容是构造模型，并把模型和回调方法一起发送到视图。 视图可以看做是作用域在模板(HTML)上的“投影”。而作用域是一个中间地带，它把模型整理好传递给视图，把浏览器事件传递给控制器。控制器和视图模板的分离非常重要，因为：</p>
         <p class="no-margin">（1）控制器是由Javascript写的。Javascript是命令式的，命令式的语言适合用来编写应用的行为。控制器不应该包含任何关于渲染代码（DOM引用或者片段）。</p>

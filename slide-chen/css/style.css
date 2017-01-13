@@ -272,7 +272,7 @@ p{
 	font-weight: 600;
 }
 /*------------*/
-.img-get1,.img-get2,.img-get3,.img-get4{
+.img-get1,.img-get2,.img-get3,.img-get4,.img-get5{
 	width: 400px;
 	height: 300px;
 	float: left;
@@ -292,6 +292,10 @@ p{
 }
 .img-get4{
 	background: url("../images/pre4.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.img-get5{
+	background: url("../images/pre5.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .img-content1{
