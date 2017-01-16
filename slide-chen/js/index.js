@@ -39,7 +39,7 @@ app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$d
         var value = $location.path().replace(/[^0-9]/ig,"");
         if(statu=='next'){
             //如果不是最后一页
-            if(value!='11'){
+            if(value!='13'){
                 var nextState="page"+(parseInt(value)+1);
                 $state.go(nextState);
             }
