@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page12.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page13.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/index.html" afterPath="$PROJECT_DIR$/slide-chen/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -44,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.008275862">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            <state vertical-scroll-proportion="-2.6111112">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page10.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="page10.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6666666">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.31034482">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -186,9 +166,9 @@
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page12.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
         <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
-        <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       </list>
     </option>
   </component>
@@ -276,46 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slide-chen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slide-chen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thumbs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -725,14 +665,20 @@
       <option name="project" value="LOCAL" />
       <updated>1484534978346</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update--ie8兼容">
+      <created>1484548490140</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1484548490140</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1059,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6666666">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/es5-sham.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11553273">
@@ -1121,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.008275862">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        <state vertical-scroll-proportion="-2.6111112">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1131,6 +1069,14 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31034482">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
