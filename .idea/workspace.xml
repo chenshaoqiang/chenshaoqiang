@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -112,11 +111,13 @@
       <file leaf-file-name="page10.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0068965517">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.55448276">
+              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#code#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#code#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -373,12 +374,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00003" summary="happy">
-      <created>1472625670049</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1472625670049</updated>
     </task>
     <task id="LOCAL-00004" summary="happy2">
       <created>1472628168401</created>
@@ -668,7 +663,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484550070712</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update">
+      <created>1484555984922</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1484555984922</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1073,11 +1074,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0068965517">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.55448276">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#code#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#code#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
