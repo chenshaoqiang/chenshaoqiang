@@ -3,14 +3,57 @@
         AngularJS常用服务
     </h1>
     <div class="info_content2">
-        <p class="no-margin">1.等待完善</p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
-        <p class="no-margin"></p>
+        <p class="no-margin">注：所有服务都需要在控制器中注入依赖。</p>
+        <p class="no-margin">1.AngularJS中$http服务的简单用法</p>
+        <p class="no-margin">我们可以使用内置的$http服务直接同外部进行通信。$http服务只是简单的封装了浏览器原生的XMLHttpRequest对象。</p>
+        <p class="no-margin">（1）$http是angular中的一个核心服务，利用浏览器的xmlhttprequest或者via JSONP对象与远程HTTP服务器进行交互。</p>
+        <p class="no-margin">（2）$http的使用方式和jquery提供的$.ajax操作比较相同，均支持多种method的请求，get、post、put、delete等。</p>
+        <p class="no-margin">（3）在controller中可通过与$scope同样的方式获取$http对象,e.g. function controller($scope,$http){}</p>
+        <p class="no-margin">下面进行$http服务的使用说明，调用如下：</p>
+        <p class="no-margin">$http(config).success(function(data,status,headers,config){}).error(function(data,status,headers,config){});</p>
+        <p class="no-margin">由于$http方法返回一个promise对象，我们可以在响应返回时用then方法来处理回调。如果
+            使用then方法，会得到一个特殊的参数，它代表了相应对象的成功或失败信息，还可以接受两个可选的函数作为参数。或者可以使用success和error回调代替。</p>
+        <p class="no-margin">then()方法与其他两种方法的主要区别是，它会接收到完整的响应对象，而success()和error()则会对响应对象进行析构。</p>
+        <p class="no-margin">（1）config为一个JSON对象，其中主要包含该请求的url、data、method等，如{url:"login.do",method:"post",data:{name:"12346",pwd:"123"}}。</p>
+        <p class="no-margin">--method  {String} 请求方式e.g. "GET"."POST"</p>
+        <p class="no-margin">--url {String} 请求的URL地址</p>
+        <p class="no-margin">--params {key,value} 请求参数，将在URL上被拼接成？key=value</p>
+        <p class="no-margin">--data {key,value} 数据，将被放入请求内发送至服务器</p>
+        <p class="no-margin">--cache {boolean} 若为true，在http GET请求时采用默认的$http cache，否则使用$cacheFactory的实例</p>
+        <p class="no-margin">--timeout {number} 设置超时时间</p>
+        <p class="no-margin">（2）success为请求成功后的回调函数，error为请求失败后的回调函数，这里主要是对返回的四个参数进行说明。</p>
+        <p class="no-margin">--data 响应体</p>
+        <p class="no-margin">--status 相应的状态值</p>
+        <p class="no-margin">--headers 获取getter的函数</p>
+        <p class="no-margin">--config 请求中的config对象，同上。</p>
+        <p class="no-margin">下面看两个例子：</p>
+        <p class="no-margin">（1）GET</p>
+        <pre style="max-width: 100%;"><code class="apache hljs" codemark="1">$<span class="hljs-attribute">http</span>({
+        <span class="hljs-attribute">method</span>: 'GET',
+        <span class="hljs-attribute">url</span>: URLInit.noticeList+<span class="hljs-string">"?pageSize="</span>+$scope.pageSizeForm.nlPageSize+<span class="hljs-string">"&amp;pageNum="</span>+$scope.nlPageNumber+<span class="hljs-string">"&amp;DT="</span>+new Date().getTime()
+        }).<span class="hljs-attribute">success</span>(function(response) {
+            <span class="hljs-attribute">if</span> (response.flag===<span class="hljs-string">"000000"</span>) {
+                $<span class="hljs-attribute">scope</span>.nlPages = response.data.navigatepageNums;
+                $<span class="hljs-attribute">scope</span>.nlTotalPage=response.data.lastPage;
+            } <span class="hljs-attribute">else</span>{
+                <span class="hljs-attribute">console</span>.log(response.desc);
+            }
+        }).<span class="hljs-attribute">error</span>(function(response, status) {
+            $<span class="hljs-attribute">scope</span>.status = status;
+        });</code></pre>
+        <p class="no-margin">（2）POST</p>
+        <pre style="max-width: 100%;"><code class="apache hljs" codemark="1">$<span class="hljs-attribute">http</span>({
+        <span class="hljs-attribute">method</span>: 'POST',
+        <span class="hljs-attribute">url</span>: URLInit.noticeStatus,
+        <span class="hljs-attribute">data</span>: $scope.sendData,
+        <span class="hljs-attribute">headers</span> : {'Content-Type': 'application/json'}
+        }).<span class="hljs-attribute">success</span>(function(response) {
+            <span class="hljs-attribute">if</span> (response.flag===<span class="hljs-string">"000000"</span>) {
+                $<span class="hljs-attribute">scope</span>.noticeList=[];
+                <span class="hljs-attribute">reloadData</span>();
+            }
+        }).<span class="hljs-attribute">error</span>(function(response, status) {
+            $<span class="hljs-attribute">scope</span>.status = status;
+        });</code></pre>
     </div>
 </div>

@@ -82,7 +82,7 @@ app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$d
         {"Name" : "John", "Country" : "Sweden"},
         {"Name" : "Moctezuma", "Country" : "Mexico"},
         {"Name" : "Handel", "Country" : "Austria"}
-    ]
+    ];
 }]);
 app.directive("changeWH",['$document',function($document){
     return function(scope,ele,attr){

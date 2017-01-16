@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -76,10 +77,10 @@
         <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+              <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
               <folding>
-                <element signature="e#3504#3871#0" expanded="false" />
-                <element signature="e#3920#4588#0" expanded="false" />
+                <element signature="e#3505#3872#0" expanded="false" />
+                <element signature="e#3921#4589#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -111,9 +112,12 @@
       <file leaf-file-name="page10.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6827586">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="0.0068965517">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,10 +171,10 @@
         <option value="$PROJECT_DIR$/slide-chen/css/index.css" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page12.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
-        <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page9.html" />
+        <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       </list>
     </option>
@@ -304,7 +308,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/myreactdemo" />
+    <property name="last_opened_file_path" value="E:/onecloud-verify" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -369,12 +373,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2">
-      <created>1472623650030</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1472623650030</updated>
     </task>
     <task id="LOCAL-00003" summary="happy">
       <created>1472625670049</created>
@@ -664,7 +662,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484549932403</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update">
+      <created>1484550070712</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1484550070712</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -937,17 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-          <folding>
-            <element signature="e#3504#3871#0" expanded="false" />
-            <element signature="e#3920#4588#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page10.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1040,6 +1033,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8333333">
@@ -1056,22 +1060,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html">
+    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.259259">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#3505#3872#0" expanded="false" />
+            <element signature="e#3921#4589#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6827586">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
+        <state vertical-scroll-proportion="0.0068965517">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#pre#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
