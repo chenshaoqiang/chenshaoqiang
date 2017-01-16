@@ -5,6 +5,7 @@
     <div class="info_content2">
         <p class="no-margin">1.首先需要确保你的HTML页面开始部分要有DOCTYPE声明。DOCTYPE告诉浏览器使用什么样的HTML或XHTML规范来解析HTML文档。目前的最佳实践就是在HTML文档的首行键入：</p>
         <p class="no-margin"><span><</span>!DOCTYPE html></p>
+        <p class="no-margin">DOCTYPE前后有空行也不行，要去掉空格。</p>
         <p class="no-margin">2.针对浏览器的内容做标识（使用meta标签调节浏览器的渲染方式）：</p>
         <p class="no-margin">bootstrap不支持IE兼容模式，为了让IE浏览器运行最新的渲染模式，将添加以下标签在页面中:</p>
         <p class="no-margin"><span><</span>meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /></p>
@@ -22,7 +23,12 @@
         <span>&lt;script type="text/javascript" src="bower_components/bootstrap/dist/js/respond.min.js"&gt;</span><span>&lt;/script&gt;</span>
         <span>&lt;script type="text/javascript" src="bower_components/bootstrap/dist/js/es5-sham.min.js"&gt;</span><span>&lt;/script&gt;</span>
     <span>&lt;![endif]--&gt;</span></code></pre>
-        <p class="no-margin">7.相关文件下载地址：</p>
+        <p class="no-margin">7.JS与CSS的引入顺序导致的问题：</p>
+        <p class="no-margin">必须先引用css再引用js</p>
+        <pre style="max-width: 100%;"><code><span>&lt;link rel="stylesheet" type="text/css"  href="bower_components/bootstrap/dist/css/bootstrap.min.css"&gt;</span><span>&lt;/script&gt;</span>
+    <span>&lt;script type="text/javascript" src="bower_components/bootstrap/dist/js/respond.min.js"&gt;</span><span>&lt;/script&gt;</span></code></pre>
+        <p class="no-margin"></p>
+        <p class="no-margin">8.相关文件下载地址：</p>
         <p class="no-margin"><a href="http://www.bootcdn.cn/angular.js/1.2.29/" target="_blank">angular.js1.2.29 和 angular-loader.js</a></p>
         <p class="no-margin"><a href="http://www.bootcdn.cn/angular-ui-router/" target="_blank">angular-ui-router</a></p>
         <p class="no-margin"><a href="http://www.bootcdn.cn/es5-shim/" target="_blank">es5-shim</a></p>
