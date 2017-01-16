@@ -1,8 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <title>AngularJS知识分享</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
     <meta name="description" content="AngularJS知识分享"/>
     <meta name="keywords" content="angular, AngularJS, AngularJS知识分享"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -11,6 +13,17 @@
     <link href="bower_components/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
     <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--解决ie8 console 未定义的代码-->
+    <script type="text/javascript">
+        if (!window.console || !console.firebug) {
+            var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+
+            window.console = {};
+            for (var i = 0; i < names.length; ++i)
+                window.console[names[i]] = function () {
+                }
+        }
+    </script>
 </head>
 <body ng-controller="appCtrl">
 <!-- Modal -->
@@ -119,6 +132,12 @@
 </div>
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular-loader.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/respond.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/es5-sham.min.js"></script>
+<![endif]-->
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
     $(function () {
