@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page9.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12413793">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.8333333">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding>
                 <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -108,6 +108,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="page10.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6827586">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,9 +169,9 @@
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
         <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
-        <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page9.html" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
       </list>
     </option>
   </component>
@@ -359,12 +369,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00001" summary="1">
-      <created>1472622493632</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1472622493632</updated>
     </task>
     <task id="LOCAL-00002" summary="2">
       <created>1472623650030</created>
@@ -654,7 +658,13 @@
       <option name="project" value="LOCAL" />
       <updated>1484549487331</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update">
+      <created>1484549932402</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1484549932403</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1006,14 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62068963">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24827586">
@@ -1030,6 +1032,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="54" column="100" selection-start-line="54" selection-start-column="100" selection-end-line="54" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8333333">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.259259">
@@ -1041,27 +1067,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html">
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="54" column="100" selection-start-line="54" selection-start-column="100" selection-end-line="54" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.6827586">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12413793">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
