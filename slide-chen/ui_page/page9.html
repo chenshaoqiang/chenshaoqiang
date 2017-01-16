@@ -51,7 +51,7 @@
         <p class="no-margin">其中：$stateProvider为Angular.js服务注入路由支持。$urlRouterProvider 在这里有两个主要目的。一是建立一个默认路由，用于管理未知的URL（统一跳转到某处）。二是监听浏览器地址栏URL的变化，重定向到路由定义的状态中。总之，$urlRouterProvider让我们处理状态机抽象的$stateProvider没有检测到的情况。</p>
         <p class="no-margin">当我们的视图需要配置控制器时，我们需要这样设置就可以：</p>
         <pre>.state('page1',{url:'/page1',templateUrl: 'ui_page/page1.html',controller: 'pageCtrl as app'})</pre>
-        <p class="no-margin">（1）在html页面中，使用：<span><</span>a ui-sref="home">Home<span><</span>/a>放弃：<span><</span>a href="#/">Home<span><</span>/a></p>
+        <p class="no-margin">（1）在html页面中，使用：<span><</span>a ui-sref="page1">page1<span><</span>/a>放弃：<span><</span>a href="#/page1">page1<span><</span>/a></p>
         <p class="no-margin">ui-sref可以这样理解：ui是AngularUI项目所有指令的前缀，sref是包装了传统HTML锚点标签的href属性和状态判断。</p>
         <p class="no-margin">（2）控制器中使用：(不要忘了注入$state服务)</p>
         <pre>$state.go('page1');</pre>
