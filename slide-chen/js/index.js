@@ -13,7 +13,10 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             .state('page9', {url:'/page9', templateUrl: 'ui_page/page9.html'})
             .state('page10', {url:'/page10', templateUrl: 'ui_page/page10.html'})
             .state('page11', {url:'/page11', templateUrl: 'ui_page/page11.html'})
-    }]
+            .state('page12', {url:'/page12', templateUrl: 'ui_page/page12.html'})
+            .state('page13', {url:'/page13', templateUrl: 'ui_page/page13.html'})
+    }
+    ]
 );
 app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$document',function($scope,$rootScope,$location,$state,$http,$document){
     $scope.isClick=$location.path();
@@ -131,7 +134,7 @@ angular.element(document).ready(function(){
                 var $thumbnails = $('.thumbnails', $img_container),
                     $thumbs = $thumbnails.children(),
                     $pxs_loading = $('.pxs_loading', $img_container),
-                    total_elems = 11;
+                    total_elems = 13;
 
                 var loaded = 0,
                     $images = $('.img_container').find('img');

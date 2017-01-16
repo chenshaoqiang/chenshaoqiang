@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular-loader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/es5-sham.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/html5shiv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/respond.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular-ui-router.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/slide-chen/bower_components/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page13.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/main.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" afterPath="$PROJECT_DIR$/slide-chen/images/thumbs/page9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/index.html" afterPath="$PROJECT_DIR$/slide-chen/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/js/index.js" afterPath="$PROJECT_DIR$/slide-chen/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" afterPath="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -33,9 +47,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.985534">
-              <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.008275862">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,28 +64,38 @@
       <file leaf-file-name="page5.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state vertical-scroll-proportion="-3.3333333">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page6.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page6.html">
+      <file leaf-file-name="page10.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page9.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html">
+      <file leaf-file-name="page3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="39" />
+            <state vertical-scroll-proportion="-8.333333">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -80,22 +105,11 @@
         <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
               <folding>
-                <element signature="e#143#1095#0" expanded="false" />
-                <element signature="e#3335#3702#0" expanded="false" />
-                <element signature="e#3751#4419#0" expanded="false" />
+                <element signature="e#3504#3871#0" expanded="false" />
+                <element signature="e#3920#4588#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page7.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="201" selection-start-line="15" selection-start-column="201" selection-end-line="15" selection-end-column="201" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,8 +118,20 @@
         <entry file="file://$PROJECT_DIR$/slide-chen/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="291" column="1" selection-start-line="291" selection-start-column="1" selection-end-line="291" selection-end-column="1" />
+              <caret line="282" column="31" selection-start-line="282" selection-start-column="31" selection-end-line="282" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page11.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.259259">
+              <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,10 +179,15 @@
         <option value="$PROJECT_DIR$/slide-chen/scope_test.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page7.html" />
-        <option value="$PROJECT_DIR$/slide-chen/css/style.css" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page5.html" />
-        <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page6.html" />
+        <option value="$PROJECT_DIR$/slide-chen/css/style.css" />
+        <option value="$PROJECT_DIR$/slide-chen/css/index.css" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page12.html" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page3.html" />
+        <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page10.html" />
+        <option value="$PROJECT_DIR$/slide-chen/ui_page/page11.html" />
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
       </list>
     </option>
@@ -169,10 +200,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -262,7 +293,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slide-chen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thumbs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,32 +373,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slide-chen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -364,11 +391,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\demo\sthOfShaoQiang\slide-chen\css" />
+      <recent name="E:\demo\sthOfShaoQiang\slide-chen\images\thumbs" />
+      <recent name="E:\demo\sthOfShaoQiang\slide-chen\ui_page" />
       <recent name="E:\demo\sthOfShaoQiang\slide-chen\bower_components\bootstrap\dist\js" />
       <recent name="E:\demo\sthOfShaoQiang\slide-chen\bower_components\angular" />
-      <recent name="E:\demo\sthOfShaoQiang\slide-chen\js" />
-      <recent name="E:\demo\sthOfShaoQiang\slide-chen\css" />
-      <recent name="E:\demo\sthOfShaoQiang\slide-chen\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -692,14 +719,20 @@
       <option name="project" value="LOCAL" />
       <updated>1484529107239</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update--ie8兼容">
+      <created>1484534978346</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1484534978346</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16837482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -754,70 +787,18 @@
     <MESSAGE value="fix9" />
     <MESSAGE value="end" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update--ie8兼容" />
+    <option name="LAST_COMMIT_MESSAGE" value="update--ie8兼容" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/happy/img/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happy/img/2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happy/img/r.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happy/img/l.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happy/img/k.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/happy/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8583198">
-          <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/test5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36551723">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/imgurl_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36">
           <caret line="46" column="165" selection-start-line="46" selection-start-column="165" selection-end-line="46" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5462069">
-          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -886,27 +867,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/part_1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/main.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -956,14 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/images/pre4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -977,77 +930,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="291" column="1" selection-start-line="291" selection-start-column="1" selection-end-line="291" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29654035">
-          <caret line="0" column="216" selection-start-line="0" selection-start-column="216" selection-end-line="0" selection-end-column="216" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0378913">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-          <folding>
-            <element signature="e#143#1095#0" expanded="false" />
-            <element signature="e#3335#3702#0" expanded="false" />
-            <element signature="e#3751#4419#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/html5shiv.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/respond.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/es5-sham.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1057,7 +943,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1080,11 +966,165 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="31" selection-start-line="282" selection-start-column="31" selection-end-line="282" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page13.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+          <folding>
+            <element signature="e#3504#3871#0" expanded="false" />
+            <element signature="e#3920#4588#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page11.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.1034484">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6827586">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12413793">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/es5-sham.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11553273">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/html5shiv.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/bower_components/bootstrap/dist/js/respond.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page12.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page13.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide-chen/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40436456">
+          <caret line="0" column="346" selection-start-line="0" selection-start-column="346" selection-end-line="0" selection-end-column="346" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.985534">
-          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.008275862">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

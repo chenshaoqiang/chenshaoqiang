@@ -15,6 +15,7 @@
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--解决ie8 console 未定义的代码-->
     <script type="text/javascript">
+
         if (!window.console || !console.firebug) {
             var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
 
@@ -126,6 +127,18 @@
             ng-class="{selected:'/page11'==isClick}">
             <a ui-sref="page11">
                 <img src="images/thumbs/page11.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page12'"
+            ng-class="{selected:'/page12'==isClick}">
+            <a ui-sref="page12">
+                <img src="images/thumbs/page12.png" alt="1"/>
+            </a>
+        </li>
+        <li ng-click="isClick='/page13'"
+            ng-class="{selected:'/page13'==isClick}">
+            <a ui-sref="page13">
+                <img src="images/thumbs/page13.png" alt="1"/>
             </a>
         </li>
     </ul>
