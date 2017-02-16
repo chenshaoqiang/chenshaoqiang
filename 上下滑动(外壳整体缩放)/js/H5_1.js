@@ -3,10 +3,12 @@ var sourceW = 640;//设计稿
 var sourceH = 960;
 var winW = document.documentElement.clientWidth;
 var winH = document.documentElement.clientHeight;
-//console.log(window.devicePixelRatio);//这个可以获取dpr的值
-if ((winW / winH) < (sourceW / sourceH)) {//如果高比较大，拿高来适应
+console.log(window.devicePixelRatio);//这个可以获取dpr的值
+if ((winW / winH) < (sourceW / sourceH)) {
+//如果高比较大，拿高来适应
     main.style.webkitTransform = "scale(" + (winH / sourceH) + ")";
-} else {//如果宽比较大，拿宽来适应
+} else {
+//如果宽比较大，拿宽来适应
     main.style.webkitTransform = "scale(" + (winW / sourceW) + ")";
 }
 var oLis = document.getElementById("list").getElementsByTagName("li");
@@ -22,6 +24,7 @@ var oLis = document.getElementById("list").getElementsByTagName("li");
 
 function start(ev) {
     //console.log("碰到了");
+    console.log(ev);
     this.startX = ev.changedTouches[0].pageX;
     this.startY = ev.changedTouches[0].pageY;
     //console.log(startY,startX);

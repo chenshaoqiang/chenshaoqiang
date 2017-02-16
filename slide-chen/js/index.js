@@ -1,5 +1,6 @@
 var app = angular.module('app', ['ui.router']);
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
+        //路由配置
         $urlRouterProvider.otherwise('page1');
         $stateProvider
             .state('page1', {url:'/page1', templateUrl: 'ui_page/page1.html'})
