@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script type="application/javascript" charset="utf-8">
+    var arr=[1,2,2,2,5,5,7,8,8,8,8];
+    /*
+    * 统计纯数字数组中各项出现的次数
+    * */
+    function arrCount(arr){
+        var obj={};
+        for(var i=0;i<arr.length;i++){
+            var cur=arr[i];
+            if(obj[cur]){
+                obj[cur]++;
+            }else{
+                obj[cur]=1;
+            }
+        }
+        return obj;
+    }
+    var res=arrCount(arr);
+    console.log(res);
+
+</script>
+</html>
