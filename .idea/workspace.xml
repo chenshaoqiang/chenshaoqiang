@@ -2,10 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knowledge/array.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sthOfShaoQiang.iml" afterPath="$PROJECT_DIR$/.idea/sthOfShaoQiang.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knowledge/scope.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\css3_ball.html" afterPath="$PROJECT_DIR$/ball.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\eyes(平面模拟法).html" afterPath="$PROJECT_DIR$/eyes.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\css\index.css" afterPath="$PROJECT_DIR$/rem/css/index.css" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\00.PNG" afterPath="$PROJECT_DIR$/rem/imags/00.PNG" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\312415.png" afterPath="$PROJECT_DIR$/rem/imags/312415.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\8415.png" afterPath="$PROJECT_DIR$/rem/imags/8415.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\JP.png" afterPath="$PROJECT_DIR$/rem/imags/JP.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\Triangle.png" afterPath="$PROJECT_DIR$/rem/imags/Triangle.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\US.png" afterPath="$PROJECT_DIR$/rem/imags/US.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\USvsJP.png" afterPath="$PROJECT_DIR$/rem/imags/USvsJP.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\back.png" afterPath="$PROJECT_DIR$/rem/imags/back.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\bgImag.png" afterPath="$PROJECT_DIR$/rem/imags/bgImag.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\indexArrow.png" afterPath="$PROJECT_DIR$/rem/imags/indexArrow.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\jiasuoer.PNG" afterPath="$PROJECT_DIR$/rem/imags/jiasuoer.PNG" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\nanlan.PNG" afterPath="$PROJECT_DIR$/rem/imags/nanlan.PNG" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\pointicon.png" afterPath="$PROJECT_DIR$/rem/imags/pointicon.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\showback.png" afterPath="$PROJECT_DIR$/rem/imags/showback.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\sikela.PNG" afterPath="$PROJECT_DIR$/rem/imags/sikela.PNG" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\siliangtu.png" afterPath="$PROJECT_DIR$/rem/imags/siliangtu.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\suport.png" afterPath="$PROJECT_DIR$/rem/imags/suport.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\imags\suport1.png" afterPath="$PROJECT_DIR$/rem/imags/suport1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\index.html" afterPath="$PROJECT_DIR$/rem/index.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\rem布局法\js\index.js" afterPath="$PROJECT_DIR$/rem/js/index.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\test3D(立方体).html" afterPath="$PROJECT_DIR$/test3D.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\H5_1.html" afterPath="$PROJECT_DIR$/upDown/H5_1.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\css\H5_1.css" afterPath="$PROJECT_DIR$/upDown/css/H5_1.css" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\imags\b.png" afterPath="$PROJECT_DIR$/upDown/imags/b.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\imags\c.png" afterPath="$PROJECT_DIR$/upDown/imags/c.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\imags\d.png" afterPath="$PROJECT_DIR$/upDown/imags/d.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\imags\e.png" afterPath="$PROJECT_DIR$/upDown/imags/e.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\js\H5_1.js" afterPath="$PROJECT_DIR$/upDown/js/H5_1.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\上下滑动(外壳整体缩放)\js\jquery-2.1.3.min.js" afterPath="$PROJECT_DIR$/upDown/js/jquery-2.1.3.min.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\.name" afterPath="$PROJECT_DIR$/media/.idea/.name" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\carNumber.iml" afterPath="$PROJECT_DIR$/media/.idea/carNumber.iml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\encodings.xml" afterPath="$PROJECT_DIR$/media/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\misc.xml" afterPath="$PROJECT_DIR$/media/.idea/misc.xml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\modules.xml" afterPath="$PROJECT_DIR$/media/.idea/modules.xml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\.idea\workspace.xml" afterPath="$PROJECT_DIR$/media/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\css\animate.css" afterPath="$PROJECT_DIR$/media/css/animate.css" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\css\style.css" afterPath="$PROJECT_DIR$/media/css/style.css" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\arr.png" afterPath="$PROJECT_DIR$/media/img/arr.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\ewm.png" afterPath="$PROJECT_DIR$/media/img/ewm.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_ball1.png" afterPath="$PROJECT_DIR$/media/img/p1_ball1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_ball2.png" afterPath="$PROJECT_DIR$/media/img/p1_ball2.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_ball3.png" afterPath="$PROJECT_DIR$/media/img/p1_ball3.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_ball4.png" afterPath="$PROJECT_DIR$/media/img/p1_ball4.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_ball5.png" afterPath="$PROJECT_DIR$/media/img/p1_ball5.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_botBg.png" afterPath="$PROJECT_DIR$/media/img/p1_botBg.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_car.png" afterPath="$PROJECT_DIR$/media/img/p1_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_head.png" afterPath="$PROJECT_DIR$/media/img/p1_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p1_txtBg1.png" afterPath="$PROJECT_DIR$/media/img/p1_txtBg1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_ball1.png" afterPath="$PROJECT_DIR$/media/img/p2_ball1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_botBg.png" afterPath="$PROJECT_DIR$/media/img/p2_botBg.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_gril.png" afterPath="$PROJECT_DIR$/media/img/p2_gril.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_grilshadow.png" afterPath="$PROJECT_DIR$/media/img/p2_grilshadow.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_head.png" afterPath="$PROJECT_DIR$/media/img/p2_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p2_man.png" afterPath="$PROJECT_DIR$/media/img/p2_man.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_area1.png" afterPath="$PROJECT_DIR$/media/img/p3_area1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_area2.png" afterPath="$PROJECT_DIR$/media/img/p3_area2.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_area3.png" afterPath="$PROJECT_DIR$/media/img/p3_area3.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_area4.png" afterPath="$PROJECT_DIR$/media/img/p3_area4.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_ball1.png" afterPath="$PROJECT_DIR$/media/img/p3_ball1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_car.png" afterPath="$PROJECT_DIR$/media/img/p3_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_head.png" afterPath="$PROJECT_DIR$/media/img/p3_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p3_tow.png" afterPath="$PROJECT_DIR$/media/img/p3_tow.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_car.png" afterPath="$PROJECT_DIR$/media/img/p4_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_head1.png" afterPath="$PROJECT_DIR$/media/img/p4_head1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_man.png" afterPath="$PROJECT_DIR$/media/img/p4_man.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_txt1.png" afterPath="$PROJECT_DIR$/media/img/p4_txt1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_txt2.png" afterPath="$PROJECT_DIR$/media/img/p4_txt2.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p4_txtBg1.png" afterPath="$PROJECT_DIR$/media/img/p4_txtBg1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p5_car.png" afterPath="$PROJECT_DIR$/media/img/p5_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p5_head.png" afterPath="$PROJECT_DIR$/media/img/p5_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p5_man.png" afterPath="$PROJECT_DIR$/media/img/p5_man.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p5_txt1.png" afterPath="$PROJECT_DIR$/media/img/p5_txt1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p5_txtBg1.png" afterPath="$PROJECT_DIR$/media/img/p5_txtBg1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_car.png" afterPath="$PROJECT_DIR$/media/img/p6_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_gril.png" afterPath="$PROJECT_DIR$/media/img/p6_gril.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_head.png" afterPath="$PROJECT_DIR$/media/img/p6_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_head2.png" afterPath="$PROJECT_DIR$/media/img/p6_head2.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_txt1.png" afterPath="$PROJECT_DIR$/media/img/p6_txt1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p6_txtBg1.png" afterPath="$PROJECT_DIR$/media/img/p6_txtBg1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p7_car.png" afterPath="$PROJECT_DIR$/media/img/p7_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p7_head.png" afterPath="$PROJECT_DIR$/media/img/p7_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p7_man.png" afterPath="$PROJECT_DIR$/media/img/p7_man.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p7_txt1.png" afterPath="$PROJECT_DIR$/media/img/p7_txt1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p7_txtBg1.png" afterPath="$PROJECT_DIR$/media/img/p7_txtBg1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p8_car.png" afterPath="$PROJECT_DIR$/media/img/p8_car.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p8_head.png" afterPath="$PROJECT_DIR$/media/img/p8_head.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p8_img2.png" afterPath="$PROJECT_DIR$/media/img/p8_img2.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p8_tree.png" afterPath="$PROJECT_DIR$/media/img/p8_tree.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\img\p8_txt1.png" afterPath="$PROJECT_DIR$/media/img/p8_txt1.png" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\index.html" afterPath="$PROJECT_DIR$/media/index.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\js\common.js" afterPath="$PROJECT_DIR$/media/js/common.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\流式+媒体查询\js\jquery-2.1.3.min.js" afterPath="$PROJECT_DIR$/media/js/jquery-2.1.3.min.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\css\index.css" afterPath="$PROJECT_DIR$/lunDemo/css/index.css" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\banner1.jpg" afterPath="$PROJECT_DIR$/lunDemo/img/banner1.jpg" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\banner2.jpg" afterPath="$PROJECT_DIR$/lunDemo/img/banner2.jpg" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\banner3.jpg" afterPath="$PROJECT_DIR$/lunDemo/img/banner3.jpg" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\banner4.jpg" afterPath="$PROJECT_DIR$/lunDemo/img/banner4.jpg" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\banner5.jpg" afterPath="$PROJECT_DIR$/lunDemo/img/banner5.jpg" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\img\default.gif" afterPath="$PROJECT_DIR$/lunDemo/img/default.gif" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\index.html" afterPath="$PROJECT_DIR$/lunDemo/index.html" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\js\index.js" afterPath="$PROJECT_DIR$/lunDemo/js/index.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\js\index备份.js" afterPath="$PROJECT_DIR$/lunDemo/js/index备份.js" />
+      <change type="MOVED" beforePath="E:\demo\sthOfShaoQiang\移动端无缝轮播demo\web.config" afterPath="$PROJECT_DIR$/lunDemo/web.config" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,92 +130,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rem布局法/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1666665">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/knowledge/array.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65822786">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/H5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="13" selection-end-column="57" />
+            <state vertical-scroll-proportion="84.09259">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css3_ball.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css3_ball.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/H51/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-9.425926">
+              <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rem/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ball.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ball.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.8333333">
               <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css3动画和属性.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="css3动画和属性.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24412297">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eyes(平面模拟法).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyes(平面模拟法).html">
+      <file leaf-file-name="dynamic-data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic-data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-24.685184">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/media/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.8333334">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eyes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eyes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.8333333">
               <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test3D(立方体).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test3D(立方体).html">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/H5/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test3D1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test3D1.html">
+      <file leaf-file-name="innerDoor_faceToFace.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/H5/js/innerDoor_faceToFace.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +291,7 @@
         <option value="$PROJECT_DIR$/H5/index.html" />
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
         <option value="$PROJECT_DIR$/knowledge/array.html" />
+        <option value="$PROJECT_DIR$/knowledge/scope.html" />
       </list>
     </option>
   </component>
@@ -212,8 +331,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,20 +351,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sthOfShaoQiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knowledge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -260,11 +365,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\demo\sthOfShaoQiang\knowledge" />
       <recent name="E:\demo\sthOfShaoQiang" />
       <recent name="E:\demo\sthOfShaoQiang\slide-chen\css" />
       <recent name="E:\demo\sthOfShaoQiang\slide-chen\images\thumbs" />
       <recent name="E:\demo\sthOfShaoQiang\slide-chen\ui_page" />
-      <recent name="E:\demo\sthOfShaoQiang\slide-chen\bower_components\bootstrap\dist\js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.array.html">
@@ -328,12 +433,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00008" summary="happy6">
-      <created>1472630348631</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1472630348631</updated>
     </task>
     <task id="LOCAL-00009" summary="happy6t">
       <created>1472630612576</created>
@@ -623,31 +722,37 @@
       <option name="project" value="LOCAL" />
       <updated>1488546565578</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update">
+      <created>1488556232748</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1488556232748</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1669107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -693,23 +798,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page10.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slide-chen/images/thumbs/page11.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/ui_page/page8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1034484">
@@ -879,7 +967,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/流式+媒体查询/css/style.css">
+    <entry file="file://$PROJECT_DIR$/media/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
@@ -907,31 +995,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H51/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83725137">
-          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/流式+媒体查询/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16274865">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rem布局法/css/index.css">
+    <entry file="file://$PROJECT_DIR$/rem/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rem布局法/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -942,15 +1009,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css3_ball.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
+    <entry file="file://$PROJECT_DIR$/test3D.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -958,45 +1017,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eyes(平面模拟法).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3D(立方体).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3D1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/上下滑动(外壳整体缩放)/js/H5_1.js">
+    <entry file="file://$PROJECT_DIR$/upDown/js/H5_1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic-data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.254973">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/上下滑动(外壳整体缩放)/H5_1.html">
+    <entry file="file://$PROJECT_DIR$/upDown/H5_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16274865">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
@@ -1017,7 +1045,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rem布局法/js/index.js">
+    <entry file="file://$PROJECT_DIR$/rem/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="17" />
@@ -1025,17 +1053,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/H5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="13" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1666665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
@@ -1043,8 +1063,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/knowledge/array.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65822786">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knowledge/scope.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test3D1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H5/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H5/js/innerDoor_faceToFace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="84.09259">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H51/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.425926">
+          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rem/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8333334">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ball.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8333333">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.685184">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8333333">
+          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24412297">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
