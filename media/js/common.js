@@ -1,4 +1,4 @@
-$(document).on('touchmove',function(ev){
+ $(document).on('touchmove',function(ev){
 	ev.preventDefault();
 });
 $(function(){
