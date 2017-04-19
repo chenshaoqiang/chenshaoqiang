@@ -110,8 +110,8 @@ $(document).ready(function () {
             // for (var i=0; i<20&&i+30<imgArray.length; i++)
             //     descList.push("采用瑞士机芯");
             var totalPicNum = imgArray.length;
-            var picHeight = 3.6;//使用rem布局，故此修改此处数字，对应threesixty中亦调整过
-            var picWidth = 3.6;
+            var picHeight = "100%";//使用rem布局，故此修改此处数字，对应threesixty中亦调整过
+            var picWidth = "100%";
             var product_1 = $('.product1').ThreeSixty({
                 totalFrames: totalPicNum, // Total no. of image you have for 360 slider
                 endFrame: totalPicNum, // end frame for the auto spin animation
