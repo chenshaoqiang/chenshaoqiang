@@ -16,9 +16,15 @@ Date.prototype.Format = function (fmt) {
     return fmt;
 };
 //生成年份下拉列表
-function getYearList(){
+function getYearList(underYear){
+    //当前年份生成到underYear年,underYear参数为最低年份
+    if(underYear==''||underYear==undefined){
+        underYear=2012;//默认值为2012年
+    }else{
+        underYear=parseInt(underYear);
+    }
     var yearList="";
-    for(var i=0;i<parseInt((new Date).getFullYear()-2011);i++){
+    for(var i=0;i<parseInt((new Date).getFullYear()-(underYear-1));i++){
         yearList+="<li>"+parseInt((new Date).getFullYear()-i)+"</li>";
     }
     yearList="<ul>"+yearList+"</ul>";
@@ -26,6 +32,7 @@ function getYearList(){
 }
 //生成月份下拉列表
 function getMonList(){
+    //十二个月列表
     var monthList="";
     for(var i=1;i<13;i++){
         monthList+="<li>"+i+"</li>";
@@ -36,17 +43,17 @@ function getMonList(){
 //下拉框事件委托
 $("body").on("click",function(ev){
     if($(ev.target).attr("class")!="time1-span"){
-        $(".selectYear").addClass("diplay-sty");
+        $(".selectYear").addClass("diplay-no");
     }
     if($(ev.target).attr("class")!="time2-span"){
-        $(".selectMon").addClass("diplay-sty");
+        $(".selectMon").addClass("diplay-no");
     }
 });
 function showHide1(){
-    $(".selectYear").toggleClass("diplay-sty");
+    $(".selectYear").toggleClass("diplay-no");
 }
 function showHide2(){
-    $(".selectMon").toggleClass("diplay-sty");
+    $(".selectMon").toggleClass("diplay-no");
 }
 //平年闰年的判断
 function RunNian(The_Year)
@@ -145,7 +152,6 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
     if(The_Month<10){
         M=0+''+M
     }
-    getDocByYearsAndM(The_Year+'-'+M);
     today = new Date();
     switch (The_Month)
     {
@@ -167,30 +173,30 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
         case 12 : ShowMonth = "十二月"; Month_Day = 31; break;
     }
     showHeader="";
-    showHeader+="<div class='currenttime1'>"+"<div class='time1-span' onclick=showHide1()>"+The_Year+"</div>"
+    showHeader+="<div class='currenttime'>"+"<div class='time1-span' onclick=showHide1()>"+The_Year+"</div>"
         +"<div class='time1-div'>"+"年"+"</div>"+
-        "<div class='selectYear diplay-sty'>"
-        +getYearList()+"</div>"
+        "<div class='selectYear diplay-no'>"
+        +getYearList(2012)+"</div>"
         +"<div class='time2-span' onclick=showHide2()>"+The_Month+"</div>"
         +"<div class='time2-div'>"+"月"+"</div>"+
-        "<div class='selectMon diplay-sty'>"
+        "<div class='selectMon diplay-no'>"
         + getMonList()+"</div>"+
         "<span class='fl prvm' onclick=prevmonth("+The_Year+"," + The_Month + ")  href='javascript:;'></span><span class='fr nextm' onclick=nextmonth("+The_Year+"," + The_Month + ") href='javascript:;'></span></div>";
 
     $(".riliHead").html(showHeader);
     showstr = "";
-    showstr = "<table class='table'>";
+    showstr = "<table class='calendar-table'>";
     showstr += "<tr align=center style='background:#efefef'>";
-    showstr += "<td><strong><font>日</font></strong></td>";
-    showstr += "<td><strong><font>一</font></strong></td>";
-    showstr += "<td><strong><font>二</font></strong></td>";
-    showstr += "<td><strong><font>三</font></strong></td>";
-    showstr += "<td><strong><font>四</font></strong></td>";
-    showstr += "<td><strong><font>五</font></strong></td>";
-    showstr += "<td><strong><font>六</font></strong></td>";
+    showstr += "<td>日</td>";
+    showstr += "<td>一</td>";
+    showstr += "<td>二</td>";
+    showstr += "<td>三</td>";
+    showstr += "<td>四</td>";
+    showstr += "<td>五</td>";
+    showstr += "<td>六</td>";
     showstr += "</tr><tr>";
     for (i=1; i<=Firstday; i++)
-        showstr += "<td align=center style='background:#ffffff'> </td>";
+        showstr += "<td align=center style='background:#efefef'> </td>";
     for (i=1; i<=Month_Day; i++)
     {
         if ((The_Year==today.getFullYear()) && (The_Month==today.getMonth()+1) && (i==today.getDate())){
@@ -205,7 +211,7 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
     if (Firstday!=0)
     {
         for (i=Firstday; i<7; i++)
-            showstr += "<td align=center style='background:#ffffff'> </td>";
+            showstr += "<td align=center style='background:#efefef'> </td>";
         showstr += "</tr>";
     }
     showstr += "</tr></table>";
@@ -229,198 +235,11 @@ The_Day = today.getDate();
 Firstday = GetWeekday(The_Year,The_Month);
 ShowCalendar(The_Year,The_Month,The_Day,Firstday);
 
-$(".calendarHead a").on('click',function(){
-    $(this).addClass('current').siblings('a').removeClass('current');
-    var num=$(".calendarHead a").index($(this));
-    if(num==0){
-        var aThe_Year=$(this).attr("data-year");
-        var atoday=new Date(aThe_Year,The_Month-1);
-        var aThe_Day = atoday.getDate();
-        var aFirstday = GetWeekday(aThe_Year, The_Month);
-        var aThe_Day = atoday.getDate();
-        ShowCalendar(aThe_Year, The_Month, aThe_Day, aFirstday);
-    }else{
-        var aThe_Year=$(this).attr("data-year");
-        var atoday=new Date(aThe_Year,12);
-        var aThe_Day = atoday.getDate();
-        var aFirstday = GetWeekday(aThe_Year, 12);
-        var aThe_Day = atoday.getDate();
-        ShowCalendar(aThe_Year, 12, aThe_Day, aFirstday);
-    }
-
-});
-
-function getDocByYearsAndM(yearsAndM){
-    timerilixuanze = yearsAndM;
-    $.ajax({
-        url: "http://59.110.114.71:8090/xuexiph/activitiesController/getDocByYearsAndM.do",
-        method: 'post',
-        data: {
-            'yearsAndM':yearsAndM
-        },
-        dataType: "jsonp", // 数据类型为jsonp
-        jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
-        success: function (data) {
-            if (data.code == 200) {
-                var d = data.data;
-                var html ='';
-                var newDate = new Date();
-                var timestamp3 = d[0].DOCRELTIME.time;
-                newDate.setTime(timestamp3);
-                var year=newDate.getFullYear();
-                var month=newDate.getMonth()+1;
-                var date=newDate.getDate();
-                var hour=newDate.getHours();
-                var minute=newDate.getMinutes();
-                var second=newDate.getSeconds();
-                var oldDate =year+"-"+month+"-"+date;
-                for(var k=0;k<d.length;k++){
-                    var timestamp3 = d[k].DOCRELTIME.time;
-                    newDate.setTime(timestamp3);
-                    var year=newDate.getFullYear();
-                    var month=newDate.getMonth()+1;
-                    var date=newDate.getDate();
-                    var hour=newDate.getHours();
-                    var minute=newDate.getMinutes();
-                    var second=newDate.getSeconds();
-                    var date = year+"-"+month+"-"+date;
-                    if(k==0||oldDate!=date){
-                        var huo=[];
-                        oldDate=date;
-                    }
-                    var htmlurl = d[k].DOCPUBURL;
-                    htmlurl=htmlurl.substring(0,htmlurl.lastIndexOf('/'));
-                    var appfile = '';
-                    if(d[k].AnnexList[0]!=undefined){
-                        appfile =htmlurl+'/'+d[k].AnnexList[0].APPFILE;
-                    }
-                    huo.push({"data-curror":k,'title':d[k].DOCTITLE,'text':d[k].DOCCONTENT,'img':appfile  ,'time':date,'href':d[k].DOCPUBURL});
-                    $("td[data-tag="+date+"]").css({"background":"#fff3f3"})
-                    /* .attr("date",date); */
-                    var str = JSON.stringify(huo);
-                    $("td[data-tag="+date+"]").attr("date",date).attr('data',str);
-                    $("td[data-tag="+date+"]").append('<div id="'+date+'div"></div>');
-                    var time1 = new Date().Format("yyyy-MM-dd");
-                    if(date==time1){
-                        $("#"+date+"div").attr('style','position: absolute; bottom: 0; right: 0;float: right; width: 0; height: 0; border-bottom: 10px solid #ffffff; border-left: 10px solid transparent;');
-                    }else{
-                        $("#"+date+"div").attr('style','position: absolute; bottom: 0; right: 0;float: right; width: 0; height: 0; border-bottom: 10px solid #e2534b; border-left: 10px solid transparent;');
-                    }
-                    $("td[data-tag="+date+"]").on("click",function(){
-                        var data_=$(this).attr('data');
-                        var datas=eval('(' + data_ + ')');
-                        var target=$(".calendar-alert-box");
-                        target.attr('style','top: 950px;');
-                        target.fadeIn();
-                        var num=$(this).attr('data-curror');
-
-                        if(datas.length<=1){
-                            $(".prev-richeng").attr('style','visibility:hidden');
-                            $(".next-richeng").attr('style','visibility:hidden');
-                        }else{
-                            $(".next-richeng").attr('style','visibility:hidden');
-                            $(".prev-richeng").attr('style','visibility:visible');
-                        }
-
-
-                        $("#activr-riqi").attr('data-curror',datas.length-1);      //储存第几个
-                        $("#activr-riqi").attr('date',$(this).attr("date"));      //储存第几个
-                        var vTime=datas[datas.length-1].time.split("-");
-                        target.find('.ryear').html(vTime[0]);
-                        target.find('.rmonth').html(vTime[1]);
-                        target.find('.rday').html(vTime[2]);
-                        target.find('.rtitle').html(datas[datas.length-1].title);
-                        target.find('.rtext').html(datas[datas.length-1].text);
-                        target.find('.rtext').off().on("click",function(){
-                            var target=$(".calendar-alert-box");
-                            window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-                        });
-                        target.find('.rimg').off().on("click",function(){
-                            var target=$(".calendar-alert-box");
-                            window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-                        });
-                        target.find('.rimg').attr('src',datas[datas.length-1].img);
-                        target.find('.alert-rili-title.rtitle').attr('href',datas[datas.length-1].href);
-                    });
-                }
-            }else if(data.code!=500){//不是查询成功弹出消息
-                alert(data.msg);
-            }
-        }
-    });
-}
-//切换不同日期的弹窗
-var currorNumT=$("td[data-curror]").length;
-$(".next-richeng").on('click',function(){
-    var currorNum=$("#activr-riqi").attr('data-curror');
-    var date =$("#activr-riqi").attr("date");
-    var data =$("td[data-tag="+date+"]").attr("data");
-    var datas=eval('(' + data + ')');
-
-    if(currorNum>=datas.length-2){
-        $(".next-richeng").attr('style','visibility:hidden');
-        $(".prev-richeng").attr('style','visibility:visible');
-    }else{
-        $(".next-richeng").attr('style','visibility:visible');
-        $(".prev-richeng").attr('style','visibility:visible');
-    }
-
-    var target=$(".calendar-alert-box");
-    var vTime=datas[parseInt(currorNum)+1].time.split("-");
-    target.find('.ryear').html(vTime[0]);
-    target.find('.rmonth').html(vTime[1]);
-    target.find('.rday').html(vTime[2]);
-    target.find('.rtitle').html(datas[parseInt(currorNum)+1].title);
-    target.find('.rtext').html(datas[parseInt(currorNum)+1].text);
-    target.find('.rimg').attr('src',datas[parseInt(currorNum)+1].img);
-    target.find('.rtext').off().on("click",function(){
-        var target=$(".calendar-alert-box");
-        window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-    });
-    target.find('.rimg').off().on("click",function(){
-        var target=$(".calendar-alert-box");
-        window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-    });
-    target.find('.alert-rili-title.rtitle').attr('href',datas[parseInt(currorNum)+1].href);
-    $("#activr-riqi").attr('data-curror',++currorNum);
-
-});
-$(".prev-richeng").on('click',function(){
-    var currorNum=$("#activr-riqi").attr('data-curror');
-    if(currorNum<=1){
-        $(".next-richeng").attr('style','visibility:visible');
-        $(".prev-richeng").attr('style','visibility:hidden');
-    }else{
-        $(".prev-richeng").attr('style','visibility:visible');
-        $(".next-richeng").attr('style','visibility:visible');
-    }
-
-    var date =$("#activr-riqi").attr("date");
-    var data =$("td[data-tag="+date+"]").attr("data");
-    var datas=eval('(' + data + ')');
-    var target=$(".calendar-alert-box");
-    var vTime=datas[currorNum-1].time.split("-");
-    target.find('.ryear').html(vTime[0]);
-    target.find('.rmonth').html(vTime[1]);
-    target.find('.rday').html(vTime[2]);
-    target.find('.rtitle').html(datas[currorNum-1].title);
-    target.find('.rtext').html(datas[currorNum-1].text);
-    target.find('.rimg').attr('src',datas[currorNum-1].img);
-    target.find('.rtext').off().on("click",function(){
-        var target=$(".calendar-alert-box");
-        window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-    });
-    target.find('.rimg').off().on("click",function(){
-        var target=$(".calendar-alert-box");
-        window.open(target.find('.alert-rili-title.rtitle').attr('href'));
-    });
-    target.find('.alert-rili-title.rtitle').attr('href',datas[currorNum-1].href);
-    $("#activr-riqi").attr('data-curror',--currorNum);
-});
 
 
 
-// 关闭弹窗
-$(".close-map-alert").click(function(){
-    $(".calendar-alert-box").fadeOut();
-});
+
+
+
+
+
