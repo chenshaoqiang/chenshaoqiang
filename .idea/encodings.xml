@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/rili/.babelrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rili/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rili/css/webpack.config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rili/js/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rili/webpack.config.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slide-chen/css/index.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slide-chen/ui_page/page10.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slide-chen/ui_page/page11.html" charset="UTF-8" />

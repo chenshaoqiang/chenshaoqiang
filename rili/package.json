@@ -1,0 +1,24 @@
+{
+  "name": "rili",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"webpack",
+    "dev": "webpack-dev-server --port 8080 --content-base build --history-api-fallback"
+  },
+  "author": "chenshaoqiang",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.28.0",
+    "open-browser-webpack-plugin": "0.0.2",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.3"
+  }
+}
