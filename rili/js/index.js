@@ -1,6 +1,5 @@
 
-
-Date.prototype.Format = function (fmt) {
+/*Date.prototype.Format = function (fmt) {
     var o = {
         "M+": this.getMonth() + 1, //月份
         "d+": this.getDate(), //日
@@ -14,7 +13,7 @@ Date.prototype.Format = function (fmt) {
     for (var k in o)
         if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
-};
+};*/
 //生成年份下拉列表
 function getYearList(underYear){
     //当前年份生成到underYear年,underYear参数为最低年份
@@ -92,46 +91,49 @@ function GetWeekday(The_Year,The_Month) {
     return Allday;
 }
 //在<div id="showdate"></div>中显示年月日
-function chooseday(The_Year,The_Month,The_Day) {
-    var Firstday;
+function chooseDay(The_Year,The_Month,The_Day) {
+    var firstDay;
     var completely_date;
-    if (The_Day!=0) completely_date = The_Year + "-" + The_Month + "-" + The_Day;
-    else completely_date = "No Choose";
+    if (The_Day!=0) {
+        completely_date = The_Year + "-" + The_Month + "-" + The_Day;
+    }else{
+        completely_date = "No Choose";
+    }
     //showdate 只是一个为了显示而采用的东西，（这是原文的注释）
     //如果外部想引用这里的时间，可以通过使用 completely_date引用完整日期
     //也可以通过The_Year,The_Month,The_Day分别引用年，月，日
     //当进行月份和年份的选择时，认为没有选择完整的日期
     // document.getElementById("showdate").innerText = completely_date;
-    Firstday = GetWeekday(The_Year,The_Month);
-    ShowCalendar(The_Year,The_Month,The_Day,Firstday);
+    firstDay = GetWeekday(The_Year,The_Month);
+    ShowCalendar(The_Year,The_Month,The_Day,firstDay);
 }
-function nextmonth(The_Year,The_Month) {//下一年
+function nextMonth(The_Year,The_Month) {//下一年
     if (The_Month==12) {
-        chooseday(The_Year+1,1,0);
+        chooseDay(The_Year+1,1,0);
         $('a[data-year='+(The_Year-0+1)+']').addClass('current').siblings('a').removeClass('current');
     }else {
-        chooseday(The_Year,The_Month+1,0);
+        chooseDay(The_Year,The_Month+1,0);
         $('a[data-year='+The_Year+']').addClass('current').siblings('a').removeClass('current');
     }
 }
-function prevmonth(The_Year,The_Month) {//上一年
+function prevMonth(The_Year,The_Month) {//上一年
     if (The_Month==1){
-        chooseday(The_Year-1,12,0);
+        chooseDay(The_Year-1,12,0);
         $('a[data-year='+(The_Year-1)+']').addClass('current').siblings('a').removeClass('current');
     }else{
-        chooseday(The_Year,The_Month-1,0);
+        chooseDay(The_Year,The_Month-1,0);
         $('a[data-year='+The_Year+']').addClass('current').siblings('a').removeClass('current');
     }
 }
-function prevyear(The_Year,The_Month) {//上一月
-    chooseday(The_Year-1,The_Month,0);
+function prevYear(The_Year,The_Month) {//上一月
+    chooseDay(The_Year-1,The_Month,0);
 }
-function nextyear(The_Year,The_Month) {//下一月
-    chooseday(The_Year+1,The_Month,0);
+function nextYear(The_Year,The_Month) {//下一月
+    chooseDay(The_Year+1,The_Month,0);
 }
 //显示日历
-function ShowCalendar(The_Year,The_Month,The_Day,Firstday) {
-    var showstr;
+function ShowCalendar(The_Year,The_Month,The_Day,firstDay) {
+    var showStr;
     var showHeader;
     var Month_Day;
     var ShowMonth;
@@ -160,7 +162,7 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday) {
         case 12 : ShowMonth = "十二月"; Month_Day = 31; break;
     }
     showHeader="";
-    showHeader+="<div class='currenttime'>"+"<div class='time1-span' onclick=showHide1()>"+The_Year+"</div>"
+    showHeader+="<div class='current-time'>"+"<div class='time1-span' onclick=showHide1()>"+The_Year+"</div>"
         +"<div class='time1-div'>"+"年"+"</div>"+
         "<div class='selectYear diplay-no'>"
         +getYearList(2012)+"</div>"
@@ -168,40 +170,40 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday) {
         +"<div class='time2-div'>"+"月"+"</div>"+
         "<div class='selectMon diplay-no'>"
         + getMonList()+"</div>"+
-        "<span class='fl prvm' onclick=prevmonth("+The_Year+"," + The_Month + ")  href='javascript:;'></span><span class='fr nextm' onclick=nextmonth("+The_Year+"," + The_Month + ") href='javascript:;'></span></div>";
+        "<span class='fl prv-month' onclick=prevMonth("+The_Year+"," + The_Month + ")  href='javascript:;'></span><span class='fr next-month' onclick=nextMonth("+The_Year+"," + The_Month + ") href='javascript:;'></span></div>";
 
-    $(".riliHead").html(showHeader);
-    showstr = "";
-    showstr = "<table class='calendar-table'>";
-    showstr += "<tr align=center style='background:#efefef'>";
-    showstr += "<td>日</td>";
-    showstr += "<td>一</td>";
-    showstr += "<td>二</td>";
-    showstr += "<td>三</td>";
-    showstr += "<td>四</td>";
-    showstr += "<td>五</td>";
-    showstr += "<td>六</td>";
-    showstr += "</tr><tr>";
-    for (i=1; i<=Firstday; i++){
-        showstr += "<td align=center style='background:#efefef'> </td>";
+    $(".calendar-head").html(showHeader);
+    showStr = "";
+    showStr = "<table class='calendar-table'>";
+    showStr += "<tr align=center style='background:#efefef'>";
+    showStr += "<td>日</td>";
+    showStr += "<td>一</td>";
+    showStr += "<td>二</td>";
+    showStr += "<td>三</td>";
+    showStr += "<td>四</td>";
+    showStr += "<td>五</td>";
+    showStr += "<td>六</td>";
+    showStr += "</tr><tr>";
+    for (i=1; i<=firstDay; i++){
+        showStr += "<td align=center style='background:#efefef'> </td>";
     }
     for (i=1; i<=Month_Day; i++) {
         if ((The_Year==today.getFullYear()) && (The_Month==today.getMonth()+1) && (i==today.getDate())){
-            showstr+="<td align='center' class='day-current' data-tag="+The_Year+"-"+The_Month+"-"+i+">"+i+"</td>";
+            showStr+="<td align='center' class='day-current' data-tag="+The_Year+"-"+The_Month+"-"+i+">"+i+"</td>";
         }
         else {
-            showstr+="<td align='center' data-day="+i+" data-tag="+The_Year+"-"+The_Month+"-"+i+">"+i+"</td>";
+            showStr+="<td align='center' data-day="+i+" data-tag="+The_Year+"-"+The_Month+"-"+i+">"+i+"</td>";
         }
-        Firstday = (Firstday + 1)%7;
-        if ((Firstday==0) && (i!=Month_Day)) showstr += "</tr><tr>";
+        firstDay = (firstDay + 1)%7;
+        if ((firstDay==0) && (i!=Month_Day)) showStr += "</tr><tr>";
     }
-    if (Firstday!=0) {
-        for (i=Firstday; i<7; i++)
-            showstr += "<td align=center style='background:#efefef'> </td>";
-        showstr += "</tr>";
+    if (firstDay!=0) {
+        for (i=firstDay; i<7; i++)
+            showStr += "<td align=center style='background:#efefef'> </td>";
+        showStr += "</tr>";
     }
-    showstr += "</tr></table>";
-    document.getElementById("calendc").innerHTML = showstr;
+    showStr += "</tr></table>";
+    document.getElementById("calendar-body").innerHTML = showStr;
     //下拉选择年份的时候显示日历
     $(".selectYear").find("li").on("click",function(){
         ShowCalendar(parseInt($(this).text()),The_Month,The_Day,GetWeekday(parseInt($(this).text()),The_Month));
@@ -213,13 +215,13 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday) {
 }
 var The_Year,The_Day,The_Month;
 var today;
-var Firstday;
+var firstDay;
 today = new Date();
 The_Year = today.getFullYear();
 The_Month = today.getMonth() + 1;
 The_Day = today.getDate();
-Firstday = GetWeekday(The_Year,The_Month);
-ShowCalendar(The_Year,The_Month,The_Day,Firstday);
+firstDay = GetWeekday(The_Year,The_Month);
+ShowCalendar(The_Year,The_Month,The_Day,firstDay);
 
 
 
