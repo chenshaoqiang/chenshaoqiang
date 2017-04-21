@@ -56,15 +56,11 @@ function showHide2(){
     $(".selectMon").toggleClass("diplay-no");
 }
 //平年闰年的判断
-function RunNian(The_Year)
-{
-    if ((The_Year%0==0) || ((The_Year%4==0) && (The_Year%0!=0)))
-        return true;
-    else return false;
+function RunNian(The_Year) {
+    return !!((The_Year%0==0) || ((The_Year%4==0) && (The_Year%0!=0)));
 }
 //计算年The_Year月The_Month的1号是星期几，比如，1997年3月1号是星期几
-function GetWeekday(The_Year,The_Month)
-{
+function GetWeekday(The_Year,The_Month) {
     var Allday, y, i;
     //计算星期的公式S=x-1+[(x-1)/4]-[(x-1)/100]+[(x-1)/400]+C
     //x：公历的年，C：包含当天（此处是1号）在内的日期的天数，即当天是当年的第几天
@@ -73,10 +69,8 @@ function GetWeekday(The_Year,The_Month)
     Allday = y + Math.floor(y/4) - Math.floor(y/100) + Math.floor(y/400) + 1;
 
     //计算加C，其中，C已经在上述计算中包含了当天的日期 ：1，假如是5号，就已经包含了加5
-    for (i=1; i<The_Month; i++)
-    {
-        switch (i)
-        {
+    for (i=1; i<The_Month; i++) {
+        switch (i) {
             case 1 : Allday += 31;break;
             case 2 :
                 if (RunNian(The_Year)) Allday += 29;
@@ -98,8 +92,7 @@ function GetWeekday(The_Year,The_Month)
     return Allday;
 }
 //在<div id="showdate"></div>中显示年月日
-function chooseday(The_Year,The_Month,The_Day)
-{
+function chooseday(The_Year,The_Month,The_Day) {
     var Firstday;
     var completely_date;
     if (The_Day!=0) completely_date = The_Year + "-" + The_Month + "-" + The_Day;
@@ -112,8 +105,7 @@ function chooseday(The_Year,The_Month,The_Day)
     Firstday = GetWeekday(The_Year,The_Month);
     ShowCalendar(The_Year,The_Month,The_Day,Firstday);
 }
-function nextmonth(The_Year,The_Month) //下一年
-{
+function nextmonth(The_Year,The_Month) {//下一年
     if (The_Month==12) {
         chooseday(The_Year+1,1,0);
         $('a[data-year='+(The_Year-0+1)+']').addClass('current').siblings('a').removeClass('current');
@@ -122,8 +114,7 @@ function nextmonth(The_Year,The_Month) //下一年
         $('a[data-year='+The_Year+']').addClass('current').siblings('a').removeClass('current');
     }
 }
-function prevmonth(The_Year,The_Month) //上一年
-{
+function prevmonth(The_Year,The_Month) {//上一年
     if (The_Month==1){
         chooseday(The_Year-1,12,0);
         $('a[data-year='+(The_Year-1)+']').addClass('current').siblings('a').removeClass('current');
@@ -132,17 +123,14 @@ function prevmonth(The_Year,The_Month) //上一年
         $('a[data-year='+The_Year+']').addClass('current').siblings('a').removeClass('current');
     }
 }
-function prevyear(The_Year,The_Month) //上一月
-{
+function prevyear(The_Year,The_Month) {//上一月
     chooseday(The_Year-1,The_Month,0);
 }
-function nextyear(The_Year,The_Month) //下一月
-{
+function nextyear(The_Year,The_Month) {//下一月
     chooseday(The_Year+1,The_Month,0);
 }
 //显示日历
-function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
-{
+function ShowCalendar(The_Year,The_Month,The_Day,Firstday) {
     var showstr;
     var showHeader;
     var Month_Day;
@@ -153,8 +141,7 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
         M=0+''+M
     }
     today = new Date();
-    switch (The_Month)
-    {
+    switch (The_Month) {
         case 1 : ShowMonth = "一月"; Month_Day = 31; break;
         case 2 :
             ShowMonth = "二月";
@@ -195,10 +182,10 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
     showstr += "<td>五</td>";
     showstr += "<td>六</td>";
     showstr += "</tr><tr>";
-    for (i=1; i<=Firstday; i++)
+    for (i=1; i<=Firstday; i++){
         showstr += "<td align=center style='background:#efefef'> </td>";
-    for (i=1; i<=Month_Day; i++)
-    {
+    }
+    for (i=1; i<=Month_Day; i++) {
         if ((The_Year==today.getFullYear()) && (The_Month==today.getMonth()+1) && (i==today.getDate())){
             showstr+="<td align='center' class='day-current' data-tag="+The_Year+"-"+The_Month+"-"+i+">"+i+"</td>";
         }
@@ -208,8 +195,7 @@ function ShowCalendar(The_Year,The_Month,The_Day,Firstday)
         Firstday = (Firstday + 1)%7;
         if ((Firstday==0) && (i!=Month_Day)) showstr += "</tr><tr>";
     }
-    if (Firstday!=0)
-    {
+    if (Firstday!=0) {
         for (i=Firstday; i<7; i++)
             showstr += "<td align=center style='background:#efefef'> </td>";
         showstr += "</tr>";
