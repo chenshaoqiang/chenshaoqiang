@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>getBrowserInfo</title>
+</head>
+<body>
+<div class=""></div>
+<script>
+    //获取浏览器信息
+    function getBrowserInfo(){
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        console.log(ua);
+        var re =/(msie|firefox|chrome|opera|version).*?([\d.]+)/;
+        var m = ua.match(re);
+        console.log(m);
+        if(m){
+            Sys.browser = m[1].replace(/version/, "safari");
+            Sys.ver = m[2];
+            console.log(Sys);
+            return Sys;
+        }
+        return false;
+    }
+    getBrowserInfo();
+</script>
+</body>
+</html>
