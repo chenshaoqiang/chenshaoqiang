@@ -335,7 +335,7 @@ a {
     text-overflow: ellipsis;
 }
 .item_like {
-    max-width: .7rem;
+    max-width: 1rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
