@@ -375,11 +375,11 @@ a {
 }
 .item_favorite.yes{
     background: url("../img/favorite.png")no-repeat 50% 50%;
-    background-size: .19rem .19rem;
+    background-size: .14rem .14rem;
 }
 .item_favorite.no{
     background: url("../img/no-favorite.png")no-repeat 50% 50%;
-    background-size: .19rem .19rem;
+    background-size: .14rem .14rem;
 }
 .item_share{
     width: .44rem;
