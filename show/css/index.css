@@ -163,7 +163,7 @@ a {
     width: .61rem;
     height: .28rem;
     background: url("../img/360.png")no-repeat 100% 100%;
-    background-size: 100%;
+    background-size: .61rem .28rem;
 }
 .pictrue .img img {
     position: absolute;
@@ -359,12 +359,12 @@ a {
 }
 .item_like.yes {
     background: url("../img/like.png")no-repeat 0 50%;
-    background-size: .19rem .19rem;
+    background-size: .14rem .14rem;
 
 }
 .item_like.no {
     background: url("../img/no-like.png")no-repeat 0 50%;
-    background-size: .19rem .19rem;
+    background-size: .14rem .14rem;
 }
 .item_favorite{
     width: .44rem;
