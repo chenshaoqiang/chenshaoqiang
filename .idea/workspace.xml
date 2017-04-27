@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/css/index.css" afterPath="$PROJECT_DIR$/show/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/index.html" afterPath="$PROJECT_DIR$/show/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.84375">
-              <caret line="37" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.3125">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -57,8 +58,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57755774">
-              <caret line="327" column="17" selection-start-line="327" selection-start-column="17" selection-end-line="327" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5231023">
+              <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -347,8 +348,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,12 +440,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00031" summary="fix7">
-      <created>1484209916511</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1484209916511</updated>
     </task>
     <task id="LOCAL-00032" summary="fix8">
       <created>1484211225948</created>
@@ -734,7 +729,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493259562615</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="4.27update">
+      <created>1493261085288</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1493261085288</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1136,14 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/show/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.84375">
-          <caret line="37" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1160,10 +1153,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/show/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3125">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/show/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57755774">
-          <caret line="327" column="17" selection-start-line="327" selection-start-column="17" selection-end-line="327" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.5231023">
+          <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
           <folding />
         </state>
       </provider>
