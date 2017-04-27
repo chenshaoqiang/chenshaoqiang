@@ -94,12 +94,18 @@ $(document).ready(function () {
             }*/
             //旋转图片跟随简介
             if (jsonData.picTags!=null){
-                var copies=Math.floor(imgArray.length/jsonData.picTags.length);
-                for(var i=0;i<jsonData.picTags.length;i++){
-                    for(var j=0;j<copies;j++){
-                        descList.push(jsonData.picTags[i]);
+                if(jsonData.picTags.length==0){
+                    $(".img_desc").hide();
+                }else{
+                    $(".img_desc").show();
+                    var copies=Math.floor(imgArray.length/jsonData.picTags.length);
+                    for(var i=0;i<jsonData.picTags.length;i++){
+                        for(var j=0;j<copies;j++){
+                            descList.push(jsonData.picTags[i]);
+                        }
                     }
                 }
+
             }
             // for (var i=0; i<10&&i<imgArray.length; i++)
             //     descList.push("这是一快表");

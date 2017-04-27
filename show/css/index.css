@@ -155,7 +155,16 @@ a {
     position: relative;
     overflow: hidden;
 }
-
+.img-360{
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    z-index: 9999;
+    width: .61rem;
+    height: .28rem;
+    background: url("../img/360.png")no-repeat 100% 100%;
+    background-size: 100%;
+}
 .pictrue .img img {
     position: absolute;
     left: 0;
@@ -232,6 +241,7 @@ a {
 }
 
 .img_desc{
+    display: none;
     width: 100%;
     min-height: 0.44rem;
     text-align: center;
