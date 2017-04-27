@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/data/example.json" afterPath="$PROJECT_DIR$/show/data/example.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/css/threesixty.css" afterPath="$PROJECT_DIR$/show/css/threesixty.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -47,8 +47,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.03125">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state vertical-scroll-proportion="-31.625">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threesixty.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/show/css/threesixty.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15181518">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -68,17 +78,7 @@
         <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/show/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26567656">
-              <caret line="330" column="19" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -132,7 +132,6 @@
         <option value="$PROJECT_DIR$/show/js/index.js" />
         <option value="$PROJECT_DIR$/show/js/threesixty.min.js" />
         <option value="$PROJECT_DIR$/show/index.html" />
-        <option value="$PROJECT_DIR$/show/css/threesixty.css" />
         <option value="$PROJECT_DIR$/show/css/index.css" />
         <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/rili/css/calendar.css" />
@@ -150,6 +149,7 @@
         <option value="$PROJECT_DIR$/testEcharts/json/cylinder.json" />
         <option value="$PROJECT_DIR$/testEcharts/js/index.js" />
         <option value="$PROJECT_DIR$/show/data/example.json" />
+        <option value="$PROJECT_DIR$/show/css/threesixty.css" />
       </list>
     </option>
   </component>
@@ -419,12 +419,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00028" summary="fix5">
-      <created>1484205225035</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1484205225035</updated>
     </task>
     <task id="LOCAL-00029" summary="fix6">
       <created>1484207488844</created>
@@ -714,7 +708,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493201976882</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="4.27update">
+      <created>1493258707893</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1493258707893</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -723,6 +723,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21303074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -730,7 +731,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -754,7 +754,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="happy2" />
     <MESSAGE value="happy3" />
     <MESSAGE value="happy4" />
     <MESSAGE value="happy5" />
@@ -779,7 +778,8 @@
     <MESSAGE value="4.21update" />
     <MESSAGE value="4.25update" />
     <MESSAGE value="4.26update" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.26update" />
+    <MESSAGE value="4.27update" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.27update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -931,13 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0625">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show/css/threesixty.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49339935">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1107,26 +1100,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/show/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.03125">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/show/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1141,8 +1118,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26567656">
-          <caret line="330" column="19" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.5313531">
+          <caret line="337" column="21" selection-start-line="337" selection-start-column="21" selection-end-line="337" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.625">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show/css/threesixty.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15181518">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding />
         </state>
       </provider>
