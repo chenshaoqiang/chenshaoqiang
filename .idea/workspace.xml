@@ -87,8 +87,8 @@
       <file leaf-file-name="example.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/data/example.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31881532">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.5191638">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#493#3689#0" expanded="false" />
               </folding>
@@ -442,12 +442,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00034" summary="fix9">
-      <created>1484212183408</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1484212183408</updated>
-    </task>
     <task id="LOCAL-00035" summary="fix9">
       <created>1484212332522</created>
       <option name="number" value="00035" />
@@ -736,7 +730,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493271782483</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="4.27update">
+      <created>1493271935321</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1493271935321</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1164,8 +1164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show/data/example.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31881532">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.5191638">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="e#493#3689#0" expanded="false" />
           </folding>
