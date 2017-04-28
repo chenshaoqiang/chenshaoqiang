@@ -67,8 +67,8 @@
       <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35478547">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.62046206">
+              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -268,7 +268,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/show-h5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -355,12 +355,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00057" summary="update">
-      <created>1488556232748</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1488556232748</updated>
     </task>
     <task id="LOCAL-00058" summary="update">
       <created>1492581114194</created>
@@ -650,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493366952630</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="4.28update">
+      <created>1493367292558</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1493367292558</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1079,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35478547">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.62046206">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
           <folding />
         </state>
       </provider>
