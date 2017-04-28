@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show/js/threesixty.min.js" afterPath="$PROJECT_DIR$/show/js/threesixty.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.59375">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state vertical-scroll-proportion="-9.3125">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -43,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48514852">
+            <state vertical-scroll-proportion="0.0">
               <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
               <folding />
             </state>
@@ -63,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.48019803">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -137,8 +138,8 @@
         <option value="$PROJECT_DIR$/show/css/threesixty.css" />
         <option value="$PROJECT_DIR$/mobileSensor/index.html" />
         <option value="$PROJECT_DIR$/show/index.html" />
-        <option value="$PROJECT_DIR$/show/js/threesixty.min.js" />
         <option value="$PROJECT_DIR$/show/css/index.css" />
+        <option value="$PROJECT_DIR$/show/js/threesixty.min.js" />
       </list>
     </option>
   </component>
@@ -354,12 +355,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00048" summary="update">
-      <created>1484548545327</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1484548545327</updated>
     </task>
     <task id="LOCAL-00049" summary="update">
       <created>1484549487331</created>
@@ -649,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493363621178</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="4.28update">
+      <created>1493363772892</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1493363772892</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1060,26 +1061,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
+    <entry file="file://$PROJECT_DIR$/show/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/show/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.59375">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state vertical-scroll-proportion="-9.3125">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/show/css/index.css">
+    <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48514852">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.48019803">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
           <folding />
         </state>
       </provider>
