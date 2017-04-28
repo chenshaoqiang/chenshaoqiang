@@ -19,7 +19,7 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-<div class="nav" id="arrow"></div>
+
 <div class="pictrue">
     <div class="img-360"></div>
     <div class="img">
@@ -59,22 +59,6 @@
     <div class="item_share"></div>
     <!-- <a href="#">下载三围秀</a> -->
 </div>
-<script>
-    try {
-        var text = "";
-        window.addEventListener("deviceorientation", orientationHandler, false);
-        function orientationHandler(event) {
-            text = "";
-            var arrow = document.getElementById("arrow");
-            text += "左右旋转：rotate alpha{" + Math.round(event.alpha) + "deg)<p>";
-            text += "前后旋转：rotate beta{" + Math.round(event.beta) + "deg)<p>";
-            text += "扭转设备：rotate gamma{" + Math.round(event.gamma) + "deg)<p>";
-            arrow.innerHTML = text;
-        }
-    }
-    catch (e) {
-        $("#arrow").html(e.message)
-    }
-</script>
+
 </body>
 </html>
