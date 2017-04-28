@@ -110,12 +110,11 @@ a {
 }
 
 .nav {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 9999;
     width: 100%;
     text-align: center;
-    height: 0.48rem;
     line-height: 0.48rem;
     color: white;
     background: #222222;
