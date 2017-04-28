@@ -26,9 +26,9 @@
         function orientationHandler(event) {
             text = "";
             var arrow = document.getElementById("arrow");
-            text += "左右旋转： {" + Math.round(event.alpha) + "度)<p>";
-            text += "前后旋转： {" + Math.round(event.beta) + "度)<p>";
-            text += "扭转设备： {" + Math.round(event.gamma) + "度)<p>";
+            text += "左右旋转： " + Math.round(event.alpha) + "度<p>";
+            text += "前后旋转： " + Math.round(event.beta) + "度<p>";
+            text += "扭转设备： " + Math.round(event.gamma) + "度<p>";
             arrow.innerHTML = text;
         }
     }
