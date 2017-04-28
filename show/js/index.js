@@ -13,7 +13,16 @@ $(document).ready(function () {
         });
     }
 
-
+    function isOwnEmpty(obj){
+        for(var name in obj)
+        {
+            if(obj.hasOwnProperty(name))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     function processJsonData(jsonData){
         if (jsonData.title!=null) {
             $(".goods_name").text(jsonData.title);
@@ -47,7 +56,7 @@ $(document).ready(function () {
             }
             var descList = new Array();
             //旋转图片跟随简介
-            if (jsonData.picTags!=null){
+            if (!isOwnEmpty(jsonData.picTags)){
                 if(jsonData.picTags.length==0){
                     $(".img_desc").hide();
                 }else{
