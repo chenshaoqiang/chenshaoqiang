@@ -67,8 +67,8 @@
       <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37128714">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5231023">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -355,12 +355,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00052" summary="update">
-      <created>1484555984922</created>
-      <option name="number" value="00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1484555984922</updated>
     </task>
     <task id="LOCAL-00053" summary="update">
       <created>1484556063384</created>
@@ -650,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493365673998</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="4.28update">
+      <created>1493365707860</created>
+      <option name="number" value="00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1493365707860</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1079,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37128714">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.5231023">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
