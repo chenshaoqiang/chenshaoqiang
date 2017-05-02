@@ -13,7 +13,7 @@ $(document).ready(function () {
         });
     }
 
-    function isOwnEmpty(obj){
+    function isEmpty(obj){
         for(var name in obj)
         {
             if(obj.hasOwnProperty(name))
@@ -56,7 +56,7 @@ $(document).ready(function () {
             }
             var descList = new Array();
             //旋转图片跟随简介
-            if (!isOwnEmpty(jsonData.picTags)){
+            if (!isEmpty(jsonData.picTags)){
                 if(jsonData.picTags.length==0){
                     $(".img_desc").hide();
                 }else{
@@ -65,14 +65,18 @@ $(document).ready(function () {
                     for(key in jsonData.picTags){
                         index[index.length]=key;
                     }
-                    for(var i=1;i<index.length;i++){
-                        for(var j=0;j<parseInt(index[i]-index[i-1]);j++){
-                            descList.push(jsonData.picTags[index[i-1]]);
+                    if(index.length==1){
+                        descList.push(jsonData.picTags[index[0]]);
+                    }else{
+                        for(var i=1;i<index.length;i++){
+                            for(var j=0;j<parseInt(index[i]-index[i-1]);j++){
+                                descList.push(jsonData.picTags[index[i-1]]);
+                            }
                         }
-                    }
-                    if(index[index.length-1]<50){
-                        for(var i=0;i<=50-(index[index.length-1]);i++){
-                            descList.push(jsonData.picTags[index[index.length-1]]);
+                        if(index[index.length-1]<50){
+                            for(var i=0;i<=50-(index[index.length-1]);i++){
+                                descList.push(jsonData.picTags[index[index.length-1]]);
+                            }
                         }
                     }
                     //console.log(descList);
