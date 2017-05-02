@@ -1,3 +1,9 @@
+var desW=720;//设置设计稿宽
+var winW=document.documentElement.clientWidth;//设备的实际宽度
+var scale=desW/100;
+document.documentElement.style.fontSize=winW/scale+"px";
+
+
 var realWidth;//图片真实的宽度
 var realHeight;//图片真实的高度
 
@@ -118,10 +124,10 @@ function rotatePic() {
     var marginTop = ($(window).height() - realHeight) / 2;
     if (marginTop > 0) {
         marginTop = 5;
-        $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px')
-            .css("margin-top", marginTop + "px");
+        $(bigPic).css("width", realWidth/100 + 'rem').css("height", realHeight/100 + 'rem')
+            .css("margin-top", marginTop/100 + "rem");
     } else {
-        $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
+        $(bigPic).css("width", realWidth/100 + 'rem').css("height", realHeight/100 + 'rem');
     }
 
     marquePic2.innerHTML = marquePic1.innerHTML;

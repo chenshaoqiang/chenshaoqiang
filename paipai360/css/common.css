@@ -1,14 +1,40 @@
-#body {
+/*-- css hack --*/
+*{
     margin: 0;
     padding: 0;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img {
+    border-style: none;
+}
+html{
+    font-size: 100px;
+}
+ul,li{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#body {
+    height: 100%;
     overflow: auto;
     background: #262626;
 }
 
 #title_all {
-    height: 56px;
+    height: .56rem;
     background-color: #f3f5fa;
-    line-height: 56px;
+    line-height: .56rem;
 }
 
 #title_all_left {
@@ -46,21 +72,21 @@
 }
 
 #title_img_back {
-    height: 25px;
-    width: 15px;
+    height: .25rem;
+    width: .15rem;
     text-align: center;
-    margin-bottom: -5px;
-    margin-left: 12px;
+    margin-bottom: -.05rem;
+    margin-left: .12rem;
 }
 
 #title_font_back {
-    font-size: 16px;
+    font-size: .16rem;
     color: #666666;
     text-align: center;
 }
 
 #font_title {
-    font-size: 18px;
+    font-size: .18rem;
     color: #000000;
     text-align: center;
 }
@@ -71,11 +97,11 @@
 }
 
 #middle_space_user {
-    height: 126px;
+    height: 1.26rem;
     width: 100%;
     background: rgba(0, 0, 0, 0.1);
-    line-height: 126px;
-    margin-bottom: -126px;
+    line-height: 1.26rem;
+    margin-bottom: -1.26rem;
     z-index: 9;
     position: absolute;
 }
@@ -88,6 +114,7 @@
 
 #middle_space_user_name {
     width: 60%;
+    height: 100%;
     float: left;
     text-align: center;
     margin: 0 auto;
@@ -100,17 +127,23 @@
 }
 
 #img_user_head {
-    width: 72px;
-    height: 72px;
-    border-radius: 35px;
-    margin-left: 12px;
-    margin-top: 25px;
+    width: .72rem;
+    height: .72rem;
+    border-radius: .35rem;
+    margin-left: .12rem;
+    margin-top: .25rem;
 }
-
+.switch-img{
+    width: .86rem;
+    height: .86rem;
+    vertical-align: top;
+    border-radius: .43rem;
+}
 #font_user_name {
-    font-size: 38px;
+    font-size: .38rem;
     color: #ffffff;
     text-align: center;
+    vertical-align: top;
     font-weight: bold;
 }
 
@@ -126,11 +159,11 @@
 
 #switch_div {
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 1.00rem;
+    height: 1.00rem;
     z-index: 9;
     position: absolute;
-    left: 32px;
+    left: 5%;
     top: 50%;
 }
 
@@ -140,7 +173,7 @@
     height: auto;
     z-index: 9;
     position: absolute;
-    left: 12px;
+    left: .12rem;
     top: 77%;
     background: transparent;
     word-wrap: break-word;
@@ -151,27 +184,27 @@
     width: 95%;
     height: auto;
     position: relative;
-    left: 32px;
+    left: .32rem;
     background: transparent;
     color: white;
-    font-size: 28px;
+    font-size: .28rem;
 }
 
 #work_content_img {
     float: right;
-    width: 22px;
-    height: 15px;
+    width: .22rem;
+    height: .15rem;
     margin-top: 3px;
-    margin-right: 20px;
+    margin-right: .20rem;
 }
 
 #work_other_info_div {
     overflow: hidden;
     width: 100%;
-    height: 52px;
+    height: .52rem;
     z-index: 9;
     position: absolute;
-    left: 12px;
+    left: .12rem;
     top: 87%;
     background: transparent;
 }
@@ -179,30 +212,32 @@
 #work_other_date_play_num_info_div {
     display: inline-block;
     float: left;
-    margin-left: 32px;
+    margin-left: .32rem;
 }
 
 #work_other_prise_comment_info_div {
     display: inline-block;
     float: right;
-    margin-right: 20px;
+    margin-right: .20rem;
 }
 
 #priseNum_div {
     display: inline-block;
-    right: 196px;
-    background-image: url(../img/bg.png);
-    width: 120px;
-    height: 48px;
+    right: 1.96rem;
+    background: url(../img/bg.png)no-repeat 100% 100%;
+    background-size: 100%;
+    width: 1.20rem;
+    height: .48rem;
     position: absolute;
 }
 
 #commentNum_div {
     display: inline-block;
-    margin-right: 22px;
-    background-image: url('../img/bg.png');
-    width: 120px;
-    height: 48px;
+    margin-right: .22rem;
+    background: url('../img/bg.png')no-repeat 100% 100%;
+    background-size: 100%;
+    width: 1.20rem;
+    height: .48rem;
 }
 
 #middle_space_work_inner_table {
@@ -219,35 +254,35 @@
 
 #howLong {
     display: inline-block;
-    font-size: 38px;
+    font-size: .38rem;
     color: #ffffff;
     text-align: center;
 }
 
 #playNum {
     display: inline-block;
-    font-size: 38px;
+    font-size: .38rem;
     color: #ffffff;
     text-align: center;
 }
 
 #priseNum {
     display: inline-block;
-    font-size: 38px;
+    font-size: .38rem;
     color: #ffffff;
     text-align: center;
-    margin-left: 8px;
-    margin-top: 2px;
+    margin-left: .08rem;
+    margin-top: .02rem;
     position: absolute;
 }
 
 #commentNum {
     display: inline-block;
-    font-size: 38px;
+    font-size: .38rem;
     color: #ffffff;
     text-align: center;
-    margin-left: 8px;
-    margin-top: 2px;
+    margin-left: .08rem;
+    margin-top: .02rem;
     position: absolute;
 }
 
@@ -255,19 +290,22 @@
     position: relative;
     bottom: 0px;
     background-color: black;
-    padding: 12px;
+    padding: .12rem;
     text-align: center;
-    height: 80px;
+    height: .80rem;
 }
-
+.bottom_div_span{
+    color: white;
+    font-size: .38rem;
+}
 #bottom_logo {
     display: none;
     float: left;
 }
 
 #bottom_logo_img {
-    width: 90px;
-    height: 90px;
+    width: .90rem;
+    height: .90rem;
     margin-right: 5px;
     display: inline-block;
     margin-left: 22px;
@@ -277,61 +315,61 @@
     display: none !important;
     float: right;
     margin: 0px;
-    height: 90px;
+    height: .90rem;
 }
 
 #bottom_app {
     display: none;
     background-color: #f0d800;
     border-radius: 5px;
-    height: 102px;
-    padding: 0 15px;
+    height: 1.02rem;
+    padding: 0 .15rem;
 }
 
 #bottom_app_text1 {
     display: inline-block;
     color: black;
-    font-size: 38px;
+    font-size: .38rem;
 }
 
 #bottom_app_text2 {
     display: inline-block;
     color: black;
-    font-size: 44px;
+    font-size: .44rem;
 }
 
 #bottom_device {
     display: none;
-    margin-right: 20px;
-    margin-left: 15px;
+    margin-right: .20rem;
+    margin-left: .15rem;
     background-color: #f0d800;
     border-radius: 5px;
-    height: 80px;
-    width: 218px;
-    PADDING-TOP: 22px;
+    height: .80rem;
+    width: 2.18rem;
+    PADDING-TOP: .22rem;
 }
 
 #bottom_device_img {
-    width: 38px;
-    height: 46px;
+    width: .38rem;
+    height: .46rem;
     position: relative;
-    left: 9px;
+    left: .09rem;
 }
 
 #bottom_device_text1 {
     display: inline-block;
     color: black;
-    font-size: 38px;
+    font-size: .38rem;
     position: absolute;
-    width: 219px;
-    top: -22px;
+    width: 2.19rem;
+    top: -.22rem;
 }
 
 #bottom_device_text2 {
     display: inline-block;
     color: black;
-    font-size: 44px;
+    font-size: .44rem;
     position: absolute;
-    width: 204px;
-    top: 15px;
+    width: 2.04rem;
+    top: .15rem;
 }
