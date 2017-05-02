@@ -69,9 +69,11 @@
       <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07590759">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.62046206">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+              <folding>
+                <element signature="e#1774#3250#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -376,12 +378,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00073" summary="4.21update">
-      <created>1492768306970</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1492768306970</updated>
-    </task>
     <task id="LOCAL-00074" summary="4.25update">
       <created>1493088081826</created>
       <option name="number" value="00074" />
@@ -670,7 +666,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493707047950</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="5.2  update">
+      <created>1493708234908</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1493708234908</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,9 +1101,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07590759">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.62046206">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#1774#3250#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
