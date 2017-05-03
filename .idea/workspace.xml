@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai360/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai360/css/common.css" afterPath="$PROJECT_DIR$/paipai360/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai360/index.html" afterPath="$PROJECT_DIR$/paipai360/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5191638">
-              <caret line="440" column="32" selection-start-line="440" selection-start-column="32" selection-end-line="440" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5592334">
+              <caret line="441" column="0" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,8 +146,8 @@
         <option value="$PROJECT_DIR$/paipai360/js/index.js" />
         <option value="$PROJECT_DIR$/paipai360/test.html" />
         <option value="$PROJECT_DIR$/paipai360/index2.html" />
-        <option value="$PROJECT_DIR$/paipai360/index.html" />
         <option value="$PROJECT_DIR$/paipai360/css/common.css" />
+        <option value="$PROJECT_DIR$/paipai360/index.html" />
       </list>
     </option>
   </component>
@@ -264,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/ftl" />
+    <property name="last_opened_file_path" value="D:/xuexitimes" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -351,12 +349,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00085" summary="4.27update">
-      <created>1493272543788</created>
-      <option name="number" value="00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1493272543788</updated>
     </task>
     <task id="LOCAL-00086" summary="4.27update">
       <created>1493274297587</created>
@@ -646,7 +638,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493777290038</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="5.3  update">
+      <created>1493792567175</created>
+      <option name="number" value="00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1493792567175</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1071,8 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5191638">
-          <caret line="440" column="32" selection-start-line="440" selection-start-column="32" selection-end-line="440" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5592334">
+          <caret line="441" column="0" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

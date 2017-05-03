@@ -437,10 +437,8 @@
             realWidth = this.width;
             realHeight = this.height;
             var prop=realWidth/realHeight;
-            if(realHeight<winH){
-                realHeight=winH;
-                realWidth=realHeight*prop;
-            }
+            realHeight=winH;
+            realWidth=realHeight*prop;
 
             rotatePic();
         });
