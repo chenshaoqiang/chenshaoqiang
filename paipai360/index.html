@@ -168,7 +168,7 @@
 
 </div>
 
-<script>
+<script type="application/javascript" charset="UTF-8">
 
     var realWidth;//图片真实的宽度
     var realHeight;//图片真实的高度
@@ -326,13 +326,16 @@
     }
 
     function stopRolling() {                //停止滚动
-
         isPlay = true;
         stopMusic();
         clearInterval(timer);
     }
 
     function startRolling() {                  //继续滚动
+        $("#bottom_div").css("display", "none");
+        $("body").attr("class", "landscape");
+        orientation = 'landscape';
+
         isPlay = false;
         startMusic();
         timer = setInterval("Marquee(5)", speed);
