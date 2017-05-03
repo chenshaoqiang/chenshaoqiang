@@ -14,15 +14,7 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        @media all and (orientation : landscape) {
 
-        }
-
-        @media all and (orientation : portrait){
-
-        }
-    </style>
 </head>
 <body id="body" name="body">
 
@@ -32,12 +24,12 @@
     <div id="middle_space">
 
         <div id="middle_space_user">  <!-- 用户信息Start -->
-            <input type="hidden" value="3542" id="protionId"/>
+            <input type="hidden" value="3498" id="protionId"/>
             <div class="user_head" id="middle_space_user_head">
-                <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/QIbKA4H1anUJvVbVFf7VCibbUOMsBJBZnZWneJTSXIbYFouicibicauxeic561Y09u45v8UnpPO9Qp2TJ41flUaffTJj6Ys1ug3cL/0">
+                <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/mAKpdmh1Uk3IicRk2ox5FCNYHZu5cvaBMYqW5n5pAZUoQibciahN9fuVygWJDnFzgLNc9egOjqsc7R2ic3jM8qp6Tb0JdmmWJ1mQ/0">
             </div>
             <div class="user_name" id="middle_space_user_name">
-                <span id="font_user_name">来创兄弟</span>
+                <span id="font_user_name">美珍Meghna</span>
             </div>
             <div id="middle_space_user_other">
                 <img src="">
@@ -55,15 +47,13 @@
 
                         <!-- 要循环滚动的图片 -->
 
-                        <table id="middle_space_work_inner_table" border="0" align="center" cellpadding="0"
-                               cellspacing="0">
+                        <table id="middle_space_work_inner_table" align="center" cellpadding="0" cellspacing="0">
 
                             <tr align="center">
 
                                 <td class="big_img">
 
-                                    <img name="pic" id="main_img_work" src="http://www.paipai360.cn/share/img/148905122114140699473354567791.jpg" alt="share_img">
-                                    <!--<img name="pic" id="main_img_work" src="img/test.jpg" alt="share_img">-->
+                                    <img name="pic" id="main_img_work" src="http://www.paipai360.cn/share/img/148860954254540257794758518088.jpeg" alt="share_img">
 
                                 </td>
 
@@ -80,7 +70,6 @@
             </table>
 
         </div>    <!-- 滚动的图片div end -->
-
 
         <!-- 播放按钮div start -->
         <div class="button_div" id="switch_div" onclick="pic_scroll()" action="scroll">
@@ -104,11 +93,11 @@
 
         <!-- 作品其他信息 start-->
         <div id="work_other_info_div">
-            <div id="work_other_date_play_num_info_div" class="date_play_num" style="visibility: hidden">
+            <div id="work_other_date_play_num_info_div" class="date_play_num">
                 <span class="howLong" id="howLong">0</span>
-                <span style="display: inline-block; margin-left: 32px; font-size: 18px; color: white;">播放</span>
+                <span style="display: inline-block; margin-left: 32px; font-size: 38px; color: white;">播放</span>
                 <span class="playNum" id="playNum">0</span>
-                <span style="display: inline-block; font-size: 18px; color: white;">次</span>
+                <span style="display: inline-block; font-size: 38px; color: white;">次</span>
                 <span style="display: inline-block; width: 1px; height: 48px; vertical-align: middle;"></span>
             </div>
 
@@ -128,12 +117,11 @@
 
     <!--底部 Bottom start-->
     <div id="bottom_div">
-        <span style="color: white; font-size: 44px">横向显示效果更佳！！！</span>
         <div id="bottom_logo">
             <img id="bottom_logo_img" src="img/logo.png">
             <div style="display: inline-block;">
-                <span style="font-size: 25px; font-weight: bold; color: white;">PaiPai360</span><br>
-                <span style="font-size: 18px; color: white; margin-bottom: 5px;">全景拍照神器</span>
+                <span style="font-size: 44px; font-weight: bold; color: white;">PaiPai360</span><br>
+                <span style="font-size: 36px; color: white; margin-bottom: 5px;">全景拍照神器</span>
             </div>
         </div>
 
@@ -141,7 +129,7 @@
 
             <div id="bottom_app">
                 <a href="http://aipp3d.com/downLoadApp?lang=zh_CN"
-                   style="line-height:25px; text-decoration: none;position: relative;top: 13px;">
+                   style="line-height:31px; text-decoration: none;position: relative;top: 13px;">
                     <span class="downloadWrap">
                         <span id="bottom_app_text1" class="downloadText">拍拍360APP</span><br>
                         <span id="bottom_app_text2" class="downloadText"><b>去下载&gt;</b></span>
@@ -154,7 +142,10 @@
                 <img id="bottom_device_img" src="img/device.png">
 
                 <a href="http://aipp3d.com/goodsDetail?pid=592&amp;name=360"
-                   style="text-decoration: none;position: relative;top: -10px;display: inline-block;">
+                   style="text-decoration: none;
+    position: relative;
+    top: -30px;
+    display: inline-block;">
 
                     <span id="bottom_device_text1" class="downloadText">拍照云台</span><br>
                     <span id="bottom_device_text2" class="downloadText"><b>去购买&gt;&nbsp;</b></span>
@@ -168,150 +159,38 @@
 
 </div>
 
-<script type="application/javascript" charset="UTF-8">
-
-    var realWidth;//图片真实的宽度
-    var realHeight;//图片真实的高度
-    var winH=document.documentElement.clientHeight;
+<script language="javascript">
 
     var screenWid = screen.width;
     var screenHei = screen.height;
 
+    var protionId = $("#protionId").val();
     var isPlay = true;
     var isShowAll = false;    // 是否展示所有说说内容
-    var speed = 40;           // 自动播放的时,使用的间隔时间,间隔越小速度越大
+    var speed = 40;                                   // 自动播放的时,使用的间隔时间,间隔越小速度越大
     var timer;    // 用于定时器
     var middle_space_work = document.getElementById("middle_space_work");   // 获取middle_space_work对象,大图片
-    var mainImgWork = document.getElementById("main_img_work");   // 获取middle_space_work对象,大图片
-    var protionId = $("#protionId").val();
 
     var contentLineStr = "single";
     var contentAllStr = "poth";
 
-    var audio = document.getElementById("music"); // 音乐
-
     var userHeadImg = $("div.user_head img"); // 用户头像
     var userNameSpan = $("div.user_name span"); // 用户姓名
 
+    var audio = document.getElementById("music"); // 音乐
+
+    var otherInfo = document.getElementById("work_other_info_div");
+    var howLongSpan = $("div.date_play_num span.howLong");  // 日期
     var workContent = $("div.work_content span"); // 说说内容
     var contentImg = $("div.content_img_div img");
-
-    var howLongSpan = $("div.date_play_num span.howLong");  // 日期
     var playNumSpan = $("div.date_play_num span.playNum");  // 播放次数
     var commentNumSpan = $("div.commentNum span");          // 评论数
     var priseNumSpan = $("div.priseNum span");  // 点赞数目
+
     var bigPic = $("td.big_img img");  // 图片img
 
 
     marquePic2.innerHTML = marquePic1.innerHTML;
-
-    // 判断手机屏幕方向
-    function judgeTheOrientation() {
-
-        switch (window.orientation) {
-            case 0://ipad、iphone横屏；Andriod竖屏
-                $("body").attr("class", "portrait");
-                orientation = 'portrait';
-                break;
-            case 180://ipad、iphone横屏；Andriod竖屏
-                $("body").attr("class", "portrait");
-                orientation = 'portrait';
-                break;
-
-            case -90://ipad、iphone竖屏；Andriod横屏
-                $("#bottom_div").css("display", "none");
-                $("body").attr("class", "landscape");
-                orientation = 'landscape';
-                break;
-
-            case 90://ipad、iphone竖屏；Andriod横屏
-                $("#bottom_div").css("display", "none");
-                $("body").attr("class", "landscape");
-                orientation = 'landscape';
-                break;
-            default:
-                break;
-        }
-        return false;
-    }
-
-    // 旋转的时候图片适配
-    function rotatePic() {
-
-        screenWid = screen.width;
-        screenHei = screen.height;
-
-//        // 方式一
-//        // 图片宽和高都比屏幕大
-//        if (realHeight >= screenHei && realWidth >= screenWid) {
-//            if (realWidth / screenWid > realHeight / screenHei) {
-//                realWidth = screenHei / realHeight * realWidth;
-//                realHeight = screenHei;
-//            } else {
-//                realHeight = screenWid / realWidth * realHeight;
-//                realWidth = screenWid;
-//            }
-//        } else
-//        // 图片宽和高都比屏幕的小
-//        if (realHeight < screenHei && realWidth < screenWid) {
-//
-//            if (screenWid / realWidth > screenHei / realHeight) {
-//                realHeight = screenWid / realWidth * realHeight;
-//                realWidth = screenWid;
-//            } else {
-//                realWidth = screenHei / realHeight * realWidth;
-//                realHeight = screenHei;
-//            }
-//        } else {
-//            if (realWidth / screenWid > realHeight / screenHei) {
-//                realWidth = screenHei / realHeight * realWidth;
-//                realHeight = screenHei;
-//            } else {
-//                realHeight = screenWid / realWidth * realHeight;
-//                realWidth = screenWid;
-//            }
-//        }
-
-        // 方式二
-        if (realHeight < screenHei) { // 图片高度不足（图片高度小于屏幕宽度） 放大图片
-            realWidth = screenHei / realHeight * realWidth;
-            realHeight = screenHei;
-        }
-
-        if (realWidth < screenWid) { // 屏幕宽度不足（图片宽度小于屏幕高度） 放大图片
-            realHeight = screenWid / realWidth * realHeight;
-            realWidth = screenWid;
-        }
-
-        if (window.orientation == 90 || window.orientation == -90) {
-            realWidth = (screenHei + 150) / realHeight * realWidth;
-            realHeight = screenHei + 150;
-        }
-
-        var marginTop = ($(window).height() - realHeight) / 2;
-        if (marginTop > 0) {
-            marginTop = 5;
-            $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px')
-                    .css("margin-top", marginTop + "px");
-        } else {
-            $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
-        }
-
-        marquePic2.innerHTML = marquePic1.innerHTML;
-        $('body').attr({width: realWidth, height: realHeight});
-    }
-
-    $(window).bind("orientationchange", function (event) {
-
-        judgeTheOrientation();
-
-        rotatePic();
-    });
-
-    // 界面加载的时候调用
-    $(function () {
-        judgeTheOrientation();
-    });
 
     function Marquee(n) {       // 实现图片循环滚动的方法
 
@@ -327,12 +206,14 @@
     }
 
     function stopRolling() {                //停止滚动
+
         isPlay = true;
         stopMusic();
         clearInterval(timer);
     }
 
     function startRolling() {                  //继续滚动
+
         isPlay = false;
         startMusic();
         timer = setInterval("Marquee(5)", speed);
@@ -359,7 +240,6 @@
      * 开关按钮点击处理函数
      */
     function pic_scroll() {
-
         if (isPlay) {
 
             // 继续滚动
@@ -394,7 +274,7 @@
         jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
         success: function (data) {
             if (data.code == 'success') {
-                var username = data.data.username;
+                var username = data.data.nickname;
                 var userHeadUrl = data.data.headimgurl;
                 var priseNum = data.data.praiseNum;
                 var commentNum = data.data.commentNum;
@@ -412,7 +292,7 @@
 
                 bigPic.attr("src", data.data.url);
                 if (content !== null && content.length > 14) {
-                    contentLineStr = content.substring(0, 14);
+                    contentLineStr = content.substring(0, 14) + "...";
                     contentAllStr = content;
                 } else if (content !== null) {
                     contentLineStr = content;
@@ -423,6 +303,8 @@
         }
     });
 
+    var realWidth;//真实的宽度
+    var realHeight;//真实的高度
     // 根据图片真实尺寸设置body和img的尺寸大小，目的是保证图片不变形（前提是：图片宽大于1024，高大于1000）
     $("#main_img_work").each(function (i) {
 
@@ -436,13 +318,30 @@
              */
             realWidth = this.width;
             realHeight = this.height;
-            var prop=realWidth/realHeight;
-            if(realHeight<winH){
-                realHeight=winH;
-                realWidth=realHeight*prop;
+            var prop_w_h=realWidth/realHeight;
+
+            //screenHei
+
+            if (realHeight < 1000) {
+                realWidth = 1000.0 / realHeight * realWidth;
+                realHeight = 1000;
             }
 
-            rotatePic();
+            if (realWidth < 1024) {
+                realHeight = 1024.0 / realWidth * realHeight;
+                realWidth = 1024;
+            }
+            var marginTop = ($(window).height() - realHeight) / 2;
+            if (marginTop > 0) {
+                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px')
+                        /*.css("margin-top", marginTop + 50 + "px");*/
+            } else {
+                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
+                document.body.style.height = realHeight + "px";
+            }
+
+            otherInfo.style.visibility = "hidden";
+            marquePic2.innerHTML = marquePic1.innerHTML;
         });
     });
 
@@ -455,7 +354,6 @@
         stopRolling();
         startX = event.touches[0].pageX;
         startY = event.touches[0].pageY;
-
     }
     // 滑动过程中事件处理
     var moveHandler = function (event) {
@@ -469,9 +367,9 @@
 
         window.console.log("len = " + len + "dY = " + dY);
 
-        len = len * -1;   // 为了矫正方向
+        len = len * -1;
 
-        len = len / 10;   // 为了减速
+        len = len / 20;
 
         if (marquePic1.offsetWidth - middle_space_work.scrollLeft <= 0) {
 
