@@ -6,7 +6,6 @@ document.documentElement.style.fontSize=winW/scale+"px";
 var scrollImg=document.getElementById("scroll-img");
 var marquePic1=document.getElementById("marquePic1");
 var marquePic2=document.getElementById("marquePic2");
-var mainImgWork = document.getElementById("main_img_work");//大图
 var protionId = $("#protionId").val();
 var bigPic = $("td.big_img img");  // 图片img
 var realWidth;//图片的宽度
@@ -15,18 +14,53 @@ var realHeight;//图片的高度
 var userNameSpan = $("div.user_name span"); // 用户姓名
 var userHeadImg = $("div.user_head img"); // 用户头像
 var howLongSpan = $("div.date_play_num span.howLong");  // 日期
+// 实现图片循环滚动的方法
+function Marquee(n) {
 
+    if (parseInt($(".scroll-img-box").css("width")) - scrollImg.scrollLeft <= screen.height) {
+
+        scrollImg.scrollLeft = 0;
+    } else {
+
+        scrollImg.scrollLeft = scrollImg.scrollLeft + n;
+    }
+
+}
 $(document).ready(function(){
+    var imgBox=document.getElementById("imgBox");
+
+    function resetAll(){
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+        $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
+        marquePic2.innerHTML = marquePic1.innerHTML;
+    }
+    resetAll();
 
     var startX = 0;
     var startY = 0;
     var isPlay = true;//是否滚动状态设置，默认滚动
+    var isChange = false;//是否翻屏
     var speed = 50;
     var timer;        // 用于定时器
 
     judgeTheOrientation();
     rotatePic();
+    var crrentW=$(".img-box").css("width");
+    var crrentH=$(".img-box").css("height");
     $("#switch_div").on("click",function(){
+        isChange=true;
+        $(".img-box").css({
+            "transform-origin":"left bottom",
+            "transform":"rotate(90deg)",
+            "width":crrentH,
+            "height":crrentW,
+            "top":parseInt(crrentW)*(-1)
+        });
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+        $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
+        //console.log(parseInt($("#main_img_work").css("width")));
         pic_scroll();
     });
     //停止滚动
@@ -107,31 +141,28 @@ $(document).ready(function(){
         var touch = event.touches[0];
         var moveX = touch.pageX;
         var moveY = touch.pageY;
-        var len = moveX - startX;
         var dY = moveY - startY;
+        var len = moveX - startX;
 
+        if(isChange){
+            len = moveY - startY;
+        }else{
+            len = moveX - startX;
+        }
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        if (parseInt($("#main_img_work").css("width")) - scrollImg.scrollLeft <= 0) {
-
-            scrollImg.scrollLeft = 0;
-
-        } else {
-
-            scrollImg.scrollLeft = scrollImg.scrollLeft + len;
-
-            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-            if (scrollImg.scrollLeft <= 0) {
-                marquePic1.innerHTML = marquePic2.innerHTML;
-                scrollImg.scrollLeft = parseInt($("#main_img_work").css("width")) - 2; // 目的是为了能继续向右滑动
-            }
-            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-            if (scrollImg.scrollLeft >= parseInt($("#main_img_work").css("width"))) {
-                marquePic2.innerHTML = marquePic1.innerHTML;
-                scrollImg.scrollLeft = 0; // 目的是为了能继续向左滑动
-            }
+        scrollImg.scrollLeft = scrollImg.scrollLeft + len;
+        // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+        if (scrollImg.scrollLeft <= 0) {
+            scrollImg.scrollLeft = parseInt($("#main_img_work").css("width"))-screen.width-2; // 目的是为了能继续向右滑动
         }
+        // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+        if (scrollImg.scrollLeft+(screen.width) >= parseInt($("#main_img_work").css("width"))) {
+
+            scrollImg.scrollLeft = 0; // 目的是为了能继续向左滑动
+        }
+
 
     };
 
@@ -170,20 +201,7 @@ function judgeTheOrientation() {
     return false;
 }
 
-// 实现图片循环滚动的方法
-function Marquee(n) {
 
-    if (parseInt($("#main_img_work").css("width")) - scrollImg.scrollLeft <= screen.width) {
-        marquePic2.innerHTML = marquePic1.innerHTML;
-        scrollImg.scrollLeft = 0;
-
-    } else {
-
-        scrollImg.scrollLeft = scrollImg.scrollLeft + n;
-    }
-    //console.log(parseInt($("#main_img_work").css("width")),"||",scrollImg.scrollLeft);
-
-}
 
 
 // 旋转的时候图片适配
@@ -191,7 +209,7 @@ function rotatePic() {
 
     //动态设置获取的图片的高度以适应不同高度图片（统一高度）
     var setImgHeight=$(".scroll-img").height();
-    $(".big_img").css("height",setImgHeight/100+"rem");
+    $(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
 
     console.log($("#main_img_work").css("width"),$("#main_img_work").css("height"));
 
