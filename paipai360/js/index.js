@@ -58,10 +58,10 @@ $(document).ready(function(){
             "top":parseInt(crrentW)*(-1)
         });
         var imgBox=document.getElementById("imgBox");
-        imgBox.requestFullScreen();
-        imgBox.webkitRequestFullScreen();
-        imgBox.mozRequestFullScreen();
-        imgBox.msRequestFullScreen();
+        try{
+            imgBox.requestFullScreen()||imgBox.webkitRequestFullScreen()||imgBox.mozRequestFullScreen()||imgBox.msRequestFullScreen();
+        }catch(e){}
+
 
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);

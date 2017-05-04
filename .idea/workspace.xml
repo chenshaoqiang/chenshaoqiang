@@ -78,11 +78,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.669967">
-              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.5940594">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
               <folding>
-                <element signature="e#2758#2890#0" expanded="false" />
-                <element signature="e#3665#4370#0" expanded="false" />
+                <element signature="e#2780#2912#0" expanded="false" />
+                <element signature="e#3687#4392#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -386,12 +386,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00090" summary="4.27update">
-      <created>1493277713727</created>
-      <option name="number" value="00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1493277713727</updated>
-    </task>
     <task id="LOCAL-00091" summary="4.27update">
       <created>1493284252508</created>
       <option name="number" value="00091" />
@@ -680,7 +674,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493902170819</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="5.3  update">
+      <created>1493902671150</created>
+      <option name="number" value="00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1493902671150</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1117,11 +1117,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.669967">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.5940594">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding>
-            <element signature="e#2758#2890#0" expanded="false" />
-            <element signature="e#3665#4370#0" expanded="false" />
+            <element signature="e#2780#2912#0" expanded="false" />
+            <element signature="e#3687#4392#0" expanded="false" />
           </folding>
         </state>
       </provider>
