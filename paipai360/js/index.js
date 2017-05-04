@@ -57,6 +57,12 @@ $(document).ready(function(){
             "height":crrentW,
             "top":parseInt(crrentW)*(-1)
         });
+        var imgBox=document.getElementById("imgBox");
+        imgBox.requestFullScreen();
+        imgBox.webkitRequestFullScreen();
+        imgBox.mozRequestFullScreen();
+        imgBox.msRequestFullScreen();
+
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
         $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
