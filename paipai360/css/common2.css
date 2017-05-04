@@ -1,0 +1,94 @@
+/*--css hack--*/
+*{margin: 0;padding: 0;font-family: '微软雅黑', 'Arial', sans-serif;}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {margin: 0;padding: 0;}
+a{text-decoration: none;}
+img {border-style: none;}
+html{font-size: 100px;}
+ul,li{list-style: none;}
+html,body{width: 100%;height: 100%;overflow: auto;}
+.fl-left{ float: left;}
+.fl-right{float: right;}
+.fl-clear{clear: both;}
+/*------主板样式表-------*/
+.img-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.user-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: .48rem;
+    background: rgba(0, 0, 0, 0.1);
+    line-height: .48rem;
+}
+.user_head{
+    width: .48rem;
+    height: 100%;
+    position: relative;
+}
+.user_head img{
+    width:.36rem;
+    height: .36rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -.19rem;
+    margin-left: -.19rem;
+    border-radius: 50%;
+}
+.user_name{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left:-30% ;
+    line-height: .48rem;
+    text-align: center;
+    font-size: .14rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+/*-------------*/
+.scroll-img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.scroll-img-td{
+    height: 100%;
+}
+.big_img img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.button_div {
+    overflow: hidden;
+    width: .36rem;
+    height: .36rem;
+    z-index: 9;
+    position: absolute;
+    left: .05rem;
+    top: 50%;
+    margin-top: -.18rem;
+}
+.button_div img{
+    width: .36rem;
+    height: .36rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

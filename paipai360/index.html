@@ -14,15 +14,7 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        @media all and (orientation : landscape) {
 
-        }
-
-        @media all and (orientation : portrait){
-
-        }
-    </style>
 </head>
 <body id="body" name="body">
 
@@ -32,12 +24,12 @@
     <div id="middle_space">
 
         <div id="middle_space_user">  <!-- 用户信息Start -->
-            <input type="hidden" value="3542" id="protionId"/>
+            <input type="hidden" value="3562" id="protionId"/>
             <div class="user_head" id="middle_space_user_head">
                 <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/QIbKA4H1anUJvVbVFf7VCibbUOMsBJBZnZWneJTSXIbYFouicibicauxeic561Y09u45v8UnpPO9Qp2TJ41flUaffTJj6Ys1ug3cL/0">
             </div>
             <div class="user_name" id="middle_space_user_name">
-                <span id="font_user_name">来创兄弟</span>
+                <span id="font_user_name"></span>
             </div>
             <div id="middle_space_user_other">
                 <img src="">
@@ -47,7 +39,7 @@
         <!-- 滚动的图片div start -->
         <div id="middle_space_work">
 
-            <table border="0" cellspacing="0" cellpadding="0">
+            <table border="0" cellspacing="0" cellpadding="0" style="height: 100%">
 
                 <tr>
 
@@ -62,9 +54,7 @@
 
                                 <td class="big_img">
 
-                                    <img name="pic" id="main_img_work" src="http://www.paipai360.cn/share/img/148905122114140699473354567791.jpg" alt="share_img">
-                                    <!--<img name="pic" id="main_img_work" src="img/test.jpg" alt="share_img">-->
-
+                                    <img name="pic" id="main_img_work" src="" alt="share_img">
                                 </td>
 
                             </tr>
@@ -172,6 +162,7 @@
 
     var realWidth;//图片真实的宽度
     var realHeight;//图片真实的高度
+    var winW=document.documentElement.clientWidth;
     var winH=document.documentElement.clientHeight;
 
     var screenWid = screen.width;
@@ -298,7 +289,7 @@
         }
 
         marquePic2.innerHTML = marquePic1.innerHTML;
-        $('body').attr({width: realWidth, height: realHeight});
+        //$('body').attr({width: realWidth, height: realHeight});
     }
 
     $(window).bind("orientationchange", function (event) {
@@ -323,7 +314,7 @@
 
             middle_space_work.scrollLeft = middle_space_work.scrollLeft + n;
         }
-
+        //console.log(marquePic1.offsetWidth,"||",middle_space_work.scrollLeft);
     }
 
     function stopRolling() {                //停止滚动
@@ -332,7 +323,8 @@
         clearInterval(timer);
     }
 
-    function startRolling() {                  //继续滚动
+    function startRolling() {//继续滚动
+
         isPlay = false;
         startMusic();
         timer = setInterval("Marquee(5)", speed);
@@ -394,7 +386,9 @@
         jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
         success: function (data) {
             if (data.code == 'success') {
-                var username = data.data.username;
+
+                console.log(data.data);
+                var username = data.data.name;
                 var userHeadUrl = data.data.headimgurl;
                 var priseNum = data.data.praiseNum;
                 var commentNum = data.data.commentNum;
@@ -436,10 +430,6 @@
              */
             realWidth = this.width;
             realHeight = this.height;
-            var prop=realWidth/realHeight;
-            realHeight=winH;
-            realWidth=realHeight*prop;
-
             rotatePic();
         });
     });
@@ -465,7 +455,7 @@
         var len = moveX - startX;
         var dY = moveY - startY;
 
-        window.console.log("len = " + len + "dY = " + dY);
+        //console.log("len = " + len + "dY = " + dY);
 
         len = len * -1;   // 为了矫正方向
 
@@ -490,11 +480,9 @@
             }
         }
 
-    }
+    };
     // 滑动结束事件处理
-    var endHandler = function (event) {
-
-    }
+    var endHandler = function (event) {};
     middle_space_work.addEventListener("touchstart", startHandler, false);
     middle_space_work.addEventListener("touchmove", moveHandler, false);
     middle_space_work.addEventListener("touchend", endHandler, false);

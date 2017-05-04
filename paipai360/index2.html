@@ -2,403 +2,62 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title> </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0"/>
+    <title>拍拍360分享</title>
 
     <!-- jQuery文件 -->
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common2.css">
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
-<body id="body" name="body">
-
-<div style="height: 100%;">
-
-    <!-- 中间显示的内容 包含：用户信息和图片 -->
-    <div id="middle_space">
-
-        <div id="middle_space_user">  <!-- 用户信息Start -->
-            <input type="hidden" value="3498" id="protionId"/>
+<body>
+    <div class="img-box">
+        <!-- 显示的内容 包含：用户信息和图片 -->
+        <div class="user-info">
+            <input type="hidden" value="3542" id="protionId"/>
             <div class="user_head" id="middle_space_user_head">
-                <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/mAKpdmh1Uk3IicRk2ox5FCNYHZu5cvaBMYqW5n5pAZUoQibciahN9fuVygWJDnFzgLNc9egOjqsc7R2ic3jM8qp6Tb0JdmmWJ1mQ/0">
+                <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/QIbKA4H1anUJvVbVFf7VCibbUOMsBJBZnZWneJTSXIbYFouicibicauxeic561Y09u45v8UnpPO9Qp2TJ41flUaffTJj6Ys1ug3cL/0">
             </div>
             <div class="user_name" id="middle_space_user_name">
-                <span id="font_user_name">美珍Meghna</span>
+                <span id="font_user_name">来创兄弟</span>
             </div>
-            <div id="middle_space_user_other">
-                <img src="">
-            </div>
-        </div> <!-- 用户信息END -->
-
+        </div>
         <!-- 滚动的图片div start -->
-        <div id="middle_space_work">
-
-            <table border="0" cellspacing="0" cellpadding="0">
-
+        <div class="scroll-img" id="scroll-img">
+            <table class="scroll-img-table" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-
-                    <td valign="top" id="marquePic1">
-
+                    <td class="scroll-img-td" valign="top" id="marquePic1">
                         <!-- 要循环滚动的图片 -->
-
-                        <table id="middle_space_work_inner_table" align="center" cellpadding="0" cellspacing="0">
-
+                        <table id="inner_table" border="0" align="center" cellpadding="0" cellspacing="0">
                             <tr align="center">
-
                                 <td class="big_img">
-
-                                    <img name="pic" id="main_img_work" src="http://www.paipai360.cn/share/img/148860954254540257794758518088.jpeg" alt="share_img">
-
+                                    <img name="pic" id="main_img_work" src="http://www.paipai360.cn/share/img/148905122114140699473354567791.jpg" alt="share_img">
                                 </td>
-
                             </tr>
-
                         </table>
-
                     </td>
-
-                    <td id="marquePic2" width="1"></td>
+                    <td id="marquePic2"></td>
 
                 </tr>
-
             </table>
+        </div>
+        <div class="button_div" id="switch_div">
 
-        </div>    <!-- 滚动的图片div end -->
+            <img id="switch" src="img/play.png">
 
-        <!-- 播放按钮div start -->
-        <div class="button_div" id="switch_div" onclick="pic_scroll()" action="scroll">
-
-            <img id="switch" src="img/play.png" style="width:100px; height:100px; border-radius: 50px;">
-
-            <audio controls="controls" loop="true" id="music" src="../music/" style="display: none">
+            <!--<audio controls="controls" loop="true" id="music" src="../music/" style="display: none">
                 您的浏览器不支持audio标签
-            </audio>
+            </audio>-->
         </div> <!-- 播放按钮div END -->
 
-        <!-- 作品说说内容div start -->
-        <div class="work_content" id="work_content_div" onclick="content_click()">
-
-            <span class="content_all" id="work_content_span"> </span>
-
-            <div class="content_img_div" style="float: right;">
-                <img id="work_content_img" src="img/open.png">
-            </div>
-        </div> <!-- 作品说说内容div END -->
-
-        <!-- 作品其他信息 start-->
-        <div id="work_other_info_div">
-            <div id="work_other_date_play_num_info_div" class="date_play_num">
-                <span class="howLong" id="howLong">0</span>
-                <span style="display: inline-block; margin-left: 32px; font-size: 38px; color: white;">播放</span>
-                <span class="playNum" id="playNum">0</span>
-                <span style="display: inline-block; font-size: 38px; color: white;">次</span>
-                <span style="display: inline-block; width: 1px; height: 48px; vertical-align: middle;"></span>
-            </div>
-
-            <div id="work_other_prise_comment_info_div">
-                <div class="priseNum" id="priseNum_div">
-                    <img src="img/like.png" style="display: inline-block; margin-top: 14px; margin-left: 10px;">
-                    <span id="priseNum">0</span>
-                </div>
-                <div class="commentNum" id="commentNum_div">
-                    <img src="img/comment.png" style="display: inline-block; margin-top: 13px; margin-left: 10px;">
-                    <span id="commentNum">0</span>
-                </div>
-            </div>
-        </div> <!-- 作品其他信息END -->
 
     </div>
-
-    <!--底部 Bottom start-->
-    <div id="bottom_div">
-        <div id="bottom_logo">
-            <img id="bottom_logo_img" src="img/logo.png">
-            <div style="display: inline-block;">
-                <span style="font-size: 44px; font-weight: bold; color: white;">PaiPai360</span><br>
-                <span style="font-size: 36px; color: white; margin-bottom: 5px;">全景拍照神器</span>
-            </div>
-        </div>
-
-        <div id="bottom_app_and_device">
-
-            <div id="bottom_app">
-                <a href="http://aipp3d.com/downLoadApp?lang=zh_CN"
-                   style="line-height:31px; text-decoration: none;position: relative;top: 13px;">
-                    <span class="downloadWrap">
-                        <span id="bottom_app_text1" class="downloadText">拍拍360APP</span><br>
-                        <span id="bottom_app_text2" class="downloadText"><b>去下载&gt;</b></span>
-                    </span>
-                </a>
-            </div>
-
-            <div id="bottom_device">
-
-                <img id="bottom_device_img" src="img/device.png">
-
-                <a href="http://aipp3d.com/goodsDetail?pid=592&amp;name=360"
-                   style="text-decoration: none;
-    position: relative;
-    top: -30px;
-    display: inline-block;">
-
-                    <span id="bottom_device_text1" class="downloadText">拍照云台</span><br>
-                    <span id="bottom_device_text2" class="downloadText"><b>去购买&gt;&nbsp;</b></span>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div> <!-- 底部Bottom END -->
-
-</div>
-
-<script language="javascript">
-
-    var screenWid = screen.width;
-    var screenHei = screen.height;
-
-    var protionId = $("#protionId").val();
-    var isPlay = true;
-    var isShowAll = false;    // 是否展示所有说说内容
-    var speed = 40;                                   // 自动播放的时,使用的间隔时间,间隔越小速度越大
-    var timer;    // 用于定时器
-    var middle_space_work = document.getElementById("middle_space_work");   // 获取middle_space_work对象,大图片
-
-    var contentLineStr = "single";
-    var contentAllStr = "poth";
-
-    var userHeadImg = $("div.user_head img"); // 用户头像
-    var userNameSpan = $("div.user_name span"); // 用户姓名
-
-    var audio = document.getElementById("music"); // 音乐
-
-    var otherInfo = document.getElementById("work_other_info_div");
-    var howLongSpan = $("div.date_play_num span.howLong");  // 日期
-    var workContent = $("div.work_content span"); // 说说内容
-    var contentImg = $("div.content_img_div img");
-    var playNumSpan = $("div.date_play_num span.playNum");  // 播放次数
-    var commentNumSpan = $("div.commentNum span");          // 评论数
-    var priseNumSpan = $("div.priseNum span");  // 点赞数目
-
-    var bigPic = $("td.big_img img");  // 图片img
-
-
-    marquePic2.innerHTML = marquePic1.innerHTML;
-
-    function Marquee(n) {       // 实现图片循环滚动的方法
-
-        if (marquePic1.offsetWidth - middle_space_work.scrollLeft <= 0) {
-
-            middle_space_work.scrollLeft = 0;
-
-        } else {
-
-            middle_space_work.scrollLeft = middle_space_work.scrollLeft + n;
-        }
-
-    }
-
-    function stopRolling() {                //停止滚动
-
-        isPlay = true;
-        stopMusic();
-        clearInterval(timer);
-    }
-
-    function startRolling() {                  //继续滚动
-
-        isPlay = false;
-        startMusic();
-        timer = setInterval("Marquee(5)", speed);
-    }
-
-    function startMusic() { // 播放音乐
-
-        if (audio.currentSrc !== null) {
-            audio.load();
-            audio.play();
-        }
-        $("#switch_div").find('img').attr("src", "img/pause.png");
-    }
-
-    function stopMusic() { // 暂停音乐
-
-        if (!audio.paused) {
-            audio.pause();
-        }
-        $("#switch_div").find('img').attr("src", "img/play.png");
-    }
-
-    /*
-     * 开关按钮点击处理函数
-     */
-    function pic_scroll() {
-        if (isPlay) {
-
-            // 继续滚动
-            startRolling();
-
-        } else {
-
-            stopRolling();
-        }
-    }
-
-    // 查看全部说说内容
-    function content_click() {
-        if (isShowAll) {
-            contentImg.attr("src", "img/open.png");
-            workContent.text(contentLineStr);
-            otherInfo.style.visibility = "hidden";
-        } else {
-            contentImg.attr("src", "img/close.png");
-            workContent.text(contentAllStr);
-            otherInfo.style.visibility = "visible";
-        }
-        isShowAll = !isShowAll;
-    }
-
-    // 请求接口刷新数据
-    $.ajax({
-        url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
-        method: 'post',
-        data: {"id": protionId, "type": 1},
-        dataType: "jsonp", // 数据类型为jsonp
-        jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
-        success: function (data) {
-            if (data.code == 'success') {
-                var username = data.data.nickname;
-                var userHeadUrl = data.data.headimgurl;
-                var priseNum = data.data.praiseNum;
-                var commentNum = data.data.commentNum;
-                var howLong = data.data.howLong;
-
-                var content = data.data.title;
-                var songName = data.data.songName;
-
-                userNameSpan.text(username);
-                userHeadImg.attr("src", userHeadUrl);
-                howLongSpan.text(howLong);
-                playNumSpan.text(data.data.playNum);
-                commentNumSpan.text(commentNum);
-                priseNumSpan.text(priseNum);
-
-                bigPic.attr("src", data.data.url);
-                if (content !== null && content.length > 14) {
-                    contentLineStr = content.substring(0, 14) + "...";
-                    contentAllStr = content;
-                } else if (content !== null) {
-                    contentLineStr = content;
-                    contentAllStr = content;
-                }
-                workContent.text(contentLineStr);
-            }
-        }
-    });
-
-    var realWidth;//真实的宽度
-    var realHeight;//真实的高度
-    // 根据图片真实尺寸设置body和img的尺寸大小，目的是保证图片不变形（前提是：图片宽大于1024，高大于1000）
-    $("#main_img_work").each(function (i) {
-
-        //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
-        $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
-            /*
-             如果要获取图片的真实的宽度和高度有三点必须注意
-             1、需要创建一个image对象：如这里的$("<img/>")
-             2、指定图片的src路径
-             3、一定要在图片加载完成后执行如.load()函数里执行
-             */
-            realWidth = this.width;
-            realHeight = this.height;
-            var prop_w_h=realWidth/realHeight;
-
-            //screenHei
-
-            if (realHeight < 1000) {
-                realWidth = 1000.0 / realHeight * realWidth;
-                realHeight = 1000;
-            }
-
-            if (realWidth < 1024) {
-                realHeight = 1024.0 / realWidth * realHeight;
-                realWidth = 1024;
-            }
-            var marginTop = ($(window).height() - realHeight) / 2;
-            if (marginTop > 0) {
-                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px')
-                        /*.css("margin-top", marginTop + 50 + "px");*/
-            } else {
-                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
-                document.body.style.height = realHeight + "px";
-            }
-
-            otherInfo.style.visibility = "hidden";
-            marquePic2.innerHTML = marquePic1.innerHTML;
-        });
-    });
-
-    // 滑动事件
-    var startX = 0;
-    var startY = 0;
-    // 滑动开始事件处理
-    var startHandler = function (event) {
-        // 停止自动播放
-        stopRolling();
-        startX = event.touches[0].pageX;
-        startY = event.touches[0].pageY;
-    }
-    // 滑动过程中事件处理
-    var moveHandler = function (event) {
-        event.preventDefault();
-
-        var touch = event.touches[0];
-        var moveX = touch.pageX;
-        var moveY = touch.pageY;
-        var len = moveX - startX;
-        var dY = moveY - startY;
-
-        window.console.log("len = " + len + "dY = " + dY);
-
-        len = len * -1;
-
-        len = len / 20;
-
-        if (marquePic1.offsetWidth - middle_space_work.scrollLeft <= 0) {
-
-            middle_space_work.scrollLeft = 0;
-
-        } else {
-
-            middle_space_work.scrollLeft = middle_space_work.scrollLeft + len;
-
-            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-            if (middle_space_work.scrollLeft <= 0) {
-                middle_space_work.scrollLeft = realWidth - 2; // 目的是为了能继续向右滑动
-            }
-
-            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-            if (middle_space_work.scrollLeft >= marquePic1.offsetWidth) {
-                middle_space_work.scrollLeft = 0; // 目的是为了能继续向左滑动
-            }
-        }
-
-    }
-    // 滑动结束事件处理
-    var endHandler = function (event) {
-
-    }
-    middle_space_work.addEventListener("touchstart", startHandler, false);
-    middle_space_work.addEventListener("touchmove", moveHandler, false);
-    middle_space_work.addEventListener("touchend", endHandler, false);
-
-</script>
 </body>
+<script src="js/index.js"></script>
 </html>
