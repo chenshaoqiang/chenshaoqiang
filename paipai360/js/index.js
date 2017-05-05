@@ -154,6 +154,9 @@ $(document).ready(function(){
         len = len / 10;   // 为了减速
 
         scrollImg.scrollLeft = scrollImg.scrollLeft + len;
+
+        console.log(marquePic1.scrollLeft);
+
         // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
         if (scrollImg.scrollLeft <= 0) {
             scrollImg.scrollLeft = parseInt($("#main_img_work").css("width"))-screen.width-2; // 目的是为了能继续向右滑动
