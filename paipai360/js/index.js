@@ -50,17 +50,17 @@ $(document).ready(function(){
     var crrentH=$(".img-box").css("height");
     $("#switch_div").on("click",function(){
         isChange=true;
-        $(".img-box").css({
-            "transform-origin":"left bottom",
-            "transform":"rotate(90deg)",
-            "width":crrentH,
-            "height":crrentW,
-            "top":parseInt(crrentW)*(-1)
-        });
-
-        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
-        $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
-        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
+        //$(".img-box").css({
+        //    "transform-origin":"left bottom",
+        //    "transform":"rotate(90deg)",
+        //    "width":crrentH,
+        //    "height":crrentW,
+        //    "top":parseInt(crrentW)*(-1)
+        //});
+        //
+        //$("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+        //$(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+        //$(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
         //console.log(parseInt($("#main_img_work").css("width")));
         pic_scroll();
     });
@@ -145,11 +145,11 @@ $(document).ready(function(){
         var dY = moveY - startY;
         var len = moveX - startX;
 
-        if(isChange){
+        /*if(isChange){
             len = moveY - startY;
         }else{
             len = moveX - startX;
-        }
+        }*/
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
