@@ -194,7 +194,51 @@ $(document).ready(function(){
 
 
         if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
+            //安卓横屏的情况一
+            if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
+                scrollImgBox.scrollLeft = 0;
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
+        }else if((window.orientation == 90 || window.orientation == -90) && isOrientation){
+            //安卓横屏的情况二
+            if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = 0;
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
+
+        }else {
+            if(isOrientation){
+                //安卓竖屏的情况一
+                if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
+
+                    scrollImgBox.scrollLeft = 0;
+                } else {
+
+                    scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+                }
+
+            }else{
+                //安卓竖屏的情况二
+                if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+                    scrollImgBox.scrollLeft = 0;
+                } else {
+
+                    scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+                }
+            }
+
+        }
+/*-----------------------------------------------*/
+
+        if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
+            //安卓横屏的情况一
             if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -214,8 +258,7 @@ $(document).ready(function(){
                 }
             }
 
-        }else{
-
+        }else if((window.orientation == 90 || window.orientation == -90) && isOrientation){
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -234,7 +277,53 @@ $(document).ready(function(){
                     scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
                 }
             }
+
+        }else{
+            if(isOrientation){
+                if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
+
+                    scrollImgBox.scrollLeft = 0;
+
+                } else {
+
+                    scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+                    // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+                    if (scrollImgBox.scrollLeft <= 0) {
+                        scrollImgBox.scrollLeft = marquePic1.offsetWidth*2 - 2; // 目的是为了能继续向右滑动
+                    }
+
+                    // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+                    if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth*2) {
+                        scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+                    }
+                }
+            }else{
+                if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+                    scrollImgBox.scrollLeft = 0;
+
+                } else {
+
+                    scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+                    // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+                    if (scrollImgBox.scrollLeft <= 0) {
+                        scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
+                    }
+
+                    // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+                    if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
+                        scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+                    }
+                }
+            }
+
         }
+
+
+
+
 
 
 
