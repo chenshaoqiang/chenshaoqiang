@@ -41,7 +41,7 @@ function Marquee(n) {
 
         }else{
             //安卓竖屏的情况二
-            if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+            if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
             } else {
