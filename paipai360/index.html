@@ -300,7 +300,7 @@
         }*/
         if (window.orientation == 90 || window.orientation == -90) {
             var prop=parseInt(realWidth/realHeight);//图片宽高比
-            var otherHei=screen.height + 80;
+            var otherHei=screen.height + 60;
             var otherWdt=otherHei * prop;
             $(bigPic).css("width", otherWdt + 'px').css("height", otherHei + 'px');
             marquePic2.innerHTML = marquePic1.innerHTML;
