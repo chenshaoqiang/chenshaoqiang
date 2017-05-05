@@ -10,7 +10,7 @@ function Marquee(n) {
         "总值:"+scrollImgBox.scrollLeft);
 
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
-
+        //安卓竖屏打开
         if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -19,17 +19,26 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else{
+        if(isOrientation){
+            if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
 
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+                scrollImgBox.scrollLeft = 0;
+            } else {
 
-            scrollImgBox.scrollLeft = 0;
-        } else {
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
 
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+        }else{
+            if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = 0;
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
         }
+
     }
-
-
 
 
 }
