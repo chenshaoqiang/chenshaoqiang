@@ -206,14 +206,14 @@
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
 
-                console.log(parseInt($("#middle_space_work").css("height")));
+                console.log(parseInt($("body").css("height")));
 
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
 
-                console.log(parseInt($("#middle_space_work").css("height")));
+                console.log(parseInt($("body").css("height")));
 
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
@@ -221,7 +221,7 @@
 
             case -90://ipad、iphone竖屏；Andriod横屏
 
-                console.log(parseInt($("#middle_space_work").css("height")));
+                console.log(parseInt($("body").css("height")));
 
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -231,7 +231,7 @@
             case 90://ipad、iphone竖屏；Andriod横屏
 
 
-                console.log(parseInt($("#middle_space_work").css("height")));
+                console.log(parseInt($("body").css("height")));
 
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -307,7 +307,7 @@
 
         $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         marquePic2.innerHTML = marquePic1.innerHTML;
-        $('body').attr({width: realWidth, height: realHeight});
+        //$('body').attr({width: realWidth, height: realHeight});
     }
 
     $(window).bind("orientationchange", function (event) {
