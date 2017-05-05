@@ -265,7 +265,7 @@ $(document).ready(function(){
             case 0://ipad、iphone横屏；Andriod竖屏
 
                 if(isOrientation){
-                    $("#marquePic2").css("left",marquePic1.offsetWidth*2);
+                    $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }
@@ -276,7 +276,7 @@ $(document).ready(function(){
             case 180://ipad、iphone横屏；Andriod竖屏
 
                 if(isOrientation){
-                    $("#marquePic2").css("left",marquePic1.offsetWidth*2);
+                    $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }
