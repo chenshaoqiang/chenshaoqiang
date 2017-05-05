@@ -192,7 +192,7 @@ function judgeTheOrientation() {
             break;
         case -90://ipad、iphone竖屏；Andriod横屏
 
-            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width")));
             $("#marquePic1").css("width",parseInt($("#main_img_work").css("width"))/2);
             $("#marquePic2").css("width",parseInt($("#main_img_work").css("width"))/2);
             $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
@@ -202,7 +202,7 @@ function judgeTheOrientation() {
             break;
         case 90://ipad、iphone竖屏；Andriod横屏
 
-            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width")));
             $("#marquePic1").css("width",parseInt($("#main_img_work").css("width"))/2);
             $("#marquePic2").css("width",parseInt($("#main_img_work").css("width"))/2);
             $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);

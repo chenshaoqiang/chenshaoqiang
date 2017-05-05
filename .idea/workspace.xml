@@ -59,7 +59,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49305555">
+            <state vertical-scroll-proportion="0.5181518">
               <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
               <folding>
                 <element signature="e#3486#4191#0" expanded="false" />
@@ -402,12 +402,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00124" summary="5.2  update">
-      <created>1493709967645</created>
-      <option name="number" value="00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1493709967645</updated>
-    </task>
     <task id="LOCAL-00125" summary="5.2  update">
       <created>1493711894847</created>
       <option name="number" value="00125" />
@@ -696,7 +690,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493969206562</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="5.5  update">
+      <created>1493969595488</created>
+      <option name="number" value="00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1493969595488</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1168,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49305555">
+        <state vertical-scroll-proportion="0.5181518">
           <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
           <folding>
             <element signature="e#3486#4191#0" expanded="false" />
