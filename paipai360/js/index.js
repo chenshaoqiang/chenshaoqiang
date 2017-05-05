@@ -48,6 +48,7 @@ $(document).ready(function(){
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
 
+    console.log(window.orientation);
 
     var imgBox=document.getElementById("imgBox");
     resetAll();
