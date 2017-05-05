@@ -206,10 +206,12 @@
 
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
+                rotatePic();
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
+                rotatePic();
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
@@ -296,12 +298,14 @@
         }*/
         if (window.orientation == 90 || window.orientation == -90) {
             var prop=parseInt(realWidth/realHeight);//图片宽高比
-            realHeight = screen.height + 150;
-            realWidth = realHeight * prop;
+            var otherHei=screen.height + 150;
+            var otherWdt=otherHei * prop;
+            $(bigPic).css("width", otherWdt + 'px').css("height", otherHei + 'px');
+            marquePic2.innerHTML = marquePic1.innerHTML;
+        }else{
+            $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
+            marquePic2.innerHTML = marquePic1.innerHTML;
         }
-
-        $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
-        marquePic2.innerHTML = marquePic1.innerHTML;
 
     }
 
