@@ -20,7 +20,7 @@ function Marquee(n) {
         }
     }else{
         if(isOrientation){
-            if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
+            if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= screen.width) {
 
                 scrollImgBox.scrollLeft = 0;
             } else {
