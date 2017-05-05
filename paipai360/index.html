@@ -207,11 +207,13 @@
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
                 rotatePic();
+                $("#bottom_div").css("display", "block");
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
                 rotatePic();
+                $("#bottom_div").css("display", "block");
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
