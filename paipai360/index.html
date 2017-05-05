@@ -203,37 +203,24 @@
 
     // 判断手机屏幕方向
     function judgeTheOrientation() {
-
+        rotatePic();
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-
-                console.log(parseInt($("body").css("height")));
-                console.log(screen.width,screen.height);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-
-                console.log(parseInt($("body").css("height")));
-                console.log(screen.width,screen.height);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
 
             case -90://ipad、iphone竖屏；Andriod横屏
-
-                console.log(parseInt($("body").css("height")));
-                console.log(screen.width,screen.height);
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
 
             case 90://ipad、iphone竖屏；Andriod横屏
-
-
-                console.log(parseInt($("body").css("height")));
-                console.log(screen.width,screen.height);
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
