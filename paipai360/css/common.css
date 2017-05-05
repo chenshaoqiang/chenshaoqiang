@@ -257,12 +257,13 @@ html,body{
 }
 
 #bottom_div {
-    position: relative;
+    position: absolute;
     bottom: 0px;
-    background-color: black;
-    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 80px;
+    z-index: 99;
+    width: 100%;
 }
 
 #bottom_logo {
