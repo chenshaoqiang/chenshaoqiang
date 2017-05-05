@@ -7,7 +7,7 @@ function Marquee(n) {
 
     if (window.orientation == 90 || window.orientation == -90) {
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+        if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
         } else {
