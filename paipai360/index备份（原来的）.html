@@ -331,6 +331,7 @@
 
     function Marquee(n) {       // 实现图片循环滚动的方法
 
+        console.log(marquePic1.offsetWidth,middle_space_work.scrollLeft);
         if (marquePic1.offsetWidth - middle_space_work.scrollLeft <= 0) {
 
             middle_space_work.scrollLeft = 0;
@@ -353,7 +354,7 @@
 
         isPlay = false;
         startMusic();
-        timer = setInterval("Marquee(5)", speed);
+        timer = setInterval("Marquee(35)", speed);
     }
 
     function startMusic() { // 播放音乐

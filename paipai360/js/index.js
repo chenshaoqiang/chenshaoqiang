@@ -1,32 +1,35 @@
-var desW=360;//设置设计稿宽
-var winW=document.documentElement.clientWidth;  //设备的实际宽度
-var scale=desW/100;
-document.documentElement.style.fontSize=winW/scale+"px";
-
-var scrollImg=document.getElementById("scroll-img");
-var marquePic1=document.getElementById("marquePic1");
-var marquePic2=document.getElementById("marquePic2");
-var protionId = $("#protionId").val();
-var bigPic = $("td.big_img img");  // 图片img
-var realWidth;//图片的宽度
-var realHeight;//图片的高度
-
-var userNameSpan = $("div.user_name span"); // 用户姓名
-var userHeadImg = $("div.user_head img"); // 用户头像
-var howLongSpan = $("div.date_play_num span.howLong");  // 日期
 // 实现图片循环滚动的方法
 function Marquee(n) {
+    console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
+    if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
-    if (parseInt($(".scroll-img-box").css("width")) - scrollImg.scrollLeft <= screen.height) {
-
-        scrollImg.scrollLeft = 0;
+        scrollImgBox.scrollLeft = 0;
     } else {
 
-        scrollImg.scrollLeft = scrollImg.scrollLeft + n;
+        scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
     }
 
 }
 $(document).ready(function(){
+    var desW=360;//设置设计稿宽
+    var winW=document.documentElement.clientWidth;  //设备的实际宽度
+    var scale=desW/100;
+    document.documentElement.style.fontSize=winW/scale+"px";
+
+    var scrollImg=document.getElementById("scroll-img");
+    var scrollImgBox=document.getElementById("scrollImgBox");
+    var marquePic1=document.getElementById("marquePic1");
+    var marquePic2=document.getElementById("marquePic2");
+    var protionId = $("#protionId").val();
+    var bigPic = $("td.big_img img");  // 图片img
+    var realWidth;//图片的宽度
+    var realHeight;//图片的高度
+
+    var userNameSpan = $("div.user_name span"); // 用户姓名
+    var userHeadImg = $("div.user_head img"); // 用户头像
+    var howLongSpan = $("div.date_play_num span.howLong");  // 日期
+
+
     var imgBox=document.getElementById("imgBox");
     resetAll();
 
@@ -146,20 +149,24 @@ $(document).ready(function(){
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        scrollImg.scrollLeft = scrollImg.scrollLeft + len;
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
-        console.log(marquePic1.scrollLeft);
+            scrollImgBox.scrollLeft = 0;
 
-        // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-        if (scrollImg.scrollLeft <= 0) {
-            scrollImg.scrollLeft = parseInt($("#main_img_work").css("width"))-screen.width-2; // 目的是为了能继续向右滑动
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+            if (scrollImgBox.scrollLeft <= 0) {
+                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
+            }
+
+            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
+                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+            }
         }
-        // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-        if (scrollImg.scrollLeft+(screen.width) >= parseInt($("#main_img_work").css("width"))) {
-
-            scrollImg.scrollLeft = 0; // 目的是为了能继续向左滑动
-        }
-
 
     };
 
@@ -169,64 +176,60 @@ $(document).ready(function(){
     scrollImg.addEventListener("touchstart", startHandler, false);
     scrollImg.addEventListener("touchmove", moveHandler, false);
     scrollImg.addEventListener("touchend", endHandler, false);
-});
-function resetAll(){
-    $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
-    $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
-    $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
-    marquePic2.innerHTML = marquePic1.innerHTML;
-}
-function otherReset(){
-    $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width")));
-    $("#marquePic1").css("width",parseInt($("#main_img_work").css("width"))/2);
-    $("#marquePic2").css("width",parseInt($("#main_img_work").css("width"))/2);
-    $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
-}
+    function resetAll(){
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
+        marquePic2.innerHTML = marquePic1.innerHTML;
+    }
+    function otherReset(){
+        $("#marquePic1").css("width",parseInt($("#main_img_work").css("width"))/2);
+        $("#marquePic2").css("width",parseInt($("#main_img_work").css("width"))/2);
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
+    }
 
 // 判断手机屏幕方向
-function judgeTheOrientation() {
+    function judgeTheOrientation() {
 
-    switch (window.orientation) {
-        case 0://ipad、iphone横屏；Andriod竖屏
-            $("body").attr("class", "portrait");
-            orientation = 'portrait';
-            break;
-        case 180://ipad、iphone横屏；Andriod竖屏
-            $("body").attr("class", "portrait");
-            orientation = 'portrait';
-            break;
-        case -90://ipad、iphone竖屏；Andriod横屏
-            otherReset();
-            $("#bottom_div").css("display", "none");
-            $("body").attr("class", "landscape");
-            orientation = 'landscape';
-            break;
-        case 90://ipad、iphone竖屏；Andriod横屏
-            otherReset();
-            $("body").attr("class", "landscape");
-            orientation = 'landscape';
-            break;
-        default:
-            break;
+        switch (window.orientation) {
+            case 0://ipad、iphone横屏；Andriod竖屏
+                $("body").attr("class", "portrait");
+                orientation = 'portrait';
+                break;
+            case 180://ipad、iphone横屏；Andriod竖屏
+                $("body").attr("class", "portrait");
+                orientation = 'portrait';
+                break;
+            case -90://ipad、iphone竖屏；Andriod横屏
+                otherReset();
+                $("#bottom_div").css("display", "none");
+                $("body").attr("class", "landscape");
+                orientation = 'landscape';
+                break;
+            case 90://ipad、iphone竖屏；Andriod横屏
+                otherReset();
+                $("body").attr("class", "landscape");
+                orientation = 'landscape';
+                break;
+            default:
+                break;
+        }
+        return false;
     }
-    return false;
-}
-
-
-
 
 // 旋转的时候图片适配
-function rotatePic() {
+    function rotatePic() {
 
-    //动态设置获取的图片的高度以适应不同高度图片（统一高度）
-    var setImgHeight=$(".scroll-img").height();
-    $(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
+        //动态设置获取的图片的高度以适应不同高度图片（统一高度）
+        var setImgHeight=$(".scroll-img").height();
+        $(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
 
-}
-$(window).bind("orientationchange", function (event) {
+    }
+    $(window).bind("orientationchange", function (event) {
 
-    judgeTheOrientation();
+        judgeTheOrientation();
 
-    rotatePic();
+        rotatePic();
+    });
 });
+
 
