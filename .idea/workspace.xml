@@ -60,9 +60,9 @@
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.2934028">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
-                <element signature="e#3772#4477#0" expanded="false" />
+                <element signature="e#3774#4479#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -404,12 +404,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00134" summary="5.3  update">
-      <created>1493792567175</created>
-      <option name="number" value="00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1493792567175</updated>
-    </task>
     <task id="LOCAL-00135" summary="5.3  update">
       <created>1493797832816</created>
       <option name="number" value="00135" />
@@ -698,7 +692,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493976432966</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="5.5  update">
+      <created>1493976882710</created>
+      <option name="number" value="00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1493976882710</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1172,9 +1172,9 @@
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2934028">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <element signature="e#3772#4477#0" expanded="false" />
+            <element signature="e#3774#4479#0" expanded="false" />
           </folding>
         </state>
       </provider>

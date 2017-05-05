@@ -6,7 +6,7 @@ function Marquee(n) {
         "总值:"+scrollImgBox.scrollLeft);
 
     if (window.orientation == 90 || window.orientation == -90) {
-        $(".scroll-img-td").css("left",parseInt($("#main_img_work").css("width"))/2);
+        //$(".scroll-img-td").css("left",parseInt($("#main_img_work").css("width"))/2);
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
