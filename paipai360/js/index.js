@@ -31,7 +31,7 @@ function Marquee(n) {
     }else {
         if(isOrientation){
             //安卓竖屏的情况一
-            if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
+            if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
             } else {
@@ -263,12 +263,24 @@ $(document).ready(function(){
 
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-                $("#marquePic2").css("left",marquePic1.offsetWidth);
+
+                if(isOrientation){
+                    $("#marquePic2").css("left",marquePic1.offsetWidth*2);
+                }else{
+                    $("#marquePic2").css("left",marquePic1.offsetWidth);
+                }
+
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-                $("#marquePic2").css("left",marquePic1.offsetWidth);
+
+                if(isOrientation){
+                    $("#marquePic2").css("left",marquePic1.offsetWidth*2);
+                }else{
+                    $("#marquePic2").css("left",marquePic1.offsetWidth);
+                }
+
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
