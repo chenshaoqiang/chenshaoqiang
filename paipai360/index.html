@@ -168,7 +168,7 @@
 <script language="javascript">
     var realWidth;//图片真实的宽度
     var realHeight;//图片真实的高度
-    var prop;//图片宽高比
+    prop=parseInt(realWidth/realHeight);//图片宽高比
 
     var screenWid = screen.width;
     var screenHei = screen.height;
@@ -203,7 +203,7 @@
 
     // 判断手机屏幕方向
     function judgeTheOrientation() {
-        rotatePic();
+
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
                 $("body").attr("class", "portrait");
@@ -215,12 +215,14 @@
                 break;
 
             case -90://ipad、iphone竖屏；Andriod横屏
+                rotatePic();
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
 
             case 90://ipad、iphone竖屏；Andriod横屏
+                rotatePic();
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
@@ -293,8 +295,9 @@
             $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         }*/
         if (window.orientation == 90 || window.orientation == -90) {
+            var prop=parseInt(realWidth/realHeight);//图片宽高比
             realHeight = screen.height + 150;
-            realWidth = (screen.height + 150) / realHeight * realWidth;
+            realWidth = realHeight * prop;
         }
 
         $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
