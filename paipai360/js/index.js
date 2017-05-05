@@ -168,7 +168,7 @@ $(document).ready(function(){
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        if (window.orientation == 90 || window.orientation == -90) {
+        /*if (window.orientation == 90 || window.orientation == -90) {
             $("#marquePic2").css("left",marquePic1.offsetWidth/2);
             if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
@@ -177,33 +177,57 @@ $(document).ready(function(){
 
                 scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
             }
-        }
+        }*/
 
         if (window.orientation == 90 || window.orientation == -90) {
 
+            $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+
+            if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = 0;
+
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+                // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+                if (scrollImgBox.scrollLeft <= 0) {
+                    scrollImgBox.scrollLeft = marquePic1.offsetWidth/2 - 2; // 目的是为了能继续向右滑动
+                }
+
+                // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+                if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth/2) {
+                    scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+                }
+            }
+
         }else{
 
+            $("#marquePic2").css("left",marquePic1.offsetWidth);
+
+            if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = 0;
+
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+                // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+                if (scrollImgBox.scrollLeft <= 0) {
+                    scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
+                }
+
+                // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+                if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
+                    scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+                }
+            }
         }
 
 
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
-            scrollImgBox.scrollLeft = 0;
-
-        } else {
-
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
-
-            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-            if (scrollImgBox.scrollLeft <= 0) {
-                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
-            }
-
-            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
-                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
-            }
-        }
 
     };
 
