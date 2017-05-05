@@ -191,11 +191,17 @@ function judgeTheOrientation() {
             orientation = 'portrait';
             break;
         case -90://ipad、iphone竖屏；Andriod横屏
+            $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+            $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
             $("#bottom_div").css("display", "none");
             $("body").attr("class", "landscape");
             orientation = 'landscape';
             break;
         case 90://ipad、iphone竖屏；Andriod横屏
+            $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
+            $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
+            $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
             $("body").attr("class", "landscape");
             orientation = 'landscape';
             break;
