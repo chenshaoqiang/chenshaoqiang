@@ -10,7 +10,7 @@ function Marquee(n) {
         "总值:"+scrollImgBox.scrollLeft);
 
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
-        $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+
         if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -19,7 +19,7 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else{
-        $("#marquePic2").css("left",marquePic1.offsetWidth);
+
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -172,8 +172,8 @@ $(document).ready(function(){
         len = len / 10;   // 为了减速
 
 
-        if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
-            $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+        if (window.orientation == 90 || window.orientation == -90) {
+
             if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -194,7 +194,7 @@ $(document).ready(function(){
             }
 
         }else{
-            $("#marquePic2").css("left",marquePic1.offsetWidth);
+
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -242,19 +242,35 @@ $(document).ready(function(){
 
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
+                $("#marquePic2").css("left",marquePic1.offsetWidth);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
+                $("#marquePic2").css("left",marquePic1.offsetWidth);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
+
+                if(isOrientation){
+                    $("#marquePic2").css("left",marquePic1.offsetWidth);
+                }else{
+                    $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+                }
+
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
+
+                if(isOrientation){
+                    $("#marquePic2").css("left",marquePic1.offsetWidth);
+                }else{
+                    $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+                }
+
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
