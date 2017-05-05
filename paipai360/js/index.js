@@ -49,7 +49,7 @@ $(document).ready(function(){
     var crrentW=$(".img-box").css("width");
     var crrentH=$(".img-box").css("height");
     $("#switch_div").on("click",function(){
-        /*isChange=true;
+        isChange=true;
         $(".img-box").css({
             "transform-origin":"left bottom",
             "transform":"rotate(90deg)",
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         $(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
-        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));*/
+        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
         //console.log(parseInt($("#main_img_work").css("width")));
         pic_scroll();
     });

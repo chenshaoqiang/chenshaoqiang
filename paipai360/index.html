@@ -168,6 +168,7 @@
 <script language="javascript">
     var realWidth;//图片真实的宽度
     var realHeight;//图片真实的高度
+    var img_prop;//图片宽高比
 
     var screenWid = screen.width;
     var screenHei = screen.height;
@@ -304,10 +305,14 @@
         } else {
             $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         }*/
+        if (window.orientation == 90 || window.orientation == -90) {
+            realHeight = screen.height + 150;
+            realWidth = realHeight.img_prop;
+        }
 
         $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         marquePic2.innerHTML = marquePic1.innerHTML;
-        //$('body').attr({width: realWidth, height: realHeight});
+
     }
 
     $(window).bind("orientationchange", function (event) {
@@ -443,14 +448,13 @@
              2、指定图片的src路径
              3、一定要在图片加载完成后执行如.load()函数里执行
              */
-            console.log(screen.width,screen.height);
 
             realWidth = this.width;
             realHeight = this.height;
-            var prop=parseInt(realWidth/realHeight);//图片宽高比
+            img_prop=parseInt(realWidth/realHeight);//图片宽高比
             //使图片全屏
             realHeight=parseInt($("#middle_space_work").css("height"));
-            realWidth=(parseInt($("#middle_space_work").css("height")))*prop;
+            realWidth=(parseInt($("#middle_space_work").css("height")))*img_prop;
 
             rotatePic();
         });
