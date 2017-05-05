@@ -172,7 +172,7 @@ $(document).ready(function(){
         len = len / 10;   // 为了减速
 
 
-        if (window.orientation == 90 || window.orientation == -90) {
+        if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
 
             if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
