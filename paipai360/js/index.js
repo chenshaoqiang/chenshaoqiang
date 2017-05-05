@@ -15,6 +15,7 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else{
+        $("#marquePic2").css("left",marquePic1.offsetWidth);
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -166,6 +167,24 @@ $(document).ready(function(){
         }*/
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
+
+        if (window.orientation == 90 || window.orientation == -90) {
+            $("#marquePic2").css("left",marquePic1.offsetWidth/2);
+            if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = 0;
+            } else {
+
+                scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
+        }
+
+        if (window.orientation == 90 || window.orientation == -90) {
+
+        }else{
+
+        }
+
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
