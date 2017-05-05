@@ -191,13 +191,17 @@ function judgeTheOrientation() {
             orientation = 'portrait';
             break;
         case -90://ipad、iphone竖屏；Andriod横屏
-            console.log($("#main_img_work").css("width"));
+            setTimeout(function(){
+                console.log($("#main_img_work").css("width"));
+            },50);
             $("#bottom_div").css("display", "none");
             $("body").attr("class", "landscape");
             orientation = 'landscape';
             break;
         case 90://ipad、iphone竖屏；Andriod横屏
-            console.log($("#main_img_work").css("width"));
+            setTimeout(function(){
+                console.log($("#main_img_work").css("width"));
+            },50);
             $("body").attr("class", "landscape");
             orientation = 'landscape';
             break;
