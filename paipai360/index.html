@@ -304,6 +304,18 @@
         } else {
             $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         }*/
+        if(isiOS){
+            if (window.orientation == 0 || window.orientation == 180) {
+                var isiOSProp=parseInt(realWidth/realHeight);//图片宽高比
+                var isiOSHei=screen.height + 60;
+                var isiOSWdt=isiOSHei * isiOSProp;
+                $(bigPic).css("width", isiOSWdt + 'px').css("height", isiOSHei + 'px');
+                marquePic2.innerHTML = marquePic1.innerHTML;
+            }else{
+                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
+                marquePic2.innerHTML = marquePic1.innerHTML;
+            }
+        }
         if(isAndroid){
             if (window.orientation == 90 || window.orientation == -90) {
                 var prop=parseInt(realWidth/realHeight);//图片宽高比
@@ -315,20 +327,6 @@
                 $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
                 marquePic2.innerHTML = marquePic1.innerHTML;
             }
-        }else if(isiOS){
-            if (window.orientation == 0 || window.orientation == 180) {
-                var prop=parseInt(realWidth/realHeight);//图片宽高比
-                var otherHei=screen.height + 60;
-                var otherWdt=otherHei * prop;
-                $(bigPic).css("width", otherWdt + 'px').css("height", otherHei + 'px');
-                marquePic2.innerHTML = marquePic1.innerHTML;
-            }else{
-                $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
-                marquePic2.innerHTML = marquePic1.innerHTML;
-            }
-        }else{
-            $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
-            marquePic2.innerHTML = marquePic1.innerHTML;
         }
 
 
