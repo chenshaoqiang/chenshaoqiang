@@ -6,7 +6,8 @@ function Marquee(n) {
         "总值:"+scrollImgBox.scrollLeft);
 
     if (window.orientation == 90 || window.orientation == -90) {
-        if (marquePic1.offsetWidth/4 - scrollImgBox.scrollLeft <= 0) {
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
         } else {
@@ -14,6 +15,7 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else{
+        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
