@@ -207,14 +207,14 @@
             case 0://ipad、iphone横屏；Andriod竖屏
 
                 console.log(parseInt($("body").css("height")));
-
+                console.log(screen.width,screen.height);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
 
                 console.log(parseInt($("body").css("height")));
-
+                console.log(screen.width,screen.height);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
@@ -222,7 +222,7 @@
             case -90://ipad、iphone竖屏；Andriod横屏
 
                 console.log(parseInt($("body").css("height")));
-
+                console.log(screen.width,screen.height);
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
@@ -232,7 +232,7 @@
 
 
                 console.log(parseInt($("body").css("height")));
-
+                console.log(screen.width,screen.height);
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
@@ -443,6 +443,8 @@
              2、指定图片的src路径
              3、一定要在图片加载完成后执行如.load()函数里执行
              */
+            console.log(screen.width,screen.height);
+
             realWidth = this.width;
             realHeight = this.height;
             var prop=parseInt(realWidth/realHeight);//图片宽高比
