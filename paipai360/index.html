@@ -172,7 +172,6 @@
     var realWidth;//图片真实的宽度
     var realHeight;//图片真实的高度
     var prop=parseInt(realWidth/realHeight);//图片宽高比
-    var isApple=false;
 
     var screenWid = screen.width;
     var screenHei = screen.height;
@@ -202,6 +201,9 @@
     var priseNumSpan = $("div.priseNum span");  // 点赞数目
     var bigPic = $("td.big_img img");  // 图片img
 
+    var checkUserAgent = navigator.userAgent;
+    var isAndroid = checkUserAgent.indexOf('Android') > -1 || checkUserAgent.indexOf('Adr') > -1; //android终端
+    var isiOS = !!checkUserAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 
     marquePic2.innerHTML = marquePic1.innerHTML;
 
@@ -210,14 +212,12 @@
 
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-                isApple=true;
                 rotatePic();
                 $("#bottom_div").css("display", "block");
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-                isApple=true;
                 rotatePic();
                 $("#bottom_div").css("display", "block");
                 $("body").attr("class", "portrait");
@@ -225,7 +225,6 @@
                 break;
 
             case -90://ipad、iphone竖屏；Andriod横屏
-                isApple=false;
                 rotatePic();
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -233,7 +232,6 @@
                 break;
 
             case 90://ipad、iphone竖屏；Andriod横屏
-                isApple=false;
                 rotatePic();
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -306,8 +304,8 @@
         } else {
             $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
         }*/
-        if (window.orientation == 90 || window.orientation == -90) {
-            if(!isApple){
+        if(isAndroid){
+            if (window.orientation == 90 || window.orientation == -90) {
                 var prop=parseInt(realWidth/realHeight);//图片宽高比
                 var otherHei=screen.height + 60;
                 var otherWdt=otherHei * prop;
@@ -317,10 +315,8 @@
                 $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
                 marquePic2.innerHTML = marquePic1.innerHTML;
             }
-        }
-        if (window.orientation == 0 || window.orientation == 180) {
-            //apple横屏
-            if(isApple){
+        }else if(isiOS){
+            if (window.orientation == 0 || window.orientation == 180) {
                 var prop=parseInt(realWidth/realHeight);//图片宽高比
                 var otherHei=screen.height + 60;
                 var otherWdt=otherHei * prop;
@@ -330,7 +326,12 @@
                 $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
                 marquePic2.innerHTML = marquePic1.innerHTML;
             }
+        }else{
+            $(bigPic).css("width", realWidth + 'px').css("height", realHeight + 'px');
+            marquePic2.innerHTML = marquePic1.innerHTML;
         }
+
+
 
     }
 
