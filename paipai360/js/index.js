@@ -1,13 +1,30 @@
 // 实现图片循环滚动的方法
 function Marquee(n) {
-    console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
-    if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+    console.log(
+        "角度:"+window.orientation,
+        "总宽:"+marquePic1.offsetWidth,
+        "总值:"+scrollImgBox.scrollLeft);
 
-        scrollImgBox.scrollLeft = 0;
-    } else {
+    if (window.orientation == 90 || window.orientation == -90) {
+        if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
-        scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            scrollImgBox.scrollLeft = 0;
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+        }
+    }else{
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+            scrollImgBox.scrollLeft = 0;
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+        }
     }
+
+
+
 
 }
 $(document).ready(function(){
