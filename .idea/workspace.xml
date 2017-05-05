@@ -59,10 +59,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5181518">
-              <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.62046206">
+              <caret line="204" column="25" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
               <folding>
-                <element signature="e#3486#4191#0" expanded="false" />
+                <element signature="e#3147#3852#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -402,12 +402,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00125" summary="5.2  update">
-      <created>1493711894847</created>
-      <option name="number" value="00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1493711894847</updated>
-    </task>
     <task id="LOCAL-00126" summary="5.2  update">
       <created>1493718697040</created>
       <option name="number" value="00126" />
@@ -696,7 +690,13 @@
       <option name="project" value="LOCAL" />
       <updated>1493969595488</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="5.5  update">
+      <created>1493969772969</created>
+      <option name="number" value="00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1493969772970</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1168,10 +1168,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5181518">
-          <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.62046206">
+          <caret line="204" column="25" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
           <folding>
-            <element signature="e#3486#4191#0" expanded="false" />
+            <element signature="e#3147#3852#0" expanded="false" />
           </folding>
         </state>
       </provider>
