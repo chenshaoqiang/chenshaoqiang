@@ -1,3 +1,7 @@
+
+//初次加载判断横竖屏
+var isOrientation=false;
+isOrientation=!!(window.orientation == 90 || window.orientation == -90);
 // 实现图片循环滚动的方法
 function Marquee(n) {
     console.log(
@@ -5,8 +9,8 @@ function Marquee(n) {
         "总宽:"+marquePic1.offsetWidth,
         "总值:"+scrollImgBox.scrollLeft);
 
-    if (window.orientation == 90 || window.orientation == -90) {
-
+    if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
+        $("#marquePic2").css("left",marquePic1.offsetWidth/2);
         if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -15,7 +19,7 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else{
-
+        $("#marquePic2").css("left",marquePic1.offsetWidth);
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -47,8 +51,6 @@ $(document).ready(function(){
     var userNameSpan = $("div.user_name span"); // 用户姓名
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
-
-    console.log(window.orientation);
 
     var imgBox=document.getElementById("imgBox");
     resetAll();
@@ -170,8 +172,8 @@ $(document).ready(function(){
         len = len / 10;   // 为了减速
 
 
-        if (window.orientation == 90 || window.orientation == -90) {
-
+        if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
+            $("#marquePic2").css("left",marquePic1.offsetWidth/2);
             if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -192,7 +194,7 @@ $(document).ready(function(){
             }
 
         }else{
-
+            $("#marquePic2").css("left",marquePic1.offsetWidth);
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -240,27 +242,19 @@ $(document).ready(function(){
 
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-
-                $("#marquePic2").css("left",marquePic1.offsetWidth);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-
-                $("#marquePic2").css("left",marquePic1.offsetWidth);
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
-
-                $("#marquePic2").css("left",marquePic1.offsetWidth/2);
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
-
-                $("#marquePic2").css("left",marquePic1.offsetWidth/2);
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
