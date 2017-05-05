@@ -200,13 +200,11 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
-                otherReset();
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
-                otherReset();
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
                 break;
