@@ -9,7 +9,7 @@ function Marquee(n) {
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
         //安卓横屏的情况一(竖屏转横屏)
 
-        if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
             alert("角度:"+window.orientation);
             alert("总宽:"+marquePic1.offsetWidth);
             alert("总值:"+scrollImgBox.scrollLeft);
