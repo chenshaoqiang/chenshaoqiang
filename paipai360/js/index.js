@@ -8,12 +8,11 @@ function Marquee(n) {
 
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
         //安卓横屏的情况一(竖屏转横屏)
-        alert(
-            "角度:"+window.orientation,
-            "总宽:"+marquePic1.offsetWidth,
-            "总值:"+scrollImgBox.scrollLeft);
-        if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
+        if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
+            alert("角度:"+window.orientation);
+            alert("总宽:"+marquePic1.offsetWidth);
+            alert("总值:"+scrollImgBox.scrollLeft);
             scrollImgBox.scrollLeft = 0;
         } else {
 
@@ -22,7 +21,9 @@ function Marquee(n) {
     }else if((window.orientation == 90 || window.orientation == -90) && isOrientation){
         //安卓横屏的情况二（横屏刷新）
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-
+            alert("角度:"+window.orientation);
+            alert("总宽:"+marquePic1.offsetWidth);
+            alert("总值:"+scrollImgBox.scrollLeft);
             scrollImgBox.scrollLeft = 0;
         } else {
 
@@ -41,13 +42,11 @@ function Marquee(n) {
             }
 
         }else{
-            alert(
-                "角度:"+window.orientation,
-                "总宽:"+marquePic1.offsetWidth,
-                "总值:"+scrollImgBox.scrollLeft);
             //安卓竖屏的情况二（竖屏）
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 scrollImgBox.scrollLeft = 0;
             } else {
 
@@ -309,10 +308,9 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
-                alert(
-                    "角度:"+window.orientation,
-                    "总宽:"+marquePic1.offsetWidth,
-                    "left:"+scrollImgBox.scrollLeft);
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
@@ -324,10 +322,9 @@ $(document).ready(function(){
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
-                alert(
-                    "角度:"+window.orientation,
-                    "总宽:"+marquePic1.offsetWidth,
-                    "left:"+scrollImgBox.scrollLeft);
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
