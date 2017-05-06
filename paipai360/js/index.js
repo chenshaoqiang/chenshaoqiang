@@ -2,7 +2,6 @@
 //初次加载判断横竖屏
 var isOrientation=false;
 isOrientation=!!(window.orientation == 90 || window.orientation == -90);
-
 // 实现图片循环滚动的方法
 function Marquee(n) {
 
@@ -266,6 +265,25 @@ $(document).ready(function(){
     scrollImg.addEventListener("touchmove", moveHandler, false);
     scrollImg.addEventListener("touchend", endHandler, false);
     function resetAll(){
+        // 根据图片真实尺寸设置body和img的尺寸大小
+        $("#main_img_work").each(function (i) {
+
+            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
+            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
+                /*
+                 如果要获取图片的真实的宽度和高度有三点必须注意
+                 1、需要创建一个image对象：如这里的$("<img/>")
+                 2、指定图片的src路径
+                 3、一定要在图片加载完成后执行如.load()函数里执行
+                 */
+                realWidth = this.width;
+                realHeight = this.height;
+                prop=parseInt(realWidth/realHeight);//图片宽高比
+
+                console.log(realWidth,realHeight,prop);
+            });
+        });
+
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
         marquePic2.innerHTML = marquePic1.innerHTML;
