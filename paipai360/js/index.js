@@ -103,7 +103,7 @@ $(document).ready(function(){
                 var realHeight2 = $(bigPic).css("height");
 
                 console.log(realWidth,realHeight,prop);
-                console.log(realWidth2,realHeight2);
+                console.log(realWidth2,realHeight2,screen.width,screen.height);
             });
         });
     }
@@ -307,7 +307,7 @@ $(document).ready(function(){
     function judgeTheOrientation() {
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-
+                getImgSize();
                 if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
@@ -318,7 +318,7 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-
+                getImgSize();
                 if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
