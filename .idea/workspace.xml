@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.642858">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+              <caret line="36" column="57" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,10 +85,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5956679">
-              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+            <state vertical-scroll-proportion="-0.833935">
+              <caret line="316" column="16" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
               <folding>
-                <element signature="e#4382#5087#0" expanded="false" />
+                <element signature="e#3782#4487#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -343,12 +343,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00163" summary="5.5  update">
-      <created>1493963833780</created>
-      <option name="number" value="00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1493963833780</updated>
     </task>
     <task id="LOCAL-00164" summary="5.5  update">
       <created>1493966129753</created>
@@ -638,7 +632,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494082551733</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="5.6  update">
+      <created>1494082878559</created>
+      <option name="number" value="00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1494082878559</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1115,7 +1115,7 @@
     <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.642858">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1124,10 +1124,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5956679">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state vertical-scroll-proportion="-0.833935">
+          <caret line="316" column="16" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
           <folding>
-            <element signature="e#4382#5087#0" expanded="false" />
+            <element signature="e#3782#4487#0" expanded="false" />
           </folding>
         </state>
       </provider>
