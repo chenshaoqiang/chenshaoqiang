@@ -3,20 +3,15 @@
 var isOrientation=false;
 isOrientation=!!(window.orientation == 90 || window.orientation == -90);
 
-
-alert(window.orientation);
-
-
-
 // 实现图片循环滚动的方法
 function Marquee(n) {
-    console.log(
-        "角度:"+window.orientation,
-        "总宽:"+marquePic1.offsetWidth,
-        "总值:"+scrollImgBox.scrollLeft);
 
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
         //安卓横屏的情况一(竖屏转横屏)
+        alert(
+            "角度:"+window.orientation,
+            "总宽:"+marquePic1.offsetWidth,
+            "总值:"+scrollImgBox.scrollLeft);
         if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -46,6 +41,10 @@ function Marquee(n) {
             }
 
         }else{
+            alert(
+                "角度:"+window.orientation,
+                "总宽:"+marquePic1.offsetWidth,
+                "总值:"+scrollImgBox.scrollLeft);
             //安卓竖屏的情况二（竖屏）
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
@@ -265,13 +264,6 @@ $(document).ready(function(){
 
         }
 
-
-
-
-
-
-
-
     };
 
     // 滑动结束事件处理
@@ -293,7 +285,6 @@ $(document).ready(function(){
 
 // 判断手机屏幕方向
     function judgeTheOrientation() {
-        alert(window.orientation);
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
 
@@ -318,7 +309,10 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
-
+                alert(
+                    "角度:"+window.orientation,
+                    "总宽:"+marquePic1.offsetWidth,
+                    "left:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
@@ -330,7 +324,10 @@ $(document).ready(function(){
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
-
+                alert(
+                    "角度:"+window.orientation,
+                    "总宽:"+marquePic1.offsetWidth,
+                    "left:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
