@@ -103,7 +103,7 @@ $(document).ready(function(){
                 var realHeight2 = $(bigPic).css("height");
 
                 console.log(realWidth,realHeight,prop);
-                console.log(realWidth2,realHeight2,screen.width,screen.height);
+                console.log(realWidth2,realHeight2,screen.availWidth,screen.availHeight);
             });
         });
     }
