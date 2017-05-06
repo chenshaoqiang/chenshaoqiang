@@ -46,9 +46,9 @@ function Marquee(n) {
         }else{
             //安卓竖屏的情况二（竖屏）
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-                alert("角度:"+window.orientation);
+                /*alert("角度:"+window.orientation);
                 alert("总宽:"+marquePic1.offsetWidth);
-                alert("总值:"+scrollImgBox.scrollLeft);
+                alert("总值:"+scrollImgBox.scrollLeft);*/
                 scrollImgBox.scrollLeft = 0;
             } else {
 
