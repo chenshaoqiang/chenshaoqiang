@@ -2,6 +2,12 @@
 //初次加载判断横竖屏
 var isOrientation=false;
 isOrientation=!!(window.orientation == 90 || window.orientation == -90);
+
+
+alert(window.orientation);
+
+
+
 // 实现图片循环滚动的方法
 function Marquee(n) {
     console.log(
@@ -10,7 +16,7 @@ function Marquee(n) {
         "总值:"+scrollImgBox.scrollLeft);
 
     if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
-        //安卓横屏的情况一
+        //安卓横屏的情况一(竖屏转横屏)
         if (marquePic1.offsetWidth/2 - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -19,7 +25,7 @@ function Marquee(n) {
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
         }
     }else if((window.orientation == 90 || window.orientation == -90) && isOrientation){
-        //安卓横屏的情况二
+        //安卓横屏的情况二（横屏刷新）
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -30,7 +36,7 @@ function Marquee(n) {
 
     }else {
         if(isOrientation){
-            //安卓竖屏的情况一
+            //安卓竖屏的情况一（横屏刷新后转竖屏）
             if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -40,7 +46,7 @@ function Marquee(n) {
             }
 
         }else{
-            //安卓竖屏的情况二
+            //安卓竖屏的情况二（竖屏）
             if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = 0;
@@ -79,7 +85,6 @@ $(document).ready(function(){
     var startX = 0;
     var startY = 0;
     var isPlay = true;//是否滚动状态设置，默认滚动
-    var isChange = false;//是否翻屏
     var speed = 50;
     var timer;        // 用于定时器
 
@@ -88,19 +93,8 @@ $(document).ready(function(){
     var crrentW=$(".img-box").css("width");
     var crrentH=$(".img-box").css("height");
     $("#switch_div").on("click",function(){
-        isChange=true;
-        //$(".img-box").css({
-        //    "transform-origin":"left bottom",
-        //    "transform":"rotate(90deg)",
-        //    "width":crrentH,
-        //    "height":crrentW,
-        //    "top":parseInt(crrentW)*(-1)
-        //});
-        //
-        //$("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
-        //$(".scroll-img-box").css("width",parseInt($("#main_img_work").css("width"))*2);
-        //$(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
-        //console.log(parseInt($("#main_img_work").css("width")));
+        //播放按钮点击事件
+
         pic_scroll();
     });
     //停止滚动
@@ -184,11 +178,6 @@ $(document).ready(function(){
         var dY = moveY - startY;
         var len = moveX - startX;
 
-        /*if(isChange){
-            len = moveY - startY;
-        }else{
-            len = moveX - startX;
-        }*/
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
