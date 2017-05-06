@@ -63,6 +63,7 @@ $(document).ready(function(){
 
     console.log(screenWid,screenHei,"||",bodyWidth,bodyHeight);
 
+    var imgBox=document.getElementById("imgBox");
     var scrollImg=document.getElementById("scroll-img");
     var scrollImgBox=document.getElementById("scrollImgBox");
     var marquePic1=document.getElementById("marquePic1");
@@ -76,7 +77,8 @@ $(document).ready(function(){
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
 
-    var imgBox=document.getElementById("imgBox");
+    $("#imgBox").css("height",screen.height);
+
     resetAll();
 
     var startX = 0;
