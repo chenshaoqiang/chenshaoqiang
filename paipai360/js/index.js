@@ -102,7 +102,7 @@ $(document).ready(function(){
                 var realWidth2 = $(bigPic).css("width");
                 var realHeight2 = $(bigPic).css("height");
 
-                console.log(realWidth,realHeight,prop);
+                console.log(document.body.offsetHeight,document.body.offsetWidth);
                 console.log(realWidth2,realHeight2,screen.availWidth,screen.availHeight);
             });
         });
