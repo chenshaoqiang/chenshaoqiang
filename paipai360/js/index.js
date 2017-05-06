@@ -60,8 +60,7 @@ $(document).ready(function(){
     var screenHei=screen.height;
     var bodyWidth=document.body.offsetWidth;
     var bodyHeight=document.body.offsetHeight;
-
-    console.log(screenWid,screenHei,"||",bodyWidth,bodyHeight);
+    var navHeight=parseInt(screenHei)-parseInt(bodyHeight);//浏览器地址栏高度
 
     var imgBox=document.getElementById("imgBox");
     var scrollImg=document.getElementById("scroll-img");
@@ -77,8 +76,6 @@ $(document).ready(function(){
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
 
-    $("#imgBox").css("height",screen.height);
-
     resetAll();
 
     var startX = 0;
@@ -89,8 +86,6 @@ $(document).ready(function(){
 
     judgeTheOrientation();
     rotatePic();
-    var crrentW=$(".img-box").css("width");
-    var crrentH=$(".img-box").css("height");
 
     function getImgSize(){
         $("#main_img_work").each(function (i) {
@@ -375,11 +370,6 @@ $(document).ready(function(){
 
         rotatePic();
     });
-    window.onload=function(){
-        setTimeout(function() {
-            window.scrollTo(0, 1)
-        }, 0);
-    };
 });
 
 
