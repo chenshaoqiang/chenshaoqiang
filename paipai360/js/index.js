@@ -293,7 +293,7 @@ $(document).ready(function(){
 
 // 判断手机屏幕方向
     function judgeTheOrientation() {
-
+        alert(window.orientation);
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
 
