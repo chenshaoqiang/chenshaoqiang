@@ -34,7 +34,9 @@ function Marquee(n) {
         if(isOrientation){
             //安卓竖屏的情况一（横屏刷新后转竖屏）
             if (marquePic1.offsetWidth*2 - scrollImgBox.scrollLeft <= 0) {
-
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 scrollImgBox.scrollLeft = 0;
             } else {
 
@@ -286,7 +288,9 @@ $(document).ready(function(){
     function judgeTheOrientation() {
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
-
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
@@ -297,7 +301,9 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
-
+                alert("角度:"+window.orientation);
+                alert("总宽:"+marquePic1.offsetWidth);
+                alert("总值:"+scrollImgBox.scrollLeft);
                 if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
