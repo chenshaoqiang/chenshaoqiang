@@ -62,10 +62,10 @@ $(document).ready(function(){
     var marquePic1=document.getElementById("marquePic1");
     var marquePic2=document.getElementById("marquePic2");
     var protionId = $("#protionId").val();
-    var bigPic = $("td.big_img img");  // 图片img
+    var bigPic = $(".scroll-img-td img");  // 图片img
     var realWidth;//图片的宽度
     var realHeight;//图片的高度
-
+    var prop;
     var userNameSpan = $("div.user_name span"); // 用户姓名
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
@@ -83,6 +83,31 @@ $(document).ready(function(){
     rotatePic();
     var crrentW=$(".img-box").css("width");
     var crrentH=$(".img-box").css("height");
+
+    function getImgSize(){
+        $("#main_img_work").each(function (i) {
+
+            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
+            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
+                /*
+                 如果要获取图片的真实的宽度和高度有三点必须注意
+                 1、需要创建一个image对象：如这里的$("<img/>")
+                 2、指定图片的src路径
+                 3、一定要在图片加载完成后执行如.load()函数里执行
+                 */
+                realWidth = this.width;
+                realHeight = this.height;
+                prop=parseInt(realWidth/realHeight);//图片宽高比
+
+                var realWidth2 = $(bigPic).css("width");
+                var realHeight2 = $(bigPic).css("height");
+
+                console.log(realWidth,realHeight,prop);
+                console.log(realWidth2,realHeight2);
+            });
+        });
+    }
+
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
 
@@ -266,23 +291,7 @@ $(document).ready(function(){
     scrollImg.addEventListener("touchend", endHandler, false);
     function resetAll(){
         // 根据图片真实尺寸设置body和img的尺寸大小
-        $("#main_img_work").each(function (i) {
-
-            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
-            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
-                /*
-                 如果要获取图片的真实的宽度和高度有三点必须注意
-                 1、需要创建一个image对象：如这里的$("<img/>")
-                 2、指定图片的src路径
-                 3、一定要在图片加载完成后执行如.load()函数里执行
-                 */
-                realWidth = this.width;
-                realHeight = this.height;
-                prop=parseInt(realWidth/realHeight);//图片宽高比
-
-                console.log(realWidth,realHeight,prop);
-            });
-        });
+        getImgSize();
 
         $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
         $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
@@ -320,7 +329,7 @@ $(document).ready(function(){
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
-
+                getImgSize();
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
@@ -332,7 +341,7 @@ $(document).ready(function(){
                 orientation = 'landscape';
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
-
+                getImgSize();
                 if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
@@ -353,7 +362,7 @@ $(document).ready(function(){
 
         //动态设置获取的图片的高度以适应不同高度图片（统一高度）
         var setImgHeight=$(".scroll-img").height();
-        $(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
+        //$(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
 
     }
     $(window).bind("orientationchange", function (event) {
