@@ -56,6 +56,12 @@ $(document).ready(function(){
     var winW=document.documentElement.clientWidth;  //设备的实际宽度
     var scale=desW/100;
     document.documentElement.style.fontSize=winW/scale+"px";
+    var screenWid=screen.width;
+    var screenHei=screen.height;
+    var bodyWidth=document.body.offsetWidth;
+    var bodyHeight=document.body.offsetHeight;
+
+    console.log(screenWid,screenHei,"||",bodyWidth,bodyHeight);
 
     var scrollImg=document.getElementById("scroll-img");
     var scrollImgBox=document.getElementById("scrollImgBox");
@@ -97,13 +103,9 @@ $(document).ready(function(){
                  */
                 realWidth = this.width;
                 realHeight = this.height;
-                prop=parseInt(realWidth/realHeight);//图片宽高比
-
-                var realWidth2 = $(bigPic).css("width");
-                var realHeight2 = $(bigPic).css("height");
+                prop=parseInt(realWidth/realHeight);//通过真实图片获得宽高比
 
                 console.log(document.body.offsetHeight,document.body.offsetWidth);
-                console.log(realWidth2,realHeight2,screen.availWidth,screen.availHeight);
             });
         });
     }
