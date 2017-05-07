@@ -10,6 +10,7 @@ var marquePic2=document.getElementById("marquePic2");
 var protionId = $("#protionId").val();
 var bodyOfferHei=document.body.offsetHeight;
 
+var isPlay = true;//是否滚动状态设置，默认滚动
 //初次加载判断横竖屏
 var isOrientation=false;
 isOrientation=!!(window.orientation == 90 || window.orientation == -90);
@@ -101,7 +102,7 @@ function getImgSize(){
 
             var startX = 0;
             var startY = 0;
-            var isPlay = true;//是否滚动状态设置，默认滚动
+
             var speed = 50;
             var timer;        // 用于定时器
 
@@ -121,12 +122,11 @@ function getImgSize(){
             function startRolling() {
                 isPlay = false;
                 //startMusic();
-                timer = setInterval("Marquee(15)", speed);
+                timer = setInterval("Marquee(5)", speed);
             }
 
             //开关按钮点击处理函数
             function pic_scroll() {
-
                 if (isPlay) {
                     // 继续滚动
                     startRolling();
@@ -274,46 +274,21 @@ function getImgSize(){
                 switch (window.orientation) {
                     case 0://ipad、iphone横屏；Andriod竖屏
 
-                        /*if(isOrientation){
-                         $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
-                         }else{
-                         $("#marquePic2").css("left",marquePic1.offsetWidth);
-                         }*/
-
                         $("body").attr("class", "portrait");
                         orientation = 'portrait';
                         break;
                     case 180://ipad、iphone横屏；Andriod竖屏
-
-                        /*if(isOrientation){
-                         $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
-                         }else{
-                         $("#marquePic2").css("left",marquePic1.offsetWidth);
-                         }*/
 
                         $("body").attr("class", "portrait");
                         orientation = 'portrait';
                         break;
                     case -90://ipad、iphone竖屏；Andriod横屏
 
-                        /*if(isOrientation){
-                         $("#marquePic2").css("left",marquePic1.offsetWidth);
-                         }else{
-                         $("#marquePic2").css("left",marquePic1.offsetWidth/2);
-                         }*/
-
                         $("#bottom_div").css("display", "none");
                         $("body").attr("class", "landscape");
                         orientation = 'landscape';
                         break;
                     case 90://ipad、iphone竖屏；Andriod横屏
-
-
-                        /*if(isOrientation){
-                         $("#marquePic2").css("left",marquePic1.offsetWidth);
-                         }else{
-                         $("#marquePic2").css("left",marquePic1.offsetWidth/2);
-                         }*/
 
                         $("body").attr("class", "landscape");
                         orientation = 'landscape';
@@ -325,20 +300,23 @@ function getImgSize(){
             }
 
             $(window).bind("orientationchange", function (event) {
+
                 var otherTimer = setInterval(function(){
                     if(bodyOfferHei!=document.body.offsetHeight){
                         if(window.orientation == 90 || window.orientation == -90){
                             if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
+
                                 bodyOfferHei=document.body.offsetHeight;
-                                console.log(bodyOfferHei);
                                 clearInterval(otherTimer);
+
                                 getImgSize();
                                 judgeTheOrientation();
                             }
                         }else{
+
                             bodyOfferHei=document.body.offsetHeight;
-                            console.log(bodyOfferHei);
                             clearInterval(otherTimer);
+
                             getImgSize();
                             judgeTheOrientation();
                         }
