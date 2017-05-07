@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/paipai/css/common.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/paipai360/css/common.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/paipai360/css/common2.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/paipai360/js/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/paipai360/js/（5.7备份）index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rili/.babelrc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rili/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rili/webpack.config.js" charset="UTF-8" />
