@@ -6,6 +6,10 @@ document.documentElement.style.fontSize=winW/scale+"px";
 
 var bodyHeight=document.body.offsetHeight;
 var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
+var bigPic = $(".scroll-img-td img");  // 图片img
+var marquePic1=document.getElementById("marquePic1");
+var marquePic2=document.getElementById("marquePic2");
+var protionId = $("#protionId").val();
 
 //初次加载判断横竖屏
 var isOrientation=false;
@@ -93,10 +97,6 @@ function getImgSize(){
             var imgBox=document.getElementById("imgBox");
             var scrollImg=document.getElementById("scroll-img");
             var scrollImgBox=document.getElementById("scrollImgBox");
-            var marquePic1=document.getElementById("marquePic1");
-            var marquePic2=document.getElementById("marquePic2");
-            var protionId = $("#protionId").val();
-            var bigPic = $(".scroll-img-td img");  // 图片img
 
             var userNameSpan = $("div.user_name span"); // 用户姓名
             var userHeadImg = $("div.user_head img"); // 用户头像
