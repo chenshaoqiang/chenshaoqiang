@@ -127,7 +127,7 @@ function getImgSize(){
             function startRolling() {
                 isPlay = false;
                 //startMusic();
-                timer = setInterval("Marquee(5)", speed);
+                timer = setInterval("Marquee(15)", speed);
             }
 
             //开关按钮点击处理函数
