@@ -8,6 +8,8 @@ var bigPic = $(".scroll-img-td img");  // 图片img
 var marquePic1=document.getElementById("marquePic1");
 var marquePic2=document.getElementById("marquePic2");
 var protionId = $("#protionId").val();
+var bodyHeight=document.documentElement.clientHeight;
+var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
 
 //初次加载判断横竖屏
 var isOrientation=false;
@@ -87,14 +89,11 @@ function getImgSize(){
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
 
-            var bodyHeight=document.documentElement.clientHeight;
-            var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
-            var setImgHeight=parseFloat(screen.height)-parseFloat(navHeight);//图片高度
+            var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
-            alert("screen:"+screen.height);//640 360
-            alert("body:"+bodyHeight);//512 304
-            alert("nav:"+navHeight);//128  56
-            alert("Img:"+setImgHeight*prop);//2663 1581
+            alert("screen:"+screen.height);//
+            alert("nav:"+navHeight);//
+            alert("Img:"+setImgHeight*prop);//
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
