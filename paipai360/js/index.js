@@ -17,9 +17,6 @@ isOrientation=!!(window.orientation == 90 || window.orientation == -90);
 function Marquee(n) {
     if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
-        alert(marquePic1.offsetWidth);
-        alert(scrollImgBox.scrollLeft);
-
         scrollImgBox.scrollLeft = 0;
     } else {
 
@@ -89,10 +86,6 @@ function getImgSize(){
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
             var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
-
-            alert("body:"+bodyOfferHei);//
-            alert("nav:"+navHeight);//
-            alert("Img:"+setImgHeight*prop);//
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
@@ -335,10 +328,7 @@ function getImgSize(){
                 var otherTimer = setInterval(function(){
                     if(bodyOfferHei!=document.body.offsetHeight){
                         if(window.orientation == 90 || window.orientation == -90){
-                            if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
-                                alert("不正常！");
-                                alert(document.body.offsetHeight);
-                            }else{
+                            if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
                                 bodyOfferHei=document.body.offsetHeight;
                                 console.log(bodyOfferHei);
                                 clearInterval(otherTimer);
