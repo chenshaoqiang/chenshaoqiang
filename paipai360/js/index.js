@@ -4,8 +4,16 @@ var isOrientation=false;
 isOrientation=!!(window.orientation == 90 || window.orientation == -90);
 // 实现图片循环滚动的方法
 function Marquee(n) {
+    if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
-    if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
+        scrollImgBox.scrollLeft = 0;
+    } else {
+
+        scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+    }
+
+
+    /*if ((window.orientation == 90 || window.orientation == -90) && !isOrientation) {
         //安卓横屏的情况一(竖屏转横屏)
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
@@ -47,7 +55,7 @@ function Marquee(n) {
             }
         }
 
-    }
+    }*/
 
 
 }
@@ -56,12 +64,15 @@ $(document).ready(function(){
     var winW=document.documentElement.clientWidth;  //设备的实际宽度
     var scale=desW/100;
     document.documentElement.style.fontSize=winW/scale+"px";
+
     var screenWid=screen.width;
     var screenHei=screen.height;
     var bodyWidth=document.body.offsetWidth;
     var bodyHeight=document.body.offsetHeight;
     var navHeight=parseInt(screenHei)-parseInt(bodyHeight);//浏览器地址栏高度
+    var setImgHeight=parseInt(screenHei)-parseInt(navHeight);//图片高度
 
+    console.log(setImgHeight);
     var imgBox=document.getElementById("imgBox");
     var scrollImg=document.getElementById("scroll-img");
     var scrollImgBox=document.getElementById("scrollImgBox");
@@ -76,7 +87,7 @@ $(document).ready(function(){
     var userHeadImg = $("div.user_head img"); // 用户头像
     var howLongSpan = $("div.date_play_num span.howLong");  // 日期
 
-    resetAll();
+    getImgSize();
 
     var startX = 0;
     var startY = 0;
@@ -85,7 +96,6 @@ $(document).ready(function(){
     var timer;        // 用于定时器
 
     judgeTheOrientation();
-    rotatePic();
 
     function getImgSize(){
         $("#main_img_work").each(function (i) {
@@ -100,16 +110,19 @@ $(document).ready(function(){
                  */
                 realWidth = this.width;
                 realHeight = this.height;
-                prop=parseInt(realWidth/realHeight);//通过真实图片获得宽高比
+                prop=(realWidth/realHeight);//通过真实图片获得宽高比
 
-                console.log(document.body.offsetHeight,document.body.offsetWidth);
+                setImgHeight=parseInt(screen.height)-parseInt(navHeight);//图片高度
+                console.log(setImgHeight);
+                $(".scroll-img-td").css("width",setImgHeight*prop);
+                $("#marquePic2").css("left",setImgHeight*prop);
+                marquePic2.innerHTML = marquePic1.innerHTML;
             });
         });
     }
 
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
-
         pic_scroll();
     });
     //停止滚动
@@ -136,43 +149,6 @@ $(document).ready(function(){
             stopRolling();
         }
     }
-    // 请求接口刷新数据
-    $.ajax({
-        url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
-        method: 'post',
-        data: {"id": protionId, "type": 1},
-        dataType: "jsonp", // 数据类型为jsonp
-        jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
-        success: function (data) {
-            if (data.code == 'success') {
-                var username = data.data.username;
-                var userHeadUrl = data.data.headimgurl;
-                var priseNum = data.data.praiseNum;
-                var commentNum = data.data.commentNum;
-                var howLong = data.data.howLong;
-
-                var content = data.data.title;
-                var songName = data.data.songName;
-
-                /*userNameSpan.text(username);
-                userHeadImg.attr("src", userHeadUrl);
-                howLongSpan.text(howLong);
-                playNumSpan.text(data.data.playNum);
-                commentNumSpan.text(commentNum);
-                priseNumSpan.text(priseNum);
-
-                bigPic.attr("src", data.data.url);
-                if (content !== null && content.length > 14) {
-                    contentLineStr = content.substring(0, 14);
-                    contentAllStr = content;
-                } else if (content !== null) {
-                    contentLineStr = content;
-                    contentAllStr = content;
-                }
-                workContent.text(contentLineStr);*/
-            }
-        }
-    });
 
     // 滑动开始事件处理
     var startHandler = function (event) {
@@ -288,52 +264,39 @@ $(document).ready(function(){
     scrollImg.addEventListener("touchstart", startHandler, false);
     scrollImg.addEventListener("touchmove", moveHandler, false);
     scrollImg.addEventListener("touchend", endHandler, false);
-    function resetAll(){
-        // 根据图片真实尺寸设置body和img的尺寸大小
-        getImgSize();
-
-        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width")));
-        $(".scroll-img-td").css("width",parseInt($("#main_img_work").css("width")));
-        marquePic2.innerHTML = marquePic1.innerHTML;
-    }
-    function otherReset(){
-        $("#marquePic1").css("width",parseInt($("#main_img_work").css("width"))/2);
-        $("#marquePic2").css("width",parseInt($("#main_img_work").css("width"))/2);
-        $("#marquePic2").css("left",parseInt($("#main_img_work").css("width"))/2);
-    }
 
 // 判断手机屏幕方向
     function judgeTheOrientation() {
         switch (window.orientation) {
             case 0://ipad、iphone横屏；Andriod竖屏
                 getImgSize();
-                if(isOrientation){
+                /*if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
-                }
+                }*/
 
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case 180://ipad、iphone横屏；Andriod竖屏
                 getImgSize();
-                if(isOrientation){
+                /*if(isOrientation){
                     $("#marquePic2").css("left",(marquePic1.offsetWidth*2)-2);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
-                }
+                }*/
 
                 $("body").attr("class", "portrait");
                 orientation = 'portrait';
                 break;
             case -90://ipad、iphone竖屏；Andriod横屏
                 getImgSize();
-                if(isOrientation){
+                /*if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth/2);
-                }
+                }*/
 
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -341,11 +304,11 @@ $(document).ready(function(){
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
                 getImgSize();
-                if(isOrientation){
+                /*if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth/2);
-                }
+                }*/
 
                 $("body").attr("class", "landscape");
                 orientation = 'landscape';
@@ -356,19 +319,49 @@ $(document).ready(function(){
         return false;
     }
 
-// 旋转的时候图片适配
-    function rotatePic() {
-
-        //动态设置获取的图片的高度以适应不同高度图片（统一高度）
-        var setImgHeight=$(".scroll-img").height();
-        //$(".big_img").css("height",setImgHeight/(winW/scale)+"rem");
-
-    }
     $(window).bind("orientationchange", function (event) {
 
         judgeTheOrientation();
 
-        rotatePic();
+        getImgSize();
+
+    });
+    // 请求接口刷新数据
+    $.ajax({
+        url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
+        method: 'post',
+        data: {"id": protionId, "type": 1},
+        dataType: "jsonp", // 数据类型为jsonp
+        jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
+        success: function (data) {
+            if (data.code == 'success') {
+                var username = data.data.username;
+                var userHeadUrl = data.data.headimgurl;
+                var priseNum = data.data.praiseNum;
+                var commentNum = data.data.commentNum;
+                var howLong = data.data.howLong;
+
+                var content = data.data.title;
+                var songName = data.data.songName;
+
+                /*userNameSpan.text(username);
+                 userHeadImg.attr("src", userHeadUrl);
+                 howLongSpan.text(howLong);
+                 playNumSpan.text(data.data.playNum);
+                 commentNumSpan.text(commentNum);
+                 priseNumSpan.text(priseNum);
+
+                 bigPic.attr("src", data.data.url);
+                 if (content !== null && content.length > 14) {
+                 contentLineStr = content.substring(0, 14);
+                 contentAllStr = content;
+                 } else if (content !== null) {
+                 contentLineStr = content;
+                 contentAllStr = content;
+                 }
+                 workContent.text(contentLineStr);*/
+            }
+        }
     });
 });
 
