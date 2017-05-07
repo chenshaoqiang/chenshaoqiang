@@ -4,8 +4,6 @@ var winW=document.documentElement.clientWidth;  //设备的实际宽度
 var scale=desW/100;
 document.documentElement.style.fontSize=winW/scale+"px";
 
-var bodyHeight=document.body.offsetHeight;
-var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
 var bigPic = $(".scroll-img-td img");  // 图片img
 var marquePic1=document.getElementById("marquePic1");
 var marquePic2=document.getElementById("marquePic2");
@@ -89,9 +87,14 @@ function getImgSize(){
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
 
+            var bodyHeight=document.body.offsetHeight;
+            var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
             var setImgHeight=parseFloat(screen.height)-parseFloat(navHeight);//图片高度
 
-            alert(setImgHeight*prop);
+            alert("1:"+screen.height);
+            alert("2:"+bodyHeight);
+            alert("3:"+navHeight);
+            alert("4:"+setImgHeight*prop);
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
