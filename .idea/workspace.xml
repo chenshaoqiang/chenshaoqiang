@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai360/js/index.js" afterPath="$PROJECT_DIR$/paipai360/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai360/index2.html" afterPath="$PROJECT_DIR$/paipai360/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.142857">
-              <caret line="34" column="53" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="53" />
+            <state vertical-scroll-proportion="-7.071429">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,10 +86,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4520548">
-              <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+            <state vertical-scroll-proportion="-14.652397">
+              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
               <folding>
-                <element signature="e#4487#4658#0" expanded="false" />
+                <element signature="e#4134#4285#0" expanded="false" />
+                <element signature="e#10520#12128#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -343,12 +345,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00190" summary="5.5  update">
-      <created>1493980122748</created>
-      <option name="number" value="00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1493980122748</updated>
     </task>
     <task id="LOCAL-00191" summary="5.5  update">
       <created>1493981245664</created>
@@ -638,7 +634,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494146014906</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="5.7  update">
+      <created>1494146546501</created>
+      <option name="number" value="00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1494146546501</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1059,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.142857">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="53" />
+        <state vertical-scroll-proportion="-7.071429">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1069,10 +1071,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4520548">
-          <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+        <state vertical-scroll-proportion="-14.652397">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
           <folding>
-            <element signature="e#4487#4658#0" expanded="false" />
+            <element signature="e#4134#4285#0" expanded="false" />
+            <element signature="e#10520#12128#0" expanded="false" />
           </folding>
         </state>
       </provider>
