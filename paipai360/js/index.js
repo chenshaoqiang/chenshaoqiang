@@ -91,18 +91,14 @@ function getImgSize(){
 
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
-            alert("Img1:"+$("#main_img_work").css("width"));//
-            alert("Img2:"+$("#main_img_work").css("height"));//
-            alert("Img3:"+$("#main_img_work").width());//
+            alert("screen:"+screen.height);//
+            alert("client:"+$("#imgBox").css("height"));//
+            alert("body11:"+document.body.clientHeight);//
+            alert("body:"+document.body.offsetHeight);//
+            alert("body:"+document.body.scrollHeight);//
 
-            alert("screen:"+screen.height);//640
-            alert("client:"+document.documentElement.clientHeight);//560
-            alert("body11:"+document.body.clientHeight);//560
-            alert("body:"+document.body.offsetHeight);//560
-            alert("body:"+document.body.scrollHeight);//560
-
-            alert("nav:"+navHeight);//72
-            alert("Img:"+setImgHeight*prop);//2954
+            alert("nav:"+navHeight);//
+            alert("Img:"+setImgHeight*prop);//
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
