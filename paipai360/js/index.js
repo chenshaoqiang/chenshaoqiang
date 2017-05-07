@@ -8,8 +8,6 @@ var bigPic = $(".scroll-img-td img");  // 图片img
 var marquePic1=document.getElementById("marquePic1");
 var marquePic2=document.getElementById("marquePic2");
 var protionId = $("#protionId").val();
-var navHeight;
-//var bodyHeight=document.documentElement.clientHeight;
 
 //初次加载判断横竖屏
 var isOrientation=false;
@@ -88,16 +86,16 @@ function getImgSize(){
             var realWidth = this.width;
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
-
-            if(window.orientation == 90 || window.orientation == -90){
-                navHeight=130;//浏览器地址栏高度
-            }else{
-                navHeight=80;
-            }
+            var navHeight=parseFloat(screen.height)-parseFloat(document.documentElement.clientHeight);//浏览器地址栏高度
 
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
             alert("screen:"+screen.height);//
+            alert("client:"+document.documentElement.clientHeight);//
+            alert("body1:"+document.body.clientHeight);//
+            alert("body2:"+document.body.offsetHeight);//
+            alert("body3:"+document.body.scrollHeight);//
+
             alert("nav:"+navHeight);//
             alert("Img:"+setImgHeight*prop);//
 
