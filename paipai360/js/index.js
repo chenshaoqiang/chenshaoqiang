@@ -18,6 +18,9 @@ isOrientation=!!(window.orientation == 90 || window.orientation == -90);
 function Marquee(n) {
     if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
+        alert(marquePic1.offsetWidth);
+        alert(scrollImgBox.scrollLeft);
+
         scrollImgBox.scrollLeft = 0;
     } else {
 
