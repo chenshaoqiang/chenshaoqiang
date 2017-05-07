@@ -87,10 +87,10 @@ function getImgSize(){
             var realWidth = this.width;
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
-            var navHeight=screen.height-document.body.offsetHeight;//浏览器地址栏高度
+            var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
-            alert("body:"+document.body.offsetHeight);//
+            alert("body:"+bodyOfferHei);//
             alert("nav:"+navHeight);//
             alert("Img:"+setImgHeight*prop);//
 
@@ -334,7 +334,9 @@ function getImgSize(){
             $(window).bind("orientationchange", function (event) {
                 var otherTimer = setInterval(function(){
                     if(bodyOfferHei!=document.body.offsetHeight){
-                        console.log(document.body.offsetHeight);
+
+                        bodyOfferHei=document.body.offsetHeight;
+                        console.log(bodyOfferHei);
                         clearInterval(otherTimer);
                         getImgSize();
                         judgeTheOrientation();
