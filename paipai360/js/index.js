@@ -334,13 +334,17 @@ function getImgSize(){
             $(window).bind("orientationchange", function (event) {
                 var otherTimer = setInterval(function(){
                     if(bodyOfferHei!=document.body.offsetHeight){
-
-                        bodyOfferHei=document.body.offsetHeight;
-                        console.log(bodyOfferHei);
-                        clearInterval(otherTimer);
-                        getImgSize();
-                        judgeTheOrientation();
-
+                        if(window.orientation == 90 || window.orientation == -90){
+                            if(parseInt(document.body.offsetHeight)>bodyOfferHei){
+                                return;
+                            }
+                        }else{
+                            bodyOfferHei=document.body.offsetHeight;
+                            console.log(bodyOfferHei);
+                            clearInterval(otherTimer);
+                            getImgSize();
+                            judgeTheOrientation();
+                        }
                     }
                 }, 50);
             });
