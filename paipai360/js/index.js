@@ -335,7 +335,7 @@ function getImgSize(){
                 var otherTimer = setInterval(function(){
                     if(bodyOfferHei!=document.body.offsetHeight){
                         if(window.orientation == 90 || window.orientation == -90){
-                            if(parseInt(document.body.offsetHeight)>bodyOfferHei){
+                            if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
                                 return;
                             }
                         }else{
