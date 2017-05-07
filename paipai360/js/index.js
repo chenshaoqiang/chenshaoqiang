@@ -89,18 +89,8 @@ function getImgSize(){
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
             var navHeight=screen.height-document.body.offsetHeight;//浏览器地址栏高度
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
-            var otherTimer = setInterval(function(){
-                console.log(bodyOfferHei,document.body.offsetHeight);
-                if(bodyOfferHei!=document.body.offsetHeight){
-                    console.log(document.body.offsetHeight);
-                    clearInterval(otherTimer);
-                }
-            }, 40);
 
-            alert("body11:"+document.body.clientHeight);//
             alert("body:"+document.body.offsetHeight);//
-            alert("body:"+document.body.scrollHeight);//
-
             alert("nav:"+navHeight);//
             alert("Img:"+setImgHeight*prop);//
 
@@ -342,11 +332,15 @@ function getImgSize(){
             }
 
             $(window).bind("orientationchange", function (event) {
+                var otherTimer = setInterval(function(){
+                    if(bodyOfferHei!=document.body.offsetHeight){
+                        console.log(document.body.offsetHeight);
+                        clearInterval(otherTimer);
+                        getImgSize();
+                        judgeTheOrientation();
 
-                judgeTheOrientation();
-
-                getImgSize();
-
+                    }
+                }, 50);
             });
             // 请求接口刷新数据
             $.ajax({
