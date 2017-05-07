@@ -86,18 +86,18 @@ function getImgSize(){
             var realWidth = this.width;
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
-            var navHeight=parseFloat(screen.height)-parseFloat(document.documentElement.clientHeight);//浏览器地址栏高度
+            var navHeight=screen.height-document.body.offsetHeight;//浏览器地址栏高度
 
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
-            alert("screen:"+screen.height);//
-            alert("client:"+document.documentElement.clientHeight);//
-            alert("body1:"+document.body.clientHeight);//
-            alert("body2:"+document.body.offsetHeight);//
-            alert("body3:"+document.body.scrollHeight);//
+            alert("screen:"+screen.height);//640
+            alert("client:"+document.documentElement.clientHeight);//512
+            alert("body11:"+document.body.clientHeight);//512
+            alert("body:"+document.body.offsetHeight);//512
+            alert("body:"+document.body.scrollHeight);//512
 
-            alert("nav:"+navHeight);//
-            alert("Img:"+setImgHeight*prop);//
+            alert("nav:"+navHeight);//72
+            alert("Img:"+setImgHeight*prop);//2954
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
