@@ -336,7 +336,7 @@ function getImgSize(){
                     if(bodyOfferHei!=document.body.offsetHeight){
                         if(window.orientation == 90 || window.orientation == -90){
                             if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
-                                return;
+                                setTimeout(otherTimer(),0);
                             }
                         }else{
                             bodyOfferHei=document.body.offsetHeight;
