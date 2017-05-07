@@ -337,7 +337,13 @@ function getImgSize(){
                         if(window.orientation == 90 || window.orientation == -90){
                             if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
                                 alert("不正常！");
-                                otherTimer();//继续
+                                alert(document.body.offsetHeight);
+                            }else{
+                                bodyOfferHei=document.body.offsetHeight;
+                                console.log(bodyOfferHei);
+                                clearInterval(otherTimer);
+                                getImgSize();
+                                judgeTheOrientation();
                             }
                         }else{
                             bodyOfferHei=document.body.offsetHeight;
