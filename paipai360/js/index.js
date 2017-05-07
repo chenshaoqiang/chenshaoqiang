@@ -93,7 +93,7 @@ function getImgSize(){
 
             alert("Img1:"+$("#main_img_work").css("width"));//
             alert("Img2:"+$("#main_img_work").css("height"));//
-            alert("Img2:"+$("#main_img_work").height());//
+            alert("Img3:"+$("#main_img_work").width());//
 
             alert("screen:"+screen.height);//640
             alert("client:"+document.documentElement.clientHeight);//560
