@@ -116,6 +116,9 @@ $(document).ready(function(){
                 console.log(setImgHeight);
                 $(".scroll-img-td").css("width",setImgHeight*prop);
                 $("#marquePic2").css("left",setImgHeight*prop);
+
+                alert("getImgSize里:"+setImgHeight*prop);
+
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
         });
@@ -297,6 +300,7 @@ $(document).ready(function(){
                 }else{
                     $("#marquePic2").css("left",marquePic1.offsetWidth/2);
                 }*/
+                alert("orientation里:"+setImgHeight*prop);
 
                 $("#bottom_div").css("display", "none");
                 $("body").attr("class", "landscape");
@@ -304,6 +308,7 @@ $(document).ready(function(){
                 break;
             case 90://ipad、iphone竖屏；Andriod横屏
                 getImgSize();
+                alert("orientation里:"+setImgHeight*prop);
                 /*if(isOrientation){
                     $("#marquePic2").css("left",marquePic1.offsetWidth);
                 }else{
