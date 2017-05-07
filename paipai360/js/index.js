@@ -87,14 +87,14 @@ function getImgSize(){
             var realHeight = this.height;
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
 
-            var bodyHeight=document.body.offsetHeight;
+            var bodyHeight=document.documentElement.clientHeight;
             var navHeight=parseInt(screen.height)-parseInt(bodyHeight);//浏览器地址栏高度(80)
             var setImgHeight=parseFloat(screen.height)-parseFloat(navHeight);//图片高度
 
-            alert("1:"+screen.height);
-            alert("2:"+bodyHeight);
-            alert("3:"+navHeight);
-            alert("4:"+setImgHeight*prop);
+            alert("screen:"+screen.height);//640 360
+            alert("body:"+bodyHeight);//512 304
+            alert("nav:"+navHeight);//128  56
+            alert("Img:"+setImgHeight*prop);//2663 1581
 
             $(".scroll-img-td").css("width",setImgHeight*prop);
             $("#marquePic2").css("left",setImgHeight*prop);
