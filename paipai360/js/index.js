@@ -88,13 +88,18 @@ function getImgSize(){
             var prop=(realWidth/realHeight);//通过真实图片获得宽高比
             var navHeight=screen.height-document.body.offsetHeight;//浏览器地址栏高度
 
+
             var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
+            alert("Img1:"+$("#main_img_work").css("width"));//
+            alert("Img2:"+$("#main_img_work").css("height"));//
+            alert("Img2:"+$("#main_img_work").height());//
+
             alert("screen:"+screen.height);//640
-            alert("client:"+document.documentElement.clientHeight);//512
-            alert("body11:"+document.body.clientHeight);//512
-            alert("body:"+document.body.offsetHeight);//512
-            alert("body:"+document.body.scrollHeight);//512
+            alert("client:"+document.documentElement.clientHeight);//560
+            alert("body11:"+document.body.clientHeight);//560
+            alert("body:"+document.body.offsetHeight);//560
+            alert("body:"+document.body.scrollHeight);//560
 
             alert("nav:"+navHeight);//72
             alert("Img:"+setImgHeight*prop);//2954
