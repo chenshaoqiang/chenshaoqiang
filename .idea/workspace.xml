@@ -85,10 +85,14 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73458904">
-              <caret line="310" column="57" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
+            <state vertical-scroll-proportion="-0.67808217">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding>
-                <element signature="e#340#1563#0" expanded="false" />
+                <element signature="e#616#1681#0" expanded="false" />
+                <element signature="e#4177#4348#0" expanded="false" />
+                <element signature="e#4423#8243#0" expanded="false" />
+                <element signature="e#8608#10704#0" expanded="false" />
+                <element signature="e#10904#12640#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -343,12 +347,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00175" summary="5.5  update">
-      <created>1493970848227</created>
-      <option name="number" value="00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1493970848228</updated>
     </task>
     <task id="LOCAL-00176" summary="5.5  update">
       <created>1493973922205</created>
@@ -638,7 +636,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494132959684</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="5.6  update">
+      <created>1494134851438</created>
+      <option name="number" value="00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1494134851438</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1002,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai360/css/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.6875">
-          <caret line="148" column="26" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/index备份（原来的）.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12177122">
@@ -1066,12 +1063,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paipai360/css/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35793358">
+          <caret line="198" column="13" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73458904">
-          <caret line="310" column="57" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
+        <state vertical-scroll-proportion="-0.67808217">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding>
-            <element signature="e#340#1563#0" expanded="false" />
+            <element signature="e#616#1681#0" expanded="false" />
+            <element signature="e#4177#4348#0" expanded="false" />
+            <element signature="e#4423#8243#0" expanded="false" />
+            <element signature="e#8608#10704#0" expanded="false" />
+            <element signature="e#10904#12640#0" expanded="false" />
           </folding>
         </state>
       </provider>
