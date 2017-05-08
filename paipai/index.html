@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0"/>
-    <title>拍拍360分享</title>
+    <title>${title}</title>
 
     <!-- jQuery文件 -->
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
@@ -20,12 +20,12 @@
 <div class="img-box" id="imgBox">
     <!-- 显示的内容 包含：用户信息和图片 -->
     <div class="user-info">
-        <input type="hidden" value="3542" id="protionId"/>
+        <input type="hidden" value="${protionId}" id="protionId"/>
         <div class="user_head" id="middle_space_user_head">
-            <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/QIbKA4H1anUJvVbVFf7VCibbUOMsBJBZnZWneJTSXIbYFouicibicauxeic561Y09u45v8UnpPO9Qp2TJ41flUaffTJj6Ys1ug3cL/0">
+            <img id="img_user_head" src="${headimgurl}">
         </div>
         <div class="user_name" id="middle_space_user_name">
-            <span id="font_user_name">来创兄弟</span>
+            <span id="font_user_name">${username}</span>
         </div>
     </div>
     <!-- 滚动的图片div -->
@@ -34,7 +34,7 @@
             <div class="scroll-img-td" id="marquePic1">
                 <img name="pic"
                      id="main_img_work"
-                     src="http://www.paipai360.cn/share/img/148905122114140699473354567791.jpg"
+                     src="${imgpath}"
                      alt="share_img">
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
@@ -43,14 +43,14 @@
     <!-- 播放按钮div  -->
     <div class="button_div" id="switch_div" action="scroll">
         <img id="switch" src="img/play.png">
-        <audio controls="controls" loop="true" id="music" src="../music/" style="display: none">
+        <audio controls="controls" loop="true" id="music" src="../music/${songName}">
             您的浏览器不支持audio标签
         </audio>
     </div>
     <!-- 作品说说内容div start -->
     <div class="work_content" id="work_content_div">
 
-        <span class="content_all" id="work_content_span"></span>
+        <span class="content_all" id="work_content_span">${title}</span>
 
         <div class="content_img_div" style="float: right;">
             <img id="work_content_img" src="img/open.png">
