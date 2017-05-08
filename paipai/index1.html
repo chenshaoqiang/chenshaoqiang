@@ -181,7 +181,7 @@
                 var startX = 0;
                 var startY = 0;
 
-                var speed = 50;   // 自动播放的时,使用的间隔时间,间隔越小速度越大
+                var speed = 30;   // 自动播放的时,使用的间隔时间,间隔越小速度越大
                 var timer;        // 用于定时器
 
                 judgeTheOrientation();
@@ -200,7 +200,7 @@
                 function startRolling() {
                     isPlay = false;
                     startMusic();
-                    timer = setInterval("Marquee(5)", speed);
+                    timer = setInterval("Marquee(3)", speed);
                 }
                 function startMusic() { // 播放音乐
 
