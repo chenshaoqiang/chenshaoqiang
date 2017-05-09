@@ -132,6 +132,7 @@
 
     // 实现图片循环滚动的方法
     function Marquee(n) {
+        isPlay = false;
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
