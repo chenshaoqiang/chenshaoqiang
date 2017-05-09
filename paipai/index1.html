@@ -125,7 +125,9 @@
     var protionId = $("#protionId").val();
     var bodyOfferHei=document.body.offsetHeight;
 
-
+    var isShowAll = false;    // 是否展示所有说说内容
+    var contentLineStr = "single";
+    var contentAllStr = "poth";
 
     // 实现图片循环滚动的方法
     function Marquee(n) {
@@ -162,9 +164,6 @@
                 var scrollImg=document.getElementById("scroll-img");
                 var scrollImgBox=document.getElementById("scrollImgBox");
                 var isPlay = true;//是否滚动状态设置，默认滚动
-                var isShowAll = false;    // 是否展示所有说说内容
-                var contentLineStr = "single";
-                var contentAllStr = "poth";
 
                 var audio = document.getElementById("music"); // 音乐
 
