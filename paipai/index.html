@@ -300,6 +300,7 @@
 
         var otherTimer = setInterval(function(){
             if(bodyOfferHei!=document.body.offsetHeight){
+
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
@@ -311,12 +312,16 @@
                         judgeTheOrientation();
                     }
                 }else{
-                    $("#bottom_div").css("display", "block");
-                    bodyOfferHei=document.body.offsetHeight;
-                    clearInterval(otherTimer);
+                    if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
 
-                    getImgSize();
-                    judgeTheOrientation();
+                        $("#bottom_div").css("display", "block");
+                        bodyOfferHei=document.body.offsetHeight;
+                        clearInterval(otherTimer);
+
+                        getImgSize();
+                        judgeTheOrientation();
+                    }
+
                 }
             }
         }, 50);
@@ -375,7 +380,7 @@
                 var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
                 $(".scroll-img-td").css("width",setImgHeight*prop);
-                $("#marquePic2").css("left",setImgHeight*prop);
+                $("#marquePic2").css("left",parseFloat(setImgHeight*prop)-1);
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
 
