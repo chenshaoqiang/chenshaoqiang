@@ -40,9 +40,19 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33272058">
-              <caret line="84" column="35" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="0.32352942">
+              <caret line="359" column="7" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#7004#7190#0" expanded="false" />
+                <element signature="e#7217#7365#0" expanded="false" />
+                <element signature="e#7431#7718#0" expanded="false" />
+                <element signature="e#7780#7911#0" expanded="false" />
+                <element signature="e#7970#8844#0" expanded="false" />
+                <element signature="e#9153#9935#0" expanded="false" />
+                <element signature="e#9994#10874#0" expanded="false" />
+                <element signature="e#10904#12382#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -312,12 +322,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00215" summary="5.6  update">
-      <created>1494086459607</created>
-      <option name="number" value="00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1494086459618</updated>
     </task>
     <task id="LOCAL-00216" summary="5.6  update">
       <created>1494087056649</created>
@@ -607,7 +611,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494303013039</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="5.8  全景360修改至正常">
+      <created>1494303208509</created>
+      <option name="number" value="00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1494303208509</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1024,9 +1034,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272058">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.32352942">
+          <caret line="359" column="7" selection-start-line="359" selection-start-column="7" selection-end-line="359" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7004#7190#0" expanded="false" />
+            <element signature="e#7217#7365#0" expanded="false" />
+            <element signature="e#7431#7718#0" expanded="false" />
+            <element signature="e#7780#7911#0" expanded="false" />
+            <element signature="e#7970#8844#0" expanded="false" />
+            <element signature="e#9153#9935#0" expanded="false" />
+            <element signature="e#9994#10874#0" expanded="false" />
+            <element signature="e#10904#12382#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
