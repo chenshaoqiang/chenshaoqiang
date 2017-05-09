@@ -125,10 +125,35 @@
     var protionId = $("#protionId").val();
     var bodyOfferHei=document.body.offsetHeight;
 
+    var isPlay = true;//是否滚动状态设置，默认滚动
     var isShowAll = false;    // 是否展示所有说说内容
     var contentLineStr = "single";
     var contentAllStr = "poth";
-
+    $("#switch_div").on("click",function(){
+        //播放按钮点击事件
+        pic_scroll();
+    });
+    //停止滚动
+    function stopRolling() {
+        isPlay = true;
+        stopMusic();
+        clearInterval(timer);
+    }
+    //继续滚动
+    function startRolling() {
+        isPlay = false;
+        startMusic();
+        timer = setInterval("Marquee(5)", speed);
+    }
+    //开关按钮点击处理函数
+    function pic_scroll() {
+        if (isPlay) {
+            // 继续滚动
+            startRolling();
+        } else {
+            stopRolling();
+        }
+    }
     // 实现图片循环滚动的方法
     function Marquee(n) {
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
@@ -163,7 +188,7 @@
                 var imgBox=document.getElementById("imgBox");
                 var scrollImg=document.getElementById("scroll-img");
                 var scrollImgBox=document.getElementById("scrollImgBox");
-                var isPlay = true;//是否滚动状态设置，默认滚动
+
 
                 var audio = document.getElementById("music"); // 音乐
 
@@ -186,23 +211,7 @@
 
                 judgeTheOrientation();
 
-                $("#switch_div").on("click",function(){
-                    //播放按钮点击事件
-                    console.log(isPlay);
-                    pic_scroll();
-                });
-                //停止滚动
-                function stopRolling() {
-                    isPlay = true;
-                    stopMusic();
-                    clearInterval(timer);
-                }
-                //继续滚动
-                function startRolling() {
-                    isPlay = false;
-                    startMusic();
-                    timer = setInterval("Marquee(5)", speed);
-                }
+
                 function startMusic() { // 播放音乐
 
                     if (audio.currentSrc !== null) {
@@ -232,15 +241,7 @@
                     isShowAll = !isShowAll;
                 });
 
-                //开关按钮点击处理函数
-                function pic_scroll() {
-                    if (isPlay) {
-                        // 继续滚动
-                        startRolling();
-                    } else {
-                        stopRolling();
-                    }
-                }
+
 
                 // 滑动开始事件处理
                 var startHandler = function (event) {
