@@ -41,7 +41,7 @@
             </div>
         </div>
         <!-- 播放按钮div  -->
-        <div class="button_div" id="switch_div" onclick="pic_scroll()" action="scroll">
+        <div class="button_div" id="switch_div" action="scroll">
             <img id="switch" src="img/play.png">
             <audio controls="controls" loop="true" id="music" src="../music/">
                 您的浏览器不支持audio标签
@@ -186,10 +186,10 @@
 
                 judgeTheOrientation();
 
-                /*$("#switch_div").on("click",function(){
+                $("#switch_div").on("click",function(){
                     //播放按钮点击事件
                     pic_scroll();
-                });*/
+                });
                 //停止滚动
                 function stopRolling() {
                     isPlay = true;
