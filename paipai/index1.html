@@ -300,10 +300,12 @@
 
         var otherTimer = setInterval(function(){
             if(bodyOfferHei!=document.body.offsetHeight){
+
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
-
+                        alert(bodyOfferHei);
+                        alert(document.body.offsetHeight);
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
@@ -311,6 +313,8 @@
                         judgeTheOrientation();
                     }
                 }else{
+                    alert(bodyOfferHei);
+                    alert(document.body.offsetHeight);
                     $("#bottom_div").css("display", "block");
                     bodyOfferHei=document.body.offsetHeight;
                     clearInterval(otherTimer);
