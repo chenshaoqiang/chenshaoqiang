@@ -382,7 +382,7 @@
                 var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
 
                 $(".scroll-img-td").css("width",setImgHeight*prop);
-                $("#marquePic2").css("left",setImgHeight*prop);
+                $("#marquePic2").css("left",parseFloat(setImgHeight*prop)-1);
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
 
