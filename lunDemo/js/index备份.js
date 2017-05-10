@@ -4,10 +4,10 @@ var winW = document.documentElement.clientWidth,
     bannerTip = banner.querySelector(".tip"),
     tipList = null;
 
-//->数据绑定
+//->鏁版嵁缁戝畾
 var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4.jpg", "img/banner5.jpg"];
 ~function () {
-    //->拼接数据
+    //->鎷兼帴鏁版嵁
     var str = '';
     str += "<div><img src='' trueImg='" + ary[ary.length - 1] + "'/></div>";
     for (var i = 0, len = ary.length; i < len; i++) {
@@ -16,10 +16,10 @@ var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4
     str += "<div><img src='' trueImg='" + ary[0] + "'/></div>";
     bannerInner.innerHTML = str;
 
-    //->计算宽度
+    //->璁＄畻瀹藉害
     bannerInner.style.width = winW * (len + 2) + "px";
 
-    //->拼接LI
+    //->鎷兼帴LI
     str = '';
     for (i = 0, len = ary.length; i < len; i++) {
         i === 0 ? str += "<li class='bg'></li>" : str += "<li></li>";
@@ -28,7 +28,7 @@ var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4
     tipList = bannerTip.querySelectorAll("li");
 }();
 
-//->延迟加载
+//->寤惰繜鍔犺浇
 var divList = bannerInner.querySelectorAll("div");
 [].forEach.call(divList, function (curItem, curIndex) {
     curItem.style.width = winW + "px";
@@ -46,7 +46,7 @@ window.setTimeout(function () {
     });
 }, 1000);
 
-//->焦点选中
+//->鐒︾偣閫変腑
 function changeTip() {
     var tempStep = step > ary.length ? 1 : step;
     [].forEach.call(tipList, function (curTip, index) {
@@ -54,7 +54,7 @@ function changeTip() {
     });
 }
 
-//->自动轮播
+//->鑷姩杞挱
 var step = 1, interval = 1000, autoTimer = null;
 autoTimer = window.setInterval(autoMove, interval);
 function autoMove() {

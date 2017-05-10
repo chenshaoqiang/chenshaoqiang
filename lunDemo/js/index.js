@@ -4,10 +4,10 @@ var winW = document.documentElement.clientWidth,
     bannerTip = banner.querySelector(".tip"),
     tipList = null;
 
-//->Êı¾İ°ó¶¨
+//->æ•°æ®ç»‘å®š
 var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4.jpg", "img/banner5.jpg"];
 ~function () {
-    //->Æ´½ÓÊı¾İ
+    //->æ‹¼æ¥æ•°æ®
     var str = '';
     str += "<div><img src='' trueImg='" + ary[ary.length - 1] + "'/></div>";
     for (var i = 0, len = ary.length; i < len; i++) {
@@ -16,10 +16,10 @@ var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4
     str += "<div><img src='' trueImg='" + ary[0] + "'/></div>";
     bannerInner.innerHTML = str;
 
-    //->¼ÆËã¿í¶È
+    //->è®¡ç®—å®½åº¦
     bannerInner.style.width = winW * (len + 2) + "px";
 
-    //->Æ´½ÓLI
+    //->æ‹¼æ¥LI
     str = '';
     for (i = 0, len = ary.length; i < len; i++) {
         i === 0 ? str += "<li class='bg'></li>" : str += "<li></li>";
@@ -28,7 +28,7 @@ var ary = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4
     tipList = bannerTip.querySelectorAll("li");
 }();
 
-//->ÑÓ³Ù¼ÓÔØ
+//->å»¶è¿ŸåŠ è½½
 var divList = bannerInner.querySelectorAll("div");
 [].forEach.call(divList, function (curItem, curIndex) {
     curItem.style.width = winW + "px";
@@ -46,7 +46,7 @@ window.setTimeout(function () {
     });
 }, 1000);
 
-//->½¹µãÑ¡ÖĞ
+//->ç„¦ç‚¹é€‰ä¸­
 function changeTip() {
     var temp = step;
     temp > ary.length ? temp = 1 : null;
@@ -56,7 +56,7 @@ function changeTip() {
     });
 }
 
-//->×Ô¶¯ÂÖ²¥
+//->è‡ªåŠ¨è½®æ’­
 var step = 1, interval = 3000, autoTimer = null, autoTimer2 = null;
 autoTimer = window.setInterval(autoMove, interval);
 function autoMove() {
@@ -73,7 +73,7 @@ function autoMove() {
     changeTip();
 }
 
-//->×óÓÒÇĞ»»
+//->å·¦å³åˆ‡æ¢
 document.addEventListener("touchmove", function (e) {
     e.preventDefault();
 }, false);
@@ -83,14 +83,14 @@ document.addEventListener("touchmove", function (e) {
 });
 
 function start(e) {
-    //->TouchEvent:changedTouches¡¢targetTouches¡¢touches(TouchList->°üº¬ÁËµ±Ç°ÊÖµÄÎ»ÖÃĞÅÏ¢)
+    //->TouchEvent:changedTouchesã€targetTouchesã€touches(TouchList->åŒ…å«äº†å½“å‰æ‰‹çš„ä½ç½®ä¿¡æ¯)
 
-    //->»¬¶¯¿ªÊ¼:½ûÖ¹×Ô¶¯ÂÖ²¥,È¡Ïûµ±Ç°ÔªËØµÄ¹ı¶ÉĞ§¹û
+    //->æ»‘åŠ¨å¼€å§‹:ç¦æ­¢è‡ªåŠ¨è½®æ’­,å–æ¶ˆå½“å‰å…ƒç´ çš„è¿‡æ¸¡æ•ˆæœ
     window.clearInterval(autoTimer);
     window.clearInterval(autoTimer2);
     this.style.webkitTransitionDuration = "0s";
 
-    //->¼ÇÂ¼µ±Ç°ÔªËØµÄ¿ªÊ¼µÄ×ø±êºÍleftÖµ
+    //->è®°å½•å½“å‰å…ƒç´ çš„å¼€å§‹çš„åæ ‡å’Œleftå€¼
     var touchPoint = e.touches[0];
     this["strX"] = touchPoint.pageX;
     this["strY"] = touchPoint.pageY;
@@ -98,21 +98,21 @@ function start(e) {
 }
 
 function move(e) {
-    //->»ñÈ¡×îĞÂµÄ×ø±ê
+    //->è·å–æœ€æ–°çš„åæ ‡
     var touchPoint = e.touches[0];
     this["endX"] = touchPoint.pageX;
     this["endY"] = touchPoint.pageY;
 
-    //->ÅĞ¶ÏÊÇ·ñ·¢Éú»¬¶¯£¬²¢ÇÒ»ñÈ¡»¬¶¯µÄ·½Ïò
+    //->åˆ¤æ–­æ˜¯å¦å‘ç”Ÿæ»‘åŠ¨ï¼Œå¹¶ä¸”è·å–æ»‘åŠ¨çš„æ–¹å‘
     this["swipeFlag"] = isSwipe(this["strX"], this["endX"], this["strY"], this["endY"]);
 
-    //->ËµÃ÷·¢ÉúÁË»¬¶¯
+    //->è¯´æ˜å‘ç”Ÿäº†æ»‘åŠ¨
     if (this["swipeFlag"]) {
         this["swipeDir"] = swipeDirection(this["strX"], this["endX"], this["strY"], this["endY"]);
 
-        //->Ö»ÓĞ×óÓÒ»¬¶¯²Å²Ù×÷
+        //->åªæœ‰å·¦å³æ»‘åŠ¨æ‰æ“ä½œ
         if (/^(Right|Left)$/.test(this["swipeDir"])) {
-            //->¼ÆËã»¬¶¯µÄ¾àÀë,²¢ÇÒÈÃµ±Ç°µÄÔªËØµÄleft¸ú×Å¸Ä±ä
+            //->è®¡ç®—æ»‘åŠ¨çš„è·ç¦»,å¹¶ä¸”è®©å½“å‰çš„å…ƒç´ çš„leftè·Ÿç€æ”¹å˜
             this["changeX"] = this["endX"] - this["strX"];
             var curL = this["strL"] + this["changeX"];
             if (curL > 0) {
@@ -126,7 +126,7 @@ function move(e) {
 }
 
 function end(e) {
-    //->½áÊøµÄÊ±ºòÅĞ¶ÏÊÇ·ñ·¢Éú»¬¶¯
+    //->ç»“æŸçš„æ—¶å€™åˆ¤æ–­æ˜¯å¦å‘ç”Ÿæ»‘åŠ¨
     if (this["swipeFlag"]) {
         if (this["swipeDir"] === "Left") {
             if (Math.abs(this["changeX"]) >= (winW / 4)) {
@@ -143,7 +143,7 @@ function end(e) {
     this.style.left = -step * winW + "px";
     changeTip();
 
-    //->»¬¶¯µÄ±ß½çÅĞ¶Ï:µ±ÎÒÃÇ»¬¶¯µ½×îºóÒ»ÕÅµÄÊ±ºò(0.5s),ÎÒÃÇÈÃµ±Ç°µÄinnerÁ¢Âí»Øµ½step=1µÄÊ±ºòµÄÎ»ÖÃ
+    //->æ»‘åŠ¨çš„è¾¹ç•Œåˆ¤æ–­:å½“æˆ‘ä»¬æ»‘åŠ¨åˆ°æœ€åä¸€å¼ çš„æ—¶å€™(0.5s),æˆ‘ä»¬è®©å½“å‰çš„innerç«‹é©¬å›åˆ°step=1çš„æ—¶å€™çš„ä½ç½®
     var _this = this;
     if (step > ary.length) {
         window.setTimeout(function () {
@@ -160,7 +160,7 @@ function end(e) {
         }, 500);
     }
 
-    //->¿ªÆô×Ô¶¯ÂÖ²¥,²¢ÇÒ°ÑÖ®Ç°ÉèÖÃµÄÄÇĞ©×Ô¶¨ÒåÊôĞÔµÄÖµ¸³ÖµÎªnull
+    //->å¼€å¯è‡ªåŠ¨è½®æ’­,å¹¶ä¸”æŠŠä¹‹å‰è®¾ç½®çš„é‚£äº›è‡ªå®šä¹‰å±æ€§çš„å€¼èµ‹å€¼ä¸ºnull
     autoTimer2 = window.setTimeout(function () {
         autoTimer = window.setInterval(autoMove, interval);
     }, interval);
