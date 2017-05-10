@@ -20,6 +20,9 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
     ]
 );
 app.controller('appCtrl',['$scope','$rootScope','$location','$state','$http','$document',function($scope,$rootScope,$location,$state,$http,$document){
+    $scope.currenTime=new Date();
+
+
     $scope.isClick=$location.path();
     $scope.readyLoad=true;
     //绑定全局键盘事件（左右键）
@@ -206,4 +209,26 @@ angular.element(document).ready(function(){
             thumbRotation: true//the thumbs will be randomly rotated
         };
     })(jQuery);
+});
+app.filter("dateFormat", function () {
+    return function (input, type) {
+        if (input == null || input == '' || typeof(input) == "undefined") {
+            return "";
+        }
+        var _date = new Date(input);
+        var year = _date.getFullYear();
+        var month = _date.getMonth() + 1 > 9 ? _date.getMonth() + 1 : "0" + (_date.getMonth() + 1);
+        var day = _date.getDate() > 9 ? _date.getDate() : "0" + _date.getDate();
+        var hour = _date.getHours() + 1 > 9 ? _date.getHours() : "0" + _date.getHours();
+        var minutes = _date.getMinutes() + 1 > 9 ? _date.getMinutes() : "0" + _date.getMinutes();
+        var seconds = _date.getSeconds() + 1 > 9 ? _date.getSeconds() : "0" + _date.getSeconds();
+        if (type == "date") {
+            return year + "-" + month + "-" + day;
+        } else if (type == "time") {
+            return hour + ":" + minutes + ":" + seconds;
+        } else {
+            return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
+        }
+        return "";
+    }
 });
