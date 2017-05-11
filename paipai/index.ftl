@@ -43,12 +43,12 @@
     <!-- 播放按钮div  -->
     <div class="button_div" id="switch_div" action="scroll">
         <img id="switch" src="img/play.png">
-        <audio controls="controls" loop="true" id="music" src="../music/${songName}">
+        <audio controls="controls" loop="true" id="music" src="../music/${songName}" style="visibility: hidden;">
             您的浏览器不支持audio标签
         </audio>
     </div>
     <!-- 作品说说内容div start -->
-    <div class="work_content" id="work_content_div">
+    <div class="work_content" id="work_content_div" style="display: none">
 
         <span class="content_all" id="work_content_span">${title}</span>
 
@@ -374,13 +374,13 @@
                  3、一定要在图片加载完成后执行如.load()函数里执行
                  */
                 var realWidth = this.width;
-                var realHeight = this.height;
+                var realHeight = this.height;//
                 var prop=(realWidth/realHeight);//通过真实图片获得宽高比
                 var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
+                var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
-                $(".scroll-img-td").css("width",setImgHeight*prop);
-                $("#marquePic2").css("left",parseFloat(setImgHeight*prop)-1);
+                $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                $("#marquePic2").css("left",Math.round(setImgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
 
