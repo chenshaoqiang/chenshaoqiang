@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index.html" afterPath="$PROJECT_DIR$/paipai/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index1.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paipai/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.74359">
-              <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.282051">
+              <caret line="50" column="73" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -45,9 +44,10 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13093859">
-              <caret line="365" column="25" selection-start-line="365" selection-start-column="25" selection-end-line="365" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.51332563">
+              <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
               <folding>
+                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -164,9 +164,9 @@
         <option value="$PROJECT_DIR$/lunDemo/js/index备份.js" />
         <option value="$PROJECT_DIR$/slide-chen/js/index.js" />
         <option value="$PROJECT_DIR$/slide-chen/ui_page/page8.html" />
-        <option value="$PROJECT_DIR$/paipai/index1.html" />
         <option value="$PROJECT_DIR$/paipai/css/common.css" />
         <option value="$PROJECT_DIR$/paipai/index.html" />
+        <option value="$PROJECT_DIR$/paipai/index1.html" />
       </list>
     </option>
   </component>
@@ -364,12 +364,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00225" summary="5.7  update">
-      <created>1494136681126</created>
-      <option name="number" value="00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1494136681126</updated>
     </task>
     <task id="LOCAL-00226" summary="5.7  update">
       <created>1494136899712</created>
@@ -659,7 +653,13 @@
       <option name="project" value="LOCAL" />
       <updated>1494409296259</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="    5.11">
+      <created>1494490318626</created>
+      <option name="number" value="00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1494490318639</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -668,6 +668,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -677,7 +678,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -699,7 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix3" />
     <MESSAGE value="fix4" />
     <MESSAGE value="fix5" />
     <MESSAGE value="fix6" />
@@ -724,7 +723,8 @@
     <MESSAGE value="5.8  全景360修改至正常" />
     <MESSAGE value="5.9  全景360修改至正常" />
     <MESSAGE value="    5.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="    5.10" />
+    <MESSAGE value="    5.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="    5.11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1063,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.74359">
-          <caret line="385" column="0" selection-start-line="385" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.282051">
+          <caret line="50" column="73" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1078,9 +1078,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13093859">
-          <caret line="365" column="25" selection-start-line="365" selection-start-column="25" selection-end-line="365" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.51332563">
+          <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
           <folding>
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
