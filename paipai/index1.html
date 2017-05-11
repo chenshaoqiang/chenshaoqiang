@@ -374,13 +374,13 @@
                  3、一定要在图片加载完成后执行如.load()函数里执行
                  */
                 var realWidth = this.width;
-                var realHeight = this.height;
+                var realHeight = this.height;//
                 var prop=(realWidth/realHeight);//通过真实图片获得宽高比
                 var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                var setImgHeight=parseFloat(screen.height)-navHeight;//图片高度
+                var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
-                $(".scroll-img-td").css("width",setImgHeight*prop);
-                $("#marquePic2").css("left",parseFloat(setImgHeight*prop)-1);
+                $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                $("#marquePic2").css("left",Math.round(setImgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
 
