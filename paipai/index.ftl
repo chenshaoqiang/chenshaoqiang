@@ -129,6 +129,8 @@
     var isShowAll = false;    // 是否展示所有说说内容
     var contentLineStr = "single";
     var contentAllStr = "poth";
+    var prop;
+    var screenH=screen.height;
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
         pic_scroll();
@@ -305,10 +307,28 @@
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
 
-                        bodyOfferHei=document.body.offsetHeight;
+                        bodyOfferHei=document.body.offsetHeight;//375
                         clearInterval(otherTimer);
 
-                        getImgSize();
+                        if(screen.height==screenH){
+                            var navHeight=0;//浏览器地址栏高度
+                            var setImgHeight=bodyOfferHei;//图片高度
+                            window.alert("微信横屏")
+                        }else{
+                            var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                            var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+                        }
+
+
+                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+
+                        $("#main_img_work").css("height",Math.round(setImgHeight));
+                        $("#main_img_work").css("width",Math.round(setImgHeight*prop));
+                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
+
+                        marquePic2.innerHTML = marquePic1.innerHTML;
+
                         judgeTheOrientation();
                     }
                 }else{
@@ -318,7 +338,16 @@
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
-                        getImgSize();
+                        var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                        var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+
+                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        $("#main_img_work").css("height",Math.round(setImgHeight));
+                        $("#main_img_work").css("width",Math.round(setImgHeight*prop));
+                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
+                        marquePic2.innerHTML = marquePic1.innerHTML;
+
                         judgeTheOrientation();
                     }
 
@@ -375,15 +404,14 @@
                  */
                 var realWidth = this.width;
                 var realHeight = this.height;//
-                var prop=(realWidth/realHeight);//通过真实图片获得宽高比
+                prop=(realWidth/realHeight);//通过真实图片获得宽高比
                 var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
                 var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
                 $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
                 $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
                 marquePic2.innerHTML = marquePic1.innerHTML;
-
-
             });
         });
     }
