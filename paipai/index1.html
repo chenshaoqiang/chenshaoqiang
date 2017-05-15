@@ -129,6 +129,7 @@
     var isShowAll = false;    // 是否展示所有说说内容
     var contentLineStr = "single";
     var contentAllStr = "poth";
+    var prop;
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
         pic_scroll();
@@ -306,21 +307,47 @@
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
                         window.alert("b-o:"+document.body.offsetHeight);
                         window.alert("bo:"+bodyOfferHei);
+                        window.alert("sh:"+screen.height);
+                        window.alert("prop:"+screen.height);
+
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
-                        getImgSize();
+                        var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                        var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+
+                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
+                        window.alert("sit:"+Math.round(setImgHeight*prop));
+
+                        marquePic2.innerHTML = marquePic1.innerHTML;
+
+                        //getImgSize();
                         judgeTheOrientation();
                     }
                 }else{
                     if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
                         window.alert("b-o:"+document.body.offsetHeight);
                         window.alert("bo:"+bodyOfferHei);
+                        window.alert("sh:"+screen.height);
+                        window.alert("prop:"+screen.height);
+
                         $("#bottom_div").css("display", "block");
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
-                        getImgSize();
+                        var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                        var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+
+                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
+                        window.alert("sit:"+Math.round(setImgHeight*prop));
+
+                        marquePic2.innerHTML = marquePic1.innerHTML;
+
+                        //getImgSize();
                         judgeTheOrientation();
                     }
 
@@ -377,14 +404,7 @@
                  */
                 var realWidth = this.width;
                 var realHeight = this.height;//
-                var prop=(realWidth/realHeight);//通过真实图片获得宽高比
-                var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
-
-                $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
-                $("#marquePic2").css("left",Math.round(setImgHeight*prop));
-                marquePic2.innerHTML = marquePic1.innerHTML;
-
+                prop=(realWidth/realHeight);//通过真实图片获得宽高比
 
             });
         });
