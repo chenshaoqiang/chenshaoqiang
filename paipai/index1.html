@@ -130,6 +130,7 @@
     var contentLineStr = "single";
     var contentAllStr = "poth";
     var prop;
+    var screenH=screen.height;
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
         pic_scroll();
@@ -313,8 +314,15 @@
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
-                        var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                        var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+                        if(screen.height==screenH){
+                            var navHeight=0;//浏览器地址栏高度
+                            var setImgHeight=bodyOfferHei;//图片高度
+                        }else{
+                            var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                            var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+                        }
+
+
 
                         $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
                         $("#marquePic2").css("left",Math.round(setImgHeight*prop));
@@ -410,8 +418,6 @@
 
                 $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
                 $("#marquePic2").css("left",Math.round(setImgHeight*prop));
-
-                window.alert("sit:"+Math.round(setImgHeight*prop));
 
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
