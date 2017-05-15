@@ -309,9 +309,9 @@
                         window.alert("b-o:"+document.body.offsetHeight);//375
                         window.alert("bo:"+bodyOfferHei);//603
                         window.alert("sh:"+screen.height);//667
-                        window.alert("prop:"+prop);
+                        window.alert("prop:"+prop);//6.777
 
-                        bodyOfferHei=document.body.offsetHeight;
+                        bodyOfferHei=document.body.offsetHeight;//375
                         clearInterval(otherTimer);
 
                         if(screen.height==screenH){
@@ -324,13 +324,16 @@
 
 
 
+
                         $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
                         $("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
                         window.alert("sit:"+Math.round(setImgHeight*prop));
 
+
                         marquePic2.innerHTML = marquePic1.innerHTML;
 
+                        window.alert("imgH:"+$("#main_img_work").css("height"));
                         //getImgSize();
                         judgeTheOrientation();
                     }
