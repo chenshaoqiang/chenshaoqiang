@@ -306,7 +306,6 @@
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
-                        window.alert("b-o:"+document.body.offsetHeight);//375
 
                         bodyOfferHei=document.body.offsetHeight;//375
                         clearInterval(otherTimer);
@@ -333,7 +332,6 @@
                     }
                 }else{
                     if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
-                        window.alert("b-o:"+document.body.offsetHeight);
 
                         $("#bottom_div").css("display", "block");
                         bodyOfferHei=document.body.offsetHeight;
