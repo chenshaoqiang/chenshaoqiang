@@ -301,8 +301,9 @@
     $(window).bind("orientationchange", function (event) {
 
         var otherTimer = setInterval(function(){
-            if(bodyOfferHei!=document.body.offsetHeight){
 
+            if(bodyOfferHei!=document.body.offsetHeight){
+                marquePic2.innerHTML = marquePic1.innerHTML;
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
