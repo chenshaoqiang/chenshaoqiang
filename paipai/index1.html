@@ -356,6 +356,8 @@
                         var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
                         $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        $("#main_img_work").css("height",Math.round(setImgHeight));
+                        $("#main_img_work").css("width",Math.round(setImgHeight*prop));
                         $("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
                         window.alert("sit:"+Math.round(setImgHeight*prop));
