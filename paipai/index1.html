@@ -405,7 +405,15 @@
                 var realWidth = this.width;
                 var realHeight = this.height;//
                 prop=(realWidth/realHeight);//通过真实图片获得宽高比
+                var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
+                $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+
+                window.alert("sit:"+Math.round(setImgHeight*prop));
+
+                marquePic2.innerHTML = marquePic1.innerHTML;
             });
         });
     }
