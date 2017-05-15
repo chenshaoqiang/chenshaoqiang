@@ -307,9 +307,6 @@
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
                         window.alert("b-o:"+document.body.offsetHeight);//375
-                        window.alert("bo:"+bodyOfferHei);//603
-                        window.alert("sh:"+screen.height);//667
-                        window.alert("prop:"+prop);//6.777
 
                         bodyOfferHei=document.body.offsetHeight;//375
                         clearInterval(otherTimer);
@@ -323,30 +320,20 @@
                         }
 
 
-
-
                         $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
 
                         $("#main_img_work").css("height",Math.round(setImgHeight));
                         $("#main_img_work").css("width",Math.round(setImgHeight*prop));
-
                         $("#marquePic2").css("left",Math.round(setImgHeight*prop));
-
-                        window.alert("sit:"+Math.round(setImgHeight*prop));
 
 
                         marquePic2.innerHTML = marquePic1.innerHTML;
 
-                        window.alert("imgH:"+$("#main_img_work").css("height"));
-                        //getImgSize();
                         judgeTheOrientation();
                     }
                 }else{
                     if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
                         window.alert("b-o:"+document.body.offsetHeight);
-                        window.alert("bo:"+bodyOfferHei);
-                        window.alert("sh:"+screen.height);
-                        window.alert("prop:"+prop);
 
                         $("#bottom_div").css("display", "block");
                         bodyOfferHei=document.body.offsetHeight;
@@ -360,11 +347,8 @@
                         $("#main_img_work").css("width",Math.round(setImgHeight*prop));
                         $("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
-                        window.alert("sit:"+Math.round(setImgHeight*prop));
-
                         marquePic2.innerHTML = marquePic1.innerHTML;
 
-                        //getImgSize();
                         judgeTheOrientation();
                     }
 
