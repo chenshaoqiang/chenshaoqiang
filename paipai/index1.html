@@ -305,10 +305,10 @@
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
-                        window.alert("b-o:"+document.body.offsetHeight);
-                        window.alert("bo:"+bodyOfferHei);
-                        window.alert("sh:"+screen.height);
-                        window.alert("prop:"+screen.height);
+                        window.alert("b-o:"+document.body.offsetHeight);//375
+                        window.alert("bo:"+bodyOfferHei);//603
+                        window.alert("sh:"+screen.height);//667
+                        window.alert("prop:"+prop);
 
                         bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
@@ -331,7 +331,7 @@
                         window.alert("b-o:"+document.body.offsetHeight);
                         window.alert("bo:"+bodyOfferHei);
                         window.alert("sh:"+screen.height);
-                        window.alert("prop:"+screen.height);
+                        window.alert("prop:"+prop);
 
                         $("#bottom_div").css("display", "block");
                         bodyOfferHei=document.body.offsetHeight;
