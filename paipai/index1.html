@@ -306,55 +306,55 @@
                 if(window.orientation == 90 || window.orientation == -90){
                     $("#bottom_div").css("display", "none");
                     if(parseInt(document.body.offsetHeight)<parseInt(bodyOfferHei)){
-                        window.alert("b-o:"+document.body.offsetHeight);//375
+                        /*window.alert("b-o:"+document.body.offsetHeight);//375
                         window.alert("bo:"+bodyOfferHei);//603
                         window.alert("sh:"+screen.height);//667
-                        window.alert("prop:"+prop);//6.777
+                        window.alert("prop:"+prop);//6.777*/
 
                         bodyOfferHei=document.body.offsetHeight;//375
                         clearInterval(otherTimer);
 
-                        if(screen.height==screenH){
+                        /*if(screen.height==screenH){
                             var navHeight=0;//浏览器地址栏高度
                             var setImgHeight=bodyOfferHei;//图片高度
                         }else{
                             var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
                             var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
-                        }
+                        }*/
 
 
 
 
-                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
-                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+                        //$(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        //$("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
-                        window.alert("sit:"+Math.round(setImgHeight*prop));
+                        //window.alert("sit:"+Math.round(setImgHeight*prop));
 
 
                         marquePic2.innerHTML = marquePic1.innerHTML;
 
-                        window.alert("imgH:"+$("#main_img_work").css("height"));
+                        //window.alert("imgH:"+$("#main_img_work").css("height"));
                         //getImgSize();
                         judgeTheOrientation();
                     }
                 }else{
                     if(parseInt(document.body.offsetHeight)>parseInt(bodyOfferHei)){
-                        window.alert("b-o:"+document.body.offsetHeight);
+                        /*window.alert("b-o:"+document.body.offsetHeight);
                         window.alert("bo:"+bodyOfferHei);
                         window.alert("sh:"+screen.height);
-                        window.alert("prop:"+prop);
+                        window.alert("prop:"+prop);*/
 
-                        $("#bottom_div").css("display", "block");
-                        bodyOfferHei=document.body.offsetHeight;
+                        //$("#bottom_div").css("display", "block");
+                        //bodyOfferHei=document.body.offsetHeight;
                         clearInterval(otherTimer);
 
-                        var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                        var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+                        //var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                        //var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
-                        $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
-                        $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+                        //$(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                        //$("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
-                        window.alert("sit:"+Math.round(setImgHeight*prop));
+                        //window.alert("sit:"+Math.round(setImgHeight*prop));
 
                         marquePic2.innerHTML = marquePic1.innerHTML;
 
@@ -416,11 +416,11 @@
                 var realWidth = this.width;
                 var realHeight = this.height;//
                 prop=(realWidth/realHeight);//通过真实图片获得宽高比
-                var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
-                var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
+                //var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
+                //var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
-                $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
-                $("#marquePic2").css("left",Math.round(setImgHeight*prop));
+                //$(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
+                //$("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
