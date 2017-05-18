@@ -1,0 +1,33 @@
+<div class="right_content_head">
+    <p ng-if="!clickDoc"
+       class="no-margin ">文档中心</p>
+    <p ng-if="clickDoc"
+       class="no-margin">
+        <span class="content_after">文档中心</span>
+        <span ng-bind="docName"></span>
+    </p>
+</div>
+<div ng-if="!clickDoc" class="jumbotron" style="background: #fff">
+    <p class="no-margin padding_content_p font-size-14">
+        云注册开放API说明文档
+    </p>
+</div>
+<div ng-if="clickDoc" class="docContent">
+    <p></p><h4><b>1.简介</b></h4><p></p>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp;
+        客户在产品注册系统完成产品注册，
+        系统将注册信息推送到云平台。</p>
+    <h4><b>2.流程说明</b></h4>
+    <img src="assets/images/doc.png" alt=""/>
+    <h4><b>3.URL地址</b></h4><h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/openapi/service/product/register</p></h3><h4><b>4.请求方式</b></h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP &nbsp; POST</p><h4><b>5.参数说明</b></h4><h4>&nbsp; &nbsp; &nbsp; &nbsp;<b> 5.1请求参数 :</b>Json对象包含以下字段<b><br></b></h4><table class=""><tbody><tr><td>&nbsp;参数</td><td>&nbsp;数据类型</td><td>&nbsp;是否必填</td><td>&nbsp;说明</td></tr><tr><td>&nbsp;id</td><td>&nbsp;string</td><td>&nbsp;是</td><td><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">注册记录</font><span style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">id</span><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">（友互通提供）</font></td></tr><tr><td>&nbsp;companyId</td><td>&nbsp;string</td><td>&nbsp;是</td><td><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">企业</font><span style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">ID</span><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">（有互通提供）</font></td></tr><tr><td>&nbsp;productlineId</td><td>&nbsp;string</td><td>&nbsp;是</td><td><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">产品线</font><span style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">ID</span><font face="宋体" style="font-family: 宋体; font-size: 10.5pt; background-color: transparent;">（有互通提供）</font>&nbsp;</td></tr><tr><td>&nbsp;productCode&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;string</td><td>&nbsp;是</td><td>产品条码</td></tr><tr><td>&nbsp;productName</td><td>&nbsp;string</td><td>&nbsp;是</td><td>产品名称</td></tr><tr><td>&nbsp;activeCode</td><td>&nbsp;string</td><td>&nbsp;是</td><td>激光码</td></tr><tr><td>&nbsp;serviceCode</td><td>&nbsp;string</td><td>&nbsp;是</td><td>服务识别码</td></tr><tr><td>&nbsp;oldActiveCode</td><td>&nbsp;string</td><td>&nbsp;否</td><td>激光码（旧），多个以“|”分隔</td></tr><tr><td>&nbsp;oldProductCode</td><td>&nbsp;string</td><td>&nbsp;否</td><td>对应的旧的产品条码</td></tr></tbody></table><br><h4>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<b>5.2响应数据</b></h4><p>&nbsp; &nbsp; &nbsp; &nbsp; 成功则返回：</p><pre style="max-width: 100%;"><code class="javascript hljs" codemark="1">{<span class="hljs-string">"result"</span>: <span class="hljs-string">"success"</span>}</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;失败详见文档最后响应消息统一说明</p><h3></h3>
+    <h4><b>6.测试样例</b></h4>
+    <img src="assets/images/test1.png" alt=""/>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <a class="back_top" href="javascript:scroll(0,0)">
+        返回顶部
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+</div>

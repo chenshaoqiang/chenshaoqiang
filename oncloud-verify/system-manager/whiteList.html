@@ -1,0 +1,505 @@
+<div class="wrap-content"
+     ng-if="whiteListIs!=true">
+    <div class="myBreadcrumb-wrapper"
+         style="color: red;text-align: center">
+		<span class="no-padding">
+			尊敬的用户，您当前的权限菜单为空，请联系相关管理员！
+		</span>
+    </div>
+</div>
+<div class="popUpWindow"
+     ng-if="changeLimitNumBox==true">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            {{LimitNumBoxMsg}}
+        </div>
+        <ul>
+            <li>
+                <button ng-click="closeLimitNumBox()"
+                        class="form-control btn btn-default btn-wide margin-top-20">
+                    确定
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popUpWindow"
+     ng-if="deletePhoneSuccess==true">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            {{deletePhoneMsg}}
+        </div>
+        <ul>
+            <li>
+                <button ng-click="closeDeletePhoneBox()"
+                        class="form-control btn btn-default btn-wide margin-top-20">
+                    确定
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popUpWindow"
+     ng-if="whiteListNotFound==true">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            查询白名单失败，请重试！
+        </div>
+        <div class="text-style bgandcolor-re alert alert-info">
+            错误信息: {{whiteListNotFoundError}}
+        </div>
+        <ul>
+            <li>
+                <button ng-click="reFoundWhiteList()"
+                        class="btn btn-default btn-sm margin-top-20 pull-left">
+                    重试
+                </button>
+            </li>
+            <li>
+                <button ng-click="cancelFoundWhiteList()"
+                        class="btn btn-default btn-sm margin-top-20 pull-right">
+                    取消
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popUpWindow"
+     ng-if="openCheckDeleteBox==true">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="bgandcolor-re alert alert-info">
+            确定删除？
+        </div>
+        <div class="alert">
+            <ul>
+                <li>
+                    <button ng-click="sureToBatchDelete()"
+                            class="btn btn-default btn-sm margin-top-20 pull-left">
+                        确定
+                    </button>
+                </li>
+                <li>
+                    <button ng-click="closeCheckDeleteBox()"
+                            class="btn btn-default btn-sm margin-top-20 pull-right">
+                        取消
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrap-content"
+     ng-show="whiteListIs">
+    <div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a href="#/whiteList"
+           ng-click="closeEditText()">
+            <i class="fa fa-file-o text-large text-dark"></i>
+            用户白名单
+        </a>
+    </span>
+    </div>
+    <div class="container-fluid container-fullw">
+        <!--添加白名单模态框-->
+        <div class="modal fade"
+             id="addphoneModal"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <form role="form"
+                  class="smart-wizard"
+                  name="addPhoneForm"
+                  novalidate="novalidate">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button"
+                                    class="close"
+                                    data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <h4 class="modal-title"
+                                id="addModalLabel">
+                                新增白名单
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-striped table-bordered table-full-width">
+                                <tbody>
+                                <tr>
+                                    <td>输入白名单：</td>
+                                    <td>
+                                        <input type="text"
+                                               style="width: 100%;"
+                                               ng-model="addPhoneNum.mobile"
+                                               name="phoneNum"
+                                               placehold="输入一个或多个手机号，输入多个以逗号隔开！"
+                                               class="form-control">
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--var reg = /^[0-9]\d*$/;reg.test(111)-->
+                                    <td>
+                                        输入限制数：
+                                        <span class="alert-danger-style"
+                                              ng-show="addPhoneNumLimit">
+                                            (必须大于0小于10000)
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <input type="text"
+                                               style="width: 100%;"
+                                               ng-pattern="/^([1-9]\d{0,3})$/"
+                                               ng-model="addPhoneNum.limitNum"
+                                               name="limitNum"
+                                               ng-change="checkLimit()"
+                                               placehold="为输入的手机号设定限制数！"
+                                               class="form-control">
+
+                                    </td>
+                                </tr>
+                                <tr ng-if="getPhoneNumSuccessMes==true">
+                                    <td></td>
+                                    <td>
+                                        <div class="alert alert-success help-block">
+                                            {{getPhoneNumSuccess}}
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button ng-show="!closeAddPhoneNum"
+                                                type="button"
+                                                ng-click="batchIncrease()"
+                                                class="btn btn-primary pull-right">
+                                            保存
+                                        </button>
+                                        <button type="button"
+                                                ng-show="closeAddPhoneNum"
+                                                class="btn btn-default pull-right"
+                                                data-dismiss="modal">
+                                            关闭
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="button"
+                                    class="btn btn-default"
+                                    data-dismiss="modal">
+                                关闭
+                            </button>-->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--查询白名单模态框-->
+        <div class="modal fade"
+             id="searchphoneModal"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <form role="form"
+                  class="smart-wizard"
+                  name=""
+                  novalidate="novalidate">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button"
+                                    class="close"
+                                    data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <h4 class="modal-title">
+                                白名单查询
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-striped table-bordered table-full-width">
+                                <tbody>
+                                <tr>
+                                    <td>搜索:</td>
+                                    <td>
+                                    <span>
+                                       <input type="text"
+                                              style="width: 100%;display: block;float: left"
+                                              ng-model="searchPhoneNum.mobile"
+                                              ng-change="batchSearchIncrease()"
+                                              name="phoneNum"
+                                              placehold="输入手机号,支持模糊匹配!"
+                                              class="form-control">
+                                    </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"
+                                    class="btn btn-default"
+                                    data-dismiss="modal">
+                                关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                <div class="panel panel-white">
+                    <div ng-if="showWhiteLists=='OPEN'"
+                         class="panel-heading border-bottom">
+                        <h4 class="panel-title">用户白名单</h4>
+                    </div>
+                    <div ng-if="showWhiteLists=='CLOSE'"
+                         class="panel-heading border-bottom">
+                        <h4 class="panel-title">{{curListName}}</h4>
+                        <ul>
+                            <li>
+                                <button ng-click="closeEditText()"
+                                        style="margin-right: 9px"
+                                        class="new-business btn btn-primary btn-wide">
+                                    返回
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div id="certification_list_wrapper"
+                             class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div ng-if="showWhiteLists=='OPEN'">
+                                        <div class="alert">
+                                            <span>每页显示</span>
+                                            <select style="min-width: 100px;"
+                                                    name="wlPageSize"
+                                                    ng-change="goTargetPrdPage(1)"
+                                                    ng-model="pageSizeForm.prdPageSize">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                            <span>条数据</span>
+                                        </div>
+                                        <table class="table table-striped table-hover table-bordered table-full-width">
+                                            <thead>
+                                            <tr>
+                                                <th>产品线名称</th>
+                                                <th>白名单配置</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr ng-show="whiteListsIsNull">
+                                                <td colspan="2"
+                                                    style="text-align: center;line-height: 32px;">
+                                                    抱歉，查不到数据
+                                                </td>
+                                            </tr>
+                                            <tr ng-show="whiteListsReady">
+                                                <td colspan="2"
+                                                    style="text-align: center;line-height: 32px;color: #000000;!important;">
+                                                    数据加载中...
+                                                </td>
+                                            </tr>
+                                            <tr ng-show="whiteListsIsError">
+                                                <td colspan="2"
+                                                    style="text-align: center;line-height: 32px;color: #ff0000;!important;">
+                                                    {{whiteListsIsErrorMsg}}
+                                                </td>
+                                            </tr>
+                                            <tr ng-repeat="list in whiteLists">
+                                                <td>{{list.name}}</td>
+                                                <td style="line-height: 32px;">
+                                                    <a class="activation"
+                                                       type="button"
+                                                       ng-click="editWhiteList(list)">
+                                                        <i class="fa fa-edit"></i>
+                                                        编辑
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <nav>
+                                            <ul class="pagination pull-right">
+                                                <li ng-if="prdPageNumber>1"
+                                                    ng-click="goTargetPrdPage(prdPageNumber -1)">
+                                                    <a href="javascript:void 0"
+                                                       aria-label="Previous">
+                                                        <span aria-hidden="true">前一页</span>
+                                                    </a>
+                                                </li>
+                                                <li ng-class="{active:prdPageNumber == page}"
+                                                    ng-click="goTargetPrdPage(page)"
+                                                    ng-repeat="page in prdPages">
+                                                    <a href="javascript:void 0">{{page}}</a>
+                                                </li>
+                                                <li ng-if="prdPageNumber<prdTotalPage"
+                                                    ng-click="goTargetPrdPage(prdPageNumber +1)">
+                                                    <a href="javascript:void 0"
+                                                       aria-label="Next">
+                                                        <span aria-hidden="true">后一页</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div ng-if="showWhiteLists=='CLOSE'">
+                                        <form class="form-horizontal">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-left-0 padding-right-0">
+                                                <div class="input-group no-margin"
+                                                     style="width: 100%;">
+                                                    <button data-toggle="modal"
+                                                            data-target="#searchphoneModal"
+                                                            ng-click="searchPhoneNum.mobile=null"
+                                                            class="btn btn-primary">
+                                                        <i class="fa fa-search"></i>
+                                                        查询
+                                                    </button>
+                                                    <button data-toggle="modal"
+                                                            data-target="#addphoneModal"
+                                                            ng-click="getPhoneNumSuccessStatus()"
+                                                            class="btn btn-primary btn-wide margin-left-10">
+                                                        <i class="fa fa-plus"></i>
+                                                        添加白名单
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-10">
+                                <div class="col-md-12"
+                                     ng-if="showWhiteLists=='CLOSE'">
+                                    <div class="panel-heading-re bgandcolor-re no-margin">
+                                        <a class="pull-right margin-right-10"
+                                           ng-if="batchSettingBox=='CLOSE'"
+                                           style="color: #FF0000;"
+                                           ng-click="batchSetting()">
+                                            删除
+                                        </a>
+                                        <a ng-click="closeBatchSetting()"
+                                           ng-if="batchSettingBox=='OPEN'"
+                                           style="color: #FF0000;"
+                                           class="pull-right margin-right-10">
+                                            取消
+                                        </a>
+                                    </div>
+                                    <div class="panel-body-re">
+                                        <div ng-if="whiteListPhoneStatus=='isNull'"
+                                             style="text-align: center"
+                                             class="margin-top-30">
+                                            <p>白名单查询结果为空值
+                                                <a ng-if="backToshowWhiteListStatus=='OPEN'"
+                                                   ng-click="backToshowWhiteList()"
+                                                   style="color: #FF0000;">点击此处返回完整白名单</a>
+                                            </p>
+                                        </div>
+                                        <div ng-if="whiteListPhoneStatus=='notNull'">
+                                            <div ng-if="backToshowWhiteListStatus=='OPEN'"
+                                                 class="col-lg-2 col-md-3 col-xs-6 col-sm-4 margin-top-15 padding-left-15">
+                                                <div class="alert alert-reload margin-top-10 margin-left-10">
+                                                    <a ng-click="backToshowWhiteList()"
+                                                       style="color: #FF0000;">返回完整白名单</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<div ng-if="batchSettingBox=='OPEN'"
+                                             class="col-lg-2 col-md-3 col-xs-6 col-sm-4 margin-top-15 padding-left-15">
+                                            <div class="alert alert-reload margin-top-10 margin-left-10">
+                                                <input ng-click="selectAll()"
+                                                       ng-checked="checkAll"
+                                                       class="btn btn-sm  pull-left"
+                                                       type="checkbox">全选
+                                            </div>
+                                        </div>-->
+                                        <div ng-repeat="list in phoneLists"
+                                             ng-if="whiteListPhoneStatus=='notNull'"
+                                             class="col-lg-2 col-md-3 col-xs-6 col-sm-4 margin-top-15 padding-left-15 padding-right-0">
+                                            <table class="table table-striped table-bordered table-full-width"
+                                                   ng-if="batchSettingBox=='CLOSE'">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>手机：</td>
+                                                        <td colspan="2" ng-bind="{{list.mobile}}"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>限制:</td>
+                                                        <td colspan="2">
+                                                            <div class="ng-binding">
+                                                                <span class="limitNum">
+                                                                    {{list.limitNum}}
+                                                                </span>
+                                                                <i class="fa fa-pencil fa-pencil-box1"
+                                                                   ng-click="clickPencilEvent($event)"></i>
+                                                            </div>
+                                                            <div class="ng-binding ng-hide">
+                                                                <input type="text"
+                                                                       ng-model="list.limitNum"
+                                                                       class="limitNum"/>
+                                                                <i class="fa fa-save fa-pencil-box1"
+                                                                   ng-click="clickSaveEvent($event,list.id)"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div ng-if="batchSettingBox=='OPEN'"
+                                                 class="alert alert-reload margin-top-10 margin-left-10">
+                                                <!--<input ng-click="selectOne(list)"
+                                                       ng-checked="list.selected"
+                                                       class="btn btn-sm  pull-left"
+                                                       type="checkbox">
+                                                {{list.mobile}}-->
+                                               <!-- -->
+                                                <div class="ng-binding">
+                                                    <span class="limitNum2">
+                                                          {{list.mobile}}
+                                                    </span>
+                                                    <i class="fa fa-trash-o fa-pencil-box2"
+                                                       ng-click="batchDelete($event,list.id)"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div ng-if="batchSettingBox=='OPEN'"
+                                         class="panel-heading-re bgandcolor-re no-margin">
+                                        <button class="btn btn-sm btn-primary pull-right"
+                                                type="button"
+                                                ng-click="batchDelete()">
+                                            确定删除
+                                        </button>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,714 @@
+<div class="wrap-content"
+     ng-if="certificationAuditIs!=true">
+    <div class="myBreadcrumb-wrapper"
+         style="color: red;text-align: center">
+		<span class="no-padding">
+			尊敬的用户，您当前的权限菜单为空，请联系相关管理员！
+		</span>
+    </div>
+</div>
+<div class="wrap-content" id="container"
+     ng-show="certificationAuditIs">
+    <div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a href="#/certificationAudit">
+            <i class="fa fa-pencil-square-o text-large text-dark"></i>
+            企业认证审核
+        </a>
+    </span>
+    </div>
+    <div class="container-fluid container-fullw">
+        <div class="modal fade"
+             id="linkWithBusModal"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <form role="form"
+                  style="position: relative"
+                  class="smart-wizard"
+                  name=""
+                  novalidate="novalidate">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button"
+                                    class="close"
+                                    data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body no-padding">
+                            <div class="user-left">
+                                <ul class="nav nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+                                    <li class="active">
+                                        <a data-toggle="tab"
+                                           id="Info1"
+                                           href="../index.html/#base_message"> 基础信息 </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab"
+                                           id="Info2"
+                                           href="../index.html/#user_message"> 联系人信息 </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab"
+                                           id="Info3"
+                                           href="../index.html/#certifi_message"> 企业认证信息 </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!--基础信息-->
+                                    <div id="base_message" class="tab-pane fade in active">
+                                        <div class="row row-box">
+                                            <div class="center">
+                                                <div ng-if="detailBusInfo.logoUrl!=null&&detailBusInfo.logoUrl!=''"
+                                                     class="fileinput-new thumbnail">
+                                                    <a href="{{detailBusInfo.logoUrl}}" target="_blank">
+                                                        <img ng-src="{{detailBusInfo.logoUrl}}"
+                                                             alt="{{detailBusInfo.name}}">
+                                                    </a>
+                                                </div>
+                                                <div ng-if="detailBusInfo.logoUrl==null||detailBusInfo.logoUrl==''"
+                                                     class="fileinput-new thumbnail">
+                                                    <img src="assets/images/portfolio/image01_th.jpg"
+                                                         alt="默认图像">
+                                                </div>
+                                            </div>
+                                            <table class="table table-striped table-bordered table-full-width">
+                                                <tbody>
+                                                <tr>
+                                                    <td>企业名称：</td>
+                                                    <td>
+                                                        <p class="text-style-p3"
+                                                           ng-bind="detailBusInfo.name"
+                                                           title="{{detailBusInfo.name}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <!--<tr>
+                                                    <td>是否虚拟企业：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.showVirtual"
+                                                           title="{{detailBusInfo.showVirtual}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td>是否用友商业伙伴：</td>
+                                                    <td ng-bind="detailBusInfo.showPartner"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>企业类型：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.type"
+                                                           title="{{detailBusInfo.type}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>所属行业：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.professionName"
+                                                           title="{{detailBusInfo.professionName}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>企业地址：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.address"
+                                                           title="{{detailBusInfo.address}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>企业规模：</td>
+                                                    <td ng-bind="detailBusInfo.scale"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>上级企业：</td>
+                                                    <td ng-if="detailBusInfo.pid!=null">
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.pid"
+                                                           title="{{detailBusInfo.pid}}">
+                                                        </p>
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.pid==null">
+                                                        <p class="text-style-p">
+                                                            尚未填写上级企业信息
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="detailBusInfo.confidential!=null">
+                                                    <td>是否保密企业：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.showConfidential"
+                                                           title="{{detailBusInfo.showConfidential}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--联系人信息-->
+                                    <div id="user_message" class="tab-pane fade">
+                                        <div class="row row-box">
+                                            <table class="table table-striped table-bordered table-full-width">
+                                                <tbody>
+                                                <tr>
+                                                    <td>姓名：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.linkman"
+                                                           title="{{detailBusInfo.linkman}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>邮箱：</td>
+                                                    <td ng-if="detailBusInfo.email==null">
+                                                        尚未填写邮箱信息
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.email==''">
+                                                        尚未填写邮箱信息
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.email!=null">
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.email"
+                                                           title="{{detailBusInfo.email}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>手机：</td>
+                                                    <td ng-if="detailBusInfo.phone==null"
+                                                        ng-bind="isNull">
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.phone!=null"
+                                                        ng-bind="detailBusInfo.phone">
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--企业认证信息-->
+                                    <div id="certifi_message" class="tab-pane fade">
+                                        <div class="row row-box">
+                                            <table class="table table-striped table-bordered table-full-width">
+                                                <tbody>
+                                                <tr>
+                                                    <td>审核状态：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.showIdentity"
+                                                           title="{{detailBusInfo.showIdentity}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="detailBusInfo.legalPerson!=null">
+                                                    <td>负责人姓名：</td>
+                                                    <td>
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.legalPerson"
+                                                           title="{{detailBusInfo.legalPerson}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>证件编号：</td>
+                                                    <td ng-if="detailBusInfo.busLicence==null">
+                                                        未查询到证件编号信息
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.busLicence!=null">
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.busLicence"
+                                                           title="{{detailBusInfo.busLicence}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>证件扫描件：</td>
+                                                    <td ng-if="detailBusInfo.busLicenceUrl==null">
+                                                        未查询到证件扫描件信息
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.busLicenceUrl!=null">
+                                                        <a href="{{detailBusInfo.busLicenceUrl}}" target="_blank">
+                                                            <img ng-src="{{detailBusInfo.busLicenceUrl}}"
+                                                                 style="width: 200px;height: auto;display: block"
+                                                                 alt="{{detailBusInfo.name}}">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>审核意见：</td>
+                                                    <td ng-if="detailBusInfo.auditOpinion==null">
+                                                        未填写审核意见
+                                                    </td>
+                                                    <td ng-if="detailBusInfo.auditOpinion!=null">
+                                                        <p class="text-style-p"
+                                                           ng-bind="detailBusInfo.auditOpinion"
+                                                           title="{{detailBusInfo.auditOpinion}}">
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>审核人：</td>
+                                                    <td>
+                                                        <table>
+                                                            <tbody>
+                                                            <tr ng-if="detailBusInfo.auditorMobile==null&&detailBusInfo.auditorName==null">
+                                                                <td>无审核人信息</td>
+                                                            </tr>
+                                                            <tr ng-if="detailBusInfo.auditorMobile!=null">
+                                                                <td>
+                                                                    手机：{{detailBusInfo.auditorMobile}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr ng-if="detailBusInfo.auditorName!=null">
+                                                                <td>
+                                                                    名称：{{detailBusInfo.auditorName}}
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                <div ng-if="openVerifyBox=='false'"
+                     class="panel panel-white">
+                    <div class="panel-heading border-bottom">
+                        <h4 class="panel-title">企业列表</h4>
+                    </div>
+                    <div class="panel-body overflowAuto no-padding">
+                        <div id="certification_list_wrapper"
+                             style="min-width: 600px;">
+                            <div class="col-sm-12">
+                                <form role="form"
+                                      class="smart-wizard"
+                                      name="searchForm"
+                                      novalidate="novalidate">
+                                    <div class="row padding-15">
+                                        <div class="panel panel-white">
+                                            <div class="panel-body">
+                                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <label for="inputStatus"
+                                                                       class="control-label">
+                                                                    审核状态:
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <select class="form-control"
+                                                                        style="min-width: 150px;"
+                                                                        name="identity"
+                                                                        id="inputStatus"
+                                                                        ng-change="checkThenRerender()"
+                                                                        ng-model="selectBusDate.identity">
+                                                                    <option value="">全部状态</option>
+                                                                    <option value="1">未审核</option>
+                                                                    <option value="2">审核通过</option>
+                                                                    <option value="3">审核不通过</option>
+                                                                    <option value="4">审核通过待处理</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <label for="phone"
+                                                                       class="control-label">
+                                                                    联系人手机:
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <input type="text"
+                                                                       name="phone"
+                                                                       ng-model="selectBusDate.phone"
+                                                                       class="form-control"
+                                                                       id="phone"
+                                                                       placehold="输入手机号"/>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <label for="mobile"
+                                                                       class="control-label">
+                                                                    审核人手机:
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <input type="text"
+                                                                       name="mobile"
+                                                                       ng-model="selectBusDate.mobile"
+                                                                       class="form-control"
+                                                                       id="mobile"
+                                                                       placehold="输入手机号"/>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <label for="inputBusName"
+                                                                       class="control-label">
+                                                                    企业名称:
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <input id="inputBusName"
+                                                                       name="name"
+                                                                       select2
+                                                                       placeholder="请输入企业名称"
+                                                                       ng-model="selectBusDate.name"
+                                                                       select2-model="selectBusDateName"
+                                                                       config="default"
+                                                                       query="certificationAjax"
+                                                                       class="form-control"
+                                                                       type="text"/>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="height:36px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no-padding">
+                                                                <button type="button"
+                                                                        ng-click="showSelectDate()"
+                                                                        class="btn btn-primary">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--企业审核列表-->
+                                <div class="alert">
+                                    <span>每页显示</span>
+                                    <select style="min-width: 100px;"
+                                            name="alPageSize"
+                                            ng-change="goTargetAlPage(1)"
+                                            ng-model="pageSizeForm.alPageSize">
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                    <span>条数据</span>
+                                </div>
+                                <table class="table table-striped table-hover table-bordered table-full-width">
+                                    <thead>
+                                    <tr>
+                                        <th>企业名称</th>
+                                        <th>联系人手机</th>
+                                        <th>审核状态</th>
+                                        <th>提交审核时间</th>
+                                        <th>
+                                            最迟审核时间
+                                            <i class="fa fa-sort-amount-desc pull-right"
+                                               ng-show="sortAmount"
+                                               ng-click="sortByLastAuditTime($event)"
+                                               style="cursor: pointer;line-height: 23px;"></i>
+                                            <i class="fa fa-sort-amount-asc pull-right"
+                                               ng-show="!sortAmount"
+                                               ng-click="sortByLastAuditTime($event)"
+                                               style="cursor: pointer;line-height: 23px;"></i>
+                                        </th>
+                                        <th>审核人</th>
+                                        <th>审核时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-show="certListsReady">
+                                        <td colspan="8">
+                                            <p class="no-margin"
+                                               style="text-align: center">数据加载中...</p>
+                                        </td>
+                                    </tr>
+                                    <tr ng-show="certListsIsError">
+                                        <td colspan="8">
+                                            <p class="no-margin"
+                                               style="text-align: center;line-height: 32px;color: #ff0000;!important;">
+                                                {{certListsIsErrorMessage}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr ng-show="certListsIsNull">
+                                        <td colspan="8">
+                                            <p class="no-margin"
+                                               style="text-align: center">抱歉，查不到数据</p>
+                                        </td>
+                                    </tr>
+                                    <tr role="row"
+                                        ng-repeat="cfl in certificationList">
+                                        <td>
+                                            <a class="activation text-style-p"
+                                               data-toggle="modal"
+                                               data-target="#linkWithBusModal"
+                                               title="{{cfl.name}}"
+                                               ng-click="linkWithBus(cfl.id)">
+                                                {{cfl.name}}
+                                            </a>
+                                        </td>
+                                        <td ng-bind="cfl.phone"></td>
+                                        <td ng-bind="cfl.identity"></td>
+                                        <td ng-bind="cfl.submitAuditTime"></td>
+                                        <td ng-bind="cfl.lastAuditTime"></td>
+                                        <td ng-bind="cfl.auditorName"></td>
+                                        <td ng-bind="cfl.auditTime"></td>
+                                        <td>
+                                            <button type="button"
+                                                    ng-if="cfl.identity=='未审核'"
+                                                    ng-click="handleVerifyBox(cfl)"
+                                                    class="btn btn-primary btn-sm">
+                                                审核
+                                            </button>
+                                            <button type="button"
+                                                    ng-if="cfl.identity!='未审核'"
+                                                    class="btn btn-grey btn-sm">
+                                                审核
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    <ul class="pagination pull-right">
+                                        <li ng-if="alPageNumber>1"
+                                            ng-click="goTargetAlPage(alPageNumber -1)">
+                                            <a href="javascript:void 0"
+                                               aria-label="Previous">
+                                                <span aria-hidden="true">前一页</span>
+                                            </a>
+                                        </li>
+                                        <li ng-class="{active:alPageNumber == page}"
+                                            ng-click="goTargetAlPage(page)"
+                                            ng-repeat="page in alPages">
+                                            <a href="javascript:void 0">{{page}}</a>
+                                        </li>
+                                        <li ng-if="alPageNumber<alTotalPage"
+                                            ng-click="goTargetAlPage(alPageNumber +1)">
+                                            <a href="javascript:void 0"
+                                               aria-label="Next">
+                                                <span aria-hidden="true">后一页</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="openVerifyBox=='true'">
+                    <div class="panel panel-white verifyBox">
+                        <div class="panel-heading border-bottom">
+                            <h4 class="panel-title">企业认证审核</h4>
+                            <ul>
+                                <li>
+                                    <button type="button" class="new-business btn btn-primary btn-wide" ng-click="closeVerifyBox()">返回</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert">
+                                <p class="no-margin">
+                                    企业审核可参考“全国企业信用信息公示系统“显示结果！
+                                    <a style="color: #FF0000;text-decoration:underline !important;"
+                                       target="_blank"
+                                       href="http://gsxt.saic.gov.cn/">
+                                        点击打开
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-md-6 well font-16">
+                                <p class="hide">{{id}}</p>
+                                <p>企业名称：{{businessName}}</p>
+                                <p ng-if="businessType=='个人企业'">负责人名称：{{busLegalPerson}}</p>
+                                <p ng-if="businessType=='法人企业'">法人营业执照号：{{busLicence}}</p>
+                                <p ng-if="businessType=='个体工商户'">个体工商户营业执照号：{{busLicence}}</p>
+                                <p ng-if="businessType=='个人企业'">负责人身份证号码：{{busLicence}}</p>
+                                <p ng-if="businessType=='其他'">组织机构代码证或其它证件号码：{{busLicence}}</p>
+                                <p ng-if="urlNull == 'true'">证件扫描照片：未上传照片</p>
+                                <p ng-if="urlNull == 'false'">证件扫描照片：
+                                    <a ng-href="{{busLicenceUrl}}"
+                                       target="_blank">
+                                        <img style="width:300px;"
+                                             ng-src="{{busLicenceUrl}}"
+                                             title="点击查看原图"
+                                             alt="点击查看原图">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <form role="form"
+                                      class="smart-wizard ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-valid-pattern ng-valid-email ng-dirty ng-valid-parse"
+                                      name="auditForm">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            <span class="symbol required"></span>
+                                            审核结论:
+                                        </label>
+                                        <div class="clip-radio radio-primary">
+                                            <input  class="radio-input-dis"
+                                                    type="radio"
+                                                    ng-change="handlerConfidential()"
+                                                    ng-model="auditFormData.identity"
+                                                    value="2"
+                                                    name="result"
+                                                    id="resultYes"
+                                                    required/>
+                                            <label for="resultYes"> 审核通过 </label>
+                                            <input class="radio-input-dis"
+                                                   type="radio"
+                                                   ng-change="handlerConfidential()"
+                                                   ng-model="auditFormData.identity"
+                                                   value="3"
+                                                   name="result"
+                                                   id="resultNo"
+                                                   required/>
+                                            <label for="resultNo"> 审核不通过 </label>
+                                            <input class="radio-input-dis"
+                                                   type="radio"
+                                                   ng-change="handlerConfidential()"
+                                                   ng-model="auditFormData.identity"
+                                                   value="4"
+                                                   name="result"
+                                                   id="resultRe"
+                                                   required/>
+                                            <label for="resultRe"> 审核通过待处理 </label>
+                                        </div>
+                                    </div>
+                                    <div ng-show="confidentialShow"
+                                         class="form-group" >
+                                        <label class="control-label">
+                                            <span class="symbol required"></span>
+                                            是否保密单位:
+                                        </label>
+                                        <div class="clip-radio radio-primary">
+                                            <input  class="radio-input-dis"
+                                                    type="radio"
+                                                    ng-model="auditFormData.confidential"
+                                                    value="1"
+                                                    name="secrit"
+                                                    id="isSecrit"
+                                                    required/>
+                                            <label for="isSecrit"> 是 </label>
+                                            <input class="radio-input-dis"
+                                                   type="radio"
+                                                   ng-model="auditFormData.confidential"
+                                                   value="0"
+                                                   name="secrit"
+                                                   id="NotSecrit"
+                                                   required/>
+                                            <label for="NotSecrit"> 否 </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            <span class="symbol required"></span>
+                                            审核意见:
+                                        </label>
+                                        <div>
+                                            <textarea class="margin-top-10 margin-bottom-10"
+                                                      name=""
+                                                      ng-model="auditFormData.auditOpinion"
+                                                      cols="50" rows="3" required>
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="margin-top-20 margin-right-20">
+                                <button type="button"
+                                        ng-disabled="auditForm.$invalid"
+                                        class="pull-right btn btn-primary btn-sm"
+                                        ng-click="auditHandler()">确定</button>
+                            </div>
+
+                            <!--</div>-->
+                            <div class="col-xs-12 col-md-12">
+                                <div class="font-16 font-danger" ng-if="disaccord=='true'">申请企业名称与DB存在不一致！</div>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                                <hr />
+                                <div class="font-16 margin-top-20 margin-bottom-20">客户DB系统信息</div>
+                                <table datatable=""
+                                       dt-options="app.DBOptions"
+                                       dt-columns="app.DBColumns"
+                                       class="table table-striped table-hover table-bordered table-full-width">
+
+                                </table>
+                                <!--<div ng-if="emptyProduct=='true'">查不到数据。</div>-->
+                                <div ng-if="errorRequest=='true'">请求失败。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

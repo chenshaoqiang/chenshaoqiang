@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <!--开启扫面注解生成Bean-->
+    <context:annotation-config/>
+    <!--设定扫描的根package-->
+    <context:component-scan base-package="com.yonyou.onecloud">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+        <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController" />
+        <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+    </context:component-scan>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+          init-method="createDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://10.10.5.24:3306/openapi?characterEncoding=utf8"/>
+        <property name="username" value="group"/>
+        <property name="password" value="cluster@yonyou.com"/>
+        <property name="initialSize" value="50"/>
+        <property name="maxTotal" value="500"/>
+        <property name="maxIdle" value="20"/>
+        <property name="maxWaitMillis" value="100000"/>
+        <property name="connectionProperties" value="enableQueryTimeouts=false" />
+    </bean>
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+      	 <!--规定了扫描mapper文件的路径 -->
+		<property name="mapperLocations" value="classpath*:mapper/*.xml" />
+		<!--指定了Mybatis配置文件的路径 -->
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<!-- 别名的基本包 -->
+		<property name="typeAliasesPackage" value="com.yonyou.onecloud.platform.entity" />
+    </bean>
+
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!--这一段让我们的MapperInterface能够最终在Spring中生成Bean最后被AutoWired-->
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.yonyou.onecloud.platform.dao.mapper" />
+		<property name="properties">
+			<!-- 继承的通用mapper，多个逗号分隔 -->
+			<value>
+				mappers=com.yonyou.onecloud.platform.dao.basic.BasicMapper
+			</value>
+		</property>
+	</bean>
+   
+    <bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="i18n" />
+	</bean>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="100" />
+		<property name="maxIdle" value="5" />
+		<property name="maxWaitMillis" value="1000" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="true" />
+	</bean>
+
+	<bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+		<constructor-arg index="0" ref="jedisPoolConfig" />
+		<constructor-arg index="1" value="10.10.5.118" />
+		<constructor-arg index="2" value="6379" type="int" />
+		<constructor-arg index="3" value="2000"
+			type="int" />
+		<constructor-arg index="4" value="cluster@yonyou.com" />
+	</bean>
+
+	<import resource="spring-motan.xml" />
+</beans>

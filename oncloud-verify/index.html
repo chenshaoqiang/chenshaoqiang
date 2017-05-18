@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" id="ng-app">
+	<!-- start: HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Expires" CONTENT="0">
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>友户通</title>
+		<meta name="keywords" content="友户通">
+		<meta name="description" content="友户通">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<link href='favicon.ico' rel="Bookmark"/>
+		<!-- end: META -->
+		<!-- start: Yonyou CSS -->
+		<!--bundle.css包含bootstrap.min和select2样式-->
+		<link rel="stylesheet" href="resources/bundle.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="resources/dist/css/wangEditor.css">
+		<link rel="stylesheet" href="bower_components/DataTables/media/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/lyt2-theme-1.css" id="skin_color">
+		<!-- end: Yonyou CSS -->
+	</head>
+	<!-- end: HEAD -->
+	<body>
+	<div id="app" class="lyt-2" ng-controller="appCtrl">
+		<!-- sidebar -->
+		<div ng-if="isBusDataPage!='true'"
+				class="sidebar app-aside sidebarStyle" id="sidebar">
+			<div class="sidebar-container perfect-scrollbar">
+				<div>
+					<div class="nav-user-wrapper">
+						<div class="media">
+							<div class="media-left">
+								<a class="profile-card-photo"
+								   ng-model="headPicUrl">
+									<img style="width: 32px; height: 32px;"
+										 ng-src="{{headPicUrl}}">
+								</a>
+							</div>
+							<div class="media-body">
+								<span class="media-heading text-white"
+									  style="display: inline-block;min-height: 8px;margin: 0;"
+									  ng-bind="nickname"></span>
+								<span class="media-heading text-white"
+									  style="display: inline-block;min-height: 8px;margin: 0;"
+									  ng-if="nickname==null" ng-bind="isNull"></span>
+								<div class="text-small text-white-transparent" ng-bind="mobile">
+
+								</div>
+								<div class="text-small text-white-transparent" ng-if="mobile==null && email==null" ng-bind="isNull">
+
+								</div>
+								<div class="text-small text-white-transparent" ng-if="mobile==null && email!=null" ng-bind="email">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav ng-show="!menuListsIsNull">
+						<ul class="main-navigation-menu">
+							<li ng-repeat="menu in menuLists"
+								ng-click="current = '{{menu.url}}'"
+								role="presentation"
+								data-content="{{menu.name}}"
+								ng-class="{active:current=='{{menu.url}}',open:current=='{{menu.url}}'}">
+								<a ui-sref="{{menu.url}}">
+									<div class="item-content">
+										<div class="item-media">
+											<i ng-show="menu.url=='announcement'"
+											   class="fa fa-bullhorn"></i>
+											<i ng-show="menu.url=='certificationAudit'"
+											   class="fa fa-pencil-square-o"></i>
+											<i ng-show="menu.url=='whiteList'"
+											   class="fa fa-file-o"></i>
+											<i ng-show="menu.url=='rolePermission'"
+											   class="fa fa-user-md"></i>
+											<i ng-show="menu.url=='activationCode'"
+											   class="fa fa-bolt"></i>
+											<i ng-show="menu.url=='verification'"
+											   class="fa fa-exclamation-circle"></i>
+											<i ng-show="menu.url=='specialSettings'"
+											   class="fa fa-cogs"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"
+												  ng-bind=menu.name></span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- / sidebar -->
+		<div class="app-content">
+			<!-- start: TOP NAVBAR -->
+			<header class="navbar navbar-default navbar-static-top">
+				<!-- start: NAVBAR HEADER -->
+				<div class="navbar-header">
+					<button href="#"
+							class="sidebar-mobile-toggler pull-left btn no-radius hidden-md hidden-lg"
+							class="btn btn-navbar sidebar-toggle"
+							data-toggle-class="app-slide-off"
+							data-toggle-target="#app"
+							data-toggle-click-outside="#sidebar">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html"> <img style="width: 100%;margin-left: -7px;margin-top: 8px;" src="assets/images/logo.png" alt="Yonyou"/> </a>
+					<a class="navbar-brand navbar-brand-collapsed" href="index.html"> <img src="assets/images/logo-collapsed.png" alt="" /> </a>
+
+					<button class="btn pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse" data-toggle-class="menu-open">
+						<i class="fa fa-folder closed-icon"></i><i class="fa fa-folder-open open-icon"></i><small><i class="fa fa-caret-down margin-left-5"></i></small>
+					</button>
+				</div>
+				<!-- end: NAVBAR HEADER -->
+				<!-- start: NAVBAR COLLAPSE -->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-left hidden-sm hidden-xs">
+						<li class="sidebar-toggler-wrapper">
+							<div>
+								<button href="javascript:void(0)" class="btn sidebar-toggler visible-md visible-lg">
+									<i class="fa fa-bars"></i>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav navbar-right">
+						<li class="dropdown">
+							<a href="logoutRequest">
+								退出
+							</a>
+						</li>
+					</ul>
+					<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+					<div class="close-handle visible-xs-block menu-toggler"
+						 data-toggle="collapse"
+						 href=".navbar-collapse">
+						<div class="arrow-left"></div>
+						<div class="arrow-right"></div>
+					</div>
+					<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+				</div>
+				<!-- end: NAVBAR COLLAPSE -->
+			</header>
+			<!-- end: TOP NAVBAR -->
+			<div class="main-content" >
+				<div ui-view
+					 class="wrap-content" id="container">
+				</div>
+			</div>
+		</div>
+		<!-- start: FOOTER -->
+		<footer>
+			<div class="footer-inner">
+				<div class="pull-left">
+					Copyright &copy; <span class="current-year"></span>
+					<span class="text-bold text-uppercase"> YONYOU</span>. <span>All rights reserved</span>
+					<span class="margin-left-10">京ICP备05007539号-17</span>
+					<span class="margin-left-10">京ICP证100714号</span>
+					<span class="margin-left-10">京公网安备11010802021935号</span>
+				</div>
+				<div class="pull-right">
+					<span class="go-top"><i class="ti-angle-up"></i></span>
+				</div>
+			</div>
+		</footer>
+		<!-- end: FOOTER -->
+
+		<!-- start: SETTINGS -->
+		<div class="settings panel panel-default hidden-xs hidden-sm" id="settings">
+			<button data-toggle-class="active" data-toggle-target="#settings" class="btn btn-default">
+				<i class="fa fa-spin fa-gear"></i>
+			</button>
+			<div class="panel-heading">
+				界面风格选择
+			</div>
+			<div class="panel-body">
+				<!-- start: FIXED HEADER -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left"> 顶部导航固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-header" />
+						</span>
+				</div>
+				<!-- end: FIXED HEADER -->
+				<!-- start: FIXED SIDEBAR -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">左菜单栏固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-sidebar" />
+						</span>
+				</div>
+				<!-- end: FIXED SIDEBAR -->
+				<!-- start: CLOSED SIDEBAR -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">左菜单栏伸缩</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="closed-sidebar" />
+						</span>
+				</div>
+				<!-- end: CLOSED SIDEBAR -->
+				<!-- start: FIXED FOOTER -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">底部页脚固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-footer" />
+						</span>
+				</div>
+				<!-- end: FIXED FOOTER -->
+				<!-- start: THEME SWITCHER -->
+				<div class="colors-row setting-box">
+					<label>页面风格切换</label>
+					<div class="color-theme lyt2-theme-1">
+						<div class="color-layout">
+							<label>
+								<input type="radio"
+									   name="setting-theme"
+									   value="lyt2-theme-1">
+								<span class="fa fa-check-circle lyt-check text-extra-large"></span>
+								<span class="split header"> <span class="color th-header"></span>
+									<span class="color th-collapse">
+										<i class="color-button"></i>
+									</span>
+								</span>
+								<span class="split">
+									<span class="color th-sidebar">
+										<i class="element"></i>
+									</span>
+									<span class="color th-body"></span> </span>
+							</label>
+						</div>
+					</div>
+					<div class="color-theme lyt2-theme-2">
+						<div class="color-layout">
+							<label>
+								<input type="radio"
+									   name="setting-theme"
+									   value="lyt2-theme-2">
+								<span class="fa fa-check-circle lyt-check text-extra-large"></span>
+								<span class="split header">
+									<span class="color th-header"></span>
+									<span class="color th-collapse">
+										<i class="color-button"></i>
+									</span>
+								</span>
+								<span class="split">
+									<span class="color th-sidebar">
+										<i class="element"></i>
+									</span>
+									<span class="color th-body"></span>
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end: SETTINGS -->
+	</div>
+	<!-- start: MAIN JAVASCRIPTS -->
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./bower_components/js-cookie/src/js.cookie.js"></script>
+	<script src="./bower_components/bootstrap-jasny/dist/js/jasny-bootstrap.min.js"></script>
+	<script src="./bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="./bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+	<script src="./bower_components/spectrum/spectrum.js"></script>
+	<script src="assets/js/letter-icons.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/angular-ui-router.min.js"></script>
+	<script src="assets/js/angular-file-upload.min.js"></script>
+	<script src="./bower_components/select2/select2.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/angular-datatables.min.js"></script>
+	<script src="assets/js/angular-resource.min.js"></script>
+	<script src="assets/js/dataTables.lightColumnFilter.min.js"></script>
+	<script src="assets/js/angular-datatables.light-columnfilter.js"></script>
+	<script src="resources/dist/js/wangEditor.min.js"></script>
+	<script src="assets/components/admin-index.js"></script>
+	<!-- end: Yonyou JAVASCRIPTS -->
+	<!-- start: JavaScript Event Handlers for this page -->
+	<script>
+		$(document).ready(function(){
+			Main.init();
+		});
+	</script>
+	<!-- end: JavaScript Event Handlers for this page -->
+	</body>
+</html>

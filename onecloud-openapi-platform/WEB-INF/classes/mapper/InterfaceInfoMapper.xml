@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yonyou.onecloud.platform.dao.mapper.InterfaceInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.yonyou.onecloud.platform.entity.InterfaceInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="CHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="request_count" property="requestCount" jdbcType="INTEGER" />
+    <result column="descr" property="descr" jdbcType="VARCHAR" />
+    <result column="scope" property="scope" jdbcType="INTEGER" />
+    <result column="grant_type" property="grantType" jdbcType="VARCHAR" />
+    <result column="method" property="method" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

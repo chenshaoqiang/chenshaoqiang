@@ -1,0 +1,175 @@
+<div class="wrap-content"
+	 ng-if="announcementIs!=true">
+	<div class="myBreadcrumb-wrapper"
+		 style="color: red;text-align: center">
+		<span class="no-padding">
+			尊敬的用户，您当前的权限菜单为空，请联系相关管理员！
+		</span>
+	</div>
+</div>
+<div class="popUpWindow"
+	 ng-if="deleteNoticeBox=='OPEN'">
+	<div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+	<div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+		<div class="text-style bgandcolor-re alert alert-info">
+			确定要删除此公告？
+		</div>
+		<ul>
+			<li>
+				<button ng-click="checkToDelete()"
+						class="btn btn-default btn-sm margin-top-20 pull-left">
+					确定
+				</button>
+			</li>
+			<li>
+				<button ng-click="cancelToDelete()"
+						class="btn btn-default btn-sm margin-top-20 pull-right">
+					取消
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="wrap-content" id="container"
+	 ng-show="announcementIs">
+	<div class="myBreadcrumb-wrapper">
+		<span class="no-padding pull-right margin-right-20">
+			<a href="#/announcement">
+				<i class="fa fa-bullhorn text-large text-dark"></i>
+				发布公告
+			</a>
+		</span>
+	</div>
+	<div class="container-fluid container-fullw">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+				<div ng-if="openRichTextBox=='true'"
+					 style="z-index: 10;top: 0;"
+					 class="panel panel-white">
+					<div class="panel-heading border-bottom">
+						<h4 class="panel-title">公告列表</h4>
+						<ul>
+							<li>
+								<button ng-click="closeRichText()"
+										style="margin-right: 12px"
+										class="new-business btn btn-primary btn-wide">
+									返回
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="panel-body" style="min-height: 400px;">
+						<form role="form"
+							  class="smart-wizard"
+							  name="editorForm"
+							  novalidate="novalidate">
+							<div class="form-group"
+								 ng-class="{'has-error':editorForm.title.$dirty && editorForm.title.$invalid}">
+								<input id="announcementTitle"
+									   name="title"
+									   ng-minlength="1"
+									   ng-maxlength="25"
+									   required
+									   ng-model="editorFormData.title"
+									   placeholder="公告标题,25个字符以内"
+									   class="form-control"
+									   type="text"/>
+								<div class="alert alert-danger help-block"
+									 ng-show="editorForm.title.$dirty&&editorForm.title.$error.required">
+									此为必填项
+								</div>
+								<div class="alert alert-danger help-block"
+									 ng-show="editorForm.title.$dirty&&editorForm.title.$error.minlength">
+									标题最小长度为1字符
+								</div>
+								<div class="alert alert-danger help-block"
+									 ng-show="editorForm.title.$dirty&&editorForm.title.$error.maxlength">
+									标题最大长度为25字符
+								</div>
+							</div>
+							<div id="editor-trigger"
+								 ng-model="editorFormData.content"
+								 contenteditable>
+							</div>
+							<button class="btn btn-primary pull-right"
+									type="button"
+									ng-disabled="editorForm.$invalid"
+									ng-click="sendEditorContent()">
+								保存
+							</button>
+						</form>
+					</div>
+				</div>
+				<div ng-if="openRichStatus=='SHOW'"
+					 class="panel panel-white">
+					<div class="panel-heading border-bottom">
+						<h4 class="panel-title">公告列表</h4>
+						<ul>
+							<li>
+								<button ng-click="openRichText()"
+										style="margin-right: 12px"
+										class="new-business btn btn-primary">
+									<i class="fa fa-plus"></i>
+									新增公告
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="panel-body overflowAuto" style="min-height: 400px;">
+						<div id="announcement_list_wrapper"
+							 style="min-width: 600px;"
+							 class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+							<div class="alert">
+								<span>每页显示</span>
+								<select style="min-width: 100px;"
+										name="announcePageSize"
+										ng-change="goTargetNlPage(1)"
+										ng-model="pageSizeForm.nlPageSize">
+									<option value="5">5</option>
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+								<span>条数据</span>
+							</div>
+							<table datatable=""
+								   dt-options="app.dtOptions"
+								   dt-columns="app.dtColumns"
+								   dt-column-defs="app.dtColumnDefs"
+								   dt-instance="app.dtInstance"
+								   class="table table-striped table-hover table-bordered table-full-width">
+							</table>
+							<nav>
+								<ul class="pagination pull-right">
+									<li ng-if="nlPageNumber>1"
+										ng-click="goTargetNlPage(nlPageNumber -1)">
+										<a href="javascript:void 0"
+										   aria-label="Previous">
+											<span aria-hidden="true">前一页</span>
+										</a>
+									</li>
+									<li ng-class="{active:nlPageNumber == page}"
+										ng-click="goTargetNlPage(page)"
+										ng-repeat="page in nlPages">
+										<a href="javascript:void 0">{{page}}</a>
+									</li>
+									<li ng-if="nlPageNumber<nlTotalPage"
+										ng-click="goTargetNlPage(nlPageNumber +1)">
+										<a href="javascript:void 0"
+										   aria-label="Next">
+											<span aria-hidden="true">后一页</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="用友友户通开放平台，openApi，用友友户通openApi">
+    <meta name="description" content="用友友户通开放平台，openApi，用友友户通openApi" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>友户通开放平台</title>
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <link href='favicon.ico' rel="Bookmark"/>
+    <link rel="stylesheet" href="./assets/css/homePage.css">
+</head>
+
+<body>
+<div id="mask">
+    <div class="yt-header">
+        <div class="left">
+            <div class="yt-icon"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="right">
+            <div class="bar">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <div class="nav-item">
+                                <div class="nav-item-content">
+                                    <a class=nav-text-selected href="">首页</a>
+                                </div>
+                                <div class=nav-item-selected></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <div class="nav-item-content">
+                                    <a class=nav-text-normal target="_blank"  href="http://www.yonyou.com">用友官网</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <div class="nav-item-content">
+                                    <a class=nav-text-normal target="_blank" href="http://www.oneyonyou.com">友户通官网</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-text-title">
+        <h1></h1>
+        <h3></h3>
+        <div>
+            <a href="login.html">
+                <button type="button" class="btn btn-login">
+                    登 录
+                </button>
+            </a>
+            <a href="login.html">
+                <button type="button" class="btn btn-register">
+                    注 册
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="yt-home-footer">
+    <div id="copyright" class="copyright">Copyright &copy; 2016 yonyou All Rights Reserved.</div>
+    <span class="english"></span>
+</div>
+</body>
+<script src="./bower_components/jquery/jquery.min.js"></script>
+<script>
+    $('.btn-login').click(function () {
+        localStorage.setItem('login_or_register', 'login');
+    });
+    $('.btn-register').click(function () {
+        localStorage.setItem('login_or_register', 'register');
+    });
+</script>
+</html>

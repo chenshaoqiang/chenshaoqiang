@@ -1,0 +1,92 @@
+<div class="right_content_head">
+    <p class="no-margin">接口权限</p>
+</div>
+<div class="table_content">
+    <table class="table no-margin table-border">
+        <thead class="thead-bg">
+        <tr>
+            <th class="th_110 th_left">功能</th>
+            <th class="th_200 th_left">接口</th>
+            <th class="th_200 th_right">每日实时调用量/上限(次)</th>
+            <th class="th_110 th_left">接口状态</th>
+            <th class="th_110 th_right">操作</th>
+        </tr>
+        </thead>
+        <tbody style="background: #ffffff">
+        <tr ng-show="interfaceLoading">
+            <td colspan="5" class="text-center">
+                数据加载中，请稍候。。。
+            </td>
+        </tr>
+        <tr ng-show="interfaceNull">
+            <td colspan="5" class="text-center">
+                接口列表为空
+            </td>
+        </tr>
+        <tr ng-show="interfaceResError">
+            <td colspan="5" class="text-center">
+                {{interfaceErrorMsg}}
+            </td>
+        </tr>
+        <tr ng-repeat="base in interfaceMenu">
+            <td colspan=1>
+                {{base.basName}}
+            </td>
+            <td colspan=4
+                style="border: none!important;"
+                class="no-padding">
+                <table class="table no-margin">
+                    <tbody>
+                        <tr ng-repeat="row in base.intLists">
+                            <td class="th_200 th_left" style="width:40%!important; ">
+                                <a href="#" ng-bind="row.interfaceDesc"></a>
+                            </td>
+                            <td class="th_200 th_right" style="width:30%!important; ">
+                                <span ng-bind="row.consumeNum"></span>
+                                <span>/ {{row.limitNum}}</span>
+                            </td>
+                            <td class="th_110 th_left" style="width:20%!important; ">
+                                <span ng-if="row.hasPermission==true">已获得</span>
+                                <span ng-if="row.hasPermission==false">未获得</span>
+                            </td>
+                            <td class="th_110 th_right" style="width:10%!important; ">
+                                <button ng-if="row.hasPermission==false"
+                                        class="btn btn-default"
+                                        style="padding: 5px 12px!important;"
+                                        type="button">
+                                    授权申请
+                                </button>
+                                <!--<div class="dropdown">
+                                    <button class="btn btn-default btn-adjustment dropdown-toggle"
+                                            type="button"
+                                            data-toggle="dropdown">
+                                        次数清空
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">
+                                                Action1
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">
+                                                Action2
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#">
+                                                Action3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

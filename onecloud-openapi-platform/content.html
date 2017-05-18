@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- start: HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=10,IE=9,chrome=1" />
+		<![endif]-->
+		<title>友户通开放平台</title>
+		<meta name="keywords" content="友户通开放平台">
+		<meta name="description" content="友户通">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<!-- Sets initial viewport load and disables zooming  -->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<link href='favicon.ico' rel="Bookmark"/>
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="bower_components/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+		<link href="assets/css/content.css" rel="stylesheet" />
+		<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	</head>
+	<body ng-controller="appCtrl">
+	<div id="mask">
+		<div class="yt-header">
+			<!--<div class="shadow"></div>-->
+			<div class="left">
+				<div class="yt-icon"></div>
+				<div class="logo"></div>
+			</div>
+			<div class="right">
+				<div class="dropdown dropdown_re pull-right">
+					<div class="style_change dropdown-toggle"
+						 data-toggle="dropdown">
+						userName
+						<i class="icon-pin pull-right"
+						   style="line-height: 50px;margin-left: 10px;"></i>
+					</div>
+					<ul class="dropdown-menu"
+						style="top: 47px!important;min-width: 200px!important;"
+						role="menu"
+						aria-labelledby="dropdownMenu">
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" href="index.html">
+								返回首页
+							</a>
+						</li>
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" href="#">
+								退出
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="left_menu left_menu_re" id="left_menu">
+			<div class="menu_top" ng-if="hideMenu==true">
+				<p ng-click="returnMainMenu()">
+					点击返回主菜单
+					<i class="icon-action-undo pull-right" style="line-height: 25px"></i>
+				</p>
+			</div>
+			<a ui-sref="basicConfig" ng-show="!hideMenu">
+				<p class="no-margin padding_p hover_p"
+				   data-content="basic"
+				   ng-click="changeDocLists('bsc')">
+					<i class="icon-home"></i>
+					<span class="padding-5">基本配置</span>
+				</p>
+			</a>
+			<a ui-sref="developerTools" ng-show="!hideMenu">
+				<p class="no-margin padding_p hover_p"
+				   data-content="dev"
+				   ng-click="changeDocLists('dev')">
+					<i class="icon-wrench"></i>
+					<span class="padding-5">开发者工具</span>
+				</p>
+			</a>
+			<p id="docCenter_p"
+			   data-content="doc"
+			   class="no-margin padding_p hover_p"
+			   ng-click="changeDocLists('doc')">
+				<i class="icon-docs"></i>
+				<span class="padding-5">文档中心</span>
+				<i ng-if="menuStatus" class="icon-arrow-up pull-right"></i>
+				<i ng-if="!menuStatus" class="icon-arrow-down pull-right"></i>
+			</p>
+			<div ng-show="!menuStatus" id="documentCenter" class="documentCenter">
+				<a ui-sref="documentCenter">
+					<ul>
+						<li ng-repeat="list in docMenu"
+							ng-bind="list.name"
+							title="{{list.name}}"
+							ng-click="clickDocLists(list.name)"></li>
+					</ul>
+				</a>
+			</div>
+			<a ui-sref="interfaceAuth" ng-show="!hideMenu">
+				<p class="no-margin padding_p hover_p"
+				   data-content="auth"
+				   ng-click="changeDocLists('inte')">
+					<i class="icon-layers"></i>
+					<span class="padding-5">接口权限</span>
+				</p>
+			</a>
+		</div>
+		<div class="right_content min_height_300">
+			<div ui-view></div>
+		</div>
+		<div class="yt-home-footer">
+			<div id="copyright" class="copyright">Copyright &copy; 2016 yonyou All Rights Reserved.</div>
+			<span class="english"></span>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="assets/js/content.js"></script>
+	</body>
+</html>

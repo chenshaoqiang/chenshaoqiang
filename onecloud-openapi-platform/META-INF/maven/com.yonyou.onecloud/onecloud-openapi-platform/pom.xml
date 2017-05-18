@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.yonyou.onecloud</groupId>
+		<artifactId>onecloud-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>onecloud-openapi-platform</artifactId>
+	<packaging>war</packaging>
+
+	<dependencies>			
+		<!-- Spring framework -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+		
+		<dependency>
+			<groupId>com.yonyou.onecloud</groupId>
+			<artifactId>onecloud-common</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.yonyou.onecloud</groupId>
+			<artifactId>framework-component</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.yonyou.onecloud</groupId>
+			<artifactId>framework-commonservice</artifactId>
+		</dependency>
+		
+		<!-- Mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- Mybatis 通用 mapper -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper</artifactId>
+			<version>3.3.7</version>
+		</dependency>
+		<!-- Mybatis 分页 -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>4.1.3</version>
+		</dependency>
+
+		<!-- MySQL Connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+
+
+		<!-- Druid -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<!-- Fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
+		
+		<!-- Dbcp2 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		
+		<!-- File Upload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+
+		<!-- Unit Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- Jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		
+		<!-- Motan RPC 框架 -->
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-transport-netty</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- only needed for spring-based features -->
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-springsupport</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-registry-zookeeper</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>onecloud-openapi-platform</finalName>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<webResources>
+						<resource>
+							<filtering>true</filtering>
+							<directory>src/main/webapp/WEB-INF</directory>
+							<targetPath>WEB-INF</targetPath>
+							<includes>
+								<include>**/web.xml</include>
+							</includes>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>1.3.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.21</version>
+						<scope>runtime</scope>
+					</dependency>
+					<dependency>
+						<groupId>tk.mybatis</groupId>
+						<artifactId>mapper</artifactId>
+						<version>3.3.7</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<verbose>true</verbose>
+					<overwrite>true</overwrite>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+        <!-- 开发环境 -->
+        <profile>
+            <id>dev</id>
+            <properties>
+                <zk_url>10.10.5.119:2181</zk_url>
+                <redis_url>10.10.5.118</redis_url>
+                <redis_port>6379</redis_port>
+                <redis_password>cluster@yonyou.com</redis_password>
+                <redis_timeout>2000</redis_timeout>
+                <!-- Jedis Pool -->
+				<jedis_pool_max_total>100</jedis_pool_max_total>
+				<jedis_pool_max_idle>5</jedis_pool_max_idle>
+				<jedis_pool_max_wait>1000</jedis_pool_max_wait>
+                
+                <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
+                <jdbc.url>jdbc:mysql://10.10.5.24:3306/openapi?characterEncoding=utf8</jdbc.url>
+                <jdbc.username>group</jdbc.username>
+                <jdbc.password>cluster@yonyou.com</jdbc.password>
+                <log_level>debug</log_level>
+            </properties>
+            <!-- 默认激活本环境 -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <!-- 测试环境 -->
+        <profile>
+            <id>test</id>
+            <properties>
+                <zk_url>10.10.5.18:2181,10.10.5.19:2181,10.10.5.20:2181</zk_url>
+                <redis_url>10.10.5.21</redis_url>
+                <redis_port>6379</redis_port>
+                <redis_password>yonyouidm@2015</redis_password>
+                <redis_timeout>2000</redis_timeout>
+                <!-- Jedis Pool -->
+				<jedis_pool_max_total>100</jedis_pool_max_total>
+				<jedis_pool_max_idle>5</jedis_pool_max_idle>
+				<jedis_pool_max_wait>1000</jedis_pool_max_wait>
+				
+                <jdbc.driver>com.mysql.fabric.jdbc.FabricMySQLDriver</jdbc.driver>
+                <jdbc.url>jdbc:mysql:fabric://10.10.5.23:32274/openapi?fabricServerGroup=mcloud_group&amp;amp;fabricUsername=admin&amp;amp;fabricPassword=cluster@yonyou.com&amp;amp;characterEncoding=utf8</jdbc.url>
+                <jdbc.username>fabric</jdbc.username>
+                <jdbc.password>cluster@yonyou.com</jdbc.password>
+                <log_level>debug</log_level>
+            </properties>
+        </profile>
+
+        <!-- 生产环境 -->
+        <profile>
+            <id>prd</id>
+            <properties>
+                <zk_url>192.168.22.5:2181,192.168.22.9:2181,192.168.22.10:2181</zk_url>
+                <redis_url>192.168.22.16</redis_url>
+                <redis_port>6379</redis_port>
+                <redis_password>cluster@yonyou.com</redis_password>
+                <redis_timeout>2000</redis_timeout>
+                <!-- Jedis Pool -->
+				<jedis_pool_max_total>100</jedis_pool_max_total>
+				<jedis_pool_max_idle>5</jedis_pool_max_idle>
+				<jedis_pool_max_wait>1000</jedis_pool_max_wait>
+				
+                <jdbc.driver>com.mysql.fabric.jdbc.FabricMySQLDriver</jdbc.driver>
+                <jdbc.url>jdbc:mysql:fabric://192.168.22.3:32274/openapi?fabricServerGroup=onecloud_group&amp;amp;fabricUsername=admin&amp;amp;fabricPassword=cluster@yonyou.com&amp;amp;characterEncoding=utf8</jdbc.url>
+                <jdbc.username>fabric</jdbc.username>
+                <jdbc.password>cluster@yonyou.com</jdbc.password>
+                <log_level>info</log_level>
+            </properties>
+        </profile>
+
+        <!-- 正式环境 -->
+        <profile>
+            <id>oneyonyou</id>
+            <properties>
+                <zk_url>10.3.20.39:2181,10.3.20.40:2181,10.3.20.41:2181</zk_url>
+                <redis_url>r-2ze65920a2165674.redis.rds.aliyuncs.com</redis_url>
+                <redis_port>6379</redis_port>
+                <redis_password>Redis2016</redis_password>
+                <redis_timeout>2000</redis_timeout>
+                <!-- Jedis Pool -->
+				<jedis_pool_max_total>100</jedis_pool_max_total>
+				<jedis_pool_max_idle>5</jedis_pool_max_idle>
+				<jedis_pool_max_wait>1000</jedis_pool_max_wait>
+                
+                <jdbc.driver>com.mysql.fabric.jdbc.FabricMySQLDriver</jdbc.driver>
+                <jdbc.url>jdbc:mysql:fabric://10.3.20.36:32274/openapi?fabricServerGroup=onecloud_group&amp;amp;fabricUsername=admin&amp;amp;fabricPassword=cluster@yonyou.com&amp;amp;characterEncoding=utf8</jdbc.url>
+                <jdbc.username>fabric</jdbc.username>
+                <jdbc.password>cluster@yonyou.com</jdbc.password>
+                <log_level>info</log_level>
+            </properties>
+        </profile>
+    </profiles>
+</project>

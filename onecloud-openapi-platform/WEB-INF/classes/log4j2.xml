@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+
+	<!-- 过滤无用的motan 和 zk 和mq信息 -->
+	<Filters>
+		<RegexFilter regex="Got ping response for .*" onMatch="DENY" onMismatch="NEUTRAL"/>
+		<RegexFilter regex="\[motan\-.*\].*" onMatch="DENY" onMismatch="NEUTRAL"/>
+		<RegexFilter regex="NettyChannel.*" onMatch="DENY" onMismatch="NEUTRAL"/>
+		<!-- 
+		<RegexFilter regex="Retrieving delivery for Consumer.*" onMatch="DENY" onMismatch="NEUTRAL"/>
+		 -->
+		<BurstFilter level="INFO" rate="500" maxBurst="1000"/>
+	</Filters>
+
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout charset="UTF-8"
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</appenders>
+
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+
+</configuration>
