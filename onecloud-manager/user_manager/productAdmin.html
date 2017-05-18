@@ -1,0 +1,219 @@
+<!--modal begin-->
+<div ng-if="handelUserNotice=='open'" class="popUpWindow" id="popUpWindow1">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeDownLoad()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info font-16">
+            注意事项
+        </div>
+        <div class="margin-top-20">
+            <p class="font-12">
+                <code ng-if="productlineCode=='nc'">用友网络科技股份有限公司</code>
+                <code ng-if="productlineCode=='U8'">用友优普信息技术有限公司</code>
+                <br/>
+                <span class="inline-block margin-top-10 margin-bottom-10">
+                    在此特别提醒您（用户）：在下载“企业认证文件”前，请认真阅读本注意事项。
+                </span>
+                <br/>
+                <span class="inline-block margin-bottom-10">1、“企业认证文件”分为：“正式企业认证文件”和“临时企业认证文件”。</span>
+                <br/>
+                <span class="inline-block margin-bottom-10">
+                    2、只有完成了企业认证（企业认证状态为：已认证）的企业获得的企业认证文件为“正式企业认证文件”，否则均为“临时企业认证文件”。用户可在“我的企业-企业设置-企业认证”中查看企业认证的状态信息。状态包括：待审批，已认证，审批不通过。
+                </span>
+                <br/>
+                <span class="inline-block margin-bottom-10">
+                     3、“临时企业认证文件”的有效期为10天。 从成功下载企业认证文件起算时间，10天后到期。 到期时若还未更换为“正式企业认证文件”，将限制产品的使用。
+                </span>
+            </p>
+        </div>
+        <button type="button" class="btn btn-primary pull-right" ng-click="checkDownFile(productId)">确定</button>
+        <a id="downFile" class="hide">
+        </a>
+    </div>
+</div>
+<!--关联老产品弹窗-->
+<div ng-if="handelShowOld=='open'" class="popUpWindow">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeOld()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <form ng-if="response!='true'" role="form"
+              class="smart-wizard ng-pristine ng-valid-maxlength ng-invalid ng-invalid-minlength ng-invalid-required margin-top-30"
+              name="linkOldForm"
+              novalidate="novalidate">
+            <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group"
+                         ng-class="{'has-error':linkOldForm.productCode.$dirty&&linkOldForm.productCode.$invalid}">
+                        <label class="control-label"> 产品条码: </label>
+                        <input type="text"
+                               ng-model="linkOldFormData.productCode"
+                               ng-maxlength="50"
+                               ng-minlength="2"
+                               class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                               id="productCode"
+                               name="productCode"
+                               required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group"
+                         ng-class="{'has-error':linkOldForm.serviceCode.$dirty&&linkOldForm.serviceCode.$invalid}">
+                        <label class="control-label"> 服务识别码: </label>
+                        <input type="text"
+                               ng-model="linkOldFormData.serviceCode"
+                               ng-maxlength="50"
+                               ng-minlength="2"
+                               class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                               id="serviceCode"
+                               name="serviceCode"
+                               required>
+                        <div class="alert alert-danger help-block ng-hide"
+                             ng-show="linkOldForm.productCode.$dirty&&linkOldForm.productCode.$error.minlength&&linkOldForm.serviceCode.$dirty&&linkOldForm.serviceCode.$error.minlength">
+                            您输入的产品条码或服务识别码有误，请重新输入
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left margin-left-30" ng-if="productData.productlineIdUrl!='SCPL76003641373137715300@192.168.8.110:8016'">
+                <p><a href="/onecloud-manager/user_manager/guidePage.html" target="_blank" class="text-underline">如何找到产品条码和服务识别码？</a></p>
+            </div>
+            <div class="pull-right margin-right-30">
+                <button ng-if="clicked == 'true'" class="btn btn-grey btn-sm"
+                        type="button">
+                    确定
+                </button>
+                <button ng-if="clicked == 'false'" class="btn btn-primary btn-sm"
+                        ng-disabled="linkOldForm.$invalid"
+                        ng-click="handleLinkOld()">确定</button>
+                <button class="btn btn-primary btn-sm" ng-click="closeOld()">取消</button>
+            </div>
+        </form>
+        <div class="margin-top-50 text-center" ng-if="response=='true'">
+            {{responseMsg}}
+        </div>
+    </div>
+</div>
+<div ng-if="netError=='true'" class="popUpWindow" id="popUpWindow3">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeOld()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info">
+            警告
+        </div>
+        <div class="margin-top-40 margin-bottom-20 font-16">
+            <p class="text-center" ng-bind="errorMsg"></p>
+        </div>
+    </div>
+</div>
+<!--modal end-->
+<div class="wrap-content" id="container">
+    <!-- start: BREADCRUMB -->
+    <div class="myBreadcrumb-wrapper">
+        <h5 class="pull-left font-16 margin-top-10 margin-left-20">
+            {{detailBusInfoName.name}}
+        </h5>
+         <span class="no-padding pull-right margin-right-20">
+            <a ui-sref="admin.productAdmin">
+                <i class="margin-right-5 text-large text-dark"></i>
+                >>产品管理（{{detailBusInfoName.name}}）
+            </a>
+        </span>
+        <span class="no-padding pull-right">
+            <a ui-sref="myBusiness">
+                <i class="fa fa-building margin-right-5 text-large text-dark"></i>
+               我的企业
+            </a>
+        </span>
+    </div>
+    <!-- end: BREADCRUMB -->
+    <!--begin: table-->
+    <div class="container-fluid container-fullw">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-white">
+                    <div class="panel-heading border-bottom">
+                        <h5 class="over-title margin-bottom-15">
+                            <!--<code>{{detailBusInfoName.name}}</code>-->
+                            产品列表
+                        </h5>
+                        <a ui-sref="myBusiness" class="btn btn-primary button-style" href="/myBusiness">
+                            返回我的企业
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="btn-box">
+                            <div class="row margin-left-10">
+                                <div class="col-md-12">
+                                    <select name="productLine"
+                                            id="productLineId"
+                                            class="form-control width-200 inline-block"
+                                            ng-model="productData.productlineIdUrl">
+                                        <option value="">请选择产品线</option>
+                                        <option ng-repeat="productLine in productLines"
+                                                value="{{productLine.id}}@{{productLine.registerUrl}}">
+                                            {{productLine.name}}
+                                        </option>
+                                    </select>
+                                    <!--<div class="input-group-btn">-->
+                                        <button type="button" class="btn btn-grey margin-left-10 btn-default" ng-if="productData.productlineIdUrl==''">产品注册 </button>
+                                        <button type="button" class="btn btn-primary margin-left-10" ng-if="productData.productlineIdUrl!=''" ui-sref="fastReg" ng-click="newProductReg()">产品注册 </button>
+                                        <button type="button" class="btn btn-grey btn-default margin-left-10" ng-if="productData.productlineIdUrl==''">产品试用 </button>
+                                        <button type="button" class="btn btn-primary margin-left-10"
+                                                ng-if="productData.productlineIdUrl!='' && productData.productlineIdUrl!='SCPL76003641373137715300@192.168.8.110:8016'"
+                                                ui-sref="addProbation" ng-click="newProductReg()">
+                                                产品试用
+                                        </button>
+                                        <!--选项为NC的时候 隐藏产品试用-->
+                                        <button type="button" class="hide" ng-if="productData.productlineIdUrl=='SCPL76003641373137715300@192.168.8.110:8016'"></button>
+                                        <button type="button" class="btn btn-grey btn-default margin-left-10" ng-if="productData.productlineIdUrl==''">关联已有产品 </button>
+                                        <button type="button" class="btn btn-primary margin-left-10" ng-if="productData.productlineIdUrl!=''" ng-click="newProductReg();showOld()">关联已有产品 </button>
+                                    <!--</div>&lt;!&ndash; /btn-group &ndash;&gt;-->
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                        <hr />
+                        <!--datatables-->
+                        <div id="product_list_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="col-sm-12">
+                                <!--<table datatable="" dt-options="app.dtOptions" dt-columns="app.dtColumns" class="row-border hover"></table>-->
+                                <table datatable=""
+                                       dt-options="app.productOptions"
+                                       dt-columns="app.productColumns"
+                                       dt-column-defs="app.productColumnDefs"
+                                       dt-instance="app.dtInstance"
+                                       class="table table-striped table-bordered table-hover table-full-width dataTable no-footer">
+                                </table>
+                                <div ng-if="emptyProduct == 'true'" class="dt-loading ng-scope"><h3>尚未添加任何产品。</h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end: table-->
+</div>
+

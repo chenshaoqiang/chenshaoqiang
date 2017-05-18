@@ -1,0 +1,562 @@
+<div ng-if="openImage=='true'" class="popUpWindow">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-11 col-md-8 col-sm-8 col-lg-4 popUpWindow-check">
+        <div class="form-group">
+            <label>请选择小于5MB的(jpg/png/jpeg/gif)图片! </label>
+            <div class="fileinput fileinput-new"
+                 data-provides="fileinput">
+                <div class="fileinput-new thumbnail"></div>
+                <div class="user-edit-image-buttons">
+                    <span id="someStyle"
+                          class="btn btn-primary btn-file">
+                        <span class="fileinput-new">
+                            <i class="fa fa-picture"></i>
+                            选择图片
+                        </span>
+                        <span class="fileinput-exists">
+                            <i class="fa fa-picture"></i>
+                            修改
+                        </span>
+                        <input type="file"
+                               id="cropperFileSelect"
+                               ng-click="clearItems()"
+                               nvfileselect
+                               uploader="busLogUploader"/>
+                    </span>
+                </div>
+            </div>
+            <!--<div class="preview-container">
+                &lt;!&ndash;src="{{addformData.logoUrl}}"&ndash;&gt;
+                <div class="image-container target"
+                     cropper="avatar"
+                     cropper-context="cropContext">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         class="noavatar" />
+                    <p>原图效果</p>
+                </div>
+                <div class="large-wrapper">
+                    <div class="image-container large"
+                         cropper-preview="avatar">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             class="noavatar" />
+                    </div>
+                    <p>裁切结果</p>
+                </div>
+            </div>
+            <button class="btn btn-blue"
+                    ng-click="handelImageInfo()">
+                <i class="fa fa-picture"></i>
+                上传
+            </button>-->
+            <div class="alert alert-success help-block"
+                 ng-if="LogUpSuccess=='true'">
+                <img ng-src="{{addformData.logoUrl}}" alt="LOGO"
+                     style="width: 200px;height: auto;display: block"/>
+            </div>
+            <div class="alert alert-danger help-block"
+                 ng-if="LogoImgError==true">
+                <p>{{LogoImgErrorInfo}}</p>
+            </div>
+            <div class="alert alert-success help-block"
+                 ng-if="LogoUpIsReady==true">
+                <p>图片上传中...</p>
+            </div>
+            <div class="alert alert-success help-block"
+                 ng-if="LogUpSuccess=='true'">
+                <p>图片已上传！</p>
+            </div>
+            <div class="alert alert-danger help-block"
+                 ng-if="nullMessage=='true'">
+                <p>当前图片已上传或为空,请选择图片!</p>
+            </div>
+            <div class="alert alert-danger help-block"
+                 ng-if="LogUpSuccess=='false'">
+                <p>{{errorMessage}}</p>
+            </div>
+        </div>
+        <button class="btn btn-blue pull-right"
+                ng-click="closeImageCutArea()">
+            <i class="fa fa-picture"></i>
+            退出
+        </button>
+    </div>
+</div>
+<div ng-if="formSendFail==true"
+     class="popUpWindow">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="popUpWindow-check2 col-xs-10 col-md-6 col-sm-6 col-lg-4">
+        <div class="text-style bgandcolor alert alert-info">
+            <p>提交失败:</p>
+            <p>{{formSendFailInfo}}</p>
+        </div>
+        <ul>
+            <li>
+                <a ng-click="FormBoxClose()"
+                   class="btn center-block btn-default btn-wide margin-top-20">
+                    确定
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-12 margin-10">
+    <div class="panel panel-white">
+        <div class="panel-body">
+            <div class="row">
+                <div class="bgandcolor swMain">
+                    <!-- start: WIZARD SEPS 对应类名：selected和done-->
+                    <ul>
+                        <li>
+                            <a id="addBusinessStep1"
+                               ui-sref="addBusiness.step1"
+                               class="selected">
+                                <div class="stepNumber">1</div>
+                                <span class="stepDesc">
+                                    <small> 1.企业信息填写 </small>
+                                </span>
+                            </a>
+                        </li>
+                        <!--<li>
+                            <a id="addBusinessStep2" href="javascript:;">
+                                <div class="stepNumber">2</div>
+                                <span class="stepDesc">
+                                    <small> 2.认证信息填写 </small>
+                                </span>
+                            </a>
+                        </li>-->
+                        <li>
+                            <a id="addBusinessStep3" href="javascript:;">
+                                <div class="stepNumber">2</div>
+                                <span class="stepDesc">
+                                    <small> 2.完成 </small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bgandcolor alert alert-danger-style">
+                    请填写以下信息(带*选项请您务必填写)
+                </div>
+                <form role="form"
+                      class="smart-wizard"
+                      name="addform"
+                      novalidate="novalidate"
+                      id="stepFrom1">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="panel panel-white">
+                            <div class="panel-body">
+                                <h4 style="font-weight: 600;font-size: 14px;">基础信息</h4>
+                                <div class="form-group"  ng-class="{'has-error':addform.name.$dirty && addform.name.$invalid}">
+                                    <span class="symbol required"></span>
+                                    <label for="businessName">
+                                        企业名称:
+                                        <span class="alert-danger-style"
+                                              ng-show="nameIsUndefined">
+                                            (此为必填项)
+                                        </span>
+                                    </label>
+                                    <input id="businessName"
+                                           name="name"
+                                           ng-minlength="1"
+                                           ng-maxlength="200"
+                                           required
+                                           ng-model="addformData.name"
+                                           placehold="200个字符以内"
+                                           class="form-control"
+                                           type="text"/>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.name.$dirty&&addform.name.$error.minlength">
+                                        企业名称最小长度为1字符
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.name.$dirty&&addform.name.$error.maxlength">
+                                        企业名称最大长度为200字符
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        <span class="symbol required"></span>
+                                        企业类型:
+                                        <span>(请先确定您所创建的企业类型)</span>
+                            <span class="alert-danger-style"
+                                  ng-show="typeIsUndefined">
+                                (此为必选项)
+                            </span>
+                                    </label>
+                                    <div class="clip-radio radio-primary">
+                                        <input  class="radio-input-dis"
+                                                ng-model="addformData.type"
+                                                type="radio"
+                                                value="法人企业"
+                                                name="businessType"
+                                                id="legalPerson"
+                                                required/>
+                                        <label for="legalPerson"> 法人企业 </label>
+                                        <input class="radio-input-dis"
+                                               ng-model="addformData.type"
+                                               type="radio"
+                                               value="个体工商户"
+                                               name="businessType"
+                                               id="individualBusiness"
+                                               required/>
+                                        <label for="individualBusiness"> 个体工商户 </label>
+                                        <input class="radio-input-dis"
+                                               ng-model="addformData.type"
+                                               type="radio"
+                                               value="个人企业"
+                                               name="businessType"
+                                               id="personBusiness"
+                                               required/>
+                                        <label for="personBusiness"> 个人企业 </label>
+                                        <input class="radio-input-dis"
+                                               ng-model="addformData.type"
+                                               type="radio"
+                                               value="其他"
+                                               name="businessType"
+                                               id="otherBusiness"
+                                               required/>
+                                        <label for="otherBusiness"> 其他 </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <!--<div style="width:50%;float: left"
+                                         class="border-right">
+                                        <label class="control-label">
+                                            <span class="symbol required"></span>
+                                            是否虚拟企业:
+                                    <span class="alert-danger-style"
+                                          ng-show="virtualIsUndefined">
+                                        (此为必选项)
+                                    </span>
+                                        </label>
+                                        <div class="clip-radio radio-primary">
+                                            <input  class="radio-input-dis"
+                                                    ng-model="addformData.virtual"
+                                                    type="radio"
+                                                    value="1"
+                                                    name="virBus"
+                                                    id="isVirBus"
+                                                    required/>
+                                            <label for="isVirBus"> 是 </label>
+                                            <input class="radio-input-dis"
+                                                   ng-model="addformData.virtual"
+                                                   type="radio"
+                                                   value="0"
+                                                   name="virBus"
+                                                   id="isNotVirBus"
+                                                   ng-checked="true"
+                                                   required/>
+                                            <label for="isNotVirBus"> 否 </label>
+                                        </div>
+                                    </div>-->
+                                    <label class="control-label">
+                                        <span class="symbol required"></span>
+                                        是否用友商业伙伴:
+                                        <span class="alert-danger-style"
+                                            ng-show="partnerIsUndefined">
+                                            (此为必选项)
+                                        </span>
+                                    </label>
+                                    <div class="clip-radio radio-primary">
+                                        <input  class="radio-input-dis"
+                                                ng-model="addformData.partner"
+                                                type="radio"
+                                                value="1"
+                                                name="YonPar"
+                                                id="isYonPar"
+                                                required/>
+                                        <label for="isYonPar"> 是 </label>
+                                        <input class="radio-input-dis"
+                                               ng-model="addformData.partner"
+                                               type="radio"
+                                               value="0"
+                                               name="YonPar"
+                                               id="isNotYonPar"
+                                               required/>
+                                        <label for="isNotYonPar"> 否 </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>企业LOGO:请选择小于5MB的(jpg/png/jpeg/gif)图片! </label>
+                                    <span class="btn btn-primary"
+                                          ng-click="openImageCutArea()">
+                                        <i class="fa fa-picture"></i>
+                                        选择图片
+                                    </span>
+                                    <div class="alert alert-success help-block"
+                                         ng-if="LogUpSuccess=='true'">
+                                        <img ng-src="{{addformData.logoUrl}}" alt="LOGO"
+                                             style="width: 200px;height: auto;display: block"/>
+                                        <p>图片已上传！</p>
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-if="LogUpSuccess=='false'">
+                                        <p>{{errorMessage}}</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                            <span class="symbol required"></span>
+                                            <label>
+                                                企业地址:
+                                                <span class="alert-danger-style"
+                                                      ng-show="ProvinceIsUndefined">
+                                                        (省/市/县/详细地址请选填完整)
+                                                </span>
+                                                <span class="alert-danger-style"
+                                                      ng-show="(!ProvinceIsUndefined)&&(CityIsUndefined)">
+                                                        (市/县/详细地址请选填完整)
+                                                </span>
+                                                <span class="alert-danger-style"
+                                                      ng-show="(!ProvinceIsUndefined)&&(!CityIsUndefined)&&(CountyIsUndefined)">
+                                                        (县/详细地址请选填完整)
+                                                </span>
+                                                <span class="alert-danger-style"
+                                                      ng-show="(!ProvinceIsUndefined)&&(!CityIsUndefined)&&(!CountyIsUndefined)&&(addressIsUndefined)">
+                                                        (详细地址请填完整)
+                                                </span>
+                                            </label>
+                                            <div class="row padding-right-5">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <select class="form-control"
+                                                            name="Province"
+                                                            ng-model="addformData.Province"
+                                                            ng-change="getDetailCityName()"
+                                                            required>
+                                                        <option value="">所在省/直辖市</option>
+                                                        <option ng-repeat="Province in Provinces"
+                                                                value="{{Province.id}}">
+                                                            {{Province.name}}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div ng-if="showCity=='true'"
+                                                     class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <select class="form-control"
+                                                            name="City"
+                                                            ng-model="addformData.City"
+                                                            ng-change="getDetailCountyName()"
+                                                            required>
+                                                        <option value="">所在市/区</option>
+                                                        <option ng-repeat="City in Cities"
+                                                                value="{{City.id}}">
+                                                            {{City.name}}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div ng-if="showCounty=='true'"
+                                                     class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                    <select class="form-control"
+                                                            name="County"
+                                                            ng-model="addformData.County"
+                                                            required>
+                                                        <option value="">所在县/街道</option>
+                                                        <option ng-repeat="County in Counties"
+                                                                value="{{County.id}}">
+                                                            {{County.name}}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="margin-top-10 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                                     ng-class="{'has-error':addform.address.$dirty && addform.address.$invalid}">
+                                                    <input type="text"
+                                                           name="address"
+                                                           ng-minlength="1"
+                                                           ng-maxlength="200"
+                                                           ng-model="addformData.address"
+                                                           class="form-control"
+                                                           id="businessAddress"
+                                                           placehold="详细地址"/>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-danger help-block"
+                                                 ng-show="addform.address.$dirty&&addform.address.$error.minlength">
+                                                详细地址最小长度为1字符
+                                            </div>
+                                            <div class="alert alert-danger help-block"
+                                                 ng-show="addform.address.$dirty&&addform.address.$error.maxlength">
+                                                详细地址最大长度为200字符
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <span class="symbol required"></span>
+                                            <label>
+                                                企业规模:
+                                                <span class="alert-danger-style"
+                                                      ng-show="scaleIsUndefined">
+                                                    (此为必选项)
+                                                </span>
+                                            </label>
+                                            <select class="form-control"
+                                                    name="scale"
+                                                    ng-model="addformData.scale"
+                                                    required>
+                                                <option value="">请确认企业规模</option>
+                                                <option>1-10人</option>
+                                                <option>10-100人</option>
+                                                <option>100-500人</option>
+                                                <option>500-1000人</option>
+                                                <option>1000人以上</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{'has-error':addform.pid.$dirty && addform.pid.$invalid}">
+                                    <label for="HigherUnit">上级企业:</label>
+                                    <input type="text"
+                                           name="pid"
+                                           ng-minlength="1"
+                                           ng-maxlength="200"
+                                           ng-model="addformData.pid"
+                                           class="form-control"
+                                           id="HigherUnit"
+                                           placehold="上级企业名称，200个字符以内"/>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.pid.$dirty&&addform.pid.$error.minlength">
+                                        最小长度为1字符
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.pid.$dirty&&addform.pid.$error.maxlength">
+                                        最大长度为200字符
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="symbol required"></span>
+                                    <label>
+                                        所属行业:
+                                        <span class="alert-danger-style"
+                                              ng-show="professionIsUndefined">
+                                            (此为必选项)
+                                        </span>
+                                    </label>
+                                    <select class="form-control"
+                                            name="profession"
+                                            ng-model="addformData.profession"
+                                            required>
+                                        <option value="">请选择企业类型</option>
+                                        <option ng-repeat="profession in professions"
+                                                value="{{profession.id}}">
+                                            {{profession.text}}
+                                        </option>
+                                    </select>
+                                    <div class="alert alert-danger help-block"
+                                         ng-if="getMyBusTypeError=='true'">
+                                        请求系统的企业类型信息出错,请检查网络！
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="panel panel-white">
+                            <div class="panel-body">
+                                <h4 style="font-weight: 600;font-size: 14px;">联系人信息</h4>
+                                <div class="form-group"
+                                     ng-class="{'has-error':addform.userName.$dirty && addform.userName.$invalid}">
+                                    <span class="symbol required"></span>
+                                    <label for="businessUserName">
+                                        联系人名称:
+                                        <span class="alert-danger-style"
+                                              ng-show="linkmanIsUndefined">
+                                            (此为必填项)
+                                        </span>
+                                    </label>
+                                    <input type="text"
+                                           name="userName"
+                                           ng-minlength="1"
+                                           ng-maxlength="10"
+                                           ng-model="addformData.linkman"
+                                           class="form-control"
+                                           id="businessUserName"
+                                           placehold="10个字符以内"
+                                           required/>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userName.$dirty&&addform.userName.$error.minlength">
+                                        要求最小长度为1字符
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userName.$dirty&&addform.userName.$error.maxlength">
+                                        要求最大长度为10字符
+                                    </div>
+                                </div>
+                                <div class="form-group"
+                                     ng-class="{'has-error':addform.userTel.$dirty && addform.userTel.$invalid}">
+                                    <span class="symbol required"></span>
+                                    <label for="businessUserTel">
+                                        联系人手机:
+                                        <span class="alert-danger-style"
+                                              ng-show="phoneIsUndefined">
+                                            (此为必填项)
+                                        </span>
+                                    </label>
+                                    <input type="text"
+                                           name="userTel"
+                                           ng-minlength="11"
+                                           ng-maxlength="11"
+                                           ng-pattern="/^1[3|4|5|7|8]\d{9}$/"
+                                           ng-model="addformData.phone"
+                                           class="form-control"
+                                           id="businessUserTel"
+                                           placehold="以1开头的11位数字"
+                                           required/>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userTel.$dirty && addform.userTel.$invalid">
+                                        格式错误,请输入有效手机号码
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userTel.$dirty && addform.userTel.$error.minlength">
+                                        手机号码需长度为11字符,位数不正确
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userTel.$dirty && addform.userTel.$error.maxlength">
+                                        手机号码需长度为11字符,已经超出
+                                    </div>
+                                </div>
+                                <div class="form-group"
+                                     ng-class="{'has-error':addform.userEmai.$dirty && addform.userEmai.$invalid}">
+                                    <label for="businessUserEmail">用户邮箱:</label>
+                                    <input type="text"
+                                           name="userEmai"
+                                           ng-model="addformData.email"
+                                           class="form-control"
+                                           id="businessUserEmail"
+                                           placehold="带有@及.cn,.net,.com等后缀的有效邮箱"/>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="addform.userEmai.$dirty && addform.userEmai.$invalid">
+                                        格式错误,请输入有效邮箱
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row margin-bottom-30">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <button type="button"
+                                            class="margin-top-20  btn btn-primary btn-squared btn-sm form-control"
+                                            ng-click="reset()">
+                                        重置
+                                    </button>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <button ng-if="clicked == 'true'"
+                                            type="button"
+                                            class="margin-top-20 btn btn-grey form-control">
+                                        下一步
+                                    </button>
+                                    <button ng-if="clicked == 'false'"
+                                            type="button"
+                                            class="margin-top-20 btn btn-primary form-control"
+                                            ng-click="processAddForm()">
+                                        下一步
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

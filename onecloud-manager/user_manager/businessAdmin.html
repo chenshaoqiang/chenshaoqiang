@@ -1,0 +1,291 @@
+<div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a ui-sref="businessAdmin">
+            >>
+            <i class="margin-right-5 text-large text-dark"></i>
+            企业设置
+        </a>
+    </span>
+    <span class="no-padding pull-right">
+        <a ui-sref="myBusiness">
+            <i class="fa fa-building margin-right-5 text-large text-dark"></i>
+            我的企业
+        </a>
+    </span>
+</div>
+<div class="container-fluid container-fullw">
+    <!--获取企业信息失败后的弹出提示-->
+    <div ng-if="getCompanyInfoError==true"
+         class="popUpWindow">
+        <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+        <div class="popUpWindow-check2 col-xs-10 col-md-4 col-sm-4 col-lg-2">
+            <div class="text-style bgandcolor alert alert-info">
+                获取企业资料失败！
+            </div>
+            <ul>
+                <li>
+                    <a ng-click="tryAgain()"
+                       class="btn btn-default btn-sm margin-top-20 pull-left">
+                        重试
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="myBusiness"
+                       class="btn btn-default btn-sm margin-top-20 pull-right">
+                        取消
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--修改成功后的弹出提示-->
+    <div ng-if="baseFormDataSend=='true'"
+         class="popUpWindow">
+        <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+        <div class="popUpWindow-check2 col-xs-10 col-md-6 col-sm-6 col-lg-4">
+            <div class="text-style bgandcolor alert alert-info">
+                修改成功。
+            </div>
+            <ul>
+                <li>
+                    <a ng-click="baseFormDataSendBoxClose()"
+                       class="btn center-block btn-default btn-wide margin-top-20">
+                        确定
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--修改失败后的弹出提示-->
+    <div ng-if="updateFormSendFail==true"
+         class="popUpWindow">
+        <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+        <div class="popUpWindow-check2 col-xs-10 col-md-6 col-sm-6 col-lg-4">
+            <div class="text-style bgandcolor alert alert-info">
+                <p>提交失败!</p>
+            </div>
+            <div class="alert alert-danger">
+                <p style="text-align: center">{{updateFormSendFailInfo}}</p>
+            </div>
+            <ul>
+                <li>
+                    <a ng-click="FormBoxClose()"
+                       class="btn center-block btn-default btn-wide margin-top-20">
+                        确定
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="tabbable">
+                <div>
+                    <div class="col-sm-5 col-md-4">
+                        <div class="user-left">
+                            <div class="center">
+                                <form>
+                                    <div class="fileinput fileinput-new"
+                                         data-provides="fileinput">
+                                        <div class="user-image">
+                                            <img ng-src="{{detailBusInfo.logoUrl}}"
+                                                 style="width: 200px;height: auto;display: block"
+                                                 alt="{{detailBusInfo.name}}">
+                                            <div ng-if="detailBusInfo.logoUrl==null||detailBusInfo.logoUrl==''"
+                                                 class="fileinput-new thumbnail">
+                                                <img src="assets/images/portfolio/image01_th.jpg"
+                                                     alt="默认图像">
+                                            </div>
+                                            <!--<div class="fileinput-preview fileinput-exists thumbnail"></div>-->
+                                            <div class="user-image-buttons">
+													<span class="btn btn-primary btn-file btn-sm">
+														<span class="fileinput-new">
+															<i class="fa fa-pencil"></i>
+														</span>
+														<span class="fileinput-exists">
+															<i class="fa fa-pencil"></i>
+														</span>
+														<input type="file"
+                                                               ng-click="clearItems()"
+                                                               nvfileselect
+                                                               uploader="logoUpdateUploader"
+                                                               ng-model="businessImg"/>
+													</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="alert">
+                                    <p>点击铅笔图标修改企业LOGO</p>
+                                </div>
+                                <div class="alert alert-success"
+                                     ng-show="LogoUpIsReady">
+                                    <p>图片上传中...</p>
+                                </div>
+                                <div class="alert alert-danger"
+                                     ng-show="LogoImgError">
+                                    <p>{{LogoImgErrorInfo}}</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <table class="table table-condensed">
+                                <thead>
+                                <tr>
+                                    <th colspan="3">基础信息</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>企业名称：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.name"
+                                           title="{{detailBusInfo.name}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td>是否虚拟企业：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.showVirtual"
+                                           title="{{detailBusInfo.showVirtual}}">
+                                        </p>
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td>是否用友商业伙伴：</td>
+                                    <td ng-bind="detailBusInfo.showPartner"></td>
+                                </tr>
+                                <tr>
+                                    <td>企业类型：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.type"
+                                           title="{{detailBusInfo.type}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>所属行业：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.showProfession"
+                                           title="{{detailBusInfo.showProfession}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>企业地址：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.address"
+                                           title="{{detailBusInfo.address}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>企业规模：</td>
+                                    <td ng-bind="detailBusInfo.scale"></td>
+                                </tr>
+                                <tr>
+                                    <td>上级企业：</td>
+                                    <td ng-if="detailBusInfo.pid!=null">
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.pid"
+                                           title="{{detailBusInfo.pid}}">
+                                        </p>
+                                    </td>
+                                    <td ng-if="detailBusInfo.pid==null">
+                                        <p class="text-style-p"
+                                           title="{{detailBusInfo.pid}}">
+                                            尚未填写上级企业信息
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th colspan="3">联系人信息</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>姓名：</td>
+                                    <td>
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.linkman"
+                                           title="{{detailBusInfo.linkman}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：</td>
+                                    <td ng-if="detailBusInfo.email==null">
+                                        尚未填写邮箱信息
+                                    </td>
+                                    <td ng-if="detailBusInfo.email==''">
+                                        尚未填写邮箱信息
+                                    </td>
+                                    <td ng-if="detailBusInfo.email!=null">
+                                        <p class="text-style-p"
+                                           ng-bind="detailBusInfo.email"
+                                           title="{{detailBusInfo.email}}">
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>手机：</td>
+                                    <td ng-if="detailBusInfo.phone==null"
+                                        ng-bind="isNull">
+                                    </td>
+                                    <td ng-if="detailBusInfo.phone!=null"
+                                        ng-bind="detailBusInfo.phone">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th colspan="3">认证信息</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td ng-bind="detailBusInfo.showIdentity"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8">
+                        <ul class="nav nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+                            <li ng-class="{'active':isClickNode}"
+                                ng-click="isClickNode=true">
+                                <a id="dashboard"
+                                   ui-sref="businessAdmin.modify"> 修改资料 </a>
+                            </li>
+                            <li ng-class="{'active':!isClickNode}"
+                                ng-click="isClickNode=false">
+                                <a id="rewriteInfo"
+                                   ui-sref="businessAdmin.auth"> 企业认证 </a>
+                            </li>
+                            <!--<li>
+                                <a data-toggle="tab"
+                                   id="manager" href="../index.html#/setting#panel_change"> 转让企业 </a>
+                            </li>-->
+                        </ul>
+                        <a ui-sref="myBusiness"
+                           class="btn btn-primary button-style">
+                            返回我的企业
+                        </a>
+                        <div class="tab-content" ui-view=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

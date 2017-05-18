@@ -1,0 +1,492 @@
+<!--modal begin-->
+<div class="modal fade"
+	 id="noticeModal"
+	 tabindex="-1"
+	 role="dialog"
+	 aria-labelledby="myModalLabel"
+	 aria-hidden="true">
+	<form role="form" class="smart-wizard" name="" novalidate="novalidate">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only"
+							  ng-click="closeNotice()">
+							Close
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-white">
+						<div class="panel-heading panel-default">
+							<p class="panel-title"
+							   style="text-align: center"
+							   ng-bind="showNoticeTitle"></p>
+						</div>
+						<div class="panel-body" style="overflow: auto">
+							<p class="panel-title font-16"
+							   id="currentNotices"
+							   ng-bind="detailMessageContent"></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button"
+							class="btn btn-default"
+							ng-click="closeNotice()"
+							data-dismiss="modal">
+						关闭
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<!--
+<div ng-if="handelShowNotice=='open'" class="popUpWindow">
+	<div class="col-xs-10 col-md-8 col-sm-8 col-lg-8 col-lg-push-2 col-md-push-2 col-sm-push-2 col-xs-push-1 popUpWindow-check">
+		<ul>
+			<li>
+				<a ng-click="closeNotice()" class="btn btn-danger btn-xs pull-right fr">
+					X
+				</a>
+			</li>
+		</ul>
+		<div class="text-style bgandcolor alert-info"
+			 ng-bind="showNoticeTitle"
+			 title="{{showNoticeTitle}}">
+		</div>
+		<div class="margin-top-20 font-16"
+			 id="currentNotices"></div>
+	</div>
+</div>
+-->
+<!--导航弹窗-->
+<div ng-if="showguidemotal=='open'" class="popUpWindow" id="showEnterprice">
+	<div class="col-xs-10 col-md-8 col-sm-8 col-lg-8 col-lg-push-2 col-md-push-2 col-sm-push-1 col-xs-push-1 no_padding popUpWindow-check window_width"
+		 style="margin-top: -260px;">
+		<ul>
+			<li>
+				<a ng-click="closeEnterprice()" class="btn btn-default btn-large pull-right fr glyphicon glyphicon-remove modal_close">
+				</a>
+			</li>
+		</ul>
+		<div id="motaltitles" class="modal_title">{{motal_config.motal_title}}</div>
+
+		<div class="modal_content" ng-if="motal_config.motal_novalue == true">
+			{{motal_config.motal_message}}
+		</div>
+		<div class="modal_content" ng-if="motal_config.motal_enterprice== true">
+			<div class="item_suggestion">
+				<h4 class="text-center margin-right-30">{{motal_config.motal_message}}</h4>
+			</div>
+			<div class="enterprice_wrap">
+				<div class="enterprice_item" ng-repeat="enterprice in myenterprice"  ng-style="{'background-image':'url({{enterprice.url || 'assets/images/portfolio/image01_th.jpg'}})'}"  ng-click="showProcudt(enterprice.id,enterprice.name)">
+					<p><span>{{enterprice.name}}</span></p>
+				</div>
+			</div>
+			<span class="left_scroll_btn" ng-class="{false:'left_scroll_btn_disable',true:'left_scroll_btn_use'}[motal_config.enterleftctrl]" ng-click="showEnterpriccPre()"></span>
+			<span class="right_scroll_btn" ng-class="{false:'right_scroll_btn_disable',true:'right_scroll_btn_use'}[motal_config.enterrightctrl]" ng-click="showEnterpriccNext()"></span>
+		</div>
+		<div class="modal_content" ng-if="motal_config.motal_createproduct == true">
+			<div class="product_line" id="productlies">
+				<span>产品线：</span>
+				<select class="form-control" id="productline_select">
+					<option value="{{lines.id}}@{{lines.registerUrl}}" ng-repeat="lines in productlines">{{lines.name}}</option>
+				</select>
+			</div>
+			<div class="function_item">
+				<div class="caption_item">
+					<label class="col-sm-8 text-right">您要注册激活用友集团正式发售的产品</label>
+					<button class="btn btn-info" ng-click="RegisterNewProduct()" ui-sref="fastReg">产品注册</button>
+				</div>
+				<div class="caption_item">
+					<label class="col-sm-8 text-right">在用的已注册激活的产品，您要做企业认证、用户激活业务</label>
+					<button class="btn btn-success" ng-click="linkOldProduct()">关联已有产品</button>
+				</div>
+				<div class="caption_item">
+					<label class="col-sm-8 text-right">您想试用、体验用友集团产品</label>
+					<button class="btn btn-danger" ui-sref="addProbation" ng-click="RegisterNewProduct()">产品试用</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal_content" ng-if="motal_config.motal_product ==true">
+			<div class="item_suggestion">
+				<h4 class="text-center margin-right-30">{{motal_config.motal_message}}</h4>
+			</div>
+			<div class="enterprice_wrap">
+				<div class="product_item" ng-repeat="product in products" ng-click="gotoInstance(product.id,product.productlineCode)" title="{{product.remark}}">
+					<img ng-if="product.productlineCode=='nc'" src="assets/images/NC.png" />
+					<img ng-if="product.productlineCode=='U8'" src="assets/images/U8.png" />
+					<p>{{product.productName}}<span ng-if="product.remark != '' && product.remark != null ">({{product.remark|limitTo:10}})</span></p>
+					<button class="btn btn-danger btn-xs btn_instance" ui-sref="admin.userAdmin" ng-click="handleProductId(product.id,product.productlineCode)" ng-if="noosmanage==false">数据源管理</button>
+					<div class="btn-group dropup btn_download" ng-if="noosmanage==false">
+						<button type="button" class="btn btn-info btn-xs dropdown-toggle padding-left-0 padding-right-0" data-toggle="dropdown">
+							    下载文件 <span class="caret"></span>
+							    <div  class="need-down" ng-class="{true:'ng-hide'}[product.downloadFlag==0]">
+								</div>
+							  </button>
+						<ul class="dropdown-menu" role="menu">
+							<li class="down">
+								<a ng-click="handleNoticeOpen(product.id,product.productlineCode)">下载企业认证文件</a>
+								<div  class="need-down" ng-class="{true:'ng-hide'}[product.downloadFlag==0]">
+								</div>
+							</li>
+							<li class="down " ng-if="product.lisenceFlag == 0" >
+								<a href="/onecloud-manager/instanceuser/download/config?productId={{productId}}" ng-click="handleNoticeOpen(product.id)">下载产品许可文件</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<span class="left_scroll_btn" ng-class="{false:'left_scroll_btn_disable',true:'left_scroll_btn_use'}[motal_config.prdleftctr]" ng-click="showProductPre()"></span>
+			<span class="right_scroll_btn" ng-class="{false:'right_scroll_btn_disable',true:'right_scroll_btn_use'}[motal_config.prdrightctr]" ng-click="showProductNext()"></span>
+		</div>
+
+		<a class="btn btn-info btn-lg btn_createenterprice" ui-sref="addBusiness.step1" ng-click="changeCssStyl()" ng-if="motal_config.motal_createenterprice_btn == true">创建企业</a>
+		<a class="btn btn-info btn-lg btn_createenterprice" ng-click="create_product()" ng-if="motal_config.motal_createproduct_btn == true">创建产品</a>
+	</div>
+</div>
+<!--下载内容-->
+<div ng-if="handelUserNotice=='open'" class="popUpWindow">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeDownLoad()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+		<div class="text-style bgandcolor alert-info font-16">
+			注意事项
+		</div>
+		<div class="margin-top-20">
+			<p class="font-12">
+				<code ng-if="productlineCode=='nc'">用友网络科技股份有限公司</code>
+				<code ng-if="productlineCode=='U8'">用友优普信息技术有限公司</code>
+				<br/>
+                <span class="inline-block margin-top-10 margin-bottom-10">
+                    在此特别提醒您（用户）：在下载“企业认证文件”前，请认真阅读本注意事项。
+                </span>
+				<br/>
+				<span class="inline-block margin-bottom-10">1、“企业认证文件”分为：“正式企业认证文件”和“临时企业认证文件”。</span>
+				<br/>
+                <span class="inline-block margin-bottom-10">
+                    2、只有完成了企业认证（企业认证状态为：已认证）的企业获得的企业认证文件为“正式企业认证文件”，否则均为“临时企业认证文件”。用户可在“我的企业-企业设置-企业认证”中查看企业认证的状态信息。状态包括：待审批，已认证，审批不通过。
+                </span>
+				<br/>
+                <span class="inline-block margin-bottom-10">
+                     3、“临时企业认证文件”的有效期为10天。 从成功下载企业认证文件起算时间，10天后到期。 到期时若还未更换为“正式企业认证文件”，将限制U8产品的使用。
+                </span>
+			</p>
+		</div>
+		<button type="button" class="btn btn-primary pull-right" ng-click="checkDownFile(productId)">确定</button>
+		<a id="downFile" class="hide">
+		</a>
+    </div>
+</div>
+<div ng-if="netError=='true'" class="popUpWindow" id="popUpWindow3">
+	<div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+	<div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+		<ul>
+			<li>
+				<a ng-click="closeOld()"
+				   class="btn btn-default btn-xs pull-right fr">
+					X
+				</a>
+			</li>
+		</ul>
+		<div class="text-style bgandcolor alert-info">
+			警告
+		</div>
+		<div class="margin-top-40 margin-bottom-20 font-16">
+			<p class="text-center" ng-bind="errorMsg"></p>
+		</div>
+	</div>
+</div>
+<div class="wrap-content" id="container">
+	<!-- start: BREADCRUMB -->
+	<div class="myBreadcrumb-wrapper">
+		<span class="no-padding pull-right margin-right-20">
+			<a href="#/main">
+				<i class="fa fa-home margin-right-5 text-large text-dark"></i>
+				首页
+			</a>
+		</span>
+	</div>
+	<!-- end: BREADCRUMB -->
+	<!-- start: 系统公告 -->
+	<div class="container-fluid container-fullw padding-bottom-10">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-style" style="background:#58748b;">
+				<div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 no-padding">
+					<div class="alert-style">
+						<i class="fa fa-bullhorn"></i>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 no-padding">
+					<div class="alert-style" ng-if="noticesListNull==false">
+						<span>
+							暂无系统公告。
+						</span>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-if="noticesList[0].count==1">
+						<div class="alert-style text-style-h">
+							<span ng-click="showNotice(noticesList[0])"
+								  data-toggle="modal"
+								  data-target="#noticeModal">
+								{{noticesList[0].count}} .&nbsp; {{noticesList[0].title}}
+							</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-if="noticesList[1].count==2">
+						<div class="alert-style text-style-h">
+							<span ng-click="showNotice(noticesList[1])"
+								  data-toggle="modal"
+								  data-target="#noticeModal">
+								{{noticesList[1].count}} .&nbsp; {{noticesList[1].title}}
+							</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-if="noticesList[2].count==3">
+						<div class="alert-style text-style-h">
+							<span ng-click="showNotice(noticesList[2])"
+								  data-toggle="modal"
+								  data-target="#noticeModal">
+								{{noticesList[2].count}} .&nbsp; {{noticesList[2].title}}
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: 系统公告 -->
+	<!-- start: 快捷通道 -->
+	<div class="container-fluid container-fullw padding-bottom-10 panel-kjtd" id="mask_fastmenu">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<div class="panel panel-white">
+					<div class="panel-heading border-bottom">
+						<h4 class="panel-title">智能引导区</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row" style="padding-left: 10%;">
+							<div class="col-lg-3 col-xs-4">
+								<ul class="media-list margin-top-15">
+									<li class="media margin-bottom-30" >
+										<div class="media-left">
+											<i class="glqy" ng-click="showEnterpriceModal('osenter')"></i>
+										</div>
+										<div class="media-body ">
+											<h5 class="media-heading processarrow">
+												
+											</h5>
+										</div>
+										<a class="step_name" ng-click="showEnterpriceModal('osenter')">企业管理</a>
+										<div class="step_icon">1</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-xs-4">
+								<ul class="media-list margin-top-15">
+									<li class="media margin-bottom-30" >
+										<div class="media-left">
+											<i class="cpgl" ng-click="showEnterpriceModal()"></i>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading processarrow">
+												
+											</h5>
+										</div>
+										<a class="step_name" ng-click="showEnterpriceModal()">产品管理</a>
+										<div class="step_icon" style="background-color: #5377FC;">2</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-xs-4">
+								<ul class="media-list margin-top-15">
+									<li class="media margin-bottom-30" >
+										<div class="media-left">
+											<i class="qyrz" ng-click="showEnterpriceModal('ossetent')"></i>
+										</div>
+										<div class="media-body">
+											<h5 class="media-heading processarrow">
+												
+											</h5>
+										</div>
+										<a  class="step_name" ng-click="showEnterpriceModal('ossetent')">企业认证</a>
+										<div class="step_icon" style="background-color: #7E57C2;">3</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-xs-4">
+								<ul class="media-list margin-top-15">
+									<li class="media margin-bottom-30" >
+										<div class="media-left">
+											<i class="glyh" ng-click="showEnterpriceModal('osmanager')"></i>
+										</div>
+										<a class="step_name" ng-click="showEnterpriceModal('osmanager')">管理用户</a>
+										<div class="step_icon" style="background-color: #8BC34A;">4</div>
+									</li>
+								</ul>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: 快捷通道 -->
+	<!-- start: 企业 -->
+	<div class="container-fluid container-fullw padding-bottom-10">
+		<div class="row">
+			<div class="col-md-6 col-lg-6" id="mask_myenterprice">
+				<div class="panel panel-white no-radius" id="panelsocial">
+					<div class="panel-heading border-light">
+						<h4 class="panel-title">我管理的企业</h4>
+						<div class="panel-tools">
+							<a data-original-title="收起" data-toggle="tooltip" data-placement="top" data-trigger="hover" class="btn btn-transparent btn-sm panel-collapse" href="../index.html#"><i class="ti-minus collapse-off"></i><i class="ti-plus collapse-on"></i></a>
+						</div>
+					</div>
+					<div class="panel-wrapper">
+						<div class="panel-body no-padding">
+							<div class="list-group">
+								<span class="dropdown-header"
+									  ng-if="myBusinessAmount==0"
+									  style="text-align: center;margin-bottom: 10px">
+									当前企业列表为空
+								</span>
+								<a class="list-group-item"
+								   ng-repeat="Business in myBusiness.data.list"
+								   data-content="我的企业"
+								   ui-sref="admin.productAdmin"
+								   ng-click="goToProductTap(Business.id)">
+									<div class="lettericon"
+										 data-icon="fa fa-building"
+										 data-color="#C82E29" data-size="sm">
+										<div class="letter-icon-wrapper size-md" style="background-color: rgb(200, 46, 41);">
+											<span class="letter-icon"></span>
+											<i class="fa fa-building fa-2x"></i>
+										</div>
+										<script>
+											$("a").on("click", function(e) {
+												$oLis = $(".main-navigation-menu").children("li");
+
+												function changeCssStyle(name) {
+													$oLis.each(function() {
+														if($(this).attr("data-content") == name) {
+															$(this).siblings().removeClass("active open");
+															$(this).addClass("active open");
+														}
+													});
+												}
+												if($(e.target).attr("data-content") == "我的企业") {
+													changeCssStyle("我的企业");
+												}
+											});
+										</script>
+									</div>
+									<span ng-bind="Business.name"></span>
+								</a>
+								<a class="pull-right btn btn-sm btn-primary margin-10"
+								   type="button"
+								   ui-sref="myBusiness"
+								   ng-show="hasNextManage"
+								   data-content="我的企业">
+									更多...
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6" id="mask_mymessage">
+				<div class="panel panel-white no-radius" id="paneljoin">
+					<div class="panel-heading border-light">
+						<h4 class="panel-title">我的未读消息</h4>
+						<div class="panel-tools">
+							<a data-original-title="收起" data-toggle="tooltip" data-placement="top" data-trigger="hover" class="btn btn-transparent btn-sm panel-collapse" href="javascript:;">
+								<i class="ti-minus collapse-off"></i>
+								<i class="ti-plus collapse-on"></i>
+							</a>
+						</div>
+					</div>
+					<div class="panel-wrapper">
+						<div class="panel-body no-padding">
+							<div class="list-group">
+								<span class="dropdown-header" ng-if="unreadAmount==0" style="text-align: center;margin-bottom: 10px"> 当前没有未读消息</span>
+								<a class="list-group-item"
+								   ng-repeat="unMessage in unreadMessage"
+								   data-toggle="modal"
+								   data-target="#messageModal"
+								   ng-click="setRead(unMessage.id,unMessage.title,unMessage.content)">
+									<div class="clearfix">
+										<span ng-bind="unMessage.title"></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<form role="form" class="smart-wizard" name="" novalidate="novalidate">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Close</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-white">
+							<div class="panel-heading panel-default">
+								<p class="panel-title" style="text-align: center" ng-bind="detailMessageTitle"></p>
+							</div>
+							<div class="panel-body">
+								<p class="panel-title" ng-bind="detailMessageContent"></p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<!--<button type="button"
+                                class="btn btn-default"
+                                data-dismiss="modal">
+                            关闭
+                        </button>-->
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<script>
+	$("a").on("click", function(e) {
+		$oLis = $(".main-navigation-menu").children("li");
+
+		function changeCssStyle(name) {
+			$oLis.each(function() {
+				if($(this).attr("data-content") == name) {
+					$(this).siblings().removeClass("active open");
+					$(this).addClass("active open");
+				}
+			});
+		}
+		if($(e.target).attr("data-content") == "设置") {
+			changeCssStyle("设置");
+		}
+		if($(e.target).attr("data-content") == "我的企业") {
+			changeCssStyle("我的企业");
+		}
+	});
+</script>

@@ -1,0 +1,145 @@
+<div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a href="#/myBusiness">
+            <i class="fa fa-building margin-right-5 text-large text-dark"></i>
+            我的企业
+        </a>
+    </span>
+</div>
+<div class="col-md-12 margin-top-15">
+    <div class="panel panel-white">
+        <div class="panel-body margin-bottom-50">
+            <div class="row">
+                <!--企业展示部分-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-white margin-top-15">
+                        <div class="panel-heading panel-default">
+                            <h5 class="panel-title">
+                                我管理的企业
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a ui-sref="addBusiness.step1"
+                                       class="new-business btn btn-primary btn-wide">
+                                        <i class="fa fa-plus"></i>
+                                        新建企业
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-body overflow-auto">
+                            <div class="row no-margin no-padding">
+                                <div ng-if="managerListNull==true" class="isNull">
+                                    <p>尚未创建企业，目前企业列表为空。</p>
+                                </div>
+                                <div class="theWidthReject col-lg-2 col-md-3 col-sm-3"
+                                     ng-repeat="Manager in moreManager">
+                                    <ul class="item">
+                                            <li>
+                                                <p class="itemclass" ng-bind="Manager.name"></p>
+                                                <div ng-if="Manager.url==null||Manager.url==''">
+                                                    <img ng-src="./assets/images/portfolio/image01_th.jpg"/>
+                                                </div>
+                                                <div ng-if="Manager.url!=null&&Manager.url!=''">
+                                                    <img ng-src="{{Manager.url}}"/>
+                                                </div>
+                                                <div class="mark text-center">
+                                                    <span>
+                                                        <a data-content="产品管理"
+                                                           ui-sref="admin.productAdmin"
+                                                           ng-click="goToProductTap(Manager.id)"
+                                                           class="btn btn-sm btn-primary" >
+                                                            产品管理
+                                                        </a>
+                                                        <a ui-sref="businessAdmin.modify"
+                                                           ng-click="goToBusSetTap(Manager.id)"
+                                                           class="btn btn-sm btn-primary" >
+                                                            企业设置
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    <script type="text/javascript">
+                                        ~function ($) {
+                                            //direction:计算进入或者离开的方向
+                                            function direction(pageX, pageY) {
+                                                var $o = $(this).offset(),
+                                                        $w = $(this).outerWidth(),
+                                                        $h = $(this).outerHeight();
+
+                                                //->计算鼠标指针位于当前元素“比例空间”中的坐标位置:“比例空间”->以元素中心为坐标原点,以元素左边位置为X轴的-1,以元素右边位置为X轴的1,以元素顶部位置为Y轴的-1,以元素底部位置为Y轴的1,的直角坐标空间
+                                                var $x = (pageX - $o.left - ($w / 2)) * ($w > $h ? ($h / $w) : 1);
+                                                var $y = (pageY - $o.top - ($h / 2)) * ($h > $w ? ($w / $h) : 1);
+
+                                                //->计算鼠标指针位于当前元素“比例空间”中的方位:0、1、2、3 => 上、右、下、左
+                                                //->Math.PI:圆周率π
+                                                //->Math.atan2($y, $x):返回-PI到PI之间的值,是从X轴正向逆时针旋转到点($y,$x)时经过的角度
+                                                return Math.round((((Math.atan2($y, $x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+                                            }
+
+                                            //->根据方向实现对应的动画操作
+                                            function mouseAnimate(interval) {
+                                                interval = interval || 200;
+                                                $(this).on("mouseenter mouseleave", function (e) {
+                                                    var $mark = $(this).children(".mark"), $posL = 0, $posT = 0, $tarL = 0, $tarT = 0, $dir = direction.call(this, e.pageX, e.pageY);
+                                                    if (e.type === "mouseenter") {
+                                                        $dir === 0 ? $posT = "-100%" : null;
+                                                        $dir === 1 ? $posL = "100%" : null;
+                                                        $dir === 2 ? $posT = "100%" : null;
+                                                        $dir === 3 ? $posL = "-100%" : null;
+                                                        $mark.css({top: $posT, left: $posL, display: "block"}).stop().animate({
+                                                            top: $tarT,
+                                                            left: $tarL
+                                                        }, interval);
+                                                        return;
+                                                    }
+                                                    $dir === 0 ? $tarT = "-100%" : null;
+                                                    $dir === 1 ? $tarL = "100%" : null;
+                                                    $dir === 2 ? $tarT = "100%" : null;
+                                                    $dir === 3 ? $tarL = "-100%" : null;
+                                                    $mark.stop().animate({top: $tarT, left: $tarL}, interval, function () {
+                                                        $mark.css({
+                                                            display: "none"
+                                                        });
+                                                    });
+                                                });
+                                            }
+
+                                            $.fn.extend({mouseAnimate: mouseAnimate});
+                                        }(jQuery);
+                                        $(".item li").mouseAnimate(300);
+                                    </script>
+                                </div>
+                                <div ng-show="managerListLoading" class="isNull">
+                                    <p>数据加载中...</p>
+                                </div>
+                                <div ng-if="managerListError==true" class="isNull">
+                                    <p>{{managerListErrorMes}}</p>
+                                </div>
+                            </div>
+                            <div ng-if="managerListNull==false"
+                                 class="margin-bottom-50 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <button ng-if="promptInfo1=='true'"
+                                        ng-click="getMoreManagerBus()"
+                                        class="getMoreMassage margin-top-10 btn btn-wide btn-primary">
+                                    点击加载更多...
+                                </button>
+                                <button ng-if="promptInfo1=='false'"
+                                        disabled="disabled"
+                                        class="getMoreMassage margin-top-10 btn btn-wide btn-primary">
+                                    已全部显示
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

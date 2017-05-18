@@ -1,0 +1,788 @@
+<div class="popUpWindow" ng-if="deleteUserBox=='OPEN'">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            确定要注销此用户？
+        </div>
+        <ul>
+            <li ng-if="clicked == 'true'">
+                <button class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li ng-if="clicked == 'false'">
+                <button ng-click="checkToDeleteUser()" class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li>
+                <button ng-click="cancelToDeleteUser()" class="btn btn-default btn-sm margin-top-20 pull-right">
+                    取消
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popUpWindow" ng-if="startUpUserBox=='OPEN'">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            确定要启用此用户？
+        </div>
+        <ul>
+            <li ng-if="clicked == 'true'">
+                <button class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li ng-if="clicked == 'false'">
+                <button ng-click="checkToStartUser()" class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li>
+                <button ng-click="cancelToDeleteUser()" class="btn btn-default btn-sm margin-top-20 pull-right">
+                    取消
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popUpWindow" ng-if="deleteInstance=='OPEN'">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            确定要删除此数据源？
+        </div>
+        <ul>
+            <li  ng-if="clicked == 'true'">
+                <button class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li ng-if="clicked == 'false'">
+                <button ng-click="checkToDeleteInstance()" class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li>
+                <button ng-click="cancelToDeleteInstance()" class="btn btn-default btn-sm margin-top-20 pull-right">
+                    取消
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div ng-if="importUser=='true'" class="popUpWindow" id="popUpWindow1">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check" style="position: relative;">
+        <ul>
+            <li>
+                <a ng-if="canzjg=='yes'" ng-click="closeImport()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+                <a ng-if="canzjg=='no'" ng-click="noticeClose()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info margin-bottom-30">
+            导入用户
+        </div>
+
+        <div class="margin-top-20" ng-if="addFile=='true'">
+            文件名：{{fileItem.name}}
+            <div ng-if="importFile=='true'" class="progress">
+                <div class="progress-bar progress-bar-striped"
+                     role="progressbar"
+                     aria-valuenow="{{progress}}"
+                     aria-valuemin="0" aria-valuemax="100"
+                     ng-style = "progressStyle" >
+                    {{progress}}%
+                </div>
+            </div>
+        </div>
+        <div class="margin-top-20 text-center">
+            <div ng-show="adding=='0'">上传中...</div>
+            <div ng-show="adding=='100'">上传成功！准备导入...</div>
+            <div ng-show="adding==''"></div>
+        </div>
+        <div ng-if="addFiles=='success'">
+            <div class="margin-top-10 margin-bottom-10">
+                <p>导入成功：{{successes}}条，失败：{{fails}}条！<a ng-if="failUrl=='true'" href="/onecloud-manager/instanceuser/exporterror/initexcel/{{scheduleId}}" class="btn width-100 btn-primary btn-xs">查看失败原因</a></p>
+                <p ng-if="allFile=='again'">常见错误原因：</p>
+                <div ng-if="allFile=='again'" class="margin-left-50">
+                    <p>1、手机号不能为空</p>
+                    <p>2、性别格式不正确(男，女)</p>
+                    <p>3、日期格式不正确</p>
+                    <p>4、用户编码或账号已存在,无法新增</p>
+                    <p>5、手机号注册账号超过限制,无法新增</p>
+                    <p>......</p>
+                </div>
+            </div>
+        </div>
+        <div class="margin-top-20" ng-if="addFiles=='fail'">
+            <div class="margin-top-10 text-center margin-bottom-10">
+                <p>{{errorMsg}}</p>
+            </div>
+        </div>
+        <div class="pull-left margin-top-30 margin-left-10 margin-bottom-20">
+            <label ng-if="allFile=='no'" for="import" class="btn btn-primary btn-sm" ng-click="clearItems()">选择文件</label>
+            <label ng-if="allFile=='begin'" class="btn btn-grey btn-default btn-sm">选择文件</label>
+            <label ng-if="allFile=='again'" for="import" class="btn btn-primary btn-sm" ng-click="clearItems()">重新导入</label>
+            <input type="file" id="import" nvfileselect uploader="uploader" multiple  >
+        </div>
+        <div class="pull-right margin-top-30 margin-right-10">
+            <button class="btn btn-sm btn-primary width-100"
+                    ng-show="clicked == 'false'"
+                    ng-repeat="item in uploader.queue"
+                    ng-click="btnImport();item.upload();">
+                <i class="fa fa-picture"></i>
+                确定导入
+            </button>
+            <button class="btn btn-sm btn-grey width-100"
+                    ng-show="clicked == 'true'">
+                <i class="fa fa-picture"></i>
+                确定导入
+            </button>
+            <button type="button" ng-if="addFiles=='success'" ng-click="closeImport()" class="btn btn-primary btn-sm">完成</button>
+        </div>
+        <span style="position: absolute;bottom: 20px;left: 30px;" ng-if="allFile=='no' || allFile=='begin'">(注：导入条数最大为2万；支持文件格式：xls、xlsx)</span>
+    </div>
+</div>
+<div class="popUpWindow" ng-if="cancelWindow=='OPEN'">
+    <div class="col-xs-1 col-md-4 col-sm-4 col-lg-4"></div>
+    <div class="col-xs-10 col-md-4 col-sm-4 col-lg-2 popUpWindow-check">
+        <div class="text-style bgandcolor-re alert alert-info">
+            确定要取消导入吗？
+        </div>
+        <ul>
+            <li>
+                <button ng-click="checkToCancel()" class="btn btn-default btn-sm margin-top-20 pull-left">
+                    确定
+                </button>
+            </li>
+            <li>
+                <button ng-click="cancelCancel()" class="btn btn-default btn-sm margin-top-20 pull-right">
+                    取消
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div ng-if="addSuccess=='true'" class="popUpWindow" id="popUpWindow2">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeInsWindow()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div ng-if="instanceStatus=='new'" class="text-style bgandcolor alert-info">
+            添加数据源
+        </div>
+        <div ng-if="instanceStatus=='update'" class="text-style bgandcolor alert-info">
+            修改数据源
+        </div>
+        <div ng-if="instanceStatus=='error'" class="text-style bgandcolor alert-info">
+            警告
+        </div>
+        <div class="margin-top-40 margin-bottom-20 font-16">
+            <p ng-if="instanceStatus=='new'">恭喜，数据源添加成功！</p>
+            <p ng-if="instanceStatus=='update'">恭喜，数据源修改成功！</p>
+            <p class="text-center" ng-if="instanceStatus=='error'" ng-bind="errorMsg"></p>
+        </div>
+    </div>
+</div>
+<div ng-if="createUser=='true'" class="popUpWindow">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeImport()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info">
+            新建用户
+        </div>
+
+        <form role="form"
+              class="smart-wizard ng-pristine ng-valid-maxlength ng-invalid ng-invalid-minlength ng-invalid-required"
+              name="createUserForm"
+              novalidate="novalidate">
+            <div class="container padding-top-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group"
+                             ng-class="{'has-error':createUserForm.accountCode.$dirty&&createUserForm.accountCode.$invalid}">
+                            <span class="symbol required"></span>
+                            <label class="control-label"> 编码: </label>
+                            <input type="text"
+                                   ng-model="createUserFormData.accountCode"
+                                   ng-maxlength="200"
+                                   placeholder="编码长度不超过20"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="code"
+                                   name="code"
+                                   required />
+                            <div class="alert alert-danger help-block ng-hide"
+                                 ng-show="createUserForm.accountCode.$dirty&&createUserForm.accountCode.$error.maxlength">
+                                编码最大长度为20字符
+                            </div>
+                            <div class="alert alert-danger help-block"
+                                 ng-show="createUserForm.accountCode.$dirty&&createUserForm.accountCode.$error.required">
+                                此为必填项
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group"
+                             ng-class="{'has-error':createUserForm.account.$dirty&&createUserForm.account.$invalid}">
+                            <span class="symbol required"></span>
+                            <label class="control-label"> 用户名: </label>
+                            <input type="text"
+                                   ng-model="createUserFormData.account"
+                                   ng-maxlength="200"
+                                   placeholder="用户名长度不超过20"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="account"
+                                   account="account"
+                                   required>
+                            <div class="alert alert-danger help-block ng-hide"
+                                 ng-show="createUserForm.account.$dirty&&createUserForm.account.$error.maxlength">
+                                用户名最大长度为20字符
+                            </div>
+                            <div class="alert alert-danger help-block"
+                                 ng-show="createUserForm.account.$dirty&&createUserForm.account.$error.required">
+                                此为必填项
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <span class="symbol required"></span>
+                            <label class="control-label"> 手机号: </label>
+                            <input type="text"
+                                   ng-model="createUserFormData.mobile"
+                                   ng-maxlength="11"
+                                   ng-minlength="11"
+                                   ng-change="isCheck()"
+                                   ng-pattern="/^1[3|4|5|7|8]\d{9}$/"
+                                   placeholder="11位手机号"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="mobile"
+                                   name="mobile"
+                                   required>
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="createUserForm.mobile.$dirty && createUserForm.mobile.$invalid">-->
+                                <!--格式错误,请输入有效手机号码-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="createUserForm.mobile.$dirty && createUserForm.mobile.$error.minlength">-->
+                                <!--手机号码需长度为11字符,位数不正确-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="createUserForm.mobile.$dirty && createUserForm.mobile.$error.maxlength">-->
+                                <!--手机号码需长度为11字符,已经超出-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="createUserForm.mobile.$dirty&&createUserForm.mobile.$error.required">-->
+                                <!--此为必填项-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group"
+                             ng-class="{'has-error':createUserForm.email.$dirty&&createUserForm.email.$invalid}">
+                            <label class="control-label"> 邮箱: </label>
+                            <input type="text"
+                                   ng-model="createUserFormData.email"
+                                   ng-maxlength="50"
+                                   ng-minlength="2"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="email"
+                                   name="email"
+                                   placeholder="带有@及.cn,.net,.com等后缀的有效邮箱" />
+                            <div class="alert alert-danger help-block ng-hide"
+                                 ng-show="createUserForm.email.$dirty&&createUserForm.email.$error.minlength">
+                                邮箱最小长度为2字符
+                            </div>
+                            <div class="alert alert-danger help-block ng-hide"
+                                 ng-show="createUserForm.email.$dirty&&createUserForm.email.$error.maxlength">
+                                邮箱最大长度为50字符
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 alert alert-danger help-block"
+                     ng-if="responseError=='true'" ng-bind="errorMsg">
+                </div>
+                <div class="col-md-12 alert alert-success help-block"
+                     ng-if="responseError=='success'">
+                    添加成功!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-push-6 col-md-6">
+                    <button type="button" class="btn btn-primary pull-right" ng-click="closeImport()">关闭</button>
+                    <button ng-if="clicked == 'true'" class="btn btn-grey pull-right margin-right-20 ng-scope"
+                            type="button">
+                        提交
+                    </button>
+                    <button ng-if="clicked == 'false'" class="btn btn-primary pull-right margin-right-20 ng-scope"
+                            ng-disabled="createUserForm.$invalid"
+                            ng-click="handleCreateUser()"
+                            type="button">
+                        提交
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<div ng-if="updateUserData=='true'" class="popUpWindow" id="popUpWindow3">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeWindow()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info">
+            修改用户信息
+        </div>
+
+        <form role="form"
+              class="smart-wizard ng-pristine ng-valid-maxlength ng-invalid ng-invalid-minlength ng-invalid-required">
+              <!--name="updateUserForm"-->
+              <!--novalidate="novalidate">-->
+            <div class="container padding-top-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <!--ng-class="{'has-error':updateUserForm.accountCode.$dirty&&updateUserForm.accountCode.$invalid}">-->
+                            <label class="control-label"> 编码: </label>
+                            <span type="text"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="code"
+                                   name="code"
+                                   disabled
+                                   >
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <!--ng-class="{'has-error':updateUserForm.account.$dirty&&updateUserForm.account.$invalid}"-->
+                        <!--&gt;-->
+                            <span class="symbol required"></span>
+                            <label class="control-label"> 用户名: </label>
+                            <input type="text"
+                                   ng-maxlength="200"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="accountInput"
+                                   account="account"
+                                   required />
+                            <!--<div class="alert alert-danger help-block ng-hide"-->
+                                 <!--ng-show="updateUserForm.account.$dirty&&updateUserForm.account.$error.minlength">-->
+                                <!--用户名最小长度为2字符-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block ng-hide"-->
+                                 <!--ng-show="updateUserForm.account.$dirty&&updateUserForm.account.$error.maxlength">-->
+                                <!--用户名最大长度为50字符-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="updateUserForm.account.$dirty&&updateUserForm.account.$error.required">-->
+                                <!--此为必填项-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <!--ng-class="{'has-error':updateUserForm.mobile.$dirty&&updateUserForm.mobile.$invalid}"-->
+                        <!--&gt;-->
+                            <span class="symbol required"></span>
+                            <label class="control-label"> 手机号: </label>
+                            <input type="text"
+                                   placeholder="11位手机号"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="mobileInput"
+                                   maxlength="11"
+                                   name="mobile"
+                                   required />
+                                   <!--ng-maxlength="11"-->
+                                   <!--ng-minlength="11"-->
+                                   <!--ng-change="isCheck()"-->
+                                   <!--ng-pattern="/^1[3|4|5|7|8]\d{9}$/">-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="updateUserForm.mobile.$dirty && updateUserForm.mobile.$invalid">-->
+                                <!--格式错误,请输入有效手机号码-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="updateUserForm.mobile.$dirty && updateUserForm.mobile.$error.minlength">-->
+                                <!--手机号码需长度为11字符,位数不正确-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="updateUserForm.mobile.$dirty && updateUserForm.mobile.$error.maxlength">-->
+                                <!--手机号码需长度为11字符,已经超出-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block"-->
+                                 <!--ng-show="updateUserForm.mobile.$dirty && updateUserForm.mobile.$error.required">-->
+                                <!--此为必填项-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label"> 邮箱: </label>
+                            <input type="text"
+                                   class="form-control ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-minlength ng-valid-maxlength"
+                                   id="emailInput"
+                                   name="email"
+                                   placeholder="带有@及.cn,.net,.com等后缀的有效邮箱" />
+                                   <!--ng-maxlength="50"-->
+                                   <!--ng-minlength="2"/>-->
+                            <!--<div class="alert alert-danger help-block ng-hide"-->
+                                 <!--ng-show="updateUserForm.email.$dirty&&updateUserForm.email.$error.minlength">-->
+                                <!--邮箱最小长度为2字符-->
+                            <!--</div>-->
+                            <!--<div class="alert alert-danger help-block ng-hide"-->
+                                 <!--ng-show="updateUserForm.email.$dirty&&updateUserForm.email.$error.maxlength">-->
+                                <!--邮箱最大长度为50字符-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 alert alert-danger help-block"
+                     ng-if="responseError=='true'" ng-bind="errorMsg">
+                </div>
+                <div class="col-md-12 alert alert-success help-block"
+                     ng-if="responseError=='success'">
+                    修改成功!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-push-6 col-md-6">
+                    <button type="button" class="btn btn-primary pull-right" ng-click="closeWindow()">关闭</button>
+                    <button ng-if="clicked == 'true'" class="btn btn-grey pull-right margin-right-20 ng-scope"
+                            type="button">
+                        提交
+                    </button>
+                    <button ng-if="clicked == 'false'" class="btn btn-primary pull-right margin-right-20 ng-scope"
+                            ng-click="handleUpdateUser()"
+                            type="button">
+                        提交
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<div ng-if="netError=='true'" class="popUpWindow" id="popUpWindow4">
+    <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+    <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+        <ul>
+            <li>
+                <a ng-click="closeOld()"
+                   class="btn btn-default btn-xs pull-right fr">
+                    X
+                </a>
+            </li>
+        </ul>
+        <div class="text-style bgandcolor alert-info">
+            警告
+        </div>
+        <div class="margin-top-40 margin-bottom-20 font-16">
+            <p class="text-center" ng-bind="errorMsg"></p>
+        </div>
+    </div>
+</div>
+<div class="myBreadcrumb-wrapper">
+    <h5 class="pull-left font-16 margin-top-10 margin-left-20">
+        {{detailBusInfoName.name}}
+    </h5>
+    <span class="no-padding pull-right margin-right-20">
+        <a>
+            <i class="margin-right-5 text-large text-dark"></i>
+            >>数据源管理
+        </a>
+    </span>
+    <span class="no-padding pull-right">
+        <a ui-sref="admin.productAdmin">
+            <i class="margin-right-5 text-large text-dark"></i>
+            >>产品管理（{{detailBusInfoName.name}}）
+        </a>
+    </span>
+    <span class="no-padding pull-right">
+        <a ui-sref="myBusiness">
+            <i class="fa fa-building margin-right-5 text-large text-dark"></i>
+           我的企业
+        </a>
+    </span>
+</div>
+
+<div class="container-fluid container-fullw">
+    <div ng-if="addExampleHandler=='true'" class="popUpWindow" id="popUpWindowAdd">
+        <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+        <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+            <ul>
+                <li>
+                    <a ng-click="closeWindow()"
+                       class="btn btn-default btn-xs pull-right fr">
+                        X
+                    </a>
+                </li>
+            </ul>
+            <div class="text-style bgandcolor alert-info">
+                添加数据源
+            </div>
+            <div class="row margin-top-10">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group">
+                        <span class="symbol required"></span>
+                        <label class="control-label"> 数据源名称：</label>
+                        <input type="text"
+                               ng-model="newInstanceData.name"
+                               placeholder="请输入数据源"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group">
+                        <span class="symbol required" ng-if="productlineCode == 'U8'"></span>
+                        <label class="control-label">数据库服务器：</label>
+                        <input type="text"
+                               ng-model="newInstanceData.source"
+                               placeholder="请输入数据库服务器"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left margin-left-30" ng-if="productlineCode == 'U8'">
+                <p><a href="/onecloud-manager/user_manager/getInstanceGuide.html" target="_blank" class="text-underline">如何找到数据源名称和数据库服务器？</a></p>
+            </div>
+            <div class="pull-right margin-top-10 margin-right-10" ng-if="productlineCode == 'U8'">
+                <button type="button" class="btn btn-primary" ng-if="newInstanceData.name !='' && newInstanceData.source !='' && clicked == 'false'" ng-click="addNewInstance()">确认添加</button>
+                <button type="button" class="btn btn-grey btn-default" ng-if="newInstanceData.name =='' || newInstanceData.source =='' || clicked == 'true'">确认添加</button>
+                <button type="button" ng-click="closeWindow()" class="btn btn-primary">取消</button>
+            </div>
+            <div class="pull-right margin-top-10 margin-right-10" ng-if="productlineCode == 'nc'">
+                <button type="button" class="btn btn-primary" ng-if="newInstanceData.name !='' && clicked == 'false'" ng-click="addNewInstance()">确认添加</button>
+                <button type="button" class="btn btn-grey btn-default" ng-if="newInstanceData.name =='' || clicked == 'true'">确认添加</button>
+                <button type="button" ng-click="closeWindow()" class="btn btn-primary">取消</button>
+            </div>
+        </div>
+    </div>
+    <div ng-if="changeExampleHandler=='true'" class="popUpWindow" id="popUpWindowChange">
+        <div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+        <div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+            <ul>
+                <li>
+                    <a ng-click="closeWindow()"
+                       class="btn btn-default btn-xs pull-right fr">
+                        X
+                    </a>
+                </li>
+            </ul>
+            <div class="text-style bgandcolor alert-info">
+                修改数据源
+            </div>
+            <div class="row margin-top-10">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group">
+                        <span class="symbol required"></span>
+                        <label class="control-label"> 数据源名称：</label>
+                        <input type="text"
+                               ng-model="updateInstanceData.name"
+                               value="{{updateInstanceData.name}}"
+                               placeholder="请输入数据源"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="form-group">
+                        <span class="symbol required" ng-if="productlineCode == 'U8'"></span>
+                        <label class="control-label"> 数据库服务器：</label>
+                        <input type="text"
+                               ng-model="updateInstanceData.source"
+                               value="{{updateInstanceData.source}}"
+                               placeholder="请输入数据库服务器"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left margin-left-30" ng-if="productlineCode == 'U8'">
+                <p><a href="/onecloud-manager/user_manager/getInstanceGuide.html" target="_blank" class="text-underline">如何找到数据源名称和数据库服务器？</a></p>
+            </div>
+            <div class="pull-right margin-top-10 margin-right-10" ng-if="productlineCode == 'U8'">
+                <button type="button" class="btn btn-primary" ng-if="updateInstanceData.name !='' && updateInstanceData.source !='' && updateInstanceData.source !=null && clicked == 'false'" ng-click="changeInstanceName()">确认修改</button>
+                <button type="button" class="btn btn-grey btn-default" ng-if="updateInstanceData.name =='' || updateInstanceData.source == null ||updateInstanceData.source =='' || clicked =='true'">确认修改</button>
+                <button type="button" ng-click="closeWindow()" class="btn btn-primary">取消</button>
+            </div>
+            <div class="pull-right margin-top-10 margin-right-10" ng-if="productlineCode == 'nc'">
+                <button type="button" class="btn btn-primary" ng-if="updateInstanceData.name !='' && clicked == 'false'" ng-click="changeInstanceName()">确认修改</button>
+                <button type="button" class="btn btn-grey btn-default" ng-if="updateInstanceData.name =='' || clicked =='true'">确认修改</button>
+                <button type="button" ng-click="closeWindow()" class="btn btn-primary">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-white">
+                <ul class="nav tab-menu nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+                    <li ng-repeat="instance in instanceList" ng-click="itemClickHandler($event)" ng-class="{active:$first}">
+                        <a ng-click="changeInstance(instance.instanceId,instance.id,instance.name,instance.source)">
+                            {{instance.name}}
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="addExample()"> <i class="fa fa-plus"></i> </a>
+                    </li>
+                </ul>
+                <a ui-sref="admin.productAdmin"
+                   ng-click="deleteDateTable()"
+                   class="btn btn-primary button-style">
+                    返回产品列表
+                </a>
+                <div class="tab-content">
+                    <!--默认数据源面板-->
+                    <div ng-class='{in:$first,active:$first}' class="tab-pane active in">
+                        <div class="row row-box" ng-if="requestSuccess=='true'">
+                            <div class="panel-heading border-bottom">
+                                <h5 class="over-title margin-bottom-15">
+                                    数据源名称：{{instanceName}}
+                                    <span style="font-size: 10px; margin-left: 10px;">数据库服务器：{{instanceSource}}</span>
+                                    <button type="button" class="btn btn-default btn-xs" ng-click="showChangeInstanceName()">修改</button>
+                                    <button type="button" class="btn btn-default btn-xs margin-left-5" ng-click="delInstance()">删除</button>
+                                </h5>
+                            </div>
+                            <div class="panel-body">
+                                <h5 class="over-title margin-bottom-15">
+                                    数据源用户管理
+                                </h5>
+                                <div class="btn-box">
+                                    <button type="button" ng-if="productlineCode == 'U8'" class="btn btn-primary btn-sm margin-right-5" ng-click="createOpen()">新建用户</button>
+                                    <button type="button" class="btn btn-primary btn-sm margin-right-5" ng-click="handleImport()">导入用户</button>
+                                    <div class="btn-group btn-group-sm inline-block margin-right-5" ng-if="productlineCode == 'U8'">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                            导出用户 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li>
+                                                <a ng-href="/onecloud-manager/instanceuser/download/account/byinstance?instanceId={{searchInstanceId}}">全部导出</a>
+                                            </li>
+                                            <li>
+                                                <a ng-click="byId()">导出当前页</a>
+                                                <a id="alink" class="hide"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button"
+                                            class="btn btn-primary btn-sm margin-right-5" ng-if="showInput=='false'"
+                                            ng-click="handleShowInput();">
+                                        查询
+                                        <i class="fa fa-angle-double-down"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm margin-right-5" ng-if="showInput=='true'" ng-click="close()">收起 <i class="fa fa-angle-double-up"></i></button>
+                                </div>
+                                <div ng-if="showInput=='true'" class="search-box row margin-left-10 margin-top-10">
+                                    <span class="margin-right-5">
+                                        编码:
+                                        <input type="text"
+                                               ng-model="searchDetailInstance.accountCode" />
+                                    </span>
+                                     <span class="margin-right-5">
+                                        用户名:
+                                        <input type="text"
+                                               ng-model="searchDetailInstance.account" />
+                                    </span>
+                                    <span class="margin-right-5">
+                                        手机号:
+                                        <input type="text"
+                                               ng-model="searchDetailInstance.mobile" />
+                                    </span>
+                                    <span class="margin-right-5">
+                                        邮箱:
+                                        <input type="text"
+                                               ng-model="searchDetailInstance.email" />
+                                    </span>
+                                    <span class="margin-right-5">
+                                        <select ng-model="searchDetailInstance.status">
+                                            <option value="">全部状态</option>
+                                            <option value="0">已激活</option>
+                                            <option value="1">未激活</option>
+                                            <option value="2">已注销</option>
+                                        </select>
+                                    </span>
+                                    <button type="button"
+                                            class="btn btn-primary btn-sm margin-right-5"
+                                            ng-click="searchAndRerender()">
+                                        查询
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="margin-top-10" ng-if="productlineCode == 'U8'">
+                                    <span class="text-danger">温馨提示：用户维护（新建、导入、修改）完成后需要同步到U8端才能正常使用。</span>
+                                </div>
+                                <hr />
+                                <!--DataTables-->
+                                <div id="product_list_wrapper"
+                                     ng-if="canLoadTable == 'true'"
+                                     class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                    <div class="col-sm-12">
+                                        <!--<table datatable="" dt-options="busApp.dtOptions" dt-columns="busApp.dtColumns" class="row-border hover"></table>-->
+                                        <table
+                                               datatable=""
+                                               dt-options="app.userOptions"
+                                               dt-columns="app.userColumns"
+                                               dt-column-defs="app.userColumnDefs"
+                                               dt-instance="app.userInstance"
+                                               class="table table-striped table-bordered table-hover table-full-width dataTable no-footer">
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-box" ng-if="requestSuccess=='false'">
+                            <div class="panel-heading border-bottom">
+                                <h5 class="over-title margin-bottom-15">
+                                    还没有数据源，请创建一个数据源！
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,223 @@
+<div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a ui-sref="message_center">
+            <i class="fa fa-bell margin-right-5 text-large text-dark"></i>
+            消息中心
+        </a>
+    </span>
+</div>
+<div class="container-fluid container-fullw">
+    <div class="modal fade"
+         id="allMessageModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <form role="form" class="smart-wizard" name="" novalidate="novalidate">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="panel panel-white">
+                            <div class="panel-heading panel-default">
+                                <p class="panel-title"
+                                   style="text-align: center"
+                                   ng-bind="detailMessageTitle"></p>
+                            </div>
+                            <div class="panel-body">
+                                <p class="panel-title"
+                                   ng-bind="detailMessageContent"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="btn btn-default"
+                                data-dismiss="modal">
+                            关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div>
+            <div class="tabbable">
+                <div class="col-lg-12 col-sm-12 col-md-12">
+                    <ul class="nav nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+                        <li class="active">
+                            <a data-toggle="tab"
+                               id="dashboard"
+                               ng-click="goUnreadPage()"
+                               href="../index.html/#message_unread"> 未读消息 </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab"
+                               id="rewriteInfo"
+                               ng-click="goReadPage()"
+                               href="../index.html/#message_read"> 已读消息 </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!--未读消息-->
+                        <div id="message_unread" class="tab-pane fade in active">
+                            <div class="row row-box">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 margin-top-15">
+                                    <table class="table table-striped table-bordered table-full-width">
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>消息标题</th>
+                                            <th>创建时间</th>
+                                            <th>查看详情</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr ng-show="readyToLoadUnread">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">数据加载中...</p>
+                                            </td>
+                                        </tr>
+                                        <tr ng-show="loadUnreadFail">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">{{loadUnreadFailMessage}}</p>
+                                            </td>
+                                        </tr>
+                                        <tr ng-show="unreadInfoNull">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">没有未读消息</p>
+                                            </td>
+                                        </tr>
+                                        <tr role="row"
+                                            ng-repeat="unread in unreadInfo">
+                                            <td ng-bind="unread.count"></td>
+                                            <td ng-bind="unread.title"></td>
+                                            <td ng-bind="unread.createtime"></td>
+                                            <td>
+                                                <button type="button"
+                                                        data-toggle="modal"
+                                                        data-target="#allMessageModal"
+                                                        ng-click="showUnread(unread)"
+                                                        class="btn btn-primary btn-sm">
+                                                    查看详情
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav>
+                                        <ul class="pagination pull-right">
+                                            <li ng-if="unreadPageNumber>1"
+                                                ng-click="goTargetUnreadPage(unreadPageNumber -1)">
+                                                <a href="javascript:void 0"
+                                                   aria-label="Previous">
+                                                    <span aria-hidden="true">前一页</span>
+                                                </a>
+                                            </li>
+                                            <li ng-class="{active:unreadPageNumber == page}"
+                                                ng-click="goTargetUnreadPage(page)"
+                                                ng-repeat="page in unreadPages">
+                                                <a href="javascript:void 0">{{page}}</a>
+                                            </li>
+                                            <li ng-if="unreadPageNumber<unreadTotalPage"
+                                                ng-click="goTargetUnreadPage(unreadPageNumber +1)">
+                                                <a href="javascript:void 0"
+                                                   aria-label="Next">
+                                                    <span aria-hidden="true">后一页</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!--已读消息-->
+                        <div id="message_read" class="tab-pane fade">
+                            <div class="row row-box">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 margin-top-15">
+                                    <table class="table table-striped table-bordered table-full-width">
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>消息标题</th>
+                                            <th>创建时间</th>
+                                            <th>查看详情</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr ng-show="loadReadFail">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">{{loadReadFailMessage}}</p>
+                                            </td>
+                                        </tr>
+                                        <tr ng-show="readyToLoadRead">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">数据加载中...</p>
+                                            </td>
+                                        </tr>
+                                        <tr ng-show="readInfoNull">
+                                            <td colspan="4">
+                                                <p class="no-margin"
+                                                   style="text-align: center">没有已读消息</p>
+                                            </td>
+                                        </tr>
+                                        <tr role="row"
+                                            ng-repeat="read in readInfo">
+                                            <td ng-bind="read.count"></td>
+                                            <td ng-bind="read.title"></td>
+                                            <td ng-bind="read.createtime"></td>
+                                            <td>
+                                                <button type="button"
+                                                        data-toggle="modal"
+                                                        data-target="#allMessageModal"
+                                                        ng-click="showRead(read)"
+                                                        class="btn btn-primary btn-sm">
+                                                    查看详情
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav>
+                                        <ul class="pagination pull-right">
+                                            <li ng-if="readPageNumber>1"
+                                                ng-click="goTargetReadPage(readPageNumber -1)">
+                                                <a href="javascript:void 0"
+                                                   aria-label="Previous">
+                                                    <span aria-hidden="true">前一页</span>
+                                                </a>
+                                            </li>
+                                            <li ng-class="{active:readPageNumber == page}"
+                                                ng-click="goTargetReadPage(page)"
+                                                ng-repeat="page in readPages">
+                                                <a href="javascript:void 0">{{page}}</a>
+                                            </li>
+                                            <li ng-if="readPageNumber<readTotalPage"
+                                                ng-click="goTargetReadPage(readPageNumber +1)">
+                                                <a href="javascript:void 0"
+                                                   aria-label="Next">
+                                                    <span aria-hidden="true">后一页</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

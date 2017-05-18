@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="appCtrl">
+	<!-- start: HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=10,IE=9,chrome=1" /><![endif]-->
+		<title>用友友户通</title>
+		<meta name="keywords" content="用友友户通">
+		<meta name="description" content="友户通">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta http-equiv="cleartype" content="on">
+		<!-- Sets initial viewport load and disables zooming  -->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<link href='favicon.ico' rel="Bookmark"/>
+		<!-- end: META -->
+		<!-- start: Yonyou CSS -->
+		<link rel="stylesheet" href="resources/bundle.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="bower_components/DataTables/media/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/select.dataTables.min.css">
+		<link rel="stylesheet" href="assets/css/lyt2-theme-1.css" id="skin_color">
+		<!-- end: Yonyou CSS -->
+		<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	</head>
+	<!-- end: HEAD -->
+	<body>
+		<!--引导遮罩-->
+		
+	<div id="app" class="lyt-2">
+		<!-- sidebar -->
+		<div ng-if="isBusDataPage!='true'"
+				class="sidebar app-aside sidebarStyle" id="sidebar">
+			<div class="sidebar-container perfect-scrollbar">
+				<div>
+					<div class="nav-user-wrapper">
+						<div class="media">
+							<div class="media-left">
+								<a class="profile-card-photo" ui-sref="setting"
+								   ng-model="headPicUrl">
+									<img style="width: 32px; height: 32px;"
+										 ng-src="{{headPicUrl}}">
+								</a>
+							</div>
+							<div class="media-body">
+								<span class="media-heading text-white" style="display: inline-block;min-height: 8px;margin: 0;"
+									  ng-bind="nickname"></span>
+								<span class="media-heading text-white" style="display: inline-block;min-height: 8px;margin: 0;"
+									  ng-if="nickname==null" ng-bind="isNull"></span>
+								<div class="text-small text-white-transparent" ng-bind="mobile">
+
+								</div>
+								<div class="text-small text-white-transparent" ng-if="mobile==null && email==null" ng-bind="isNull">
+
+								</div>
+								<div class="text-small text-white-transparent" ng-if="mobile==null && email!=null" ng-bind="email">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav>
+						<ul class="main-navigation-menu" id="index_menu">
+							<li role="presentation"
+								data-content="首页">
+								<a ui-sref="main">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-home"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> 首页 </span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li role="presentation"
+								data-content="我的企业">
+								<a ui-sref="myBusiness">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-building"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> 我的企业 </span>
+											<!--<i class="icon-arrow"></i>-->
+										</div>
+									</div>
+								</a>
+							</li>
+							<li role="presentation"
+								data-content="消息中心">
+								<a ui-sref="message_center">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-bell"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> 消息中心 </span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li role="presentation"
+								data-content="设置" id="mask_setting">
+								<a ui-sref="setting">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-cogs"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> 设置 </span>
+											<!--<i class="icon-arrow"></i>-->
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- / sidebar -->
+		<div class="app-content">
+			<!-- start: TOP NAVBAR -->
+			<header class="navbar navbar-default navbar-static-top">
+				<!-- start: NAVBAR HEADER -->
+				<div class="navbar-header">
+					<button href="#"
+							class="sidebar-mobile-toggler pull-left btn no-radius hidden-md hidden-lg"
+							class="btn btn-navbar sidebar-toggle"
+							data-toggle-class="app-slide-off"
+							data-toggle-target="#app"
+							data-toggle-click-outside="#sidebar">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img style="width: 100%;margin-left: -7px;margin-top: 8px;" src="assets/images/logo.png" alt="Yonyou"/> </a>
+					<a class="navbar-brand navbar-brand-collapsed"
+					   href="index.html">
+						<img src="assets/images/logo-collapsed.png"
+							 alt="" />
+					</a>
+					<button class="btn pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse" data-toggle-class="menu-open">
+						<i class="fa fa-folder closed-icon"></i>
+						<i class="fa fa-folder-open open-icon"></i>
+						<small>
+							<i class="fa fa-caret-down margin-left-5"></i>
+						</small>
+					</button>
+				</div>
+				<!-- end: NAVBAR HEADER -->
+				<!-- start: NAVBAR COLLAPSE -->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-left hidden-sm hidden-xs">
+						<li class="sidebar-toggler-wrapper">
+							<div>
+								<button class="btn sidebar-toggler visible-md visible-lg">
+									<i class="fa fa-bars"></i>
+								</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav navbar-right">
+						<!-- start: 消息通知 -->
+						<li class="dropdown" id="mask_rings">
+							<a href="javascript:void(0)"
+							   class="dropdown-toggle"
+							   data-toggle="dropdown">
+								<span class="badge"
+									  ng-if="unreadAmount>0"
+									  ng-bind="unreadAmount"></span>
+								<i class="fa fa-bell"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large animated fadeInUpShort">
+								<li>
+									<span class="dropdown-header">
+										未读消息列表
+									</span>
+								</li>
+								<li ng-if="unreadAmount==0">
+									<span class="dropdown-header"
+										  style="text-align: center;margin-bottom: 10px">
+										当前没有未读消息
+									</span>
+								</li>
+								<li>
+									<div class="drop-down-wrapper ps-container">
+										<ul class="list-group">
+											<li ng-repeat="unMe in unreadMessage">
+												<a class="unread"
+												   data-toggle="modal"
+												   data-target="#messageModal"
+												   ng-click="setRead(unMe.id,unMe.title,unMe.content)">
+													<div class="clearfix">
+														<div class="thread-content">
+															<span class="author">{{unMe.title}}</span>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- end: 消息通知 -->
+						<!-- start: 用户手机=>点击跳转设置 -->
+						<li class="dropdown">
+							<a ui-sref="setting"
+							   data-content="设置"
+							   ng-bind="services.data.mobile"
+							   class="dropdown-toggle"
+							   data-toggle="dropdown">
+							</a>
+						</li>
+						<!-- end: 用户手机 -->
+						<li class="dropdown">
+							<a href="logoutRequest">
+								退出
+							</a>
+						</li>
+					</ul>
+					<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+					<div class="close-handle visible-xs-block menu-toggler"
+						 data-toggle="collapse"
+						 href=".navbar-collapse">
+						<div class="arrow-left"></div>
+						<div class="arrow-right"></div>
+					</div>
+					<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+				</div>
+			</header>
+			<!-- end: TOP NAVBAR -->
+			<div class="main-content" >
+				<!--主路由切换区-->
+				<div ui-view
+					 class="wrap-content" id="container">
+				</div>
+				<!--未读消息弹出框-->
+				<div class="modal fade"
+					 id="messageModal"
+					 tabindex="-1"
+					 role="dialog"
+					 aria-labelledby="myModalLabel"
+					 aria-hidden="true">
+					<form role="form"
+						  class="smart-wizard"
+						  name=""
+						  novalidate="novalidate">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button"
+											class="close"
+											data-dismiss="modal">
+										<span aria-hidden="true">&times;</span>
+										<span class="sr-only">Close</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="panel panel-white">
+										<div class="panel-heading panel-default">
+											<p class="panel-title"
+											   style="text-align: center"
+											   ng-bind="detailMessageTitle"></p>
+										</div>
+										<div class="panel-body">
+											<p class="panel-title"
+											   ng-bind="detailMessageContent"></p>
+											<!--<div class="form-group">
+												<div class="row">
+													<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-right">
+														<button type="button"
+																class="margin-top-20 btn btn-primary btn-squared btn-sm form-control"
+																ng-click="checkRead()">
+															确定
+														</button>
+													</div>
+												</div>
+											</div>-->
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<!--<button type="button"
+                                            class="btn btn-default"
+                                            data-dismiss="modal">
+                                        关闭
+                                    </button>-->
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- start: FOOTER -->
+		<footer>
+			<div class="footer-inner">
+				<div class="pull-left">
+					Copyright &copy; <span class="current-year"></span>
+					<span class="text-bold text-uppercase"> YONYOU</span>. <span>All rights reserved</span>
+					<span class="margin-left-10"><a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备05007539号-17</a></span>
+					<span class="margin-left-10"><a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证100714号</a></span>
+					<span class="margin-left-10"><a target="_blank" href="http://www.miibeian.gov.cn/">京公网安备11010802021935号</a></span>
+				</div>
+				<div class="pull-right">
+					<span class="go-top"><i class="ti-angle-up"></i></span>
+				</div>
+			</div>
+		</footer>
+		<!-- end: FOOTER -->
+		<!--![endif]-->
+		<!-- start: SETTINGS -->
+		<div class="settings panel panel-default hidden-xs hidden-sm" id="settings">
+			<button data-toggle-class="active" data-toggle-target="#settings" class="btn btn-default">
+				<i class="fa fa-spin fa-gear"></i>
+			</button>
+			<div class="panel-heading">
+				界面风格选择
+			</div>
+			<div class="panel-body">
+				<!-- start: FIXED HEADER -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left"> 顶部导航固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-header" />
+						</span>
+				</div>
+				<!-- end: FIXED HEADER -->
+				<!-- start: FIXED SIDEBAR -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">左菜单栏固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-sidebar" />
+						</span>
+				</div>
+				<!-- end: FIXED SIDEBAR -->
+				<!-- start: CLOSED SIDEBAR -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">左菜单栏伸缩</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="closed-sidebar" />
+						</span>
+				</div>
+				<!-- end: CLOSED SIDEBAR -->
+				<!-- start: FIXED FOOTER -->
+				<div class="setting-box clearfix">
+					<span class="setting-title pull-left">底部页脚固定</span>
+						<span class="setting-switch pull-right">
+							<input type="checkbox" class="js-switch" id="fixed-footer" />
+						</span>
+				</div>
+				<!-- end: FIXED FOOTER -->
+				<!-- start: THEME SWITCHER -->
+				<div class="colors-row setting-box">
+					<label>页面风格切换</label>
+					<div class="color-theme lyt2-theme-1">
+						<div class="color-layout">
+							<label>
+								<input type="radio"
+									   name="setting-theme"
+									   value="lyt2-theme-1">
+								<span class="fa fa-check-circle lyt-check text-extra-large"></span>
+								<span class="split header"> <span class="color th-header"></span>
+									<span class="color th-collapse">
+										<i class="color-button"></i>
+									</span>
+								</span>
+								<span class="split">
+									<span class="color th-sidebar">
+										<i class="element"></i>
+									</span>
+									<span class="color th-body"></span> </span>
+							</label>
+						</div>
+					</div>
+					<div class="color-theme lyt2-theme-2">
+						<div class="color-layout">
+							<label>
+								<input type="radio"
+									   name="setting-theme"
+									   value="lyt2-theme-2">
+								<span class="fa fa-check-circle lyt-check text-extra-large"></span>
+								<span class="split header">
+									<span class="color th-header"></span>
+									<span class="color th-collapse">
+										<i class="color-button"></i>
+									</span>
+								</span>
+								<span class="split">
+									<span class="color th-sidebar">
+										<i class="element"></i>
+									</span>
+									<span class="color th-body"></span>
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- end: THEME SWITCHER -->
+				<!--<div class="panel-footer">
+					<button class="btn btn-primary ladda-button btn-squared btn-sm btn-o" data-style="slide-up" data-spinner-size="10" data-spinner-color="#999999" id="reset-layout">
+						<span class="ladda-label">Reset</span>
+					</button>
+					<button class="btn btn-primary ladda-button pull-right btn-squared btn-sm btn-wide"
+							data-style="slide-up" data-spinner-size="10"
+							id="save-layout">
+						<span class="ladda-label">Save</span>
+					</button>
+				</div>-->
+			</div>
+		</div>
+		<!-- end: SETTINGS -->
+	</div>
+	<!--让IE支持bootstrap-->
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<!-- start: MAIN JAVASCRIPTS -->
+	<!--<script type="text/javascript" src="assets/js/ZeroClipboard.js"></script>-->
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./bower_components/js-cookie/src/js.cookie.js"></script>
+	<script src="./bower_components/bootstrap-jasny/dist/js/jasny-bootstrap.min.js"></script>
+	<script src="./bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="./bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+	<script src="./bower_components/spectrum/spectrum.js"></script>
+	<script src="assets/js/letter-icons.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/angular-ui-router.min.js"></script>
+	<script src="assets/js/angular-file-upload.min.js"></script>
+	<script src="./bower_components/select2/select2.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+	<script src="./bower_components/DataTables/media/js/angular-datatables.min.js"></script>
+	<script src="assets/js/angular-resource.min.js"></script>
+	<script src="assets/js/dataTables.columnFilter.js"></script>
+	<script src="assets/js/angular-datatables.columnfilter.js"></script>
+	<script src="assets/js/dataTables.select.js"></script>
+	<script src="assets/js/angular-datatables.select.js"></script>
+	<script src="//cdn.bootcss.com/clipboard.js/1.5.15/clipboard.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/angular-zeroclipboard.js"></script>-->
+	<script src="assets/components/admin-index.js"></script>
+	<!-- end: Yonyou JAVASCRIPTS -->
+	<!-- start: JavaScript Event Handlers for this page -->
+	<script>
+		$(document).ready(function(){
+			Main.init();
+			Main.showMask();
+			});
+	</script>
+	<!-- end: JavaScript Event Handlers for this page -->
+	</body>
+</html>

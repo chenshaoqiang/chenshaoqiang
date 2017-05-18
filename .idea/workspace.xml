@@ -2,8 +2,244 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index.ftl" afterPath="$PROJECT_DIR$/paipai/index.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/ts.html" afterPath="$PROJECT_DIR$/paipai/ts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jstree/dist/themes/default/32px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jstree/dist/themes/default/40px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/Jcrop/css/Jcrop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/NC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/U8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/bg22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/default-user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/first_part.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.eot_v=4.5.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/fourth_part.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/iconlist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/portfolio/image01_th.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/instaceImg_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/instaceImg_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/instaceImg_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/instaceImg_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/leftscrollbtn_disable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/leftscrollbtn_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/line_detail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/portfolio/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/logo-collapsed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_fastmenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_myenterprice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_mymessage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/mask_start.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/media-user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/nav_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/note_dot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/openapi-platform" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/product_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/portfolio/progressbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/img/progressbar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/rightscrollbtn_disable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/rightscrollbtn_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/second_part.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2-spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/third_part.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jstree/dist/themes/default/throbber.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/user-background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/images/yonyouup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/WEB-INF/404.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/Chart-js/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/addBusiness.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/addBusinessStep1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/addBusinessStep3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/addProbation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/components/admin-index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/admin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular-datatables.columnfilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/DataTables/media/js/angular-datatables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular-datatables.select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular-file-upload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/animate.css/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/auth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/autosize/dist/autosize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-progressbar/bootstrap-progressbar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-rating/bootstrap-rating.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-rating/bootstrap-rating.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bundle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/businessAdmin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/DataTables/media/css/dataTables.bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/DataTables/media/js/dataTables.bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/dataTables.columnFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/dataTables.select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/fastReg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fullcalendar/dist/fullcalendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fullcalendar/dist/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/getInstanceGuide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/resources/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/gmaps/gmaps.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/guidePage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-jasny/dist/css/jasny-bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-jasny/dist/js/jasny-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jquery-ui/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/Jcrop/css/jquery.Jcrop.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/Jcrop/js/jquery.Jcrop.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jquery.appear.js/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/Jcrop/js/jquery.color.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/DataTables/media/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-process.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/css/jquery.fileupload-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.fileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/jquery.iframe-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/ckeditor/adapters/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jquery/dist/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/nestable-fork/dist/jquery.nestable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/nestable-fork/dist/jquery.nestable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jquery.scrollTo/jquery.scrollTo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/twbs-pagination/jquery.twbsPagination.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/fileupload/js/vendor/jquery.ui.widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/bb-jquery-validation/dist/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/js-cookie/src/js.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jstree/dist/jstree.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/letter-icons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/blueimp-load-image/js/load-image.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/css/lyt2-theme-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/css/lyt2-theme-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/message_center.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/modify.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/moment/min/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/myBusiness.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/myProduct.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/onecloud-manager.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/css/plugins.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/productAdmin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/release.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/css/select.dataTables.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2-bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/dist/css/select2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/dist/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_en.js.template" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_pt-PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_rs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/select2/select2_locale_zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/setting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/spectrum/spectrum.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/spectrum/spectrum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/jstree/dist/themes/default/style.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/assets/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/sweetalert/dist/sweetalert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/sweetalert/dist/sweetalert.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/blueimp-tmpl/js/tmpl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/toastr/toastr.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/bower_components/toastr/toastr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/user_manager/userAdmin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/onecloud-manager/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -28,7 +264,7 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-124.9375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="403" column="43" selection-start-line="403" selection-start-column="43" selection-end-line="403" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,21 +275,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/ts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.09375">
-              <caret line="316" column="30" selection-start-line="316" selection-start-column="30" selection-end-line="316" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paipai/index.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50747985">
-              <caret line="314" column="38" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.23793103">
+              <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,7 +400,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,9 +464,86 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi-platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onecloud-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,12 +634,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00246" summary="5.7  update">
-      <created>1494153088944</created>
-      <option name="number" value="00246" />
-      <option name="project" value="LOCAL" />
-      <updated>1494153088944</updated>
     </task>
     <task id="LOCAL-00247" summary="5.7  update">
       <created>1494153390898</created>
@@ -627,31 +923,37 @@
       <option name="project" value="LOCAL" />
       <updated>1494821286138</updated>
     </task>
-    <option name="localTasksCounter" value="295" />
+    <task id="LOCAL-00295" summary="    5.15">
+      <created>1494821675931</created>
+      <option name="number" value="00295" />
+      <option name="project" value="LOCAL" />
+      <updated>1494821675931</updated>
+    </task>
+    <option name="localTasksCounter" value="296" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -982,9 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,12 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="220" column="60" selection-start-line="220" selection-start-column="60" selection-end-line="220" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#1274#0" expanded="false" />
-            <element signature="e#3556#3923#0" expanded="false" />
-            <element signature="e#3972#4640#0" expanded="false" />
-            <element signature="e#4685#8353#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,21 +1313,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.40625">
           <caret line="50" column="73" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-124.9375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="403" column="43" selection-start-line="403" selection-start-column="43" selection-end-line="403" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1045,18 +1328,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/ts.html">
+    <entry file="file://$PROJECT_DIR$/paipai/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.09375">
-          <caret line="316" column="30" selection-start-line="316" selection-start-column="30" selection-end-line="316" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="4.4925203">
+          <caret line="208" column="9" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index.ftl">
+    <entry file="file://$PROJECT_DIR$/paipai/ts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50747985">
-          <caret line="314" column="38" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.23793103">
+          <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,237 @@
+<!--企业认证面板-->
+<div id="panel_identity">
+    <div class="row row-box">
+        <div class="col-sm-12 col-md-12">
+            <form role="form"
+                  class="smart-wizard"
+                  name="identityForm"
+                  novalidate="novalidate">
+                <fieldset>
+                    <div class="row">
+                        <!--认证结果-->
+                        <div class="col-md-12">
+                            <p style="font-size: 14px;">
+                                认证结果:
+                                <span style="padding-left: 25px;"
+                                      ng-bind="detailBusInfo.showIdentity">
+                                </span>
+                            </p>
+                            <!--<p style="padding-left: 25px;"
+                               ng-bind="detailBusInfo.showIdentity">
+                            </p>-->
+                        </div>
+                        <!--审批不通过的时候显示原因-->
+                        <div class="col-md-12"
+                             ng-if="detailBusInfo.showIdentity=='审核不通过'">
+                            <div class="alert alert-danger help-block no-padding">
+                                <label style="font-size: 14px;">审核未通过原因：</label>
+                                <span style="font-size: 14px;" ng-bind="detailBusInfo.auditOpinion"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="alert no-padding">
+                                <p style="font-size: 12px;color:#a94442" >
+                                    温馨提示:请先订购正式产品后再提交认证资料!
+                                </p>
+                            </div>
+                            <div ng-if="detailBusInfo.type=='个人企业'">
+                                <div class="form-group"
+                                     ng-class="{'has-error':identityForm.name.$dirty && identityForm.name.$invalid}">
+                                    <label for="businessPersonName"
+                                           style="font-size: 14px;">负责人姓名:</label>
+                                    <!--未认证或审核不通过的时候可编辑-->
+                                    <div ng-if="detailBusInfo.showIdentity=='未认证'||detailBusInfo.showIdentity=='审核不通过'">
+                                        <input type="text"
+                                               name="name"
+                                               ng-minlength="1"
+                                               ng-maxlength="20"
+                                               required
+                                               ng-model="baseFormData.legalPerson"
+                                               class="form-control"
+                                               id="businessPersonName"
+                                               placehold="20个字符以内">
+                                    </div>
+                                    <!--不可编辑的情况-->
+                                    <div ng-if="detailBusInfo.showIdentity!='未认证'&&detailBusInfo.showIdentity!='审核不通过'">
+                                        <input type="text"
+                                               name="name"
+                                               ng-minlength="1"
+                                               ng-maxlength="20"
+                                               required
+                                               ng-model="baseFormData.legalPerson"
+                                               class="form-control"
+                                               placehold="20个字符以内"
+                                               readonly>
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="identityForm.name.$dirty&&identityForm.name.$error.required">
+                                        此为必填项
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="identityForm.name.$dirty&&identityForm.name.$error.minlength">
+                                        最小长度为1字符
+                                    </div>
+                                    <div class="alert alert-danger help-block"
+                                         ng-show="identityForm.name.$dirty&&identityForm.name.$error.maxlength">
+                                        最大长度为20字符
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div ng-if="detailBusInfo.type=='法人企业'">
+                                    <label style="font-size: 14px;">法人营业执照号:</label>
+                                </div>
+                                <div ng-if="detailBusInfo.type=='个体工商户'">
+                                    <label style="font-size: 14px;">个体工商户营业执照号:</label>
+                                </div>
+                                <div ng-if="detailBusInfo.type=='个人企业'">
+                                    <label style="font-size: 14px;">负责人身份证号码:</label>
+                                </div>
+                                <div ng-if="detailBusInfo.type=='其他'">
+                                    <label style="font-size: 14px;">组织机构代码证或其它证件号码:</label>
+                                </div>
+                                <!--未认证或审核不通过的时候可编辑-->
+                                <div ng-if="detailBusInfo.showIdentity=='未认证'||detailBusInfo.showIdentity=='审核不通过'">
+                                    <!--非个人企业-->
+                                    <div ng-if="detailBusInfo.type!='个人企业'">
+                                        <input type="text"
+                                               name="userbusLicence"
+                                               ng-maxlength="50"
+                                               ng-model="baseFormData.busLicence"
+                                               class="form-control"
+                                               placehold="50个字符以内"
+                                               required>
+                                    </div>
+                                    <!--个人企业-->
+                                    <div ng-if="detailBusInfo.type=='个人企业'">
+                                        <input type="text"
+                                               name="userbusLicence"
+                                               ng-maxlength="18"
+                                               ng-minlength="18"
+                                               ng-model="baseFormData.busLicence"
+                                               class="form-control"
+                                               placehold="输入18位身份证号码"
+                                               required>
+                                    </div>
+                                </div>
+                                <!--不可编辑的情况-->
+                                <div ng-if="detailBusInfo.showIdentity!='未认证'&&detailBusInfo.showIdentity!='审核不通过'">
+                                    <input type="text"
+                                           name="userbusLicence"
+                                           ng-maxlength="50"
+                                           ng-model="baseFormData.busLicence"
+                                           class="form-control"
+                                           readonly
+                                           placehold="50个字符以内"
+                                           required>
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-show="identityForm.userbusLicence.$dirty&&identityForm.userbusLicence.$error.required">
+                                    此为必填项
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-show="identityForm.userbusLicence.$dirty&&identityForm.userbusLicence.$error.minlength">
+                                    身份证号码要求为18位
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-show="identityForm.userbusLicence.$dirty&&identityForm.userbusLicence.$error.maxlength">
+                                    超过最大长度
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 no-padding">
+                                <div ng-if="detailBusInfo.busLicenceUrl!=null"
+                                     class="margin-bottom-10 myownimgstyle">
+                                    <a href="{{detailBusInfo.busLicenceUrl}}"
+                                       target="_blank">
+                                        <img ng-src="{{detailBusInfo.busLicenceUrl}}"
+                                             class="img-thumbnail"
+                                             alt="{{detailBusInfo.name}}">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div ng-if="detailBusInfo.type!='个人企业'">
+                                    <div ng-if="detailBusInfo.type!='其他'">
+                                        <label style="font-size: 14px;">营业执照扫描件:小于5M的(jpg/png/jpeg/gif)图片</label>
+                                    </div>
+                                </div>
+                                <div ng-if="detailBusInfo.type=='其他'">
+                                    <label style="font-size: 14px;">组织机构代码证或其它证件号码扫描件:小于5M的(jpg/png/jpeg/gif)图片</label>
+                                </div>
+                                <div ng-if="detailBusInfo.type=='个人企业'">
+                                    <label style="font-size: 14px;">负责人身份证扫描件:小于5M的(jpg/png/jpeg/gif)图片</label>
+                                </div>
+                                <div class="alert alert-success"
+                                     ng-show="busLicenceUpIsReady">
+                                    <p>图片上传中...</p>
+                                </div>
+                                <div class="alert alert-success help-block"
+                                     ng-if="busLicenUpSuccess==true">
+                                    <p>图片已上传！</p>
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-if="busLicenceImgError==true">
+                                    <p>{{busLicenceImgErrorInfo}}</p>
+                                </div>
+                                <div class="fileinput fileinput-new"
+                                     data-provides="fileinput">
+                                    <div class="fileinput-new thumbnail"></div>
+                                    <!--<div class="fileinput-preview fileinput-exists thumbnail fileinput-style"></div>-->
+                                    <div class="user-edit-image-buttons"
+                                         ng-show="showButton">
+                                                                            <span class="btn btn-primary btn-file">
+                                                                                <span class="fileinput-new">
+                                                                                    <i class="fa fa-picture"></i>
+                                                                                        选择图片
+                                                                                </span>
+                                                                                <span class="fileinput-exists">
+                                                                                    <i class="fa fa-picture"></i>
+                                                                                    修改
+                                                                                </span>
+                                                                                <input type="file"
+                                                                                       ng-click="clearItems2()"
+                                                                                       nvfileselect
+                                                                                       uploader="busLicenceUploader"/>
+                                                                                </span>
+                                        <!--<span ng-repeat="item in busLicenceUploader.queue">
+                                            <button class="btn fileinput-exists btn-primary"
+                                                    ng-click="item.upload()">
+                                                <i class="fa fa-picture"></i>
+                                                上传
+                                            </button>
+                                        </span>-->
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-if="busLicenceUrlError=='true'">
+                                    <p>请确认证件照片上传成功再提交！</p>
+                                </div>
+                                <div class="alert alert-success help-block"
+                                     ng-if="showSendMessage==true">
+                                    <p>认证资料提交成功！</p>
+                                </div>
+                                <div class="alert alert-danger help-block"
+                                     ng-if="showSendMessage==false">
+                                    <p>{{showSendErrorMessage}}</p>
+                                </div>
+                            </div>
+                            <div class="form-group"
+                                 ng-show="showButton">
+                                <div class="row margin-bottom-20">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right">
+                                        <button type="button"
+                                                ng-disabled="identityForm.$invalid"
+                                                class="btn btn-primary form-control"
+                                                ng-click="updateBusLicenceInfo()">
+                                            提交
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

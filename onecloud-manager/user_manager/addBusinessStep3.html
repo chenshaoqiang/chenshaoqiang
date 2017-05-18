@@ -1,0 +1,62 @@
+<div class="margin-bottom-20 center-block col-xs-12 col-md-12 col-sm-12">
+    <div id="new-business-step" class="new-business-step">
+        <div id="wizard" class="swMain">
+            <!-- start: WIZARD SEPS 对应类名：selected和done-->
+            <ul>
+                <li>
+                    <a id="addBusinessStep1" href="javascript:;"
+                       class="done">
+                        <div class="stepNumber">1</div>
+                                <span class="stepDesc">
+                                    <small> 1.企业信息填写 </small>
+                                </span>
+                    </a>
+                </li>
+                <!--<li>
+                    <a id="addBusinessStep2" href="javascript:;"
+                       class="done">
+                        <div class="stepNumber">2</div>
+                                <span class="stepDesc">
+                                    <small> 2.认证信息填写 </small>
+                                </span>
+                    </a>
+                </li>-->
+                <li>
+                    <a id="addBusinessStep3" href="javascript:;"
+                       class="selected">
+                        <div class="stepNumber">2</div>
+                                <span class="stepDesc">
+                                    <small> 2.完成 </small>
+                                </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="bgandcolor padding-top-10 margin-left-0 margin-right-0">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-1"></div>
+                    <div class="col-md-4 col-sm-6 col-xs-10">
+                        <p class="success-message">恭喜您，创建企业成功！</p>
+                        <a ui-sref="myBusiness"
+                           id="nextStep4"
+                           class="margin-bottom-10 form-control btn btn-primary">
+                            确定
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-1"></div>
+                </div>
+                <div class="row text-center margin-top-20 margin-bottom-20">
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-8">
+                        <p>接下来，您还可以： <a ui-sref="addBusiness.step1" style="text-decoration: underline!important;">再创建一个企业</a>
+                            <span ng-show="pid">、</span>
+                            <a ui-sref="admin.productAdmin" ng-show="pid" ng-click="goToProductTap(pid)" style="text-decoration: underline!important;">产品管理</a>
+                            <span ng-show="pid">、</span>
+                            <a ui-sref="businessAdmin.modify" ng-show="pid" ng-click="goToBusSetTap(pid)" style="text-decoration: underline!important;">企业设置</a></p>
+                    </div>
+                    <div class="col-xs-2"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,997 @@
+<!--modal begin-->
+<div ng-if="handelChangePhone=='open'" class="popUpWindow" id="popUpWindow1">
+	<div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+	<div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 col-lg-push-1 checks popUpWindow-check">
+		<div class="text-style bgandcolor alert alert-info">
+			修改登录手机号
+		</div>
+		<form role="form"
+			  class="smart-wizard"
+			  name="changeMobile"
+			  novalidate="novalidate"
+			  id="changeMobile">
+			<div class="oldMobile bgandcolor alert alert-info" ng-if="services.data.mobile!==null">
+				<div class="form-group">
+					<span>
+						<label class="control-label"> 旧手机 </label>
+						<input class="form-control" value="{{services.data.mobile}}" type="text" disabled>
+					</span>
+			</div>
+				<div class="form-group form-actions"
+					 ng-class="{'has-error':changeMobile.captcha.$dirty && changeMobile.captcha.$invalid}">
+					<input type="button" class="btn btn-primary btn-code fr"
+						   ng-if="sendCode == 'no'"
+						   ng-click="oldPhoneCode()"
+						   value="获取验证码">
+					<timerbutton ng-if="sendCode == 'yes'" show-timer="true" ng-click="oldPhoneCode()" timeout="time">重新发送</timerbutton>
+					<input type="text" ng-model="userLoginInfo.oldMobileCaptcha" ng-blur="oldMobileValidateCaptcha()" class="form-control captcha" name="captcha" placehold="请输入验证码">
+					<div class="alert alert-danger help-block"
+						 ng-if="result0.flag != '000000' && result0"
+						 ng-bind="result0.desc">
+					</div>
+				</div>
+			</div>
+
+			<div class="newMobile bgandcolor alert alert-info">
+				<div class="form-group"
+					 ng-class="{'has-error':changeMobile.newMobile.$dirty && changeMobile.newMobile.$invalid}">
+				<span>
+					<label class="control-label"> 新手机 </label>
+					<input class="form-control"
+						   ng-change="regPhone();mobileIsExist()"
+						   ng-model="userLoginInfo.mobile"
+						   type="text"
+						   name="newMobile"
+						   placehold="请输入一个新的手机号码">
+					<div class="alert alert-danger help-block"
+						 ng-if="mobileRe.flag != '000000' && mobileRe"
+						 ng-bind="mobileRe.desc">
+					</div>
+				</span>
+				</div>
+				<div class="form-group form-actions"
+					 ng-class="{'has-error':changeMobile.captcha1.$dirty && changeMobile.captcha1.$invalid}">
+					<input type="button" ng-if="isDisabled =='' || isValidateOldMobile == '' || mobileExist == 'true'" class="btn btn-code btn-grey fr" value="获取验证码">
+					<input type="button" ng-if="isDisabled =='open' && isValidateOldMobile == 'true' && mobileExist == 'false' && sendCode1 == 'no'" class="btn btn-primary btn-code fr" ng-click="newPhoneCode()" value="获取验证码">
+					<timerbutton ng-if="isDisabled =='open' && isValidateOldMobile == 'true' && sendCode1 == 'yes'" show-timer="true"
+								 ng-click="newPhoneCode()"
+								 timeout="time">重新发送</timerbutton>
+					<input type="text" class="form-control captcha" ng-model="userLoginInfo.newMobileCaptcha" ng-blur="newMobileValidateCaptcha()" name="captcha1" placehold="请输入验证码">
+					<div class="alert alert-danger help-block"
+						 ng-if="result1.flag != '000000' && result1"
+						 ng-bind="result1.desc">
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="newMobile bgandcolor alert alert-info">
+			<ul>
+				<li>
+					<a ng-click="handelClose()" ui-sref="setting"
+					   class="btn btn-primary pull-left margin-top-20">
+						放弃
+					</a>
+				</li>
+				<li>
+					<a ng-if="isDisabled =='' || isValidateOldMobile =='' || isValidateNewMobile == ''"
+					   class="btn btn-code btn-grey pull-right margin-top-20">
+						保存
+					</a>
+					<a ng-if="isDisabled =='open' && isValidateOldMobile =='true' && isValidateNewMobile == 'true'" ng-click="saveMobileChange()"
+					   class="btn btn-primary btn-wide pull-right margin-top-20">
+						保存
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div ng-if="handelChangeEmail=='open'" class="popUpWindow" id="popUpWindow2">
+	<div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+	<div class="col-xs-10 col-md-6 col-sm-6  col-lg-4 col-lg-push-1 checks popUpWindow-check">
+		<div class="text-style bgandcolor alert alert-info">
+			修改登录邮箱
+		</div>
+		<form role="form"
+			  class="smart-wizard"
+			  name="changeEmail"
+			  novalidate="novalidate"
+			  id="changeEmail">
+			<div class="oldEmail bgandcolor alert alert-info" ng-if="services.data.email!==null">
+				<div class="form-group">
+					<span>
+						<label class="control-label"> 旧邮箱 </label>
+						<input class="form-control" value="{{services.data.email}}" type="text" disabled="disabled">
+					</span>
+				</div>
+				<div class="form-group form-actions"
+					 ng-class="{'has-error':changeEmail.captcha.$dirty && changeEmail.captcha.$invalid}">
+					<input type="button" class="btn btn-primary btn-code fr" ng-if="sendCode2 == 'no'" ng-click="oldEmailCode()" value="获取验证码">
+					<timerbutton ng-if="sendCode2 == 'yes'" show-timer="true" timeout="time" ng-click="oldEmailCode()">重新发送</timerbutton>
+					<input type="text"  ng-model="userLoginInfo.oldEmailCaptcha" ng-blur="oldEmailValidateCaptcha()" class="form-control captcha" name="captcha" placehold="请输入验证码">
+					<div class="alert alert-danger help-block"
+						 ng-if="result2.flag != '000000' && result2"
+						 ng-bind="result2.desc">
+					</div>
+				</div>
+			</div>
+			<div class="newEmail bgandcolor alert alert-info">
+				<div class="form-group"
+					 ng-class="{'has-error':changeMobile.newEmail.$dirty && changeMobile.newEmail.$invalid}">
+					<span class="username">
+						<label class="control-label"> 新邮箱 </label>
+						<input class="form-control"
+							   ng-change="regEmail()"
+							   ng-model="userLoginInfo.email"
+							   type="text"
+							   ng-blur="emailIsExist()"
+							   name="newEmail"
+							   placehold="请输入一个新的邮箱">
+						<div class="alert alert-danger help-block"
+							 ng-if="emailRe.flag != '000000' && emailRe"
+							 ng-bind="emailRe.desc">
+						</div>
+					</span>
+				</div>
+				<div class="form-group form-actions"
+					 ng-class="{'has-error':changeEmail.captcha1.$dirty && changeEmail.captcha1.$invalid}">
+					<input type="button" ng-if="isDisabled =='' || isValidateOldEmail == '' || emailExist == 'true'" class="btn btn-code btn-grey fr" value="获取验证码">
+					<input type="button" ng-if="isDisabled =='open' && isValidateOldEmail == 'true' && emailExist == 'false' && sendCode3 == 'no' " class="btn btn-primary btn-code fr" ng-click="newEmailCode()" value="获取验证码">
+					<timerbutton ng-if="isDisabled =='open' && isValidateOldEmail == 'true' && sendCode3 == 'yes'" show-timer="true" timeout="time" ng-click="newEmailCode()">重新发送</timerbutton>
+					<input type="text" ng-model="userLoginInfo.newEmailCaptcha" class="form-control captcha" ng-blur="newEmailValidateCaptcha()" name="captcha1" placehold="请输入验证码">
+					<div class="alert alert-danger help-block"
+						 ng-if="result3.flag != '000000' && result3"
+						 ng-bind="result3.desc">
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="newMobile bgandcolor alert alert-info">
+			<ul>
+				<li>
+					<a ng-click="handelClose()" ui-sref="setting"
+					   class="btn btn-primary pull-left margin-top-20">
+						放弃
+					</a>
+				</li>
+				<li>
+					<a ng-if="isDisabled =='' || isValidateOldEmail =='' || isValidateNewEmail == ''"
+					   class="btn btn-code btn-grey pull-right margin-top-20">
+						保存
+					</a>
+					<a ng-if="isDisabled =='open' && isValidateOldEmail =='true' && isValidateNewEmail == 'true'" ng-click="saveEmailChange();handelClose()"
+					   class="btn btn-primary pull-right margin-top-20">
+						保存
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div ng-if="netError=='true'" class="popUpWindow" style="width: 120%; left:-0%" id="popUpWindow3">
+	<div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+	<div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+		<ul>
+			<li>
+				<a ng-click="close()"
+				   ng-if="logout=='false'"
+				   class="btn btn-default btn-xs pull-right fr">
+					X
+				</a>
+			</li>
+		</ul>
+		<div class="text-style bgandcolor alert-info">
+			警告
+		</div>
+		<div class="margin-top-40 margin-bottom-20 font-16">
+			<p class="text-center" ng-bind="errorMsg"></p>
+		</div>
+		<div class="margin-top-10 margin-bottom-20" ng-if="logout=='true'">
+			<a href="logoutRequest" type="button" class="btn btn-primary btn-wide text-center btn-sm pull-right">确定</a>
+		</div>
+	</div>
+</div>
+<div ng-if="updateSuccess=='true'" class="popUpWindow" id="popUpWindow4">
+	<div class="col-xs-1 col-md-3 col-sm-3 col-lg-3"></div>
+	<div class="col-xs-10 col-md-6 col-sm-6 col-lg-4 popUpWindow-check">
+		<ul>
+			<li>
+				<a ng-click="close()"
+				   class="btn btn-default btn-xs pull-right fr">
+					X
+				</a>
+			</li>
+		</ul>
+		<div class="text-style bgandcolor alert-info">
+			提示
+		</div>
+		<div class="margin-top-40 margin-bottom-20 font-16">
+			<p class="text-center"> 修改成功！ </p>
+		</div>
+	</div>
+</div>
+<!--modal end-->
+<div>
+	<!-- start: BREADCRUMB -->
+	<div class="myBreadcrumb-wrapper">
+    <span class="no-padding pull-right margin-right-20">
+        <a href="#/setting">
+            <i class="fa fa-cogs margin-right-5 text-large text-dark"></i>
+            设置
+        </a>
+    </span>
+	</div>
+	<!-- end: BREADCRUMB -->
+	<!-- start: USER PROFILE -->
+	<div class="container-fluid container-fullw">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="tabbable">
+					<div class="row">
+						<div class="col-sm-5 col-md-4">
+							<div class="user-left">
+								<div class="center">
+									<form>
+										<div class="fileinput fileinput-new" data-provides="fileinput">
+											<div class="user-image">
+												<a href="{{headPicUrl}}" target="_blank">
+													<img ng-src="{{headPicUrl}}"
+														 style="width: 200px;height: auto;display: block"
+														 alt="用户头像">
+												</a>
+												<!--<div class="fileinput-new thumbnail">
+													<img ng-src="{{services.data.headPicUrl}}" alt="">
+												</div>
+												<div class="fileinput-preview fileinput-exists thumbnail">
+													<img ng-src="{{services.data.headPicUrl}}" alt="">
+												</div>-->
+												<div class="user-image-buttons">
+													<span class="btn btn-primary btn-file btn-sm">
+														<span class="fileinput-new">
+															<i class="fa fa-pencil"></i>
+														</span>
+														<span class="fileinput-exists">
+															<i class="fa fa-pencil"></i>
+														</span>
+														<input type="file"
+															   ng-click="clearItems()"
+															   nvfileselect
+															   uploader="uploader"
+															   ng-model="headPicUrl"/>
+													</span>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="alert">
+										<p>点击铅笔图标修改用户头像</p>
+									</div>
+									<div class="alert alert-success"
+										 ng-show="userLogoUpIsReady">
+										<p>图片上传中...</p>
+									</div>
+									<div class="alert alert-danger"
+										 ng-show="userLogoImgError">
+										<p>{{userLogoImgErrorInfo}}</p>
+									</div>
+									<hr>
+									<!--<div class="text-center" class="hide">
+										<button class="btn fileinput-exists btn-primary"
+												ng-repeat="item in uploader.queue"
+												ng-click="item.upload();">
+											<i class="fa fa-picture"></i>
+											上传头像
+										</button>
+									</div>-->
+									<!--<div class="social-icons block">-->
+									<!--<ul>-->
+									<!--<li data-placement="top" data-original-title="Twitter" class="social-twitter tooltips">-->
+									<!--<a href="http://www.twitter.com" target="_blank"> Twitter </a>-->
+									<!--</li>-->
+									<!--<li data-placement="top" data-original-title="Facebook" class="social-facebook tooltips">-->
+									<!--<a href="http://facebook.com" target="_blank"> Facebook </a>-->
+									<!--</li>-->
+									<!--<li data-placement="top" data-original-title="Google" class="social-google tooltips">-->
+									<!--<a href="http://google.com" target="_blank"> Google+ </a>-->
+									<!--</li>-->
+									<!--<li data-placement="top" data-original-title="LinkedIn" class="social-linkedin tooltips">-->
+									<!--<a href="http://linkedin.com" target="_blank"> LinkedIn </a>-->
+									<!--</li>-->
+									<!--<li data-placement="top" data-original-title="Github" class="social-github tooltips">-->
+									<!--<a href="pages_user_profile.html#" target="_blank"> Github </a>-->
+									<!--</li>-->
+									<!--</ul>-->
+									<!--</div>-->
+									<!--<hr>-->
+								</div>
+								<table class="table table-condensed">
+									<thead>
+									<tr>
+										<th colspan="3">基础信息</th>
+									</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td width="30%">友户通id：</td>
+											<td width="70%" ng-bind="services.data.id"></td>
+										</tr>
+										<tr>
+											<td>昵称：</td>
+											<td ng-bind="userBaseInfo.nickname"></td>
+										</tr>
+										<tr>
+											<td>出生日期：</td>
+											<td ng-bind="userBaseInfo.birthday"> </td>
+										</tr>
+										<tr>
+											<td>性别：</td>
+											<td ng-bind="showSex"></td>
+										</tr>
+										<tr>
+											<td>家庭电话：</td>
+											<td ng-bind="userBaseInfo.telephone"></td>
+										</tr>
+										<tr>
+											<td>地址：</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" ng-bind="userBaseInfo.address"></td>
+										</tr>
+									</tbody>
+								</table>
+								<!--<table class="table">-->
+									<!--<thead>-->
+									<!--<tr>-->
+										<!--<th colspan="3">联系方式</th>-->
+									<!--</tr>-->
+									<!--</thead>-->
+									<!--<tbody>-->
+									<!--<tr>-->
+										<!--<td>姓名：</td>-->
+										<!--<td ng-if="services.data.name==null" ng-bind="isNull"></td>-->
+										<!--<td ng-if="services.data.name!=null" ng-bind="services.data.name"></td>-->
+										<!--<td><a href="./index.html/setting#panel_edit_account" onclick="baseReg()" data-toggle="tab" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td>邮箱：</td>-->
+										<!--<td ng-if="services.data.email==null" ng-bind="isNull"></td>-->
+										<!--<td ng-if="services.data.email!=null" ng-bind="services.data.email"></td>-->
+										<!--<td><a href="./index.html#/setting#panel_edit_account" onclick="phoneMail()" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td>手机：</td>-->
+										<!--<td ng-if="services.data.mobile==null" ng-bind="isNull"></td>-->
+										<!--<td ng-if="services.data.mobile!=null" ng-bind="services.data.mobile"></td>-->
+										<!--<td><a href="./index.html#/setting#panel_edit_account" onclick="phoneMail()" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>-->
+									<!--</tr>-->
+									<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td>Supervisor</td>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td><a href="pages_user_profile.html#"> Kenneth Ross </a></td>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td><a href="pages_user_profile.html#panel_edit_account" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>&ndash;&gt;-->
+									<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+									<!--&lt;!&ndash;<tr>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td>Status</td>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td><span class="label label-sm label-info">Administrator</span></td>&ndash;&gt;-->
+									<!--&lt;!&ndash;<td><a href="pages_user_profile.html#panel_edit_account" class="show-tab"><i class="fa fa-pencil edit-user-info"></i></a></td>&ndash;&gt;-->
+									<!--&lt;!&ndash;</tr>&ndash;&gt;-->
+									<!--</tbody>-->
+								<!--</table>-->
+								<!--<table class="table">-->
+									<!--<thead>-->
+									<!--<tr>-->
+										<!--<th colspan="3">认证信息</th>-->
+									<!--</tr>-->
+									<!--</thead>-->
+									<!--<tbody>-->
+									<!--<tr>-->
+										<!--<td ng-bind="services.data.cardIdentity"></td>-->
+									<!--</tr>-->
+									<!--</tbody>-->
+								<!--</table>-->
+
+							</div>
+						</div>
+
+						<div class="col-sm-7 col-md-8">
+							<ul class="nav nav-tabs tab-padding tab-space-3 tab-blue" id="myTab4">
+								<!--<li class="active">-->
+									<!--<a data-toggle="tab" id="dashboard" href="../index.html#/setting#panel_overview"> 日志 </a>-->
+								<!--</li>-->
+								<li class="active">
+									<a data-toggle="tab" id="rewriteInfo" href="../index.html#/setting#panel_edit_account"> 修改资料 </a>
+								</li>
+								<li>
+									<a data-toggle="tab" id="manager" href="../index.html#/setting#panel_manager"> 账号管理 </a>
+								</li>
+								<li>
+									<a data-toggle="tab" id="resetPassword" href="../index.html#/setting#panel_reset"> 修改密码 </a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<!--日志面板-->
+								<!--<div id="panel_overview" class="tab-pane fade in active">-->
+									<!--<div class="row row-box">-->
+										<!--<div class="col-sm-12 col-md-12">-->
+											<!--&lt;!&ndash;<div class="row space20">&ndash;&gt;-->
+											<!--&lt;!&ndash;<div class="col-sm-3">&ndash;&gt;-->
+											<!--&lt;!&ndash;<button class="btn btn-icon margin-bottom-5 margin-bottom-5 btn-block">&ndash;&gt;-->
+											<!--&lt;!&ndash;<i class="ti-layers-alt block text-primary text-extra-large margin-bottom-10"></i>&ndash;&gt;-->
+											<!--&lt;!&ndash;企业&ndash;&gt;-->
+											<!--&lt;!&ndash;</button>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+											<!--&lt;!&ndash;<div class="col-sm-3">&ndash;&gt;-->
+											<!--&lt;!&ndash;<button class="btn btn-icon margin-bottom-5 btn-block">&ndash;&gt;-->
+											<!--&lt;!&ndash;<i class="ti-comments block text-primary text-extra-large margin-bottom-10"></i>&ndash;&gt;-->
+											<!--&lt;!&ndash;消息 <span class="badge badge-danger"> 123 </span>&ndash;&gt;-->
+											<!--&lt;!&ndash;</button>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+											<!--&lt;!&ndash;<div class="col-sm-3">&ndash;&gt;-->
+											<!--&lt;!&ndash;<button class="btn btn-icon margin-bottom-5 btn-block">&ndash;&gt;-->
+											<!--&lt;!&ndash;<i class="ti-calendar block text-primary text-extra-large margin-bottom-10"></i>&ndash;&gt;-->
+											<!--&lt;!&ndash;账户&ndash;&gt;-->
+											<!--&lt;!&ndash;</button>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+											<!--&lt;!&ndash;<div class="col-sm-3">&ndash;&gt;-->
+											<!--&lt;!&ndash;<button class="btn btn-icon margin-bottom-5 btn-block">&ndash;&gt;-->
+											<!--&lt;!&ndash;<i class="ti-flag block text-primary text-extra-large margin-bottom-10"></i>&ndash;&gt;-->
+											<!--&lt;!&ndash;提醒&ndash;&gt;-->
+											<!--&lt;!&ndash;</button>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+											<!--<div class="panel panel-white" id="activities">-->
+												<!--<div class="panel-heading border-light">-->
+													<!--<h4 class="panel-title text-primary">最近活动</h4>-->
+													<!--<paneltool class="panel-tools" tool-collapse="tool-collapse" tool-refresh="load1" tool-dismiss="tool-dismiss"></paneltool>-->
+												<!--</div>-->
+												<!--<div collapse="activities" ng-init="activities=false" class="panel-wrapper">-->
+													<!--<div class="panel-body">-->
+														<!--<ul class="timeline-xs">-->
+															<!--<li class="timeline-item success">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--2 分钟 之前-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--<a class="text-info" href=""> sc </a>-->
+																		<!--刚刚加入了xxx企业。-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--12:30-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--登录-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item danger">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--11:11-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--登录-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item info">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--6/12，周四-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--创建了XX企业-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--6/10，周二-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--登录-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--4/11,周日-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--修改了基础信息-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item warning">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--3/25，周三-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--登录-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+															<!--<li class="timeline-item">-->
+																<!--<div class="margin-left-15">-->
+																	<!--<div class="text-muted text-small">-->
+																		<!--3/20，周五-->
+																	<!--</div>-->
+																	<!--<p>-->
+																		<!--<a class="text-info" href=""> 138xxxxxxxx </a>-->
+																		<!--注册-->
+																	<!--</p>-->
+																<!--</div>-->
+															<!--</li>-->
+														<!--</ul>-->
+													<!--</div>-->
+												<!--</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--修改资料面板-->
+								<div id="panel_edit_account" class="tab-pane fade in active">
+									<div class="row row-box">
+										<div class="col-sm-12 col-md-12">
+											<form role="form"
+												  class="smart-wizard"
+												  name="baseForm"
+												  novalidate="novalidate"
+												  id="form2">
+												<fieldset>
+													<legend>
+														基础信息
+													</legend>
+													<div class="row">
+														<div class="col-md-6" id="sex-radio">
+															<div class="form-group" ng-class="{'has-error':baseForm.nickname.$dirty && baseForm.nickname.$invalid}">
+																<label class="control-label"> 昵称 </label>
+																<input type="text"
+																	   ng-model="userBaseInfo.nickname"
+																	   placehold="昵称不超过10个字"
+																	   class="form-control"
+																	   id="nickname"
+																	   ng-maxlength="10"
+																	   ng-minlength="2"
+																	   name="nickname">
+																<div class="alert alert-danger help-block"
+																	 ng-show="baseForm.nickname.$dirty&&baseForm.nickname.$error.minlength">
+																	昵称最小长度为2字符
+																</div>
+																<div class="alert alert-danger help-block"
+																	 ng-show="baseForm.nickname.$dirty&&baseForm.nickname.$error.maxlength">
+																	昵称最大长度为10字符
+																</div>
+															</div>
+															<div class="form-group sex-radio">
+																<label class="control-label"> 性别 </label>
+																<div class="clip-radio radio-primary" class="sex-radio" ng-if="services.data.sex != '0' && services.data.sex != '1'">
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="1" name="gender" id="us-male">
+																	<label for="us-male"> 男 </label>
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="0" name="gender" id="us-female">
+																	<label for="us-female"> 女 </label>
+																</div>
+																<div class="clip-radio radio-primary" class="sex-radio" ng-if="services.data.sex == '0'">
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="1" name="gender" id="us-male1">
+																	<label for="us-male1"> 男 </label>
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="0" name="gender" id="us-female1" checked>
+																	<label for="us-female1"> 女 </label>
+																</div>
+																<div class="clip-radio radio-primary" class="sex-radio" ng-if="services.data.sex == '1'">
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="1" name="gender" id="us-male2" checked>
+																	<label for="us-male2"> 男 </label>
+																	<input ng-model="userBaseInfo.sex" type="radio" ng-value="0" name="gender" id="us-female2">
+																	<label for="us-female2"> 女 </label>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group">
+																<label class="control-label"> 出生日期 </label>
+																<p class="input-group input-append datepicker date">
+																	<input type="text"
+																		   class="form-control"
+																		   ng-model="userBaseInfo.birthday"
+																		   ng-value="newBirthday"
+																		   id="birthday"
+																		   name="birthday"
+																		   readonly>
+																	<span class="input-group-btn">
+																		<button type="button" class="btn btn-default">
+																			<i class="glyphicon glyphicon-calendar"></i>
+																		</button>
+																	</span>
+																</p>
+															</div>
+															<div class="form-group">
+																<label class="control-label"> 家庭电话 </label>
+																<input type="text"
+																	   ng-model="userBaseInfo.telephone"
+																	   placehold="家庭电话"
+																	   class="form-control"
+																	   id="telephone"
+																	   maxlength="20"
+																	   name="telephone">
+															</div>
+
+														</div>
+														<div class="col-md-12">
+															<div class="form-group" ng-class="{'has-error':baseForm.address.$dirty && baseForm.address.$invalid}">
+																<label class="control-label"> 地址</label>
+																<input type="text"
+																	   ng-model="userBaseInfo.address"
+																	   ng-maxlength="50"
+																	   ng-minlength="2"
+																	   placehold="地址不超过50个字"
+																	   class="form-control"
+																	   id="address"
+																	   name="address">
+																<div class="alert alert-danger help-block"
+																	 ng-show="baseForm.address.$dirty&&baseForm.address.$error.minlength">
+																	地址最小长度为2字符
+																</div>
+																<div class="alert alert-danger help-block"
+																	 ng-show="baseForm.address.$dirty&&baseForm.address.$error.maxlength">
+																	地址最大长度为50字符
+																</div>
+															</div>
+														</div>
+														<input type="hidden" value="{{services.data.openid}}" id="openid">
+													</div>
+												</fieldset>
+												<div class="row">
+													<div class="col-md-push-8 col-md-4">
+														<button ng-if="clicked == 'true'" class="btn btn-grey pull-right margin-right-20 ng-scope"
+																type="button">
+															提交
+														</button>
+														<button ng-if="clicked == 'false'" class="btn btn-primary pull-right" id="form2Submit" type="button" ng-click="userBase()">
+															提交
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<!--<div class="row row-box">-->
+										<!--<div class="col-sm-12 col-md-12">-->
+											<!--<form role="form"-->
+												  <!--class="smart-wizard"-->
+												  <!--name="identityForm"-->
+												  <!--novalidate="novalidate"-->
+												  <!--id="form3">-->
+												<!--<fieldset>-->
+													<!--<legend>-->
+														<!--认证信息-->
+													<!--</legend>-->
+													<!--<div class="row">-->
+														<!--<div class="col-md-6 height-110">-->
+															<!--<div class="form-group" ng-class="{'has-error':identityForm.username.$dirty && identityForm.username.$invalid}">-->
+																<!--<span class="text-danger">*</span>-->
+																<!--<label class="control-label"> 姓名 </label>-->
+																<!--<span>-->
+																	<!--<input class="form-control"-->
+																		   <!--ng-required="true"-->
+																		   <!--ng-maxlength="10"-->
+																		   <!--ng-minlength="2"-->
+																		   <!--ng-value="services.data.name"-->
+																		   <!--ng-model="userIdentityInfo.name"-->
+																		   <!--id="username"-->
+																		   <!--name="username"-->
+																		   <!--type="text"-->
+																		   <!--placehold="姓名">-->
+																	<!--<div class="alert alert-danger help-block"-->
+																		 <!--ng-show="identityForm.username.$dirty&&identityForm.username.$error.required">-->
+																		<!--此为必填项-->
+																	<!--</div>-->
+																	<!--<div class="alert alert-danger help-block"-->
+																		 <!--ng-show="identityForm.username.$dirty&&identityForm.username.$error.minlength">-->
+																		<!--姓名最小长度为2字符-->
+																	<!--</div>-->
+																	<!--<div class="alert alert-danger help-block"-->
+																		 <!--ng-show="identityForm.username.$dirty&&identityForm.username.$error.maxlength">-->
+																		<!--姓名最大长度为10字符-->
+																	<!--</div>-->
+																<!--</span>-->
+															<!--</div>-->
+														<!--</div>-->
+														<!--<div class="col-md-6 height-110">-->
+															<!--<div class="form-group" ng-class="{'has-error':identityForm.cardNo.$dirty && identityForm.cardNo.$invalid}">-->
+																<!--<span class="text-danger">*</span>-->
+																<!--<label class="control-label"> 身份证 </label>-->
+																<!--<span>-->
+																	<!--<input class="form-control"-->
+																			<!--id="cardNo"-->
+																			<!--name="cardNo"-->
+																			<!--type="text"-->
+																			<!--placehold="请输入18位身份证号"-->
+																			<!--ng-required="true"-->
+																			<!--ng-minlength="18"-->
+																			<!--ng-maxlength="18"-->
+																			<!--ng-value="services.data.cardNo"-->
+																			<!--ng-model="userIdentityInfo.cardNo" />-->
+																	<!--<div class="alert alert-danger help-block"-->
+																		 <!--ng-show="identityForm.cardNo.$dirty&&identityForm.cardNo.$error.required">-->
+																			<!--此为必填项-->
+																		<!--</div>-->
+																		<!--<div class="alert alert-danger help-block"-->
+																			 <!--ng-show="identityForm.cardNo.$dirty&&identityForm.cardNo.$error.minlength">-->
+																			<!--请输入18位身份证号-->
+																		<!--</div>-->
+																		<!--<div class="alert alert-danger help-block"-->
+																			 <!--ng-show="identityForm.cardNo.$dirty&&identityForm.cardNo.$error.maxlength">-->
+																			<!--请输入18位身份证号-->
+																		<!--</div>-->
+																<!--</span>-->
+															<!--</div>-->
+														<!--</div>-->
+														<!--<div class="col-md-6">-->
+															<!--<div class="form-group">-->
+																<!--<span class="text-danger">*</span>-->
+																<!--<label> 身份证正面照 </label>-->
+																<!--<div class="fileinput fileinput-new" data-provides="fileinput">-->
+																	<!--<div class="fileinput-new thumbnail">-->
+																		<!--<img style="max-width: 100%;width: 100%; max-height: 100%;height: 100%;"-->
+																			 <!--ng-if="services.data.cardPicFrontUrl != ''"-->
+																			 <!--ng-src="{{services.data.cardPicFrontUrl}}" alt="">-->
+																	<!--</div>-->
+																	<!--<div class="fileinput-preview fileinput-exists fileinput-style2 thumbnail">-->
+																	<!--</div>-->
+																	<!--<div class="user-edit-image-buttons">-->
+																		<!--<span class="btn btn-primary btn-file">-->
+																			<!--<span class="fileinput-new">-->
+																				<!--<i class="fa fa-picture"></i>-->
+																				<!--选择图片-->
+																			<!--</span>-->
+																			<!--<span class="fileinput-exists">-->
+																				<!--<i class="fa fa-picture"></i>-->
+																				<!--修改-->
+																			<!--</span>-->
+																			<!--<input type="file"-->
+																				   <!--ng-click="clearItems1()"-->
+																				   <!--nv-file-select=""-->
+																				   <!--uploader="uploaderFront"-->
+																				   <!--ng-model="userIdentityInfo.cardPicFrontUrl"-->
+																				   <!--ng-required="true"/>-->
+																		<!--</span>-->
+																		<!--&lt;!&ndash;<button class="btn fileinput-exists btn-primary"&ndash;&gt;-->
+																				<!--&lt;!&ndash;ng-repeat="item in uploaderFront.queue"&ndash;&gt;-->
+																				<!--&lt;!&ndash;ng-click="item.upload()">&ndash;&gt;-->
+																			<!--&lt;!&ndash;<i class="fa fa-picture"></i>&ndash;&gt;-->
+																			<!--&lt;!&ndash;上传&ndash;&gt;-->
+																		<!--&lt;!&ndash;</button>&ndash;&gt;-->
+																	<!--</div>-->
+																<!--</div>-->
+															<!--</div>-->
+														<!--</div>-->
+														<!--<div class="col-md-6">-->
+															<!--<div class="form-group">-->
+																<!--<span class="text-danger">*</span>-->
+																<!--<label> 身份证背面照 </label>-->
+																<!--<div class="fileinput fileinput-new" data-provides="fileinput">-->
+																	<!--<div class="fileinput-new thumbnail">-->
+																		<!--<img style="max-width: 100%;width: 100%; max-height: 100%;height: 100%;"-->
+																			 <!--ng-if="services.data.cardPicBackUrl != ''"-->
+																			 <!--ng-src="{{services.data.cardPicBackUrl}}" alt="">-->
+																	<!--</div>-->
+																	<!--<div class="fileinput-preview fileinput-exists fileinput-style2 thumbnail"></div>-->
+																	<!--<div class="user-edit-image-buttons">-->
+																		<!--<span class="btn btn-primary btn-file">-->
+																			<!--<span class="fileinput-new">-->
+																				<!--<i class="fa fa-picture"></i>-->
+																				<!--选择图片-->
+																			<!--</span>-->
+																			<!--<span class="fileinput-exists">-->
+																				<!--<i class="fa fa-picture"></i>-->
+																				<!--修改-->
+																			<!--</span>-->
+																			<!--<input type="file"-->
+																				   <!--ng-click="clearItems()"-->
+																				   <!--nv-file-select=""-->
+																				   <!--uploader="uploaderBack"-->
+																				   <!--ng-model="userIdentityInfo.cardPicBackUrl"-->
+																				   <!--ng-required="true"/>-->
+																		<!--</span>-->
+																		<!--&lt;!&ndash;<button class="btn fileinput-exists btn-primary"&ndash;&gt;-->
+																				<!--&lt;!&ndash;ng-repeat="item in uploaderBack.queue"&ndash;&gt;-->
+																				<!--&lt;!&ndash;ng-click="item.upload()">&ndash;&gt;-->
+																			<!--&lt;!&ndash;<i class="fa fa-picture"></i>&ndash;&gt;-->
+																			<!--&lt;!&ndash;上传&ndash;&gt;-->
+																		<!--&lt;!&ndash;</button>&ndash;&gt;-->
+																	<!--</div>-->
+																<!--</div>-->
+															<!--</div>-->
+														<!--</div>-->
+													<!--</div>-->
+												<!--</fieldset>-->
+												<!--<div class="row">-->
+													<!--<div class="col-md-push-8 col-md-4">-->
+														<!--<button class="btn btn-primary pull-right"-->
+																<!--id="form3Submit"-->
+																<!--ng-if="canSubmit=='true'&&canSubmit1=='true'"-->
+																<!--ng-click="userIdentity()">-->
+															<!--提交-->
+														<!--</button>-->
+														<!--<button class="btn btn-grey pull-right"-->
+																<!--ng-if="canSubmit==''||canSubmit1==''"-->
+																<!--type="button">-->
+															<!--提交-->
+														<!--</button>-->
+													<!--</div>-->
+												<!--</div>-->
+											<!--</form>-->
+										<!--</div>-->
+									<!--</div>-->
+								</div>
+								<!--账号管理面板-->
+								<div id="panel_manager" class="tab-pane fade">
+									<div class="row row-box">
+										<div class="col-sm-12 col-md-12">
+											<form role="form" id="form">
+												<fieldset>
+													<legend>
+														设置登录账号
+													</legend>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="form-group">
+																<label class="control-label"> 友户通id： </label>
+																<span class="height-34" style="display: inline-block;line-height: 34px;font-size: 14px;" ng-bind="services.data.id"></span>
+															</div>
+															<div class="form-group">
+																<label class="control-label"> 登录手机： </label>
+																<input type="text" class="height-34" value="{{services.data.mobile}}" disabled>
+																<input type="button" value="修改" ng-if="services.data.mobile!=null" ng-click="changePhone()" class="btn btn-primary margin-left-20">
+																<input type="button" value="添加" ng-if="services.data.mobile==null" ng-click="changePhone()" class="btn btn-primary margin-left-20">
+															</div>
+															<div class="form-group">
+																<label class="control-label"> 登录邮箱： </label>
+																<input type="text" class="height-34" value="{{services.data.email}}" disabled>
+																<input type="button" value="修改" ng-if="services.data.email!=null" ng-click="changeEmail()" class="btn btn-primary margin-left-20">
+																<input type="button" value="添加" ng-if="services.data.email==null" ng-click="changeEmail()" class="btn btn-primary margin-left-20">
+															</div>
+														</div>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+
+								</div>
+								<!--修改密码面板-->
+								<div id="panel_reset" class="tab-pane fade">
+									<div class="row row-box">
+										<div class="col-sm-12 col-md-12">
+											<form role="form">
+												<fieldset>
+													<legend>
+														修改密码
+													</legend>
+													<div class="row">
+														<div class="col-md-7">
+															<div class="form-group">
+																<label class="control-label"> 手机号： </label>
+																<input type="text" class="height-34"
+																	   style="width: 100%;"
+																	   ng-keyup="checkUser()"
+																	   ng-paste="checkUser()"
+																	   ng-model="userMobile"
+																	   placeholder="请输入登录手机号">
+															</div>
+														</div>
+														<div class="col-md-8"></div>
+														<div class="col-md-7" ng-show="step=='first'">
+															<div class="form-group">
+																<label class="control-label"> 验证码： </label>
+																<br />
+																<input type="text" class="height-34 fl" ng-model="userCaptcha" placeholder="验证码">
+																<timerbutton ng-if="btnGrey=='count'" show-timer="true" timeout="time">重新发送</timerbutton>
+																<button type="button" ng-if="btnGrey=='false'" ng-click="getCaptcha()" class="btn btn-code btn-primary width-150 pull-right" ng-model="captchaBtn">{{captchaBtn}}</button>
+																<button type="button" ng-if="btnGrey=='true'" class="btn-code btn btn-default btn-grey width-150 pull-right" ng-model="captchaBtn">{{captchaBtn}}</button>
+															</div>
+														</div>
+														<div class="col-md-8"></div>
+														<div class="col-md-7">
+															<div class="form-group margin-top-25">
+																<span ng-if="wrong=='true'" class="text-danger font-16">{{errorMsg}}</span>
+																<button ng-if="nextBtn=='false' || userCaptcha == ''" class="btn btn-grey next-step btn-wide pull-right">
+																	下一步 <i class="fa fa-arrow-circle-right"></i>
+																</button>
+																<button ng-if="nextBtn=='true' && userCaptcha != ''" class="btn btn-primary next-step btn-wide pull-right" ng-click="checkCaptcha()">
+																	下一步 <i class="fa fa-arrow-circle-right"></i>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="row" ng-show="step=='second'">
+														<div class="col-md-7">
+															<div class="form-group">
+																<label class="control-label"> 新密码： </label>
+																<input type="password" class="height-34"
+																	   style="width: 100%;"
+																	   ng-model="formData.password"
+																	   placeholder="请输入新密码">
+															</div>
+														</div>
+														<div class="col-md-7">
+															<div class="form-group">
+																<label class="control-label"> 确认密码： </label>
+																<input type="password" class="height-34"
+																	   style="width: 100%;"
+																	   ng-model="twoPassword.password"
+																	   placeholder="请再次输入新密码">
+															</div>
+														</div>
+														<div class="col-md-7">
+															<div class="form-group margin-top-25">
+																<span ng-if="wrongs=='true'" class="text-danger font-16">{{errorMsg}}</span>
+																<button class="btn btn-primary next-step btn-wide pull-right" ng-click="checkReset()">
+																	确定修改
+																</button>
+															</div>
+														</div>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: USER PROFILE -->
+</div>
+
+<script>
+	$(function() {
+		var url = window.location.href;//获取当前浏览器的url
+		var index = url.indexOf("flag");
+		if(index !=-1) {
+//			$("#rewriteInfo").trigger('click');
+		};
+	});
+	function baseReg() {
+		$("#rewriteInfo").trigger('click');
+	};
+	function phoneMail(){
+		$("#manager").trigger('click');
+	};
+	var FormPickers = function() {
+		"use strict";
+
+		var datePickerHandler = function() {
+			$('.datepicker').datepicker({
+				autoclose : true,
+				gotoCurrent: true,
+				format : "yyyy-M-d",
+				forceParse: true,
+
+			});
+			$('.format-datepicker').datepicker({
+				format : "yyyy-M-d",
+			});
+
+		};
+		return {
+			//main function to initiate template pages
+			init : function() {
+				datePickerHandler();
+			}
+		};
+	}();
+	FormPickers.init();
+</script>
