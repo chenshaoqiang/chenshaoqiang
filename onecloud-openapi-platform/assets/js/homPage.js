@@ -1,5 +1,5 @@
 /**
- * Created by wbxiaoxz on 2016/12/22 0022.
+ *
  */
 $(function () {
     var state = localStorage.getItem('login_or_register');
