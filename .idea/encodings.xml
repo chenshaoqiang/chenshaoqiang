@@ -23,5 +23,10 @@
     <file url="file://$PROJECT_DIR$/slide-chen/ui_page/page9.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testEcharts/js/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testEcharts/json/cylinder.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vientiane/media/css/base.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vientiane/media/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vientiane/media/js/common_filter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vientiane/media/js/common_service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vientiane/media/js/index.js" charset="UTF-8" />
   </component>
 </project>

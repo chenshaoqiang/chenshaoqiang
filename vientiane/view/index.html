@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自拍杆后台管理</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="description" content="自拍杆后台管理"/>
+    <meta name="keywords" content="自拍杆,自拍杆后台管理,万象App"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!--禁止浏览器自己把页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--把苹果手机浏览器中的菜单栏工具栏隐藏-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content="万象App">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../media/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../media/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../media/third/bootstrap/dist/css/bootstrap.min.css"/>
+    <!--ie8 console 未定义的代码-->
+    <script type="text/javascript">
+
+        if (!window.console || !console.firebug) {
+            var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml", "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+
+            window.console = {};
+            for (var i = 0; i < names.length; ++i)
+                window.console[names[i]] = function () {}
+        }
+    </script>
+</head>
+<body>
+<div class="head"></div>
+<div class="content">
+    <div class="content-left"></div>
+    <div class="content-right">
+        <div ui-view></div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+<script type="text/javascript" src="../media/third/angular/angular.min.js"></script>
+<script type="text/javascript" src="../media/third/angular/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="../media/third/angular/angular-loader.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/respond.min.js"></script>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/es5-sham.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../media/js/common_service.js"></script>
+<script type="text/javascript" src="../media/js/common_filter.js"></script>
+<script type="text/javascript" src="../media/js/index.js"></script>
+
+
+
+</html>

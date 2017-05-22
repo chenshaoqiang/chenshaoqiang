@@ -1,58 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.2用户详情_作品.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.3用户详情_发出的评论.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.4用户详情_收到的评论.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.5用户详情_发出的赞.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.6用户详情_收到的赞.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/1.7用户管理_弹框.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.1作品管理_列表.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.2作品管理_新增作品.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.3作品管理_投稿作品详情.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.4作品管理_被举报作品.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.5作品详情_评论.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.6作品详情_点赞.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/2.7作品详情_分享.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/3.1客服管理_举报.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/3.2客服管理_意见反馈.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/4.1系统管理_版本列表.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/4.2系统管理_版本介绍.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg_5.18/4.3系统管理_添加版本.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_用户9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_管理员1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_管理员2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_管理员3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/人员管理_管理员4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_全部作品1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_全部作品2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_全部作品3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_全部作品4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_投稿作品1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_投稿作品2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_投稿作品3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_趣影作品1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/作品管理_趣影作品2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/客服管理_举报.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/客服管理_举报管理.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/客服管理_意见反馈.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/系统管理_版本更新.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/系统管理_系统帮助.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/角色权限管理.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai-ui/jpg/首页.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onecloud-openapi-platform/assets/js/homPage.js" afterPath="$PROJECT_DIR$/onecloud-openapi-platform/assets/js/homPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onecloud-openapi-platform/index.html" afterPath="$PROJECT_DIR$/onecloud-openapi-platform/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onecloud-openapi-platform/login.html" afterPath="$PROJECT_DIR$/onecloud-openapi-platform/login.html" />
+    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="    5.22">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/view/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/logo-collapsed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/images/title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/angular/angular-loader.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/angular/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/js/common_filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/js/common_service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/des_base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/js/es5-sham.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/js/html5shiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/view/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/jquery/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/jquery/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/css/login/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/view/login/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/js/login/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/js/login/login_success.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/third/bootstrap/dist/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/media/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/vientiane.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vientiane/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -74,11 +66,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide-chen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vientiane/view/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -265,6 +267,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,6 +284,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vientiane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vientiane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vientiane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sthOfShaoQiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vientiane" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,8 +425,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,8 +439,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mygit\chenshaoqiang\paipai-ui" />
       <recent name="D:\mygit\chenshaoqiang" />
+      <recent name="D:\mygit\chenshaoqiang\paipai-ui" />
       <recent name="D:\mygit\chenshaoqiang\paipai" />
       <recent name="D:\mygit\chenshaoqiang\paipai\css" />
       <recent name="D:\GitHub项目发布\sthOfShaoQiang\paipai" />
@@ -441,12 +515,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00249" summary="5.7  update">
-      <created>1494155847354</created>
-      <option name="number" value="00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1494155847354</updated>
     </task>
     <task id="LOCAL-00250" summary="5.7  全景360修改至正常">
       <created>1494157116865</created>
@@ -736,14 +804,20 @@
       <option name="project" value="LOCAL" />
       <updated>1495101437836</updated>
     </task>
-    <option name="localTasksCounter" value="298" />
+    <task id="LOCAL-00298" summary="    5.22">
+      <created>1495451287651</created>
+      <option name="number" value="00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1495451287651</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15208334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -776,7 +850,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix6" />
     <MESSAGE value="fix7" />
     <MESSAGE value="fix8" />
     <MESSAGE value="fix9" />
@@ -801,20 +874,14 @@
     <MESSAGE value="    5.11" />
     <MESSAGE value="    5.15" />
     <MESSAGE value="    5.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="    5.18" />
+    <MESSAGE value="    5.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="    5.22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paipai360/index备份（重构的）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9047618">
-          <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paipai/img/device.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1161,6 +1228,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vientiane/view/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
