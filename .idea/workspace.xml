@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index1.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\paipai\index1.html" afterPath="$PROJECT_DIR$/paipai/index3.html" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,8 +131,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paipai/index3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.608046">
               <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
@@ -506,12 +506,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00252" summary="5.8  全景360修改至正常">
-      <created>1494208482061</created>
-      <option name="number" value="00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1494208482061</updated>
-    </task>
     <task id="LOCAL-00253" summary="5.8  全景360修改至正常">
       <created>1494209069682</created>
       <option name="number" value="00253" />
@@ -800,7 +794,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495851515120</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="    5.27">
+      <created>1495853062890</created>
+      <option name="number" value="00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1495853062890</updated>
+    </task>
+    <option name="localTasksCounter" value="302" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1252,7 +1252,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+    <entry file="file://$PROJECT_DIR$/paipai/index3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.608046">
           <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
