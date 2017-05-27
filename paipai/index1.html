@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <img src="./img/lue.jpeg" alt="suo"/>
+    <!--<img src="./img/lue.jpeg" alt="suo"/>-->
     <div class="img-box" id="imgBox">
         <!-- 显示的内容 包含：用户信息和图片 -->
         <div class="user-info">
@@ -114,6 +114,7 @@
     </div>
 </body>
 <script type="application/javascript" charset="utf-8">
+
 
     var desW=360;//设置设计稿宽
     var winW=document.documentElement.clientWidth;  //设备的实际宽度
@@ -389,6 +390,32 @@
                     contentAllStr = content;
                 }
                 workContent.text(contentLineStr);
+
+                function onBridgeReady(){
+                    WeixinJSBridge.on('menu:share:appmessage', function(argv){
+
+                        WeixinJSBridge.invoke('sendAppMessage',{
+
+                            "appid":"",                                        //appid 设置空就好了。
+                            "img_url":	 userHeadUrl,                               //分享时所带的图片路径
+                            "img_width":	"120",                            //图片宽度
+                            "img_height":	"120",                            //图片高度
+                            "link":url,                                               //分享附带链接地址
+                            "desc":"我是一个介绍",                            //分享内容介绍
+                            "title":"标题，再简单不过了。"
+                        }, function(res){/*** 回调函数，最好设置为空 ***/
+
+                        });
+
+                    });
+                }
+                if (typeof WeixinJSBridge === "undefined"){
+                    if (document.addEventListener){
+                        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                    }
+                }else{
+                    onBridgeReady();
+                }
             }
         }
     });
