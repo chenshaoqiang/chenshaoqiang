@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\paipai\index2.html" afterPath="$PROJECT_DIR$/paipai/index4.html" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\paipai\index4.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index4.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paipai/index4.html">
+      <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52873564">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21149425">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#6158#6371#0" expanded="false" />
@@ -507,12 +507,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00256" summary="5.8  全景360修改至正常">
-      <created>1494301650572</created>
-      <option name="number" value="00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1494301650573</updated>
-    </task>
     <task id="LOCAL-00257" summary="5.8  全景360修改至正常">
       <created>1494301695362</created>
       <option name="number" value="00257" />
@@ -801,7 +795,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495853806292</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="    5.27">
+      <created>1495854126858</created>
+      <option name="number" value="00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1495854126858</updated>
+    </task>
+    <option name="localTasksCounter" value="306" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1253,10 +1253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index4.html">
+    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52873564">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21149425">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#6158#6371#0" expanded="false" />
