@@ -17,6 +17,7 @@
 
 </head>
 <body>
+<img id="userSurlImg" style="position: absolute;top: 0;left: 0;width: 300px;height: 300px;visibility: hidden;" src="${userSurlImg}">
 <div class="img-box" id="imgBox">
     <!-- 显示的内容 包含：用户信息和图片 -->
     <div class="user-info">
@@ -173,6 +174,8 @@
 
     var userNameSpan = $("div.user_name span"); // 用户姓名
     var userHeadImg = $("div.user_head img"); // 用户头像
+
+    var userSurlImg = $("#userSurlImg"); //
 
     var workContent = $("div.work_content span"); // 说说内容
     var contentImg = $("div.content_img_div img");
@@ -343,6 +346,9 @@
 
                 var content = data.data.title;
                 var songName = data.data.songName;
+
+                var surl=data.data.surl;
+                userSurlImg.attr("src", surl);
 
                 userNameSpan.text(username);
                 userHeadImg.attr("src", userHeadUrl);
