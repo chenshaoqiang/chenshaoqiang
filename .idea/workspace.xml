@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index1.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\paipai\index4.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,14 +134,14 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21149425">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44942528">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6158#6371#0" expanded="false" />
-                <element signature="e#8222#9096#0" expanded="false" />
-                <element signature="e#9405#10187#0" expanded="false" />
-                <element signature="e#10246#12601#0" expanded="false" />
+                <element signature="e#6159#6372#0" expanded="false" />
+                <element signature="e#8223#9097#0" expanded="false" />
+                <element signature="e#9406#10188#0" expanded="false" />
+                <element signature="e#10247#12602#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -221,8 +221,8 @@
         <option value="$PROJECT_DIR$/slide-chen/index.html" />
         <option value="$PROJECT_DIR$/oncloud-verify/system-manager/verification.html" />
         <option value="$PROJECT_DIR$/paipai/index.html" />
-        <option value="$PROJECT_DIR$/paipai/index1.html" />
         <option value="$PROJECT_DIR$/paipai/index3.html" />
+        <option value="$PROJECT_DIR$/paipai/index1.html" />
       </list>
     </option>
   </component>
@@ -506,12 +506,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00257" summary="5.8  全景360修改至正常">
-      <created>1494301695362</created>
-      <option name="number" value="00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1494301695362</updated>
     </task>
     <task id="LOCAL-00258" summary="5.8  全景360修改至正常">
       <created>1494302058066</created>
@@ -801,7 +795,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495854126858</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="    5.28">
+      <created>1495854340976</created>
+      <option name="number" value="00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1495854340976</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -841,7 +841,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix8" />
     <MESSAGE value="fix9" />
     <MESSAGE value="end" />
     <MESSAGE value="update--ie8兼容" />
@@ -866,7 +865,8 @@
     <MESSAGE value="    5.18" />
     <MESSAGE value="    5.22" />
     <MESSAGE value="    5.27" />
-    <option name="LAST_COMMIT_MESSAGE" value="    5.27" />
+    <MESSAGE value="    5.28" />
+    <option name="LAST_COMMIT_MESSAGE" value="    5.28" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1255,14 +1255,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21149425">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.44942528">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6158#6371#0" expanded="false" />
-            <element signature="e#8222#9096#0" expanded="false" />
-            <element signature="e#9405#10187#0" expanded="false" />
-            <element signature="e#10246#12601#0" expanded="false" />
+            <element signature="e#6159#6372#0" expanded="false" />
+            <element signature="e#8223#9097#0" expanded="false" />
+            <element signature="e#9406#10188#0" expanded="false" />
+            <element signature="e#10247#12602#0" expanded="false" />
           </folding>
         </state>
       </provider>
