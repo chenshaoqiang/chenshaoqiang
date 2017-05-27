@@ -27,7 +27,7 @@
       <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onecloud-openapi-platform/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="76" column="45" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -134,25 +134,14 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55517244">
-              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.47586206">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6183#6396#0" expanded="false" />
-                <element signature="e#8247#9121#0" expanded="false" />
-                <element signature="e#9430#10212#0" expanded="false" />
-                <element signature="e#10271#12626#0" expanded="false" />
+                <element signature="e#6105#6318#0" expanded="false" />
+                <element signature="e#8169#9043#0" expanded="false" />
+                <element signature="e#9352#10134#0" expanded="false" />
+                <element signature="e#10193#12548#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onecloud-openapi-platform/assets/css/content.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="550" column="1" selection-start-line="550" selection-start-column="1" selection-end-line="550" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -507,12 +496,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00259" summary="5.8  全景360修改至正常">
-      <created>1494302260213</created>
-      <option name="number" value="00259" />
-      <option name="project" value="LOCAL" />
-      <updated>1494302260213</updated>
-    </task>
     <task id="LOCAL-00260" summary="5.8  全景360修改至正常">
       <created>1494302614218</created>
       <option name="number" value="00260" />
@@ -801,7 +784,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495854788155</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="    5.28">
+      <created>1495855282796</created>
+      <option name="number" value="00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1495855282796</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -875,13 +864,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.040069688">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic-data.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9634147">
@@ -1253,16 +1235,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/img/timg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55517244">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.47586206">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6183#6396#0" expanded="false" />
-            <element signature="e#8247#9121#0" expanded="false" />
-            <element signature="e#9430#10212#0" expanded="false" />
-            <element signature="e#10271#12626#0" expanded="false" />
+            <element signature="e#6105#6318#0" expanded="false" />
+            <element signature="e#8169#9043#0" expanded="false" />
+            <element signature="e#9352#10134#0" expanded="false" />
+            <element signature="e#10193#12548#0" expanded="false" />
           </folding>
         </state>
       </provider>
