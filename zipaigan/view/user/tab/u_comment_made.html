@@ -1,0 +1,34 @@
+
+<!--用户详情查看——我发出的评论-->
+
+<table class="table table-condensed table-style min_750 mt_20">
+    <thead>
+    <tr>
+        <th>作者</th>
+        <th>作品类型</th>
+        <th>作品</th>
+        <th>作品描述</th>
+        <th>评论人</th>
+        <th>评论</th>
+        <th>评论时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="ucm in Lists">
+        <td ng-bind="ucm.userName"></td>
+        <td ng-bind="ucm.type"></td>
+        <td>
+            <img class="icon_works" ng-src="{{ucm.worksUrl}}" alt="作品"/>
+        </td>
+        <td ng-bind="ucm.disc"></td>
+        <td ng-bind="ucm.commentMan"></td>
+        <td ng-bind="ucm.comment"></td>
+        <td ng-bind="ucm.pTime |dateFormat:''"></td>
+        <td class="detail_td">
+            <a ui-sref="userManager.uDt.wks" ng-click="getUcmDetail(ucm)">查看</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div ng-include="'nav/nav.html'"></div>

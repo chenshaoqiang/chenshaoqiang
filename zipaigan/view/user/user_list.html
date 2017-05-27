@@ -1,0 +1,73 @@
+<!--用户列表-->
+<div class="w m_0 search p_20">
+    <div class="row m_0 p_s23 bg-white">
+        <div class="mr_30 p_0 fl">
+            <label for="userName">
+                用户名
+            </label>
+            <input id="userName"
+                   name="userName"
+                   ng-model="search.name"
+                   type="text"/>
+        </div>
+        <div class="mr_30 p_0 fl">
+            <label for="loginName">
+                登录账号
+            </label>
+            <input id="loginName"
+                   name="loginName"
+                   ng-model="search.loginName"
+                   type="text"/>
+        </div>
+        <div class="mr_30 p_0 fl">
+            <label for="registerTime_s">
+                注册时间
+            </label>
+            <input ng-click="openStartLayDate()"
+                   style="text-align: center;"
+                   class="laydate-icon mr_5"
+                   id="registerTime_s"
+                   name="registerTime_s"
+                   ng-model="search.startTime"
+                   type="text"/>
+            <label for="registerTime_e">
+                —
+            </label>
+            <input ng-click="openEndLayDate()"
+                   style="text-align: center;margin-left: 5px;"
+                   class="laydate-icon"
+                   id="registerTime_e"
+                   name="registerTime_e"
+                   ng-model="search.endTime"
+                   type="text"/>
+        </div>
+        <div class="p_0 fl v_t">
+            <button class="btn btn-style fr">搜索</button>
+        </div>
+    </div>
+</div>
+<div class="w table-responsive pl_20 pr_20 mb_50">
+    <table class="table table-condensed table-style min_750">
+        <thead>
+        <tr>
+            <th>用户名</th>
+            <th>登录帐号</th>
+            <th>作品(数量)</th>
+            <th>注册时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in Lists">
+            <td ng-bind="user.userName"></td>
+            <td ng-bind="user.account"></td>
+            <td ng-bind="user.works"></td>
+            <td ng-bind="user.resTime |dateFormat:''"></td>
+            <td class="detail_td">
+                <a ui-sref="userManager.uDt.wks" ng-click="getUserDetail(user)">查看</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div ng-include="'nav/nav.html'"></div>
+</div>

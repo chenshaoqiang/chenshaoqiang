@@ -1,0 +1,29 @@
+
+<!--用户详情查看——作品-->
+<table class="table table-condensed table-style min_750 mt_20">
+    <thead>
+    <tr>
+        <th>用户名</th>
+        <th>作品类型</th>
+        <th>作品</th>
+        <th>作品描述</th>
+        <th>发布时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="works in Lists">
+        <td ng-bind="works.userName"></td>
+        <td ng-bind="works.type"></td>
+        <td>
+            <img class="icon_works" ng-src="{{works.worksUrl}}" alt="作品"/>
+        </td>
+        <td ng-bind="works.disc"></td>
+        <td ng-bind="works.pTime |dateFormat:''"></td>
+        <td class="detail_td">
+            <a ui-sref="userManager.uDt.wks" ng-click="getWorksDetail(works)">查看</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div ng-include="'nav/nav.html'"></div>

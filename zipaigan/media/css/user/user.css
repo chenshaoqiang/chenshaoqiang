@@ -1,0 +1,48 @@
+
+/*-----详情按钮------*/
+.detail_td{
+    color: #2d5cef;
+    cursor: pointer;
+}
+.detail_td a:hover{
+    color: #ff0000;
+}
+/*-----用户名片------*/
+.business_card{
+    max-width: 400px;
+    border: 2px solid #e1e1e1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    background: #ffffff;
+}
+.business_card img{
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    background: #d1d1d1;
+}
+/*------tab-------*/
+.tab_ul{
+    height: 35px;
+}
+.tab_ul li{
+    float: left;
+    cursor: pointer;
+    line-height: 35px;
+    padding: 0 10px;
+    background: #ffffff;
+    margin-right: 2px;
+}
+.tab_ul li.active{
+    background: gold;
+}
+/*-----------*/
+.icon_works{
+    width: 40px;
+    height: 20px;
+}

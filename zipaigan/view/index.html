@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-controller="mainCtrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自拍杆后台管理</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="description" content="自拍杆后台管理"/>
+    <meta name="keywords" content="自拍杆,自拍杆后台管理,万象App"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!--禁止浏览器自己把页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--把苹果手机浏览器中的菜单栏工具栏隐藏-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content="万象App">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../media/third/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../media/third/laydate/need/laydate.css"/>
+    <!--  基础样式-->
+    <link rel="stylesheet" type="text/css" href="../media/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../media/css/style.css"/>
+    <link rel="stylesheet" href="../media/css/btn/btn.css">
+    <link rel="stylesheet" href="../media/css/nav/nav.css">
+    <link rel="stylesheet" href="../media/css/table/table.css">
+
+</head>
+<body>
+<!--头部-->
+<!--中间内容 包括左侧菜单和右侧内容区-->
+<div class="content">
+    <!--左侧菜单栏-->
+    <div class="content-left ofa">
+        <div class="menu-logo p_15">
+            <img src="../media/images/logo.png" alt="LOGO" class="logo-icon"/>
+            <p class="mt_10">智影后台管理系统</p>
+        </div>
+        <ul class="menu-list mt_20">
+            <a ui-sref="userManager.uLi">
+                <li ng-click="current = 'user_manager'"
+                    ng-class="{active:current=='user_manager'}">
+                    <div class="fl mr_20 u_icon" ng-class="{active:current=='user_manager'}"></div>
+                    用户管理
+                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                </li>
+            </a>
+            <a ui-sref="worksManager.wList">
+                <li ng-click="current = 'worksManager'"
+                    ng-class="{active:current=='worksManager'}">
+                    <div class="fl mr_20 w_icon" ng-class="{active:current=='worksManager'}"></div>
+                    作品管理
+                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                </li>
+            </a>
+            <a ui-sref="customerServiceManager">
+                <li ng-click="current = 'customerServiceManager'"
+                    ng-class="{active:current=='customerServiceManager'}">
+                    <div class="fl mr_20 c_icon" ng-class="{active:current=='customerServiceManager'}"></div>
+                    客服管理
+                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                </li>
+            </a>
+            <a ui-sref="systemManager">
+                <li ng-click="current = 'systemManager'"
+                    ng-class="{active:current=='systemManager'}">
+                    <div class="fl mr_20 s_icon" ng-class="{active:current=='systemManager'}"></div>
+                    系统管理
+                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <!--右侧内容区-->
+    <div class="content-right">
+        <div ng-include="'breadcrumbs/breadcrumbs.html'"></div>
+        <div ui-view></div>
+        <div class="footer">
+            <p>北京深境智能科技有限公司</p>
+        </div>
+    </div>
+</div>
+<!--底部-->
+</body>
+<!--jquery-->
+<script type="text/javascript" src="../media/third/jquery/jquery-1.8.3.min.js"></script>
+<!--angular-->
+<script type="text/javascript" src="../media/third/angular/angular.min.js"></script>
+<script type="text/javascript" src="../media/third/angular/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="../media/third/angular/angular-loader.min.js"></script>
+<!-- IE9以下处理bootstrap 3的兼容 -->
+<!--[if IE 8]>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/respond.min.js"></script>
+<script type="text/javascript" src="../media/third/bootstrap/dist/js/es5-sham.min.js"></script>
+<![endif]-->
+<!--common_service公共服务模块 common_filter过滤器-->
+<script type="text/javascript" src="../media/js/common_service.js"></script>
+<script type="text/javascript" src="../media/js/common_filter.js"></script>
+<!--layui插件-->
+<script type="text/javascript" src="../media/third/layer/layer.js"></script>
+<!--laydate日历组件-->
+<script type="text/javascript" src="../media/third/laydate/laydate.js"></script>
+
+<!--主入口index-->
+<script type="text/javascript" src="../media/js/index.js"></script>
+<!--主控制器-->
+<script type="text/javascript" src="../media/js/main/mainCtrl.js"></script>
+<!--登录成功-->
+<script type="text/javascript" src="../media/js/login/loginSuccessCtrl.js"></script>
+<!--用户管理——用户列表-->
+<script type="text/javascript" src="../media/js/user/uListCtrl.js"></script>
+<!--用户管理——用户详情-->
+<script type="text/javascript" src="../media/js/user/uDetailCtrl.js"></script>
+<!--用户管理——用户详情——tab跳转相关控制器-->
+<script type="text/javascript" src="../media/js/user/tab/wksCtrl.js"></script>
+<script type="text/javascript" src="../media/js/user/tab/ucmCtrl.js"></script>
+<script type="text/javascript" src="../media/js/user/tab/ucrCtrl.js"></script>
+<script type="text/javascript" src="../media/js/user/tab/upmCtrl.js"></script>
+<script type="text/javascript" src="../media/js/user/tab/uprCtrl.js"></script>
+<!--作品管理-->
+<script type="text/javascript" src="../media/js/works/worksManagerCtrl.js"></script>
+<!--作品管理--作品列表-->
+<script type="text/javascript" src="../media/js/works/worksListCtrl.js"></script>
+<!--客服管理-->
+<script type="text/javascript" src="../media/js/customer/customerManagerCtrl.js"></script>
+<!--系统管理-->
+<script type="text/javascript" src="../media/js/system/systemManagerCtrl.js"></script>
+
+</html>

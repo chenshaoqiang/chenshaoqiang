@@ -1,0 +1,27 @@
+
+/*按钮重设相关样式*/
+button{
+    border: none;
+}
+.btn-set{
+    min-width: 70px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.btn-style{
+    min-width: 70px;
+    height: 34px;
+    margin-right: 20px;
+    background: #f9bf02;
+    padding: 0;
+}
+.btn-gold{
+    background: #f67705;
+    color: #ffffff;
+}
+.btn-gray{
+    background: #bcbcbc;
+    color: #000;
+}

@@ -1,0 +1,15 @@
+
+<!--公用面包屑-->
+<div class="breadcrumbs w pl_20 pr_20" >
+    <a ui-sref="loginSuccess">首页</a>
+    <a ng-repeat="bre in breadcrumbs" ui-sref="{{bre.state}}">
+        <span class="glyphicon glyphicon-menu-right"></span>
+        {{bre.title}}
+    </a>
+    <ul class="head-right">
+        <li class="fl">
+            <span class="loging-out ml_20 mr_5">退出</span>
+            <img class="mr_20 mt_05" src="../media/images/exit.png" alt="退出"/>
+        </li>
+    </ul>
+</div>

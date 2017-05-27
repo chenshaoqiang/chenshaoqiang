@@ -1,0 +1,71 @@
+
+<!--用户详情查看-->
+<div class="w table-responsive p_20 mb_50 ofa">
+    <div class="row p_0 m_0">
+        <!--用户名片-->
+        <div class="business_card m_0 p_15 col-lg-4 col-md-6 col-sm-8 col-xs-12">
+            <img src="../media/images/icon_default_head.png" alt="用户头像"/>
+            <p class="mt_15">用户名：<span ng-bind="currentUser.userName"></span></p>
+            <p class="mt_15">登录帐号：<span ng-bind="currentUser.account"></span></p>
+            <p class="mt_15">注册时间：<span ng-bind="currentUser.resTime|dateFormat:''"></span></p>
+            <div class="mt_15">
+                <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <button class="btn-danger btn-set pull-right">删除</button>
+                </div>
+                <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <button class="btn-gold btn-set">禁用</button>
+                </div>
+                <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <button class="btn-gray btn-set pull-left" ng-click="goBackState('userManager.uLi')">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--列表-->
+    <div class="row p_0 m_0 mt_20 min_750">
+        <div class="table-style">
+            <!--tab页-->
+            <div class="table_tab">
+                <ul class="tab_ul">
+                    <a ui-sref="userManager.uDt.wks">
+                        <li ng-click="cur = 'wks'"
+                            ng-class="{active:cur=='wks'}">
+                            作品：
+                            <span>(333)</span>
+                        </li>
+                    </a>
+                    <a ui-sref="userManager.uDt.ucm">
+                        <li ng-click="cur = 'ucm'"
+                            ng-class="{active:cur=='ucm'}">
+                            我发出的评论：
+                            <span>(333)</span>
+                        </li>
+                    </a>
+                    <a ui-sref="userManager.uDt.ucr">
+                        <li ng-click="cur = 'ucr'"
+                            ng-class="{active:cur=='ucr'}">
+                            我收到的评论：
+                            <span>(333)</span>
+                        </li>
+                    </a>
+                    <a ui-sref="userManager.uDt.upm">
+                        <li ng-click="cur = 'upm'"
+                            ng-class="{active:cur=='upm'}">
+                            我发出的赞：
+                            <span>(333)</span>
+                        </li>
+                    </a>
+                    <a ui-sref="userManager.uDt.upr">
+                        <li ng-click="cur = 'upr'"
+                            ng-class="{active:cur=='upr'}">
+                            我收到的赞：
+                            <span>(333)</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!--表体-->
+            <div ui-view></div>
+        </div>
+    </div>
+</div>

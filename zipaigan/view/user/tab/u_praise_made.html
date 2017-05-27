@@ -1,0 +1,32 @@
+
+<!--用户详情查看——我发出的赞-->
+
+<table class="table table-condensed table-style min_750 mt_20">
+    <thead>
+    <tr>
+        <th>作者</th>
+        <th>作品类型</th>
+        <th>作品</th>
+        <th>作品描述</th>
+        <th>点赞人</th>
+        <th>点赞时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="upm in Lists">
+        <td ng-bind="upm.userName"></td>
+        <td ng-bind="upm.type"></td>
+        <td>
+            <img class="icon_works" ng-src="{{upm.worksUrl}}" alt="作品"/>
+        </td>
+        <td ng-bind="upm.disc"></td>
+        <td ng-bind="upm.commentMan"></td>
+        <td ng-bind="upm.pTime |dateFormat:''"></td>
+        <td class="detail_td">
+            <a ui-sref="userManager.uDt.wks" ng-click="getUpmDetail(upm)">查看</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div ng-include="'nav/nav.html'"></div>

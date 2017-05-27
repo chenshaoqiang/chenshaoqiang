@@ -1,0 +1,164 @@
+
+/*----index整体-----*/
+/*-----头-----*/
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    padding: 20px;
+    vertical-align: middle;
+    z-index: 999;
+}
+.logo-icon{
+    width:40px;
+    height: 36px;
+}
+.head-title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.head-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 45px;
+}
+.loging-out{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*---------内容---------*/
+.content{
+    width: 100%;
+    height: 100%;
+}
+.content-left{
+    width:190px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    box-sizing: border-box;
+    background: #444444;
+    z-index: 998;
+}
+.menu-logo{
+    width: 100%;
+    height: 100px;
+    background: #333333;
+    text-align: center;
+}
+.menu-logo p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.menu-list{
+    width: 100%;
+    font-size: 16px;
+}
+.menu-list span{
+    line-height: 60px;
+}
+.menu-list li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 20px;
+    position: relative;
+    color: #ffffff;
+}
+.menu-list li.active{
+    background: #f4b50f;
+    color: #000000;
+}
+
+.item-content{
+    width: 100%;
+    height: 60px;
+}
+.content-right{
+    position: absolute;
+    top: 0;
+    left: 190px;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: #efeff4;
+}
+/*--------底部----------*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 45px;
+    background: #F8F8F8;
+    z-index: 999;
+}
+.footer p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 45px;
+}
+/*--------面包屑公用-------*/
+.breadcrumbs{
+    height: 45px;
+    background: #ffffff;
+}
+.breadcrumbs a{
+    font-size: 16px;
+    line-height: 45px;
+}
+/*-------菜单小图标-------*/
+.u_icon,.c_icon,.s_icon,.w_icon{
+    width: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+.u_icon{
+    background-image: url("../images/u_icon_gray.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.u_icon.active{
+    background-image: url("../images/u_icon_black.png")
+}
+.c_icon{
+    background-image: url("../images/c_icon_gray.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.c_icon.active{
+    background-image: url("../images/c_icon_black.png");
+}
+.s_icon{
+    background-image: url("../images/s_icon_gray.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s_icon.active{
+    background-image: url("../images/s_icon_black.png");
+}
+.w_icon{
+    background-image: url("../images/w_icon_gray.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.w_icon.active{
+    background-image: url("../images/w_icon_black.png");
+}
+/*---------*/
+.select-w{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-image: url("../images/arrow_down.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
