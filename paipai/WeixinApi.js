@@ -10,7 +10,7 @@
  * 7、调起微信客户端的图片播放组件
  * 8、关闭公众平台Web页面
  *
- * @author zhaoxianlie(http://www.baidufe.com)
+ * @author
  */
 var WeixinApi = (function () {
 

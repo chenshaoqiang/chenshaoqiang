@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai/WeixinApi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/ts.html" afterPath="$PROJECT_DIR$/paipai/ts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/WeixinApi.js" afterPath="$PROJECT_DIR$/paipai/WeixinApi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/demo.html" afterPath="$PROJECT_DIR$/paipai/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -26,18 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="verification.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oncloud-verify/system-manager/verification.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="380" column="69" selection-start-line="380" selection-start-column="54" selection-end-line="380" selection-end-column="69" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#4;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin-index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oncloud-verify/assets/components/admin-index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -271,8 +258,18 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/demo.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.48045978">
+              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeixinApi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paipai/WeixinApi.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="288" column="19" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -293,8 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/knowledge/array.html" />
-        <option value="$PROJECT_DIR$/knowledge/scope.html" />
         <option value="$PROJECT_DIR$/ball.html" />
         <option value="$PROJECT_DIR$/rili/css/calendar.css" />
         <option value="G:/代码/react-demo/webpack.config.js" />
@@ -344,6 +339,8 @@
         <option value="$PROJECT_DIR$/paipai/index3.html" />
         <option value="$PROJECT_DIR$/paipai/index1.html" />
         <option value="$PROJECT_DIR$/paipai/ts.html" />
+        <option value="$PROJECT_DIR$/paipai/WeixinApi.js" />
+        <option value="$PROJECT_DIR$/paipai/demo.html" />
       </list>
     </option>
   </component>
@@ -627,12 +624,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00266" summary="5.8  全景360修改至正常">
-      <created>1494303674500</created>
-      <option name="number" value="00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1494303674500</updated>
     </task>
     <task id="LOCAL-00267" summary="5.9  全景360修改至正常">
       <created>1494313324340</created>
@@ -922,7 +913,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495862572212</updated>
     </task>
-    <option name="localTasksCounter" value="315" />
+    <task id="LOCAL-00315" summary="    5.28">
+      <created>1495865960701</created>
+      <option name="number" value="00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1495865960701</updated>
+    </task>
+    <option name="localTasksCounter" value="316" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -996,13 +993,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/getBrowserInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48083624">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paipai/demo4.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.439446">
@@ -1504,10 +1494,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/demo.html">
+    <entry file="file://$PROJECT_DIR$/paipai/WeixinApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="288" column="19" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.48045978">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding />
         </state>
       </provider>
