@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paipai/img/timg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index3.html" afterPath="$PROJECT_DIR$/paipai/index3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\paipai\index1.html" afterPath="$PROJECT_DIR$/paipai/index3.html" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,13 +135,14 @@
       <file leaf-file-name="index3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.608046">
-              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.50229883">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
-                <element signature="e#6052#6265#0" expanded="false" />
-                <element signature="e#8116#8990#0" expanded="false" />
-                <element signature="e#9299#10081#0" expanded="false" />
-                <element signature="e#10140#12495#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#6158#6371#0" expanded="false" />
+                <element signature="e#8222#9096#0" expanded="false" />
+                <element signature="e#9405#10187#0" expanded="false" />
+                <element signature="e#10246#12601#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -171,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/H5/index.html" />
         <option value="$PROJECT_DIR$/knowledge/array.html" />
         <option value="$PROJECT_DIR$/knowledge/scope.html" />
         <option value="$PROJECT_DIR$/ball.html" />
@@ -222,6 +223,7 @@
         <option value="$PROJECT_DIR$/oncloud-verify/system-manager/verification.html" />
         <option value="$PROJECT_DIR$/paipai/index.html" />
         <option value="$PROJECT_DIR$/paipai/index1.html" />
+        <option value="$PROJECT_DIR$/paipai/index3.html" />
       </list>
     </option>
   </component>
@@ -505,12 +507,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00253" summary="5.8  全景360修改至正常">
-      <created>1494209069682</created>
-      <option name="number" value="00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1494209069682</updated>
     </task>
     <task id="LOCAL-00254" summary="5.8  全景360修改至正常">
       <created>1494225916534</created>
@@ -800,7 +796,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495853062890</updated>
     </task>
-    <option name="localTasksCounter" value="302" />
+    <task id="LOCAL-00302" summary="    5.27">
+      <created>1495853309384</created>
+      <option name="number" value="00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1495853309384</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1254,13 +1256,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.608046">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.50229883">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
-            <element signature="e#6052#6265#0" expanded="false" />
-            <element signature="e#8116#8990#0" expanded="false" />
-            <element signature="e#9299#10081#0" expanded="false" />
-            <element signature="e#10140#12495#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6158#6371#0" expanded="false" />
+            <element signature="e#8222#9096#0" expanded="false" />
+            <element signature="e#9405#10187#0" expanded="false" />
+            <element signature="e#10246#12601#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -15,6 +15,10 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img src='/img/timg.jpg' />
+    </div>
+
 </head>
 <body>
     <!--<img src="./img/lue.jpeg" alt="suo"/>-->
@@ -391,31 +395,6 @@
                 }
                 workContent.text(contentLineStr);
 
-                function onBridgeReady(){
-                    WeixinJSBridge.on('menu:share:appmessage', function(argv){
-
-                        WeixinJSBridge.invoke('sendAppMessage',{
-
-                            "appid":"",                                        //appid 设置空就好了。
-                            "img_url":	 userHeadUrl,                               //分享时所带的图片路径
-                            "img_width":	"120",                            //图片宽度
-                            "img_height":	"120",                            //图片高度
-                            "link":url,                                               //分享附带链接地址
-                            "desc":"我是一个介绍",                            //分享内容介绍
-                            "title":"标题，再简单不过了。"
-                        }, function(res){/*** 回调函数，最好设置为空 ***/
-
-                        });
-
-                    });
-                }
-                if (typeof WeixinJSBridge === "undefined"){
-                    if (document.addEventListener){
-                        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-                    }
-                }else{
-                    onBridgeReady();
-                }
             }
         }
     });
