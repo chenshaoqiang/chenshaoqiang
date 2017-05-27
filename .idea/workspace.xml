@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/demo.html" afterPath="$PROJECT_DIR$/paipai/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/ts.html" afterPath="$PROJECT_DIR$/paipai/ts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sthOfShaoQiang.iws" />
@@ -476,12 +475,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00269" summary="5.9  全景360修改至正常">
-      <created>1494314362877</created>
-      <option name="number" value="00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1494314362877</updated>
-    </task>
     <task id="LOCAL-00270" summary="5.9  全景360修改至正常">
       <created>1494314971468</created>
       <option name="number" value="00270" />
@@ -770,7 +763,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495866832321</updated>
     </task>
-    <option name="localTasksCounter" value="318" />
+    <task id="LOCAL-00318" summary="    5.28">
+      <created>1495866958266</created>
+      <option name="number" value="00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1495866958266</updated>
+    </task>
+    <option name="localTasksCounter" value="319" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1179,11 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/img/timg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33259425">
@@ -1234,6 +1228,11 @@
           <caret line="50" column="94" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/img/timg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/demo.html">
