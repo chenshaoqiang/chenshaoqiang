@@ -117,6 +117,7 @@
 
     </div>
 </body>
+<script type="application/javascript" src="jweixin-1.2.0.js"></script>
 <script type="application/javascript" charset="utf-8">
 
     var desW=360;//设置设计稿宽
@@ -421,6 +422,33 @@
         });
     }
     getImgSize();
-
+    wx.config({
+        debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: '', // 必填，公众号的唯一标识
+        timestamp:new Date().getTime(), // 必填，生成签名的时间戳
+        nonceStr: 'AAA', // 必填，生成签名的随机串
+        signature: 'BBB',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+    wx.ready(function(){
+        //
+    });
+    wx.checkJsApi({
+        jsApiList: ['onMenuShareTimeline'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        success: function(res) {
+            alert(res);
+        }
+    });
+    wx.onMenuShareTimeline({
+        title: '分享标题', // 分享标题
+        link: 'http://chenshaoqiang.github.io/chenshaoqiang/paipai/index1.html', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: 'http://img01.taopic.com/160117/318752-16011F9334648.jpg', // 分享图标
+        success: function () {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+        }
+    });
 </script>
 </html>
