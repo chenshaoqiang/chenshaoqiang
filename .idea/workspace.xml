@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/WeixinApi.js" afterPath="$PROJECT_DIR$/paipai/WeixinApi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/demo.html" afterPath="$PROJECT_DIR$/paipai/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -258,8 +257,8 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.48045978">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.5241379">
+              <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -625,12 +624,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00267" summary="5.9  全景360修改至正常">
-      <created>1494313324340</created>
-      <option name="number" value="00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1494313324340</updated>
-    </task>
     <task id="LOCAL-00268" summary="5.9  全景360修改至正常">
       <created>1494313859382</created>
       <option name="number" value="00268" />
@@ -919,7 +912,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495865960701</updated>
     </task>
-    <option name="localTasksCounter" value="316" />
+    <task id="LOCAL-00316" summary="    5.28">
+      <created>1495866799694</created>
+      <option name="number" value="00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1495866799694</updated>
+    </task>
+    <option name="localTasksCounter" value="317" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1243,9 +1242,9 @@
         <state vertical-scroll-proportion="-0.0">
           <caret line="76" column="45" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1255,7 +1254,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="380" column="69" selection-start-line="380" selection-start-column="54" selection-end-line="380" selection-end-column="69" />
           <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#4;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1504,8 +1503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48045978">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.5241379">
+          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
           <folding />
         </state>
       </provider>
