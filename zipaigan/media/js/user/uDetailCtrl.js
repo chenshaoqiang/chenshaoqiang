@@ -43,18 +43,24 @@ mainModule.controller('uDetailCtrl',function($scope,$rootScope,util,httpServices
 
     //删除
     $scope.delete=function(user){
-        console.log(user);
+
         util.myLayer($scope,0,'删除','确定删除该用户？',sureDelete);
+
     };
     function sureDelete(){
+
         console.log("删除");
+
     }
     //禁用
     $scope.disabled=function(user){
-        console.log(user);
+
         util.myLayer($scope,0,'禁用','确定禁用该用户？',sureDisabled);
+
     };
     function sureDisabled(){
+
         console.log("禁用");
+
     }
 });
