@@ -27,3 +27,24 @@ commonFilter.filter("dateFormat", function () {
         }
     }
 });
+commonFilter.filter("worksState", function () {
+    return function (input, type) {
+        if (input == null || input == '' || typeof(input) == "undefined") {
+            return "";
+        }
+        switch(input)
+        {
+            case 1:
+                return "投稿中";
+                break;
+            case 2:
+                return "投稿成功";
+                break;
+            case 3:
+                return "已发布";
+                break;
+            default:
+                return "未知的状态";
+        }
+    }
+});

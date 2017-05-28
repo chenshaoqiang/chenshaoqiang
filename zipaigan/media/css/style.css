@@ -162,3 +162,16 @@
     background-repeat: no-repeat;
     background-position: 95%;
 }
+/*-----详情按钮------*/
+.detail_td{
+    color: #2d5cef;
+    cursor: pointer;
+}
+.detail_td a:hover{
+    color: #ff0000;
+}
+/*-----表格内作品图片------*/
+.icon_works{
+    width: 40px;
+    height: 20px;
+}

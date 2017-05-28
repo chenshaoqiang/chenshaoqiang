@@ -15,7 +15,7 @@ mainModule.controller('wksCtrl',function($scope,$rootScope,util,httpServices,$st
 
     function searchWorksLists(){
 
-        httpServices.req_post('user_detail.json',{"page":$scope.search.pageNumber}).success(function(res){
+        httpServices.req_post('user.json',{"page":$scope.search.pageNumber}).success(function(res){
 
             if(res.code=="200"){
 

@@ -8,6 +8,8 @@ mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServic
         //默认参数设置
         util.defaultInit($scope);
 
+        getWorksLists();
+
     })();
 
     //选择开始日期
@@ -40,4 +42,23 @@ mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServic
         laydate(end);
     };
 
+    function getWorksLists(){
+
+        httpServices.req_post('works.json',{}).success(function(res){
+
+            if(res.code=="200"){
+
+                //设置分页，获取表格信息。
+                util.setPagination($scope,res);
+
+            }
+        });
+    }
+
+    //列表跳转
+    $scope.getPage=function(page){
+
+        util.goTargetPage(page,$scope,getWorksLists);
+
+    };
 });
