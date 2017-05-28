@@ -5,12 +5,12 @@ mainModule.controller('uDetailCtrl',function($scope,$rootScope,util,httpServices
 
     (function initSetting(){
 
-        if( util.getSession("u_Name") && util.getSession("u_account") && util.getSession("u_resTime") ){
+        if( util.getSession("u_Name") && util.getSession("u_account") && util.getSession("u_pTime") ){
 
             $scope.currentUser={
                 "userName":util.getSession("u_Name"),
                 "account":util.getSession("u_account"),
-                "resTime":parseInt(util.getSession("u_resTime"))
+                "pTime":parseInt(util.getSession("u_pTime"))
             };
 
         }else{

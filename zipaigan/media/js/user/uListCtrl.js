@@ -68,7 +68,7 @@ mainModule.controller('uListCtrl',function($scope,$rootScope,util,httpServices){
 
         util.setSession("u_Name",user.userName);
         util.setSession("u_account",user.account);
-        util.setSession("u_resTime",user.resTime);
+        util.setSession("u_pTime",user.pTime);
 
         util.setSession("cur","wks");
     }
