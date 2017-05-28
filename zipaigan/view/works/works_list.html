@@ -101,7 +101,7 @@
             <td ng-bind="work.pTime |dateFormat:''"></td>
             <td ng-bind="work.worksState|worksState"></td>
             <td class="detail_td">
-                <a ui-sref="worksManager.wList" ng-click="getWorkDetail(work)">查看</a>
+                <a ng-click="getWorkDetail(work)">查看</a>
             </td>
         </tr>
         </tbody>

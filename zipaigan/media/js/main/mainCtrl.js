@@ -29,17 +29,16 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
     })();
 
-    //面包屑数值对,只保存需要用于面包屑设置的路由对,按面包屑顺序存值
-    var bread=[
-        [{'userManager':'用户管理'},{'userManager.uLi':'用户列表'},{'userManager.uDt':'用户详情'}],
-        [{'worksManager':'作品管理'},{'worksManager.wList':'作品列表'}],
-        [{'customerServiceManager':'客服管理'}],
-        [{'systemManager':'系统管理'}]
-    ];
-
     //监听路由变化,设置对应的面包屑
     $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
 
+        //面包屑数值对,只保存需要用于面包屑设置的路由对,按面包屑顺序存值
+        var bread=[
+            [{'userManager':'用户管理'},{'userManager.uLi':'用户列表'},{'userManager.uDt':'用户详情'}],
+            [{'worksManager':'作品管理'},{'worksManager.wList':'作品列表'}],
+            [{'customerServiceManager':'客服管理'}],
+            [{'systemManager':'系统管理'}]
+        ];
         if(toState.name=='userManager'){
 
             $state.go('userManager.uLi');
@@ -59,6 +58,19 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
         var arr=path.split("/");//获取路由组
         var lastState=arr[arr.length-1]; //最后的路由
 
+        if(lastState=='worksManager.sub_ing'){
+
+            bread[1].push({'worksManager.sub_ing':'投稿中的作品'});
+
+        }else if(lastState=='worksManager.sub_success'){
+
+            bread[1].push({'worksManager.sub_success':'投稿成功的作品'});
+
+        }else if(lastState=='worksManager.published'){
+
+            bread[1].push({'worksManager.published':'已发布的作品'});
+
+        }
         //面包屑设置
         $rootScope.breadcrumbs=[];
 

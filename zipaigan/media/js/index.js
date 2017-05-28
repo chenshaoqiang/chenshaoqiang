@@ -62,8 +62,7 @@ mainModule.config(function ($stateProvider, $urlRouterProvider) {
         //作品管理
         .state('worksManager', {
             url: '/worksManager',
-            templateUrl: 'works/works_manager.html',
-            controller: 'worksManagerCtrl as mainModule'
+            templateUrl: 'works/works_manager.html'
         })
         //作品管理--作品列表
         .state('worksManager.wList', {
@@ -71,6 +70,25 @@ mainModule.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'works/works_list.html',
             controller: 'worksListCtrl as mainModule'
         })
+        //作品管理--作品列表--投稿中的作品
+        .state('worksManager.sub_ing', {
+            url: '/worksManager.sub_ing',
+            templateUrl: 'works/status/sub_ing.html',
+            controller: 'sub_ingCtrl as mainModule'
+        })
+        //作品管理--作品列表--投稿成功的作品
+        .state('worksManager.sub_success', {
+            url: '/worksManager.sub_success',
+            templateUrl: 'works/status/sub_success.html',
+            controller: 'sub_successCtrl as mainModule'
+        })
+        //作品管理--作品列表--已发布的作品
+        .state('worksManager.published', {
+            url: '/worksManager.published',
+            templateUrl: 'works/status/published.html',
+            controller: 'publishedCtrl as mainModule'
+        })
+
         //客服管理
         .state('customerServiceManager', {
             url: '/customerServiceManager',

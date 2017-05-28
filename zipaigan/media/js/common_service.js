@@ -378,7 +378,42 @@ var commonService= angular.module("common.service", [])
             }
         });
     };
-
+    // 判断是否为空
+    self.notEmpty=function (str) {
+        if (typeof str === "undefined") {
+            return false;
+        } else if (str == null) {
+            return false;
+        } else if (((str) + "") == '') {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    // 判断数组是否为空
+    self.notArrayEmpty=function (array) {
+        if (typeof array === "undefined") {
+            return false;
+        } else if (array == null) {
+            return false;
+        } else if (array == '[]') {
+            return false;
+        } else if (array.length == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    // 判断对象是否为空
+    self.notObjEmpty=function (obj) {
+        if (typeof obj === "undefined") {
+            return false;
+        } else if (obj == null) {
+            return false;
+        } else {
+            return true;
+        }
+    };
 
 })
     .factory('httpServices', function($http, baseUrl) {
@@ -427,42 +462,6 @@ var commonService= angular.module("common.service", [])
                 baseUrl + url ,
                 data
             );
-        };
-        // 判断是否为空
-        self.notEmpty=function (str) {
-            if (typeof str === "undefined") {
-                return false;
-            } else if (str == null) {
-                return false;
-            } else if (((str) + "") == '') {
-                return false;
-            } else {
-                return true;
-            }
-        };
-        // 判断数组是否为空
-        self.notArrayEmpty=function (array) {
-            if (typeof array === "undefined") {
-                return false;
-            } else if (array == null) {
-                return false;
-            } else if (array == '[]') {
-                return false;
-            } else if (array.length == 0) {
-                return false;
-            } else {
-                return true;
-            }
-        };
-        // 判断对象是否为空
-        self.notObjEmpty=function (obj) {
-            if (typeof obj === "undefined") {
-                return false;
-            } else if (obj == null) {
-                return false;
-            } else {
-                return true;
-            }
         };
         return self;
     })

@@ -1,7 +1,7 @@
 /*
 * 作品管理--作品列表
 * */
-mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServices){
+mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServices,$state){
 
     (function initSetting(){
 
@@ -59,6 +59,29 @@ mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServic
     $scope.getPage=function(page){
 
         util.goTargetPage(page,$scope,getWorksLists);
+
+    };
+
+    //点击查看
+    $scope.getWorkDetail=function(work){
+
+        if( util.notObjEmpty(work) && util.notEmpty(work.worksState) ){
+
+            if(work.worksState==1){//投稿中
+
+                $state.go('worksManager.sub_ing');
+
+            }else if(work.worksState==2){//投稿成功
+
+                $state.go('worksManager.sub_success');
+
+            }else if(work.worksState==3){//已发布
+
+                $state.go('worksManager.published');
+
+            }
+
+        }
 
     };
 });
