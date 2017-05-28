@@ -15,7 +15,7 @@ mainModule.controller('upmCtrl',function($scope,$rootScope,util,httpServices,$st
 
     function searchUpmLists(){
 
-        httpServices.req_post('user_ucm.json',{}).success(function(res){
+        httpServices.req_post('user_detail.json',{}).success(function(res){
 
             if(res.code=="200"){
 

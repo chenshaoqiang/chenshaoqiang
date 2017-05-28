@@ -8,7 +8,7 @@
     font-weight: 600;
 }
 .search input,.search select {
-    width: 170px;
+    width: 150px;
     font-size: 12px;
     font-weight: 600;
     height: 34px;
@@ -22,10 +22,9 @@
     padding: 0 10px 0 60px;
 }
 @media screen and (min-width:320px) and (max-width: 1300px) {
-    .search input{
-        width: 150px;
+    .search input,.search select{
+        width: 120px;
     }
-
 }
 
 .table{

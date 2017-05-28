@@ -1,6 +1,6 @@
 
 var commonService= angular.module("common.service", [])
-    .constant('baseUrl', '/zipaigan/')
+    .constant('baseUrl', '/chenshaoqiang/zipaigan/')
     .service('util', function($rootScope,$window,$timeout,errorCode){
 
     var self = this;
