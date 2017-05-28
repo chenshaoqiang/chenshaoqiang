@@ -4,21 +4,31 @@ var commonService= angular.module("common.service", [])
     .service('util', function($rootScope,$window,$timeout,errorCode){
 
     var self = this;
-    self.myLayer=function(type,scope){
+    self.myLayer=function(scope,type,title,content,yesBtnCallBack){//该函数需要严格的传参
+        /*
+        * @param {Object} scope 控制器注入
+        * @param {Number} type 弹框类型：可传入的值有：0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+        * @param {String} title 弹框标题
+        * @param {String} content 弹框内容信息
+        * @param {Function} yesBtnCallBack 点击确认按钮后的回调函数
+        * */
         layer.open({
-            type: type||0,
-            title: ['<span class="title_span">标题</span>', 'font-size:12px;border-radius: 10px 10px 0 0;background: #ffffff;'],
+            type: type,
+            title: ['<span class="title_span">'+title+'</span>', 'font-size:12px;border-radius: 10px 10px 0 0;background: #ffffff;'],
             skin: 'my-layer-class',
             btn: ['确定', '取消'],
             shadeClose :true,
             yes: function(index){//按钮一的回调
+                if(yesBtnCallBack){
+                    yesBtnCallBack();
+                }
                 layer.close(index);//手动关闭
             },
             btn2: function(index){//按钮二的回调
                 //
             },
             btnAlign: 'c',
-            content: '传入任意的文本', //这里content是一个普通的String
+            content: content, //这里content是一个普通的String
             cancel: function(index, layero){//关闭按钮回调
                 /*if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
                  layer.close(index);
@@ -29,7 +39,9 @@ var commonService= angular.module("common.service", [])
     };
     //初始化默认参数设置--由于多个控制器设置雷同，所以提取出来
     self.defaultInit=function(scope){//
-
+        /*
+        * @param {Object} scope 控制器注入
+        * */
         //保存搜索条件的对象
         scope.search={};
 
@@ -50,11 +62,13 @@ var commonService= angular.module("common.service", [])
     //分页设置
     self.setPagination=function(scope,res){
         /*
-        * pageArr，totalPage为后台对应键值，pageArr为返回的分页数组，totalPage为返回的总页数，需注意。
-        * search为所在控制器作用域上的设值，用于保存分页相关值，命名和nav中相对应，要修改命名需要两边同时改。
-        * Lists为所在控制器作用域上的设值，用于保存表格的信息，用于表格repeat，同样修改命名需对应改变表格repeat处的值。
-        * */
-
+         * @param {Object} scope 控制器注入
+         * @param {Object} res 后台返回的表格数据
+         * @pageArr {Array} 为返回的分页数组，视后台对应值具体设置
+         * @totalPage {Number} 为返回的总页数，视后台对应值具体设置
+         * @search {Object} 为所在控制器作用域上的设值，用于保存分页相关值，命名和nav中相对应，要修改命名需要两边同时改。
+         * @Lists {Array} 为所在控制器作用域上的设值，用于保存表格的信息，用于表格repeat，修改命名的时候需对应改变表格repeat处的值。
+         * */
         scope.listPages=res.pageArr;//分页数组
         scope.totalPage=res.totalPage;//总页数
 
@@ -86,8 +100,9 @@ var commonService= angular.module("common.service", [])
     self.goTargetPage=function(page,scope,callBack){
 
         /*
-        * callBack为用于请求表格信息的函数
-        *
+        * @param {Number} page 传入的页码
+        * @param {Object} scope 控制器注入
+        * @param {Function} callBack 用于请求表格信息的函数
         * */
 
         //点到省略号的时候不响应,输入为空不跳转
@@ -99,7 +114,7 @@ var commonService= angular.module("common.service", [])
                 //输入跳转的时候判断值溢出
                 if(parseInt(page)> parseInt(scope.totalPage)){
 
-                    layer.alert("您的输入[ " + page + " ]大于总页数[ " + scope.totalPage + " ]请重新输入！");
+                    layer.alert("您的输入<code>" + page + "</code>大于总页数<code>" + scope.totalPage + "</code>请重新输入！");
 
                 }else{
 
@@ -108,7 +123,7 @@ var commonService= angular.module("common.service", [])
                     callBack();
                 }
             }else{
-                layer.alert("您的输入[ "+ page + " ]不是一个有效数字，请您重新输入！");
+                layer.alert("您的输入<code>"+ page + "</code>不是一个有效数字，请您重新输入！");
             }
 
         }

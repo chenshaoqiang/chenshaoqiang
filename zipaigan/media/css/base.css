@@ -184,7 +184,9 @@ em {
     position: absolute;
     right: 0;
 }
-
+code{
+    background: #ffffff;
+}
 .zoom {
     zoom: 1
 }
