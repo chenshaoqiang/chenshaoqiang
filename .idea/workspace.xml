@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/view/works/status/published.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/common_service.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/third/layer/skin/default/layer.css" afterPath="$PROJECT_DIR$/zipaigan/media/third/layer/skin/default/layer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/style.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -37,31 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_service.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common_service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="41" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.2020548">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan/media/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15582192">
-              <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="laydate.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zipaigan/media/third/laydate/skins/default/laydate.css">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="180" column="1" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -130,9 +118,9 @@
         <option value="$PROJECT_DIR$/zipaigan/view/nav/nav.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/nav/nav.css" />
         <option value="$PROJECT_DIR$/zipaigan/view/works/status/published.html" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/style.css" />
         <option value="$PROJECT_DIR$/zipaigan/media/third/layer/skin/default/layer.css" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
       </list>
     </option>
   </component>
@@ -769,12 +757,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00282" summary="    5.15">
-      <created>1494816408026</created>
-      <option name="number" value="00282" />
-      <option name="project" value="LOCAL" />
-      <updated>1494816408026</updated>
-    </task>
     <task id="LOCAL-00283" summary="    5.15">
       <created>1494817187454</created>
       <option name="number" value="00283" />
@@ -1063,7 +1045,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495952993745</updated>
     </task>
-    <option name="localTasksCounter" value="331" />
+    <task id="LOCAL-00331" summary="    5.28 样式重设">
+      <created>1495979572623</created>
+      <option name="number" value="00331" />
+      <option name="project" value="LOCAL" />
+      <updated>1495979572623</updated>
+    </task>
+    <option name="localTasksCounter" value="332" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1103,7 +1091,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update--ie8兼容" />
     <MESSAGE value="update" />
     <MESSAGE value="4.19update" />
     <MESSAGE value="4.21update" />
@@ -1128,7 +1115,8 @@
     <MESSAGE value="    5.28" />
     <MESSAGE value="    5.28 up" />
     <MESSAGE value="    5.28 nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="    5.28 nav" />
+    <MESSAGE value="    5.28 样式重设" />
+    <option name="LAST_COMMIT_MESSAGE" value="    5.28 样式重设" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1550,26 +1538,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="41" />
+          <caret line="180" column="1" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/third/layer/skin/default/layer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33212996">
-          <caret line="0" column="7749" selection-start-line="0" selection-start-column="7749" selection-end-line="0" selection-end-column="7749" />
+        <state vertical-scroll-proportion="0.17509025">
+          <caret line="0" column="7454" selection-start-line="0" selection-start-column="7454" selection-end-line="0" selection-end-column="7454" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/css/style.css">
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15582192">
-          <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.2020548">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>

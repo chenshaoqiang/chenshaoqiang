@@ -4,7 +4,29 @@ var commonService= angular.module("common.service", [])
     .service('util', function($rootScope,$window,$timeout,errorCode){
 
     var self = this;
-
+    self.myLayer=function(type,scope){
+        layer.open({
+            type: type||0,
+            title: ['<span class="title_span">标题</span>', 'font-size:12px;border-radius: 10px 10px 0 0;background: #ffffff;'],
+            skin: 'my-layer-class',
+            btn: ['确定', '取消'],
+            shadeClose :true,
+            yes: function(index){//按钮一的回调
+                layer.close(index);//手动关闭
+            },
+            btn2: function(index){//按钮二的回调
+                //
+            },
+            btnAlign: 'c',
+            content: '传入任意的文本', //这里content是一个普通的String
+            cancel: function(index, layero){//关闭按钮回调
+                /*if(confirm('确定要关闭么')){ //只有当点击confirm框的确定时，该层才会关闭
+                 layer.close(index);
+                 }*/
+                return false;
+            }
+        });
+    };
     //初始化默认参数设置--由于多个控制器设置雷同，所以提取出来
     self.defaultInit=function(scope){//
 
@@ -86,22 +108,7 @@ var commonService= angular.module("common.service", [])
                     callBack();
                 }
             }else{
-                layer.open({
-                    type: 0,
-                    title: ['<span class="title_span">标题</span>', 'font-size:12px;border-radius: 10px 10px 0 0;background: #ffffff;'],
-                    skin: 'my-layer-class',
-                    btn: ['确定', '取消'],
-                    shadeClose :true,
-                    yes: function(index){//按钮一的回调
-                        layer.close(index);//手动关闭
-                    },
-                    btn2: function(index){//按钮二的回调
-                        //
-                    },
-                    btnAlign: 'c',
-                    content: '传入任意的文本或html' //这里content是一个普通的String
-                });
-                //layer.alert("您的输入[ "+ page + " ]不是一个有效数字，请您重新输入！");
+                layer.alert("您的输入[ "+ page + " ]不是一个有效数字，请您重新输入！");
             }
 
         }
