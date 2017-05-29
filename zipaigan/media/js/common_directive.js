@@ -35,6 +35,20 @@ mainModule.directive('imgLazyLoad', function() {
 
                 }
                 $(element[0]).attr("src",realSrc);
+
+                $(element[0]).on("dblclick",function(){
+
+                    layer.open({
+                        type: 1,
+                        title: '原图',
+                        area: ['98%','95%'],
+                        shade:0.9,
+                        btnAlign: 'c',
+                        content:"<div class='img_box w ofa'>" +
+                            "<img src='"+realSrc+"'/>"+
+                        "</div>"
+                    });
+                });
             };
         }
     };
