@@ -67,21 +67,13 @@ mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServic
 
         if( util.notObjEmpty(work) && util.notEmpty(work.worksState) ){
 
-            if(work.worksState==1){//投稿中
-
-                $state.go('worksManager.sub_ing');
-
-            }else if(work.worksState==2){//投稿成功
-
-                $state.go('worksManager.sub_success');
-
-            }else if(work.worksState==3){//已发布
-
-                $state.go('worksManager.published');
-
-            }
+            work.worksState==1?$state.go('worksManager.sub_ing')
+                :work.worksState==2?$state.go('worksManager.sub_success')
+                :work.worksState==3?$state.go('worksManager.published'):void 0;
 
         }
+
+        util.setSession("UserId",work.id);//传当前用户ID用户请求列表
 
     };
 });

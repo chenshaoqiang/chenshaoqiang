@@ -5,6 +5,8 @@ mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices
 
     (function initSetting(){
 
+        $scope.UserId=util.getSession("UserId");
+
     })();
 
 });
