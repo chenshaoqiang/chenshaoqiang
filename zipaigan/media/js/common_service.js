@@ -38,10 +38,16 @@ var commonService= angular.module("common.service", [])
         });
     };
     //初始化默认参数设置--由于多个控制器设置雷同，所以提取出来
-    self.defaultInit=function(scope){//
+    self.defaultInit=function(scope,pageSize){//
         /*
         * @param {Object} scope 控制器注入
+        * @param {String} pageSize 每页条数
         * */
+        if(!pageSize){
+
+            pageSize="10";
+
+        }
         //保存搜索条件的对象
         scope.search={};
 
@@ -55,7 +61,7 @@ var commonService= angular.module("common.service", [])
         scope.search.pageNumber=1;
 
         //默认每次请求数
-        scope.search.pageSize="10";
+        scope.search.pageSize=pageSize;
 
     };
 

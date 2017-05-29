@@ -6,7 +6,7 @@ mainModule.controller('uListCtrl',function($scope,$rootScope,util,httpServices){
     (function initSetting(){
 
         //默认参数设置
-        util.defaultInit($scope);
+        util.defaultInit($scope,"10");
 
         //获取用户信息
         getUserLists();

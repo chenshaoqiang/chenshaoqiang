@@ -7,6 +7,10 @@ mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices
 
         $scope.UserId=util.getSession("UserId");
 
+        //默认参数设置
+        util.defaultInit($scope,"5");
+
+
     })();
 
 });

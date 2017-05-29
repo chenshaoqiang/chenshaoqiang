@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/long1.jpg" />
-      <change type="DELETED" beforePath="D:\GitHub项目发布\chenshaoqiang\zipaigan\media\images\longImg.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub项目发布\chenshaoqiang\zipaigan\view\works\8图片延迟加载-5-增强用户体验-多张图片的-正确的.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/comment_icon_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/fenxiang_icon_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/parise_icon_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/img.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/common_directive.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/common_directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/common_service.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/style.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" afterPath="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -41,46 +48,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sub_ing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sub_ing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8754717">
-              <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zipaigan/media/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="215" column="1" selection-start-line="215" selection-start-column="1" selection-end-line="215" selection-end-column="1" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sub_ingCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sub_ingCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4469178">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_directive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -100,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/paipai/index.ftl" />
         <option value="$PROJECT_DIR$/onecloud-openapi-platform/assets/js/homPage.js" />
         <option value="$PROJECT_DIR$/onecloud-openapi-platform/index.html" />
         <option value="$PROJECT_DIR$/onecloud-openapi-platform/assets/css/homePage.css" />
@@ -120,12 +104,6 @@
         <option value="$PROJECT_DIR$/zipaigan/works.json" />
         <option value="$PROJECT_DIR$/zipaigan/user_detail.json" />
         <option value="$PROJECT_DIR$/zipaigan/view/user/user_list.html" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/user.json" />
         <option value="$PROJECT_DIR$/zipaigan/view/nav/nav.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/nav/nav.css" />
@@ -142,15 +120,22 @@
         <option value="$PROJECT_DIR$/zipaigan/view/works/status/published.html" />
         <option value="$PROJECT_DIR$/zipaigan/view/works/status/sub_success.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/works/worksListCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/base.css" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" />
         <option value="$PROJECT_DIR$/zipaigan/view/index.html" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/style.css" />
-        <option value="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" />
         <option value="$PROJECT_DIR$/zipaigan/view/works/8图片延迟加载-5-增强用户体验-多张图片的-正确的.html" />
+        <option value="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" />
+        <option value="$PROJECT_DIR$/zipaigan/img.json" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/common_directive.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
+        <option value="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" />
       </list>
     </option>
   </component>
@@ -162,8 +147,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -498,7 +485,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zipaigan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zipaigan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -593,11 +632,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan" />
       <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan\media\images" />
       <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan\view\works" />
       <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan\view\works\status" />
       <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan\media\js\works\status" />
-      <recent name="D:\GitHub项目发布\chenshaoqiang\zipaigan\media\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -669,12 +708,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00289" summary="    5.15">
-      <created>1494819971630</created>
-      <option name="number" value="00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1494819971630</updated>
     </task>
     <task id="LOCAL-00290" summary="    5.15">
       <created>1494820022393</created>
@@ -964,14 +997,20 @@
       <option name="project" value="LOCAL" />
       <updated>1496046838905</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="    5.29">
+      <created>1496057846447</created>
+      <option name="number" value="00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1496057846447</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21084337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1038,59 +1077,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/third/layer/mobile/need/layer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/third/laydate/need/laydate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049657535">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/third/laydate/skins/default/laydate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onecloud-manager/bower_components/DataTables/media/js/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321918">
-          <caret line="100" column="269" selection-start-line="100" selection-start-column="269" selection-end-line="100" selection-end-column="269" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/third/layer/skin/default/layer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46575344">
-          <caret line="0" column="7628" selection-start-line="0" selection-start-column="7628" selection-end-line="0" selection-end-column="7628" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/works/status/publishedCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34760273">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24828768">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1193,16 +1179,6 @@
         <state vertical-scroll-proportion="0.60273975">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,25 +1361,76 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/images/comment_icon_black.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/images/long1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
+    <entry file="file://$PROJECT_DIR$/zipaigan/img.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.1355634">
-          <caret line="368" column="25" selection-start-line="368" selection-start-column="25" selection-end-line="368" selection-end-column="25" />
+        <state vertical-scroll-proportion="1.7435898">
+          <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49657536">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
-            <element signature="e#9904#10937#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js">
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39726028">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39726028">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39726028">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74486303">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49657536">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1412,18 +1439,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.69520545">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1267123">
+          <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+          <folding>
+            <element signature="e#10019#11052#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5462329">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8754717">
-          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4469178">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,8 +14,8 @@ mainModule.directive('imgLazyLoad', function() {
             tempImg.src=realSrc;
             tempImg.onload=function(){
                 $(element)[0].src=realSrc;
-                console.log($(element[0]).offset().top);
-                console.log($(element[0]).offset().top);
+                //console.log($(element[0]).offset().top);
+                //console.log($(element[0]).offset().top);
             };
             function offset(ele){
                 var t=ele.offsetTop;
