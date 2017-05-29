@@ -32,46 +32,40 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
     //监听路由变化,设置对应的面包屑
     $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
 
+        //返回首页去除菜单选中样式
+        if(toState.name=='loginSuccess'){
+
+            util.setSession("current",'');
+            $scope.current='';
+
+        }
+
         //面包屑数值对,只保存需要用于面包屑设置的路由对,按面包屑顺序存值
         var bread=[
-            [{'userManager':'用户管理'},{'userManager.uLi':'用户列表'},{'userManager.uDt':'用户详情'}],
+            [{'userManager':'用户管理'},{'userManager.uLi':'用户列表'}],
             [{'worksManager':'作品管理'},{'worksManager.wList':'作品列表'}],
             [{'customerServiceManager':'客服管理'}],
             [{'systemManager':'系统管理'}]
         ];
-        if(toState.name=='userManager'){
 
-            $state.go('userManager.uLi');
-
-        }else if(toState.name=='worksManager'){
-
-            $state.go('worksManager.wList');
-
-        }else if(toState.name=='userManager.uDt'){
-
-            //面包屑点击用户详情
-            $state.go('userManager.uDt.' + util.getSession("cur"));
-
-        }
+        toState.name=='userManager' ? $state.go('userManager.uLi'):toState.name=='worksManager'?$state.go('worksManager.wList'):void 0;
 
         var path=$location.path();
         var arr=path.split("/");//获取路由组
         var lastState=arr[arr.length-1]; //最后的路由
 
-        if(lastState=='worksManager.sub_ing'){
+        //四级面包屑设置
+        lastState=='wks'?(lastState='userManager.uDt.wks',bread[0].push({'userManager.uDt.wks':'用户详情'}))
+            :lastState=='ucm'?(lastState='userManager.uDt.ucm',bread[0].push({'userManager.uDt.ucm':'用户详情'}))
+            :lastState=='ucr'?(lastState='userManager.uDt.ucr',bread[0].push({'userManager.uDt.ucr':'用户详情'}))
+            :lastState=='upm'?(lastState='userManager.uDt.upm',bread[0].push({'userManager.uDt.upm':'用户详情'}))
+            :lastState=='upr'?(lastState='userManager.uDt.upr',bread[0].push({'userManager.uDt.upr':'用户详情'}))
+            :lastState=='worksManager.sub_ing'?bread[1].push({'worksManager.sub_ing':'投稿中的作品'})
+            :lastState=='worksManager.sub_success'?bread[1].push({'worksManager.sub_success':'投稿成功的作品'})
+            :lastState=='worksManager.published'?bread[1].push({'worksManager.published':'已发布的作品'})
+            :void 0;
 
-            bread[1].push({'worksManager.sub_ing':'投稿中的作品'});
-
-        }else if(lastState=='worksManager.sub_success'){
-
-            bread[1].push({'worksManager.sub_success':'投稿成功的作品'});
-
-        }else if(lastState=='worksManager.published'){
-
-            bread[1].push({'worksManager.published':'已发布的作品'});
-
-        }
-        //面包屑设置
+        //面包屑数组
         $rootScope.breadcrumbs=[];
 
         $(bread).each(function(){
@@ -85,16 +79,7 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
                     curTit[curTit.length]=key;
 
-
-                    if(lastState=='wks'||lastState=='ucm'||lastState=='ucr'||lastState=='upm'||lastState=='upr'){
-
-                        //用户管理详情Tab部分不做面包屑
-                        lastState='userManager.uDt';
-
-                    }
-
                     if(key==lastState){
-
 
                         //获取到当前面包屑的索引值了 --> i
 
@@ -104,8 +89,8 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
                         }
 
-
                         return; //找到对应的面包屑了就中断循环
+
                     }
                 }
 
