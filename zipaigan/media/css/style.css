@@ -185,6 +185,10 @@
     padding-left: 10px;
 }
 /*--------作品列表----------*/
+.workList{
+    max-width: 100%;
+    min-width: 450px;
+}
 .workList>ul{
     border: 1px solid #cccccc;
     -webkit-border-radius: 5px;
@@ -207,5 +211,6 @@
     font-size: 12px;
 }
 .workIcon{
-    width: 100%;
+    max-width: 100%;
+    min-width: 420px;
 }

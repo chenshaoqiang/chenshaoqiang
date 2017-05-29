@@ -359,25 +359,6 @@ var commonService= angular.module("common.service", [])
         });
     };
 
-    //图片放大插件
-    self.fancybox = function(sid){
-        $('.'+sid).fancybox({
-            openEffect  : 'none',
-            closeEffect : 'none',
-            prevEffect : 'none',
-            nextEffect : 'none',
-            closeBtn  : false,
-            helpers : {
-                title : {
-                    type : 'inside'
-                },
-                buttons	: {}
-            },
-            afterLoad : function() {
-                this.title = '第' + (this.index + 1) + '张   共	' + this.group.length + (this.title ? ' - ' + this.title + '	张' : '');
-            }
-        });
-    };
     // 判断是否为空
     self.notEmpty=function (str) {
         if (typeof str === "undefined") {
