@@ -9,13 +9,11 @@ mainModule.directive('imgLazyLoad', function() {
         restrict: 'AE',
 
         link: function(scope, element, attr) {
-            var realSrc = $(element[0]).attr('realSrc');
+            var realSrc = scope.work.worksUrl;
             var tempImg=new Image;
             tempImg.src=realSrc;
             tempImg.onload=function(){
-                $(element)[0].src=realSrc;
-                //console.log($(element[0]).offset().top);
-                //console.log($(element[0]).offset().top);
+                $(element[0]).attr("src",realSrc);
             };
             function offset(ele){
                 var t=ele.offsetTop;

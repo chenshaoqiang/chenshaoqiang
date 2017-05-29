@@ -2,22 +2,22 @@
 <!--投稿中的作品-->
 <div class="w p_20 mb_50 ofa">
     <!--列表-->
-    <div class="workList mb_20 fl">
-        <ul class="w p_20">
+    <div ng-repeat="work in Lists" class="workList mb_20 fl">
+        <ul class="w p_20 clearfix">
             <li class="w">
                 <ul class="w ofh">
                     <li>
-                        <img class="userIcon fl mr_10" src="../media/images/userHead.jpg" alt="头像"/>
+                        <img class="userIcon fl mr_10" ng-src={{work.headUrl}} alt="头像"/>
                         <div class="pt_8 fl">
-                            <span class="userName">张苏纳</span>
+                            <span ng-bind="work.userName" class="userName"></span>
                             <br/>
-                            <span class="time">2017-05-18 21:30:15</span>
+                            <span ng-bind="work.pTime|dateFormat:''" class="time"></span>
                         </div>
                     </li>
                     <li class="fr">
-                        <button ng-click="delete()"
+                        <button ng-click="delete(work)"
                                 class="btn-danger btn-set">删除</button>
-                        <button ng-click="disabled()"
+                        <button ng-click="disabled(work)"
                                 class="btn-gold btn-set ml_30">禁用</button>
                     </li>
                 </ul>
@@ -25,98 +25,23 @@
             <li>
                 <img class="workIcon mt_20"
                      img-lazy-load
-                     realSrc="http://www.paipai360.cn/share/img/148860954254540257794758518088.jpeg"
-                     src="../media/images/loading.gif" alt="作品"/>
+                     src="../media/images/loading.gif"
+                     alt="作品"/>
             </li>
             <li>
-                <span>美丽的城市，烟雾缭绕，真是美极了！</span>
+                <span ng-bind="work.disc"></span>
             </li>
             <li class="mt_5">
                 <img class="mr_5" src="../media/images/comment_icon_black.png" alt="评论"/>
-                <span class="mr_20">666</span>
+                <span class="mr_20" ng-bind="work.commentNum"></span>
                 <img class="mr_5" src="../media/images/parise_icon_black.png" alt="点赞"/>
-                <span class="mr_20">888</span>
+                <span class="mr_20" ng-bind="work.greatNum"></span>
                 <img class="mr_5" src="../media/images/fenxiang_icon_black.png" alt="分享"/>
-                <span class="mr_20">999</span>
+                <span class="mr_20" ng-bind="work.shareNum"></span>
             </li>
         </ul>
     </div>
-    <div class="workList mb_20 fl">
-        <ul class="w p_20">
-            <li class="w">
-                <ul class="w ofh">
-                    <li>
-                        <img class="userIcon fl mr_10" src="../media/images/userHead.jpg" alt="头像"/>
-                        <div class="pt_8 fl">
-                            <span class="userName">张苏纳</span>
-                            <br/>
-                            <span class="time">2017-05-18 21:30:15</span>
-                        </div>
-                    </li>
-                    <li class="fr">
-                        <button ng-click="delete()"
-                                class="btn-danger btn-set">删除</button>
-                        <button ng-click="disabled()"
-                                class="btn-gold btn-set ml_30">禁用</button>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <img class="workIcon mt_20"
-                     img-lazy-load
-                     realSrc="http://f12.baidu.com/it/u=2040953427,2540893113&fm=72"
-                     src="../media/images/loading.gif" alt="作品"/>
-            </li>
-            <li>
-                <span>美丽的城市，烟雾缭绕，真是美极了！</span>
-            </li>
-            <li class="mt_5">
-                <img class="mr_5" src="../media/images/comment_icon_black.png" alt="评论"/>
-                <span class="mr_20">666</span>
-                <img class="mr_5" src="../media/images/parise_icon_black.png" alt="点赞"/>
-                <span class="mr_20">888</span>
-                <img class="mr_5" src="../media/images/fenxiang_icon_black.png" alt="分享"/>
-                <span class="mr_20">999</span>
-            </li>
-        </ul>
-    </div>
-    <div class="workList mb_20 fl">
-        <ul class="w p_20">
-            <li class="w">
-                <ul class="w ofh">
-                    <li>
-                        <img class="userIcon fl mr_10" src="../media/images/userHead.jpg" alt="头像"/>
-                        <div class="pt_8 fl">
-                            <span class="userName">张苏纳</span>
-                            <br/>
-                            <span class="time">2017-05-18 21:30:15</span>
-                        </div>
-                    </li>
-                    <li class="fr">
-                        <button ng-click="delete()"
-                                class="btn-danger btn-set">删除</button>
-                        <button ng-click="disabled()"
-                                class="btn-gold btn-set ml_30">禁用</button>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <img class="workIcon mt_20"
-                     img-lazy-load
-                     realSrc="../media/images/long1.jpg"
-                     src="../media/images/loading.gif" alt="作品"/>
-            </li>
-            <li>
-                <span>美丽的城市，烟雾缭绕，真是美极了！</span>
-            </li>
-            <li class="mt_5">
-                <img class="mr_5" src="../media/images/comment_icon_black.png" alt="评论"/>
-                <span class="mr_20">666</span>
-                <img class="mr_5" src="../media/images/parise_icon_black.png" alt="点赞"/>
-                <span class="mr_20">888</span>
-                <img class="mr_5" src="../media/images/fenxiang_icon_black.png" alt="分享"/>
-                <span class="mr_20">999</span>
-            </li>
-        </ul>
+    <div class="w">
+        <div ng-include="'nav/nav.html'"></div>
     </div>
 </div>

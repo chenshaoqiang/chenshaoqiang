@@ -1,5 +1,9 @@
 
 /*分页相关样式*/
+.my_nav{
+    overflow: hidden;
+    width: 100%;
+}
 .pagination>li>a, .pagination>li>span{
     color: #222222;
     padding: 5px 12px;

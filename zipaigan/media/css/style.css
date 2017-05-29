@@ -187,7 +187,7 @@
 /*--------作品列表----------*/
 .workList{
     max-width: 100%;
-    min-width: 450px;
+    min-width: 50%;
 }
 .workList>ul{
     border: 1px solid #cccccc;
