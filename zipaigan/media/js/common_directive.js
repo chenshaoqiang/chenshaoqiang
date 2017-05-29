@@ -13,11 +13,10 @@ mainModule.directive('imgLazyLoad', function() {
 
         link: function(scope, element, attr) {
 
-            $(element[0]).parents(".workList");
-
             var realSrc = scope.work.worksUrl;
             var tempImg=new Image;
             tempImg.src=realSrc;
+
             tempImg.onload=function(){
 
                 if(parseInt(this.width)<parseInt(maxWidth)){
