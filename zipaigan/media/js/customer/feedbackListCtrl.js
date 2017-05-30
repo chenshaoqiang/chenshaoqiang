@@ -1,7 +1,7 @@
 /*
-* 客服管理--举报管理--举报列表
+* 客服管理--意见反馈--反馈列表
 * */
-mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServices){
+mainModule.controller('feedbackListCtrl',function($scope,$rootScope,util,httpServices){
 
     (function initSetting(){
 
@@ -9,7 +9,7 @@ mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServi
         util.defaultInit($scope,"10");
 
         //获取用户信息
-        getReportLists();
+        getFeedbackLists();
 
     })();
 
@@ -43,7 +43,7 @@ mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServi
         laydate(end);
     };
 
-    function getReportLists(){
+    function getFeedbackLists(){
 
         httpServices.req_post('works.json',{}).success(function(res){
 
@@ -59,13 +59,8 @@ mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServi
     //列表跳转
     $scope.getPage=function(page){
 
-        util.goTargetPage(page,$scope,getReportLists);
+        util.goTargetPage(page,$scope,getFeedbackLists);
 
     };
 
-    //点击用户详情
-    $scope.getDetail =function(date){
-
-        //
-    }
 });

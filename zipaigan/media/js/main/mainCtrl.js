@@ -101,6 +101,13 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
                 {"title":"举报管理","state":"customerServiceManager.reportList"},
                 {"title":"举报列表","state":"customerServiceManager.reportList"}];
 
+        }else if(lastState=='feedback'){
+
+            $rootScope.breadcrumbs=[
+                {"title":"客服管理","state":"customerServiceManager.feedback"},
+                {"title":"意见反馈","state":"customerServiceManager.feedback"},
+                {"title":"意见反馈列表","state":"customerServiceManager.feedback"}];
+
         }else{
 
             $(bread).each(function(){

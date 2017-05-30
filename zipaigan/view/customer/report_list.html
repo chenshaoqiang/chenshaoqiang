@@ -5,7 +5,7 @@
         <div class="row m_0 p_s23 bg-white">
             <div class="mr_30 p_0 fl">
                 <label for="userName">
-                    用户名
+                    &nbsp;&nbsp;&nbsp;举报人
                 </label>
                 <input id="userName"
                        name="userName"
@@ -14,18 +14,18 @@
             </div>
             <div class="mr_30 p_0 fl">
                 <label for="workType">
-                    作品类型
+                    举报类型
                 </label>
                 <select id="workType"
                         class="select-w"
                         name="workType"
                         ng-model="search.workType">
-                    <option value="">全景图片</option>
+                    <option value="">垃圾营销</option>
                 </select>
             </div>
             <div class="mr_30 p_0 fl">
                 <label for="registerTime_s">
-                    注册时间
+                    举报时间
                 </label>
                 <input ng-click="openStartLayDate()"
                        style="text-align: center;"
@@ -50,7 +50,7 @@
         <div class="row m_0 p_s_23 bg-white">
             <div class="mr_30 p_0 fl">
                 <label for="keyWord">
-                    关键字
+                    被举报人
                 </label>
                 <input id="keyWord"
                        name="keyWord"
@@ -59,13 +59,13 @@
             </div>
             <div class="mr_30 p_0 fl">
                 <label for="workState">
-                    作品状态
+                    作品类型
                 </label>
                 <select id="workState"
                         class="select-w"
                         name="workState"
                         ng-model="search.workState">
-                    <option value="">全景状态</option>
+                    <option value="">全景图片</option>
                 </select>
             </div>
         </div>
@@ -81,27 +81,29 @@
     <table class="table table-condensed table-style min_750">
         <thead>
         <tr>
-            <th>用户名</th>
+            <th>举报人</th>
+            <th>举报类型</th>
+            <th>被举报人</th>
             <th>作品类型</th>
             <th>作品</th>
             <th>作品描述</th>
-            <th>发表时间</th>
-            <th>作品状态</th>
+            <th>举报时间</th>
             <th>操作</th>
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="work in Lists">
-            <td ng-bind="work.userName"></td>
-            <td ng-bind="work.type"></td>
+        <tr ng-repeat="li in Lists">
+            <td ng-bind="li.reporter"></td>
+            <td ng-bind="li.reporterType"></td>
+            <td ng-bind="li.beReporter"></td>
+            <td ng-bind="li.type"></td>
             <td>
-                <img class="icon_works" ng-src="{{work.worksUrl}}" alt="作品"/>
+                <img class="icon_works" ng-src="{{li.worksUrl}}" alt="作品"/>
             </td>
-            <td ng-bind="work.disc"></td>
-            <td ng-bind="work.pTime |dateFormat:''"></td>
-            <td ng-bind="work.worksState|worksState"></td>
+            <td ng-bind="li.disc"></td>
+            <td ng-bind="li.pTime |dateFormat:''"></td>
             <td class="detail_td">
-                <a ng-click="getWorkDetail(work)">查看</a>
+                <a ng-click="getDetail(li)">查看</a>
             </td>
         </tr>
         </tbody>
