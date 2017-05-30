@@ -62,7 +62,7 @@
             </a>
             <a ui-sref="customerServiceManager.reportList">
                 <li ng-click="changeMenu('customerServiceManager')"
-                    ng-class="{active:current=='customerServiceManager'}">
+                    ng-class="{active:(current=='customerServiceManager'&& custOpen == false)}">
                     <div class="fl mr_20 c_icon" ng-class="{active:current=='customerServiceManager'}"></div>
                     客服管理
                     <span ng-if="!custOpen" class="glyphicon glyphicon-menu-right fr mr_20"></span>
@@ -87,7 +87,7 @@
             </a>
             <a ui-sref="systemManager">
                 <li ng-click="changeMenu('systemManager')"
-                    ng-class="{active:current=='systemManager'}">
+                    ng-class="{active:(current=='systemManager' && systemOpen==false)}">
                     <div class="fl mr_20 s_icon" ng-class="{active:current=='systemManager'}"></div>
                     系统管理
                     <span ng-if="!systemOpen" class="glyphicon glyphicon-menu-right fr mr_20"></span>

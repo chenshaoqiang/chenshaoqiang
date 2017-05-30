@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/view/customer/report_list_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/customer/customer_manager.html" afterPath="$PROJECT_DIR$/zipaigan/view/customer/customer_manager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/index.html" afterPath="$PROJECT_DIR$/zipaigan/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/index.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -35,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.789474">
-              <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
+            <state vertical-scroll-proportion="-1.3947369">
+              <caret line="89" column="84" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -57,8 +50,8 @@
       <file leaf-file-name="mainCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90068495">
-              <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.255137">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -146,11 +139,11 @@
         <option value="$PROJECT_DIR$/zipaigan/media/js/customer/reportDetailCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/index.js" />
-        <option value="$PROJECT_DIR$/zipaigan/view/index.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/view/customer/report_list_detail.html" />
         <option value="$PROJECT_DIR$/zipaigan/view/customer/customer_manager.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" />
+        <option value="$PROJECT_DIR$/zipaigan/view/index.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" />
       </list>
     </option>
@@ -651,12 +644,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00301" summary="    5.27">
-      <created>1495853062890</created>
-      <option name="number" value="00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1495853062890</updated>
-    </task>
     <task id="LOCAL-00302" summary="    5.27">
       <created>1495853309384</created>
       <option name="number" value="00302" />
@@ -945,14 +932,20 @@
       <option name="project" value="LOCAL" />
       <updated>1496136630354</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <task id="LOCAL-00350" summary="    5.30">
+      <created>1496141417181</created>
+      <option name="number" value="00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1496141417181</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21651785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20163691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1305,14 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.789474">
-          <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="165" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/view/works/works_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.96336997">
@@ -1407,10 +1392,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3947369">
+          <caret line="89" column="84" selection-start-line="89" selection-start-column="84" selection-end-line="89" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90068495">
-          <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.255137">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

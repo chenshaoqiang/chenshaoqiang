@@ -29,20 +29,24 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
         $scope.custOpen=(util.getSession("custOpen")=="true");
         $scope.systemOpen=(util.getSession("systemOpen")=="true");
 
-        //二级菜单控制
+        //二级菜单开闭控制
         $scope.changeMenu=function(menu){
 
             $scope.current=menu;
 
             (menu=='customerServiceManager'||menu=='report'||menu=='feedback')
                 ?(menu=='customerServiceManager'
-                ?($scope.custOpen=!($scope.custOpen),util.setSession("custOpen",$scope.custOpen))
+                ?($scope.custOpen=!($scope.custOpen),
+                util.setSession("custOpen",$scope.custOpen),
+                ($scope.custOpen ? $scope.current='report':$scope.current=menu))
                 :($scope.custOpen=true,util.setSession("custOpen","true")))
                 :($scope.custOpen=false,util.setSession("custOpen","false"));
 
             (menu=='systemManager'||menu=='versionUpdate')
                 ?(menu=='systemManager'
-                ?($scope.systemOpen=!($scope.systemOpen),util.setSession("systemOpen",$scope.systemOpen))
+                ?($scope.systemOpen=!($scope.systemOpen),
+                util.setSession("systemOpen",$scope.systemOpen),
+                ($scope.systemOpen ? $scope.current='versionUpdate':$scope.current=menu))
                 :($scope.systemOpen=true,util.setSession("systemOpen","true")))
                 :($scope.systemOpen=false,util.setSession("systemOpen","false"));
 
