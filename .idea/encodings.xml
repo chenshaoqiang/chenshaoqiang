@@ -50,6 +50,7 @@
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/login/loginSuccessCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/systemManagerCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/versionListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" charset="UTF-8" />

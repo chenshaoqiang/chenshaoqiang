@@ -57,6 +57,9 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
     //监听路由变化,设置对应的面包屑
     $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
 
+        //面包屑数组
+        $rootScope.breadcrumbs=[];
+
         //返回首页去除菜单选中样式
         if(toState.name=='loginSuccess'){
 
@@ -93,68 +96,54 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
             :lastState=='worksManager.sub_ing'?bread[1].push({'worksManager.sub_ing':'投稿中作品'})
             :lastState=='worksManager.sub_success'?bread[1].push({'worksManager.sub_success':'投稿成功作品'})
             :lastState=='worksManager.published'?bread[1].push({'worksManager.published':'已发布作品'})
+            :lastState=='reportList'?($rootScope.breadcrumbs=[
+            {"title":"客服管理","state":"customerServiceManager.reportList"},
+            {"title":"举报管理","state":"customerServiceManager.reportList"},
+            {"title":"举报列表","state":"customerServiceManager.reportList"}])
+            :lastState=='feedback'?($rootScope.breadcrumbs=[
+            {"title":"客服管理","state":"customerServiceManager.feedback"},
+            {"title":"意见反馈","state":"customerServiceManager.feedback"},
+            {"title":"意见反馈列表","state":"customerServiceManager.feedback"}])
+            :lastState=='reportListDt'?($rootScope.breadcrumbs=[
+            {"title":"客服管理","state":"customerServiceManager.reportList"},
+            {"title":"举报管理","state":"customerServiceManager.reportList"},
+            {"title":"举报列表","state":"customerServiceManager.reportList"},
+            {"title":"被举报作品详情","state":"customerServiceManager.reportListDt"}])
+            :lastState=='versionList'?($rootScope.breadcrumbs=[
+            {"title":"系统管理","state":"systemManager.versionList"},
+            {"title":"版本更新","state":"systemManager.versionList"},
+            {"title":"版本列表","state":"systemManager.versionList"}])
             :void 0;
 
-        //面包屑数组
-        $rootScope.breadcrumbs=[];
+        $(bread).each(function(){
 
-        if(lastState=='reportList'){//非层次结构的特殊处理
+            var curArr=$(this);
+            var curTit=[]; //用于保存面包屑key值组以便循环的时候用于设置
 
-            $rootScope.breadcrumbs=[
-                {"title":"客服管理","state":"customerServiceManager.reportList"},
-                {"title":"举报管理","state":"customerServiceManager.reportList"},
-                {"title":"举报列表","state":"customerServiceManager.reportList"}];
+            for(var i=0;i<curArr.length;i++){
 
-        }else if(lastState=='feedback'){//非层次结构的特殊处理
+                for(key in curArr[i]){
 
-            $rootScope.breadcrumbs=[
-                {"title":"客服管理","state":"customerServiceManager.feedback"},
-                {"title":"意见反馈","state":"customerServiceManager.feedback"},
-                {"title":"意见反馈列表","state":"customerServiceManager.feedback"}];
+                    curTit[curTit.length]=key;
 
-        }else if(lastState=='reportListDt'){
+                    if(key==lastState){
 
-            $rootScope.breadcrumbs=[
-                {"title":"客服管理","state":"customerServiceManager.reportList"},
-                {"title":"举报管理","state":"customerServiceManager.reportList"},
-                {"title":"举报列表","state":"customerServiceManager.reportList"},
-                {"title":"被举报作品详情","state":"customerServiceManager.reportListDt"}];
+                        //获取到当前面包屑的索引值了 --> i
 
-        }else{
+                        for(var j=0;j<=i;j++){
 
-            $(bread).each(function(){
-
-                var curArr=$(this);
-                var curTit=[]; //用于保存面包屑key值组以便循环的时候用于设置
-
-                for(var i=0;i<curArr.length;i++){
-
-                    for(key in curArr[i]){
-
-                        curTit[curTit.length]=key;
-
-                        if(key==lastState){
-
-                            //获取到当前面包屑的索引值了 --> i
-
-                            for(var j=0;j<=i;j++){
-
-                                $rootScope.breadcrumbs[$rootScope.breadcrumbs.length]={"title":curArr[j][curTit[j]],"state":curTit[j]};
-
-                            }
-
-                            return; //找到对应的面包屑了就中断循环
+                            $rootScope.breadcrumbs[$rootScope.breadcrumbs.length]={"title":curArr[j][curTit[j]],"state":curTit[j]};
 
                         }
-                    }
 
+                        return; //找到对应的面包屑了就中断循环
+
+                    }
                 }
 
-            });
+            }
 
-        }
-
-
+        })
 
     });
 

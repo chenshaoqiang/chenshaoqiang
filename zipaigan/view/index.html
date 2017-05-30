@@ -85,7 +85,7 @@
                     意见反馈
                 </li>
             </a>
-            <a ui-sref="systemManager">
+            <a ui-sref="systemManager.versionList">
                 <li ng-click="changeMenu('systemManager')"
                     ng-class="{active:(current=='systemManager' && systemOpen==false)}">
                     <div class="fl mr_20 s_icon" ng-class="{active:current=='systemManager'}"></div>
@@ -94,7 +94,8 @@
                     <span ng-if="systemOpen" class="glyphicon glyphicon-menu-down fr mr_20"></span>
                 </li>
             </a>
-            <a ng-if="systemOpen">
+            <a ui-sref="systemManager.versionList"
+               ng-if="systemOpen">
                 <li class="inner"
                     ng-click="changeMenu('versionUpdate')"
                     ng-class="{active:current=='versionUpdate'}">
@@ -164,6 +165,6 @@
 <script type="text/javascript" src="../media/js/customer/reportListDtCtrl.js"></script>
 <!--客服管理--意见反馈--反馈列表-->
 <script type="text/javascript" src="../media/js/customer/feedbackListCtrl.js"></script>
-<!--系统管理-->
-<script type="text/javascript" src="../media/js/system/systemManagerCtrl.js"></script>
+<!--系统管理--版本更新--版本列表-->
+<script type="text/javascript" src="../media/js/system/versionListCtrl.js"></script>
 </html>

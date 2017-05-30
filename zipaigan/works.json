@@ -19,7 +19,10 @@
       "disc":"遇见美丽的风景......",
       "feedback":"太卡了，希望改进，再改进！！！",
       "pTime":1495114215732,
-      "worksState":1
+      "worksState":1,
+      "version":"1.0版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00001",
@@ -34,7 +37,10 @@
       "disc":"遇见美丽的心情......",
       "feedback":"太卡了，希望改进，再改进！！！",
       "pTime":1495214215732,
-      "worksState":1
+      "worksState":1,
+      "version":"1.1版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00002",
@@ -49,7 +55,10 @@
       "disc":"美丽的心情......",
       "feedback":"太卡了，希望改进，再改进！！！",
       "pTime":1495314215732,
-      "worksState":1
+      "worksState":1,
+      "version":"1.2版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00003",
@@ -64,7 +73,10 @@
       "disc":"美丽的风景，美丽的心情......",
       "feedback":"太卡了，希望改进，再改进！！！",
       "pTime":1495414215732,
-      "worksState":2
+      "worksState":2,
+      "version":"1.3版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00004",
@@ -79,7 +91,10 @@
       "disc":"美丽的风景......",
       "feedback":"太卡了，希望改进，再改进,再改进！！！",
       "pTime":1495514215732,
-      "worksState":2
+      "worksState":2,
+      "version":"1.4版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00005",
@@ -94,7 +109,10 @@
       "disc":"美丽的风景，美丽的心情。",
       "feedback":"太卡了，希望改进，再改进,再改进,再改进！！！",
       "pTime":1495614215732,
-      "worksState":2
+      "worksState":2,
+      "version":"1.5版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00006",
@@ -109,7 +127,10 @@
       "disc":"美丽的风景，美丽的心情。",
       "feedback":"太卡了，希望改进，再改进,再改进！！！",
       "pTime":1495124215732,
-      "worksState":3
+      "worksState":3,
+      "version":"1.6版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00007",
@@ -124,7 +145,10 @@
       "disc":"美丽的风景，美丽的心情。",
       "feedback":"太卡了，希望改进，再改进,再改进！！！",
       "pTime":1495134215732,
-      "worksState":3
+      "worksState":3,
+      "version":"1.7版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00008",
@@ -139,7 +163,10 @@
       "disc":"美丽的风景，美丽的心情。",
       "feedback":"太卡了，希望改进，再改进,再改进,再改进！！！",
       "pTime":1495144215732,
-      "worksState":3
+      "worksState":3,
+      "version":"1.8版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     },
     {
       "id":"00009",
@@ -154,7 +181,10 @@
       "disc":"美丽的风景，美丽的心情......",
       "feedback":"太卡了，希望改进，再改进,再改进,再改进！！！",
       "pTime":1495154215732,
-      "worksState":1
+      "worksState":1,
+      "version":"1.9版本",
+      "versionContent":"全新拍照app上线，多种拍照模式随意切换！",
+      "issuedMan":"嗷大瞄"
     }
   ]
 }
