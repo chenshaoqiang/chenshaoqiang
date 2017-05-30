@@ -99,6 +99,12 @@ mainModule.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'customer/report_list.html',
             controller: 'reportListCtrl as mainModule'
         })
+        //客服管理--举报管理--举报列表--列表详情
+        .state('customerServiceManager.reportListDt', {
+            url: '/reportListDt',
+            templateUrl: 'customer/report_list_detail.html',
+            controller: 'reportListDtCtrl as mainModule'
+        })
         //客服管理--意见反馈--反馈列表
         .state('customerServiceManager.feedback', {
             url: '/feedback',

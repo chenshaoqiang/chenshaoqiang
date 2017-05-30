@@ -1,0 +1,47 @@
+
+<!--客服管理--举报管理--举报列表--举报作品详情-->
+<div class="w p_20 mb_50 ofa">
+    <!--列表-->
+    <div ng-repeat="work in Lists" class="workList mb_20 fl">
+        <ul class="w p_20 clearfix">
+            <li class="w">
+                <ul class="w ofh">
+                    <li>
+                        <img class="userIcon fl mr_10" ng-src={{work.headUrl}} alt="头像"/>
+                        <div class="pt_8 fl">
+                            <span ng-bind="work.userName" class="userName"></span>
+                            <br/>
+                            <span ng-bind="work.pTime|dateFormat:''" class="time"></span>
+                        </div>
+                    </li>
+                    <li class="fr">
+                        <button ng-click="delete(work)"
+                                class="btn-danger btn-set">删除</button>
+                        <button ng-click="disabled(work)"
+                                class="btn-gold btn-set ml_30">禁用</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img class="workIcon mt_20"
+                     img-lazy-load
+                     src="../media/images/loading.gif"
+                     alt="作品"/>
+            </li>
+            <li>
+                <span ng-bind="li.disc"></span>
+            </li>
+            <li class="mt_5">
+                <img class="mr_5" src="../media/images/comment_icon_black.png" alt="评论"/>
+                <span class="mr_20" ng-bind="work.commentNum"></span>
+                <img class="mr_5" src="../media/images/parise_icon_black.png" alt="点赞"/>
+                <span class="mr_20" ng-bind="work.greatNum"></span>
+                <img class="mr_5" src="../media/images/fenxiang_icon_black.png" alt="分享"/>
+                <span class="mr_20" ng-bind="work.shareNum"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="w">
+        <div ng-include="'nav/nav.html'"></div>
+    </div>
+</div>

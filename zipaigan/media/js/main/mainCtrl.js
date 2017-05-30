@@ -101,12 +101,20 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
                 {"title":"举报管理","state":"customerServiceManager.reportList"},
                 {"title":"举报列表","state":"customerServiceManager.reportList"}];
 
-        }else if(lastState=='feedback'){
+        }else if(lastState=='feedback'){//非层次结构的特殊处理
 
             $rootScope.breadcrumbs=[
                 {"title":"客服管理","state":"customerServiceManager.feedback"},
                 {"title":"意见反馈","state":"customerServiceManager.feedback"},
                 {"title":"意见反馈列表","state":"customerServiceManager.feedback"}];
+
+        }else if(lastState=='reportListDt'){
+
+            $rootScope.breadcrumbs=[
+                {"title":"客服管理","state":"customerServiceManager.reportList"},
+                {"title":"举报管理","state":"customerServiceManager.reportList"},
+                {"title":"举报列表","state":"customerServiceManager.reportList"},
+                {"title":"被举报作品详情","state":"customerServiceManager.reportListDt"}];
 
         }else{
 

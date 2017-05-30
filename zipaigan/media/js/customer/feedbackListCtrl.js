@@ -22,7 +22,7 @@ mainModule.controller('feedbackListCtrl',function($scope,$rootScope,util,httpSer
 
         };
 
-        //获取用户信息
+        //获取意见反馈列表信息
         getFeedbackLists();
 
     })();

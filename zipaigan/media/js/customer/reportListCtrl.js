@@ -1,7 +1,7 @@
 /*
 * 客服管理--举报管理--举报列表
 * */
-mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServices){
+mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServices,$state){
 
     (function initSetting(){
 
@@ -22,7 +22,7 @@ mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServi
 
         };
 
-        //获取用户信息
+        //获取举报列表信息
         getReportLists();
 
     })();
@@ -47,9 +47,10 @@ mainModule.controller('reportListCtrl',function($scope,$rootScope,util,httpServi
 
     };
 
-    //点击用户详情
+    //点击查看详情
     $scope.getDetail =function(date){
 
-        //
+        $state.go('customerServiceManager.reportListDt');
+
     }
 });

@@ -45,6 +45,7 @@
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/customerManagerCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/login/loginSuccessCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" charset="UTF-8" />
