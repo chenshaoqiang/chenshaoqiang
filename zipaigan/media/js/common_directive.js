@@ -6,7 +6,7 @@ mainModule.directive('imgLazyLoad', function() {
 
     var maxWidth=$("#imgBox").width()-100;
 
-    //图片延迟加载
+    //图片延迟加载+双击展示
     return {
 
         restrict: 'AE',
@@ -34,6 +34,7 @@ mainModule.directive('imgLazyLoad', function() {
                     }
 
                 }
+
                 $(element[0]).attr("src",realSrc);
 
                 $(element[0]).on("dblclick",function(){
@@ -44,10 +45,12 @@ mainModule.directive('imgLazyLoad', function() {
                         area: ['98%','95%'],
                         shade:0.9,
                         btnAlign: 'c',
+                        scrollbar: false,
                         content:"<div class='img_box w ofa'>" +
-                            "<img src='"+realSrc+"'/>"+
+                            "<img id='curImages' src='"+realSrc+"'/>"+
                         "</div>"
                     });
+
                 });
             };
         }

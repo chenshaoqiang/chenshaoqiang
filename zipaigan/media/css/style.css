@@ -185,7 +185,7 @@
     padding-left: 10px;
 }
 .img_box{
-    height: 500px;
+    min-height: 500px;
     line-height: 500px;
     font-size: 0;
     text-align: center;
