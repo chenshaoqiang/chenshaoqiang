@@ -45,7 +45,7 @@
         </div>
         <ul class="menu-list mt_20">
             <a ui-sref="userManager.uLi">
-                <li ng-click="current = 'user_manager'"
+                <li ng-click="changeMenu('user_manager')"
                     ng-class="{active:current=='user_manager'}">
                     <div class="fl mr_20 u_icon" ng-class="{active:current=='user_manager'}"></div>
                     用户管理
@@ -53,7 +53,7 @@
                 </li>
             </a>
             <a ui-sref="worksManager.wList">
-                <li ng-click="current = 'worksManager'"
+                <li ng-click="changeMenu('worksManager')"
                     ng-class="{active:current=='worksManager'}">
                     <div class="fl mr_20 w_icon" ng-class="{active:current=='worksManager'}"></div>
                     作品管理
@@ -61,19 +61,42 @@
                 </li>
             </a>
             <a ui-sref="customerServiceManager">
-                <li ng-click="current = 'customerServiceManager'"
+                <li ng-click="changeMenu('customerServiceManager')"
                     ng-class="{active:current=='customerServiceManager'}">
                     <div class="fl mr_20 c_icon" ng-class="{active:current=='customerServiceManager'}"></div>
                     客服管理
-                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                    <span ng-if="!custOpen" class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                    <span ng-if="custOpen" class="glyphicon glyphicon-menu-down fr mr_20"></span>
+                </li>
+            </a>
+            <a ng-if="custOpen">
+                <li class="inner"
+                    ng-click="changeMenu('report')"
+                    ng-class="{active:current=='report'}">
+                    举报管理
+                </li>
+            </a>
+            <a ng-if="custOpen">
+                <li class="inner"
+                    ng-click="changeMenu('feedback')"
+                    ng-class="{active:current=='feedback'}">
+                    意见反馈
                 </li>
             </a>
             <a ui-sref="systemManager">
-                <li ng-click="current = 'systemManager'"
+                <li ng-click="changeMenu('systemManager')"
                     ng-class="{active:current=='systemManager'}">
                     <div class="fl mr_20 s_icon" ng-class="{active:current=='systemManager'}"></div>
                     系统管理
-                    <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                    <span ng-if="!systemOpen" class="glyphicon glyphicon-menu-right fr mr_20"></span>
+                    <span ng-if="systemOpen" class="glyphicon glyphicon-menu-down fr mr_20"></span>
+                </li>
+            </a>
+            <a ng-if="systemOpen">
+                <li class="inner"
+                    ng-click="changeMenu('versionUpdate')"
+                    ng-class="{active:current=='versionUpdate'}">
+                    版本更新
                 </li>
             </a>
         </ul>

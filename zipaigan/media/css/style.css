@@ -53,7 +53,7 @@
 .menu-logo p{
     font-size: 16px;
     font-weight: 500;
-    color: #ffffff;
+    color: #b0b0b0;
 }
 .menu-list{
     width: 100%;
@@ -68,7 +68,12 @@
     line-height: 60px;
     padding: 0 0 0 20px;
     position: relative;
-    color: #ffffff;
+    color: #b0b0b0;
+}
+.menu-list li.inner{
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
 }
 .menu-list li.active{
     background: #f4b50f;

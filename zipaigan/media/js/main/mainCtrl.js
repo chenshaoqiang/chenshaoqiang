@@ -26,6 +26,20 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
         });
 
+        $scope.custOpen=false;
+        $scope.systemOpen=false;
+
+        //二级菜单控制
+        $scope.changeMenu=function(menu){
+
+            $scope.current=menu;
+
+            (menu=='systemManager'||menu=='versionUpdate')?(menu=='systemManager'?($scope.systemOpen=!($scope.systemOpen)):$scope.systemOpen=true)
+                :$scope.systemOpen=false;
+            (menu=='customerServiceManager'||menu=='report'||menu=='feedback')?(menu=='customerServiceManager'?($scope.custOpen=!($scope.custOpen)):$scope.custOpen=true)
+                :$scope.custOpen=false;
+
+        }
 
     })();
 
