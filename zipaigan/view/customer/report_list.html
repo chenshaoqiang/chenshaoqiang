@@ -1,0 +1,110 @@
+
+<!--客服管理--举报管理--举报列表-->
+<div class="w m_0 search p_20">
+    <div class="fl">
+        <div class="row m_0 p_s23 bg-white">
+            <div class="mr_30 p_0 fl">
+                <label for="userName">
+                    用户名
+                </label>
+                <input id="userName"
+                       name="userName"
+                       ng-model="search.name"
+                       type="text"/>
+            </div>
+            <div class="mr_30 p_0 fl">
+                <label for="workType">
+                    作品类型
+                </label>
+                <select id="workType"
+                        class="select-w"
+                        name="workType"
+                        ng-model="search.workType">
+                    <option value="">全景图片</option>
+                </select>
+            </div>
+            <div class="mr_30 p_0 fl">
+                <label for="registerTime_s">
+                    注册时间
+                </label>
+                <input ng-click="openStartLayDate()"
+                       style="text-align: center;"
+                       class="laydate-icon mr_5"
+                       id="registerTime_s"
+                       name="registerTime_s"
+                       ng-model="search.startTime"
+                       type="text"/>
+                <label for="registerTime_e">
+                    —
+                </label>
+                <input ng-click="openEndLayDate()"
+                       style="text-align: center;margin-left: 5px;"
+                       class="laydate-icon"
+                       id="registerTime_e"
+                       name="registerTime_e"
+                       ng-model="search.endTime"
+                       type="text"/>
+            </div>
+
+        </div>
+        <div class="row m_0 p_s_23 bg-white">
+            <div class="mr_30 p_0 fl">
+                <label for="keyWord">
+                    关键字
+                </label>
+                <input id="keyWord"
+                       name="keyWord"
+                       ng-model="search.keyWord"
+                       type="text"/>
+            </div>
+            <div class="mr_30 p_0 fl">
+                <label for="workState">
+                    作品状态
+                </label>
+                <select id="workState"
+                        class="select-w"
+                        name="workState"
+                        ng-model="search.workState">
+                    <option value="">全景状态</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row m_0 p_s23 bg-white">
+        <div class="p_0 fl v_t">
+            <button class="btn btn-style fr">搜索</button>
+        </div>
+    </div>
+
+</div>
+<div class="w table-responsive pl_20 pr_20 mb_50">
+    <table class="table table-condensed table-style min_750">
+        <thead>
+        <tr>
+            <th>用户名</th>
+            <th>作品类型</th>
+            <th>作品</th>
+            <th>作品描述</th>
+            <th>发表时间</th>
+            <th>作品状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="work in Lists">
+            <td ng-bind="work.userName"></td>
+            <td ng-bind="work.type"></td>
+            <td>
+                <img class="icon_works" ng-src="{{work.worksUrl}}" alt="作品"/>
+            </td>
+            <td ng-bind="work.disc"></td>
+            <td ng-bind="work.pTime |dateFormat:''"></td>
+            <td ng-bind="work.worksState|worksState"></td>
+            <td class="detail_td">
+                <a ng-click="getWorkDetail(work)">查看</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div ng-include="'nav/nav.html'"></div>
+</div>

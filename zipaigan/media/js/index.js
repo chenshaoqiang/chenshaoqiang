@@ -88,12 +88,16 @@ mainModule.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'works/status/published.html',
             controller: 'publishedCtrl as mainModule'
         })
-
         //客服管理
         .state('customerServiceManager', {
             url: '/customerServiceManager',
-            templateUrl: 'customer/customer_manager.html',
-            controller: 'customerManagerCtrl as mainModule'
+            templateUrl: 'customer/customer_manager.html'
+        })
+        //客服管理--举报管理--举报列表
+        .state('customerServiceManager.reportList', {
+            url: '/reportList',
+            templateUrl: 'customer/report_list.html',
+            controller: 'reportListCtrl as mainModule'
         })
         //系统管理
         .state('systemManager', {

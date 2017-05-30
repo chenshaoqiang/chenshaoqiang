@@ -26,18 +26,25 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
         });
 
-        $scope.custOpen=false;
-        $scope.systemOpen=false;
+        $scope.custOpen=(util.getSession("custOpen")=="true");
+        $scope.systemOpen=(util.getSession("systemOpen")=="true");
 
         //二级菜单控制
         $scope.changeMenu=function(menu){
 
             $scope.current=menu;
 
-            (menu=='systemManager'||menu=='versionUpdate')?(menu=='systemManager'?($scope.systemOpen=!($scope.systemOpen)):$scope.systemOpen=true)
-                :$scope.systemOpen=false;
-            (menu=='customerServiceManager'||menu=='report'||menu=='feedback')?(menu=='customerServiceManager'?($scope.custOpen=!($scope.custOpen)):$scope.custOpen=true)
-                :$scope.custOpen=false;
+            (menu=='customerServiceManager'||menu=='report'||menu=='feedback')
+                ?(menu=='customerServiceManager'
+                ?($scope.custOpen=!($scope.custOpen),util.setSession("custOpen",$scope.custOpen))
+                :($scope.custOpen=true,util.setSession("custOpen","true")))
+                :($scope.custOpen=false,util.setSession("custOpen","false"));
+
+            (menu=='systemManager'||menu=='versionUpdate')
+                ?(menu=='systemManager'
+                ?($scope.systemOpen=!($scope.systemOpen),util.setSession("systemOpen",$scope.systemOpen))
+                :($scope.systemOpen=true,util.setSession("systemOpen","true")))
+                :($scope.systemOpen=false,util.setSession("systemOpen","false"));
 
         }
 
@@ -51,6 +58,10 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
 
             util.setSession("current",'');
             $scope.current='';
+            $scope.custOpen=false;
+            $scope.systemOpen=false;
+            util.removeSession("custOpen");
+            util.removeSession("systemOpen");
 
         }
 
@@ -58,11 +69,12 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
         var bread=[
             [{'userManager':'用户管理'},{'userManager.uLi':'用户列表'}],
             [{'worksManager':'作品管理'},{'worksManager.wList':'作品列表'}],
-            [{'customerServiceManager':'客服管理'}],
             [{'systemManager':'系统管理'}]
         ];
 
-        toState.name=='userManager' ? $state.go('userManager.uLi'):toState.name=='worksManager'?$state.go('worksManager.wList'):void 0;
+        toState.name=='userManager' ? $state.go('userManager.uLi')
+            :toState.name=='worksManager'?$state.go('worksManager.wList')
+            :void 0;
 
         var path=$location.path();
         var arr=path.split("/");//获取路由组
@@ -82,35 +94,48 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
         //面包屑数组
         $rootScope.breadcrumbs=[];
 
-        $(bread).each(function(){
+        if(lastState=='reportList'){//非层次结构的特殊处理
 
-            var curArr=$(this);
-            var curTit=[]; //用于保存面包屑key值组以便循环的时候用于设置
+            $rootScope.breadcrumbs=[
+                {"title":"客服管理","state":"customerServiceManager.reportList"},
+                {"title":"举报管理","state":"customerServiceManager.reportList"},
+                {"title":"举报列表","state":"customerServiceManager.reportList"}];
 
-            for(var i=0;i<curArr.length;i++){
+        }else{
 
-                for(key in curArr[i]){
+            $(bread).each(function(){
 
-                    curTit[curTit.length]=key;
+                var curArr=$(this);
+                var curTit=[]; //用于保存面包屑key值组以便循环的时候用于设置
 
-                    if(key==lastState){
+                for(var i=0;i<curArr.length;i++){
 
-                        //获取到当前面包屑的索引值了 --> i
+                    for(key in curArr[i]){
 
-                        for(var j=0;j<=i;j++){
+                        curTit[curTit.length]=key;
 
-                            $rootScope.breadcrumbs[$rootScope.breadcrumbs.length]={"title":curArr[j][curTit[j]],"state":curTit[j]};
+                        if(key==lastState){
+
+                            //获取到当前面包屑的索引值了 --> i
+
+                            for(var j=0;j<=i;j++){
+
+                                $rootScope.breadcrumbs[$rootScope.breadcrumbs.length]={"title":curArr[j][curTit[j]],"state":curTit[j]};
+
+                            }
+
+                            return; //找到对应的面包屑了就中断循环
 
                         }
-
-                        return; //找到对应的面包屑了就中断循环
-
                     }
+
                 }
 
-            }
+            });
 
-        });
+        }
+
+
 
     });
 

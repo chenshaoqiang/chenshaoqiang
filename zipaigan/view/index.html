@@ -60,7 +60,7 @@
                     <span class="glyphicon glyphicon-menu-right fr mr_20"></span>
                 </li>
             </a>
-            <a ui-sref="customerServiceManager">
+            <a ui-sref="customerServiceManager.reportList">
                 <li ng-click="changeMenu('customerServiceManager')"
                     ng-class="{active:current=='customerServiceManager'}">
                     <div class="fl mr_20 c_icon" ng-class="{active:current=='customerServiceManager'}"></div>
@@ -69,7 +69,8 @@
                     <span ng-if="custOpen" class="glyphicon glyphicon-menu-down fr mr_20"></span>
                 </li>
             </a>
-            <a ng-if="custOpen">
+            <a ng-if="custOpen"
+               ui-sref="customerServiceManager.reportList">
                 <li class="inner"
                     ng-click="changeMenu('report')"
                     ng-class="{active:current=='report'}">
@@ -131,7 +132,6 @@
 <script type="text/javascript" src="../media/third/layer/layer.js"></script>
 <!--laydate日历组件-->
 <script type="text/javascript" src="../media/third/laydate/laydate.js"></script>
-
 <!--主入口index-->
 <script type="text/javascript" src="../media/js/index.js"></script>
 <script type="text/javascript" src="../media/js/common_directive.js"></script>
@@ -157,9 +157,8 @@
 <script type="text/javascript" src="../media/js/works/status/sub_successCtrl.js"></script>
 <!--作品管理--作品列表--已发布的作品-->
 <script type="text/javascript" src="../media/js/works/status/publishedCtrl.js"></script>
-<!--客服管理-->
-<script type="text/javascript" src="../media/js/customer/customerManagerCtrl.js"></script>
+<!--客服管理--举报管理--举报列表-->
+<script type="text/javascript" src="../media/js/customer/reportListCtrl.js"></script>
 <!--系统管理-->
 <script type="text/javascript" src="../media/js/system/systemManagerCtrl.js"></script>
-
 </html>
