@@ -18,8 +18,20 @@
 .search input{
     padding: 10px;
 }
+.search input.long{
+    width: 510px;
+    margin-left: 0;
+}
+.search input.short{
+    width: 130px;
+    margin-left: 0;
+}
 .search select{
     padding: 0 10px 0 60px;
+}
+.search textarea{
+    width: 510px;
+    height: 170px;
 }
 @media screen and (min-width:320px) and (max-width: 1300px) {
     .search input,.search select{

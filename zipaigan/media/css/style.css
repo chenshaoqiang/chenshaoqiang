@@ -228,3 +228,9 @@
     max-width: 100%;
     min-width: 420px;
 }
+/*--------版本信息--------*/
+.left_title{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
