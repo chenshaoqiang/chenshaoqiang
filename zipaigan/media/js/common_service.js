@@ -4,6 +4,7 @@ var commonService= angular.module("common.service", [])
     .service('util', function($rootScope,$window,$timeout,errorCode){
 
     var self = this;
+
     self.myLayer=function(scope,type,title,content,yesBtnCallBack){//该函数需要严格的传参
         /*
         * @param {Object} scope 控制器注入
@@ -64,7 +65,34 @@ var commonService= angular.module("common.service", [])
         scope.search.pageSize=pageSize;
 
     };
-
+    //选择开始日期
+    self.openStartLayDate=function(scope){
+        var start = {
+            min: '1900-01-01 00:00:00',    //默认起始时间
+            max: laydate.now(),             //最多只能选择今天
+            festival: true,                 //显示节日
+            format: 'YYYY-MM-DD',           //日期格式
+            istoday: false,
+            choose: function(datas){        //选择完成触发
+                scope.search.startTime=datas;
+            }
+        };
+        laydate(start);
+    };
+    //选择结束日期
+    self.openEndLayDate=function(scope){
+        var end = {
+            min: scope.search.startTime,   //结束日期早于起始日期
+            max: laydate.now(),              //最多只能选择今天
+            festival: true,                  //是否显示节日
+            format: 'YYYY-MM-DD',            //日期格式
+            istoday: false,
+            choose: function(datas){         //选择完成触发
+                scope.search.endTime=datas;
+            }
+        };
+        laydate(end);
+    };
     //分页设置
     self.setPagination=function(scope,res){
         /*
