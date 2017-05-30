@@ -50,7 +50,7 @@ mainModule.controller('versionListCtrl',function($scope,$rootScope,util,httpServ
     //点击查看详情
     $scope.getDetail =function(date){
 
-        $state.go('systemManager.versionList');
+        $state.go('systemManager.versionDetail');
 
     }
 
