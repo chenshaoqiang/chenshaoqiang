@@ -128,6 +128,12 @@ mainModule.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'system/version_detail.html',
             controller: 'versionDetailCtrl as mainModule'
         })
+        //5.2系统管理--版本更新--发布新版本
+        .state('systemManager.newVersion', {
+            url: '/newVersion',
+            templateUrl: 'system/new_version.html',
+            controller: 'newVersionCtrl as mainModule'
+        })
 
     ;
 });

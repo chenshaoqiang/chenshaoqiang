@@ -117,7 +117,11 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
             {"title":"系统管理","state":"systemManager.versionList"},
             {"title":"版本更新","state":"systemManager.versionList"},
             {"title":"版本列表","state":"systemManager.versionList"},
-            {"title":"版本详情","state":"systemManager.versionDetail"}]):void 0;
+            {"title":"版本详情","state":"systemManager.versionDetail"}])
+            :lastState=='newVersion'?($rootScope.breadcrumbs=[
+            {"title":"系统管理","state":"systemManager.versionList"},
+            {"title":"版本更新","state":"systemManager.newVersion"},
+            {"title":"发布新版本","state":"systemManager.newVersion"}]):void 0;
 
         $(bread).each(function(){
 
