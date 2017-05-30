@@ -60,9 +60,9 @@ mainModule.controller('mainCtrl',function($scope,$rootScope,util,$location,$stat
             :lastState=='ucr'?(lastState='userManager.uDt.ucr',bread[0].push({'userManager.uDt.ucr':'用户详情'}))
             :lastState=='upm'?(lastState='userManager.uDt.upm',bread[0].push({'userManager.uDt.upm':'用户详情'}))
             :lastState=='upr'?(lastState='userManager.uDt.upr',bread[0].push({'userManager.uDt.upr':'用户详情'}))
-            :lastState=='worksManager.sub_ing'?bread[1].push({'worksManager.sub_ing':'投稿中的作品'})
-            :lastState=='worksManager.sub_success'?bread[1].push({'worksManager.sub_success':'投稿成功的作品'})
-            :lastState=='worksManager.published'?bread[1].push({'worksManager.published':'已发布的作品'})
+            :lastState=='worksManager.sub_ing'?bread[1].push({'worksManager.sub_ing':'投稿中作品'})
+            :lastState=='worksManager.sub_success'?bread[1].push({'worksManager.sub_success':'投稿成功作品'})
+            :lastState=='worksManager.published'?bread[1].push({'worksManager.published':'已发布作品'})
             :void 0;
 
         //面包屑数组
