@@ -17,6 +17,11 @@ button{
     background: #f9bf02;
     padding: 0;
 }
+.btn-style2{
+    line-height: 32px;
+    background: #f9bf02;
+    padding: 0 15px 0 15px;
+}
 .btn-gold{
     background: #f67705;
     color: #ffffff;
