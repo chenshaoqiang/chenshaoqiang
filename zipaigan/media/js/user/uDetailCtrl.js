@@ -42,7 +42,7 @@ mainModule.controller('uDetailCtrl',function($scope,$rootScope,util,httpServices
     })();
 
     //删除
-    $scope.delete=function(user){
+    $scope.deleteDate=function(user){
 
         util.myLayer($scope,0,'删除','确定删除该用户？',sureDelete);
 
@@ -53,7 +53,7 @@ mainModule.controller('uDetailCtrl',function($scope,$rootScope,util,httpServices
 
     }
     //禁用
-    $scope.disabled=function(user){
+    $scope.disabledDate=function(user){
 
         util.myLayer($scope,0,'禁用','确定禁用该用户？',sureDisabled);
 

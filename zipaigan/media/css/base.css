@@ -152,6 +152,9 @@ em {
 .d_b {
     display: block;
 }
+.d_no {
+    display: none;
+}
 
 .v_m {
     vertical-align: middle;

@@ -26,6 +26,10 @@ button{
     background: #f67705;
     color: #ffffff;
 }
+.btn-green{
+    background: #2cb042;
+    color: #ffffff;
+}
 .btn-gray{
     background: #bcbcbc;
     color: #000;

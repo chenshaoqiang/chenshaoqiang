@@ -1,0 +1,56 @@
+
+<!--公用的列表页，用于显示作品的评论、点赞、分享列表-->
+
+<li>
+    <img ng-click="openCommonUl($event,work,'comment')" class="mr_5" ng-src="{{commentSrc}}" alt="评论"/>
+    <span class="mr_20 v_m" ng-bind="work.commentNum"></span>
+    <img ng-click="openCommonUl($event,work,'great')" class="mr_5" ng-src="{{greatSrc}}" alt="点赞"/>
+    <span class="mr_20 v_m" ng-bind="work.greatNum"></span>
+    <img ng-click="openCommonUl($event,work,'share')" class="mr_5" ng-src="{{shareSrc}}" alt="分享"/>
+    <span class="mr_20 v_m" ng-bind="work.shareNum"></span>
+</li>
+<li class="mt_20 d_no" id="{{work.id}}">
+    <ul class="inner_ul">
+        <li ng-repeat="li in Lists">
+
+            <div ng-if="li.type=='comment'" class="checkboxFive fl">
+                <!--[if IE 8]>
+                <input ng-click="selectData(li)"
+                       ng-checked="li.selected"
+                       type="checkbox"
+                       id="checkbox{{li.id}}{{$index}}" />
+                <![endif]-->
+                <input style="visibility: hidden"
+                       ng-click="selectData(li)"
+                       ng-checked="li.selected"
+                       type="checkbox"
+                       id="checkbox{{li.id}}{{$index}}" />
+                <label for="checkbox{{li.id}}{{$index}}"></label>
+            </div>
+            <img class="listIcon fl mr_10 mt_15" ng-src={{li.headUrl}} alt="头像"/>
+            <div class="pt_10 fl">
+                <span ng-bind="li.listName" class="time"></span>
+                <br/>
+                <span ng-bind="li.listTime|dateFormat:''" class="time"></span>
+                <br/>
+                <span ng-bind="li.listContent" class="listContent"></span>
+            </div>
+        </li>
+        <li>
+            <div id="checkboxDiv{{work.id}}" class="d_no checkboxFive fl mt_10" style="width: 230px;">
+                <input style="visibility: hidden"
+                       type="checkbox"
+                       id="checkbox{{work.id}}"/>
+                <label class="mt_10" for="checkbox{{work.id}}"></label>
+                <button ng-click="deleteDate(work)"
+                        class="ml_30 fl btn-danger btn-set ">删除</button>
+                <button ng-click="disableDate(work)"
+                        class="fl btn-gold btn-set ml_30">禁用</button>
+            </div>
+            <div class="w mt_30">
+                <div class="fr" ng-include="'nav/nav.html'"></div>
+            </div>
+        </li>
+    </ul>
+
+</li>

@@ -1,7 +1,7 @@
 /*
 * 作品管理--作品列表--投稿中的作品
 * */
-mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices){
+mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices,$compile,$state){
 
     (function initSetting(){
 
@@ -16,7 +16,7 @@ mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices
 
     function getWorksLists(){
 
-        httpServices.req_post('img.json',{}).success(function(res){
+        httpServices.req_post('img1.json',{}).success(function(res){
 
             if(res.code=="200"){
 
@@ -34,27 +34,30 @@ mainModule.controller('sub_ingCtrl',function($scope,$rootScope,util,httpServices
 
     };
 
-    //删除
-    $scope.delete=function(user){
+    //不通过
+    $scope.noPassDate=function(date){
 
-        util.myLayer($scope,0,'删除提示','确定删除该作品？',sureDelete);
-
-    };
-
-    function sureDelete(){
-
-        console.log("删除");
-
-    }
-    //禁用
-    $scope.disabled=function(user){
-
-        util.myLayer($scope,0,'禁用提示','确定禁用该作品？',sureDisabled);
+        util.myLayer($scope,0,'不通过提示','您确定不通过此投稿作品么？',sureNoPass);
 
     };
-    function sureDisabled(){
 
-        console.log("禁用");
+    function sureNoPass(){
+
+        console.log("不通过提示");
 
     }
+    //通过
+    $scope.passDate=function(date){
+
+        util.myLayer($scope,0,'通过提示','您确定通过此投稿作品么？',surePass);
+
+    };
+    function surePass(){
+
+        console.log("通过提示");
+
+    }
+
+
+
 });

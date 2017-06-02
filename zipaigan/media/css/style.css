@@ -217,9 +217,19 @@
     -moz-border-radius: 50px;
     border-radius: 50px;
 }
+.workList .listIcon{
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
 .workList .userName{
     font-weight: bold;
     font-size: 16px;
+}
+.workList .listContent{
+    font-size: 15px;
 }
 .workList .time{
     font-size: 12px;
@@ -233,4 +243,57 @@
     display: inline-block;
     width: 100px;
     text-align: right;
+}
+/*---评论、点赞、分享列表----*/
+.inner_ul{
+    width: 100%;
+}
+.inner_ul>li{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #cccccc;
+}
+.inner_ul input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: red;
+}
+/*--------checkbox--------*/
+.checkboxFive {
+    width: 15px;
+    margin: 30px 10px 20px 0;
+    position: relative;
+}
+.checkboxFive label {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:1px solid #ddd;
+}
+.checkboxFive label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: transparent;
+    top: 3px;
+    left: 1px;
+    border: 3px solid #f9bf02;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1;
 }

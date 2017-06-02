@@ -1,9 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-</body>
-</html>
+
+<!--投稿成功的作品-->
+<div class="w p_20 mb_50 ofa">
+    <!--列表-->
+    <div ng-repeat="work in Lists" class="workList mb_20 fl">
+        <ul class="w p_20 clearfix">
+            <li class="w">
+                <ul class="w ofh">
+                    <li>
+                        <img class="userIcon fl mr_10" ng-src={{work.headUrl}} alt="头像"/>
+                        <div class="pt_8 fl">
+                            <span ng-bind="work.userName" class="userName"></span>
+                            <br/>
+                            <span ng-bind="work.pTime|dateFormat:''" class="time"></span>
+                        </div>
+                    </li>
+                    <li class="fr">
+                        <button ng-click="deleteDate(work)"
+                                class="btn-danger btn-set">删除</button>
+                        <button ng-click="disableDate(work)"
+                                class="btn-gold btn-set ml_30">禁用</button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <img class="workIcon mt_20"
+                     img-lazy-load
+                     src="../media/images/loading.gif"
+                     alt="作品"/>
+            </li>
+            <li>
+                <span ng-bind="work.disc"></span>
+            </li>
+            <li class="mt_20">
+                <div load-common-ul></div>
+            </li>
+        </ul>
+    </div>
+    <div class="w">
+        <div ng-include="'nav/nav.html'"></div>
+    </div>
+</div>

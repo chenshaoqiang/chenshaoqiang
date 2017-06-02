@@ -1,0 +1,10 @@
+/*loginPass css*/
+.login-pass{
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -35px;
+}

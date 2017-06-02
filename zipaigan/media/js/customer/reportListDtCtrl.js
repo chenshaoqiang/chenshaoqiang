@@ -15,7 +15,7 @@ mainModule.controller('reportListDtCtrl',function($scope,$rootScope,util,httpSer
 
     function getReportDetailLists(){
 
-        httpServices.req_post('img.json',{}).success(function(res){
+        httpServices.req_post('img1.json',{}).success(function(res){
 
             if(res.code=="200"){
 
@@ -34,7 +34,7 @@ mainModule.controller('reportListDtCtrl',function($scope,$rootScope,util,httpSer
     };
 
     //删除
-    $scope.delete=function(user){
+    $scope.deleteDate=function(user){
 
         util.myLayer($scope,0,'删除提示','确定删除该作品？',sureDelete);
 
@@ -46,7 +46,7 @@ mainModule.controller('reportListDtCtrl',function($scope,$rootScope,util,httpSer
 
     }
     //禁用
-    $scope.disabled=function(user){
+    $scope.disableDate=function(user){
 
         util.myLayer($scope,0,'禁用提示','确定禁用该作品？',sureDisabled);
 

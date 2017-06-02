@@ -47,7 +47,7 @@ mainModule.controller('worksListCtrl',function($scope,$rootScope,util,httpServic
     };
 
     //点击查看
-    $scope.getWorkDetail=function(work){
+    $scope.getDetail=function(work){
 
         if( util.notObjEmpty(work) && util.notEmpty(work.worksState) ){
 

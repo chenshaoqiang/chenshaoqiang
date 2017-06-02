@@ -10,11 +10,11 @@
             <p class="mt_15">注册时间：<span ng-bind="currentUser.pTime|dateFormat:''"></span></p>
             <div class="mt_15">
                 <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <button ng-click="delete(currentUser)"
+                    <button ng-click="deleteDate(currentUser)"
                             class="btn-danger btn-set pull-right">删除</button>
                 </div>
                 <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <button ng-click="disabled(currentUser)"
+                    <button ng-click="disabledDate(currentUser)"
                             class="btn-gold btn-set">禁用</button>
                 </div>
                 <div class="m_0 p_0 col-lg-4 col-md-4 col-sm-4 col-xs-4">
