@@ -35,76 +35,41 @@
     <file url="file://$PROJECT_DIR$/zipaigan/img2.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/img3.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/base.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/base.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/customer/customer.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/customer/customer.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/login/login.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/login/login.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/nav/nav.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/nav/nav.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/style.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/style.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/system/system.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/system/system.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/table/table.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/table/table.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/user/user.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/user/user.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/css/works/works.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/css/works/works.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_filter.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_filter.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/feedbackListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/login/login.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/login/loginSuccessCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/login/loginSuccessCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/newVersionCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/newVersionCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/versionDetailCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/versionDetailCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/versionListCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/system/versionListCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/user/uListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/publishedCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/publishedCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/worksListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/media/js/works/worksListCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/share.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/user.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/user.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipaigan/works.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipaigan/works.json" charset="UTF-8" />
   </component>
 </project>

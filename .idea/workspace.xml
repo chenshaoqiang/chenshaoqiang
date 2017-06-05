@@ -2,47 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/comment_icon_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/fenxiang_icon_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/login_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/images/parise_icon_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/comment.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/view/common_ul/common_ul.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/great.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/img1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/img2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/img3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/media/css/login/login_pass.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/share.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/images/fenxiang_icon_black.png" afterPath="$PROJECT_DIR$/zipaigan/media/images/fenxiang_icon_black.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/base.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/common_directive.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/common_directive.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/index.html" afterPath="$PROJECT_DIR$/zipaigan/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/login/login.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/login/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/login/login.html" afterPath="$PROJECT_DIR$/zipaigan/view/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/login/login.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/login/login_success.html" afterPath="$PROJECT_DIR$/zipaigan/view/login/login_success.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/system/new_version.html" afterPath="$PROJECT_DIR$/zipaigan/view/system/new_version.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/works/status/published.html" afterPath="$PROJECT_DIR$/zipaigan/view/works/status/published.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/works/status/publishedCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/works/status/publishedCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/customer/reportListDtCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/customer/report_list_detail.html" afterPath="$PROJECT_DIR$/zipaigan/view/customer/report_list_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/css/style.css" afterPath="$PROJECT_DIR$/zipaigan/media/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" afterPath="$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/works/status/sub_success.html" afterPath="$PROJECT_DIR$/zipaigan/view/works/status/sub_success.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/user/tab/u_works.html" afterPath="$PROJECT_DIR$/zipaigan/view/user/tab/u_works.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/user/user_detail.html" afterPath="$PROJECT_DIR$/zipaigan/view/user/user_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/system/version_detail.html" afterPath="$PROJECT_DIR$/zipaigan/view/system/version_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/media/js/works/worksListCtrl.js" afterPath="$PROJECT_DIR$/zipaigan/media/js/works/worksListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan/view/works/works_list.html" afterPath="$PROJECT_DIR$/zipaigan/view/works/works_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index1.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide-chen/.idea/workspace.xml" afterPath="$PROJECT_DIR$/slide-chen/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,18 +28,28 @@
       <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan/view/nav/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.03125">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common_service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1559322">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6347032">
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/view/works/works_list.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_successCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/works/worksManagerCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/view/works/status/published.html" />
@@ -149,6 +120,7 @@
         <option value="$PROJECT_DIR$/zipaigan/view/system/version_detail.html" />
         <option value="$PROJECT_DIR$/zipaigan/view/system/new_version.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
+        <option value="$PROJECT_DIR$/paipai/index1.html" />
       </list>
     </option>
   </component>
@@ -160,10 +132,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,8 +160,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +300,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paipai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -421,12 +407,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00307" summary="    5.28">
-      <created>1495854788155</created>
-      <option name="number" value="00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1495854788155</updated>
     </task>
     <task id="LOCAL-00308" summary="    5.28">
       <created>1495855282796</created>
@@ -716,14 +696,20 @@
       <option name="project" value="LOCAL" />
       <updated>1496156817062</updated>
     </task>
-    <option name="localTasksCounter" value="356" />
+    <task id="LOCAL-00356" summary="6.2">
+      <created>1496367379848</created>
+      <option name="number" value="00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1496367379849</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17057101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16979167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -756,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="4.25update" />
     <MESSAGE value="4.26update" />
     <MESSAGE value="4.27update" />
     <MESSAGE value="4.28update" />
@@ -781,7 +766,8 @@
     <MESSAGE value="    5.28 注释" />
     <MESSAGE value="    5.29" />
     <MESSAGE value="    5.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="    5.30" />
+    <MESSAGE value="6.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -790,6 +776,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zipaigan/view/nav/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onecloud-openapi-platform/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.5789475">
@@ -847,20 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/onecloud-manager/user_manager/businessAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -879,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1361" column="18" selection-start-line="1361" selection-start-column="18" selection-end-line="1361" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,9 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.875">
           <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#3;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,13 +888,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/view/nav/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.03125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
@@ -919,8 +901,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1559322">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4760275">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6347032">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
         </state>
       </provider>

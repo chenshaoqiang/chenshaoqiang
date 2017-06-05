@@ -17,11 +17,6 @@
 
 </head>
 <body>
-<div style="width: 0;height: 0">
-    <img src='./img/timg.jpg' width="0" height="0"/>
-</div>
-
-    <!--<img src="./img/lue.jpeg" alt="suo"/>-->
     <div class="img-box" id="imgBox">
         <!-- 显示的内容 包含：用户信息和图片 -->
         <div class="user-info">
@@ -117,13 +112,15 @@
 
     </div>
 </body>
-<script type="application/javascript" src="jweixin-1.2.0.js"></script>
 <script type="application/javascript" charset="utf-8">
 
-    var desW=360;//设置设计稿宽
-    var winW=document.documentElement.clientWidth;  //设备的实际宽度
-    var scale=desW/100;
-    document.documentElement.style.fontSize=winW/scale+"px";
+    var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+    document.documentElement.style.fontSize = (deviceWidth / 3.6) +"px";
+
+    window.onresize = function(){
+        deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = (deviceWidth / 3.6) +"px";
+    };
 
     var bigPic = $(".scroll-img-td img");  // 图片img
     var marquePic1=document.getElementById("marquePic1");
