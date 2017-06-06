@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0"/>
+    <title>自拍杆H5</title>
+
+    <!-- jQuery文件 -->
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+    <!--用户信息-->
+    <div class="user_info">
+        <input type="hidden" value="4198" id="protionId"/>
+        <div class="user_head">
+            <img id="img_user_head" src="">
+        </div>
+        <div class="user_name">
+            <span id="user_name_span"></span>
+            <span id="creat_time_span"></span>
+        </div>
+    </div>
+    <!--全景图-->
+    <div class="scroll-img">
+        <div class="scroll-img-td" id="marquePic1">
+            <img name="pic"
+                 id="main_img_work"
+                 src="">
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script type="application/javascript" charset="utf-8">
+
+    var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+    document.documentElement.style.fontSize = (deviceWidth / 7.5) +"px";
+
+    var protionId = $("#protionId").val();
+    var userHeadImg = $("div.user_head img"); // 用户头像
+    var userNameSpan = $("#user_name_span");      // 用户姓名
+    var creatTimeSpan= $("#creat_time_span");           // 时间
+    var bigPic = $(".scroll-img-td img");
+
+    // 请求接口刷新数据
+    $.ajax({
+        url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
+        method: 'post',
+        data: {"id": protionId, "type": 1},
+        dataType: "jsonp", // 数据类型为jsonp
+        jsonp: "jsonpCallback", // 服务端用于接收callback调用的function名的参数
+        success: function (data) {
+            if (data.code == 'success') {
+                var username = data.data.name;
+                var userHeadUrl = data.data.headimgurl;
+                var creatTime=dateFormat(data.data.createtime);
+
+                userNameSpan.text(username);
+                creatTimeSpan.text(creatTime);
+                userHeadImg.attr("src", userHeadUrl);
+                bigPic.attr("src", data.data.url);
+
+                /*bigPic.attr("src", data.data.url);
+                if (content !== null && content.length > 14) {
+                    contentLineStr = content.substring(0, 14);
+                    contentAllStr = content;
+                } else if (content !== null) {
+                    contentLineStr = content;
+                    contentAllStr = content;
+                }
+                workContent.text(contentLineStr);*/
+
+            }
+        }
+    });
+function dateFormat(input){
+    if (input == null || input == '' || typeof(input) == "undefined") {
+        return "";
+    }
+    var _date = new Date(input);
+    var year = _date.getFullYear();
+    var month = _date.getMonth() + 1 > 9 ? _date.getMonth() + 1 : "0" + (_date.getMonth() + 1);
+    var day = _date.getDate() > 9 ? _date.getDate() : "0" + _date.getDate();
+    var hour = _date.getHours() + 1 > 9 ? _date.getHours() : "0" + _date.getHours();
+    var minutes = _date.getMinutes() + 1 > 9 ? _date.getMinutes() : "0" + _date.getMinutes();
+    var seconds = _date.getSeconds() + 1 > 9 ? _date.getSeconds() : "0" + _date.getSeconds();
+
+    return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
+
+}
+</script>
+</html>

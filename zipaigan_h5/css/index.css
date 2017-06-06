@@ -1,0 +1,69 @@
+/*--css hack--*/
+*{margin: 0;padding: 0;font-family: '微软雅黑', 'Arial', sans-serif;}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {margin: 0;padding: 0;}
+a{text-decoration: none;}
+img {border-style: none;}
+html{font-size: 100px;}
+ul,li{list-style: none;}
+html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
+.fl{ float: left;}
+.fr{float: right;}
+.fl-clear{clear: both;}
+/*------主板样式表-------*/
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+.user_info{
+    width: 100%;
+    height: 1.1rem;
+    position: relative;
+}
+.user_head{
+    width: .7rem;
+    height: .7rem;
+    position: absolute;
+    left: .25rem;
+    top: .2rem;
+}
+.user_head img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .7rem;
+    height: .7rem;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.user_name{
+    width: 50%;
+    height: .7rem;
+    position: absolute;
+    top: .2rem;
+    left: 1.15rem;
+}
+#user_name_span{
+    position: absolute;
+    top:0;
+    font-size: .16rem;
+    font-weight: bold;
+}
+#creat_time_span{
+    position: absolute;
+    bottom:0;
+    font-size: .14rem;
+}
+.scroll-img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-img-td{
+    height: 100%;
+}
+.scroll-img-td img{
+    height: 100%;
+}

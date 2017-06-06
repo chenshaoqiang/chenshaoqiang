@@ -20,7 +20,7 @@
     <div class="img-box" id="imgBox">
         <!-- 显示的内容 包含：用户信息和图片 -->
         <div class="user-info">
-            <input type="hidden" value="4198" id="protionId"/>
+            <input type="hidden" value="5004" id="protionId"/>
             <div class="user_head" id="middle_space_user_head">
                 <img id="img_user_head" src="http://wx.qlogo.cn/mmopen/QIbKA4H1anUJvVbVFf7VCibbUOMsBJBZnZWneJTSXIbYFouicibicauxeic561Y09u45v8UnpPO9Qp2TJ41flUaffTJj6Ys1ug3cL/0">
             </div>
@@ -34,8 +34,7 @@
                 <div class="scroll-img-td" id="marquePic1">
                     <img name="pic"
                          id="main_img_work"
-                         src="http://www.paipai360.cn/share/img/149447273922446120991438259869.jpeg"
-                         alt="share_img">
+                         src="">
                 </div>
                 <div class="scroll-img-td" id="marquePic2"></div>
             </div>
@@ -43,9 +42,7 @@
         <!-- 播放按钮div  -->
         <div class="button_div" id="switch_div" action="scroll">
             <img id="switch" src="img/play.png">
-            <audio controls="controls" loop="true" id="music" src="../music/" style="visibility: hidden;">
-                您的浏览器不支持audio标签
-            </audio>
+
         </div>
         <!-- 作品说说内容div start -->
         <div class="work_content" id="work_content_div" style="display: none">
@@ -136,13 +133,13 @@
     //停止滚动
     function stopRolling() {
         isPlay = true;
-        stopMusic();
+        //stopMusic();
         clearInterval(timer);
     }
     //继续滚动
     function startRolling() {
         isPlay = false;
-        startMusic();
+        //startMusic();
         timer = setInterval("Marquee(5)", speed);
     }
     //开关按钮点击处理函数
@@ -181,6 +178,7 @@
     var playNumSpan = $("div.date_play_num span.playNum");  // 播放次数
     var commentNumSpan = $("div.commentNum span");          // 评论数
     var priseNumSpan = $("div.priseNum span");  // 点赞数目
+    var hideContent;
 
     var startX = 0;
     var startY = 0;
@@ -366,7 +364,7 @@
                 var priseNum = data.data.praiseNum;
                 var commentNum = data.data.commentNum;
                 var howLong = data.data.howLong;
-
+                hideContent =JSON.parse(data.data.hideContent);
                 var content = data.data.title;
                 var songName = data.data.songName;
 
@@ -387,6 +385,8 @@
                 }
                 workContent.text(contentLineStr);
 
+                getImgSize();
+
             }
         }
     });
@@ -406,6 +406,31 @@
                 var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
                 var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
+                for(var i=0;i<hideContent.length;i++){
+                    var x=hideContent[i].x;
+                    var y=hideContent[i].y;
+                    var text=hideContent[i].text;
+
+                    var posX=x/realWidth*100;//x定位
+                    var posY=y/realHeight*100;//y定位
+                    var conX=(x+30)/realWidth*100;//x定位
+
+                    var oDiv=document.createElement("div");
+                    var oContent=document.createElement("span");
+
+                    $(oContent).attr("class","showContent");
+                    $(oContent).attr("dataID","hideContent"+i);
+                    $(oContent).text(text);
+                    $(oDiv).attr("class","hideContentDiv");
+                    $(oDiv).attr("id","hideContent"+i);
+                    $(oDiv).attr("onClick","showHideContent()");
+                    $(oDiv).css({left:posX+"%", top:posY+"%"});
+                    $(oContent).css({left:(conX+0.5 )+"%", top:(posY-0.9)+"%"});
+                    $(oContent).appendTo("div.scroll-img-td");
+                    $(oDiv).appendTo("div.scroll-img-td");
+
+                }
+
                 $(".scroll-img-td").css("width",Math.round(setImgHeight*prop));
                 $("#marquePic2").css("left",Math.round(setImgHeight*prop));
 
@@ -413,7 +438,17 @@
             });
         });
     }
-    getImgSize();
+    function showHideContent(){
+        var arr=$(".showContent");
+        if(arr){
+            for(var i=0;i<arr.length;i++){
+                if($(arr[i]).attr("dataID")==$(event.target).attr("id") ){
+                    $(arr[i]).toggleClass("d_b");
+                }
+            }
+        }
+        $(event.target).attr("id");
+    }
 
 </script>
 </html>
