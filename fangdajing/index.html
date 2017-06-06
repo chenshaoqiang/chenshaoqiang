@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style type="text/css">
+        #content {
+            width: 600px;
+            height: 300px;
+            background: url(img/xiao.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            margin: 50px auto;
+            cursor: move;
+        }
+
+        #mask {
+            position: absolute;
+            background: white;
+            opacity: 0.5;
+        }
+
+        #show {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            top: 200px;
+            left: 310px;
+            border: 1px solid gold;
+            border-radius: 50%;
+        }
+        #show img{
+            width: 1200px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="content">
+
+</div>
+
+</body>
+</html>
+<script>
+    var scaleX = 600 / 1200;
+    var scaleY = 300 / 600;
+    var content = document.getElementById("content");
+    content.onmouseenter = function (e) {
+        e = e || window.event;
+        var w = 600 * scaleX;
+        var h = 300 * scaleY;
+        var oMask = document.createElement("div");
+        oMask.id = "mask";
+        with (oMask.style) {
+            left = e.clientX - this.offsetLeft + "px";
+            top = e.clientY - this.offsetTop + "px";
+            //height = h + "px";
+            //width = w + "px";
+        }
+        this.appendChild(oMask);
+        //以下是显示区域
+        var oShow = document.createElement("div");
+        oShow.id = "show";
+        var oImg = document.createElement("img");
+        oImg.src = "img/xiao.jpg";
+        oShow.appendChild(oImg);
+        this.appendChild(oShow);
+
+    };
+
+    content.onmousemove = function (e) {
+        var oMask = document.getElementById("mask");
+        if (oMask) {
+            var l = e.clientX - this.offsetLeft - oMask.offsetWidth / 2;//正常情况mask的位置
+            var t = e.clientY - this.offsetTop - oMask.offsetHeight / 2;//正常情况下mask垂直位置
+            var maxL = this.offsetWidth - oMask.offsetWidth;//mask能到达的最右边
+            var maxT = this.offsetHeight - oMask.offsetHeight;//mask能到达的最下边
+
+            var oShow = document.getElementById("show");
+            with (oMask.style) {
+                //设置让鼠标居中
+                /*left=e.clientX-this.offsetLeft-oMask.offsetWidth/2+"px";
+                 top=e.clientY-this.offsetTop-oMask.offsetHeight/2+"px";
+                 */
+                if (l <= 0) {
+                    left = 0;
+                } else if (l >= maxL) {
+                    left = maxL + "px";
+                } else {
+                    left = l + "px";
+                    oShow.scrollLeft = l / scaleX;//控制放大显示区水平移动
+                }
+
+                if (t <= 0) {
+                    top = 0;
+                } else if (t >= maxT) {
+                    top = maxT + "px";
+                } else {
+                    top = t + "px";
+                    oShow.scrollTop = t / scaleY;//控制放大显示区重直移动
+                }
+            }
+        }
+    }
+
+    content.onmouseleave = function () {
+        var oMask = document.getElementById("mask");
+        if (oMask) {
+            this.removeChild(oMask);
+        }
+        var oShow = document.getElementById("show");
+        if (oShow) {
+            this.removeChild(oShow);
+        }
+    }
+
+</script>
