@@ -16,26 +16,20 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         (function() {
-
-            //设置压缩比
-            var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
-            document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
-
-            if(window.orientation == 0 || window.orientation == 180){
-
-                alert(document.documentElement.clientWidth);
-
-            }else if(window.orientation == 90 || window.orientation == -90){
-
-                alert(window.screen.height);
-
+            function getScale(){
+                if(window.orientation == 0 || window.orientation == 180){
+                    //设置压缩比
+                    var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+                    document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+                }else if(window.orientation == 90 || window.orientation == -90){
+                    var deviceWidth = window.screen.height > 1300 ? 1300 : window.screen.height;
+                    document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+                }
             }
-
-
+            getScale();
             var reSize =function(){
                 //窗口变化的时候重置压缩比
-                var deviceWidth = document.documentElement.clientWidth > 400 ? 400 : document.documentElement.clientWidth;
-                document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+                getScale();
             };
             window.onresize = reSize;
         })();
