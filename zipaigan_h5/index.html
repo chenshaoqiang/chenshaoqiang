@@ -14,29 +14,9 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            function getScale(){
-                if(window.orientation == 0 || window.orientation == 180){
-                    //设置压缩比
-                    var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
-                    document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
-                }else if(window.orientation == 90 || window.orientation == -90){
-                    var deviceWidth = window.screen.height > 1300 ? 1300 : window.screen.height;
-                    document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
-                }
-            }
-            getScale();
-            var reSize =function(){
-                //窗口变化的时候重置压缩比
-                getScale();
-            };
-            window.onresize = reSize;
-        })();
-    </script>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="wrap">
     <!--用户信息-->
     <div class="user_info">
         <input type="hidden" value="4198" id="protionId"/>
@@ -83,12 +63,31 @@
     var speed = 30;                                             // 自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
     var scrollImg=document.getElementById("scroll-img");        //img活动框
-    var imgHeight=Math.round( screen.availHeight/2 );
+    var imgHeight;
     var prop;                                                   //通过真实图片获得宽高比
     var startX = 0;
     var startY = 0;
     var timer;                                                  // 用于定时器
 
+    (function() {
+        function getScale(){
+            if(window.orientation == 0 || window.orientation == 180){
+                //设置压缩比
+                var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+            }else if(window.orientation == 90 || window.orientation == -90){
+                var deviceWidth = window.screen.height > 1300 ? 1300 : window.screen.height;
+                document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+            }
+        }
+        getScale();
+        var reSize =function(){
+            //窗口变化的时候重置压缩比
+            getScale();
+            getImgSize();
+        };
+        window.onresize = reSize;
+    })();
 
     $("#switch_div").on("click",function(){
         //播放按钮点击事件
@@ -139,7 +138,7 @@
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop=(realWidth/realHeight);
-                imgHeight=Math.round( screen.availHeight/2 );
+                imgHeight=Math.round( $("#wrap").css("height")/2 );
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
