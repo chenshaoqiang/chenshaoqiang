@@ -23,7 +23,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     width: .7rem;
     height: .7rem;
     position: absolute;
-    left: .25rem;
+    left: .2rem;
     top: .2rem;
 }
 .user_head img{
@@ -55,7 +55,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 #creat_time_span{
     position: absolute;
     bottom:0;
-    font-size: .18rem;
+    font-size: .22rem;
 }
 .scroll-img{
     width: 100%;
