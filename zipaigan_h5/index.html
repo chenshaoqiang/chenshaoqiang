@@ -16,15 +16,22 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         (function() {
-            if(window.orientation == 0 || window.orientation == 180){
-                alert("0");
-            }else if(window.orientation == 90 || window.orientation == -90){
-                alert("90");
-            }
 
             //设置压缩比
             var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
             document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+
+            if(window.orientation == 0 || window.orientation == 180){
+
+                alert(document.documentElement.clientWidth);
+
+            }else if(window.orientation == 90 || window.orientation == -90){
+
+                alert(document.documentElement.clientHeight);
+
+            }
+
+
             var reSize =function(){
                 //窗口变化的时候重置压缩比
                 var deviceWidth = document.documentElement.clientWidth > 400 ? 400 : document.documentElement.clientWidth;
