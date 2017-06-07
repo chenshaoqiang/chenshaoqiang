@@ -85,3 +85,19 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     left: .2rem;
     top: .2rem;
 }
+.icon_box{
+    width: 100%;
+    overflow: hidden;
+}
+.comment_icon{
+    width: .4rem;
+    height: .4rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.icon_span{
+    font-size: .24rem;
+    color: rgb(102,102,102);
+    font-family: Helvetica, sans-serif;
+    margin: .05rem 0.6rem 0 0;
+}
