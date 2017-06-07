@@ -16,7 +16,7 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         (function() {
-            var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+            var deviceWidth = document.documentElement.clientWidth > 500 ? 500 : document.documentElement.clientWidth;
             document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
             // deicePixelRatio ：设备像素
             var reSize =function(){
@@ -55,9 +55,9 @@
 </body>
 <script type="application/javascript" charset="utf-8">
     var protionId = $("#protionId").val();
-    var userHeadImg = $("div.user_head img"); // 用户头像
+    var userHeadImg = $("div.user_head img");     // 用户头像
     var userNameSpan = $("#user_name_span");      // 用户姓名
-    var creatTimeSpan= $("#creat_time_span");           // 时间
+    var creatTimeSpan= $("#creat_time_span");     // 时间
     var bigPic = $(".scroll-img-td img");
 
     // 请求接口刷新数据
@@ -78,15 +78,6 @@
                 userHeadImg.attr("src", userHeadUrl);
                 bigPic.attr("src", data.data.url);
 
-                /*bigPic.attr("src", data.data.url);
-                if (content !== null && content.length > 14) {
-                    contentLineStr = content.substring(0, 14);
-                    contentAllStr = content;
-                } else if (content !== null) {
-                    contentLineStr = content;
-                    contentAllStr = content;
-                }
-                workContent.text(contentLineStr);*/
 
             }
         }
