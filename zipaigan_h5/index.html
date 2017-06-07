@@ -83,7 +83,7 @@
     var speed = 30;                                             // 自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
     var scrollImg=document.getElementById("scroll-img");        //img活动框
-    var imgHeight=Math.round( window.screen.height/2 );
+    var imgHeight=Math.round( screen.availHeight/2 );
     var prop;                                                   //通过真实图片获得宽高比
     var startX = 0;
     var startY = 0;
@@ -139,7 +139,7 @@
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop=(realWidth/realHeight);
-
+                imgHeight=Math.round( screen.availHeight/2 );
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
