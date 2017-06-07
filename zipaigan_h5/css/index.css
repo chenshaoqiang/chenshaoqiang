@@ -1,5 +1,5 @@
 /*--css hack--*/
-*{margin: 0;padding: 0;font-family: '微软雅黑', 'Arial', sans-serif;}
+*{margin: 0;padding: 0;font-family: 'PingFangSC-Regular','微软雅黑', 'Arial', sans-serif;}
 body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {margin: 0;padding: 0;}
 a{text-decoration: none;}
 img {border-style: none;}
@@ -51,11 +51,13 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     top:0;
     font-size: .24rem;
     font-weight: bold;
+    color:rgb(51,51,51);
 }
 #creat_time_span{
     position: absolute;
     bottom:0;
     font-size: .22rem;
+    color:rgb(153,153,153);
 }
 .scroll-img{
     width: 100%;
@@ -68,4 +70,18 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 }
 .scroll-img-td img{
     height: 100%;
+}
+.describe{
+    width: 100%;
+    height: .8rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.describe_span{
+    font-size: .32rem;
+    font-weight: bold;
+    color:rgb(51,51,51);
+    position: absolute;
+    left: .2rem;
+    top: .2rem;
 }
