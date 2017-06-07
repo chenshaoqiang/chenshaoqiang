@@ -49,11 +49,17 @@
         </div>
     </div>
     <!--全景图-->
-    <div class="scroll-img">
-        <div class="scroll-img-td" id="marquePic1">
-            <img name="pic"
-                 id="main_img_work"
-                 src="">
+    <div class="scroll-img" id="scroll-img">
+        <div class="scroll-img-box" id="scrollImgBox">
+            <div class="scroll-img-td" id="marquePic1">
+                <img name="pic"
+                     id="main_img_work"
+                     src="">
+            </div>
+            <div class="scroll-img-td" id="marquePic2"></div>
+        </div>
+        <div class="button_div" id="switch_div">
+            <img id="switch" src="img/play.png">
         </div>
     </div>
     <div class="describe">
@@ -69,11 +75,118 @@
 </body>
 <script type="application/javascript" charset="utf-8">
     var protionId = $("#protionId").val();
-    var userHeadImg = $("div.user_head img");     // 用户头像
-    var userNameSpan = $("#user_name_span");      // 用户姓名
-    var creatTimeSpan= $("#creat_time_span");     // 时间
+    var userHeadImg = $("div.user_head img");                  // 用户头像
+    var userNameSpan = $("#user_name_span");                   // 用户姓名
+    var creatTimeSpan= $("#creat_time_span");                  // 时间
     var bigPic = $(".scroll-img-td img");
+    var isPlay = true;                                         //是否滚动状态设置，默认滚动
+    var speed = 30;                                             // 自动播放的时,使用的间隔时间,间隔越小速度越大
+    var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
+    var scrollImg=document.getElementById("scroll-img");        //img活动框
+    var imgHeight=Math.round( window.screen.height/2 );
+    var prop;                                                   //通过真实图片获得宽高比
+    var startX = 0;
+    var startY = 0;
+    var timer;                                                  // 用于定时器
 
+
+    $("#switch_div").on("click",function(){
+        //播放按钮点击事件
+        pic_scroll();
+    });
+    //停止滚动
+    function stopRolling() {
+        isPlay = true;
+        clearInterval(timer);
+    }
+    //继续滚动
+    function startRolling() {
+        isPlay = false;
+        timer = setInterval("Marquee(5)", speed);
+    }
+    //开关按钮点击处理函数
+    function pic_scroll() {
+        if (isPlay) {
+            // 继续滚动
+            startRolling();
+        } else {
+            stopRolling();
+        }
+    }
+    // 实现图片循环滚动的方法
+    function Marquee(n) {
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+            scrollImgBox.scrollLeft = 0;
+
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+
+        }
+    }
+
+    function getImgSize(){
+        $("#main_img_work").each(function (i) {
+            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
+            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
+                /*
+                 如果要获取图片的真实的宽度和高度有三点必须注意
+                 1、需要创建一个image对象：如这里的$("<img/>")
+                 2、指定图片的src路径
+                 3、一定要在图片加载完成后执行如.load()函数里执行
+                 */
+                var realWidth = this.width;
+                var realHeight = this.height;
+                prop=(realWidth/realHeight);
+
+                $("#marquePic2").css("left",Math.round(imgHeight*prop));
+                marquePic2.innerHTML = marquePic1.innerHTML;
+            });
+        });
+    }
+    // 滑动开始事件处理
+    var startHandler = function (event) {
+        // 停止自动播放
+        stopRolling();
+        startX = event.touches[0].pageX;
+        startY = event.touches[0].pageY;
+
+    };
+    // 滑动过程中事件处理
+    var moveHandler = function (event) {
+        event.preventDefault();
+
+        var touch = event.touches[0];
+        var moveX = touch.pageX;
+        var moveY = touch.pageY;
+        var dY = moveY - startY;
+        var len = moveX - startX;
+
+        len = len * -1;   // 为了矫正方向
+        len = len / 10;   // 为了减速
+
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+            scrollImgBox.scrollLeft = 0;
+
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+
+            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+            if (scrollImgBox.scrollLeft <= 0) {
+                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
+            }
+
+            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
+                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+            }
+        }
+    };
+    // 滑动结束事件处理
+    var endHandler = function (event) {};
     // 请求接口刷新数据
     $.ajax({
         url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
@@ -92,24 +205,27 @@
                 userHeadImg.attr("src", userHeadUrl);
                 bigPic.attr("src", data.data.url);
 
-
+                getImgSize();
             }
         }
     });
-function dateFormat(input){
-    if (input == null || input == '' || typeof(input) == "undefined") {
-        return "";
+    function dateFormat(input){
+        if (input == null || input == '' || typeof(input) == "undefined") {
+            return "";
+        }
+        var _date = new Date(input);
+        var year = _date.getFullYear();
+        var month = _date.getMonth() + 1 > 9 ? _date.getMonth() + 1 : "0" + (_date.getMonth() + 1);
+        var day = _date.getDate() > 9 ? _date.getDate() : "0" + _date.getDate();
+        var hour = _date.getHours() + 1 > 9 ? _date.getHours() : "0" + _date.getHours();
+        var minutes = _date.getMinutes() + 1 > 9 ? _date.getMinutes() : "0" + _date.getMinutes();
+        var seconds = _date.getSeconds() + 1 > 9 ? _date.getSeconds() : "0" + _date.getSeconds();
+
+         return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
+
     }
-    var _date = new Date(input);
-    var year = _date.getFullYear();
-    var month = _date.getMonth() + 1 > 9 ? _date.getMonth() + 1 : "0" + (_date.getMonth() + 1);
-    var day = _date.getDate() > 9 ? _date.getDate() : "0" + _date.getDate();
-    var hour = _date.getHours() + 1 > 9 ? _date.getHours() : "0" + _date.getHours();
-    var minutes = _date.getMinutes() + 1 > 9 ? _date.getMinutes() : "0" + _date.getMinutes();
-    var seconds = _date.getSeconds() + 1 > 9 ? _date.getSeconds() : "0" + _date.getSeconds();
-
-    return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
-
-}
+    scrollImg.addEventListener("touchstart", startHandler, false);
+    scrollImg.addEventListener("touchmove", moveHandler, false);
+    scrollImg.addEventListener("touchend", endHandler, false);
 </script>
 </html>
