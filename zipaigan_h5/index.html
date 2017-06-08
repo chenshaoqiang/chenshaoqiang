@@ -107,7 +107,7 @@
         $(className).height(conW);
         $(className).css('top',  (conH-conW)/2 );
         $(className).css('left',  0-(conH-conW)/2 );
-        $(className).css('transform' , 'rotate(90deg)');
+        $(className).css('transform' , 'rotate(90deg) translateX('+(conH-conW)/2 + ' px) translateY('+(conH-conW)/2 + 'px)');
         $(className).css('transform-origin' , '50% 50%');
 
     }
