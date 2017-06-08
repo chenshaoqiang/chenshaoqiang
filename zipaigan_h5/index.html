@@ -38,8 +38,14 @@
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
-        <div class="button_div" id="switch_div" action="scroll">
+        <div class="button_div" id="switch_div">
             <img id="switch" src="img/play.png">
+        </div>
+        <div class="comment_div" id="comment_div">
+            <img id="comment" src="img/comment_w.png">
+        </div>
+        <div class="turn_div" id="turn_div">
+            <img id="turn" src="img/toVertical.png">
         </div>
     </div>
     <div class="describe">
@@ -143,7 +149,6 @@
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop=(realWidth/realHeight);
-                console.log("prop:",prop);
                 imgHeight=Math.round( parseInt($("#wrap").css("height")) /2 );
 
                 console.log("imgHeight:",imgHeight);
@@ -174,8 +179,6 @@
 
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
-
-        console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
@@ -220,6 +223,7 @@
             }
         }
     });
+    //时间格式化
     function dateFormat(input){
         if (input == null || input == '' || typeof(input) == "undefined") {
             return "";
