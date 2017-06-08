@@ -105,12 +105,12 @@
         // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
 
         $(className).css({
-            "transform-origin":"center center",
-            "-webkit-transform-origin": "center center",
-            "transform":"rotate(90deg)",
-            "-webkit-transform": "rotate(90deg)",
-            "-moz-transform": "rotate(90deg)",
-            "-ms-transform": "rotate(90deg)"
+            "transform-origin":"right bottom",
+            "-webkit-transform-origin": "right bottom",
+            "transform":"rotate(90deg) translateX("+(-conW)+"px)",
+            "-webkit-transform": "rotate(90deg) translateX("+(-conW)+"px)",
+            "-moz-transform": "rotate(90deg) translateX("+(-conW)+"px)",
+            "-ms-transform": "rotate(90deg) translateX("+(-conW)+"px)",
         });
     }
     //横竖屏点击事件
