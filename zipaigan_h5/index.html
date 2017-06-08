@@ -90,7 +90,6 @@
     })();
 
     $("#switch_div").on("click",function(event){
-        event.preventDefault();
         //播放按钮点击事件
         pic_scroll();
     });
@@ -236,8 +235,8 @@
          return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
 
     }
-    scrollImg.addEventListener("touchstart", startHandler, false);
-    scrollImg.addEventListener("touchmove", moveHandler, false);
-    scrollImg.addEventListener("touchend", endHandler, false);
+    scrollImgBox.addEventListener("touchstart", startHandler, false);
+    scrollImgBox.addEventListener("touchmove", moveHandler, false);
+    scrollImgBox.addEventListener("touchend", endHandler, false);
 </script>
 </html>
