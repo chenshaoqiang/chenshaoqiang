@@ -126,6 +126,31 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     bottom: .2rem;
     z-index: 999;
 }
+.big_magnifier{
+    overflow: hidden;
+    width: 4.6rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.9rem;
+    margin-left: -2.3rem;
+    z-index: 999;
+    text-align: center;
+}
+.big_magnifier img{
+    overflow: hidden;
+    width: 1.2rem;
+    height: 1.16rem;
+    z-index: 999;
+}
+.big_magnifier span{
+    font-size: .32rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .turn_div{
     overflow: hidden;
     width: .45rem;
