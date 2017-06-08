@@ -160,7 +160,7 @@
         if(type=="turn"){
 
             $("#turn_div").find('img').attr("src", "img/toCross.png");//图标变化
-            $("#big_magnifier").css("display","block");//放大镜大图标出现
+            $(".big_magnifier").css("display","block");//放大镜大图标出现
 
             //强制横屏（旋转）
             $(className).width(conH);
@@ -179,7 +179,7 @@
             //返回竖屏（恢复）
             $(className).removeAttr("style");
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
-            $("#big_magnifier").css("display","none");
+            $(".big_magnifier").css("display","none");
 
             isTurn = true;
 
@@ -226,11 +226,11 @@
             //用户将手机横屏的时候，如果机子本身开着横屏的话，需要马上转回去。
             turnScreen(".wrap","back");
 
-            $("#big_magnifier").css("display","block");//放大镜大图标出现
+            $(".big_magnifier").css("display","block");//放大镜大图标出现
 
         }else{
 
-            $("#big_magnifier").css("display","none");
+            $(".big_magnifier").css("display","none");
 
         }
 
