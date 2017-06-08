@@ -66,6 +66,7 @@
     var creatTimeSpan= $("#creat_time_span");                  // 时间
     var bigPic = $(".scroll-img-td img");
     var isPlay = true;                                         //是否滚动状态设置，默认滚动
+    var isTurn = true;
     var speed = 30;                                             // 自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
     var scrollImg=document.getElementById("scroll-img");        //img活动框
@@ -98,22 +99,36 @@
     $("#switch_div").on("click",function(){
         pic_scroll();
     });
-    function horizontalScreen(className){
+    function turnScreen(className,type){
         // transform 强制横屏
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
 
-        $(className).width(conH);
-        $(className).height(conW);
-        $(className).css({
-            "transform-origin":"50% 50%",
-            "-webkit-transform-origin": "50% 50%",
-            "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-            "-webkit-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-            "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-            "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
-        });
+        if(type=="turn"){
+            $(className).width(conH);
+            $(className).height(conW);
+            $(className).css({
+                "transform-origin":"50% 50%",
+                "-webkit-transform-origin": "50% 50%",
+                "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-webkit-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
+            });
+        }else if(type=="back"){
+            $(className).width(conW);
+            $(className).height(conH);
+            $(className).css({
+                "transform-origin":"50% 50%",
+                "-webkit-transform-origin": "50% 50%",
+                "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-webkit-transform": "rotate(-90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-moz-transform": "rotate(-90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+                "-ms-transform": "rotate(-90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
+            });
+        }
+
     }
     //横竖屏点击事件
     $("#turn_div").on("click",function(){
@@ -121,9 +136,17 @@
         var screenH=window.screen.height;//屏高
         if(parseInt(screenH)>parseInt(screenW)){//竖屏：=>转横
             if(window.orientation == 0 || window.orientation == 180){
-                $("#turn_div").find('img').attr("src", "img/toCross.png");
-                //接着是旋转
-                horizontalScreen(".wrap");
+                if(isTurn){
+                    isTurn = false;
+                    $("#turn_div").find('img').attr("src", "img/toCross.png");
+                    //接着是旋转
+                    turnScreen(".wrap","turn");
+                }else{
+                    isTurn = true;
+                    $("#turn_div").find('img').attr("src", "img/toVertical.png");
+                    turnScreen(".wrap","back");
+                }
+
             }
 
         }
