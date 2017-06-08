@@ -97,20 +97,21 @@
     function stopRolling() {
         isPlay = true;
         clearInterval(timer);
-        $("#switch_div").find('img').attr("src", "img/play.png");
+
     }
     //继续滚动
     function startRolling() {
         isPlay = false;
         timer = setInterval("Marquee(5)", speed);
-        $("#switch_div").find('img').attr("src", "img/pause.png");
     }
     //开关按钮点击处理函数
     function pic_scroll() {
         if (isPlay) {
             // 继续滚动
+            $("#switch_div").find('img').attr("src", "img/pause.png");
             startRolling();
         } else {
+            $("#switch_div").find('img').attr("src", "img/play.png");
             stopRolling();
         }
     }
