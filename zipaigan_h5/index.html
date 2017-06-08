@@ -329,7 +329,15 @@
 
         }else{
 
-            $("#magnifier_div").css("display","none");
+            if(!isTurn){
+
+                $("#magnifier_div").css("display","block");
+
+            }else{
+
+                $("#magnifier_div").css("display","none");
+
+            }
 
         }
 
