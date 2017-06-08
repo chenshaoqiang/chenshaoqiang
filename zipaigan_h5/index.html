@@ -96,6 +96,7 @@
     //停止滚动
     function stopRolling() {
         isPlay = true;
+        $("#switch_div").find('img').attr("src", "img/pause.png");
         clearInterval(timer);
     }
     //继续滚动
