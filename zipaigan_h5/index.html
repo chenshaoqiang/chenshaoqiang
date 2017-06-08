@@ -151,6 +151,20 @@
         pic_scroll();
 
     });
+    //大放大镜点击
+    $("#big_magnifier").on("click",function(){
+
+        $(".big_magnifier").css("display","none");//放大镜大图标消失
+        $("#magnifier_div").css("display","block");//放大镜小图标出现
+
+    });
+    //小放大镜点击
+    $("#magnifier_div").on("click",function(){
+
+        $(".big_magnifier").css("display","block");//放大镜大图标消失
+        $("#magnifier_div").css("display","none");//放大镜小图标出现
+
+    });
     // transform 强制横屏
     function turnScreen(className,type){
 
@@ -161,6 +175,7 @@
 
             $("#turn_div").find('img').attr("src", "img/toCross.png");//图标变化
             $(".big_magnifier").css("display","block");//放大镜大图标出现
+            $("#magnifier_div").css("display","none");
 
             //强制横屏（旋转）
             $(className).width(conH);
@@ -180,6 +195,7 @@
             $(className).removeAttr("style");
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
             $(".big_magnifier").css("display","none");
+            $("#magnifier_div").css("display","none");
 
             isTurn = true;
 
