@@ -94,10 +94,40 @@
         };
         window.onresize = reSize;
     })();
-
-    $("#switch_div").on("click",function(event){
-        //播放按钮点击事件
+    //播放按钮点击事件
+    $("#switch_div").on("click",function(){
         pic_scroll();
+    });
+    function horizontalScreen(className){
+        // transform 强制横屏
+        var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
+
+        $(className).css({
+            "transform-origin":"center center",
+            "-webkit-transform-origin": "center center",
+            "transform":"rotate(90deg)",
+            "-webkit-transform": "rotate(90deg)",
+            "-moz-transform": "rotate(90deg)",
+            "-ms-transform": "rotate(90deg)"
+        });
+    }
+    //横竖屏点击事件
+    $("#turn_div").on("click",function(){
+        var screenW=window.screen.width;//屏宽
+        var screenH=window.screen.height;//屏高
+        if(parseInt(screenH)>parseInt(screenW)){//竖屏：=>转横
+            if(window.orientation == 0 || window.orientation == 180){
+                $("#turn_div").find('img').attr("src", "img/toCross.png");
+                //接着是旋转
+                horizontalScreen(".wrap");
+            }
+
+        }
+
+
+
     });
 
     //停止滚动
