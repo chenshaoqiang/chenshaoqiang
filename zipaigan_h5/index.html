@@ -234,6 +234,11 @@
 
     });
 
+    if(window.orientation == 90 || window.orientation == -90){
+
+        $(".big_magnifier").css("display","block");//放大镜大图标出现
+
+    }
     //监听横竖屏状态，当用户竖屏锁定关闭的时候有效
     $(window).bind("orientationchange", function () {
 
