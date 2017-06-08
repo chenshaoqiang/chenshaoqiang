@@ -89,7 +89,8 @@
         window.onresize = reSize;
     })();
 
-    $("#switch_div").on("click",function(){
+    $("#switch_div").on("click",function(event){
+        event.preventDefault();
         //播放按钮点击事件
         pic_scroll();
     });
