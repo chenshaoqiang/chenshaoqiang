@@ -232,6 +232,9 @@
         var dY = moveY - startY;
         var len = moveX - startX;
 
+        if(!isTurn){
+            len = dY;
+        }
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
