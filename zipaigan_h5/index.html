@@ -234,11 +234,13 @@
 
     });
 
+    //横屏刷新
     if(window.orientation == 90 || window.orientation == -90){
 
         $(".big_magnifier").css("display","block");//放大镜大图标出现
 
     }
+
     //监听横竖屏状态，当用户竖屏锁定关闭的时候有效
     $(window).bind("orientationchange", function () {
 
@@ -299,6 +301,9 @@
         stopRolling();
         startX = event.touches[0].pageX;
         startY = event.touches[0].pageY;
+
+        $(".big_magnifier").css("display","none");
+        $("#magnifier_div").css("display","block");
 
     };
     // 滑动过程中事件处理
