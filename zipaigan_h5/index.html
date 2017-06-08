@@ -158,7 +158,12 @@
 
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
-        $("#magnifier_box").css("display","block");//放大框出现
+
+        $("#magnifier_box").css({
+            "display":"block",
+            "width":imgHeight*1.5,
+            "height":imgHeight*1.5
+        });
 
     });
     //小放大镜点击
@@ -392,5 +397,6 @@
     scrollImgBox.addEventListener("touchstart", startHandler, false);
     scrollImgBox.addEventListener("touchmove", moveHandler, false);
     scrollImgBox.addEventListener("touchend", endHandler, false);
+
 </script>
 </html>
