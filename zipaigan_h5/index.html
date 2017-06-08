@@ -38,7 +38,7 @@
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
-        <div class="button_div" id="switch_div">
+        <div class="button_div" id="switch_div" action="scroll">
             <img id="switch" src="img/play.png">
         </div>
     </div>
@@ -156,7 +156,6 @@
     }
     // 滑动开始事件处理
     var startHandler = function (event) {
-        event.preventDefault();
         // 停止自动播放
         stopRolling();
         startX = event.touches[0].pageX;
