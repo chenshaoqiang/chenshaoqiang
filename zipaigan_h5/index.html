@@ -96,14 +96,14 @@
     //停止滚动
     function stopRolling() {
         isPlay = true;
-        $("#switch_div").find('img').attr("src", "img/play.png");
         clearInterval(timer);
+        $("#switch_div").find('img').attr("src", "img/play.png");
     }
     //继续滚动
     function startRolling() {
         isPlay = false;
-        $("#switch_div").find('img').attr("src", "img/pause.png");
         timer = setInterval("Marquee(5)", speed);
+        $("#switch_div").find('img').attr("src", "img/pause.png");
     }
     //开关按钮点击处理函数
     function pic_scroll() {
