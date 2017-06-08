@@ -105,12 +105,12 @@
         // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
 
         $(className).css({
-            "transform-origin":"0% 0%",
-            "-webkit-transform-origin": "0% 0%",
-            "transform":"rotate(-90deg) translateX("+(-conW)+"px)",
-            "-webkit-transform": "rotate(-90deg) translateX("+(-conW)+"px)",
-            "-moz-transform": "rotate(-90deg) translateX("+(-conW)+"px)",
-            "-ms-transform": "rotate(-90deg) translateX("+(-conW)+"px)",
+            "transform-origin":"right bottom",
+            "-webkit-transform-origin": "right bottom",
+            "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-webkit-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
         });
     }
     //横竖屏点击事件
