@@ -103,13 +103,17 @@
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
+
         $(className).width(conH);
         $(className).height(conW);
-        $(className).css('top',  (conH-conW)/2 );
-        $(className).css('left',  0-(conH-conW)/2 );
-        $(className).css('transform' , 'rotate(90deg) translateX('+(conH-conW)/2 + ' px) translateY('+(conH-conW)/2 + 'px)');
-        $(className).css('transform-origin' , '50% 50%');
-
+        $(className).css({
+            "transform-origin":"50% 50%",
+            "-webkit-transform-origin": "50% 50%",
+            "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-webkit-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
+            "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
+        });
     }
     //横竖屏点击事件
     $("#turn_div").on("click",function(){

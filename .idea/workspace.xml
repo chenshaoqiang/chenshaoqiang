@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css3动画和属性.html" afterPath="$PROJECT_DIR$/css3动画和属性.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,8 +48,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51184833">
-              <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.35189572">
+              <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css3动画和属性.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -69,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/view/works/8图片延迟加载-5-增强用户体验-多张图片的-正确的.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucmCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" />
@@ -119,6 +129,7 @@
         <option value="$PROJECT_DIR$/paipai/css/common.css" />
         <option value="$PROJECT_DIR$/paipai/index1.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
+        <option value="$PROJECT_DIR$/css3动画和属性.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
       </list>
     </option>
@@ -336,12 +347,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00355" summary="    5.30">
-      <created>1496156817062</created>
-      <option name="number" value="00355" />
-      <option name="project" value="LOCAL" />
-      <updated>1496156817062</updated>
     </task>
     <task id="LOCAL-00356" summary="6.2">
       <created>1496367379848</created>
@@ -631,7 +636,13 @@
       <option name="project" value="LOCAL" />
       <updated>1496903263209</updated>
     </task>
-    <option name="localTasksCounter" value="404" />
+    <task id="LOCAL-00404" summary="6.8">
+      <created>1496904373852</created>
+      <option name="number" value="00404" />
+      <option name="project" value="LOCAL" />
+      <updated>1496904373852</updated>
+    </task>
+    <option name="localTasksCounter" value="405" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1025,14 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30821916">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test3D.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.25">
@@ -1041,10 +1044,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51184833">
-          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.35189572">
+          <caret line="107" column="34" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
           <folding />
         </state>
       </provider>
