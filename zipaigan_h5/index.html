@@ -188,7 +188,7 @@
             $(".big_magnifier").css("display","block");//放大镜大图标出现
             $("#magnifier_div").css("display","none");
 
-            document.documentElement.style.fontSize = ( window.screen.height / 7.5) + 'px';
+            document.documentElement.style.fontSize = ( window.screen.width / 7.5) + 'px';
             getImgSize();//重排img使拼接无缝
 
             //强制横屏（旋转）
@@ -211,6 +211,9 @@
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
             $("#magnifier_box").css("display","none");
+
+            document.documentElement.style.fontSize = ( window.screen.height / 7.5) + 'px';
+            getImgSize();//重排img使拼接无缝
 
             isTurn = true;
 
