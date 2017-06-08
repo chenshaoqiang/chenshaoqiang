@@ -323,8 +323,17 @@
         startX = event.touches[0].pageX;
         startY = event.touches[0].pageY;
 
+        if(window.orientation == 90 || window.orientation == -90){
+
+            $("#magnifier_div").css("display","block");
+
+        }else{
+
+            $("#magnifier_div").css("display","none");
+
+        }
+
         $(".big_magnifier").css("display","none");
-        $("#magnifier_div").css("display","block");
         $("#magnifier_box").css("display","none");
 
     };

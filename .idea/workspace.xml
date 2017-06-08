@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6609589">
-              <caret line="211" column="54" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="54" />
+              <caret line="337" column="0" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -310,12 +310,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00382" summary="6.8">
-      <created>1496886188484</created>
-      <option name="number" value="00382" />
-      <option name="project" value="LOCAL" />
-      <updated>1496886188485</updated>
     </task>
     <task id="LOCAL-00383" summary="6.8">
       <created>1496886865077</created>
@@ -605,7 +599,13 @@
       <option name="project" value="LOCAL" />
       <updated>1496918159583</updated>
     </task>
-    <option name="localTasksCounter" value="431" />
+    <task id="LOCAL-00431" summary="6.8">
+      <created>1496918238222</created>
+      <option name="number" value="00431" />
+      <option name="project" value="LOCAL" />
+      <updated>1496918238222</updated>
+    </task>
+    <option name="localTasksCounter" value="432" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1015,7 +1015,7 @@
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6609589">
-          <caret line="211" column="54" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="54" />
+          <caret line="337" column="0" selection-start-line="337" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
           <folding>
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
