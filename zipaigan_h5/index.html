@@ -165,7 +165,8 @@
         }else if(type=="back"){
 
             //返回竖屏（恢复）
-            $(className).css({});
+            $(className).removeAttr("style");
+
         }
 
     }
