@@ -198,3 +198,15 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 .magnifier_div{
     display: none;
 }
+.magnifier_box{
+    width: 5rem;
+    height: 5rem;
+    border: .02rem solid red;
+    position: absolute;
+    left: 0;
+    top: .2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+}

@@ -38,7 +38,7 @@
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
-        <!--大放大镜-->
+        <!--大放大镜图标-->
         <div class="big_magnifier">
             <img id="big_magnifier" src="img/big_fang_da.png">
             <span>点击放大镜，全景局部放大展示</span>
@@ -55,11 +55,13 @@
         <div class="turn_div" id="turn_div">
             <img id="turn" src="img/toVertical.png">
         </div>
-        <!--小放大镜-->
+        <!--小放大镜图标-->
         <div class="magnifier_div" id="magnifier_div">
             <img id="magnifier" src="img/fang_da.png">
         </div>
     </div>
+    <!--放大镜框-->
+    <div class="magnifier_box" id="magnifier_box"></div>
     <!--描述-->
     <div class="describe">
         <span class="describe_span">北京一日游，和风煦煦。</span>
@@ -156,6 +158,7 @@
 
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
+        $("#magnifier_box").css("display","block");//放大框出现
 
     });
     //小放大镜点击
@@ -196,6 +199,7 @@
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
+            $("#magnifier_box").css("display","none");
 
             isTurn = true;
 
@@ -256,6 +260,7 @@
 
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
+            $("#magnifier_box").css("display","none");
 
         }
 
@@ -306,6 +311,7 @@
 
         $(".big_magnifier").css("display","none");
         $("#magnifier_div").css("display","block");
+        $("#magnifier_box").css("display","none");
 
     };
     // 滑动过程中事件处理
