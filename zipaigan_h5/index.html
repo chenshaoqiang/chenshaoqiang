@@ -38,19 +38,24 @@
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
+        <!--播放暂停按钮-->
         <div class="button_div" id="switch_div">
             <img id="switch" src="img/play.png">
         </div>
+        <!--评论按钮-->
         <div class="comment_div" id="comment_div">
             <img id="comment" src="img/comment_w.png">
         </div>
+        <!--横竖屏转换按钮-->
         <div class="turn_div" id="turn_div">
             <img id="turn" src="img/toVertical.png">
         </div>
     </div>
+    <!--描述-->
     <div class="describe">
         <span class="describe_span">北京一日游，和风煦煦。</span>
     </div>
+    <!--评论、点赞-->
     <div class="icon_box">
         <img class="comment_icon fl" src="./img/comment_icon_black.png" alt=""/>
         <span class="icon_span fl">48</span>
@@ -67,8 +72,8 @@
     var creatTimeSpan= $("#creat_time_span");                  // 时间
     var bigPic = $(".scroll-img-td img");
     var isPlay = true;                                         //是否滚动状态设置，默认滚动
-    var isTurn = true;
-    var speed = 30;                                             // 自动播放的时,使用的间隔时间,间隔越小速度越大
+    var isTurn = true;                                         //是否强制横屏的状态控制
+    var speed = 30;                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
     var scrollImg=document.getElementById("scroll-img");        //img活动框
     var imgHeight;
@@ -77,35 +82,75 @@
     var startY = 0;
     var timer;                                                  // 用于定时器
 
+    //复制大图，用于无缝拼接
+    function getImgSize(){
+        $("#main_img_work").each(function (i) {
+            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
+            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
+                /*
+                 如果要获取图片的真实的宽度和高度有三点必须注意
+                 1、需要创建一个image对象：如这里的$("<img/>")
+                 2、指定图片的src路径
+                 3、一定要在图片加载完成后执行如.load()函数里执行
+                 */
+                var realWidth = this.width;
+                var realHeight = this.height;
+                prop=(realWidth/realHeight);
+                imgHeight=Math.round( parseInt($("#wrap").css("height")) /2 );
+
+                $("#main_img_work").css("width",Math.round(imgHeight*prop));
+                $("#marquePic2").css("left",Math.round(imgHeight*prop));
+                marquePic2.innerHTML = marquePic1.innerHTML;
+            });
+        });
+    }
+
     (function() {
         function getScale(){
+
             if(window.orientation == 0 || window.orientation == 180){
+
                 //设置压缩比
                 var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
                 document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+
             }else if(window.orientation == 90 || window.orientation == -90){
+
+                //横屏的时候为避免元素被放大，依然采用竖屏的压缩比
                 var deviceWidth = window.screen.height > 1300 ? 1300 : window.screen.height;
                 document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px';
+
             }
         }
-        getScale();
+
+        getScale();//这是页面加载的时候第一次获取压缩比重绘
+
         var reSize =function(){
-            //窗口变化的时候重置压缩比
+
+            //窗口变化的时候重置压缩比，比如自动横屏的时候
             getScale();
-            getImgSize();
+            getImgSize();//重排img使拼接无缝
+
         };
+
         window.onresize = reSize;
+
     })();
     //播放按钮点击事件
     $("#switch_div").on("click",function(){
+
         pic_scroll();
+
     });
+    // transform 强制横屏
     function turnScreen(className,type){
-        // transform 强制横屏
+
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
         if(type=="turn"){
+
+            //强制横屏（旋转）
             $(className).width(conH);
             $(className).height(conW);
             $(className).css({
@@ -116,7 +161,10 @@
                 "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
                 "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
             });
+
         }else if(type=="back"){
+
+            //返回竖屏（恢复）
             $(className).width(conW);
             $(className).height(conH);
             $(className).css({
@@ -132,26 +180,47 @@
     }
     //横竖屏点击事件
     $("#turn_div").on("click",function(){
+
         var screenW=window.screen.width;//屏宽
         var screenH=window.screen.height;//屏高
+
         if(parseInt(screenH)>parseInt(screenW)){//竖屏：=>转横
+
             if(window.orientation == 0 || window.orientation == 180){
+
+                //只有屏高大于屏宽的竖屏状态下，才强制横屏
                 if(isTurn){
+
                     isTurn = false;
-                    $("#turn_div").find('img').attr("src", "img/toCross.png");
+                    $("#turn_div").find('img').attr("src", "img/toCross.png");//图标变化
+
                     //接着是旋转
                     turnScreen(".wrap","turn");
+
                 }else{
+
                     isTurn = true;
-                    $("#turn_div").find('img').attr("src", "img/toVertical.png");
+                    $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
+
                     turnScreen(".wrap","back");
+
                 }
 
             }
 
         }
 
+    });
 
+    //监听横竖屏状态，当用户竖屏锁定关闭的时候有效
+    $(window).bind("orientationchange", function () {
+
+        if(window.orientation == 90 || window.orientation == -90){
+
+            //用户将手机横屏的时候，如果机子本身开着横屏的话，需要马上转回去。
+            turnScreen(".wrap","back");
+
+        }
 
     });
 
@@ -191,29 +260,6 @@
         }
     }
 
-    function getImgSize(){
-        $("#main_img_work").each(function (i) {
-            //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
-            $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
-                /*
-                 如果要获取图片的真实的宽度和高度有三点必须注意
-                 1、需要创建一个image对象：如这里的$("<img/>")
-                 2、指定图片的src路径
-                 3、一定要在图片加载完成后执行如.load()函数里执行
-                 */
-                var realWidth = this.width;
-                var realHeight = this.height;
-                prop=(realWidth/realHeight);
-                imgHeight=Math.round( parseInt($("#wrap").css("height")) /2 );
-
-                console.log("imgHeight:",imgHeight);
-
-                $("#main_img_work").css("width",Math.round(imgHeight*prop));
-                $("#marquePic2").css("left",Math.round(imgHeight*prop));
-                marquePic2.innerHTML = marquePic1.innerHTML;
-            });
-        });
-    }
     // 滑动开始事件处理
     var startHandler = function (event) {
         // 停止自动播放

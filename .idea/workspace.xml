@@ -24,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test3D.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test3D.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.25">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,21 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
+      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3755924">
-              <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="-5.1666665">
+              <caret line="344" column="7" selection-start-line="289" selection-start-column="4" selection-end-line="344" selection-end-column="7" />
+              <folding>
+                <element signature="e#9686#12041#0" expanded="false" />
+                <element signature="e#13672#15751#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css3动画和属性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css3动画和属性.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.7226027">
+              <caret line="223" column="8" selection-start-line="223" selection-start-column="8" selection-end-line="223" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -346,12 +339,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00361" summary="6.5">
-      <created>1496647664710</created>
-      <option name="number" value="00361" />
-      <option name="project" value="LOCAL" />
-      <updated>1496647664710</updated>
     </task>
     <task id="LOCAL-00362" summary="6.6">
       <created>1496733408862</created>
@@ -641,7 +628,13 @@
       <option name="project" value="LOCAL" />
       <updated>1496906610193</updated>
     </task>
-    <option name="localTasksCounter" value="410" />
+    <task id="LOCAL-00410" summary="6.8">
+      <created>1496906922280</created>
+      <option name="number" value="00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1496906922280</updated>
+    </task>
+    <option name="localTasksCounter" value="411" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1007,16 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7058825">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#13672#15751#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/img/comment_w.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1051,10 +1034,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1666665">
+          <caret line="344" column="7" selection-start-line="289" selection-start-column="4" selection-end-line="344" selection-end-column="7" />
+          <folding>
+            <element signature="e#9686#12041#0" expanded="false" />
+            <element signature="e#13672#15751#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3755924">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.7226027">
+          <caret line="223" column="8" selection-start-line="223" selection-start-column="8" selection-end-line="223" selection-end-column="8" />
           <folding />
         </state>
       </provider>
