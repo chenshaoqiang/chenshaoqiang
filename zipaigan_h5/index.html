@@ -158,16 +158,17 @@
 
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
+        var mgBoxW=imgHeight+addHeight;
 
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
 
         $("#magnifier_box").css({
             "display":"block",
-            "width":imgHeight+addHeight,
-            "height":imgHeight+addHeight,
-            "background":"url("+$(bigPic).attr("src")+") no-repeat",//
-            "background-size":"("+(imgHeight+addHeight)*prop+'px  '+ (imgHeight+addHeight) + 'px'+")"
+            "width":mgBoxW,
+            "height":mgBoxW,
+            "background":"url("+$(bigPic).attr("src")+") no-repeat",
+            "background-size":"("+ mgBoxW*prop +'px  '+ mgBoxW + 'px'+")"
         });
 
     });
