@@ -156,6 +156,7 @@
     }
     // 滑动开始事件处理
     var startHandler = function (event) {
+        event.preventDefault();
         // 停止自动播放
         stopRolling();
         startX = event.touches[0].pageX;

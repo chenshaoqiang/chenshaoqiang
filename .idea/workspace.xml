@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paipai/index1.html" afterPath="$PROJECT_DIR$/paipai/index1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -29,20 +28,8 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+              <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="95.132355">
-              <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
-              <folding>
-                <element signature="e#13959#16038#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3329384">
-              <caret line="91" column="18" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.30094787">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -120,9 +107,9 @@
         <option value="$PROJECT_DIR$/fangdajing/index.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/1.json" />
         <option value="$PROJECT_DIR$/paipai/css/common.css" />
+        <option value="$PROJECT_DIR$/paipai/index1.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
         <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
-        <option value="$PROJECT_DIR$/paipai/index1.html" />
       </list>
     </option>
   </component>
@@ -339,18 +326,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00343" summary="    5.29">
-      <created>1496080883550</created>
-      <option name="number" value="00343" />
-      <option name="project" value="LOCAL" />
-      <updated>1496080883550</updated>
-    </task>
-    <task id="LOCAL-00344" summary="    5.29">
-      <created>1496115825796</created>
-      <option name="number" value="00344" />
-      <option name="project" value="LOCAL" />
-      <updated>1496115825796</updated>
     </task>
     <task id="LOCAL-00345" summary="    5.29">
       <created>1496116283636</created>
@@ -634,7 +609,19 @@
       <option name="project" value="LOCAL" />
       <updated>1496890084457</updated>
     </task>
-    <option name="localTasksCounter" value="392" />
+    <task id="LOCAL-00392" summary="6.8">
+      <created>1496890316130</created>
+      <option name="number" value="00392" />
+      <option name="project" value="LOCAL" />
+      <updated>1496890316130</updated>
+    </task>
+    <task id="LOCAL-00393" summary="6.8">
+      <created>1496891104448</created>
+      <option name="number" value="00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1496891104448</updated>
+    </task>
+    <option name="localTasksCounter" value="394" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -713,7 +700,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
-            <element signature="e#13959#16038#0" expanded="false" />
+            <element signature="e#13672#15751#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1026,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/img/play.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1041,18 +1020,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="95.132355">
-          <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+        <state vertical-scroll-proportion="-3.3382354">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="20" />
           <folding>
-            <element signature="e#13959#16038#0" expanded="false" />
+            <element signature="e#13672#15751#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3329384">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.30094787">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
           <folding />
         </state>
       </provider>
