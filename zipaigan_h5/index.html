@@ -156,13 +156,16 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
+        var userInfoHeight= parseInt($(".user_info").css("height"));
+        var addHeight=userInfoHeight-(userInfoHeight * (0.2/1.1));
+
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
 
         $("#magnifier_box").css({
             "display":"block",
-            "width":imgHeight*1.5,
-            "height":imgHeight*1.5
+            "width":imgHeight+addHeight,
+            "height":imgHeight+addHeight
         });
 
     });
