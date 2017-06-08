@@ -50,6 +50,9 @@
         <div class="turn_div" id="turn_div">
             <img id="turn" src="img/toVertical.png">
         </div>
+        <div class="magnifier_div" id="magnifier_div">
+            <img id="magnifier" src="img/fang_da.png">
+        </div>
     </div>
     <!--描述-->
     <div class="describe">
@@ -151,7 +154,7 @@
         if(type=="turn"){
 
             $("#turn_div").find('img').attr("src", "img/toCross.png");//图标变化
-
+            $("#magnifier_div").css("display","block"); //放大镜小图标出现
             //强制横屏（旋转）
             $(className).width(conH);
             $(className).height(conW);
@@ -169,6 +172,7 @@
             //返回竖屏（恢复）
             $(className).removeAttr("style");
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
+            $("#magnifier_div").css("display","none");
 
             isTurn = true;
 
@@ -214,6 +218,12 @@
 
             //用户将手机横屏的时候，如果机子本身开着横屏的话，需要马上转回去。
             turnScreen(".wrap","back");
+
+            $("#magnifier_div").css("display","block"); //放大镜小图标出现
+
+        }else{
+
+            $("#magnifier_div").css("display","none");
 
         }
 
