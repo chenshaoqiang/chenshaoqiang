@@ -90,6 +90,11 @@
     })();
 
     $("#switch_div").on("click",function(){
+        if (isPlay) {
+            $("#switch_div").find('img').attr("src", "img/pause.png");
+        } else {
+            $("#switch_div").find('img').attr("src", "img/play.png");
+        }
         //播放按钮点击事件
         pic_scroll();
     });
@@ -108,10 +113,8 @@
     function pic_scroll() {
         if (isPlay) {
             // 继续滚动
-            $("#switch_div").find('img').attr("src", "img/pause.png");
             startRolling();
         } else {
-            $("#switch_div").find('img').attr("src", "img/play.png");
             stopRolling();
         }
     }
