@@ -132,13 +132,13 @@
     //停止滚动
     function stopRolling() {
         isPlay = true;
-        //stopMusic();$("#switch_div").find('img').attr("src", "img/play.png");
+        stopMusic();
         clearInterval(timer);
     }
     //继续滚动
     function startRolling() {
         isPlay = false;
-        //startMusic();$("#switch_div").find('img').attr("src", "img/pause.png");
+        startMusic();
         timer = setInterval("Marquee(5)", speed);
     }
     //开关按钮点击处理函数
@@ -190,18 +190,12 @@
 
     function startMusic() { // 播放音乐
 
-        if (audio.currentSrc !== null) {
-            audio.load();
-            audio.play();
-        }
         $("#switch_div").find('img').attr("src", "img/pause.png");
     }
 
     function stopMusic() { // 暂停音乐
 
-        if (!audio.paused) {
-            audio.pause();
-        }
+
         $("#switch_div").find('img').attr("src", "img/play.png");
     }
 
