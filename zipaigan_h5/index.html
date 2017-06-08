@@ -146,6 +146,7 @@
 
                 console.log("imgHeight:",imgHeight);
 
+                $("#main_img_work").css("width",Math.round(imgHeight*prop));
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
