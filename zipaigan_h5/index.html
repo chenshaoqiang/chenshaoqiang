@@ -60,6 +60,7 @@
 </div>
 </body>
 <script type="application/javascript" charset="utf-8">
+
     var protionId = $("#protionId").val();
     var userHeadImg = $("div.user_head img");                  // 用户头像
     var userNameSpan = $("#user_name_span");                   // 用户姓名
@@ -103,7 +104,6 @@
         // transform 强制横屏
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        // transform: rotate(90deg); width: 667px; height: 375px;transform-origin:28% 50%;
 
         if(type=="turn"){
             $(className).width(conH);
@@ -233,7 +233,7 @@
         var len = moveX - startX;
 
         if(!isTurn){
-            len = dY;
+            len = dY;//如果已经强制横屏，则滑动判断量改为Y方向
         }
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
