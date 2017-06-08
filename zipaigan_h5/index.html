@@ -138,7 +138,7 @@
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop=(realWidth/realHeight);
-                imgHeight=Math.round( $("#wrap").css("height")/2 );
+                imgHeight=Math.round( parseInt($("#wrap").css("height")) /2 );
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
             });
