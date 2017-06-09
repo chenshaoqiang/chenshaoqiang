@@ -52,7 +52,8 @@ $(document).ready(function () {
         if (jsonData.picUrls!=null){
             var imgArray = new Array();
             for (var i=0; i<jsonData.picUrls.length; i++) {
-                imgArray.push('http://123.57.3.33:9000/pic/work/'+jsonData.picUrls[i]);
+                //imgArray.push('http://123.57.3.33:9000/pic/work/'+jsonData.picUrls[i]);
+                imgArray.push(jsonData.picUrls[i]);
             }
             var descList = new Array();
             //旋转图片跟随简介
@@ -132,6 +133,5 @@ $(document).ready(function () {
     }
 
     showImagesFromLocalJson('data/example.json');
-
 
 });
