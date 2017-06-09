@@ -34,16 +34,16 @@ html,body{
     z-index: 10;
 }
 #list li:nth-child(1){
-    background: url("../imags/b.png") no-repeat;
+    background: red;
 }
 #list li:nth-child(2){
-    background: url("../imags/c.png") no-repeat;
+    background: green;
 }
 #list li:nth-child(3){
-    background: url("../imags/d.png") no-repeat;
+    background: gold;
 }
 #list li:nth-child(4){
-    background: url("../imags/e.png") no-repeat;
+    background: darkcyan;
 }
 
 
