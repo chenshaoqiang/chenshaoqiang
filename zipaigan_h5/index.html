@@ -61,7 +61,16 @@
         </div>
     </div>
     <!--放大镜框-->
-    <div class="magnifier_box" id="magnifier_box"></div>
+    <div class="magnifier_box" id="magnifier_box">
+        <div class="magnifier_box_img" id="magnifierImg1">
+            <img name="img"
+                 id="magnifier_img_work"
+                 src="">
+        </div>
+        <div class="magnifier_box_img" id="magnifierImg2">
+
+        </div>
+    </div>
     <!--描述-->
     <div class="describe">
         <span class="describe_span">北京一日游，和风煦煦。</span>
@@ -82,6 +91,7 @@
     var userNameSpan = $("#user_name_span");                   // 用户姓名
     var creatTimeSpan= $("#creat_time_span");                  // 时间
     var bigPic = $(".scroll-img-td img");
+    var boxPic = $(".magnifier_box_img img");
     var isPlay = true;                                         //是否滚动状态设置，默认滚动
     var isTurn = true;                                         //是否强制横屏的状态控制
     var speed = 30;                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
@@ -163,7 +173,7 @@
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
         var imgBoxH=imgHeight+addHeight;
-        var imgBoxW=(imgHeight+addHeight)*prop*2;
+        var imgBoxW=(imgHeight+addHeight)*prop;
 
         console.log(imgBoxW,imgBoxH,imgBoxW/imgBoxH,prop);
 
@@ -176,10 +186,10 @@
             "width":imgBoxH,
             "height":imgBoxH
         });
-        $("#magnifier_box").css("background-image","url("+$(bigPic).attr("src")+")");
-        $("#magnifier_box").css("background-repeat","no-repeat");
-        $("#magnifier_box").css("background-size",imgBoxW+"px "+imgBoxH+"px");
-        $("#magnifier_box").css("background-position","100% 100%");
+
+        $(".magnifier_box_img").css("width",Math.round(imgBoxW));
+        $("#magnifierImg2").css("left",Math.round(imgBoxW));
+        magnifierImg2.innerHTML = magnifierImg1.innerHTML;
 
     });
     //小放大镜点击
@@ -414,6 +424,7 @@
                 creatTimeSpan.text(creatTime);
                 userHeadImg.attr("src", userHeadUrl);
                 bigPic.attr("src", data.data.url);
+                boxPic.attr("src", data.data.url);
 
                 getImgSize();
             }

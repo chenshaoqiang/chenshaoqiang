@@ -211,3 +211,22 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     background-size: 1700px 266px;
     z-index: 99;
 }
+.magnifier_box_img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.magnifier_box_img img{
+    height: 100%;
+}
+#magnifierImg1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#magnifierImg2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
