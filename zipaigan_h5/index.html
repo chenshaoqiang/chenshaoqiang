@@ -429,24 +429,6 @@
 
         slideImg(marquePic1,scrollImgBox,len);
         slideImg(magnifierImg1,magnifierBox,len2);
-        /*if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-
-            scrollImgBox.scrollLeft = 0;
-
-        } else {
-
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
-
-            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-            if (scrollImgBox.scrollLeft <= 0) {
-                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
-            }
-
-            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
-                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
-            }
-        }*/
 
     };
     // 滑动结束事件处理
