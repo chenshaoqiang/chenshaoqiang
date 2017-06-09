@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42922375">
-              <caret line="171" column="29" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.336758">
+              <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -59,9 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/ucrCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/upmCtrl.js" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/uprCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/user/tab/wksCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/works/status/sub_ingCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/view/nav/nav.html" />
@@ -109,6 +106,9 @@
         <option value="$PROJECT_DIR$/css3动画和属性.html" />
         <option value="$PROJECT_DIR$/upDown/css/H5_1.css" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
+        <option value="$PROJECT_DIR$/zipaigan_h5/xuexishe.html" />
+        <option value="$PROJECT_DIR$/zipaigan_h5/111.html" />
+        <option value="$PROJECT_DIR$/zipaigan_h5/baseTop.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
       </list>
     </option>
@@ -294,12 +294,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00393" summary="6.8">
-      <created>1496891104448</created>
-      <option name="number" value="00393" />
-      <option name="project" value="LOCAL" />
-      <updated>1496891104448</updated>
     </task>
     <task id="LOCAL-00394" summary="6.8">
       <created>1496891374588</created>
@@ -589,14 +583,20 @@
       <option name="project" value="LOCAL" />
       <updated>1496973986561</updated>
     </task>
-    <option name="localTasksCounter" value="442" />
+    <task id="LOCAL-00442" summary="6.8">
+      <created>1496974193353</created>
+      <option name="number" value="00442" />
+      <option name="project" value="LOCAL" />
+      <updated>1496974193353</updated>
+    </task>
+    <option name="localTasksCounter" value="443" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15104167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -958,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42922375">
-          <caret line="171" column="29" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.336758">
+          <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="8" />
           <folding />
         </state>
       </provider>

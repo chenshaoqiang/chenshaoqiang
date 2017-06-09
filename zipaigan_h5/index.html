@@ -157,15 +157,20 @@
     $("#big_magnifier").on("click",function(){
 
         //marquePic1.offsetWidth - scrollImgBox.scrollLeft
+
         console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
+
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
         var imgBoxH=imgHeight+addHeight;
         var imgBoxW=(imgHeight+addHeight)*prop*2;
 
+        console.log(imgBoxW,imgBoxH,imgBoxW/imgBoxH,prop);
+
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
 
+        //设置背景图片在X轴上重复
         $("#magnifier_box").css({
             "display":"block",
             "width":imgBoxH,
@@ -173,7 +178,7 @@
             "background":"url("+$(bigPic).attr("src")+") repeat-x"
         });
         $("#magnifier_box").css("background-size",imgBoxW+"px "+imgBoxH+"px");
-        $("#magnifier_box").css("background-position","0%");
+        $("#magnifier_box").css("background-position","0 0");
 
     });
     //小放大镜点击
