@@ -174,10 +174,10 @@
         $("#magnifier_box").css({
             "display":"block",
             "width":imgBoxH,
-            "height":imgBoxH,
-            "background":"url("+$(bigPic).attr("src")+")"
+            "height":imgBoxH
         });
-        $("#magnifier_box").css("background-repeat","repeat");
+        $("#magnifier_box").css("background-image","url("+$(bigPic).attr("src")+")");
+        $("#magnifier_box").css("background-repeat","no-repeat");
         $("#magnifier_box").css("background-size",imgBoxW+"px "+imgBoxH+"px");
         $("#magnifier_box").css("background-position","0% 0%");
 
