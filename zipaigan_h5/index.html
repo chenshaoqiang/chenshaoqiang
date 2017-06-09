@@ -103,7 +103,6 @@
     var startX = 0;
     var startY = 0;
     var timer;                                                  // 用于定时器
-    var bigN;
 
     //复制大图，用于无缝拼接
     function getImgSize(){
@@ -176,7 +175,6 @@
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
         var imgBoxH=imgHeight+addHeight;
         var imgBoxW=(imgHeight+addHeight)*prop;
-        bigN=imgBoxH/imgHeight;//获取放大比率
 
         console.log(imgBoxW,imgBoxH,imgBoxW/imgBoxH,prop);
 
@@ -332,6 +330,8 @@
     // 实现图片循环滚动的方法
     function Marquee(n) {
 
+        var n2=n*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
+
         function autoPlay(outerBox,innerBox,speed){
 
             if (outerBox.offsetWidth - innerBox.scrollLeft <= 0) {
@@ -345,7 +345,7 @@
             }
 
         }
-        autoPlay( magnifierImg1,magnifierBox,n*bigN );//放大镜播放
+        autoPlay( magnifierImg1,magnifierBox,n2 );//放大镜播放
         autoPlay( marquePic1,scrollImgBox,n );//底图播放
 
     }
@@ -395,7 +395,10 @@
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        console.log(len,len*bigN);
+        //计算距离
+        var len2=len*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
+
+        console.log(len,len2);
 
         function slideImg(outerBox,innerBox,speed){
 
@@ -425,7 +428,7 @@
         }
 
         slideImg(marquePic1,scrollImgBox,len);
-        slideImg(magnifierImg1,magnifierBox,len*bigN);
+        slideImg(magnifierImg1,magnifierBox,len2);
         /*if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
