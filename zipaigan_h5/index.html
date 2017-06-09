@@ -175,8 +175,9 @@
             "display":"block",
             "width":imgBoxH,
             "height":imgBoxH,
-            "background":"url("+$(bigPic).attr("src")+") repeat-x"
+            "background":"url("+$(bigPic).attr("src")+")"
         });
+        $("#magnifier_box").css("background-repeat","repeat");
         $("#magnifier_box").css("background-size",imgBoxW+"px "+imgBoxH+"px");
         $("#magnifier_box").css("background-position","0% 0%");
 
