@@ -19,7 +19,7 @@
 <div class="wrap" id="wrap">
     <!--用户信息-->
     <div class="user_info">
-        <input type="hidden" value="4198" id="protionId"/>
+        <input type="hidden" value="4786" id="protionId"/>
         <div class="user_head">
             <img id="img_user_head" src="">
         </div>
@@ -156,6 +156,8 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
+        //marquePic1.offsetWidth - scrollImgBox.scrollLeft
+        console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
         var imgBoxH=imgHeight+addHeight;
@@ -399,6 +401,8 @@
                 var username = data.data.name;
                 var userHeadUrl = data.data.headimgurl;
                 var creatTime=dateFormat(data.data.createtime);
+
+                (userHeadUrl==""||userHeadUrl==null||userHeadUrl==undefined)?userHeadUrl="./img/default_head.png":void 0;
 
                 userNameSpan.text(username);
                 creatTimeSpan.text(creatTime);
