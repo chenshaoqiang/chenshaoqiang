@@ -332,26 +332,21 @@
     // 实现图片循环滚动的方法
     function Marquee(n) {
 
-        console.log(magnifierImg1.offsetWidth,magnifierBox.scrollLeft,bigN);
+        function autoPlay(outerBox,innerBox,speed){
 
-        if (magnifierImg1.offsetWidth - magnifierBox.scrollLeft <= 0) {
+            if (outerBox.offsetWidth - innerBox.scrollLeft <= 0) {
 
-            magnifierBox.scrollLeft = 0;
+                innerBox.scrollLeft = 0;
 
-        } else {
+            } else {
 
-            magnifierBox.scrollLeft = magnifierBox.scrollLeft + n*bigN;
+                innerBox.scrollLeft = innerBox.scrollLeft + speed;
 
-        }
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-
-            scrollImgBox.scrollLeft = 0;
-
-        } else {
-
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+            }
 
         }
+        autoPlay( magnifierImg1,magnifierBox,n*bigN );//放大镜播放
+        autoPlay( marquePic1,scrollImgBox,n );//底图播放
 
     }
 
@@ -400,7 +395,36 @@
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+        function slideImg(outerBox,innerBox,speed){
+
+            if (outerBox.offsetWidth - innerBox.scrollLeft <= 0) {
+
+                innerBox.scrollLeft = 0;
+
+            } else {
+
+                innerBox.scrollLeft = innerBox.scrollLeft + speed;
+
+                // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+                if (innerBox.scrollLeft <= 0) {
+
+                    innerBox.scrollLeft = outerBox.offsetWidth - 2; // 目的是为了能继续向右滑动
+
+                }
+
+                // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+                if (innerBox.scrollLeft >= outerBox.offsetWidth) {
+
+                    innerBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+
+                }
+            }
+
+        }
+
+        slideImg(marquePic1,scrollImgBox,len);
+        slideImg(magnifierImg1,magnifierBox,len*bigN);
+        /*if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
 
@@ -417,7 +441,8 @@
             if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
                 scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
             }
-        }
+        }*/
+
     };
     // 滑动结束事件处理
     var endHandler = function (event) {};
