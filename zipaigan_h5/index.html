@@ -96,6 +96,7 @@
     var isTurn = true;                                         //是否强制横屏的状态控制
     var speed = 30;                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
+    var magnifierBox=document.getElementById("magnifier_box");
     var scrollImg=document.getElementById("scroll-img");        //img活动框
     var imgHeight;
     var prop;                                                   //通过真实图片获得宽高比
@@ -329,6 +330,17 @@
     // 实现图片循环滚动的方法
     function Marquee(n) {
 
+        console.log(magnifierImg1.offsetWidth,magnifierBox.scrollLeft);
+
+        if (magnifierImg1.offsetWidth - magnifierBox.scrollLeft <= 0) {
+
+            magnifierBox.scrollLeft = 0;
+
+        } else {
+
+            magnifierBox.scrollLeft = magnifierBox.scrollLeft + n*1.2;
+
+        }
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -338,6 +350,7 @@
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
 
         }
+
     }
 
     // 滑动开始事件处理
@@ -450,6 +463,7 @@
     scrollImgBox.addEventListener("touchstart", startHandler, false);
     scrollImgBox.addEventListener("touchmove", moveHandler, false);
     scrollImgBox.addEventListener("touchend", endHandler, false);
+
 
 </script>
 </html>
