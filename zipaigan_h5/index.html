@@ -168,6 +168,9 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
+        //每次点击大放大镜，先同步定位
+        magnifierBox.scrollLeft=(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
+
         isShowMagBox=true;//显示放大镜框
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
