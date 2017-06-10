@@ -94,6 +94,7 @@
     var boxPic = $(".magnifier_box_img img");
     var isPlay = true;                                         //是否滚动状态设置，默认滚动
     var isTurn = true;                                         //是否强制横屏的状态控制
+    var isShowMagBox = false;                                   //放大镜框是否显示
     var speed = 30;                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
     var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
     var magnifierBox=document.getElementById("magnifier_box");
@@ -167,10 +168,7 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
-        //marquePic1.offsetWidth - scrollImgBox.scrollLeft
-
-        console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft);
-
+        isShowMagBox=true;//显示放大镜框
         var userInfoHeight= parseInt($(".user_info").css("height"));
         var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;
         var imgBoxH=imgHeight+addHeight;
@@ -197,8 +195,20 @@
     //小放大镜点击
     $("#magnifier_div").on("click",function(){
 
-        $(".big_magnifier").css("display","block");//放大镜大图标消失
-        $("#magnifier_div").css("display","none");//放大镜小图标出现
+        if(isShowMagBox){
+
+            //如果放大镜框已经打开，再次点击小放大镜则关闭它
+            $("#magnifier_box").css("display","none");
+            $("#magnifier_div").css("display","block");
+            $(".big_magnifier").css("display","none");
+
+        }else{
+
+            $(".big_magnifier").css("display","block");//放大镜大图标出现
+            $("#magnifier_div").css("display","none");//放大镜小图标消失
+
+        }
+
 
     });
     // transform 强制横屏
@@ -376,7 +386,6 @@
         }
 
         $(".big_magnifier").css("display","none");
-        $("#magnifier_box").css("display","block");
 
     };
     // 滑动过程中事件处理
