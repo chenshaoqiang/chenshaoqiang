@@ -103,6 +103,7 @@
         magnifierBox=document.getElementById("magnifier_box"),
         scrollImg=document.getElementById("scroll-img"),        //img活动框
         imgHeight,
+        imgBoxH,
         deviceWidth,                                            //设备宽
         prop,                                                   //通过真实图片获得宽高比
         timer;                                                // 用于定时器
@@ -120,13 +121,13 @@
                  */
                 var realWidth = this.width;
                 var realHeight = this.height;
-                prop=(realWidth/realHeight);
-                imgHeight=Math.round( parseInt($("#wrap").css("height")) /2 );
+                prop = (realWidth / realHeight);
+                imgHeight = Math.round( parseInt($("#wrap").css("height")) /2 );
 
-                var userInfoHeight= parseInt($(".user_info").css("height"));//用户信息框的高
-                var addHeight=parseInt(userInfoHeight-(userInfoHeight * (0.2/1.1)))*2;//取用户信息框的高度减去0.2rem的值的高度为放大镜的上下附加高度
-                var imgBoxH=imgHeight+addHeight;//放大镜框的直径
-                var imgBoxW=(imgHeight+addHeight)*prop;//框内图片的实际宽度
+                var userInfoHeight = parseInt($(".user_info").css("height"));//用户信息框的高
+                var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;//取用户信息框的高度减去0.2rem的值的高度为放大镜的上下附加高度
+                imgBoxH = imgHeight+addHeight;//放大镜框的直径
+                var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
 
                 $("#main_img_work").css("width",Math.round(imgHeight*prop));
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
@@ -374,7 +375,7 @@
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
         magnifierBox.style.left = m_left;
-        var m_max = parseInt($("#scrollImgBox").css("width"));
+        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(imgBoxH);
 
         if(!isTurn){
 
@@ -382,16 +383,17 @@
 
         }
 
+        m_len = m_len / 50;//减速
         m_left = m_left + m_len;
         magnifierBox.style.left = m_left + m_len + "px";
 
-        if(m_left >= m_max){
+        if(parseInt(magnifierBox.style.left)  >= m_max){
 
-            m_left = m_max;
+            magnifierBox.style.left = m_max + "px";
 
-        }else if(m_left <= 0){
+        }else if(parseInt(magnifierBox.style.left) <= 0){
 
-            m_left = 0;
+            magnifierBox.style.left = 0;
 
         }
 

@@ -47,11 +47,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8406593">
-              <caret line="394" column="12" selection-start-line="394" selection-start-column="12" selection-end-line="394" selection-end-column="12" />
-              <folding>
-                <element signature="e#12357#12875#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.6282051">
+              <caret line="412" column="0" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -357,12 +355,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00416" summary="6.8">
-      <created>1496908885851</created>
-      <option name="number" value="00416" />
-      <option name="project" value="LOCAL" />
-      <updated>1496908885851</updated>
-    </task>
     <task id="LOCAL-00417" summary="6.8">
       <created>1496909992991</created>
       <option name="number" value="00417" />
@@ -651,7 +643,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497110335524</updated>
     </task>
-    <option name="localTasksCounter" value="465" />
+    <task id="LOCAL-00465" summary="6.10">
+      <created>1497115280887</created>
+      <option name="number" value="00465" />
+      <option name="project" value="LOCAL" />
+      <updated>1497115280888</updated>
+    </task>
+    <option name="localTasksCounter" value="466" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1022,7 +1020,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1045,11 +1043,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8406593">
-          <caret line="394" column="12" selection-start-line="394" selection-start-column="12" selection-end-line="394" selection-end-column="12" />
-          <folding>
-            <element signature="e#12357#12875#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6282051">
+          <caret line="412" column="0" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
