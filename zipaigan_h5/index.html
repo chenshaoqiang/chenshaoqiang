@@ -84,25 +84,28 @@
 </body>
 <script type="application/javascript" charset="utf-8">
 
-    var protionId = $("#protionId").val();
-    var userHeadImg = $("div.user_head img");                  // 用户头像
-    var userNameSpan = $("#user_name_span");                   // 用户姓名
-    var creatTimeSpan= $("#creat_time_span");                  // 时间
-    var bigPic = $(".scroll-img-td img");
-    var boxPic = $(".magnifier_box_img img");
-    var isPlay = true;                                         //是否滚动状态设置，默认滚动
-    var isTurn = true;                                         //是否强制横屏的状态控制
-    var isShowMagBox = false;                                   //放大镜框是否显示
-    var startX = 0;
-    var startY = 0;
-    var speed = 30;                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
-    var scrollImgBox=document.getElementById("scrollImgBox");   //内部活动框
-    var magnifierBox=document.getElementById("magnifier_box");
-    var scrollImg=document.getElementById("scroll-img");        //img活动框
-    var imgHeight;
-    var deviceWidth;                                            //设备宽
-    var prop;                                                   //通过真实图片获得宽高比
-    var timer;                                                  // 用于定时器
+    var protionId = $("#protionId").val(),
+        userHeadImg = $("div.user_head img"),                  // 用户头像
+        userNameSpan = $("#user_name_span"),                   // 用户姓名
+        creatTimeSpan= $("#creat_time_span"),                  // 时间
+        bigPic = $(".scroll-img-td img"),
+        boxPic = $(".magnifier_box_img img"),
+        isPlay = true,                                        //是否滚动状态设置，默认滚动
+        isTurn = true,                                         //是否强制横屏的状态控制
+        isShowMagBox = false,                                   //放大镜框是否显示
+        startX = 0,
+        startY = 0,
+        m_startX = 0,
+        m_startY = 0,
+        m_left = 0,
+        speed = 30,                                            //自动播放的时,使用的间隔时间,间隔越小速度越大
+        scrollImgBox=document.getElementById("scrollImgBox"),   //内部活动框
+        magnifierBox=document.getElementById("magnifier_box"),
+        scrollImg=document.getElementById("scroll-img"),        //img活动框
+        imgHeight,
+        deviceWidth,                                            //设备宽
+        prop,                                                   //通过真实图片获得宽高比
+        timer;                                                // 用于定时器
 
     //复制大图，用于无缝拼接
     function getImgSize(){
@@ -171,7 +174,7 @@
     //播放按钮点击事件
     $("#switch_div").on("click",function(){
 
-        pic_scroll();
+        isPlay?startRolling():stopRolling();
 
     });
 
@@ -182,6 +185,9 @@
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
         $("#magnifier_box").css("display","block");//放大镜框出现
+
+        //放大镜框内容焦点同步
+        magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
 
     });
 
@@ -284,13 +290,6 @@
 
     });
 
-    //横屏刷新
-    if(window.orientation == 90 || window.orientation == -90){
-
-        $(".big_magnifier").css("display","block");//放大镜大图标出现
-
-    }
-
     //监听横竖屏状态，当用户竖屏锁定关闭的时候有效
     $(window).bind("orientationchange", function () {
 
@@ -312,6 +311,13 @@
 
     });
 
+    //横屏刷新
+    if(window.orientation == 90 || window.orientation == -90){
+
+        $(".big_magnifier").css("display","block");//放大镜大图标出现
+
+    }
+
     //停止滚动
     function stopRolling() {
 
@@ -320,23 +326,13 @@
         clearInterval(timer);
 
     }
+
     //继续滚动
     function startRolling() {
 
         isPlay = false;
         $("#switch_div").find('img').attr("src", "img/pause.png");
         timer = setInterval("Marquee(5)", speed);
-
-    }
-    //开关按钮点击处理函数
-    function pic_scroll() {
-
-        if (isPlay) {
-            // 继续滚动
-            startRolling();
-        } else {
-            stopRolling();
-        }
 
     }
 
@@ -357,8 +353,53 @@
 
     }
 
-    // 滑动开始事件处理
+    //放大镜开始拖动
+    var magnifierStartHandler = function(event){
+
+        // 停止自动播放
+        stopRolling();
+        m_startX = event.touches[0].pageX;
+        m_startY = event.touches[0].pageY;
+
+    };
+
+    //放大镜拖动过程
+    var magnifierMoveHandler = function(event){
+
+        event.preventDefault();
+
+        var m_touch = event.touches[0];
+        var m_moveX = m_touch.pageX;
+        var m_moveY = m_touch.pageY;
+        var m_dY = m_moveY - m_startY;
+        var m_len = m_moveX - m_startX;
+        magnifierBox.style.left = m_left;
+        var m_max = parseInt($("#scrollImgBox").css("width"));
+
+        if(!isTurn){
+
+            m_len = m_dY;//如果已经强制横屏，则滑动判断量改为Y方向
+
+        }
+
+        m_left = m_left + m_len;
+        magnifierBox.style.left = m_left + m_len + "px";
+
+        if(m_left >= m_max){
+
+            m_left = m_max;
+
+        }else if(m_left <= 0){
+
+            m_left = 0;
+
+        }
+
+    };
+
+    //滑动开始事件处理
     var startHandler = function (event) {
+
         // 停止自动播放
         stopRolling();
         startX = event.touches[0].pageX;
@@ -385,8 +426,10 @@
         $(".big_magnifier").css("display","none");
 
     };
+
     // 滑动过程中事件处理
     var moveHandler = function (event) {
+
         event.preventDefault();
 
         var touch = event.touches[0];
@@ -396,8 +439,11 @@
         var len = moveX - startX;
 
         if(!isTurn){
+
             len = dY;//如果已经强制横屏，则滑动判断量改为Y方向
+
         }
+
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
@@ -428,12 +474,11 @@
             }
         }
 
-        console.log("小W:",marquePic1.offsetWidth,"小IMG:",scrollImgBox.scrollLeft,"百分比:",scrollImgBox.scrollLeft/marquePic1.offsetWidth);
-        console.log("大W:",magnifierImg1.offsetWidth,"大IMG:",magnifierBox.scrollLeft,"百分比:",magnifierBox.scrollLeft/magnifierImg1.offsetWidth);
-
     };
+
     // 滑动结束事件处理
     var endHandler = function (event) {};
+
     // 请求接口刷新数据
     $.ajax({
         url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
@@ -459,6 +504,7 @@
             }
         }
     });
+
     //时间格式化
     function dateFormat(input){
         if (input == null || input == '' || typeof(input) == "undefined") {
@@ -475,9 +521,13 @@
          return year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds;
 
     }
+
     scrollImgBox.addEventListener("touchstart", startHandler, false);
     scrollImgBox.addEventListener("touchmove", moveHandler, false);
     scrollImgBox.addEventListener("touchend", endHandler, false);
+
+    magnifierBox.addEventListener("touchstart", magnifierStartHandler, false);
+    magnifierBox.addEventListener("touchmove", magnifierMoveHandler, false);
 
 
 </script>
