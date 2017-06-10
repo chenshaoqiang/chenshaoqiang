@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.25641027">
-              <caret line="171" column="98" selection-start-line="171" selection-start-column="98" selection-end-line="171" selection-end-column="98" />
+              <caret line="441" column="46" selection-start-line="441" selection-start-column="46" selection-end-line="441" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -230,7 +230,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="shi&#9;null&#9;null" />
   </component>
@@ -312,12 +312,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00413" summary="6.8">
-      <created>1496908463808</created>
-      <option name="number" value="00413" />
-      <option name="project" value="LOCAL" />
-      <updated>1496908463808</updated>
     </task>
     <task id="LOCAL-00414" summary="6.8">
       <created>1496908624653</created>
@@ -607,7 +601,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497069178457</updated>
     </task>
-    <option name="localTasksCounter" value="462" />
+    <task id="LOCAL-00462" summary="6.10">
+      <created>1497069978711</created>
+      <option name="number" value="00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1497069978711</updated>
+    </task>
+    <option name="localTasksCounter" value="463" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -997,7 +997,7 @@
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25641027">
-          <caret line="171" column="98" selection-start-line="171" selection-start-column="98" selection-end-line="171" selection-end-column="98" />
+          <caret line="441" column="46" selection-start-line="441" selection-start-column="46" selection-end-line="441" selection-end-column="46" />
           <folding />
         </state>
       </provider>
