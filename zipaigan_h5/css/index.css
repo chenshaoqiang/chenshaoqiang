@@ -126,6 +126,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     bottom: .2rem;
     z-index: 999;
 }
+/*--------大放大镜--------*/
 .big_magnifier{
     overflow: hidden;
     width: 4.6rem;
@@ -153,6 +154,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     bottom: 0;
     left: 0;
 }
+/*--------右侧三个图标---------*/
 .turn_div{
     overflow: hidden;
     width: .45rem;
@@ -195,20 +197,18 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     left: 0;
     top: 0;
 }
+/*--------放大镜框-----------*/
 .magnifier_div{
     display: none;
 }
 .magnifier_box{
-    border: .08rem solid #dddddd;
     position: absolute;
-    left: 0;
-    top: 0.2rem;
+    left: 0.05rem;
+    top: 0.05rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    display: none;
     overflow: hidden;
-    background-size: 1700px 266px;
     z-index: 99;
 }
 .magnifier_box_img{
@@ -229,4 +229,65 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     position: absolute;
     top: 0;
     left: 0;
+}
+/*--------圆形进度条---------*/
+.circleProgress_wrapper{
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    z-index: 99;
+    display: none;
+}
+.wrapper{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+.right{
+    right:0;
+}
+.left{
+    left:0;
+}
+.circleProgress{
+    box-sizing: border-box;
+    border:.05rem solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    -webkit-transform:  rotate(-135deg);
+    -moz-transform:  rotate(-135deg);
+    -ms-transform:  rotate(-135deg);
+    -o-transform:  rotate(-135deg);
+    transform:  rotate(-135deg);
+}
+.rightCircle{
+    border-top:.05rem solid gold;
+    border-right:.05rem solid gold;
+    right:0;
+    -webkit-animation: circleProgressLoad_right 5s linear infinite;
+}
+.leftCircle{
+    border-bottom:.05rem solid gold;
+    border-left:.05rem solid gold;
+    left:0;
+    -webkit-animation: circleProgressLoad_left 5s linear infinite;
+}
+@-webkit-keyframes circleProgressLoad_right{
+    0%{
+        -webkit-transform: rotate(-135deg);
+    }
+    50%,100%{
+        -webkit-transform: rotate(45deg);
+    }
+}
+@-webkit-keyframes circleProgressLoad_left{
+    0%,50%{
+        -webkit-transform: rotate(-135deg);
+    }
+    100%{
+        -webkit-transform: rotate(45deg);
+    }
 }

@@ -59,14 +59,20 @@
         </div>
     </div>
     <!--放大镜框-->
-    <div class="magnifier_box" id="magnifier_box">
-        <div class="magnifier_box_img" id="magnifierImg1">
-            <img name="img"
-                 id="magnifier_img_work"
-                 src="">
+    <div class="circleProgress_wrapper" id="magnifier_box">
+        <div class="wrapper right">
+            <div class="circleProgress rightCircle"></div>
         </div>
-        <div class="magnifier_box_img" id="magnifierImg2">
-
+        <div class="wrapper left">
+            <div class="circleProgress leftCircle"></div>
+        </div>
+        <div class="magnifier_box">
+            <div class="magnifier_box_img" id="magnifierImg1">
+                <img name="img"
+                     id="magnifier_img_work"
+                     src="">
+            </div>
+            <div class="magnifier_box_img" id="magnifierImg2"></div>
         </div>
     </div>
     <!--描述-->
@@ -125,15 +131,19 @@
                 imgHeight = Math.round( parseInt($("#wrap").css("height")) /2 );
 
                 var userInfoHeight = parseInt($(".user_info").css("height"));//用户信息框的高
-                var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;//取用户信息框的高度减去0.2rem的值的高度为放大镜的上下附加高度
+                var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.25/1.1)))*2;//取用户信息框的高度减去0.25rem的值的高度为放大镜的上下附加高度
+                var addWapHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;
                 imgBoxH = imgHeight+addHeight;//放大镜框的直径
+                var progressBoxH = imgHeight+addWapHeight;//进度条框的直径
                 var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
 
                 $("#main_img_work").css("width",Math.round(imgHeight*prop));
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
-                $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
+                $(".circleProgress_wrapper").css({"width":progressBoxH, "height":progressBoxH});//进度条框
+                $(".circleProgress").css({"width":imgBoxH, "height":imgBoxH});//进度条内圆框
+                $(".magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});
                 $("#magnifierImg2").css("left",Math.round(imgBoxW));
                 magnifierImg2.innerHTML = magnifierImg1.innerHTML;
