@@ -59,14 +59,14 @@
         </div>
     </div>
     <!--放大镜框-->
-    <div class="circleProgress_wrapper" id="magnifier_box">
+    <div class="circleProgress_wrapper" id="circleProgress_wrapper">
         <div class="wrapper right">
             <div class="circleProgress rightCircle"></div>
         </div>
         <div class="wrapper left">
             <div class="circleProgress leftCircle"></div>
         </div>
-        <div class="magnifier_box">
+        <div class="magnifier_box" id="magnifier_box">
             <div class="magnifier_box_img" id="magnifierImg1">
                 <img name="img"
                      id="magnifier_img_work"
@@ -107,9 +107,10 @@
         speed = 30,                                            //自动播放的时,使用的间隔时间,间隔越小速度越大
         scrollImgBox=document.getElementById("scrollImgBox"),   //内部活动框
         magnifierBox=document.getElementById("magnifier_box"),
+        circleProgressWrapper=document.getElementById("circleProgress_wrapper"),
         scrollImg=document.getElementById("scroll-img"),        //img活动框
         imgHeight,
-        imgBoxH,
+        progressBoxH,
         deviceWidth,                                            //设备宽
         prop,                                                   //通过真实图片获得宽高比
         timer;                                                // 用于定时器
@@ -133,8 +134,8 @@
                 var userInfoHeight = parseInt($(".user_info").css("height"));//用户信息框的高
                 var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.25/1.1)))*2;//取用户信息框的高度减去0.25rem的值的高度为放大镜的上下附加高度
                 var addWapHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;
-                imgBoxH = imgHeight+addHeight;//放大镜框的直径
-                var progressBoxH = imgHeight+addWapHeight;//进度条框的直径
+                var imgBoxH = imgHeight+addHeight;//放大镜框的直径
+                progressBoxH = imgHeight+addWapHeight;//进度条框的直径
                 var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
 
                 $("#main_img_work").css("width",Math.round(imgHeight*prop));
@@ -142,8 +143,8 @@
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
                 $(".circleProgress_wrapper").css({"width":progressBoxH, "height":progressBoxH});//进度条框
-                $(".circleProgress").css({"width":imgBoxH, "height":imgBoxH});//进度条内圆框
-                $(".magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
+                $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});//进度条内圆框
+                $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});
                 $("#magnifierImg2").css("left",Math.round(imgBoxW));
                 magnifierImg2.innerHTML = magnifierImg1.innerHTML;
@@ -195,7 +196,7 @@
         isShowMagBox=true;//显示放大镜框
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
-        $("#magnifier_box").css("display","block");//放大镜框出现
+        $(".circleProgress_wrapper").css("display","block");//放大镜框出现
 
         //放大镜框内容焦点同步
         magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
@@ -208,7 +209,7 @@
         if(isShowMagBox){
 
             //如果放大镜框已经打开，再次点击小放大镜则关闭它
-            $("#magnifier_box").css("display","none");
+            $(".circleProgress_wrapper").css("display","none");
             $("#magnifier_div").css("display","block");
             $(".big_magnifier").css("display","none");
 
@@ -258,7 +259,7 @@
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
-            $("#magnifier_box").css("display","none");
+            $(".circleProgress_wrapper").css("display","none");
 
             document.documentElement.style.fontSize = ( window.screen.width / 7.5) + 'px';
             getImgSize();//重排img使拼接无缝
@@ -316,7 +317,7 @@
 
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
-            $("#magnifier_box").css("display","none");
+            $(".circleProgress_wrapper").css("display","none");
 
         }
 
@@ -385,7 +386,7 @@
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
         magnifierBox.style.left = m_left;
-        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(imgBoxH);
+        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);
 
         if(!isTurn){
 
@@ -395,15 +396,15 @@
 
         m_len = m_len / 50;//减速
         m_left = m_left + m_len;
-        magnifierBox.style.left = m_left + m_len + "px";
+        circleProgressWrapper.style.left = m_left + m_len + "px";
 
-        if(parseInt(magnifierBox.style.left)  >= m_max){
+        if(parseInt(circleProgressWrapper.style.left)  >= m_max){
 
-            magnifierBox.style.left = m_max + "px";
+            circleProgressWrapper.style.left = m_max + "px";
 
-        }else if(parseInt(magnifierBox.style.left) <= 0){
+        }else if(parseInt(circleProgressWrapper.style.left) <= 0){
 
-            magnifierBox.style.left = 0;
+            circleProgressWrapper.style.left = 0;
 
         }
 
