@@ -267,13 +267,29 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     border-top:.08rem solid gold;
     border-right:.08rem solid gold;
     right:0;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+
+    /*
     -webkit-animation: circleProgressLoad_right 5s linear infinite;
+    */
 }
 .leftCircle{
     border-bottom:.08rem solid gold;
     border-left:.08rem solid gold;
     left:0;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+
+    /*
     -webkit-animation: circleProgressLoad_left 5s linear infinite;
+    */
 }
 @-webkit-keyframes circleProgressLoad_right{
     0%{
