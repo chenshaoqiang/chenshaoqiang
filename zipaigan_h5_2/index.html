@@ -145,11 +145,7 @@
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});//进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});
-
-                $("#magnifierImg1").css({
-                    "background":"url("+$(bigPic).attr("src")+") no-repeat" ,
-                    "background-size":"100%"
-                });
+                $("#magnifierImg1").css({"background":"url("+$(bigPic).attr("src")+") no-repeat" , "background-size":"100%"});//放大镜内的背景图
 
             });
         });
@@ -437,7 +433,7 @@
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
 
-        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);
+        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);//放大镜框可移动距离
 
         if(!isTurn){
 
