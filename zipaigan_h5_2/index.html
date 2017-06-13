@@ -68,11 +68,7 @@
         </div>
         <div class="magnifier_box" id="magnifier_box">
             <div class="magnifier_box_img" id="magnifierImg1">
-                <img name="img"
-                     id="magnifier_img_work"
-                     src="">
             </div>
-            <div class="magnifier_box_img" id="magnifierImg2"></div>
         </div>
     </div>
     <!--描述-->
@@ -110,6 +106,7 @@
         circleProgressWrapper=document.getElementById("circleProgress_wrapper"),
         scrollImg=document.getElementById("scroll-img"),        //img活动框
         imgHeight,
+        littleImgH,                                             //放大镜框出现的时候重置的底图的高
         progressBoxH,
         deviceWidth,                                            //设备宽
         prop,                                                   //通过真实图片获得宽高比
@@ -134,9 +131,11 @@
                 var userInfoHeight = parseInt($(".user_info").css("height"));//用户信息框的高
                 var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.25/1.1)))*2;//取用户信息框的高度减去0.25rem的值的高度为放大镜的上下附加高度
                 var addWapHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;
+
                 var imgBoxH = imgHeight+addHeight;//放大镜框的直径
                 progressBoxH = imgHeight+addWapHeight;//进度条框的直径
-                var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
+
+                littleImgH = Math.round( parseInt($("#wrap").css("width"))/ prop );//放大镜框出现的时候重置的底图的高
 
                 $("#main_img_work").css("width",Math.round(imgHeight*prop));
                 $("#marquePic2").css("left",Math.round(imgHeight*prop));
@@ -145,9 +144,6 @@
                 $(".circleProgress_wrapper").css({"width":progressBoxH, "height":progressBoxH});//进度条框
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});//进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
-                $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});
-                $("#magnifierImg2").css("left",Math.round(imgBoxW));
-                magnifierImg2.innerHTML = magnifierImg1.innerHTML;
 
             });
         });
@@ -193,13 +189,21 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
+        var bgSrc=$(bigPic).attr("src");
+
+        $(".scroll-img-td").css("display","none");//换图，隐藏
+        $("#scroll-img").css("height",littleImgH);
+        $("#scrollImgBox").css({
+            "background":bgSrc,
+            "background-size":"100%"
+        });
+
+
         isShowMagBox=true;//显示放大镜框
         $(".big_magnifier").css("display","none");//放大镜大图标消失
         $("#magnifier_div").css("display","block");//放大镜小图标出现
         $(".circleProgress_wrapper").css("display","block");//放大镜框出现
 
-        //放大镜框内容焦点同步
-        magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
 
     });
 
@@ -354,12 +358,10 @@
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
-            magnifierBox.scrollLeft = 0;//同步
 
         } else {
 
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
-            magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
 
         }
 
@@ -371,18 +373,15 @@
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
-            magnifierBox.scrollLeft = 0;//同步
 
         } else {
 
             scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
-            magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
 
             // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
             if (scrollImgBox.scrollLeft <= 0) {
 
                 scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
-                magnifierBox.scrollLeft = magnifierImg1.offsetWidth -2;
 
             }
 
@@ -390,7 +389,6 @@
             if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
 
                 scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
-                magnifierBox.scrollLeft = 0;//同步
 
             }
         }
