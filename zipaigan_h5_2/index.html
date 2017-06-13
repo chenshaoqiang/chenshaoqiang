@@ -268,6 +268,10 @@
 
         }else if(type=="back"){
 
+            $(".scroll-img-td").css("display","block");//换图，隐藏
+            $("#scroll-img").removeAttr("style");
+            $("#scrollImgBox").removeAttr("style");
+
             //返回竖屏（恢复）
             $(className).removeAttr("style");
             $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
@@ -287,9 +291,6 @@
     //横竖屏点击事件
     $("#turn_div").on("click",function(){
 
-        $(".scroll-img-td").css("display","block");//换图，隐藏
-        $("#scroll-img").removeAttr("style");
-        $("#scrollImgBox").removeAttr("style");
         $("#switch_div").css("display","block");
 
         var screenW=window.screen.width;//屏宽
