@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/css/index.css" afterPath="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27739727">
-              <caret line="416" column="22" selection-start-line="416" selection-start-column="22" selection-end-line="416" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.12328767">
+              <caret line="396" column="5" selection-start-line="396" selection-start-column="5" selection-end-line="396" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -104,12 +104,12 @@
         <option value="$PROJECT_DIR$/show/data/example.json" />
         <option value="$PROJECT_DIR$/show/js/index.js" />
         <option value="$PROJECT_DIR$/statistics_show/css/jquery.fullPage.css" />
-        <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/chineseDream.css" />
         <option value="$PROJECT_DIR$/zipaigan_h5/2.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/3.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/1.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
+        <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
       </list>
     </option>
   </component>
@@ -149,6 +149,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,8 +221,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,12 +312,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00423" summary="6.8">
-      <created>1496914229881</created>
-      <option name="number" value="00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1496914229881</updated>
     </task>
     <task id="LOCAL-00424" summary="6.8">
       <created>1496914508632</created>
@@ -607,7 +601,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497233654333</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="6.13">
+      <created>1497333153712</created>
+      <option name="number" value="00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1497333153712</updated>
+    </task>
+    <option name="localTasksCounter" value="473" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="5.6  update" />
     <MESSAGE value="5.7  update" />
     <MESSAGE value="5.7  全景360修改至正常" />
     <MESSAGE value="5.8  全景360修改至正常" />
@@ -672,7 +671,8 @@
     <MESSAGE value="6.8" />
     <MESSAGE value="6.10" />
     <MESSAGE value="6.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.12" />
+    <MESSAGE value="6.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,6 +681,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="273" column="28" selection-start-line="273" selection-start-column="28" selection-end-line="273" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paipai360/index2（5.7备份）.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.88013697">
@@ -973,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27739727">
-          <caret line="416" column="22" selection-start-line="416" selection-start-column="22" selection-end-line="416" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.12328767">
+          <caret line="396" column="5" selection-start-line="396" selection-start-column="5" selection-end-line="396" selection-end-column="5" />
           <folding />
         </state>
       </provider>

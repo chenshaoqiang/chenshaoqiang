@@ -348,7 +348,7 @@
 
     }
 
-    // 实现图片循环滚动的方法
+    //实现图片循环滚动的方法
     function Marquee(n) {
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
@@ -363,6 +363,37 @@
 
         }
 
+    }
+
+    //全局滑动处理函数
+    function slideProcessing(len){
+
+        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+
+            scrollImgBox.scrollLeft = 0;
+            magnifierBox.scrollLeft = 0;//同步
+
+        } else {
+
+            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
+            magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
+
+            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
+            if (scrollImgBox.scrollLeft <= 0) {
+
+                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
+                magnifierBox.scrollLeft = magnifierImg1.offsetWidth -2;
+
+            }
+
+            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
+            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
+
+                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
+                magnifierBox.scrollLeft = 0;//同步
+
+            }
+        }
     }
 
     //放大镜开始拖动
@@ -385,7 +416,7 @@
         var m_moveY = m_touch.pageY;
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
-        //circleProgressWrapper.style.left = m_left;
+
         var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);
 
         if(!isTurn){
@@ -460,32 +491,7 @@
         len = len * -1;   // 为了矫正方向
         len = len / 10;   // 为了减速
 
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
-
-            scrollImgBox.scrollLeft = 0;
-            magnifierBox.scrollLeft = 0;//同步
-
-        } else {
-
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + len;
-            magnifierBox.scrollLeft =(scrollImgBox.scrollLeft)*(magnifierImg1.offsetWidth)/(marquePic1.offsetWidth);
-
-            // 如果最近一次的向右滑动，图片滑动到了左边的边缘，重置一下
-            if (scrollImgBox.scrollLeft <= 0) {
-
-                scrollImgBox.scrollLeft = marquePic1.offsetWidth - 2; // 目的是为了能继续向右滑动
-                magnifierBox.scrollLeft = magnifierImg1.offsetWidth -2;
-
-            }
-
-            // 如果最近一次的向左滑动，图片滑动到了右边的边缘，重置一下
-            if (scrollImgBox.scrollLeft >= marquePic1.offsetWidth) {
-
-                scrollImgBox.scrollLeft = 0; // 目的是为了能继续向左滑动
-                magnifierBox.scrollLeft = 0;//同步
-
-            }
-        }
+        slideProcessing(len);
 
     };
 
