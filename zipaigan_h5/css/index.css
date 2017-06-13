@@ -267,11 +267,11 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     border-top:.08rem solid gold;
     border-right:.08rem solid gold;
     right:0;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    transform: rotate(-135deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 
     /*
     -webkit-animation: circleProgressLoad_right 5s linear infinite;
