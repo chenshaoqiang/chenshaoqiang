@@ -161,7 +161,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: .7rem;
+    bottom: .2rem;
     z-index: 999;
 }
 .comment_div{
@@ -170,7 +170,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: 1.45rem;
+    bottom: .85rem;
     z-index: 999;
 }
 .magnifier_div{
@@ -179,7 +179,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: 2.2rem;
+    bottom: 1.45rem;
     z-index: 999;
 }
 .button_div img{
