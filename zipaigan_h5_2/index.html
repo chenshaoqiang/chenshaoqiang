@@ -66,7 +66,9 @@
         <div class="wrapper left">
             <div class="circleProgress leftCircle"></div>
         </div>
-        <div class="magnifier_box" id="magnifier_box"></div>
+        <div class="magnifier_box" id="magnifier_box">
+            <div class="magnifier_box_img" id="magnifierImg1"></div>
+        </div>
     </div>
     <!--描述-->
     <div class="describe">
@@ -131,6 +133,7 @@
 
                 var imgBoxH = imgHeight+addHeight;//放大镜框的直径
                 progressBoxH = imgHeight+addWapHeight;//进度条框的直径
+                var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
 
                 littleImgH = Math.round( parseInt($("#wrap").css("width"))/ prop );//放大镜框出现的时候重置的底图的高
 
@@ -141,6 +144,12 @@
                 $(".circleProgress_wrapper").css({"width":progressBoxH, "height":progressBoxH});//进度条框
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});//进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});//设置放大镜框
+                $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});
+
+                $("#magnifierImg1").css({
+                    "background":"url("+$(bigPic).attr("src")+") no-repeat" ,
+                    "background-size":"100%"
+                });
 
             });
         });
@@ -194,12 +203,6 @@
             "background":"url("+bgSrc+") no-repeat" ,
             "background-size":"100%"
         });
-        $("#magnifier_box").css({
-            "background":"url("+bgSrc+") no-repeat" ,
-            "background-size":"100%"
-        });
-
-
 
         isShowMagBox=true;//显示放大镜框
         $(".big_magnifier").css("display","none");//放大镜大图标消失
