@@ -66,10 +66,7 @@
         <div class="wrapper left">
             <div class="circleProgress leftCircle"></div>
         </div>
-        <div class="magnifier_box" id="magnifier_box">
-            <div class="magnifier_box_img" id="magnifierImg1">
-            </div>
-        </div>
+        <div class="magnifier_box" id="magnifier_box"></div>
     </div>
     <!--描述-->
     <div class="describe">
@@ -197,6 +194,11 @@
             "background":"url("+bgSrc+") no-repeat" ,
             "background-size":"100%"
         });
+        $("#magnifier_box").css({
+            "background":"url("+bgSrc+") no-repeat" ,
+            "background-size":"100%"
+        });
+
 
 
         isShowMagBox=true;//显示放大镜框
