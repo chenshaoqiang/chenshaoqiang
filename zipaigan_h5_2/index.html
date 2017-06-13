@@ -197,6 +197,7 @@
 
         var bgSrc=$(bigPic).attr("src");
 
+        $("#switch_div").css("display","none");//隐藏播放按钮
         $(".scroll-img-td").css("display","none");//换图，隐藏
         $("#scroll-img").css("height",littleImgH);
         $("#scrollImgBox").css({
@@ -221,10 +222,10 @@
             $("#magnifier_div").css("display","block");
             $(".big_magnifier").css("display","none");
 
-
             $(".scroll-img-td").css("display","block");//换图，隐藏
             $("#scroll-img").removeAttr("style");
             $("#scrollImgBox").removeAttr("style");
+            $("#switch_div").css("display","block");
 
             isShowMagBox=false;
 
@@ -289,6 +290,7 @@
         $(".scroll-img-td").css("display","block");//换图，隐藏
         $("#scroll-img").removeAttr("style");
         $("#scrollImgBox").removeAttr("style");
+        $("#switch_div").css("display","block");
 
         var screenW=window.screen.width;//屏宽
         var screenH=window.screen.height;//屏高
