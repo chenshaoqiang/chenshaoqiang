@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" afterPath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.25">
-              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.65981734">
+              <caret line="226" column="51" selection-start-line="226" selection-start-column="51" selection-end-line="226" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59210527">
-              <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="180" column="17" selection-start-line="180" selection-start-column="17" selection-end-line="180" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -118,8 +118,8 @@
         <option value="$PROJECT_DIR$/zipaigan_h5/1.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
         <option value="$PROJECT_DIR$/zipaigan_h5/index.html" />
-        <option value="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
         <option value="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" />
+        <option value="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
       </list>
     </option>
   </component>
@@ -322,12 +322,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00430" summary="6.8">
-      <created>1496918159583</created>
-      <option name="number" value="00430" />
-      <option name="project" value="LOCAL" />
-      <updated>1496918159583</updated>
     </task>
     <task id="LOCAL-00431" summary="6.8">
       <created>1496918238222</created>
@@ -617,7 +611,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497347583160</updated>
     </task>
-    <option name="localTasksCounter" value="479" />
+    <task id="LOCAL-00479" summary="6.13">
+      <created>1497347855757</created>
+      <option name="number" value="00479" />
+      <option name="project" value="LOCAL" />
+      <updated>1497347855757</updated>
+    </task>
+    <option name="localTasksCounter" value="480" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -997,18 +997,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.25">
-          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="17" selection-start-line="180" selection-start-column="17" selection-end-line="180" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59210527">
-          <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+        <state vertical-scroll-proportion="-0.65981734">
+          <caret line="226" column="51" selection-start-line="226" selection-start-column="51" selection-end-line="226" selection-end-column="51" />
           <folding />
         </state>
       </provider>

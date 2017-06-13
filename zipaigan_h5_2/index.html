@@ -209,7 +209,6 @@
         $("#magnifier_div").css("display","block");//放大镜小图标出现
         $(".circleProgress_wrapper").css("display","block");//放大镜框出现
 
-
     });
 
     //小放大镜点击
@@ -221,6 +220,11 @@
             $(".circleProgress_wrapper").css("display","none");
             $("#magnifier_div").css("display","block");
             $(".big_magnifier").css("display","none");
+
+
+            $(".scroll-img-td").css("display","block");//换图，隐藏
+            $("#scroll-img").removeAttr("style");
+            $("#scrollImgBox").removeAttr("style");
 
             isShowMagBox=false;
 
