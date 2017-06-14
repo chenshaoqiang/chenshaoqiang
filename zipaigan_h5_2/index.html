@@ -389,6 +389,7 @@
     //实现图片循环滚动的方法
     function Marquee(n) {
 
+        console.log(scrollImgBox.scrollLeft);
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
@@ -404,6 +405,7 @@
     //全局滑动处理函数
     function slideProcessing(len){
 
+        console.log(scrollImgBox.scrollLeft);
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
