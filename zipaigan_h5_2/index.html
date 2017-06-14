@@ -403,17 +403,8 @@
     //实现图片循环滚动的方法
     function Marquee(n) {
 
-        if( ( scrollImgBox.scrollLeft > lineProgressW ) && ( scrollImgBox.scrollLeft < marquePic1.offsetWidth ) ){
-
-            var len = progressBar * ( scrollImgBox.scrollLeft ) /  ( marquePic1.offsetWidth );
-
-            $(".auto_progress").css( "width", len );
-
-        }else if( scrollImgBox.scrollLeft >= marquePic1.offsetWidth  ){
-
-            $(".auto_progress").css( "width", "0" );
-
-        }
+        var len = progressBar * ( scrollImgBox.scrollLeft ) /  ( marquePic1.offsetWidth );
+        $(".auto_progress").css( "width", len );
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
