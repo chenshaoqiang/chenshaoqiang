@@ -241,7 +241,6 @@
 
         if(isShowMagBox){
 
-            setRotateDeg(-135,-135);
             //如果放大镜框已经打开，再次点击小放大镜则关闭它
             $(".circleProgress_wrapper").css("display","none");
             $("#magnifier_div").css("display","block");
@@ -290,7 +289,6 @@
         }else if(type=="back"){
 
             resizeBack();
-            setRotateDeg(-135,-135);
 
             //返回竖屏（恢复）
             $(className).removeAttr("style");
@@ -354,7 +352,6 @@
         }else{
 
             resizeBack();
-            setRotateDeg(-135,-135);
 
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
