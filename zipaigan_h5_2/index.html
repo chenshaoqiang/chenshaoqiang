@@ -437,21 +437,13 @@
         var m_max = parseInt( $("#scrollImgBox").css("width") ) - parseInt(progressBoxH);//放大镜框可移动距离
         var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) );//背景图可移动最大范围
 
-        if( !isTurn ){
-
-            m_len = m_dY;//如果已经强制横屏，则滑动判断量改为Y方向
-
-        }
-
+        ( !isTurn ) ? m_len = m_dY : void 0;//如果已经强制横屏，则滑动判断量改为Y方向
         m_len = m_len / 50;//每次滑动的距离，/50为了减速
         m_left = m_left + m_len;
         var totalSlide =Math.round(totalPosition)*( m_left / m_max );
 
         ( totalSlide <= 0 ) ? totalSlide = 0 : ( totalSlide >= totalPosition ) ? totalSlide = totalPosition : void 0;
-
         $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});//放大镜内的背景图
-
-        console.log(imgBoxW, -(totalSlide));
 
         ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;//框滑动范围限制
 
