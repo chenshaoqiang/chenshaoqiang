@@ -190,6 +190,7 @@
     //返回滑动滚动底图
     function resizeBack(){
 
+        $(".progress_bar").css("display","block");
         $(".scroll-img-td").css("display","block");//换图，隐藏
         $("#scroll-img").removeAttr("style");
         $("#scrollImgBox").removeAttr("style");
@@ -230,6 +231,7 @@
         circleProgressWrapper.style.left = 0 ;               //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
+        $(".progress_bar").css("display","none");            //直进度条消失
         $(".circleProgress_wrapper").css("display","block"); //放大镜框出现
 
         setRotateDeg(-135,-135);                             //进度条值恢复为初始状态,各自处于-135deg
