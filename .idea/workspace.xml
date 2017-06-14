@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" afterPath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -24,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+      <file leaf-file-name="H5_1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upDown/js/H5_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40068492">
-              <caret line="441" column="32" selection-start-line="441" selection-start-column="32" selection-end-line="441" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="119" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -38,7 +39,17 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="180" column="17" selection-start-line="180" selection-start-column="17" selection-end-line="180" selection-end-column="17" />
+              <caret line="274" column="1" selection-start-line="274" selection-start-column="1" selection-end-line="274" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.55479455">
+              <caret line="447" column="44" selection-start-line="447" selection-start-column="44" selection-end-line="447" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -219,6 +230,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upDown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upDown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -312,12 +355,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00450" summary="6.8">
-      <created>1497005354590</created>
-      <option name="number" value="00450" />
-      <option name="project" value="LOCAL" />
-      <updated>1497005354590</updated>
     </task>
     <task id="LOCAL-00451" summary="6.8">
       <created>1497005890247</created>
@@ -607,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497409977739</updated>
     </task>
-    <option name="localTasksCounter" value="499" />
+    <task id="LOCAL-00499" summary="6.14">
+      <created>1497410116193</created>
+      <option name="number" value="00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1497410116194</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -963,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upDown/js/H5_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -984,18 +1020,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upDown/js/H5_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="119" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="180" column="17" selection-start-line="180" selection-start-column="17" selection-end-line="180" selection-end-column="17" />
+          <caret line="274" column="1" selection-start-line="274" selection-start-column="1" selection-end-line="274" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40068492">
-          <caret line="441" column="32" selection-start-line="441" selection-start-column="32" selection-end-line="441" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.55479455">
+          <caret line="447" column="44" selection-start-line="447" selection-start-column="44" selection-end-line="447" selection-end-column="44" />
           <folding />
         </state>
       </provider>

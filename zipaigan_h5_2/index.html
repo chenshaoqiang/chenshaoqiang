@@ -203,8 +203,15 @@
     //大放大镜点击
     $("#big_magnifier").on("click",function(){
 
+        // 停止自动播放
+        stopRolling();
+
         var bgSrc=$(bigPic).attr("src");
         $("#magnifierImg1").css({"background-position-x": 0 + "px"});//每次打开复位
+        $(".leftCircle").style.webkitTransform = "rotate(-135deg)";
+        $(".leftCircle").style.transform = "rotate(-135deg)";
+        $(".rightCircle").style.webkitTransform = "rotate(-135deg)";
+        $(".rightCircle").style.transform = "rotate(-135deg)";
         $("#switch_div").css("display","none");//隐藏播放按钮
         $(".scroll-img-td").css("display","none");//换图，隐藏
         $("#scroll-img").css("height",littleImgH);
@@ -417,8 +424,6 @@
     //放大镜开始拖动
     var magnifierStartHandler = function(event){
 
-        // 停止自动播放
-        stopRolling();
         m_startX = event.touches[0].pageX;
         m_startY = event.touches[0].pageY;
 
