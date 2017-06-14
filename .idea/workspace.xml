@@ -24,21 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="H5_1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upDown/js/H5_1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="119" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4375">
-              <caret line="242" column="23" selection-start-line="242" selection-start-column="23" selection-end-line="242" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.61513156">
+              <caret line="206" column="17" selection-start-line="206" selection-start-column="17" selection-end-line="206" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -47,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.194445">
-              <caret line="465" column="0" selection-start-line="465" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.1944447">
+              <caret line="461" column="68" selection-start-line="461" selection-start-column="68" selection-end-line="461" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -355,12 +345,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00463" summary="6.10">
-      <created>1497105769387</created>
-      <option name="number" value="00463" />
-      <option name="project" value="LOCAL" />
-      <updated>1497105769387</updated>
-    </task>
     <task id="LOCAL-00464" summary="6.10">
       <created>1497110335524</created>
       <option name="number" value="00464" />
@@ -649,7 +633,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497417986819</updated>
     </task>
-    <option name="localTasksCounter" value="512" />
+    <task id="LOCAL-00512" summary="6.14">
+      <created>1497418043641</created>
+      <option name="number" value="00512" />
+      <option name="project" value="LOCAL" />
+      <updated>1497418043641</updated>
+    </task>
+    <option name="localTasksCounter" value="513" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1031,16 +1021,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.194445">
-          <caret line="465" column="0" selection-start-line="465" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.1944447">
+          <caret line="461" column="68" selection-start-line="461" selection-start-column="68" selection-end-line="461" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4375">
-          <caret line="242" column="23" selection-start-line="242" selection-start-column="23" selection-end-line="242" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.61513156">
+          <caret line="206" column="17" selection-start-line="206" selection-start-column="17" selection-end-line="206" selection-end-column="17" />
           <folding />
         </state>
       </provider>
