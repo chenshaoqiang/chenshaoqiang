@@ -287,3 +287,22 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
+/*---------水平进度条----------*/
+.progress_bar{
+    position: absolute;
+    bottom: 0.4rem;
+    left: 1rem;
+    right: 0.8rem;
+    height: .1rem;
+    background: #dddddd;
+    border-radius: .1rem;
+}
+.auto_progress{
+    width: .5rem;
+    height: .1rem;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .1rem;
+}
