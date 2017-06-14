@@ -451,15 +451,29 @@
         ( !isTurn ) ? m_len = m_dY : void 0;//如果已经强制横屏，则滑动判断量改为Y方向
         m_len = m_len / 50;//每次滑动的距离，/50为了减速
         m_left = m_left + m_len;
-        var totalSlide =Math.round(totalPosition)*( m_left / m_max );
+        var totalSlide = Math.round(totalPosition)*( m_left / m_max );
 
         ( totalSlide <= 0 ) ? totalSlide = 0 : ( totalSlide >= totalPosition ) ? totalSlide = totalPosition : void 0;
         $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});//放大镜内的背景图
 
         ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;//框滑动范围限制
 
-        circleProgressWrapper.style.left = m_left + "px";
+        //进度条设置
+        if((( m_left / m_max ) >= 0) && ( m_left / m_max ) <= 50 ){
 
+            var rightDeg = -135 + parseInt(180 * ( m_left / m_max ));
+            setRotateDeg(-135,rightDeg);
+
+        }else{
+
+            var leftDeg = -135 + parseInt(180 * ( m_left / m_max ));
+            setRotateDeg(leftDeg,45);
+
+        }
+
+        circleProgressWrapper.style.left = m_left + "px";//框移动
+
+        //限制框的left值范围
         if(parseInt(circleProgressWrapper.style.left)  >= m_max){
 
             circleProgressWrapper.style.left = m_max + "px";
