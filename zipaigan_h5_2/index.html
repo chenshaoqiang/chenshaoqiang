@@ -403,7 +403,7 @@
     //实现图片循环滚动的方法
     function Marquee(n) {
 
-        lineProgressW = lineProgressW + n;
+        lineProgressW = lineProgressW + ( progressBar * n  / Math.round( imgHeight*prop ) );
         $(".auto_progress").css( "width", lineProgressW );
 
         if( lineProgressW >= progressBar){

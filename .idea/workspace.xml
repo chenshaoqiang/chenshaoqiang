@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4497717">
-              <caret line="408" column="33" selection-start-line="408" selection-start-column="33" selection-end-line="408" selection-end-column="33" />
+              <caret line="408" column="42" selection-start-line="408" selection-start-column="42" selection-end-line="408" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -345,12 +345,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00476" summary="6.13">
-      <created>1497346721889</created>
-      <option name="number" value="00476" />
-      <option name="project" value="LOCAL" />
-      <updated>1497346721889</updated>
-    </task>
     <task id="LOCAL-00477" summary="6.13">
       <created>1497346977165</created>
       <option name="number" value="00477" />
@@ -639,7 +633,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497433152488</updated>
     </task>
-    <option name="localTasksCounter" value="525" />
+    <task id="LOCAL-00525" summary="6.14">
+      <created>1497434302662</created>
+      <option name="number" value="00525" />
+      <option name="project" value="LOCAL" />
+      <updated>1497434302662</updated>
+    </task>
+    <option name="localTasksCounter" value="526" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1036,7 +1036,7 @@
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4497717">
-          <caret line="408" column="33" selection-start-line="408" selection-start-column="33" selection-end-line="408" selection-end-column="33" />
+          <caret line="408" column="42" selection-start-line="408" selection-start-column="42" selection-end-line="408" selection-end-column="42" />
           <folding />
         </state>
       </provider>
