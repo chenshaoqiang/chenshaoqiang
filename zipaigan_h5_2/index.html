@@ -445,7 +445,7 @@
         m_left = m_left + m_len;
         var totalSlide =Math.round(imgBoxW)*( m_left / m_max );//滑动整张图的百分比
 
-        $("#magnifierImg1").css({"background-size": (-totalSlide) + "px"});//放大镜内的背景图
+        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});//放大镜内的背景图
 
         console.log(imgBoxW, -(totalSlide));
 
