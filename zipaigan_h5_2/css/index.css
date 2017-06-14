@@ -298,7 +298,6 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     border-radius: .05rem;
 }
 .auto_progress{
-    width: .5rem;
     height: .05rem;
     background: #ffffff;
     position: absolute;
