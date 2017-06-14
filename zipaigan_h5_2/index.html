@@ -111,7 +111,7 @@
         imgHeight,
         imgBoxH,
         imgBoxW,
-        lineProgressW,                                          //直进度条的长度
+        lineProgressW = 0,                                          //直进度条的长度
         littleImgH,                                             //放大镜框出现的时候重置的底图的高
         progressBoxH,
         progressBar,                                            //直进度的外框长度
@@ -144,12 +144,6 @@
                 progressBoxH = imgHeight+addWapHeight;//进度条框的直径
                 imgBoxW = (imgHeight+addHeight)*prop; //框内图片的实际宽度
                 littleImgH = Math.round( parseInt( $("#wrap").css("width") )/ prop );        //放大镜框出现的时候重置的底图的高
-
-                /*
-                * 设置直进度条相关值
-                * */
-                lineProgressW = progressBar * ( parseInt( $("#wrap").css("width") )  / Math.round( imgHeight*prop ) );
-                $(".auto_progress").css( "width", lineProgressW );
 
                 /*
                 * 设置底图相关值
@@ -399,11 +393,11 @@
         timer = setInterval("Marquee(5)", speed);
 
     }
-    //直进度条设置
-    function lineProgressSet(len){
 
-        len < 0 ? len = -(len) : void 0;
-        lineProgressW = lineProgressW + progressBar * len  / ( Math.round( imgHeight*prop ) - parseInt( $("#wrap").css("width") ) );
+    //直进度条设置
+    function lineProgressSet(){
+
+        lineProgressW = lineProgressW + ( progressBar * scrollImgBox.scrollLeft / marquePic1.offsetWidth );
         $(".auto_progress").css( "width", lineProgressW );
 
         if( lineProgressW >= progressBar ) {
@@ -413,10 +407,11 @@
         }
 
     }
+
     //实现图片循环滚动的方法
     function Marquee(n) {
 
-        lineProgressSet(n);
+        lineProgressSet();
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
@@ -433,7 +428,7 @@
     //全局滑动处理函数
     function slideProcessing(len){
 
-        lineProgressSet(len);
+        lineProgressSet();
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
