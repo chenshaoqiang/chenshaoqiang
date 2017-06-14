@@ -434,6 +434,7 @@
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
         var m_max = parseInt( $("#scrollImgBox").css("width") ) - parseInt(progressBoxH);//放大镜框可移动距离
+        var totalPosition =Math.round(imgBoxW) - parseInt(progressBoxH)/Math.round(imgBoxW);//背景图可移动最大范围
 
         if( !isTurn ){
 
@@ -443,13 +444,15 @@
 
         m_len = m_len / 50;//每次滑动的距离，/50为了减速
         m_left = m_left + m_len;
-        var totalSlide =Math.round(imgBoxW)*( m_left / m_max );//滑动整张图的百分比
+        var totalSlide =Math.round(totalPosition)*( m_left / m_max );
+
+        ( totalSlide <= 0 ) ? totalSlide = 0 : ( totalSlide >= totalPosition ) ? totalSlide = totalPosition : void 0;
 
         $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});//放大镜内的背景图
 
         console.log(imgBoxW, -(totalSlide));
 
-        ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;//滑动范围限制
+        ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;//框滑动范围限制
 
         circleProgressWrapper.style.left = m_left + "px";
 
