@@ -397,7 +397,7 @@
     //直进度条设置
     function lineProgressSet(){
 
-        lineProgressW = lineProgressW + ( progressBar * scrollImgBox.scrollLeft / marquePic1.offsetWidth );
+        lineProgressW = progressBar * scrollImgBox.scrollLeft / marquePic1.offsetWidth ;
         $(".auto_progress").css( "width", lineProgressW );
 
         if( lineProgressW >= progressBar ) {
