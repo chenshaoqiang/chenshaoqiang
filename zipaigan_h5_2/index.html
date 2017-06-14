@@ -105,6 +105,7 @@
         circleProgressWrapper=document.getElementById("circleProgress_wrapper"),
         scrollImg=document.getElementById("scroll-img"),        //img活动框
         imgHeight,
+        imgBoxW,
         littleImgH,                                             //放大镜框出现的时候重置的底图的高
         progressBoxH,
         deviceWidth,                                            //设备宽
@@ -133,7 +134,7 @@
 
                 var imgBoxH = imgHeight+addHeight;//放大镜框的直径
                 progressBoxH = imgHeight+addWapHeight;//进度条框的直径
-                var imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
+                imgBoxW = (imgHeight+addHeight)*prop;//框内图片的实际宽度
 
                 littleImgH = Math.round( parseInt($("#wrap").css("width"))/ prop );//放大镜框出现的时候重置的底图的高
 
@@ -434,16 +435,21 @@
         var m_len = m_moveX - m_startX;
         var m_max = parseInt( $("#scrollImgBox").css("width") ) - parseInt(progressBoxH);//放大镜框可移动距离
 
-        if(!isTurn){
+        if( !isTurn ){
 
             m_len = m_dY;//如果已经强制横屏，则滑动判断量改为Y方向
 
         }
 
-        m_len = m_len / 50;//减速
+        m_len = m_len / 50;//每次滑动的距离，/50为了减速
         m_left = m_left + m_len;
+        var totalSlide =Math.round(imgBoxW)*( m_left / m_max );//滑动整张图的百分比
 
-        ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;
+        $("#magnifierImg1").css({"background-size-x":" - " +totalSlide+ "px"});//放大镜内的背景图
+
+        console.log(imgBoxW, -(totalSlide));
+
+        ( m_left >= m_max) ? m_left = m_max : ( m_left <=  0 )? m_left = 0 : void 0;//滑动范围限制
 
         circleProgressWrapper.style.left = m_left + "px";
 
@@ -456,8 +462,6 @@
             circleProgressWrapper.style.left = 0;
 
         }
-
-        console.log(m_len,m_left,m_max);
 
     };
 
