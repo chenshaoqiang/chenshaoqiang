@@ -403,20 +403,16 @@
     function lineProgressSet(len){
 
         len < 0 ? len = -(len) : void 0;
+        lineProgressW = lineProgressW + progressBar * len  / Math.round( imgHeight*prop );
+        $(".auto_progress").css( "width", lineProgressW );
 
         console.log(lineProgressW,progressBar * len  / Math.round( imgHeight*prop ));
-
-        lineProgressW = lineProgressW + progressBar * len  / Math.round( imgHeight*prop );
 
         if( lineProgressW >= progressBar ) {
 
             lineProgressW = 0;
 
         }
-
-        console.log(lineProgressW);
-
-        $(".auto_progress").css( "width", lineProgressW );
 
     }
     //实现图片循环滚动的方法
