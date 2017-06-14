@@ -196,10 +196,8 @@
     //进度条设置
     function setRotateDeg(leftNum,rightNum){
 
-        $(".leftCircle").style.webkitTransform = "rotate("+leftNum+"deg)";
-        $(".leftCircle").style.transform = "rotate("+leftNum+"deg)";
-        $(".rightCircle").style.webkitTransform = "rotate("+rightNum+"deg)";
-        $(".rightCircle").style.transform = "rotate("+rightNum+"deg)";
+        $(".leftCircle").css({"-webkit-transform":"rotate("+leftNum+"deg)", "transform":"rotate("+leftNum+"deg)"});
+        $(".rightCircle").css({"-webkit-transform":"rotate("+rightNum+"deg)", "transform":"rotate("+rightNum+"deg)"});
 
     }
 
@@ -233,10 +231,7 @@
         $("#magnifier_div").css("display","block");//放大镜小图标出现
         $(".circleProgress_wrapper").css("display","block");//放大镜框出现
 
-        $(".leftCircle").style.webkitTransform = "rotate(-135deg)";
-        $(".leftCircle").style.transform = "rotate(-135deg)";
-        $(".rightCircle").style.webkitTransform = "rotate(-135deg)";
-        $(".rightCircle").style.transform = "rotate(-135deg)";
+        setRotateDeg(-135,-135);
 
     });
 
