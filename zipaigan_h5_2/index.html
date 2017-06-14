@@ -402,7 +402,18 @@
     //直进度条设置
     function lineProgressSet(len){
 
-        ( lineProgressW >= progressBar ) ? lineProgressW = 0 : lineProgressW = lineProgressW + ( progressBar * len  / Math.round( imgHeight*prop ) );
+        console.log(lineProgressW,parseInt( progressBar * len  / Math.round( imgHeight*prop ) ));
+
+        lineProgressW = lineProgressW + parseInt( progressBar * len  / Math.round( imgHeight*prop ) );
+
+        if( lineProgressW >= progressBar ) {
+
+            lineProgressW = 0;
+
+        }
+
+        console.log(lineProgressW);
+
         $(".auto_progress").css( "width", lineProgressW );
 
     }
