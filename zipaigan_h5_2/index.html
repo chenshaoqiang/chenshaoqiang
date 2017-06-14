@@ -553,9 +553,11 @@
 
     //时间格式化
     function dateFormat(input){
+
         if (input == null || input == '' || typeof(input) == "undefined") {
             return "";
         }
+
         var _date = new Date(input);
         var year = _date.getFullYear();
         var month = _date.getMonth() + 1 > 9 ? _date.getMonth() + 1 : "0" + (_date.getMonth() + 1);
