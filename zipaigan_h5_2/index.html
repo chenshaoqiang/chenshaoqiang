@@ -403,10 +403,8 @@
     function lineProgressSet(len){
 
         len < 0 ? len = -(len) : void 0;
-        lineProgressW = lineProgressW + progressBar * len  / Math.round( imgHeight*prop );
+        lineProgressW = lineProgressW + progressBar * len  / ( Math.round( imgHeight*prop ) - parseInt( $("#wrap").css("width") ) );
         $(".auto_progress").css( "width", lineProgressW );
-
-        console.log(lineProgressW,progressBar * len  / Math.round( imgHeight*prop ));
 
         if( lineProgressW >= progressBar ) {
 
