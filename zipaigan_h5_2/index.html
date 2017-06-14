@@ -466,7 +466,7 @@
 
         }else if((( m_left / m_max ) > 0.5) && ( m_left / m_max ) <= 1 ){
 
-            var leftDeg = -135 + parseInt(90 * ( m_left / m_max ));
+            var leftDeg = -135 + parseInt(360 * ( m_left / m_max ) -180 );
             setRotateDeg(leftDeg,45);
 
         }
