@@ -111,6 +111,7 @@
         imgHeight,
         imgBoxH,
         imgBoxW,
+        lineProgressW,                                          //直进度条的长度
         littleImgH,                                             //放大镜框出现的时候重置的底图的高
         progressBoxH,
         progressBar,                                            //直进度的外框长度
@@ -147,7 +148,7 @@
                 /*
                 * 设置直进度条相关值
                 * */
-                var lineProgressW = progressBar * ( parseInt( $("#wrap").css("width") )  / Math.round( imgHeight*prop ) );
+                lineProgressW = progressBar * ( parseInt( $("#wrap").css("width") )  / Math.round( imgHeight*prop ) );
                 $(".auto_progress").css( "width", lineProgressW );
 
                 /*
@@ -402,7 +403,18 @@
     //实现图片循环滚动的方法
     function Marquee(n) {
 
-        console.log(scrollImgBox.scrollLeft);
+        if( ( scrollImgBox.scrollLeft > lineProgressW ) && ( scrollImgBox.scrollLeft < marquePic1.offsetWidth ) ){
+
+            var len = progressBar * ( scrollImgBox.scrollLeft ) /  ( marquePic1.offsetWidth );
+
+            $(".auto_progress").css( "width", len );
+
+        }else if( scrollImgBox.scrollLeft >= marquePic1.offsetWidth  ){
+
+            $(".auto_progress").css( "width", "0" );
+
+        }
+
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
             scrollImgBox.scrollLeft = 0;
