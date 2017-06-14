@@ -432,8 +432,7 @@
         var m_moveY = m_touch.pageY;
         var m_dY = m_moveY - m_startY;
         var m_len = m_moveX - m_startX;
-
-        var m_max = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);//放大镜框可移动距离
+        var m_max = parseInt( $("#scrollImgBox").css("width") ) - parseInt(progressBoxH);//放大镜框可移动距离
 
         if(!isTurn){
 
@@ -454,6 +453,8 @@
             circleProgressWrapper.style.left = 0;
 
         }
+
+        console.log(m_len);
 
     };
 
