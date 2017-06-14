@@ -204,7 +204,7 @@
     $("#big_magnifier").on("click",function(){
 
         var bgSrc=$(bigPic).attr("src");
-
+        $("#magnifierImg1").css({"background-position-x": 0 + "px"});//每次打开复位
         $("#switch_div").css("display","none");//隐藏播放按钮
         $(".scroll-img-td").css("display","none");//换图，隐藏
         $("#scroll-img").css("height",littleImgH);
