@@ -47,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3329384">
-              <caret line="197" column="25" selection-start-line="197" selection-start-column="13" selection-end-line="197" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.8447867">
+              <caret line="236" column="8" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -355,12 +355,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00454" summary="6.8">
-      <created>1497007562281</created>
-      <option name="number" value="00454" />
-      <option name="project" value="LOCAL" />
-      <updated>1497007562281</updated>
-    </task>
     <task id="LOCAL-00455" summary="6.8">
       <created>1497007978451</created>
       <option name="number" value="00455" />
@@ -649,7 +643,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497413013871</updated>
     </task>
-    <option name="localTasksCounter" value="503" />
+    <task id="LOCAL-00503" summary="6.14">
+      <created>1497413499172</created>
+      <option name="number" value="00503" />
+      <option name="project" value="LOCAL" />
+      <updated>1497413499172</updated>
+    </task>
+    <option name="localTasksCounter" value="504" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1039,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3329384">
-          <caret line="197" column="25" selection-start-line="197" selection-start-column="13" selection-end-line="197" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.8447867">
+          <caret line="236" column="8" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
           <folding />
         </state>
       </provider>
