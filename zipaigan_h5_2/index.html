@@ -298,6 +298,9 @@
                 "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
             });
 
+            lineProgressSet()
+
+
         }else if(type=="back"){
 
             resizeBack();
@@ -311,7 +314,7 @@
 
             document.documentElement.style.fontSize = ( window.screen.width / 7.5) + 'px';
             getImgSize();                                                //重排img使拼接无缝
-
+            lineProgressSet();
             isTurn = true;                                               //重新恢复可横屏状态
 
         }
