@@ -442,7 +442,7 @@
 
         m_len = m_len / 50;//减速
         m_left = m_left + m_len;
-        circleProgressWrapper.style.left = m_left + m_len + "px";
+        circleProgressWrapper.style.left = m_left + "px";
 
         if(parseInt(circleProgressWrapper.style.left)  >= m_max){
 
@@ -454,7 +454,7 @@
 
         }
 
-        console.log(m_len);
+        console.log(m_len,m_left);
 
     };
 
