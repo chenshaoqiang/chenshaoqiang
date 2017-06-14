@@ -186,10 +186,21 @@
     //返回滑动滚动底图
     function resizeBack(){
 
+        setRotateDeg(-135,-135);
         $(".scroll-img-td").css("display","block");//换图，隐藏
         $("#scroll-img").removeAttr("style");
         $("#scrollImgBox").removeAttr("style");
         $("#switch_div").css("display","block");
+
+    }
+
+    //进度条设置
+    function setRotateDeg(leftNum,rightNum){
+
+        $(".leftCircle").style.webkitTransform = "rotate("+leftNum+"deg)";
+        $(".leftCircle").style.transform = "rotate("+leftNum+"deg)";
+        $(".rightCircle").style.webkitTransform = "rotate("+rightNum+"deg)";
+        $(".rightCircle").style.transform = "rotate("+rightNum+"deg)";
 
     }
 
@@ -223,10 +234,6 @@
         $("#magnifier_div").css("display","block");//放大镜小图标出现
         $(".circleProgress_wrapper").css("display","block");//放大镜框出现
 
-        $(".leftCircle").style.webkitTransform = "rotate(-135deg)";
-        $(".leftCircle").style.transform = "rotate(-135deg)";
-        $(".rightCircle").style.webkitTransform = "rotate(-135deg)";
-        $(".rightCircle").style.transform = "rotate(-135deg)";
     });
 
     //小放大镜点击
@@ -234,6 +241,7 @@
 
         if(isShowMagBox){
 
+            setRotateDeg(-135,-135);
             //如果放大镜框已经打开，再次点击小放大镜则关闭它
             $(".circleProgress_wrapper").css("display","none");
             $("#magnifier_div").css("display","block");
@@ -282,6 +290,7 @@
         }else if(type=="back"){
 
             resizeBack();
+            setRotateDeg(-135,-135);
 
             //返回竖屏（恢复）
             $(className).removeAttr("style");
@@ -345,6 +354,7 @@
         }else{
 
             resizeBack();
+            setRotateDeg(-135,-135);
 
             $(".big_magnifier").css("display","none");
             $("#magnifier_div").css("display","none");
