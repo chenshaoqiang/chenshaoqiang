@@ -402,9 +402,9 @@
     //直进度条设置
     function lineProgressSet(len){
 
-        console.log(lineProgressW,parseInt( progressBar * len  / Math.round( imgHeight*prop ) ));
+        console.log(lineProgressW,progressBar * len  / Math.round( imgHeight*prop ));
 
-        lineProgressW = lineProgressW + parseInt( progressBar * len  / Math.round( imgHeight*prop ) );
+        lineProgressW = lineProgressW + progressBar * len  / Math.round( imgHeight*prop );
 
         if( lineProgressW >= progressBar ) {
 
