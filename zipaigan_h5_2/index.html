@@ -445,10 +445,14 @@
         }
 
         var totalPosition = Math.round(imgBoxW); //背景图可移动最大范围
-        var totalSlide = Math.round(totalPosition) * (mLen / parseInt($("#scrollImgBox").css("width")));//大图移动的距离
+        if(mLeft<=0){
+            var totalSlide = Math.round(totalPosition)*( -mLeft / mMax );
+        }else{
+            var totalSlide = Math.round(totalPosition)*( mLeft / mMax );
+        }
 
-        //(totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": halfWidth - totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
+        (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
+        $("#magnifierImg1").css({"background-position-x": -totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
