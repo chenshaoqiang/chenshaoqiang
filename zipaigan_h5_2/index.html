@@ -117,7 +117,8 @@
         progressBar,                                            //直进度的外框长度
         deviceWidth,                                            //设备宽
         prop,                                                   //通过真实图片获得宽高比
-        timer;                                                  //用于定时器
+        timer,                                                  //用于定时器
+        dirRight = true;                                        //控制放大镜自动滚动的时候的方向
 
     //复制大图，用于无缝拼接
     function getImgSize(){
@@ -426,42 +427,44 @@
     function magnifierMove(mLen,type){
 
         var mMax = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);                             //放大镜框可移动最大距离
-        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) ); //背景图可移动最大范围
-        mLeft = mLeft + mLen;                                                    //这个值用于设置框的left值
-        var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );             //这个值用于设置框内背景图的background-position-x
-
-        (totalSlide <= 0) ? totalSlide = 0 : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"}); //放大镜内的背景图随框移动改变background-position-x位置
-
 
         if(type == "slide"){
 
+            mLeft = mLeft + mLen;
+            dirRight = true;
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
 
         }else if(type == "scroll"){
 
+            dirRight ? mLeft = mLeft + mLen : mLeft = mLeft - mLen;                 //这个值用于设置框的left值
             //限制框的left值范围（自动滚动的情况下重置到最左）
-            (mLeft >= mMax) ? mLeft = 0 : (mLeft <=  0) ? mLeft = 0 : void 0;     //框滑动范围限制
+            (mLeft >= mMax) ? dirRight = false : (mLeft <=  0) ? mLeft = 0 : void 0;//框滑动范围限制
 
         }
+
+        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) ); //背景图可移动最大范围
+        var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );              //这个值用于设置框内背景图的background-position-x
+
+        (totalSlide <= 0) ? totalSlide = 0 : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
+        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
 
             //滑动50%以内的时候，改变 rightCircle（0-50%）的进度条框
             var rightDeg = -135 + parseInt(360 * (mLeft / mMax));
-            setRotateDeg(-135,rightDeg);                                          //leftCircle的角度不变，一直是-135deg（还没开始走）
+            setRotateDeg(-135,rightDeg);                                            //leftCircle的角度不变，一直是-135deg（还没开始走）
 
         }else if(((mLeft / mMax) > 0.5) && (mLeft / mMax) <= 1){
 
             //滑动50%以上内的时候，改变 leftCircle（50%-100%）的进度条框
             var leftDeg = -135 + parseInt(360 * (mLeft / mMax) -180);
-            setRotateDeg(leftDeg,45);                                            //rightCircle的角度不变，一直是45deg（走到50%的状态）
+            setRotateDeg(leftDeg,45);                                              //rightCircle的角度不变，一直是45deg（走到50%的状态）
 
         }
 
-        circleProgressWrapper.style.left = mLeft + "px";                         //整个框移动
+        circleProgressWrapper.style.left = mLeft + "px";                           //整个框移动
 
     }
 
