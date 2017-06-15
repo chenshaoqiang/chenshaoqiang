@@ -426,20 +426,21 @@
     * */
     function magnifierMove(mLen,type){
 
-        var mMax = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);                             //放大镜框可移动最大距离
+        var halfWidth = parseInt(progressBoxH) / 2;
+        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;                             //放大镜框可移动最大距离
 
         if(type == "slide"){
 
             mLeft = mLeft + mLen;
             dirRight = true;
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
-            (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
+            (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  halfWidth) ? mLeft = halfWidth : void 0;   //框滑动范围限制
 
         }else if(type == "scroll"){
 
             dirRight ? mLeft = mLeft + mLen : mLeft = mLeft - mLen;                 //这个值用于设置框的left值
             //限制框的left值范围（自动滚动的情况下重置到最左）
-            (mLeft >= mMax) ? dirRight = false : (mLeft <=  0) ? (mLeft = 0,dirRight = true) : void 0;//框滑动范围限制
+            (mLeft >= mMax) ? dirRight = false : (mLeft <=  halfWidth) ? (mLeft = halfWidth,dirRight = true) : void 0;//框滑动范围限制
 
         }
 
