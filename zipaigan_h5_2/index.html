@@ -203,7 +203,6 @@
         $(".scroll-img-td").css("display","block");//换图，隐藏
         $("#scroll-img").removeAttr("style");
         $("#scrollImgBox").removeAttr("style");
-        $("#switch_div").css("display","block");
         lineProgressSet();
 
     }
@@ -231,7 +230,6 @@
 
         var bgSrc=$(bigPic).attr("src");
         $("#magnifierImg1").css({"background-position-x": 0 + "px"}); //每次打开复位
-        $("#switch_div").css("display","none");                       //隐藏播放按钮
         $(".scroll-img-td").css("display","none");                    //隐藏底图
         $("#scroll-img").css("height",littleImgH);                    //全景图高度设置，以宽度为100%做调整
         $("#scrollImgBox").css({"background":"url("+bgSrc+") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
