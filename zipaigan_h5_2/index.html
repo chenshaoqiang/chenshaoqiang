@@ -121,6 +121,7 @@
 
     //复制大图，用于无缝拼接
     function getImgSize(){
+
         $("#main_img_work").each(function (i) {
             //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
             $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
@@ -133,24 +134,24 @@
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop = (realWidth / realHeight);
-                imgHeight = Math.round( parseInt($("#wrap").css("height")) /2 );
-                progressBar = parseInt( $(".progress_bar").css("width") );
+                imgHeight = Math.round(parseInt($("#wrap").css("height")) / 2 );
+                progressBar = parseInt($(".progress_bar").css("width"));
 
                 var userInfoHeight = parseInt($(".user_info").css("height"));              //用户信息框的高
-                var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.25/1.1)))*2;//取用户信息框的高度减去0.25rem的值的高度为放大镜的上下附加高度
-                var addWapHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1)))*2;
+                var addHeight = parseInt(userInfoHeight - (userInfoHeight * (0.25/1.1))) * 2;//取用户信息框的高度减去0.25rem的值的高度为放大镜的上下附加高度
+                var addWapHeight = parseInt(userInfoHeight - (userInfoHeight * (0.2/1.1))) * 2;
 
-                imgBoxH = imgHeight+addHeight;        //放大镜框的直径
-                progressBoxH = imgHeight+addWapHeight;//进度条框的直径
-                imgBoxW = (imgHeight+addHeight)*prop; //框内图片的实际宽度
-                littleImgH = Math.round( parseInt( $("#wrap").css("width") )/ prop );        //放大镜框出现的时候重置的底图的高
+                imgBoxH = imgHeight + addHeight;        //放大镜框的直径
+                progressBoxH = imgHeight + addWapHeight;//进度条框的直径
+                imgBoxW = (imgHeight + addHeight) * prop; //框内图片的实际宽度
+                littleImgH = Math.round(parseInt($("#wrap").css("width")) / prop);        //放大镜框出现的时候重置的底图的高
 
                 lineProgressSet();
                 /*
                 * 设置底图相关值
                 * */
-                $("#main_img_work").css("width",Math.round( imgHeight*prop ));
-                $("#marquePic2").css("left",Math.round( imgHeight*prop ));
+                $("#main_img_work").css("width",Math.round(imgHeight*prop));
+                $("#marquePic2").css("left",Math.round(imgHeight*prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
                 /*
@@ -160,7 +161,7 @@
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});        //进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});                   //设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});                    //放大镜内的背景图包裹框
-                $("#magnifierImg1").css({"background":"url("+$(bigPic).attr("src")+") no-repeat" , "background-size":"100%"});//放大镜内的背景图
+                $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%"});//放大镜内的背景图
 
             });
         });
@@ -211,15 +212,15 @@
     //圆形进度条设置，用于滑动过程中传入角度值
     function setRotateDeg(leftNum,rightNum){
 
-        $(".leftCircle").css({"-webkit-transform":"rotate("+leftNum+"deg)", "transform":"rotate("+leftNum+"deg)"});
-        $(".rightCircle").css({"-webkit-transform":"rotate("+rightNum+"deg)", "transform":"rotate("+rightNum+"deg)"});
+        $(".leftCircle").css({"-webkit-transform":"rotate(" + leftNum + "deg)", "transform":"rotate(" + leftNum + "deg)"});
+        $(".rightCircle").css({"-webkit-transform":"rotate(" + rightNum + "deg)", "transform":"rotate(" + rightNum + "deg)"});
 
     }
 
     //播放按钮点击事件
     $("#switch_div").on("click",function(){
 
-        isPlay?startRolling():stopRolling();
+        isPlay ? startRolling() : stopRolling();
 
     });
 
@@ -233,10 +234,10 @@
         $("#magnifierImg1").css({"background-position-x": 0 + "px"}); //每次打开复位
         $(".scroll-img-td").css("display","none");                    //隐藏底图
         $("#scroll-img").css("height",littleImgH);                    //全景图高度设置，以宽度为100%做调整
-        $("#scrollImgBox").css({"background":"url("+bgSrc+") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
+        $("#scrollImgBox").css({"background":"url(" + bgSrc + ") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
 
         isShowMagBox = true;                                   //显示放大镜框
-        mLeft=0;
+        mLeft = 0;
         circleProgressWrapper.style.left = 0 ;               //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
@@ -275,7 +276,7 @@
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var conH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-        if(type=="turn"){
+        if(type == "turn"){
 
             $("#turn_div").find('img').attr("src", "img/toCross.png");//图标变化
             $(".big_magnifier").css("display","block");               //放大镜大图标显示，每次横屏都显示
@@ -290,10 +291,10 @@
             $(className).css({
                 "transform-origin":"50% 50%",
                 "-webkit-transform-origin": "50% 50%",
-                "transform":"rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-                "-webkit-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-                "-moz-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)",
-                "-ms-transform": "rotate(90deg) translate("+((conH-conW)/2)+"px,"+((conH-conW)/2)+"px)"
+                "transform":"rotate(90deg) translate(" + ((conH - conW) / 2) + "px," + ((conH - conW) / 2) + "px)",
+                "-webkit-transform": "rotate(90deg) translate(" + ((conH - conW) / 2) + "px," + ((conH - conW) / 2) + "px)",
+                "-moz-transform": "rotate(90deg) translate(" + ((conH - conW) / 2) + "px," + ((conH - conW) / 2) + "px)",
+                "-ms-transform": "rotate(90deg) translate(" + ((conH - conW) / 2) + "px," + ((conH - conW) / 2) + "px)"
             });
 
             lineProgressSet()
@@ -305,7 +306,7 @@
 
             //返回竖屏（恢复）
             $(className).removeAttr("style");                            //去除强制横屏时候的样式设置，都是内联的，所以直接去掉
-            $("#turn_div").find('img').attr("src", "img/toVertical.png");//图标变化
+            $("#turn_div").find('img').attr("src","img/toVertical.png");//图标变化
             $(".big_magnifier").css("display","none");                   //竖屏不显示大放大镜图标
             $("#magnifier_div").css("display","none");                   //竖屏不显示小放大镜图标
             $(".circleProgress_wrapper").css("display","none");          //竖屏统一关闭放大框
@@ -322,10 +323,10 @@
     //横竖屏点击事件
     $("#turn_div").on("click",function(){
 
-        var screenW=window.screen.width;              //屏宽
-        var screenH=window.screen.height;             //屏高
+        var screenW = window.screen.width;              //屏宽
+        var screenH = window.screen.height;             //屏高
 
-        if(parseInt(screenH)>parseInt(screenW)){      //竖屏：=>转横
+        if(parseInt(screenH) > parseInt(screenW)){      //竖屏：=>转横
 
             if(window.orientation == 0 || window.orientation == 180){
 
@@ -354,7 +355,7 @@
         if(window.orientation == 90 || window.orientation == -90){
 
             //用户将手机横屏的时候，如果机子本身开着横屏的话，需要马上转回去。
-            turnScreen(".wrap","back");
+            turnScreen(".wrap" , "back");
 
             $(".big_magnifier").css("display","block");       //横屏了，放大镜大图标显示
             $("#magnifier_div").css("display","none");        //小放大镜图标需要大放大镜图标消失后显示
@@ -382,7 +383,7 @@
     //停止滚动
     function stopRolling() {
 
-        console.log(isShowMagBox);
+
         isPlay = true;
         $("#switch_div").find('img').attr("src", "img/play.png");
         clearInterval(timer);
@@ -392,10 +393,10 @@
     //继续滚动
     function startRolling() {
 
-        console.log(isShowMagBox);
         isPlay = false;
         $("#switch_div").find('img').attr("src", "img/pause.png");
-        timer = setInterval("Marquee(5)", speed);
+
+        (!isShowMagBox) ? timer = setInterval("Marquee(5)", speed) : timer = setInterval("magnifierMove(10,'scroll')", speed);
 
     }
 
@@ -404,27 +405,64 @@
 
         lineProgressW = progressBar * scrollImgBox.scrollLeft / marquePic1.offsetWidth ;
         $(".auto_progress").css( "width", lineProgressW );
-
-        if( lineProgressW >= progressBar ) {
-
-            lineProgressW = 0;
-
-        }
+        (lineProgressW >= progressBar) ? lineProgressW = 0 : void 0;
 
     }
 
     //实现图片循环滚动的方法
-    function Marquee(n) {
+    function Marquee(mLen) {
 
         lineProgressSet();
+        (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) ? scrollImgBox.scrollLeft = 0
+                :scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + mLen;
 
-        if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
+    }
 
-            scrollImgBox.scrollLeft = 0;
+    /*
+    * 全局放大镜框移动处理函数
+    * @param {Number} mLen 每次方法滑动/滚动的距离
+    * @param {String} type 动画方式，区分滑动和滚动两种情况
+    * */
+    function magnifierMove(mLen,type){
 
-        } else {
+        var mMax = parseInt($("#scrollImgBox").css("width")) - parseInt(progressBoxH);                             //放大镜框可移动最大距离
+        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) ); //背景图可移动最大范围
+        mLeft = mLeft + mLen;                                                    //这个值用于设置框的left值
+        var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );             //这个值用于设置框内背景图的background-position-x
 
-            scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + n;
+        (totalSlide <= 0) ? totalSlide = 0 : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
+        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"}); //放大镜内的背景图随框移动改变background-position-x位置
+
+        (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
+
+        //进度条设置
+        if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
+
+            //滑动50%以内的时候，改变 rightCircle（0-50%）的进度条框
+            var rightDeg = -135 + parseInt(360 * (mLeft / mMax));
+            setRotateDeg(-135,rightDeg);                                          //leftCircle的角度不变，一直是-135deg（还没开始走）
+
+        }else if(((mLeft / mMax) > 0.5) && (mLeft / mMax) <= 1){
+
+            //滑动50%以上内的时候，改变 leftCircle（50%-100%）的进度条框
+            var leftDeg = -135 + parseInt(360 * (mLeft / mMax) -180);
+            setRotateDeg(leftDeg,45);                                            //rightCircle的角度不变，一直是45deg（走到50%的状态）
+
+        }
+
+        circleProgressWrapper.style.left = mLeft + "px";                         //整个框移动
+
+        if(type == "slide"){
+
+            //限制框的left值范围（手滑的情况下只能到最左/最右边）
+            (parseInt( circleProgressWrapper.style.left)  >= mMax) ? circleProgressWrapper.style.left = mMax + "px"
+                    : (parseInt(circleProgressWrapper.style.left) <= 0) ? circleProgressWrapper.style.left = 0
+                    : void 0;
+
+        }else if(type == "scroll"){
+
+            //限制框的left值范围（自动滚动的情况下重置到最左）
+            (parseInt(circleProgressWrapper.style.left) >= mMax) ? circleProgressWrapper.style.left = 0 : void 0;
 
         }
 
@@ -477,46 +515,11 @@
         var mMoveY = mTouch.pageY;
         var mDy = mMoveY - mStartY;
         var mLen = mMoveX - mStartX;
-        var mMax = parseInt( $("#scrollImgBox").css("width") ) - parseInt(progressBoxH);                           //放大镜框可移动最大距离
-        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) );//背景图可移动最大范围
 
-        !isTurn ? mLen = mDy : void 0;   //如果已经强制横屏，则滑动判断量改为Y方向
-        mLen = mLen / 50;                    //每次滑动的距离，/50为了减速
-        mLeft = mLeft + mLen;               //这个值用于设置框的left值
-        var totalSlide = Math.round(totalPosition)*( mLeft / mMax );             //这个值用于设置框内背景图的background-position-x
+        !isTurn ? mLen = mDy : void 0;    //如果已经强制横屏，则滑动判断量改为Y方向
+        mLen = mLen / 50;                 //每次滑动的距离，/50为了减速
 
-        ( totalSlide <= 0 ) ? totalSlide = 0 : ( totalSlide >= totalPosition ) ? totalSlide = totalPosition : void 0;//背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
-
-        ( mLeft >= mMax) ? mLeft = mMax : ( mLeft <=  0 )? mLeft = 0 : void 0;//框滑动范围限制
-
-        //进度条设置
-        if((( mLeft / mMax ) >= 0) && ( mLeft / mMax ) <= 0.5 ){
-
-            //滑动50%以内的时候，改变 rightCircle（0-50%）的进度条框
-            var rightDeg = -135 + parseInt(360 * ( mLeft / mMax ));
-            setRotateDeg(-135,rightDeg);//leftCircle的角度不变，一直是-135deg（还没开始走）
-
-        }else if((( mLeft / mMax ) > 0.5) && ( mLeft / mMax ) <= 1 ){
-
-            //滑动50%以上内的时候，改变 leftCircle（50%-100%）的进度条框
-            var leftDeg = -135 + parseInt(360 * ( mLeft / mMax ) -180 );
-            setRotateDeg(leftDeg,45);  //rightCircle的角度不变，一直是45deg（走到50%的状态）
-
-        }
-
-        circleProgressWrapper.style.left = mLeft + "px";       //框移动
-
-        //限制框的left值范围
-        if( parseInt(circleProgressWrapper.style.left)  >= mMax){
-
-            circleProgressWrapper.style.left = mMax + "px";
-
-        }else if( parseInt(circleProgressWrapper.style.left) <= 0){
-
-            circleProgressWrapper.style.left = 0;
-
-        }
+        magnifierMove(mLen , "slide");   //滑动方式
 
     };
 
@@ -573,9 +576,9 @@
             if (data.code == 'success') {
                 var username = data.data.name;
                 var userHeadUrl = data.data.headimgurl;
-                var creatTime=dateFormat(data.data.createtime);
+                var creatTime = dateFormat(data.data.createtime);
 
-                (userHeadUrl==""||userHeadUrl==null||userHeadUrl==undefined)?userHeadUrl="./img/default_head.png":void 0;
+                (userHeadUrl == "" || userHeadUrl == null || userHeadUrl == undefined) ? userHeadUrl="./img/default_head.png" : void 0;
 
                 userNameSpan.text(username);
                 creatTimeSpan.text(creatTime);
@@ -591,7 +594,7 @@
     //时间格式化
     function dateFormat(input){
 
-        if (input == null || input == '' || typeof(input) == "undefined") {
+        if (input == null || input == "" || typeof(input) == "undefined") {
             return "";
         }
 
