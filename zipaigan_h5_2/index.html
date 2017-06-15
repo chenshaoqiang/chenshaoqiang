@@ -238,7 +238,7 @@
         $("#scrollImgBox").css({"background":"url(" + bgSrc + ") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
 
         isShowMagBox = true;                                   //显示放大镜框
-        mLeft = 0;
+        mLeft = -(parseInt(progressBoxH) / 2);
         circleProgressWrapper.style.left = 0 ;               //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
