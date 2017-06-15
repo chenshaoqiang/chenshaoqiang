@@ -382,6 +382,7 @@
     //停止滚动
     function stopRolling() {
 
+        console.log(isShowMagBox);
         isPlay = true;
         $("#switch_div").find('img').attr("src", "img/play.png");
         clearInterval(timer);
@@ -391,6 +392,7 @@
     //继续滚动
     function startRolling() {
 
+        console.log(isShowMagBox);
         isPlay = false;
         $("#switch_div").find('img').attr("src", "img/pause.png");
         timer = setInterval("Marquee(5)", speed);
