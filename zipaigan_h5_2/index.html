@@ -111,7 +111,7 @@
         imgHeight,
         imgBoxH,
         imgBoxW,
-        lineProgressW = 0,                                          //直进度条的长度
+        lineProgressW = 0,                                      //直进度条的长度
         littleImgH,                                             //放大镜框出现的时候重置的底图的高
         progressBoxH,
         progressBar,                                            //直进度的外框长度
@@ -123,16 +123,16 @@
 
     //复制大图，用于无缝拼接
     function getImgSize(){
-
+        /*
+        * 如果要获取图片的真实的宽度和高度有三点必须注意
+        * 1、需要创建一个image对象：如这里的$("<img/>")
+        * 2、指定图片的src路径
+        * 3、一定要在图片加载完成后执行如.load()函数里执行
+        * */
         $("#main_img_work").each(function (i) {
             //这里做下说明，$("<img/>")这里是创建一个临时的img标签，类似js创建一个new Image()对象！
             $("<img/>").attr("src", $(bigPic).attr("src")).load(function () {
-                /*
-                 如果要获取图片的真实的宽度和高度有三点必须注意
-                 1、需要创建一个image对象：如这里的$("<img/>")
-                 2、指定图片的src路径
-                 3、一定要在图片加载完成后执行如.load()函数里执行
-                 */
+
                 var realWidth = this.width;
                 var realHeight = this.height;
                 prop = (realWidth / realHeight);
@@ -191,15 +191,16 @@
 
         window.onresize = function(){
 
-                           //窗口变化的时候重置压缩比，比如自动横屏的时候
-            getScale();
+            getScale();    //窗口变化的时候重置压缩比，比如自动横屏的时候
             getImgSize();  //重排img使拼接无缝
 
         };
 
     })();
 
-    //返回滑动滚动底图
+    /*
+     * 返回滑动滚动底图
+     * */
     function resizeBack(){
 
         isShowMagBox = false;
@@ -211,7 +212,9 @@
         totalLen = 0;
     }
 
-    //圆形进度条设置，用于滑动过程中传入角度值
+    /*
+     * 圆形进度条设置，用于滑动过程中传入角度值
+     * */
     function setRotateDeg(leftNum,rightNum){
 
         $(".leftCircle").css({"-webkit-transform":"rotate(" + leftNum + "deg)", "transform":"rotate(" + leftNum + "deg)"});
@@ -219,14 +222,18 @@
 
     }
 
-    //播放按钮点击事件
+    /*
+     * 播放按钮点击事件
+     * */
     $("#switch_div").on("click",function(){
 
         isPlay ? startRolling() : stopRolling();
 
     });
 
-    //大放大镜点击
+    /*
+     * 大放大镜点击
+     * */
     $("#big_magnifier").on("click",function(){
 
         // 停止自动播放
@@ -251,7 +258,9 @@
 
     });
 
-    //小放大镜点击
+    /*
+     * 小放大镜点击
+     * */
     $("#magnifier_div").on("click",function(){
 
         if(isShowMagBox){
@@ -273,7 +282,11 @@
 
     });
 
-    // transform 强制横屏
+    /*
+     * transform 强制横屏
+     * @param {String} className 用于获取旋转的包裹框的类名
+     * @param {String} type      用于区分横屏和返回竖屏
+     * */
     function turnScreen(className,type){
 
         var conW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -323,7 +336,9 @@
 
     }
 
-    //横竖屏点击事件
+    /*
+     * 横竖屏点击事件
+     * */
     $("#turn_div").on("click",function(){
 
         var screenW = window.screen.width;              //屏宽
@@ -383,7 +398,9 @@
 
     }
 
-    //停止滚动
+    /*
+     * 停止滚动
+     * */
     function stopRolling() {
 
 
@@ -393,7 +410,9 @@
 
     }
 
-    //继续滚动
+    /*
+     * 继续滚动
+     * */
     function startRolling() {
 
         isPlay = false;
@@ -403,7 +422,9 @@
 
     }
 
-    //直进度条设置
+    /*
+     * 直进度条设置
+     * */
     function lineProgressSet(){
 
         lineProgressW = progressBar * scrollImgBox.scrollLeft / marquePic1.offsetWidth ;
@@ -412,7 +433,10 @@
 
     }
 
-    //实现图片循环滚动的方法
+    /*
+     * 实现图片循环滚动的方法
+     * @param {Number} mLen 每次方法滚动的距离
+     * */
     function Marquee(mLen) {
 
         lineProgressSet();
@@ -422,24 +446,25 @@
     }
 
     /*
-    * 全局放大镜框移动处理函数
+    * 全局放大镜框移动以及框内背景图设置处理函数
     * @param {Number} mLen 每次方法滑动/滚动的距离
     * @param {String} type 动画方式，区分滑动和滚动两种情况
     * */
     function magnifierMove(mLen,type){
 
-        var halfWidth = parseInt(progressBoxH) / 2;
-        var mBox = Math.round(imgBoxW);
-        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;//放大镜框left最大值
+        var halfWidth = parseInt(progressBoxH) / 2;                      //放大框宽的一半
+        var mBox = Math.round(imgBoxW);                                  //放大框内的背景图的宽，需要用到
+        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;//放大镜框left最大值（全景图宽-放大框宽的一半）
 
+        //slide表示是手动滑动，scroll表示自动滚动的状态
         if(type == "slide"){
 
+            //限制框的left值范围（手滑的情况下只能到最左/最右边）
             mLeft = mLeft + mLen;
             dirRight = true;
-            //限制框的left值范围（手滑的情况下只能到最左/最右边）
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  -halfWidth) ? mLeft = -halfWidth : void 0;   //框滑动范围限制
             totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
-            (totalLen <= 0) ? totalLen = 0 : (totalLen > mBox) ? totalLen = mBox :void 0;
+            (totalLen <= 0) ? totalLen = 0 : (totalLen > mBox) ? totalLen = mBox : void 0;
 
         }else if(type == "scroll"){
 
@@ -484,7 +509,10 @@
 
     }
 
-    //全局滑动处理函数
+    /*
+     * 全局滑动处理函数
+     * @param {Number} mLen 每次方法滑动的距离
+     * */
     function slideProcessing(len){
 
         lineProgressSet();
@@ -513,7 +541,9 @@
         }
     }
 
-    //放大镜开始拖动
+    /*
+     * 放大镜开始拖动
+     * */
     var magnifierStartHandler = function(event){
 
         // 停止自动播放
@@ -523,7 +553,9 @@
 
     };
 
-    //放大镜拖动过程
+    /*
+     * 放大镜拖动过程
+     * */
     var magnifierMoveHandler = function(event){
 
         event.preventDefault();
@@ -541,7 +573,9 @@
 
     };
 
-    //滑动开始事件处理
+    /*
+     * 滑动开始事件处理
+     * */
     var startHandler = function (event) {
 
         // 停止自动播放
@@ -563,7 +597,9 @@
 
     };
 
-    // 滑动过程中事件处理
+    /*
+     * 滑动过程中事件处理
+     * */
     var moveHandler = function (event) {
 
         event.preventDefault();
@@ -583,7 +619,9 @@
 
     };
 
-    // 请求接口刷新数据
+    /*
+     * 请求接口刷新数据
+     * */
     $.ajax({
         url: "http://www.paipai360.cn:80/paipai360//production/sharegetProductionDetails.action?id=" + protionId,
         method: 'post',
@@ -609,7 +647,10 @@
         }
     });
 
-    //时间格式化
+    /*
+     * 时间格式化
+     * @param {Number} input 时间戳
+     * */
     function dateFormat(input){
 
         if (input == null || input == "" || typeof(input) == "undefined") {
