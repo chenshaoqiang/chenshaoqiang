@@ -438,15 +438,11 @@
 
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
-            /*(parseInt( circleProgressWrapper.style.left)  >= mMax) ? circleProgressWrapper.style.left = mMax + "px"
-                    : (parseInt(circleProgressWrapper.style.left) <= 0) ? circleProgressWrapper.style.left = 0
-                    : void 0;*/
 
         }else if(type == "scroll"){
 
             //限制框的left值范围（自动滚动的情况下重置到最左）
             (mLeft >= mMax) ? mLeft = 0 : (mLeft <=  0) ? mLeft = 0 : void 0;     //框滑动范围限制
-            /*(parseInt(circleProgressWrapper.style.left) >= mMax) ? circleProgressWrapper.style.left = 0 : void 0;*/
 
         }
 
