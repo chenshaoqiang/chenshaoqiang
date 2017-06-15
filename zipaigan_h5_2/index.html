@@ -430,7 +430,6 @@
         var halfWidth = parseInt(progressBoxH) / 2;
         var mBox = Math.round(imgBoxW);
         var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;//放大镜框left最大值
-        totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
         if(type == "slide"){
 
@@ -441,7 +440,18 @@
 
         }else if(type == "scroll"){
 
-            dirRight ? mLeft = mLeft + mLen : mLeft = mLeft - mLen;                 //这个值用于设置框的left值
+            if(dirRight){
+
+                mLeft = mLeft + mLen;
+                totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
+
+            }else{
+
+                mLeft = mLeft - mLen;
+                totalLen = totalLen - Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
+
+            }
+
             //限制框的left值范围（自动滚动的情况下重置到最左）
             (mLeft >= mMax) ? dirRight = false : (mLeft <=  -halfWidth) ? (mLeft = -halfWidth,dirRight = true) : void 0;//框滑动范围限制
 
