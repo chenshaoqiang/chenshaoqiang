@@ -199,6 +199,7 @@
     //返回滑动滚动底图
     function resizeBack(){
 
+        isShowMagBox=false;
         $(".progress_bar").css("display","block");
         $(".scroll-img-td").css("display","block");//换图，隐藏
         $("#scroll-img").removeAttr("style");
@@ -314,6 +315,7 @@
             getImgSize();                                                //重排img使拼接无缝
             lineProgressSet();
             isTurn = true;                                               //重新恢复可横屏状态
+            isShowMagBox=false;
 
         }
 
@@ -367,7 +369,7 @@
             $(".big_magnifier").css("display","none");         //竖屏了，放大镜大图标消失
             $("#magnifier_div").css("display","none");         //竖屏了，放大镜小图标消失
             $(".circleProgress_wrapper").css("display","none");//竖屏了，放大镜框统一不显示
-
+            isShowMagBox=false;
         }
 
     });
