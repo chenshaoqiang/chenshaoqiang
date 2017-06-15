@@ -162,7 +162,7 @@
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});        //进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});                   //设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});                    //放大镜内的背景图包裹框
-                $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%", "background-position": (parseInt(progressBoxH) / 2) + "px"});//放大镜内的背景图
+                $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%"});//放大镜内的背景图
 
             });
         });
@@ -232,7 +232,7 @@
         stopRolling();
 
         var bgSrc=$(bigPic).attr("src");
-        $("#magnifierImg1").css({"background-position-x": 0 + "px"}); //每次打开复位
+        $("#magnifierImg1").css({"background-position-x": parseInt(progressBoxH) / 2 + "px"}); //每次打开复位
         $(".scroll-img-td").css("display","none");                    //隐藏底图
         $("#scroll-img").css("height",littleImgH);                    //全景图高度设置，以宽度为100%做调整
         $("#scrollImgBox").css({"background":"url(" + bgSrc + ") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
