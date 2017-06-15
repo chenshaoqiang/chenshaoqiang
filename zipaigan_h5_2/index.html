@@ -439,6 +439,12 @@
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  -halfWidth) ? mLeft = -halfWidth : void 0;   //框滑动范围限制
             totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
+            if(totalLen <= 0){
+                totalLen = 0;
+            }else if(totalLen > mBox){
+                totalLen = mBox;
+            }
+
         }else if(type == "scroll"){
 
             if(dirRight){
@@ -463,7 +469,6 @@
         (totalSlide > halfWidth) ? totalSlide = halfWidth : (totalSlide <= (-totalPosition) + halfWidth) ? totalSlide = (-totalPosition) + halfWidth : void 0; //背景图的background-position-x值设置范围
         $("#magnifierImg1").css({"background-position-x": totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
-        console.log(totalLen);
         //进度条设置
         if(((totalLen / mBox) >= 0) && (totalLen / mBox) <= 0.5){
 
