@@ -434,20 +434,20 @@
             mLeft = mLeft + mLen;
             dirRight = true;
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
-            (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  halfWidth) ? mLeft = halfWidth : void 0;   //框滑动范围限制
+            (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  -halfWidth) ? mLeft = -halfWidth : void 0;   //框滑动范围限制
 
         }else if(type == "scroll"){
 
             dirRight ? mLeft = mLeft + mLen : mLeft = mLeft - mLen;                 //这个值用于设置框的left值
             //限制框的left值范围（自动滚动的情况下重置到最左）
-            (mLeft >= mMax) ? dirRight = false : (mLeft <=  halfWidth) ? (mLeft = halfWidth,dirRight = true) : void 0;//框滑动范围限制
+            (mLeft >= mMax) ? dirRight = false : (mLeft <=  -halfWidth) ? (mLeft = -halfWidth,dirRight = true) : void 0;//框滑动范围限制
 
         }
 
-        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * ( parseInt(imgBoxH) / Math.round(imgBoxW) ); //背景图可移动最大范围
+        var totalPosition = Math.round(imgBoxW) - Math.round(imgBoxW) * halfWidth / Math.round(imgBoxW); //背景图可移动最大范围
         var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );              //这个值用于设置框内背景图的background-position-x
 
-        (totalSlide <= 0) ? totalSlide = 0 : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
+        (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
         $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
