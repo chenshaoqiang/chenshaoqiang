@@ -396,7 +396,7 @@
         isPlay = false;
         $("#switch_div").find('img').attr("src", "img/pause.png");
 
-        (!isShowMagBox) ? timer = setInterval("Marquee(5)", speed) : timer = setInterval("magnifierMove(10,'scroll')", speed);
+        (!isShowMagBox) ? timer = setInterval("Marquee(5)", speed) : timer = setInterval("magnifierMove(5,'scroll')", 100);
 
     }
 
