@@ -501,6 +501,8 @@
     //放大镜开始拖动
     var magnifierStartHandler = function(event){
 
+        // 停止自动播放
+        stopRolling();
         mStartX = event.touches[0].pageX;
         mStartY = event.touches[0].pageY;
 
