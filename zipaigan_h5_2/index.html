@@ -162,7 +162,7 @@
                 $(".circleProgress").css({"width":progressBoxH, "height":progressBoxH});        //进度条内圆框
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});                   //设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});                    //放大镜内的背景图包裹框
-                $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%"});//放大镜内的背景图
+                $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%", "background-position": (parseInt(progressBoxH) / 2) + "px"});//放大镜内的背景图
 
             });
         });
@@ -237,9 +237,9 @@
         $("#scroll-img").css("height",littleImgH);                    //全景图高度设置，以宽度为100%做调整
         $("#scrollImgBox").css({"background":"url(" + bgSrc + ") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
 
-        isShowMagBox = true;                                   //显示放大镜框
+        isShowMagBox = true;                                //显示放大镜框
         mLeft = -(parseInt(progressBoxH) / 2);
-        circleProgressWrapper.style.left = mLeft + "px" ;               //重置位置，每次打开框都复位于最左边
+        circleProgressWrapper.style.left = mLeft + "px" ;    //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
         $(".progress_bar").css("display","none");            //直进度条消失
