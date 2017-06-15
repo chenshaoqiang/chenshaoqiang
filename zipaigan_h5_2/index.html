@@ -430,7 +430,6 @@
         var halfWidth = parseInt(progressBoxH) / 2;
         var mBox = Math.round(imgBoxW);
         var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;//放大镜框left最大值
-        totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
         if(type == "slide"){
 
@@ -438,6 +437,7 @@
             dirRight = true;
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  -halfWidth) ? mLeft = -halfWidth : void 0;   //框滑动范围限制
+            totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
         }else if(type == "scroll"){
 
