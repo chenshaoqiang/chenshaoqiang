@@ -428,7 +428,8 @@
     function magnifierMove(mLen,type){
 
         var halfWidth = parseInt(progressBoxH) / 2;
-        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;                             //放大镜框left最大值
+        var mBox = parseInt($("#scrollImgBox").css("width"));
+        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;//放大镜框left最大值
         totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
         if(type == "slide"){
@@ -453,16 +454,16 @@
 
         console.log(totalLen);
         //进度条设置
-        if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
+        if(((totalLen / mBox) >= 0) && (totalLen / mBox) <= 0.5){
 
             //滑动50%以内的时候，改变 rightCircle（0-50%）的进度条框
-            var rightDeg = -135 + parseInt(360 * (mLeft / mMax));
+            var rightDeg = -135 + parseInt(360 * (totalLen / mBox));
             setRotateDeg(-135,rightDeg);                                            //leftCircle的角度不变，一直是-135deg（还没开始走）
 
-        }else if(((mLeft / mMax) > 0.5) && (mLeft / mMax) <= 1){
+        }else if(((totalLen / mBox) > 0.5) && (totalLen / mBox) <= 1){
 
             //滑动50%以上内的时候，改变 leftCircle（50%-100%）的进度条框
-            var leftDeg = -135 + parseInt(360 * (mLeft / mMax) -180);
+            var leftDeg = -135 + parseInt(360 * (totalLen / mBox) -180);
             setRotateDeg(leftDeg,45);                                              //rightCircle的角度不变，一直是45deg（走到50%的状态）
 
         }
