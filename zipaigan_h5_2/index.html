@@ -433,7 +433,22 @@
         (totalSlide <= 0) ? totalSlide = 0 : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
         $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"}); //放大镜内的背景图随框移动改变background-position-x位置
 
-        (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
+
+        if(type == "slide"){
+
+            //限制框的left值范围（手滑的情况下只能到最左/最右边）
+            (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  0) ? mLeft = 0 : void 0;   //框滑动范围限制
+            /*(parseInt( circleProgressWrapper.style.left)  >= mMax) ? circleProgressWrapper.style.left = mMax + "px"
+                    : (parseInt(circleProgressWrapper.style.left) <= 0) ? circleProgressWrapper.style.left = 0
+                    : void 0;*/
+
+        }else if(type == "scroll"){
+
+            //限制框的left值范围（自动滚动的情况下重置到最左）
+            (mLeft >= mMax) ? mLeft = 0 : (mLeft <=  0) ? mLeft = 0 : void 0;     //框滑动范围限制
+            /*(parseInt(circleProgressWrapper.style.left) >= mMax) ? circleProgressWrapper.style.left = 0 : void 0;*/
+
+        }
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
@@ -451,20 +466,6 @@
         }
 
         circleProgressWrapper.style.left = mLeft + "px";                         //整个框移动
-
-        if(type == "slide"){
-
-            //限制框的left值范围（手滑的情况下只能到最左/最右边）
-            (parseInt( circleProgressWrapper.style.left)  >= mMax) ? circleProgressWrapper.style.left = mMax + "px"
-                    : (parseInt(circleProgressWrapper.style.left) <= 0) ? circleProgressWrapper.style.left = 0
-                    : void 0;
-
-        }else if(type == "scroll"){
-
-            //限制框的left值范围（自动滚动的情况下重置到最左）
-            (parseInt(circleProgressWrapper.style.left) >= mMax) ? circleProgressWrapper.style.left = 0 : void 0;
-
-        }
 
     }
 
