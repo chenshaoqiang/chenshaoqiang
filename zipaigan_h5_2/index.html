@@ -424,10 +424,12 @@
     * @param {Number} mLen 每次方法滑动/滚动的距离
     * @param {String} type 动画方式，区分滑动和滚动两种情况
     * */
+    var totalLen = 0;
     function magnifierMove(mLen,type){
 
         var halfWidth = parseInt(progressBoxH) / 2;
         var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;                             //放大镜框left最大值
+        totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
 
         if(type == "slide"){
 
@@ -445,14 +447,12 @@
         }
 
         var totalPosition = Math.round(imgBoxW); //背景图可移动最大范围
-        if(mLeft<=0){
-            var totalSlide = -mLeft;
-        }else{
-            var totalSlide = mLeft;
-        }
 
+        //var totalSlide = Math.round(totalPosition)*( -mLeft / mMax);
+        var totalSlide = halfWidth - totalLen;
+        console.log(totalLen,totalSlide);
         (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": -totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
+        $("#magnifierImg1").css({"background-position-x": totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
