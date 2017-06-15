@@ -448,7 +448,7 @@
         var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );              //这个值用于设置框内背景图的background-position-x
 
         (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": (-totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
+        $("#magnifierImg1").css({"background-position-x": (halfWidth - totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
