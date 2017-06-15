@@ -102,7 +102,7 @@
         startY = 0,
         mStartX = 0,
         mStartY = 0,
-        mLeft = 0,
+        mLeft,
         speed = 30,                                             //自动播放的时,使用的间隔时间,间隔越小速度越大
         scrollImgBox=document.getElementById("scrollImgBox"),   //内部活动框
         magnifierBox=document.getElementById("magnifier_box"),
@@ -238,7 +238,7 @@
         $("#scrollImgBox").css({"background":"url(" + bgSrc + ") no-repeat" , "background-size":"100%"});//将全景图作为背景图展现出来
 
         isShowMagBox = true;                                //显示放大镜框
-        mLeft = (parseInt(progressBoxH) / 2);
+        mLeft = -(parseInt(progressBoxH) / 2);
         circleProgressWrapper.style.left = mLeft + "px" ;    //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
