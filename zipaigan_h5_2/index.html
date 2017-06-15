@@ -446,9 +446,9 @@
 
         var totalPosition = Math.round(imgBoxW); //背景图可移动最大范围
         if(mLeft<=0){
-            var totalSlide = Math.round(totalPosition)*( -mLeft / mMax );
+            var totalSlide = Math.round(totalPosition)*( -mLeft / totalPosition );
         }else{
-            var totalSlide = Math.round(totalPosition)*( mLeft / mMax );
+            var totalSlide = Math.round(totalPosition)*( mLeft / totalPosition );
         }
 
         (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
