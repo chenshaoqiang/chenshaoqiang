@@ -118,7 +118,8 @@
         deviceWidth,                                            //设备宽
         prop,                                                   //通过真实图片获得宽高比
         timer,                                                  //用于定时器
-        dirRight = true;                                        //控制放大镜自动滚动的时候的方向
+        dirRight = true,                                        //控制放大镜自动滚动的时候的方向
+        totalLen = 0;
 
     //复制大图，用于无缝拼接
     function getImgSize(){
@@ -207,7 +208,7 @@
         $("#scroll-img").removeAttr("style");
         $("#scrollImgBox").removeAttr("style");
         lineProgressSet();
-
+        totalLen = 0;
     }
 
     //圆形进度条设置，用于滑动过程中传入角度值
@@ -424,7 +425,6 @@
     * @param {Number} mLen 每次方法滑动/滚动的距离
     * @param {String} type 动画方式，区分滑动和滚动两种情况
     * */
-    var totalLen = 0;
     function magnifierMove(mLen,type){
 
         var halfWidth = parseInt(progressBoxH) / 2;
@@ -438,12 +438,7 @@
             //限制框的left值范围（手滑的情况下只能到最左/最右边）
             (mLeft >= mMax) ? mLeft = mMax : (mLeft <=  -halfWidth) ? mLeft = -halfWidth : void 0;   //框滑动范围限制
             totalLen = totalLen + Math.round(imgBoxW) * (mLen / parseInt($("#scrollImgBox").css("width")));
-
-            if(totalLen <= 0){
-                totalLen = 0;
-            }else if(totalLen > mBox){
-                totalLen = mBox;
-            }
+            (totalLen <= 0) ? totalLen = 0 : (totalLen > mBox) ? totalLen = mBox :void 0;
 
         }else if(type == "scroll"){
 
