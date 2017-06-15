@@ -239,7 +239,7 @@
 
         isShowMagBox = true;                                //显示放大镜框
         mLeft = -(parseInt(progressBoxH) / 2);
-        circleProgressWrapper.style.left = mLeft + "px" ;    //重置位置，每次打开框都复位于最左边
+        circleProgressWrapper.style.left = -(parseInt(progressBoxH) / 2) + "px" ;    //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
         $(".progress_bar").css("display","none");            //直进度条消失
@@ -427,7 +427,7 @@
     function magnifierMove(mLen,type){
 
         var halfWidth = parseInt(progressBoxH) / 2;
-        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;                             //放大镜框可移动最大距离
+        var mMax = parseInt($("#scrollImgBox").css("width")) - halfWidth;                             //放大镜框left最大值
 
         if(type == "slide"){
 
@@ -445,10 +445,10 @@
         }
 
         var totalPosition = Math.round(imgBoxW); //背景图可移动最大范围
-        var totalSlide = Math.round(totalPosition) * ( mLeft / mMax );              //这个值用于设置框内背景图的background-position-x
+        var totalSlide = Math.round(totalPosition)*( mLeft / mMax );
 
         (totalSlide <= -halfWidth) ? totalSlide = -halfWidth : (totalSlide >= totalPosition) ? totalSlide = totalPosition : void 0; //背景图的background-position-x值设置范围
-        $("#magnifierImg1").css({"background-position-x": (halfWidth - totalSlide) + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
+        $("#magnifierImg1").css({"background-position-x": -totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
         if(((mLeft / mMax) >= 0) && (mLeft / mMax) <= 0.5){
