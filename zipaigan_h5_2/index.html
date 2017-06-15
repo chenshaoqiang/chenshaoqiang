@@ -239,7 +239,7 @@
 
         isShowMagBox = true;                                   //显示放大镜框
         mLeft = -(parseInt(progressBoxH) / 2);
-        circleProgressWrapper.style.left = 0 ;               //重置位置，每次打开框都复位于最左边
+        circleProgressWrapper.style.left = mLeft + "px" ;               //重置位置，每次打开框都复位于最左边
         $(".big_magnifier").css("display","none");           //放大镜大图标消失
         $("#magnifier_div").css("display","block");          //放大镜小图标出现
         $(".progress_bar").css("display","none");            //直进度条消失
