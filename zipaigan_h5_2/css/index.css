@@ -291,7 +291,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 /*---------水平进度条----------*/
 .progress_bar{
     position: absolute;
-    bottom: 0.4rem;
+    bottom: 0.5rem;
     left: 1rem;
     right: 0.8rem;
     height: .05rem;
