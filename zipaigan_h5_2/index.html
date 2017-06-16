@@ -434,7 +434,7 @@
      * */
     function Marquee(mLen) {
 
-        lineProgressSet();
+        lineProgressSet(); //设置进度条
         (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) ? scrollImgBox.scrollLeft = 0
                 :scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + mLen;
 
@@ -482,7 +482,8 @@
 
         var totalPosition = Math.round(imgBoxW); //背景图可移动最大范围
         var totalSlide = halfWidth - totalLen;
-        (totalSlide > halfWidth) ? totalSlide = halfWidth : (totalSlide <= (-totalPosition) + halfWidth) ? totalSlide = (-totalPosition) + halfWidth : void 0; //背景图的background-position-x值设置范围
+        //背景图的background-position-x值设置范围
+        (totalSlide > halfWidth) ? totalSlide = halfWidth : (totalSlide <= (-totalPosition) + halfWidth) ? totalSlide = (-totalPosition) + halfWidth : void 0;
         $("#magnifierImg1").css({"background-position-x": totalSlide + "px"});   //放大镜内的背景图随框移动改变background-position-x位置
 
         //进度条设置
@@ -510,7 +511,7 @@
      * */
     function slideProcessing(len){
 
-        lineProgressSet();
+        lineProgressSet(); //进度条设置
 
         if (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) {
 
