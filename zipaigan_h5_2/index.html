@@ -84,7 +84,10 @@
 </div>
 </body>
 <script type="application/javascript" charset="utf-8">
-
+    $(document.body).css({
+        "overflow-x":"hidden",
+        "overflow-y":"hidden"
+    });
     var protionId = $("#protionId").val(),
         userHeadImg = $("div.user_head img"),                  // 用户头像
         userNameSpan = $("#user_name_span"),                   // 用户姓名
