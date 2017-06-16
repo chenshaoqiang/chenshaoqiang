@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
+    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="6.16update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/360.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/HOT_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/HOT_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/HOT_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7591.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7592.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7593.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7594.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7595.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7596.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7597.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7598.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7599.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7600.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7601.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7602.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7603.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7604.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7605.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7606.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7607.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7608.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7609.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7610.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7611.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7612.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7613.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7614.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7615.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7616.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7617.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7618.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7619.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7620.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7621.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7622.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7623.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7624.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7625.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/IMG_7626.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/barrage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/barrage_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/bg.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/hot_off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/hot_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/like.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/music_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/next_page.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/no-favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/no-like.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/product_table.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/shop_cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/vertical_covert_horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/弹幕.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/img/弹幕_开.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/down.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/down.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/data/example.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/css/jquery.fullPage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/jquery.fullPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/jquery.fullPage.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/jquery.mobile-1.4.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/jquery3.0.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/landscape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/css/me-help.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/me-help.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/css/me-toturial.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/me-toturial.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/pinchzoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/pinchzoom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/scroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/css/threesixty.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show2/js/threesixty.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -28,17 +110,27 @@
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="268" column="32" selection-start-line="268" selection-start-column="32" selection-end-line="268" selection-end-column="32" />
+              <caret line="269" column="1" selection-start-line="269" selection-start-column="1" selection-end-line="269" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.944445">
+              <caret line="384" column="9" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+        <entry file="file://$PROJECT_DIR$/show2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6769406">
-              <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,7 +269,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
+              <option name="myItemId" value="show2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,29 +283,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
+              <option name="myItemId" value="show2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,10 +310,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\img" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\css" />
-      <recent name="D:\mygit\chenshaoqiang" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -312,12 +386,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00551" summary="6.15">
-      <created>1497501299926</created>
-      <option name="number" value="00551" />
-      <option name="project" value="LOCAL" />
-      <updated>1497501299926</updated>
     </task>
     <task id="LOCAL-00552" summary="6.15">
       <created>1497502155339</created>
@@ -607,7 +675,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497600550949</updated>
     </task>
-    <option name="localTasksCounter" value="600" />
+    <task id="LOCAL-00600" summary="6.16update">
+      <created>1497609491945</created>
+      <option name="number" value="00600" />
+      <option name="project" value="LOCAL" />
+      <updated>1497609491945</updated>
+    </task>
+    <option name="localTasksCounter" value="601" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +721,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="5.9  全景360修改至正常" />
     <MESSAGE value="    5.10" />
     <MESSAGE value="    5.11" />
     <MESSAGE value="    5.15" />
@@ -672,7 +745,8 @@
     <MESSAGE value="6.14" />
     <MESSAGE value="6.15" />
     <MESSAGE value="6.16" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.16" />
+    <MESSAGE value="6.16update" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.16update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,20 +755,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/css/table/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/view/works/status/sub_ing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.09246575">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/images/comment_icon_black.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -943,14 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.75">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/img/test1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -993,15 +1045,39 @@
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="268" column="32" selection-start-line="268" selection-start-column="32" selection-end-line="268" selection-end-column="32" />
+          <caret line="269" column="1" selection-start-line="269" selection-start-column="1" selection-end-line="269" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5856164">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show2/js/down.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6769406">
-          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.944445">
+          <caret line="384" column="9" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
