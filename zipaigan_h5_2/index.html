@@ -28,7 +28,7 @@
             <div class="scroll-img-td" id="marquePic1">
                 <img name="pic"
                      id="main_img_work"
-                     src="./img/test.jpg">
+                     src="">
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
@@ -434,7 +434,6 @@
      * */
     function Marquee(mLen) {
 
-        console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft,marquePic1.offsetWidth - scrollImgBox.scrollLeft);
         lineProgressSet();
         (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) ? scrollImgBox.scrollLeft = 0
                 :scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + mLen;
@@ -635,7 +634,7 @@
                 userNameSpan.text(username);
                 creatTimeSpan.text(createTime);
                 userHeadImg.attr("src", userHeadUrl);
-                //bigPic.attr("src", data.data.url);
+                bigPic.attr("src", data.data.url);
 
                 getImgSize();
             }
