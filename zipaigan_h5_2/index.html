@@ -628,9 +628,7 @@
                 var username = data.data.name;
                 var userHeadUrl = data.data.headimgurl;
                 var createTime = dateFormat(data.data.createtime);
-
                 (userHeadUrl == "" || userHeadUrl == null || userHeadUrl == undefined) ? userHeadUrl="./img/default_head.png" : void 0;
-
                 userNameSpan.text(username);
                 creatTimeSpan.text(createTime);
                 userHeadImg.attr("src", userHeadUrl);
