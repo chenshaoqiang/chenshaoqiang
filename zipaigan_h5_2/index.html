@@ -434,6 +434,7 @@
      * */
     function Marquee(mLen) {
 
+        console.log(marquePic1.offsetWidth,scrollImgBox.scrollLeft,marquePic1.offsetWidth - scrollImgBox.scrollLeft);
         lineProgressSet();
         (marquePic1.offsetWidth - scrollImgBox.scrollLeft <= 0) ? scrollImgBox.scrollLeft = 0
                 :scrollImgBox.scrollLeft = scrollImgBox.scrollLeft + mLen;
