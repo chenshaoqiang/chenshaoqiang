@@ -94,7 +94,7 @@ $(document).ready(function () {
             var totalPicNum = imgArray.length;
             var picHeight = "100%";
             var picWidth = "100%";
-            var product_1 = $('.product1').ThreeSixty({
+            var product = $('.product').ThreeSixty({
                 totalFrames: totalPicNum, // Total no. of image you have for 360 slider
                 endFrame: totalPicNum, // end frame for the auto spin animation
                 currentFrame: 0, // This the start frame for auto spin
@@ -110,7 +110,9 @@ $(document).ready(function () {
                 imgDescList: descList,
                 imgDesc: '.img_desc',
                 framerate: 30,
-                imgArray: imgArray
+                imgArray: imgArray,
+                autoplay: true,
+                autoplayDirection: false
             });
         }
         if (jsonData.link!=null){
