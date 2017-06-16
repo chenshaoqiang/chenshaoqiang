@@ -627,12 +627,12 @@
             if (data.code == 'success') {
                 var username = data.data.name;
                 var userHeadUrl = data.data.headimgurl;
-                var creatTime = dateFormat(data.data.createtime);
+                var createTime = dateFormat(data.data.createtime);
 
                 (userHeadUrl == "" || userHeadUrl == null || userHeadUrl == undefined) ? userHeadUrl="./img/default_head.png" : void 0;
 
                 userNameSpan.text(username);
-                creatTimeSpan.text(creatTime);
+                creatTimeSpan.text(createTime);
                 userHeadImg.attr("src", userHeadUrl);
                 //bigPic.attr("src", data.data.url);
 

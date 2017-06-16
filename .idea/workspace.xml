@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/img/test.jpg" afterPath="$PROJECT_DIR$/zipaigan_h5_2/img/test.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54223746">
-              <caret line="643" column="6" selection-start-line="643" selection-start-column="6" selection-end-line="643" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.51141554">
+              <caret line="634" column="47" selection-start-line="634" selection-start-column="47" selection-end-line="634" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -312,12 +312,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00541" summary="6.15">
-      <created>1497492170258</created>
-      <option name="number" value="00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1497492170258</updated>
     </task>
     <task id="LOCAL-00542" summary="6.15">
       <created>1497496133406</created>
@@ -607,7 +601,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497582243836</updated>
     </task>
-    <option name="localTasksCounter" value="590" />
+    <task id="LOCAL-00590" summary="6.16">
+      <created>1497582733102</created>
+      <option name="number" value="00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1497582733102</updated>
+    </task>
+    <option name="localTasksCounter" value="591" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -988,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54223746">
-          <caret line="643" column="6" selection-start-line="643" selection-start-column="6" selection-end-line="643" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.51141554">
+          <caret line="634" column="47" selection-start-line="634" selection-start-column="47" selection-end-line="634" selection-end-column="47" />
           <folding />
         </state>
       </provider>
