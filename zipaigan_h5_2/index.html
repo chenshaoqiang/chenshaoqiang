@@ -28,7 +28,7 @@
             <div class="scroll-img-td" id="marquePic1">
                 <img name="pic"
                      id="main_img_work"
-                     src="">
+                     src="./img/test.jpg">
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
@@ -90,7 +90,6 @@
         userNameSpan = $("#user_name_span"),                   // 用户姓名
         creatTimeSpan= $("#creat_time_span"),                  // 时间
         bigPic = $(".scroll-img-td img"),
-        boxPic = $(".magnifier_box_img img"),
         isPlay = true,                                         //是否滚动状态设置，默认滚动
         isTurn = true,                                         //是否可强制横屏的状态控制
         isShowMagBox = false,                                  //放大镜框是否显示
@@ -635,8 +634,7 @@
                 userNameSpan.text(username);
                 creatTimeSpan.text(creatTime);
                 userHeadImg.attr("src", userHeadUrl);
-                bigPic.attr("src", data.data.url);
-                boxPic.attr("src", data.data.url);
+                //bigPic.attr("src", data.data.url);
 
                 getImgSize();
             }
