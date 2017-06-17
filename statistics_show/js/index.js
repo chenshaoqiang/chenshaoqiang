@@ -318,18 +318,15 @@ $(document).ready(function () {
     [].forEach.call(oLis, function () {
         var oLi = arguments[0];
         oLi.index = arguments[1];
-        oLi.addEventListener("touchstart", start, false);
-        oLi.addEventListener("touchmove", move, false);
-        oLi.addEventListener("touchend", end, false);
+        oLi.addEventListener("touchstart", oLisTouchStart, false);
+        oLi.addEventListener("touchmove", oLisTouchMove, false);
+        oLi.addEventListener("touchend", oLisTouchEnd, false);
     });
 
     function getDistance(start, stop) {
         return Math.sqrt(Math.pow((stop.x - start.x), 2) + Math.pow((stop.y - start.y), 2));
     }
 
-    function getScale(start, stop) {
-        return getDistance(start[0], start[1]) / getDistance(stop[0], stop[1]);
-    }
     function setScaleAnimation(element,scale, animation) {
 
         if(scale<0.5){
@@ -338,7 +335,7 @@ $(document).ready(function () {
         // 缩放和位移
         element.style[TRANSFORM] = 'scale(' + scale + ')';
     }
-    function start(ev) {
+    function oLisTouchStart(ev) {
 
         this.startX = ev.changedTouches[0].pageX;
         this.startY = ev.changedTouches[0].pageY;
@@ -363,7 +360,7 @@ $(document).ready(function () {
 
         }
     }
-    function move(ev) {
+    function oLisTouchMove(ev) {
 
         ev.preventDefault();
         var touchY = ev.changedTouches[0].pageY;
@@ -377,7 +374,7 @@ $(document).ready(function () {
 
             this.flag = true;/*表示滑动而不是点击*/
             //记录下移动的时候的触摸点的坐标
-            if(Math.abs(changeX)>Math.abs(changeY)){
+            if(Math.abs(changeX) > Math.abs(changeY)){
                 this.flag = false;  //横滑不改变
                 return;
             }
@@ -414,6 +411,7 @@ $(document).ready(function () {
                 var oDiv = $("div.slideImgDiv");
                 curImgIndex = parseInt($(ev.target).attr("curImgIndex"));//当前图的索引
                 if(Math.abs(changeX)>Math.abs(changeY)){
+                    this.flag = false;  //横滑不改变
                     if(changeX < 0){//小于0说明是向左滑，图片递增
                         curImgIndex = curImgIndex + 1;
                         [].forEach.call(oDiv,function(){
@@ -472,13 +470,13 @@ $(document).ready(function () {
         }
 
     }
-    function end(ev) {
+    function oLisTouchEnd(ev) {
         if(ev.target.nodeName!= "IMG"){
+
             if(this.flag){
                 //让上一张或者下一张都回到0,0的位置
                 oLis[this.nextIndex].style.webkitTransform = "translate(0,0)";
                 //oLis[this.nextIndex].style.webkitTransition = "0.1s";
-                oLis[this.index].style.display = "none";
                 oLis[this.nextIndex].addEventListener("webkitTransitionEnd",function(){
                     this.style.webkitTransition = "";
                     //增加执行动画的id名
