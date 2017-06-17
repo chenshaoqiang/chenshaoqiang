@@ -192,8 +192,6 @@ $(document).ready(function () {
                 });
             }
 
-            console.log(descList);
-
         }
         if (jsonData.link != null){
 
@@ -236,14 +234,14 @@ $(document).ready(function () {
 
         if(myAuto.paused){
 
-            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music.png');
+            $('.swx-music').attr('src','/statistics_show/img/music.png');
             $('.swx-music').removeClass('music-pause');
 
             myAuto.play();
 
         }else{
 
-            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music_pause.png');
+            $('.swx-music').attr('src','/statistics_show/img/music_pause.png');
             $('.swx-music').addClass('music-pause');
 
             myAuto.pause();
@@ -261,12 +259,12 @@ $(document).ready(function () {
         if(ifOpenBarrageFlag){
 
             $('.zpg-barrage-container').show();
-            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage_open.png');
+            $('.swx-barrage').attr('src','/statistics_show/img/barrage_open.png');
 
         }else{
 
             $('.zpg-barrage-container').hide();
-            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage.png');
+            $('.swx-barrage').attr('src','/statistics_show/img/barrage.png');
 
         }
     }
@@ -280,11 +278,11 @@ $(document).ready(function () {
 
         if(limitFlag){
 
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_on.png');
+            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_on.png');
 
         }else{
 
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_off.png');
+            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_off.png');
 
         }
 
