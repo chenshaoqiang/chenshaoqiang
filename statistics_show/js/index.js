@@ -6,7 +6,9 @@ $(document).ready(function () {
     var distance = {}; //用于记住手势距离
     var imgScale = 1;  //用于保存缩放值
     var limitFlag = false;  //是否开启热点
-
+    var curImgIndex = 0; //第二图的显示索引
+    var imgArray;
+    var descList;
     //从后台获取
     function showImagesWithId(workId){
 
@@ -54,8 +56,6 @@ $(document).ready(function () {
         //pic list
         if (jsonData.picUrls!=null){
 
-            var imgArray = new Array();
-
             if(limitFlag){
 
                 imgArray = [];
@@ -83,10 +83,9 @@ $(document).ready(function () {
             var totalPicNum = imgArray.length;//IMG总张数
             var picHeight = "100%";
             var picWidth = "100%";
-            var descList = new Array();
 
             //旋转图片跟随简介
-            function imgFllowDisc(data){
+            function imgFollowDisc(data){
 
                 descList = [];
 
@@ -132,13 +131,20 @@ $(document).ready(function () {
 
             }
 
-            if (!isEmpty(jsonData.picTags) && !limitFlag){
+            if(!limitFlag){
 
-                imgFllowDisc(jsonData.picTags); //旋转图片跟随简介-非热点
                 $('.product1').css("display","block");
-                $('.img_desc1').css("display","block");
                 $('.product2').css("display","none");
-                $('.img_desc2').css("display","none");
+
+                if (!isEmpty(jsonData.picTags)){
+
+                    imgFollowDisc(jsonData.picTags); //旋转图片跟随简介-非热点
+
+                    $('.img_desc2').css("display","none");
+                    $('.img_desc1').css("display","block");
+
+                }
+
                 var product_1 = $('.product1').ThreeSixty({
 
                     totalFrames: totalPicNum,
@@ -165,41 +171,45 @@ $(document).ready(function () {
                         product_1.stop();
                     }
                 });
-            }
-            //旋转图片跟随简介-热点
-            if (!isEmpty(jsonData.hotPicTags) && limitFlag){
 
-                imgFllowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
+
+            }
+
+            if(limitFlag){
+
                 $('.product1').css("display","none");
                 $('.product2').css("display","block");
-                $('.img_desc1').css("display","none");
-                $('.img_desc2').css("display","block");
-                var product_2 = $('.product2').ThreeSixty({
+                //旋转图片跟随简介-热点
+                if (!isEmpty(jsonData.hotPicTags)){
 
-                    totalFrames: totalPicNum,
-                    endFrame: totalPicNum,
-                    currentFrame: 0,
-                    zeroBased: true,
-                    imgList: '.threesixty_images', // selector for image list
-                    progress: '.spinner',          // selector to show the loading progress
-                    filePrefix: '',                // file prefix if any
-                    ext: '.jpg',                   // extention for the assets
-                    height: picHeight,
-                    width: picWidth,
-                    navigation: true,
-                    disableSpin: false,            // Default false
-                    imgDescList: descList,
-                    imgDesc: '.img_desc2',
-                    framerate: 400,
-                    imgArray: imgArray,
-                    autoplayDirection:-1,
-                    onReady: function(){
-                        //product_2.play();
-                    },
-                    onDragStart: function () {
-                        product_2.stop();
+                    imgFollowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
+                    $('.img_desc1').css("display","none");
+                    $('.img_desc2').css("display","block");
+
+                }
+                var imgHtml = "";
+                var product2 = document.getElementById("product2");
+
+                for(var i = 0;i < imgArray.length;i++){
+
+                    if(i == 0){
+
+                        imgHtml += "<div class='slideImgDiv zIndex'>";
+
+                    }else{
+
+                        imgHtml += "<div class='slideImgDiv'>";
+
                     }
-                });
+
+                    imgHtml += "<img src="+" ' " + imgArray[i] +" ' curImgIndex=" + i + "> ";
+                    imgHtml += "</div>";
+
+                }
+
+                product2.innerHTML = imgHtml;
+                $(".img_desc2").text(descList[curImgIndex]);
+
             }
 
         }
@@ -245,14 +255,14 @@ $(document).ready(function () {
 
         if(myAuto.paused){
 
-            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music.png');
+            $('.swx-music').attr('src','/statistics_show/img/music.png');
             $('.swx-music').removeClass('music-pause');
 
             myAuto.play();
 
         }else{
 
-            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music_pause.png');
+            $('.swx-music').attr('src','/statistics_show/img/music_pause.png');
             $('.swx-music').addClass('music-pause');
 
             myAuto.pause();
@@ -270,12 +280,12 @@ $(document).ready(function () {
         if(ifOpenBarrageFlag){
 
             $('.zpg-barrage-container').show();
-            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage_open.png');
+            $('.swx-barrage').attr('src','/statistics_show/img/barrage_open.png');
 
         }else{
 
             $('.zpg-barrage-container').hide();
-            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage.png');
+            $('.swx-barrage').attr('src','/statistics_show/img/barrage.png');
 
         }
     }
@@ -289,11 +299,11 @@ $(document).ready(function () {
 
         if(limitFlag){
 
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_on.png');
+            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_on.png');
 
         }else{
 
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_off.png');
+            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_off.png');
 
         }
 
@@ -329,10 +339,18 @@ $(document).ready(function () {
         element.style[TRANSFORM] = 'scale(' + scale + ')';
     }
     function start(ev) {
-        if(ev.target.nodeName!= "IMG"){
-            this.startX = ev.changedTouches[0].pageX;
-            this.startY = ev.changedTouches[0].pageY;
-        }else{
+
+        this.startX = ev.changedTouches[0].pageX;
+        this.startY = ev.changedTouches[0].pageY;
+
+        if(ev.target.nodeName == "IMG"){
+
+            if($(ev.target).attr("curImgIndex")){
+
+                curImgIndex = $(ev.target).attr("curImgIndex");
+
+            }
+
             if (ev.touches.length === 2) {
                 distance.start = getDistance({
                     x: ev.touches[0].screenX,
@@ -342,17 +360,20 @@ $(document).ready(function () {
                     y: ev.touches[1].screenY
                 });
             }
+
         }
     }
     function move(ev) {
+
         ev.preventDefault();
+        var touchY = ev.changedTouches[0].pageY;
+        var touchX = ev.changedTouches[0].pageX;
+        var changeY = touchY - this.startY;
+        var changeX = touchX - this.startX;
+        var nowIndex = this.index;
+        var step = 1 / 5;
+
         if(ev.target.nodeName!= "IMG"){
-            var touchY = ev.changedTouches[0].pageY;
-            var touchX = ev.changedTouches[0].pageX;
-            var changeY = touchY - this.startY;
-            var changeX = touchX - this.startX;
-            var nowIndex = this.index;
-            var step = 1 / 5;
 
             this.flag = true;/*表示滑动而不是点击*/
             //记录下移动的时候的触摸点的坐标
@@ -384,12 +405,60 @@ $(document).ready(function () {
                     oLis[this.nextIndex].className = "section zIndex";
                     oLis[this.nextIndex].style.display = "block";
                     this.style.webkitTransform = "scale(" + (1 - Math.abs(changeY / winH)* step ) + ") translate(0," + changeY + "px)";
-
                 }
             }
         }else{
+
+            if($(ev.target).attr("curImgIndex")){
+
+                var oDiv = $("div.slideImgDiv");
+                curImgIndex = parseInt($(ev.target).attr("curImgIndex"));//当前图的索引
+                if(Math.abs(changeX)>Math.abs(changeY)){
+                    if(changeX < 0){//小于0说明是向左滑，图片递增
+                        curImgIndex = curImgIndex + 1;
+                        [].forEach.call(oDiv,function(){
+                            //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
+                            if(curImgIndex != arguments[1]){
+                                arguments[0].style.display = "none";
+                            }
+                            arguments[0].className = "slideImgDiv";
+                        });
+                        if(curImgIndex == imgArray.length){
+                            curImgIndex = 0;
+                        }
+                        var duration=winW + changeX;
+                        oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
+                        oDiv[curImgIndex].className = "slideImgDiv zIndex";
+                        oDiv[curImgIndex].style.display = "block";
+                        this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
+                        $(".img_desc2").text(descList[curImgIndex]);
+
+                    }else if(changeX > 0){
+                        curImgIndex = curImgIndex - 1;
+                        [].forEach.call(oDiv,function(){
+                            //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
+                            if(curImgIndex != arguments[1]){
+                                arguments[0].style.display = "none";
+                            }
+                            arguments[0].className = "slideImgDiv";
+                        });
+                        if(curImgIndex == -1){
+                            curImgIndex = 2;
+                        }
+                        var duration=-winW + changeX;
+                        oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
+                        oDiv[curImgIndex].className = "slideImgDiv zIndex";
+                        oDiv[curImgIndex].style.display = "block";
+                        this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
+                        $(".img_desc2").text(descList[curImgIndex]);
+                    }
+
+                }
+
+            }
+
             if (ev.touches.length === 2) {
-                origin = {x: 150, y: 150}; //缩放中心
+                origin = {x: winW/2, y: winW/2}; //缩放中心
                 distance.stop = getDistance({
                     x: ev.touches[0].screenX,
                     y: ev.touches[0].screenY
@@ -408,7 +477,8 @@ $(document).ready(function () {
             if(this.flag){
                 //让上一张或者下一张都回到0,0的位置
                 oLis[this.nextIndex].style.webkitTransform = "translate(0,0)";
-                oLis[this.nextIndex].style.webkitTransition = "0.2s";
+                //oLis[this.nextIndex].style.webkitTransition = "0.1s";
+                oLis[this.index].style.display = "none";
                 oLis[this.nextIndex].addEventListener("webkitTransitionEnd",function(){
                     this.style.webkitTransition = "";
                     //增加执行动画的id名
