@@ -1,22 +1,12 @@
 $(document).ready(function () {
 
-    var TRANSITION = 'transition';
-    var TRANSITION_END = 'transitionend';
     var TRANSFORM = 'transform';
-    var TRANSFORM_PROPERTY = 'transform';
-    var TRANSITION_PROPERTY = 'transition';
+    (typeof document.body.style.webkitTransform !== undefined) ? TRANSFORM = 'webkitTransform' :void 0;
 
-    if (typeof document.body.style.webkitTransform !== undefined) {
-        TRANSFORM = 'webkitTransform';
-        TRANSITION = 'webkitTransition';
-        TRANSITION_END = 'webkitTransitionEnd';
-        TRANSFORM_PROPERTY = '-webkit-transform';
-        TRANSITION_PROPERTY = '-webkit-transition';
-    }
-    var distance = {};
-    var origin;
-    var imgScale = 1;
-    var limitFlag = false;
+    var distance = {}; //用于记住手势距离
+    var imgScale = 1;  //用于保存缩放值
+    var limitFlag = false;  //是否开启热点
+
     //从后台获取
     function showImagesWithId(workId){
 
@@ -76,6 +66,7 @@ $(document).ready(function () {
                     imgArray.push(jsonData.hotPicUrls[i]);
 
                 }
+                console.log(imgArray);
             }else{
 
                 imgArray = [];
@@ -86,6 +77,7 @@ $(document).ready(function () {
                     imgArray.push(jsonData.picUrls[i]);
 
                 }
+                console.log(imgArray);
             }
 
             var descList = new Array();
@@ -285,25 +277,24 @@ $(document).ready(function () {
     }
 
     //点击热点
-    var ifOpenHotFlag = false;
     $(".swx-hot-spots").bind( "click", tapHotSpotsIcon);
 
     function tapHotSpotsIcon(){
 
-        ifOpenHotFlag = !ifOpenHotFlag;
         limitFlag = !limitFlag;
 
-        if(ifOpenHotFlag){
+        if(limitFlag){
 
             $('.swx-hot-spots').attr('src','/statistics_show/img/hot_on.png');
-            showImagesFromLocalJson('data/example.json');
 
         }else{
 
-            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_off.png');
-            showImagesFromLocalJson('data/example.json');
+            $('.swx-hot-spots').attr('src','/show2/img/hot_off.png');
 
         }
+
+        showImagesFromLocalJson('data/example.json');
+
     }
 
     //滑动
@@ -318,12 +309,6 @@ $(document).ready(function () {
         oLi.addEventListener("touchend", end, false);
     });
 
-    function getOrigin(first, second) {
-        return {
-            x: 150,
-            y: 150
-        };
-    }
     function getDistance(start, stop) {
         return Math.sqrt(Math.pow((stop.x - start.x), 2) + Math.pow((stop.y - start.y), 2));
     }
@@ -400,13 +385,7 @@ $(document).ready(function () {
             }
         }else{
             if (ev.touches.length === 2) {
-                origin = getOrigin({
-                    x: ev.touches[0].pageX,
-                    y: ev.touches[0].pageY
-                }, {
-                    x: ev.touches[1].pageX,
-                    y: ev.touches[1].pageY
-                });
+                origin = {x: 150, y: 150}; //缩放中心
                 distance.stop = getDistance({
                     x: ev.touches[0].screenX,
                     y: ev.touches[0].screenY
