@@ -262,7 +262,7 @@ a {
     color: white;
 }
 
-.img_desc{
+.img_desc1,.img_desc2{
     display: none;
     width: 100%;
     min-height: 0.44rem;

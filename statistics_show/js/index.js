@@ -92,11 +92,11 @@ $(document).ready(function () {
 
                 if(data.length == 0){
 
-                    $(".img_desc").hide();
+                    $(".first-see-pics-desc").hide();
 
                 }else {
 
-                    $(".img_desc").show();
+                    $(".first-see-pics-desc").show();
                     var index = new Array;
 
                     for(key in data){
@@ -136,7 +136,9 @@ $(document).ready(function () {
 
                 imgFllowDisc(jsonData.picTags); //旋转图片跟随简介-非热点
                 $('.product1').css("display","block");
+                $('.img_desc1').css("display","block");
                 $('.product2').css("display","none");
+                $('.img_desc2').css("display","none");
                 var product_1 = $('.product1').ThreeSixty({
 
                     totalFrames: totalPicNum,
@@ -152,12 +154,15 @@ $(document).ready(function () {
                     navigation: true,
                     disableSpin: false,            // Default false
                     imgDescList: descList,
-                    imgDesc: '.img_desc',
+                    imgDesc: '.img_desc1',
                     framerate: 400,
                     imgArray: imgArray,
                     autoplayDirection:-1,
                     onReady: function(){
-                        //product_1.play();
+                        product_1.play();
+                    },
+                    onDragStart: function () {
+                        product_1.stop();
                     }
                 });
             }
@@ -167,6 +172,8 @@ $(document).ready(function () {
                 imgFllowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
                 $('.product1').css("display","none");
                 $('.product2').css("display","block");
+                $('.img_desc1').css("display","none");
+                $('.img_desc2').css("display","block");
                 var product_2 = $('.product2').ThreeSixty({
 
                     totalFrames: totalPicNum,
@@ -182,12 +189,15 @@ $(document).ready(function () {
                     navigation: true,
                     disableSpin: false,            // Default false
                     imgDescList: descList,
-                    imgDesc: '.img_desc',
+                    imgDesc: '.img_desc2',
                     framerate: 400,
                     imgArray: imgArray,
                     autoplayDirection:-1,
                     onReady: function(){
-                        //product_1.play();
+                        //product_2.play();
+                    },
+                    onDragStart: function () {
+                        product_2.stop();
                     }
                 });
             }
@@ -226,6 +236,7 @@ $(document).ready(function () {
 
     //初始化时播放音乐
     var myAuto = document.getElementById('audio');
+    myAuto.play();
 
     //点击切换音乐播放和暂停效果
     $(".swx-music").bind( "click", tapMusicIcon);
@@ -234,14 +245,14 @@ $(document).ready(function () {
 
         if(myAuto.paused){
 
-            $('.swx-music').attr('src','/statistics_show/img/music.png');
+            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music.png');
             $('.swx-music').removeClass('music-pause');
 
             myAuto.play();
 
         }else{
 
-            $('.swx-music').attr('src','/statistics_show/img/music_pause.png');
+            $('.swx-music').attr('src','/chenshaoqiang/statistics_show/img/music_pause.png');
             $('.swx-music').addClass('music-pause');
 
             myAuto.pause();
@@ -259,12 +270,12 @@ $(document).ready(function () {
         if(ifOpenBarrageFlag){
 
             $('.zpg-barrage-container').show();
-            $('.swx-barrage').attr('src','/statistics_show/img/barrage_open.png');
+            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage_open.png');
 
         }else{
 
             $('.zpg-barrage-container').hide();
-            $('.swx-barrage').attr('src','/statistics_show/img/barrage.png');
+            $('.swx-barrage').attr('src','/chenshaoqiang/statistics_show/img/barrage.png');
 
         }
     }
@@ -278,11 +289,11 @@ $(document).ready(function () {
 
         if(limitFlag){
 
-            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_on.png');
+            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_on.png');
 
         }else{
 
-            $('.swx-hot-spots').attr('src','/statistics_show/img/hot_off.png');
+            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_off.png');
 
         }
 
