@@ -66,7 +66,7 @@ $(document).ready(function () {
                     imgArray.push(jsonData.hotPicUrls[i]);
 
                 }
-                console.log(imgArray);
+
             }else{
 
                 imgArray = [];
@@ -77,31 +77,36 @@ $(document).ready(function () {
                     imgArray.push(jsonData.picUrls[i]);
 
                 }
-                console.log(imgArray);
+
             }
 
+            var totalPicNum = imgArray.length;//IMG总张数
+            var picHeight = "100%";
+            var picWidth = "100%";
             var descList = new Array();
 
-            //旋转图片跟随简介-非热点
-            if (!isEmpty(jsonData.picTags) && !limitFlag){
+            //旋转图片跟随简介
+            function imgFllowDisc(data){
+
                 descList = [];
-                if(jsonData.picTags.length == 0){
+
+                if(data.length == 0){
 
                     $(".img_desc").hide();
 
-                }else{
+                }else {
 
                     $(".img_desc").show();
                     var index = new Array;
 
-                    for(key in jsonData.picTags){
+                    for(key in data){
 
                         index[index.length] = key;
 
                     }
                     if(index.length == 1){
 
-                        descList.push(jsonData.picTags[index[0]]);
+                        descList.push(data[index[0]]);
 
                     }else{
 
@@ -109,15 +114,15 @@ $(document).ready(function () {
 
                             for(var j = 0;j < parseInt(index[i] - index[i - 1]);j++){
 
-                                descList.push(jsonData.picTags[index[i - 1]]);
+                                descList.push(data[index[i - 1]]);
 
                             }
                         }
-                        if(index[index.length - 1] < 50){
+                        if(index[index.length - 1] <= totalPicNum){
 
-                            for(var i = 0;i <= 50 -(index[index.length - 1]);i++){
+                            for(var i = 0;i <= totalPicNum -(index[index.length - 1]);i++){
 
-                                descList.push(jsonData.picTags[index[index.length - 1]]);
+                                descList.push(data[index[index.length - 1]]);
 
                             }
 
@@ -125,79 +130,69 @@ $(document).ready(function () {
                     }
                 }
 
+            }
+
+            if (!isEmpty(jsonData.picTags) && !limitFlag){
+
+                imgFllowDisc(jsonData.picTags); //旋转图片跟随简介-非热点
+                $('.product1').css("display","block");
+                $('.product2').css("display","none");
+                var product_1 = $('.product1').ThreeSixty({
+
+                    totalFrames: totalPicNum,
+                    endFrame: totalPicNum,
+                    currentFrame: 0,
+                    zeroBased: true,
+                    imgList: '.threesixty_images', // selector for image list
+                    progress: '.spinner',          // selector to show the loading progress
+                    filePrefix: '',                // file prefix if any
+                    ext: '.jpg',                   // extention for the assets
+                    height: picHeight,
+                    width: picWidth,
+                    navigation: true,
+                    disableSpin: false,            // Default false
+                    imgDescList: descList,
+                    imgDesc: '.img_desc',
+                    framerate: 400,
+                    imgArray: imgArray,
+                    autoplayDirection:-1,
+                    onReady: function(){
+                        //product_1.play();
+                    }
+                });
             }
             //旋转图片跟随简介-热点
             if (!isEmpty(jsonData.hotPicTags) && limitFlag){
 
-                descList = [];
+                imgFllowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
+                $('.product1').css("display","none");
+                $('.product2').css("display","block");
+                var product_2 = $('.product2').ThreeSixty({
 
-                if(jsonData.hotPicTags.length == 0){
-
-                    $(".img_desc").hide();
-
-                }else{
-
-                    $(".img_desc").show();
-                    var index = new Array;
-
-                    for(key in jsonData.hotPicTags){
-
-                        index[index.length] = key;
-
+                    totalFrames: totalPicNum,
+                    endFrame: totalPicNum,
+                    currentFrame: 0,
+                    zeroBased: true,
+                    imgList: '.threesixty_images', // selector for image list
+                    progress: '.spinner',          // selector to show the loading progress
+                    filePrefix: '',                // file prefix if any
+                    ext: '.jpg',                   // extention for the assets
+                    height: picHeight,
+                    width: picWidth,
+                    navigation: true,
+                    disableSpin: false,            // Default false
+                    imgDescList: descList,
+                    imgDesc: '.img_desc',
+                    framerate: 400,
+                    imgArray: imgArray,
+                    autoplayDirection:-1,
+                    onReady: function(){
+                        //product_1.play();
                     }
-                    if(index.length == 1){
-
-                        descList.push(jsonData.hotPicTags[index[0]]);
-
-                    }else{
-
-                        for(var i = 1;i < index.length;i++){
-                            for(var j = 0;j<parseInt(index[i] - index[i - 1]);j++){
-
-                                descList.push(jsonData.hotPicTags[index[i - 1]]);
-
-                            }
-                        }
-
-                        if(index[index.length - 1] < 50){
-                            for(var i = 0;i <= 50 - (index[index.length - 1]);i++){
-
-                                descList.push(jsonData.hotPicTags[index[index.length - 1]]);
-
-                            }
-                        }
-                    }
-                }
-
+                });
             }
 
-            var totalPicNum = imgArray.length;//IMG总张数
-            var picHeight = "100%";
-            var picWidth = "100%";
-
-            var product_1 = $('.product1').ThreeSixty({
-
-                totalFrames: totalPicNum,
-                endFrame: totalPicNum,
-                currentFrame: 0,
-                zeroBased: true,
-                imgList: '.threesixty_images', // selector for image list
-                progress: '.spinner',          // selector to show the loading progress
-                filePrefix: '',                // file prefix if any
-                ext: '.jpg',                   // extention for the assets
-                height: picHeight,
-                width: picWidth,
-                navigation: true,
-                disableSpin: false,            // Default false
-                imgDescList: descList,
-                imgDesc: '.img_desc',
-                framerate: 400,
-                imgArray: imgArray,
-                autoplayDirection:-1,
-                onReady: function(){
-                    //product_1.play();
-                }
-            });
+            console.log(descList);
 
         }
         if (jsonData.link != null){

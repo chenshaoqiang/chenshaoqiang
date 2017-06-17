@@ -452,6 +452,9 @@ a {
     height:80%;
     margin-top: 8%;
 }
+.product2{
+    display: none;
+}
 .product-detail-param{
     width:100%;
     background:#98989A;
