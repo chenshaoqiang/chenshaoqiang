@@ -152,7 +152,7 @@
     document.documentElement.style.fontSize=winW/scale+"px";
 
     var wrapBox=document.getElementById("wrapBox");
-    scrollImgBox.addEventListener("touchstart", startHandler, false);
+    wrapBox.addEventListener("touchstart", startHandler, false);
     var startHandler = function (event) {
         var x1 = event.touches[0].pageX;
         var y1 = event.touches[0].pageY;
