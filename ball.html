@@ -131,7 +131,7 @@
     </style>
 </head>
 <body>
-<div class="wrapBox">
+<div class="wrapBox" id="wrapBox">
     <div class="box">
         <div class="box1"></div>
         <div class="box2"></div>
@@ -150,6 +150,19 @@
     var winW=document.documentElement.clientWidth;//设备的实际宽度
     var scale=640/100;
     document.documentElement.style.fontSize=winW/scale+"px";
+
+    var wrapBox=document.getElementById("wrapBox");
+    scrollImgBox.addEventListener("touchstart", startHandler, false);
+    var startHandler = function (event) {
+        var x1 = event.touches[0].pageX;
+        var y1 = event.touches[0].pageY;
+
+        var x2 = event.touches[1].pageX;
+        var y2 = event.touches[1].pageY;
+
+        alert(x1+"||"+x2);
+        alert(y1+"||"+y2);
+    }
 </script>
 </body>
 </html>
