@@ -161,7 +161,7 @@ $(document).ready(function () {
                     disableSpin: false,            // Default false
                     imgDescList: descList,
                     imgDesc: '.img_desc1',
-                    framerate: 400,
+                    framerate: 500,
                     imgArray: imgArray,
                     autoplayDirection:-1,
                     onReady: function(){
