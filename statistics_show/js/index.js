@@ -327,7 +327,7 @@ $(document).ready(function () {
         return Math.sqrt(Math.pow((stop.x - start.x), 2) + Math.pow((stop.y - start.y), 2));
     }
 
-    function setScaleAnimation(element,scale, animation) {
+    function setScaleAnimation(element,scale) {
 
         if(scale<0.5){
              scale=0.5
@@ -465,7 +465,7 @@ $(document).ready(function () {
                     y: ev.touches[1].screenY
                 });
                 imgScale = distance.stop / distance.start;
-                setScaleAnimation(ev.target,imgScale, true);
+                setScaleAnimation(ev.target,imgScale);
             }
         }
 
@@ -487,7 +487,8 @@ $(document).ready(function () {
             }
         }else{
             imgScale = 1;
-            setScaleAnimation(ev.target,imgScale)
+            setScaleAnimation(ev.target,imgScale);
+
         }
 
 
