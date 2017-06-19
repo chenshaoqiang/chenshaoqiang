@@ -169,6 +169,9 @@ $(document).ready(function () {
                     },
                     onDragStart: function () {
                         product_1.stop();
+                    },
+                    onDragStop: function () {
+                        product_1.play();
                     }
                 });
 

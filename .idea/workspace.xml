@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/css/threesixty.css" afterPath="$PROJECT_DIR$/statistics_show/css/threesixty.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/js/index.js" afterPath="$PROJECT_DIR$/statistics_show/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.75">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state vertical-scroll-proportion="-12.75">
+              <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -46,21 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threesixty.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50328946">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.7927632">
+              <caret line="172" column="45" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/show/index.html">
+      <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.75">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state vertical-scroll-proportion="-11.6875">
+              <caret line="170" column="14" selection-start-line="169" selection-start-column="12" selection-end-line="170" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -129,9 +129,9 @@
         <option value="$PROJECT_DIR$/statistics_show/js/threesixty.min.js" />
         <option value="$PROJECT_DIR$/statistics_show/css/index.css" />
         <option value="$PROJECT_DIR$/statistics_show/index.html" />
-        <option value="$PROJECT_DIR$/statistics_show/js/index.js" />
         <option value="$PROJECT_DIR$/statistics_show/css/1.html" />
         <option value="$PROJECT_DIR$/statistics_show/css/threesixty.css" />
+        <option value="$PROJECT_DIR$/statistics_show/js/index.js" />
       </list>
     </option>
   </component>
@@ -352,12 +352,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00565" summary="6.15">
-      <created>1497518140855</created>
-      <option name="number" value="00565" />
-      <option name="project" value="LOCAL" />
-      <updated>1497518140855</updated>
     </task>
     <task id="LOCAL-00566" summary="6.15">
       <created>1497518297803</created>
@@ -647,7 +641,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497845141705</updated>
     </task>
-    <option name="localTasksCounter" value="614" />
+    <task id="LOCAL-00614" summary="6.19 update">
+      <created>1497847130818</created>
+      <option name="number" value="00614" />
+      <option name="project" value="LOCAL" />
+      <updated>1497847130818</updated>
+    </task>
+    <option name="localTasksCounter" value="615" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -956,24 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3618422">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.28125">
-          <caret line="497" column="0" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statistics_show/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -982,9 +964,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50328946">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/show/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.75">
+        <state vertical-scroll-proportion="0.030821918">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
@@ -992,18 +982,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.75">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state vertical-scroll-proportion="-12.75">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
+    <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50328946">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state vertical-scroll-proportion="-11.6875">
+          <caret line="170" column="14" selection-start-line="169" selection-start-column="12" selection-end-line="170" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7927632">
+          <caret line="172" column="45" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
           <folding />
         </state>
       </provider>
