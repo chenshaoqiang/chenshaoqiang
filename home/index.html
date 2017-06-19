@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>把学习时代设为主页--帮助中心页面</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <style type="text/css">
+        body{font-family:Arial, Helvetica, sans-serif;font-size:14px;width:980px;margin:0 auto;padding:6px 0 0;}
+        img,h3,h4,h2,h6{border:0;margin:0;padding:0;}
+        .r1,.r2{height:1px;display:block;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#e5ecfc;overflow:hidden;margin:0 2px}
+        .r2{height:1px;display:block;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#f4f9ff;overflow:hidden;margin:0 1px;}
+        .con{font-size:12px;font-weight:bold;border-left:1px solid #e5ecfc;border-right:1px solid #e5ecfc;background:#f4f9ff;width:978px;height: 23px;line-height: 23px;}
+        .nav a{float:right;color:#0a348a;}
+        .nav strong{float:left;}
+        .crumb a{text-decoration:none;}
+        .crumb span{color:#000000;}
+        h3{font-size:18px;color:#000000;margin:28px 0 18px;}
+        h4{font-weight:normal;font-size:14px;margin-bottom:15px;}
+        .brs,.brs a,.brs a.ff_icon,.brs a.s360_icon,.brs a.aoyou_icon,.brs a.sougou_icon,.brs a.qq_icon,.brs a.tt_icon,.brs a.chrome_icon,.brs a.s360jishu_icon,.brs a.world_jishu_icon,.brs a.opera_icon,.brs a.world_icon,.brs a.safari_icon,.brs a.green_icon,.brs a.kr_icon,.brs a.bdbrowser_icon{height:36px;line-height:36px;}
+        .brs a{font-size:16px;padding-left:40px;background:url(img/ie.gif) no-repeat 10px center;display:inline-block;color:#000000;text-decoration:none;width:938px;}
+        .brs a.ff_icon{background:url(img/firefox.gif) no-repeat 10px center;}
+        .brs a.s360_icon{background:url(img/360.gif) no-repeat 10px center;}
+        .brs a.aoyou_icon{background:url(img/aoyou3.gif) no-repeat 10px center;}
+        .brs a.sougou_icon{background:url(img/sougou.gif) no-repeat 10px center;}
+        .brs a.qq_icon{background:url(img/qq.gif) no-repeat 10px center;}
+        .brs a.tt_icon{background:url(img/tt.gif) no-repeat 10px center;}
+        .brs a.chrome_icon{background:url(img/chrome.gif) no-repeat 10px center;}
+        .brs a.s360jishu_icon{background:url(img/360jishu.gif) no-repeat 10px center;}
+        .brs a.world_jishu_icon{background:url(img/world_jishu.gif) no-repeat 10px center;}
+        .brs a.opera_icon{background:url(img/opera.gif) no-repeat 10px center;}
+        .brs a.world_icon{background:url(img/world.gif) no-repeat 10px center;}
+        .brs a.safari_icon{background:url(img/safari.gif) no-repeat 10px center;}
+        .brs a.green_icon{background:url(img/green.gif) no-repeat 10px center;}
+        .brs a.kr_icon{background:url(img/kr.gif) no-repeat 10px center;}
+        .brs a.bdbrowser_icon{background:url(img/bdbrowser_new.png) no-repeat 10px center;}
+        .tishi_con{border:1px solid #e5ecfb;border-width:0 1px 0;}
+        .tool_kj img,.tool_sz img{vertical-align:middle;margin-right:10px;cursor:pointer;}
+        h6{font-size:14px;color:#000000;margin:0 0 20px 0;}
+        .detail{width:918px;padding:30px 30px 15px;}
+        .tip{margin-top:15px;color:#666666;}
+        #ie,#360,#aoyou,#sougou,#qq,#tt,#firefox,#chrome,#360ji,#world_ji,#opera,#world,
+        #safari,#green,#kr,#bdbrowser{cursor:pointer;}
+        #ie_con,#aoyou_con,#s360_con,#sougou_con,#qq_con,#tt_con,#s360ji_con,#firefox_con,#chrome_con,#world_ji_con,#opera_con,#world_con,#safari_con,#green_con,#kr_con,#bdbrowser_con{display:none;}
+        a.kj_qus:hover,a.sz_qus:hover{}
+        .mg10{margin-bottom:10px;}
+        .kj_bt,a.kj_bt:link,a.kj_bt:visited,a.kj_bt:hover,a.kj_bt:active{width:58px;height:27px;line-height:27px;vertical-align:middle;margin-right:10px;display:inline-block;color:#1b1b1b;text-decoration:none;font-size:12px;padding-left:26px;}
+        a.kj_bt:visited{color:#014bc6;}
+        a.kj_bt:hover{}
+        a.kj_bt:active{color:#014bc6;}
+        .uptitle .con,.uptitle .r1,.uptitle .r2{background:#e1ecff}
+        .upbg{background:#e1ecff}
+        #foot{text-align:center;color:#666666;font-size:12px;margin:20px 0;border-top:1px solid #dddddd;padding-top:20px;}
+        #foot a{color:#666666;}
+        div img{margin-bottom:15px;}
+        .chrome_txt span{width:5px;height:18px;display:inline-block;background:#47BEE6;margin-left:5px;vertical-align:-2px}
+    </style>
+</head>
+
+<body>
+<div class="content">
+    <h3>如何把学习时代设为您的上网主页？</h3>
+    <h4>您的浏览器可能不支持自动设置主页。请参考以下步骤，设置学习时代为您的上网主页。</h4>
+    <div id="holder">
+        <div id="label"></div>
+        <div id="broswer1">
+            <a name="iec"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="ie" onclick="conSwitch('ie')"><a href="#iec" class="ie_con">IE浏览器</a></div>
+            <div class="tishi_con" id="ie_con">
+                <div class="detail">
+                    <h6>1.点击"工具"菜单，选择"internet选项"。</h6>
+                    <div><img src="img/ie1_n.jpg" /></div>
+                    <h6>2.在输入框输入：www.xuexisd.com，点击确定，设置成功。</h6>
+                    <div><img src="img/ie2_n.jpg" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+        </div>
+        <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+
+        <div id="broswer2">
+            <a name="circle"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="s360" onclick="conSwitch('s360')"><a href="#circle" class="s360_icon" >360浏览器</a></div>
+            <div class="tishi_con" id="s360_con">
+                <div class="detail">
+                    <h6>1.点击"工具"菜单， 选择"选项"</h6>
+                    <div><img src="img/360_1_n.png"/></div>
+                    <h6>2.在启动时打开一栏,选择"修改主页"按钮。</h6>
+                    <div><img src="img/360_2_n.png" /></div>
+                    <h6>3.在输入框中输入"www.xuexisd.com"，点击确认，设置成功。</h6>
+                    <div><img src="img/360_3_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer3">
+            <a name="aoyouc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="aoyou" onclick="conSwitch('aoyou')"><a href="#aoyouc" class="aoyou_icon" >傲游浏览器</a></div>
+            <div class="tishi_con" id="aoyou_con">
+                <div class="detail">
+                    <h6>1.点击"工具"菜单，选择"遨游设置中心"。</h6>
+                    <div><img src="img/aoyou2_01_n.png" /></div>
+                    <h6>2.在"主页"栏目输入"www.xuexisd.com" ， 点击"应用"，设置成功。</h6>
+                    <div><img src="img/aoyou2_02_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer4">
+            <a name="sougouc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="sougou" onclick="conSwitch('sougou')"><a href="#sougouc" class="sougou_icon" >搜狗浏览器</a></div>
+            <div class="tishi_con" id="sougou_con">
+                <div class="detail">
+                    <h6>1.点击"工具"菜单，选择"搜狗高速浏览器选项"。</h6>
+                    <div><img src="img/sougou1_n.png" /></div>
+                    <h6>2.点选"自定义网址"，并在输入框内输入"www.xuexisd.com"，设置成功。</h6>
+                    <div><img src="img/sougou2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer5">
+            <a name="qqtc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="qq" onclick="conSwitch('qq')"><a href="#qqtc" class="qq_icon" >QQ浏览器</a></div>
+            <div class="tishi_con" id="qq_con">
+                <div class="detail">
+                    <h6>1.点击浏览器右上角"常用菜单"按钮，选择"QQ浏览器设置"。</h6>
+                    <div><img src="img/qq1_n.png" /></div>
+                    <h6>2.点选"自定义网址"选项，输入"www.xuexisd.com"，点击"确定"，设置成功。</h6>
+                    <div><img src="img/qq2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer6">
+            <a name="ttc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="tt" onclick="conSwitch('tt')"><a href="#ttc" class="tt_icon" >TT浏览器</a></div>
+            <div class="tishi_con" id="tt_con">
+                <div class="detail">
+                    <h6>1.点击浏览器右上角"菜单"，选择"工具"，"TT选项"。</h6>
+                    <div><img src="img/tt1_n.png" /></div>
+                    <h6>2.在"TT主页"栏目下输入"www.xuexisd.com" 。 在"启动时"栏目下勾选"打开主页",点击最上面一行"保存"，设置成功。</h6>
+                    <div><img src="img/tt2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer7">
+            <a name="ffc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="firefox" onclick="conSwitch('firefox')"><a href="#ffc" class="ff_icon" >Firefox浏览器</a></div>
+            <div class="tishi_con" id="firefox_con">
+                <div class="detail">
+                    <h6>1.点击浏览器菜单栏中的工具按钮，点击"选项"。</h6>
+                    <div><img src="img/firefox01_n.png" /></div>
+                    <h6>2.选择"常规"选项，在"主页"后的框中填入"www.xuexisd.com" ，点击确定。</h6>
+                    <div><img src="img/firefox02_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer8">
+            <a name="chromec"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="chrome" onclick="conSwitch('chrome')">
+                <a href="#chromec" class="chrome_icon" >Chrome浏览器</a></div>
+            <div class="tishi_con" id="chrome_con">
+                <div class="detail">
+                    <h6>1.点击浏览器右上角“自定义”按钮，选择“设置”</h6>
+                    <div><img src="img/chrome3_n.png" /></div>
+                    <h6>2.点选“打开特定网页或一组网页”，点击“设置网页”</h6>
+                    <div><img src="img/chrome4_n.png" /></div>
+                    <h6>3.在添加新网页后输入：www.xuexisd.com，点击其他地址后"X"，最后点击“确定”</h6>
+                    <div><img src="img/chrome5_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer9">
+            <a name="jishu360c"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="s360ji" onclick="conSwitch('s360ji')"><a href="#jishu360c" class="s360jishu_icon" >360极速浏览器</a></div>
+            <div class="tishi_con" id="s360ji_con">
+                <div class="detail">
+                    <h6>1.点击浏览器右上角工具按钮，选择"选项"。</h6>
+                    <div><img src="img/360_jishu1_n.png" /></div>
+                    <h6>2.在"启动时"项，确认点选"打开主页"。在"主页"，"打开此页"项目后的框中输入"www.xuexisd.com" ，设置成功。</h6>
+                    <div><img src="img/360_jishu2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer10">
+            <a name="world_jishuc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="world_ji" onclick="conSwitch('world_ji')"><a href="#world_jishuc" class="world_jishu_icon" >世界之窗极速版浏览器</a></div>
+            <div class="tishi_con" id="world_ji_con">
+
+                <div class="detail">
+                    <h6>1.点击浏览器右上角工具按钮，选择"选项"。</h6>
+                    <div><img src="img/world_jishu1_n.png" /></div>
+                    <h6>2.在"启用时"项，确认点选"打开主页"。在"主页"，点选"打开此页"，在框中输入"www.xuexisd.com" ，设置成功。</h6>
+                    <div><img src="img/world_jishu2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer11">
+            <a name="operac"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="opera" onclick="conSwitch('opera')"><a href="#operac" class="opera_icon" >Opera浏览器</a></div>
+            <div class="tishi_con" id="opera_con">
+                <div class="detail">
+                    <h6>1.点击浏览器左上角工具按钮，选择"设置"。</h6>
+                    <div><img src="img/opera1_n.png" /></div>
+                    <h6>2.点选启动时中的“打开特定网页或一组网页”，点击“设置页面”。</h6>
+                    <div><img src="img/opera2_n.png" /></div>
+                    <h6>3.在输入框中输入"www.xuexisd.com"，点击确认，设置成功。</h6>
+                    <div><img src="img/opera3_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer12">
+            <a name="worldc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="world" onclick="conSwitch('world')"><a href="#worldc" class="world_icon" >世界之窗浏览器</a></div>
+            <div class="tishi_con" id="world_con">
+                <div class="detail">
+                    <h6>1.选择"工具"菜单，"设置"。</h6>
+                    <div><img src="img/world_window1_n.png" /></div>
+                    <h6>2.点选启动时中的“打开特定网页或一组网页”，点击“设置网页”。</h6>
+                    <div><img src="img/world_window2_n.png" /></div>
+                    <h6>3.在输入框内输入" www.xuexisd.com" ，点击确定，设置成功。</h6>
+                    <div><img src="img/world_window3_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer13">
+            <a name="safaric"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="safari" onclick="conSwitch('safari')"><a href="#safaric" class="safari_icon" >Safari浏览器</a></div>
+            <div class="tishi_con" id="safari_con">
+                <div class="detail">
+                    <h6>1.点击"编辑"菜单，选择"偏好设置..."</h6>
+                    <div><img src="img/safari1_n.png" /></div>
+                    <h6>2.点击"常规"选项卡，在主页项输入"www.xuexisd.com" ，设置成功，关闭对话框即可。</h6>
+                    <div><img src="img/safari2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer14">
+            <a name="greenc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="green" onclick="conSwitch('green')"><a href="#greenc" class="green_icon" >绿色浏览器</a></div>
+            <div class="tishi_con" id="green_con">
+                <div class="detail">
+                    <h6>1.选择"工具"菜单，点击GreenBrowser选项。</h6>
+                    <div><img src="img/green_browser1_n.png" /></div>
+                    <h6>2.在左边栏选择"启动/退出"项，点选"自定义主页"并输入"www.xuexisd.com"，点击确定，设置成功。</h6>
+                    <div><img src="img/green_browser2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+
+        <div id="broswer15">
+            <a name="krc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="kr" onclick="conSwitch('kr')"><a href="#krc" class="kr_icon" >KR浏览器</a></div>
+            <div class="tishi_con" id="kr_con">
+                <div class="detail">
+                    <h6>1.点击"工具"菜单，选择"修改主页"。</h6>
+                    <div><img src="img/kr1_n.png" /></div>
+                    <h6>2.在框中输入"www.xuexisd.com"，点击确定，设置成功。</h6>
+                    <div><img src="img/kr2_n.png" /></div>
+                    <div class="tip"><strong>提示：</strong>如果无法设置学习时代为您的上网主页，可能您的浏览器已中毒，请先查杀病毒。</div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+        <div id="broswer16">
+            <a name="bdbrowserc"></a>
+            <b class="r1"></b><b class="r2"></b>
+            <div class="brs con" id="bdbrowser" onclick="conSwitch('bdbrowser')"><a href="#bdbrowserc" class="bdbrowser_icon" >百度浏览器</a></div>
+            <div class="tishi_con" id="bdbrowser_con">
+                <div class="detail">
+                    <h6>1.点击浏览器右上角的菜单按钮<img style="margin:0px;" src="img/bdb_menu.png"/>， 选择"设置"。</h6>
+                    <div><img src="img/bdb_01_n.png"/></div>
+                    <h6>2.选择"启动时打开"-“主页”， 在输入框中输入" www.xuexisd.com"即可 。</h6>
+                    <div><img src="img/bdb_02_n.png"/></div>
+                </div>
+            </div>
+            <div class="mg10"><b class="r2"></b><b class="r1"></b></div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    function G(id){
+        return document.getElementById(id);
+    }
+    function addEV(o, e, f){
+        if(window.attachEvent){
+            o.attachEvent("on" + e, f);
+        }else if(window.addEventListener){
+            o.addEventListener(e, f, false);
+        }
+    }
+
+    function conSwitch(key){
+        var _display = G(key + "_con").style.display;
+        $(".tishi_con").css("display","none");
+        G(key + "_con").style.display = _display == "block"?"none":"block";
+    }
+
+    function showTip(obj){
+        G(obj+"_tishi").style.display = "block";
+    }
+
+    function hidTip(obj){
+        G(obj+"_tishi").style.display = "none";
+    }
+
+    (function(){
+        var se = /se /gi.test(navigator.userAgent);
+        var wldji = /AppleWebKit/gi.test(navigator.userAgent) && /theworld/gi.test(navigator.userAgent);
+        var wld = /theworld/gi.test(navigator.userAgent);
+        var s360 = /360se/gi.test(navigator.userAgent);
+        var s360ji = /360chrome/gi.test(navigator.userAgent);
+        var greenb = /greenbrowser/gi.test(navigator.userAgent);
+        var qqb = /qqbrowser/gi.test(navigator.userAgent);
+        var ttb = /tencenttraveler/gi.test(navigator.userAgent);
+        var maxth = /maxthon/gi.test(navigator.userAgent);
+        var krb = /krbrowser/gi.test(navigator.userAgent);
+        var sb = false;
+        try{
+            sb = +external.twGetVersion(external.twGetSecurityID(window)).replace(/\./g,"")>1013;
+        }catch(e){}
+        if(/MSIE/gi.test(navigator.userAgent) && !maxth && !wldji && !wld && !s360 && !s360ji && !greenb && !qqb && !ttb && !maxth && !krb && !sb){
+            G("set_auto1").style.display = "block";
+        }
+        if(/firefox/gi.test(navigator.userAgent)){
+            G("set_auto2").style.display = "block";
+        }
+    })();
+
+    function showAns(obj){
+        if(/MSIE/gi.test(navigator.userAgent)){
+            G(obj+"_ie_tishi").style.display = "block";
+        }else{
+            G(obj+"_ff_tishi").style.display = "block";
+        }
+    }
+
+    function hidAns(obj){
+        if(/MSIE/gi.test(navigator.userAgent)){
+            G(obj+"_ie_tishi").style.display = "none";
+        }else{
+            G(obj+"_ff_tishi").style.display = "none";
+        }
+    }
+
+    (function(){
+        var holder = G("holder");
+        if(/BIDUBrowser/gi.test(navigator.userAgent) && (typeof window.external.GetVersion != "undefined")){
+            G("bdbrowser_con").style.display = "block";
+            holder.insertBefore(G("bdbrowser_con").parentNode,G("label"));
+        }else if(/firefox/gi.test(navigator.userAgent)){
+            G("firefox_con").style.display = "block";
+            holder.insertBefore(G("firefox_con").parentNode,G("label"));
+        }else if(/AppleWebKit/gi.test(navigator.userAgent) && /theworld/gi.test(navigator.userAgent)){
+            G("world_ji_con").style.display = "block";
+            holder.insertBefore(G("world_ji_con").parentNode,G("label"));
+        }else if(/theworld/gi.test(navigator.userAgent)){
+            G("world_con").style.display = "block";
+            holder.insertBefore(G("world_con").parentNode,G("label"));
+        }else if((/qqbrowser/gi.test(navigator.userAgent)) || (/chrome/gi.test(navigator.userAgent) && /qqbrowser/gi.test(navigator.userAgent))){
+            G("qq_con").style.display = "block";
+            holder.insertBefore(G("qq_con").parentNode,G("label"));
+        }else if(/360chrome/gi.test(navigator.userAgent) || (/360/gi.test(navigator.userAgent) && /qihu/gi.test(navigator.userAgent))){
+            G("s360ji_con").style.display = "block";
+            holder.insertBefore(G("s360ji_con").parentNode,G("label"));
+        }else if(/se /gi.test(navigator.userAgent)){
+            G("sougou_con").style.display = "block";
+            holder.insertBefore(G("sougou_con").parentNode,G("label"));
+        }else if(/chrome/gi.test(navigator.userAgent)){
+            G("chrome_con").style.display = "block";
+            holder.insertBefore(G("chrome_con").parentNode,G("label"));
+        }else if(/opera/gi.test(navigator.userAgent)){
+            G("opera_con").style.display = "block";
+            holder.insertBefore(G("opera_con").parentNode,G("label"));
+        }else if(/360se/gi.test(navigator.userAgent)){
+            G("s360_con").style.display = "block";
+            holder.insertBefore(G("s360_con").parentNode,G("label"));
+        }else if(/greenbrowser/gi.test(navigator.userAgent)){
+            G("green_con").style.display = "block";
+            holder.insertBefore(G("green_con").parentNode,G("label"));
+        }else if(/tencenttraveler/gi.test(navigator.userAgent)){
+            G("tt_con").style.display = "block";
+            holder.insertBefore(G("tt_con").parentNode,G("label"));
+        }else if(/maxthon/gi.test(navigator.userAgent)){
+            G("aoyou_con").style.display = "block";
+            holder.insertBefore(G("aoyou_con").parentNode,G("label"));
+        }else if(/safari/gi.test(navigator.userAgent)){
+            G("safari_con").style.display = "block";
+            holder.insertBefore(G("safari_con").parentNode,G("label"));
+        }else if(/krbrowser/gi.test(navigator.userAgent)){
+            G("kr_con").style.display = "block";
+            holder.insertBefore(G("kr_con").parentNode,G("label"));
+        }else{
+
+        }
+    })();
+
+</script>
+</html>

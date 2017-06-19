@@ -2,6 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_3_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_jishu1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_jishu2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360jishu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou2_01_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou2_02_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/baidu_jgylogo3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_01_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_02_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdbrowser_new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome3_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome4_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome5_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/default_search_ff.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/default_search_ie.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox01_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox02_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green_browser1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green_browser2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie1_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie2_n.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kj_chromecj.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kj_tishi.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera3_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sz_bt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window1_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window2_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window3_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tangram-1.3.5.js.下载" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -23,44 +84,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistics_show/css/index.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="673" column="17" selection-start-line="673" selection-start-column="17" selection-end-line="673" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.75">
-              <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.18957347">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5263158">
-              <caret line="163" column="35" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threesixty.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.6875">
-              <caret line="170" column="14" selection-start-line="169" selection-start-column="12" selection-end-line="170" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -80,8 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/view/system/user_list.html" />
-        <option value="$PROJECT_DIR$/zipaigan/media/js/system/versionUpdateCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/works.json" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/customer/reportListCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/css/btn/btn.css" />
@@ -131,6 +161,8 @@
         <option value="$PROJECT_DIR$/statistics_show/css/1.html" />
         <option value="$PROJECT_DIR$/statistics_show/css/threesixty.css" />
         <option value="$PROJECT_DIR$/statistics_show/js/index.js" />
+        <option value="$PROJECT_DIR$/statistics_show/1.html" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
       </list>
     </option>
   </component>
@@ -185,6 +217,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zipaigan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zipaigan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,6 +320,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paipai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -275,11 +367,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\demo\img" />
+      <recent name="D:\mygit\chenshaoqiang\demo" />
       <recent name="D:\mygit\chenshaoqiang\statistics_show\img" />
       <recent name="D:\GitHub项目发布\chenshaoqiang\statistics_show" />
       <recent name="D:\mygit\chenshaoqiang" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\img" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -351,12 +443,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00568" summary="6.15">
-      <created>1497520227688</created>
-      <option name="number" value="00568" />
-      <option name="project" value="LOCAL" />
-      <updated>1497520227688</updated>
     </task>
     <task id="LOCAL-00569" summary="6.15">
       <created>1497520487130</created>
@@ -646,31 +732,37 @@
       <option name="project" value="LOCAL" />
       <updated>1497847649120</updated>
     </task>
-    <option name="localTasksCounter" value="617" />
+    <task id="LOCAL-00617" summary="6.19 update">
+      <created>1497847665823</created>
+      <option name="number" value="00617" />
+      <option name="project" value="LOCAL" />
+      <updated>1497847665823</updated>
+    </task>
+    <option name="localTasksCounter" value="618" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -720,48 +812,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="273" column="28" selection-start-line="273" selection-start-column="28" selection-end-line="273" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.75">
-          <caret line="147" column="90" selection-start-line="147" selection-start-column="90" selection-end-line="147" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.097031966">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show/data/example.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3938356">
-          <caret line="53" column="100" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28947368">
@@ -786,13 +836,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="269" column="1" selection-start-line="269" selection-start-column="1" selection-end-line="269" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5856164">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -955,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="673" column="17" selection-start-line="673" selection-start-column="17" selection-end-line="673" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50328946">
@@ -979,29 +1014,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
+    <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.75">
-          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.6875">
-          <caret line="170" column="14" selection-start-line="169" selection-start-column="12" selection-end-line="170" selection-end-column="14" />
+        <state vertical-scroll-proportion="-14.21875">
+          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
+    <entry file="file://$PROJECT_DIR$/zipaigan/view/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158">
-          <caret line="163" column="35" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics_show/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="673" column="17" selection-start-line="673" selection-start-column="17" selection-end-line="673" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/chrome5_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/ie2_n.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/aoyou2_01_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/360_3_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/aoyou2_02_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/world_window2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/world_window3_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/opera3_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/world_jishu2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/360_jishu2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/firefox02_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/tt2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/qq2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/bdb_02_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/kr2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/green_browser2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/safari2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/img/sougou2_n.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30821916">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18957347">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
