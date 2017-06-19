@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="6.19 update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/HOT_1.jpg" afterPath="$PROJECT_DIR$/statistics_show/img/HOT_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/HOT_2.jpg" afterPath="$PROJECT_DIR$/statistics_show/img/HOT_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/HOT_3.jpg" afterPath="$PROJECT_DIR$/statistics_show/img/HOT_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7591.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7591.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7592.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7592.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7593.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7593.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7594.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7594.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7595.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7595.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7596.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7596.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7597.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7597.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7598.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7598.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7599.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7599.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7600.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7600.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7601.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7601.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7602.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7602.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7603.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7603.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7604.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7604.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7605.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7605.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7606.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7606.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7607.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7607.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7608.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7608.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7609.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7609.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7610.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7610.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7611.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7611.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7612.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7612.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7613.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7613.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7614.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7614.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7615.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7615.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7616.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7616.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7617.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7617.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7618.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7618.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7619.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7619.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7620.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7620.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7621.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7621.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7622.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7622.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7623.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7623.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7624.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7624.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7625.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7625.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/img/IMG_7626.JPG" afterPath="$PROJECT_DIR$/statistics_show/img/IMG_7626.JPG" />
+    <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics_show/css/threesixty.css" afterPath="$PROJECT_DIR$/statistics_show/css/threesixty.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -72,14 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30821916">
-              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+            <state vertical-scroll-proportion="-15.75">
+              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threesixty.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50328946">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/media/js/system/Ctrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/view/system/user_list.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/system/versionUpdateCtrl.js" />
         <option value="$PROJECT_DIR$/zipaigan/works.json" />
@@ -160,6 +131,7 @@
         <option value="$PROJECT_DIR$/statistics_show/index.html" />
         <option value="$PROJECT_DIR$/statistics_show/js/index.js" />
         <option value="$PROJECT_DIR$/statistics_show/css/1.html" />
+        <option value="$PROJECT_DIR$/statistics_show/css/threesixty.css" />
       </list>
     </option>
   </component>
@@ -246,24 +218,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statistics_show" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,12 +352,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00564" summary="6.15">
-      <created>1497517984085</created>
-      <option name="number" value="00564" />
-      <option name="project" value="LOCAL" />
-      <updated>1497517984085</updated>
     </task>
     <task id="LOCAL-00565" summary="6.15">
       <created>1497518140855</created>
@@ -693,7 +641,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497836557990</updated>
     </task>
-    <option name="localTasksCounter" value="613" />
+    <task id="LOCAL-00613" summary="6.19 update">
+      <created>1497845141704</created>
+      <option name="number" value="00613" />
+      <option name="project" value="LOCAL" />
+      <updated>1497845141705</updated>
+    </task>
+    <option name="localTasksCounter" value="614" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -976,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.16438356">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.7894735">
@@ -1045,11 +992,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30821916">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        <state vertical-scroll-proportion="-15.75">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistics_show/css/threesixty.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50328946">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
