@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\sethome\index.html" afterPath="$PROJECT_DIR$/sethome/sethome.html" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\sethome\sethome.html" afterPath="$PROJECT_DIR$/sethome/index.html" />
     </list>
     <ignored path="chenshaoqiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sethome.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sethome/sethome.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sethome/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62085307">
-              <caret line="332" column="6" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.52488154">
+              <caret line="329" column="48" selection-start-line="329" selection-start-column="48" selection-end-line="329" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -370,12 +370,6 @@
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
     </task>
-    <task id="LOCAL-00573" summary="6.15">
-      <created>1497521652351</created>
-      <option name="number" value="00573" />
-      <option name="project" value="LOCAL" />
-      <updated>1497521652351</updated>
-    </task>
     <task id="LOCAL-00574" summary="6.15">
       <created>1497521838372</created>
       <option name="number" value="00574" />
@@ -664,7 +658,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497862426126</updated>
     </task>
-    <option name="localTasksCounter" value="622" />
+    <task id="LOCAL-00622" summary="6.19 update">
+      <created>1497863460525</created>
+      <option name="number" value="00622" />
+      <option name="project" value="LOCAL" />
+      <updated>1497863460525</updated>
+    </task>
+    <option name="localTasksCounter" value="623" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1013,10 +1013,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sethome/sethome.html">
+    <entry file="file://$PROJECT_DIR$/sethome/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62085307">
-          <caret line="332" column="6" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.52488154">
+          <caret line="329" column="48" selection-start-line="329" selection-start-column="48" selection-end-line="329" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
