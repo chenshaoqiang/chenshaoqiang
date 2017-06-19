@@ -2,68 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_3_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_jishu1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360_jishu2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/360jishu.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou2_01_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou2_02_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/aoyou3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/baidu_jgylogo3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_01_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_02_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdb_menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/bdbrowser_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome3_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome4_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/chrome5_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/default_search_ff.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/default_search_ie.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox01_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/firefox02_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green_browser1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/green_browser2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie1_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/ie2_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kj_chromecj.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kj_tishi.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/kr2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/opera3_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/qq2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/safari2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sougou2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/sz_bt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tt2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_jishu2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window1_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window2_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/world_window3_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home/img/tangram-1.3.5.js.下载" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360.gif" afterPath="$PROJECT_DIR$/sethome/img/360.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360_1_n.png" afterPath="$PROJECT_DIR$/sethome/img/360_1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360_2_n.png" afterPath="$PROJECT_DIR$/sethome/img/360_2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360_3_n.png" afterPath="$PROJECT_DIR$/sethome/img/360_3_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360_jishu1_n.png" afterPath="$PROJECT_DIR$/sethome/img/360_jishu1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360_jishu2_n.png" afterPath="$PROJECT_DIR$/sethome/img/360_jishu2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\360jishu.gif" afterPath="$PROJECT_DIR$/sethome/img/360jishu.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\aoyou2_01_n.png" afterPath="$PROJECT_DIR$/sethome/img/aoyou2_01_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\aoyou2_02_n.png" afterPath="$PROJECT_DIR$/sethome/img/aoyou2_02_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\aoyou3.gif" afterPath="$PROJECT_DIR$/sethome/img/aoyou3.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\baidu_jgylogo3.gif" afterPath="$PROJECT_DIR$/sethome/img/baidu_jgylogo3.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\bdb_01_n.png" afterPath="$PROJECT_DIR$/sethome/img/bdb_01_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\bdb_02_n.png" afterPath="$PROJECT_DIR$/sethome/img/bdb_02_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\bdb_menu.png" afterPath="$PROJECT_DIR$/sethome/img/bdb_menu.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\bdbrowser_new.png" afterPath="$PROJECT_DIR$/sethome/img/bdbrowser_new.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\chrome.gif" afterPath="$PROJECT_DIR$/sethome/img/chrome.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\chrome3_n.png" afterPath="$PROJECT_DIR$/sethome/img/chrome3_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\chrome4_n.png" afterPath="$PROJECT_DIR$/sethome/img/chrome4_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\chrome5_n.png" afterPath="$PROJECT_DIR$/sethome/img/chrome5_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\default_search_ff.gif" afterPath="$PROJECT_DIR$/sethome/img/default_search_ff.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\default_search_ie.gif" afterPath="$PROJECT_DIR$/sethome/img/default_search_ie.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\firefox.gif" afterPath="$PROJECT_DIR$/sethome/img/firefox.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\firefox01_n.png" afterPath="$PROJECT_DIR$/sethome/img/firefox01_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\firefox02_n.png" afterPath="$PROJECT_DIR$/sethome/img/firefox02_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\green.gif" afterPath="$PROJECT_DIR$/sethome/img/green.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\green_browser1_n.png" afterPath="$PROJECT_DIR$/sethome/img/green_browser1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\green_browser2_n.png" afterPath="$PROJECT_DIR$/sethome/img/green_browser2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\ie.gif" afterPath="$PROJECT_DIR$/sethome/img/ie.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\ie1_n.jpg" afterPath="$PROJECT_DIR$/sethome/img/ie1_n.jpg" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\ie2_n.jpg" afterPath="$PROJECT_DIR$/sethome/img/ie2_n.jpg" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\kj_chromecj.gif" afterPath="$PROJECT_DIR$/sethome/img/kj_chromecj.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\kj_tishi.gif" afterPath="$PROJECT_DIR$/sethome/img/kj_tishi.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\kr.gif" afterPath="$PROJECT_DIR$/sethome/img/kr.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\kr1_n.png" afterPath="$PROJECT_DIR$/sethome/img/kr1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\kr2_n.png" afterPath="$PROJECT_DIR$/sethome/img/kr2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\opera.gif" afterPath="$PROJECT_DIR$/sethome/img/opera.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\opera1_n.png" afterPath="$PROJECT_DIR$/sethome/img/opera1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\opera2_n.png" afterPath="$PROJECT_DIR$/sethome/img/opera2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\opera3_n.png" afterPath="$PROJECT_DIR$/sethome/img/opera3_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\qq.gif" afterPath="$PROJECT_DIR$/sethome/img/qq.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\qq1_n.png" afterPath="$PROJECT_DIR$/sethome/img/qq1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\qq2_n.png" afterPath="$PROJECT_DIR$/sethome/img/qq2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\safari.gif" afterPath="$PROJECT_DIR$/sethome/img/safari.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\safari1_n.png" afterPath="$PROJECT_DIR$/sethome/img/safari1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\safari2_n.png" afterPath="$PROJECT_DIR$/sethome/img/safari2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\sougou.gif" afterPath="$PROJECT_DIR$/sethome/img/sougou.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\sougou1_n.png" afterPath="$PROJECT_DIR$/sethome/img/sougou1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\sougou2_n.png" afterPath="$PROJECT_DIR$/sethome/img/sougou2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\sz_bt.gif" afterPath="$PROJECT_DIR$/sethome/img/sz_bt.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\tangram-1.3.5.js.下载" afterPath="$PROJECT_DIR$/sethome/img/tangram-1.3.5.js.下载" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\tt.gif" afterPath="$PROJECT_DIR$/sethome/img/tt.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\tt1_n.png" afterPath="$PROJECT_DIR$/sethome/img/tt1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\tt2_n.png" afterPath="$PROJECT_DIR$/sethome/img/tt2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world.gif" afterPath="$PROJECT_DIR$/sethome/img/world.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_jishu.gif" afterPath="$PROJECT_DIR$/sethome/img/world_jishu.gif" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_jishu1_n.png" afterPath="$PROJECT_DIR$/sethome/img/world_jishu1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_jishu2_n.png" afterPath="$PROJECT_DIR$/sethome/img/world_jishu2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_window1_n.png" afterPath="$PROJECT_DIR$/sethome/img/world_window1_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_window2_n.png" afterPath="$PROJECT_DIR$/sethome/img/world_window2_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\img\world_window3_n.png" afterPath="$PROJECT_DIR$/sethome/img/world_window3_n.png" />
+      <change type="MOVED" beforePath="D:\mygit\chenshaoqiang\home\index.html" afterPath="$PROJECT_DIR$/sethome/index.html" />
     </list>
     <ignored path="chenshaoqiang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,10 +85,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/index.html">
+        <entry file="file://$PROJECT_DIR$/sethome/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18957347">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.4478673">
+              <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -330,7 +330,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="paipai" />
+              <option name="myItemId" value="sethome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,7 +344,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="paipai" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,12 +443,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00569" summary="6.15">
-      <created>1497520487130</created>
-      <option name="number" value="00569" />
-      <option name="project" value="LOCAL" />
-      <updated>1497520487130</updated>
     </task>
     <task id="LOCAL-00570" summary="6.15">
       <created>1497520593633</created>
@@ -738,7 +732,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497847665823</updated>
     </task>
-    <option name="localTasksCounter" value="618" />
+    <task id="LOCAL-00618" summary="6.19 update">
+      <created>1497860090466</created>
+      <option name="number" value="00618" />
+      <option name="project" value="LOCAL" />
+      <updated>1497860090466</updated>
+    </task>
+    <option name="localTasksCounter" value="619" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1056,92 +1056,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/chrome5_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/chrome5_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/ie2_n.jpg">
+    <entry file="file://$PROJECT_DIR$/sethome/img/ie2_n.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/aoyou2_01_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/aoyou2_01_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/360_3_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/360_3_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/aoyou2_02_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/aoyou2_02_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/world_window2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/world_window2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/world_window3_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/world_window3_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/opera3_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/opera3_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/world_jishu2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/world_jishu2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/360_jishu2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/360_jishu2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/firefox02_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/firefox02_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/tt2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/tt2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/qq2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/qq2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/bdb_02_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/bdb_02_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/kr2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/kr2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/green_browser2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/green_browser2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/safari2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/safari2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/img/sougou2_n.png">
+    <entry file="file://$PROJECT_DIR$/sethome/img/sougou2_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1154,10 +1154,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/index.html">
+    <entry file="file://$PROJECT_DIR$/sethome/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18957347">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.4478673">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#1;n#div#17;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
