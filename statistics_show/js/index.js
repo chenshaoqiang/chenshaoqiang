@@ -9,6 +9,11 @@ $(document).ready(function () {
     var curImgIndex = 0; //第二图的显示索引
     var imgArray;
     var descList;
+
+    $('.product1').css("display","block");
+    $('.product2').css("display","none");
+    $('.img_desc2').css("display","none");
+    $('.img_desc1').css("display","block");
     //从后台获取
     function showImagesWithId(workId){
 
@@ -95,7 +100,6 @@ $(document).ready(function () {
 
                 }else {
 
-                    $(".first-see-pics-desc").show();
                     var index = new Array;
 
                     for(key in data){
@@ -133,15 +137,9 @@ $(document).ready(function () {
 
             if(!limitFlag){
 
-                $('.product1').css("display","block");
-                $('.product2').css("display","none");
-
                 if (!isEmpty(jsonData.picTags)){
 
                     imgFollowDisc(jsonData.picTags); //旋转图片跟随简介-非热点
-
-                    $('.img_desc2').css("display","none");
-                    $('.img_desc1').css("display","block");
 
                 }
 
@@ -178,40 +176,66 @@ $(document).ready(function () {
 
             }
 
-            if(limitFlag){
+            //点击热点
+            $(".swx-hot-spots").bind( "click", tapHotSpotsIcon);
 
-                $('.product1').css("display","none");
-                $('.product2').css("display","block");
-                //旋转图片跟随简介-热点
-                if (!isEmpty(jsonData.hotPicTags)){
+            function tapHotSpotsIcon(){
 
-                    imgFollowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
+                limitFlag = !limitFlag;
+                imgArray = [];
+
+                for (var i = 0; i < jsonData.hotPicUrls.length; i++) {
+
+                    //imgArray.push('http://123.57.3.33:9000/pic/work/'+jsonData.picUrls[i]);
+                    imgArray.push(jsonData.hotPicUrls[i]);
+
+                }
+                if(limitFlag){
+                    $('.product1').css("display","none");
+                    $('.product2').css("display","block");
                     $('.img_desc1').css("display","none");
                     $('.img_desc2').css("display","block");
+                    $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_on.png');
+                    if(limitFlag){
 
-                }
-                var imgHtml = "";
-                var product2 = document.getElementById("product2");
+                        //旋转图片跟随简介-热点
+                        if (!isEmpty(jsonData.hotPicTags)){
 
-                for(var i = 0;i < imgArray.length;i++){
+                            imgFollowDisc(jsonData.hotPicTags); //旋转图片跟随简介-热点
 
-                    if(i == 0){
+                        }
+                        var imgHtml = "";
+                        var product2 = document.getElementById("product2");
 
-                        imgHtml += "<div class='slideImgDiv zIndex'>";
+                        for(var i = 0;i < imgArray.length;i++){
 
-                    }else{
+                            if(i == 0){
 
-                        imgHtml += "<div class='slideImgDiv'>";
+                                imgHtml += "<div class='slideImgDiv zIndex'>";
+
+                            }else{
+
+                                imgHtml += "<div class='slideImgDiv'>";
+
+                            }
+
+                            imgHtml += "<img src="+" ' " + imgArray[i] +" ' curImgIndex=" + i + "> ";
+                            imgHtml += "</div>";
+
+                        }
+
+                        product2.innerHTML = imgHtml;
+                        $(".img_desc2").text(descList[curImgIndex]);
 
                     }
-
-                    imgHtml += "<img src="+" ' " + imgArray[i] +" ' curImgIndex=" + i + "> ";
-                    imgHtml += "</div>";
+                }else{
+                    $('.product1').css("display","block");
+                    $('.product2').css("display","none");
+                    $('.img_desc2').css("display","none");
+                    $('.img_desc1').css("display","block");
+                    $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_off.png');
 
                 }
-
-                product2.innerHTML = imgHtml;
-                $(".img_desc2").text(descList[curImgIndex]);
 
             }
 
@@ -292,26 +316,6 @@ $(document).ready(function () {
         }
     }
 
-    //点击热点
-    $(".swx-hot-spots").bind( "click", tapHotSpotsIcon);
-
-    function tapHotSpotsIcon(){
-
-        limitFlag = !limitFlag;
-
-        if(limitFlag){
-
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_on.png');
-
-        }else{
-
-            $('.swx-hot-spots').attr('src','/chenshaoqiang/statistics_show/img/hot_off.png');
-
-        }
-
-        showImagesFromLocalJson('data/example.json');
-
-    }
 
     //滑动
     var winW = document.documentElement.clientWidth;
@@ -494,10 +498,6 @@ $(document).ready(function () {
                 },false);
                 this.flag = false;
             }
-        }else{
-            imgScale = 1;
-            setScaleAnimation(ev.target,imgScale);
-
         }
 
 
