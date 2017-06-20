@@ -249,7 +249,6 @@ $(document).ready(function () {
 
     //初始化时播放音乐
     var myAuto = document.getElementById('audio');
-    myAuto.play();
 
     //点击切换音乐播放和暂停效果
     $(".swx-music").bind( "click", tapMusicIcon);
@@ -413,46 +412,53 @@ $(document).ready(function () {
 
                 var oDiv = $("div.slideImgDiv");
                 curImgIndex = parseInt($(ev.target).attr("curImgIndex"));//当前图的索引
-                if(Math.abs(changeX)>Math.abs(changeY)){
-                    this.flag = false;  //横滑不改变
-                    if(changeX < 0){//小于0说明是向左滑，图片递增
-                        curImgIndex = curImgIndex + 1;
-                        [].forEach.call(oDiv,function(){
-                            //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
-                            if(curImgIndex != arguments[1]){
-                                arguments[0].style.display = "none";
-                            }
-                            arguments[0].className = "slideImgDiv";
-                        });
-                        if(curImgIndex == imgArray.length){
-                            curImgIndex = 0;
-                        }
-                        var duration=winW + changeX;
-                        oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
-                        oDiv[curImgIndex].className = "slideImgDiv zIndex";
-                        oDiv[curImgIndex].style.display = "block";
-                        this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
-                        $(".img_desc2").text(descList[curImgIndex]);
 
-                    }else if(changeX > 0){
-                        curImgIndex = curImgIndex - 1;
-                        [].forEach.call(oDiv,function(){
-                            //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
-                            if(curImgIndex != arguments[1]){
-                                arguments[0].style.display = "none";
+                if(Math.abs(changeX) > Math.abs(changeY)){
+
+                    this.flag = false;  //横滑不改变
+
+                    if(Math.abs(changeX) - Math.abs(changeY) >= 50 && (ev.touches.length < 2)){
+
+                        if(changeX < 0){//小于0说明是向左滑，图片递增
+                            curImgIndex = curImgIndex + 1;
+                            [].forEach.call(oDiv,function(){
+                                //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
+                                if(curImgIndex != arguments[1]){
+                                    arguments[0].style.display = "none";
+                                }
+                                arguments[0].className = "slideImgDiv";
+                            });
+                            if(curImgIndex == imgArray.length){
+                                curImgIndex = 0;
                             }
-                            arguments[0].className = "slideImgDiv";
-                        });
-                        if(curImgIndex == -1){
-                            curImgIndex = 2;
+                            var duration=winW + changeX;
+                            oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
+                            oDiv[curImgIndex].className = "slideImgDiv zIndex";
+                            oDiv[curImgIndex].style.display = "block";
+                            this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
+                            $(".img_desc2").text(descList[curImgIndex]);
+
+                        }else if(changeX > 0){
+                            curImgIndex = curImgIndex - 1;
+                            [].forEach.call(oDiv,function(){
+                                //除了自己其他所有的隐藏(通过索引来判断当前这张是不是自己)
+                                if(curImgIndex != arguments[1]){
+                                    arguments[0].style.display = "none";
+                                }
+                                arguments[0].className = "slideImgDiv";
+                            });
+                            if(curImgIndex == -1){
+                                curImgIndex = 2;
+                            }
+                            var duration=-winW + changeX;
+                            oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
+                            oDiv[curImgIndex].className = "slideImgDiv zIndex";
+                            oDiv[curImgIndex].style.display = "block";
+                            this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
+                            $(".img_desc2").text(descList[curImgIndex]);
                         }
-                        var duration=-winW + changeX;
-                        oDiv[curImgIndex].style.webkitTransform = "translateX(0," + duration + "px)";
-                        oDiv[curImgIndex].className = "slideImgDiv zIndex";
-                        oDiv[curImgIndex].style.display = "block";
-                        this.style.webkitTransform = "scale(" + (1 - Math.abs(changeX / winW)* step ) + ") translateX(0," + changeX + "px)";
-                        $(".img_desc2").text(descList[curImgIndex]);
                     }
+
 
                 }
 
