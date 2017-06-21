@@ -166,7 +166,9 @@
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});                    //放大镜内的背景图包裹框
                 $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%"});//放大镜内的背景图
 
-
+                /*
+                * 生成弹幕
+                * */
                 $(".littleComment").remove();
                 if(comment && comment.length > 0){
 
