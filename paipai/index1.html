@@ -361,8 +361,14 @@
                 var content = data.data.title;
                 var songName = data.data.songName;
 
-                userNameSpan.text(username);
+                if(userHeadUrl == '' || userHeadUrl == null || userHeadUrl == undefined){
+
+                    userHeadUrl = "/img/default_head.png";
+
+                }
+
                 userHeadImg.attr("src", userHeadUrl);
+                userNameSpan.text(username);
                 howLongSpan.text(howLong);
                 playNumSpan.text(data.data.playNum);
                 commentNumSpan.text(commentNum);
