@@ -29,6 +29,10 @@
                 <img name="pic"
                      id="main_img_work"
                      src="./img/test.jpg">
+                <div class="littleComment">
+                    <img src="./img/default_head.png" alt="comment"/>
+                    <span class="littleComment_span">太美了</span>
+                </div>
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
@@ -114,7 +118,9 @@
         prop,                                                   //通过真实图片获得宽高比
         timer,                                                  //用于定时器
         dirRight = true,                                        //控制放大镜自动滚动的时候的方向
-        totalLen = 0;
+        totalLen = 0,
+        comment,                                                //储存弹幕内容
+        showBarrage = false;                                   //是否显示弹幕
 
     //复制大图，用于无缝拼接
     function getImgSize(){
@@ -147,8 +153,8 @@
                 /*
                 * 设置底图相关值
                 * */
-                $("#main_img_work").css("width",Math.round(imgHeight*prop));
-                $("#marquePic2").css("left",Math.round(imgHeight*prop));
+                $("#main_img_work").css("width",Math.round(imgHeight * prop));
+                $("#marquePic2").css("left",Math.round(imgHeight * prop));
                 marquePic2.innerHTML = marquePic1.innerHTML;
 
                 /*
@@ -159,6 +165,34 @@
                 $("#magnifier_box").css({"width":imgBoxH, "height":imgBoxH});                   //设置放大镜框
                 $(".magnifier_box_img").css({"width":Math.round(imgBoxW), "height":Math.round(imgBoxH)});                    //放大镜内的背景图包裹框
                 $("#magnifierImg1").css({"background":"url(" + $(bigPic).attr("src") + ") no-repeat" , "background-size":"100%"});//放大镜内的背景图
+
+
+                $(".littleComment").remove();
+                if(comment && comment.length > 0){
+
+                    for(var i = 0;i < comment.length; i++){
+
+                        if(comment[i].userIcon == '' || comment[i].userIcon == null || comment[i].userIcon == undefined){
+
+                            comment[i].userIcon = "./img/default_head.png";
+
+                        }
+                        var posX = parseInt((comment[i].x / realWidth) *  Math.round(imgHeight * prop));
+                        var posY = parseInt((comment[i].y / realHeight) *  Math.round(imgHeight));
+
+                        var str = "<div class='littleComment' style='left:" + posX + "px;top:" + posY + "px ' >";
+                        str += "<img src=" + comment[i].userIcon + " alt='comment'/>";
+                        str += "<span class='littleComment_span'>" + comment[i].text + "</span>";
+                        str += "</div>";
+
+                        $(".scroll-img-td").append(str);
+
+                    }
+
+                }
+
+                showBarrage ? ($(".littleComment").show(),$("#comment").attr("src", "img/comment_y.png"))
+                        : ($(".littleComment").hide(),$("#comment").attr("src", "img/comment_w.png"));
 
             });
         });
@@ -223,6 +257,17 @@
     $("#switch_div").on("click",function(){
 
         isPlay ? startRolling() : stopRolling();
+
+    });
+
+    /*
+     * 弹幕点击事件
+     * */
+    $("#comment_div").on("click",function(){
+
+        showBarrage = !showBarrage;
+        showBarrage ? ($(".littleComment").show(),$("#comment").attr("src", "img/comment_y.png"))
+                : ($(".littleComment").hide(),$("#comment").attr("src", "img/comment_w.png"));
 
     });
 
@@ -635,7 +680,15 @@
                 userHeadImg.attr("src", userHeadUrl);
                 //bigPic.attr("src", data.data.url);
 
+               //模拟评论数据
+                comment = [
+                    {"x":120,"y":50,"text":"太美了","userIcon":"./img/user1.jpg"},{"x":700,"y":90,"text":"这是哪儿","userIcon":"./img/user2.jpg"},
+                    {"x":2300,"y":450,"text":"真的好漂亮啊！！","userIcon":"./img/user3.jpg"},{"x":2830,"y":150,"text":"一起去玩吧！","userIcon":""},
+                    {"x":150,"y":250,"text":"风景不错","userIcon":"./img/user1.jpg"},{"x":280,"y":550,"text":"拍的真好啊","userIcon":"./img/user1.jpg"}
+                ];
+
                 getImgSize();
+
             }
         }
     });

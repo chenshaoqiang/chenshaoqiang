@@ -405,14 +405,14 @@
                 var navHeight=screen.height-bodyOfferHei;//浏览器地址栏高度
                 var setImgHeight=Math.round(parseFloat(screen.height)-navHeight);//图片高度
 
-                for(var i=0;i<hideContent.length;i++){
-                    var x=hideContent[i].x;
-                    var y=hideContent[i].y;
-                    var text=hideContent[i].text;
+                for(var i = 0;i < hideContent.length;i++){
+                    var x = hideContent[i].x;
+                    var y = hideContent[i].y;
+                    var text = hideContent[i].text;
 
-                    var posX=x/realWidth*100;//x定位
-                    var posY=y/realHeight*100;//y定位
-                    var conX=(x+30)/realWidth*100;//x定位
+                    var posX = x/realWidth * 100;//x定位
+                    var posY = y/realHeight * 100;//y定位
+                    var conX = (x + 30) / realWidth * 100;//x定位
 
                     var oDiv=document.createElement("div");
                     var oContent=document.createElement("span");
