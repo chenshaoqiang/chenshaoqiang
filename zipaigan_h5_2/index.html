@@ -29,10 +29,6 @@
                 <img name="pic"
                      id="main_img_work"
                      src="./img/test.jpg">
-                <div class="littleComment">
-                    <img src="./img/default_head.png" alt="comment"/>
-                    <span class="littleComment_span">太美了</span>
-                </div>
             </div>
             <div class="scroll-img-td" id="marquePic2"></div>
         </div>
@@ -88,6 +84,46 @@
 </div>
 </body>
 <script type="application/javascript" charset="utf-8">
+
+    //扩展Jquery长按事件
+    $.fn.longPress = function(fn) {
+
+        var timeout = undefined;
+        var $this = this;
+
+        for(var i = 0;i < $this.length;i++){
+            $this[i].addEventListener('touchstart', function(e) {
+
+                function _fn(e){return function(){fn(e);}}
+                timeout = setTimeout(_fn(e), 1000);  //长按时间超过1000ms，则执行传入的方法
+
+            }, false);
+
+            $this[i].addEventListener('touchend', function() {
+
+                clearTimeout(timeout);
+
+            }, false);
+
+        }
+
+    };
+
+    $(".scroll-img-td").longPress(function(e){
+
+        var x = scrollImgBox.scrollLeft + e.targetTouches[0].pageX;
+
+        if(x > marquePic1.offsetWidth){
+
+            x = x - marquePic1.offsetWidth;
+
+        }
+        console.log(e);
+        console.log(x);
+
+
+    });
+
     var protionId = $("#protionId").val(),
         userHeadImg = $("div.user_head img"),                  // 用户头像
         userNameSpan = $("#user_name_span"),                   // 用户姓名
@@ -275,7 +311,7 @@
     /*
      * 大放大镜点击
      * */
-    $("#big_magnifier").on("click",function(){
+    $(".big_magnifier").on("click",function(){
 
         // 停止自动播放
         stopRolling();
