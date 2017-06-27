@@ -2,7 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" afterPath="$PROJECT_DIR$/zipaigan_h5_2/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/360.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7591.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7592.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7593.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7594.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7595.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7596.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7597.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7598.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7599.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7600.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7601.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7602.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7603.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7604.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7605.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7606.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7607.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7608.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7609.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7610.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7611.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7612.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7613.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7614.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7615.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7616.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7617.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7618.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7619.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7620.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7621.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7622.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7623.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7624.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7625.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7626.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/barrage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/barrage_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/bg.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/hot_off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/hot_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/left_right_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/like.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/magnify_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/music_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/next_page.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/no-favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/no-like.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/pause_play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/product_table.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/shop_cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/vertical_covert_horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/data/example.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/index_备份.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/jquery3.0.1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -25,14 +92,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2956621">
-              <caret line="311" column="13" selection-start-line="311" selection-start-column="13" selection-end-line="311" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
               <folding>
-                <marker date="1498110640955" expanded="true" signature="8550:8555" placeholder="..." />
+                <marker date="1498111016589" expanded="true" signature="8550:8555" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_directive.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sanweixiu/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sanweixiu/data/example.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sanweixiu/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,10 +241,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -153,7 +270,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,52 +298,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chenshaoqiang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="sanweixiu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/sanwei_show" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -239,11 +320,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\sanweixiu" />
+      <recent name="D:\mygit\chenshaoqiang\sanweixiu\css" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\css" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\img" />
       <recent name="D:\mygit\chenshaoqiang\paipai\img" />
-      <recent name="D:\mygit\chenshaoqiang\statistics_show\js" />
-      <recent name="D:\mygit\chenshaoqiang\sethome\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -315,12 +396,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00583" summary="6.16">
-      <created>1497578232707</created>
-      <option name="number" value="00583" />
-      <option name="project" value="LOCAL" />
-      <updated>1497578232707</updated>
     </task>
     <task id="LOCAL-00584" summary="6.16">
       <created>1497578269137</created>
@@ -610,31 +685,37 @@
       <option name="project" value="LOCAL" />
       <updated>1498097735663</updated>
     </task>
-    <option name="localTasksCounter" value="632" />
+    <task id="LOCAL-00632" summary="6.21 update">
+      <created>1498110799620</created>
+      <option name="number" value="00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1498110799620</updated>
+    </task>
+    <option name="localTasksCounter" value="633" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -684,46 +765,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/statistics_show/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="266" column="10" selection-start-line="266" selection-start-column="10" selection-end-line="266" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistics_show/js/threesixty.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="5" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sethome/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/img/test1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iscroll用例/build/iscroll-infinite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -995,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="1727" column="0" selection-start-line="1727" selection-start-column="0" selection-end-line="1727" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,13 +1047,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lunDemo/img/default.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2956621">
-          <caret line="311" column="13" selection-start-line="311" selection-start-column="13" selection-end-line="311" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
           <folding>
-            <marker date="1498110640955" expanded="true" signature="8550:8555" placeholder="..." />
+            <marker date="1498111016589" expanded="true" signature="8550:8555" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sanweixiu/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sanweixiu/data/example.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sanweixiu/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
