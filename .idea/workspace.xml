@@ -2,30 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.1竖屏.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.2竖屏_开评论.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.3竖屏_提示评论.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.4竖屏_写评论.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.10横屏_圆7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.11横屏_圆8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.1横屏_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.2横屏_播放.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.3横屏_暂停.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.4横屏_圆1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.5横屏_圆2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.6横屏_圆3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.7横屏_圆4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.8横屏_圆5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.9横屏_圆6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/大_放大镜.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/弹幕.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/弹幕_选中.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/播放中按钮.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/放大镜.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/暂停按钮.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/横转竖.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/竖屏(标注).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/竖转横.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/1.7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/亮点1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/亮点2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/亮点3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/弹幕.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/提示1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/提示2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/UI设计_v6.2/放大图片.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -252,7 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan_h5_2" />
+              <option name="myItemId" value="sanweixiu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,11 +266,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\sanweixiu\UI设计_v6.2" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\UI设计_v5.6" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan\UI设计_v6.2" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu\css" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -351,12 +342,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00586" summary="6.16">
-      <created>1497578814403</created>
-      <option name="number" value="00586" />
-      <option name="project" value="LOCAL" />
-      <updated>1497578814403</updated>
     </task>
     <task id="LOCAL-00587" summary="6.16">
       <created>1497579278714</created>
@@ -646,14 +631,20 @@
       <option name="project" value="LOCAL" />
       <updated>1498615842393</updated>
     </task>
-    <option name="localTasksCounter" value="635" />
+    <task id="LOCAL-00635" summary="6.28 update">
+      <created>1498615987878</created>
+      <option name="number" value="00635" />
+      <option name="project" value="LOCAL" />
+      <updated>1498615987878</updated>
+    </task>
+    <option name="localTasksCounter" value="636" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
