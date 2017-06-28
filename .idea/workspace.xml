@@ -2,29 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_已发布作品.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿中作品.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理列表.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_举报作品详情.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_举报列表.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_意见反馈列表.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/弹框1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/弹框2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户管理列表.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_作品.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_发出的评论.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_发出的赞.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_收到的评论.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_收到的赞.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_发布新版本.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_版本列表.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_版本详情.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.1竖屏.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.2竖屏_开评论.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.3竖屏_提示评论.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/1.4竖屏_写评论.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.10横屏_圆7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.11横屏_圆8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.1横屏_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.2横屏_播放.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.3横屏_暂停.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.4横屏_圆1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.5横屏_圆2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.6横屏_圆3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.7横屏_圆4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.8横屏_圆5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/2.9横屏_圆6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/大_放大镜.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/弹幕.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/弹幕_选中.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/播放中按钮.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/放大镜.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/暂停按钮.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/横转竖.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/竖屏(标注).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5_2/UI设计_v5.6/竖转横.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -46,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.14361702">
+              <caret line="655" column="9" selection-start-line="655" selection-start-column="9" selection-end-line="655" selection-end-column="9" />
               <folding>
                 <marker date="1498111016589" expanded="true" signature="8550:8555" placeholder="..." />
               </folding>
@@ -98,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -251,7 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zipaigan" />
+              <option name="myItemId" value="zipaigan_h5_2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,11 +275,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\UI设计_v5.6" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan\UI设计_v6.2" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu\css" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\css" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -350,12 +351,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00585" summary="6.16">
-      <created>1497578709006</created>
-      <option name="number" value="00585" />
-      <option name="project" value="LOCAL" />
-      <updated>1497578709006</updated>
     </task>
     <task id="LOCAL-00586" summary="6.16">
       <created>1497578814403</created>
@@ -645,15 +640,22 @@
       <option name="project" value="LOCAL" />
       <updated>1498570695677</updated>
     </task>
-    <option name="localTasksCounter" value="634" />
+    <task id="LOCAL-00634" summary="6.28 update">
+      <created>1498615842392</created>
+      <option name="number" value="00634" />
+      <option name="project" value="LOCAL" />
+      <updated>1498615842393</updated>
+    </task>
+    <option name="localTasksCounter" value="635" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -661,7 +663,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -685,7 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="    5.27" />
     <MESSAGE value="    5.28" />
     <MESSAGE value="    5.28 up" />
     <MESSAGE value="    5.28 nav" />
@@ -710,7 +710,8 @@
     <MESSAGE value="6.19 update" />
     <MESSAGE value="6.21 update" />
     <MESSAGE value="6.27 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.27 update" />
+    <MESSAGE value="6.28 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.28 update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -719,13 +720,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iscroll用例/build/iscroll-infinite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/show2/js/down.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1013,16 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
-          <folding>
-            <marker date="1498111016589" expanded="true" signature="8550:8555" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan/media/js/common_directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1055,11 +1039,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vientiane/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5_2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14361702">
+          <caret line="655" column="9" selection-start-line="655" selection-start-column="9" selection-end-line="655" selection-end-column="9" />
+          <folding>
+            <marker date="1498111016589" expanded="true" signature="8550:8555" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
