@@ -2,75 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/360.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/HOT_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7591.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7592.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7593.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7594.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7595.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7596.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7597.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7598.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7599.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7600.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7601.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7602.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7603.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7604.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7605.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7606.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7607.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7608.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7609.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7610.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7611.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7612.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7613.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7614.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7615.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7616.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7617.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7618.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7619.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7620.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7621.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7622.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7623.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7624.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7625.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/IMG_7626.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/barrage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/barrage_open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/bg.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/favorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/header.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/hot_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/hot_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/left_right_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/magnify_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/music_pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/next_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/no-favorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/no-like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/pause_play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/preview.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/product_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/shop_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/img/vertical_covert_horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/data/example.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/index_备份.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sanweixiu/js/jquery3.0.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5_2/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5_2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_已发布作品.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿中作品.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理_投稿成功作品3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/作品管理列表.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_举报作品详情.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_举报列表.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/客服管理_意见反馈列表.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/弹框1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/弹框2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户管理列表.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_作品.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_发出的评论.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_发出的赞.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_收到的评论.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/用户详情_收到的赞.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/登录3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_发布新版本.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_版本列表.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan/UI设计_v6.2/系统管理_版本详情.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -127,7 +81,7 @@
       <file leaf-file-name="example.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sanweixiu/data/example.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -269,7 +223,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,12 +251,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sanweixiu" />
+              <option name="myItemId" value="zipaigan" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -320,11 +274,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\zipaigan\UI设计_v6.2" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu" />
       <recent name="D:\mygit\chenshaoqiang\sanweixiu\css" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\css" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5_2\img" />
-      <recent name="D:\mygit\chenshaoqiang\paipai\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mygit\chenshaoqiang\testEcharts" />
@@ -396,12 +350,6 @@
       <created>1462933613690</created>
       <option name="number" value="Default" />
       <updated>1462933613690</updated>
-    </task>
-    <task id="LOCAL-00584" summary="6.16">
-      <created>1497578269137</created>
-      <option name="number" value="00584" />
-      <option name="project" value="LOCAL" />
-      <updated>1497578269137</updated>
     </task>
     <task id="LOCAL-00585" summary="6.16">
       <created>1497578709006</created>
@@ -691,14 +639,20 @@
       <option name="project" value="LOCAL" />
       <updated>1498110799620</updated>
     </task>
-    <option name="localTasksCounter" value="633" />
+    <task id="LOCAL-00633" summary="6.27 update">
+      <created>1498570695676</created>
+      <option name="number" value="00633" />
+      <option name="project" value="LOCAL" />
+      <updated>1498570695677</updated>
+    </task>
+    <option name="localTasksCounter" value="634" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -731,7 +685,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="    5.22" />
     <MESSAGE value="    5.27" />
     <MESSAGE value="    5.28" />
     <MESSAGE value="    5.28 up" />
@@ -756,7 +709,8 @@
     <MESSAGE value="6.17  update" />
     <MESSAGE value="6.19 update" />
     <MESSAGE value="6.21 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="6.21 update" />
+    <MESSAGE value="6.27 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.27 update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
