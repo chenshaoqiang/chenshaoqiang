@@ -139,7 +139,7 @@
     function startRolling() {
         isPlay = false;
         startMusic();
-        timer = setInterval("Marquee(2)", speed);
+        timer = setInterval("Marquee(1.5)", speed);
     }
     //开关按钮点击处理函数
     function pic_scroll() {
@@ -182,7 +182,7 @@
     var startX = 0;
     var startY = 0;
 
-    var speed = 20;   // 自动播放的时,使用的间隔时间,间隔越小速度越大
+    var speed = 40;   // 自动播放的时,使用的间隔时间,间隔越小速度越大
     var timer;        // 用于定时器
 
     judgeTheOrientation();
