@@ -94,8 +94,8 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="187" column="26" lean-forward="true" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="140" column="21" lean-forward="true" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -798,14 +798,7 @@
       <workItem from="1502251486332" duration="49000" />
       <workItem from="1502431795416" duration="700000" />
       <workItem from="1502760915083" duration="65000" />
-      <workItem from="1502851556294" duration="357000" />
-    </task>
-    <task id="LOCAL-00589" summary="6.16">
-      <created>1497582243836</created>
-      <option name="number" value="00589" />
-      <option name="presentableId" value="LOCAL-00589" />
-      <option name="project" value="LOCAL" />
-      <updated>1497582243836</updated>
+      <workItem from="1502851556294" duration="583000" />
     </task>
     <task id="LOCAL-00590" summary="6.16">
       <created>1497582733102</created>
@@ -1143,11 +1136,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499753419865</updated>
     </task>
-    <option name="localTasksCounter" value="638" />
+    <task id="LOCAL-00638" summary="up">
+      <created>1502851929027</created>
+      <option name="number" value="00638" />
+      <option name="presentableId" value="LOCAL-00638" />
+      <option name="project" value="LOCAL" />
+      <updated>1502851929027</updated>
+    </task>
+    <option name="localTasksCounter" value="639" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1840000" />
+    <option name="totallyTimeSpent" value="2066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1201,7 +1201,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="    5.28 up" />
     <MESSAGE value="    5.28 nav" />
     <MESSAGE value="    5.28 样式重设" />
     <MESSAGE value="    5.28 注释" />
@@ -1226,7 +1225,8 @@
     <MESSAGE value="6.27 update" />
     <MESSAGE value="6.28 update" />
     <MESSAGE value="laydate备份" />
-    <option name="LAST_COMMIT_MESSAGE" value="laydate备份" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1589,8 +1589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="187" column="26" lean-forward="true" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
+        <state relative-caret-position="245">
+          <caret line="140" column="21" lean-forward="true" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
           <folding />
         </state>
       </provider>
