@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/paipai/index1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="138" column="29" lean-forward="true" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -788,14 +788,7 @@
       <workItem from="1502251486332" duration="49000" />
       <workItem from="1502431795416" duration="700000" />
       <workItem from="1502760915083" duration="65000" />
-      <workItem from="1502851556294" duration="3208000" />
-    </task>
-    <task id="LOCAL-00604" summary="6.16update">
-      <created>1497673679046</created>
-      <option name="number" value="00604" />
-      <option name="presentableId" value="LOCAL-00604" />
-      <option name="project" value="LOCAL" />
-      <updated>1497673679046</updated>
+      <workItem from="1502851556294" duration="3320000" />
     </task>
     <task id="LOCAL-00605" summary="6.16update">
       <created>1497698271136</created>
@@ -1133,11 +1126,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502854577469</updated>
     </task>
-    <option name="localTasksCounter" value="653" />
+    <task id="LOCAL-00653" summary="up">
+      <created>1502854775830</created>
+      <option name="number" value="00653" />
+      <option name="presentableId" value="LOCAL-00653" />
+      <option name="project" value="LOCAL" />
+      <updated>1502854775830</updated>
+    </task>
+    <option name="localTasksCounter" value="654" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4691000" />
+    <option name="totallyTimeSpent" value="4803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1580,7 +1580,7 @@
     <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="138" column="29" lean-forward="true" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding />
         </state>
       </provider>
