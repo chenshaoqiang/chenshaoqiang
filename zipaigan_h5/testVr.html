@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THREE演示</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            overflow: hidden;
+        }
+        a {
+            color: #ffffff;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript">
+    var onPointerX,onPointerY;
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+
+    //var geometry = new THREE.BoxGeometry( 4, 4, 4 );
+    var geometry = new THREE.SphereGeometry(7, 100, 100);
+    var material = new THREE.MeshBasicMaterial({
+        color: 0xFFFFFF ,
+        transparent:true,
+        wireframe:true,
+        opacity:0.8
+    });
+    var cube = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( {map: THREE.ImageUtils.loadTexture('img/234.jpg')} ) );
+
+    scene.add( cube );
+
+    camera.position.z = 15;
+
+    function render() {
+
+        requestAnimationFrame( render );
+        renderer.render( scene, camera );
+
+    }
+    render();
+    document.addEventListener( 'touchstart', startHandler, false );
+    document.addEventListener( 'touchmove', moveHandler, false );
+    document.addEventListener( 'touchend', endHandler, false );
+
+    function startHandler( event ) {
+
+        event.preventDefault();
+
+        onPointerX = event['touches'][0].pageX;
+        onPointerY = event['touches'][0].pageY;
+
+    }
+
+    function moveHandler( event ) {
+
+        var moveX = event['touches'][0].pageX;
+        var moveY = event['touches'][0].pageY;
+        var mX = moveX - onPointerX;
+        var mY = moveY - onPointerY;
+
+        if(Math.abs(mX) > Math.abs(mY)){
+
+            if(mX > 0){
+
+                cube.rotation.y += 0.03;
+
+            }else{
+
+                cube.rotation.y -= 0.03;
+
+            }
+
+        }else{
+
+            if(mY > 0){
+
+                cube.rotation.x += 0.03;
+
+            }else{
+
+                cube.rotation.x -= 0.03;
+
+            }
+
+        }
+
+    }
+
+    function endHandler( event ) {
+
+        //
+
+    }
+</script>
+</body>
+</html>

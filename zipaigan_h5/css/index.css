@@ -1,8 +1,20 @@
 /*--css hack--*/
-*{margin: 0;padding: 0;font-family: 'PingFangSC-Regular','微软雅黑', 'Arial', sans-serif;}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PingFangSC-Regular','微软雅黑', 'Arial', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {margin: 0;padding: 0;}
 a{text-decoration: none;}
-img {border-style: none;}
+img {
+    border-style: none;
+    pointer-events: none;
+}
 html{font-size: 100px;}
 ul,li{list-style: none;}
 html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
@@ -13,6 +25,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 .wrap{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .user_info{
     width: 100%;
@@ -65,6 +78,13 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     overflow: hidden;
     position: relative;
 }
+.scroll-img2{
+    width: 100%;
+    position: relative;
+}
+.scroll-img2 img{
+    width: 100%;
+}
 .scroll-img-box{
     height: 100%;
     position: relative;
@@ -104,6 +124,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 .icon_box{
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .comment_icon{
     width: .4rem;
@@ -161,7 +182,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: .7rem;
+    bottom: .2rem;
     z-index: 999;
 }
 .comment_div{
@@ -170,7 +191,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: 1.45rem;
+    bottom: .85rem;
     z-index: 999;
 }
 .magnifier_div{
@@ -179,7 +200,7 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     height: .45rem;
     position: absolute;
     right: .2rem;
-    bottom: 2.2rem;
+    bottom: 1.45rem;
     z-index: 999;
 }
 .button_div img{
@@ -234,9 +255,13 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
 .circleProgress_wrapper{
     position: absolute;
     left: 0;
-    top: 0.2rem;
+    top: 0;
     z-index: 99;
     display: none;
+    background: #dddddd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 .wrapper{
     width: 50%;
@@ -264,46 +289,88 @@ html,body{width: 100%;height: 100%;overflow: auto;background: #ffffff}
     transform:  rotate(-135deg);
 }
 .rightCircle{
-    border-top:.08rem solid gold;
-    border-right:.08rem solid gold;
+    border-top:.08rem solid #f9be00;
+    border-right:.08rem solid #f9be00;
     right:0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-
-    /*
-    -webkit-animation: circleProgressLoad_right 5s linear infinite;
-    */
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 .leftCircle{
-    border-bottom:.08rem solid gold;
-    border-left:.08rem solid gold;
+    border-bottom:.08rem solid #f9be00;
+    border-left:.08rem solid #f9be00;
     left:0;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
-
-    /*
-    -webkit-animation: circleProgressLoad_left 5s linear infinite;
-    */
 }
-@-webkit-keyframes circleProgressLoad_right{
-    0%{
-        -webkit-transform: rotate(-135deg);
-    }
-    50%,100%{
-        -webkit-transform: rotate(45deg);
-    }
+/*---------水平进度条----------*/
+.progress_bar{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    right: 0.8rem;
+    height: .05rem;
+    background: #dddddd;
+    border-radius: .05rem;
 }
-@-webkit-keyframes circleProgressLoad_left{
-    0%,50%{
-        -webkit-transform: rotate(-135deg);
-    }
-    100%{
-        -webkit-transform: rotate(45deg);
-    }
+.auto_progress{
+    height: .05rem;
+    background: #f9be00;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .05rem;
+}
+/*---------小评论-----------*/
+.littleComment{
+    height: .45rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    border-radius: .08rem;
+    font-size: .25rem;
+    display: none;
+}
+.littleComment::after{
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+.littleComment img{
+    width: 0.35rem;
+    height: 0.35rem;
+    vertical-align: middle;
+    float: left;
+    margin: 0.05rem;
+    border-radius: 50%;
+}
+.littleComment_span{
+    color: #dddddd;
+    font-weight: bold;
+    line-height: 0.5rem;
+    float: left;
+    margin-right: 0.1rem;
+}
+.modalImg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    text-align: center;
+    background:#ffffff;
+}
+.modalImg img{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    z-index: 9999;
 }
