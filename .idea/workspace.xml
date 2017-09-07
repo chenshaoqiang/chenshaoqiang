@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/js/aframe.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/big5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/big6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/big8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/big9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/aframe.html" afterPath="$PROJECT_DIR$/zipaigan_h5/aframe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -24,105 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
+      <file leaf-file-name="aframe.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zipaigan_h5/aframe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
-              <folding>
-                <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="10" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin-index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onecloud-manager/assets/components/admin-index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2003" column="0" selection-start-line="2003" selection-start-column="0" selection-end-line="2004" selection-end-column="0" />
-              <folding>
-                <element signature="e#241#553#0" expanded="false" />
-                <element signature="e#1107#4343#0" expanded="false" />
-                <element signature="e#5015#5591#0" expanded="false" />
-                <element signature="e#5667#7356#0" expanded="false" />
-                <element signature="e#7514#9198#0" expanded="false" />
-                <element signature="e#9260#11750#0" expanded="false" />
-                <element signature="e#12014#47041#0" expanded="false" />
-                <element signature="e#47110#49111#0" expanded="false" />
-                <element signature="e#49854#52358#0" expanded="false" />
-                <element signature="e#52467#53835#0" expanded="false" />
-                <marker date="1481782318000" expanded="true" signature="74940:74971" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37732342">
-              <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addBusinessStep1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onecloud-manager/user_manager/addBusinessStep1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="324" column="81" selection-start-line="324" selection-start-column="81" selection-end-line="324" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oncloud-verify/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.8921933">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zipaigan/media/js/index.js" />
         <option value="$PROJECT_DIR$/zipaigan/view/index.html" />
         <option value="$PROJECT_DIR$/zipaigan/view/system/version_list.html" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/main/mainCtrl.js" />
@@ -204,6 +113,7 @@
         <option value="$PROJECT_DIR$/zipaigan/media/js/common_service.js" />
         <option value="$PROJECT_DIR$/zipaigan/media/js/user/uDetailCtrl.js" />
         <option value="$PROJECT_DIR$/paipai/index1.html" />
+        <option value="$PROJECT_DIR$/zipaigan_h5/aframe.html" />
       </list>
     </option>
   </component>
@@ -297,6 +207,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chenshaoqiang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zipaigan_h5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -319,10 +247,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\img" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\js" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\css" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\img" />
       <recent name="D:\mygit\chenshaoqiang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -439,12 +367,6 @@
       <workItem from="1502967056289" duration="263000" />
       <workItem from="1503048938221" duration="83000" />
       <workItem from="1503297206987" duration="1036000" />
-    </task>
-    <task id="LOCAL-00615" summary="6.19 update">
-      <created>1497847581752</created>
-      <option name="number" value="00615" />
-      <option name="project" value="LOCAL" />
-      <updated>1497847581753</updated>
     </task>
     <task id="LOCAL-00616" summary="6.19 update">
       <created>1497847649120</created>
@@ -734,7 +656,13 @@
       <option name="project" value="LOCAL" />
       <updated>1504768662099</updated>
     </task>
-    <option name="localTasksCounter" value="664" />
+    <task id="LOCAL-00664" summary="9.6">
+      <created>1504768715958</created>
+      <option name="number" value="00664" />
+      <option name="project" value="LOCAL" />
+      <updated>1504768715958</updated>
+    </task>
+    <option name="localTasksCounter" value="665" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -825,14 +753,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/oncloud-verify/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sethome/img/aoyou2_01_n.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1066,16 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paipai/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1087,14 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="10" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,6 +1027,45 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/js/three.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.342014">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37732342">
+          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46096656">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/onecloud-manager/assets/components/admin-index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1140,46 +1081,33 @@
             <element signature="e#47110#49111#0" expanded="false" />
             <element signature="e#49854#52358#0" expanded="false" />
             <element signature="e#52467#53835#0" expanded="false" />
-            <marker date="1481782318000" expanded="true" signature="74940:74971" placeholder="..." />
+            <marker date="1481782318000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
+    <entry file="file://$PROJECT_DIR$/paipai/index1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <caret line="137" column="10" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
+    <entry file="file://$PROJECT_DIR$/paipai360/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="0.19144982">
+          <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo1.html">
+    <entry file="file://$PROJECT_DIR$/zipaigan_h5/aframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/js/three.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.342014">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37732342">
-          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.8921933">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
