@@ -26,34 +26,36 @@
 <script type="text/javascript" src="js/three.min.js"></script>
 <script type="text/javascript">
     var onPointerX,onPointerY;
+    //设置一个场景
     var scene = new THREE.Scene();
+    //设置一个相机（远景相机）
     var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    //设置一个渲染器
+    var render = new THREE.WebGLRenderer();
+    render.setSize( window.innerWidth, window.innerHeight );
+    render.setClearColor(0xEEEEEE);//设置canvas背景色
+    render.shadowMapEnabled = true;//允许阴影映射，渲染阴影需要大量的资源，因此我们需要告诉渲染器我们需要阴影
+    console.log(THREE);
 
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
-
-    //var geometry = new THREE.BoxGeometry( 4, 4, 4 );
-    var geometry = new THREE.SphereGeometry(7, 100, 100);
-    var material = new THREE.MeshBasicMaterial({
-        color: 0xFFFFFF ,
-        transparent:true,
-        wireframe:true,
-        opacity:0.8
-    });
-    var cube = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( {map: THREE.ImageUtils.loadTexture('img/234.jpg')} ) );
-
-    scene.add( cube );
+    //生成一个平面
+    //var geometry = new THREE.SphereGeometry(8, 100, 100);//球面
+    var geometry = new THREE.CylinderGeometry(8, 8, 8,100,100);//球面
+    //生成一个材质
+    var material = new THREE.MeshBasicMaterial({color: 0xFFFFFF , transparent:true, wireframe:true, opacity:0.8});
+    //生成一个网格，将平面和材质放在一个网格中，组合在一起，组成一个物体
+    var cube = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( {map: THREE.ImageUtils.loadTexture('img/test4.jpg')} ) );
+    scene.add(cube);
+    document.body.appendChild( render.domElement );
 
     camera.position.z = 15;
+    function renderer() {
 
-    function render() {
-
-        requestAnimationFrame( render );
-        renderer.render( scene, camera );
+        requestAnimationFrame( renderer );
+        //cube.rotation.y -= 0.001;
+        render.render( scene, camera );
 
     }
-    render();
+    renderer();
     document.addEventListener( 'touchstart', startHandler, false );
     document.addEventListener( 'touchmove', moveHandler, false );
     document.addEventListener( 'touchend', endHandler, false );
@@ -99,7 +101,6 @@
             }
 
         }
-
     }
 
     function endHandler( event ) {

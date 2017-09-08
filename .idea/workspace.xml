@@ -2,7 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650fe729-80dc-4e90-8d2a-3194826e9110" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/aframe.html" afterPath="$PROJECT_DIR$/zipaigan_h5/aframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/123.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/234.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/360.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/big_fang_da.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/biga.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/bigb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/bigc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/comment_icon_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/comment_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/comment_y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/default_head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/demo.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/demo2.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/fang_da.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/long.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/map1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/parise_icon_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/poster2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/test1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/test2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/test3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/test4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/toCross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/toVertical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/user.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/user1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/user2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zipaigan_h5/img/img/user3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/demo1.html" afterPath="$PROJECT_DIR$/zipaigan_h5/demo1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/demo2.html" afterPath="$PROJECT_DIR$/zipaigan_h5/demo2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/css/index.css" afterPath="$PROJECT_DIR$/zipaigan_h5/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/index.html" afterPath="$PROJECT_DIR$/zipaigan_h5/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/single.html" afterPath="$PROJECT_DIR$/zipaigan_h5/single.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/testVr.html" afterPath="$PROJECT_DIR$/zipaigan_h5/testVr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zipaigan_h5/video.html" afterPath="$PROJECT_DIR$/zipaigan_h5/video.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chenshaoqiang.iws" />
@@ -27,8 +74,8 @@
       <file leaf-file-name="aframe.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zipaigan_h5/aframe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24535316">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,8 +200,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,7 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,10 +272,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\img" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5" />
-      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\js" />
+      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\img" />
       <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\css" />
+      <recent name="D:\mygit\chenshaoqiang\zipaigan_h5\js" />
       <recent name="D:\mygit\chenshaoqiang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -345,12 +392,6 @@
       <workItem from="1502967056289" duration="263000" />
       <workItem from="1503048938221" duration="83000" />
       <workItem from="1503297206987" duration="1036000" />
-    </task>
-    <task id="LOCAL-00618" summary="6.19 update">
-      <created>1497860090466</created>
-      <option name="number" value="00618" />
-      <option name="project" value="LOCAL" />
-      <updated>1497860090466</updated>
     </task>
     <task id="LOCAL-00619" summary="6.19 update">
       <created>1497860535614</created>
@@ -640,7 +681,13 @@
       <option name="project" value="LOCAL" />
       <updated>1504771139181</updated>
     </task>
-    <option name="localTasksCounter" value="667" />
+    <task id="LOCAL-00667" summary="9.6">
+      <created>1504771278660</created>
+      <option name="number" value="00667" />
+      <option name="project" value="LOCAL" />
+      <updated>1504771278660</updated>
+    </task>
+    <option name="localTasksCounter" value="668" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -652,7 +699,6 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20417288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.70016474" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -673,6 +719,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.70016474" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1010,27 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37732342">
-          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/demo1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipaigan_h5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sanweixiu/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46096656">
@@ -1042,18 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2003" column="0" selection-start-line="2003" selection-start-column="0" selection-end-line="2004" selection-end-column="0" />
-          <folding>
-            <element signature="e#241#553#0" expanded="false" />
-            <element signature="e#1107#4343#0" expanded="false" />
-            <element signature="e#5015#5591#0" expanded="false" />
-            <element signature="e#5667#7356#0" expanded="false" />
-            <element signature="e#7514#9198#0" expanded="false" />
-            <element signature="e#9260#11750#0" expanded="false" />
-            <element signature="e#12014#47041#0" expanded="false" />
-            <element signature="e#47110#49111#0" expanded="false" />
-            <element signature="e#49854#52358#0" expanded="false" />
-            <element signature="e#52467#53835#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,16 +1082,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19144982">
           <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#audio#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zipaigan_h5/aframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24535316">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
