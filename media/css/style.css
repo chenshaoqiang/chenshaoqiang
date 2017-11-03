@@ -106,7 +106,10 @@ html {
 #li1_ballImg > img:nth-of-type(6){width:.5rem; right:3%; top:85%;}
 #li1_ballImg > img:nth-of-type(7){width:.3rem; left:50%; top:3%;}
 #li1_ballImg > img.active{left:45%; top:50%;}
-.li1Child img.active{ -webkit-animation:2s -1s infinite title; animation:2s -1s infinite title;}
+.li1Child img.active{
+	-webkit-animation:1s -1s infinite title;
+	animation:1s -1s infinite title;
+}
 @-webkit-keyframes title{
 	0%{ -webkit-transform:scale(1); opacity:0;}
 	50%{ -webkit-transform:scale(1); opacity:0.8;}
